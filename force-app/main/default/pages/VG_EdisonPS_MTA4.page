@@ -1,0 +1,97 @@
+<apex:page controller="VG_EdisonPS_Ins4_Controller">
+    <style>
+        .my_text
+        {
+        font-family:    Arial, Helvetica, sans-serif
+        font-size:      75;
+        font-weight:    bold;
+        font-height:    10%;
+        
+        }
+        h1{
+        font-size: 150%;
+        }
+        h3{
+        font-size: 130%;
+        }
+        
+    </style>
+    
+    <apex:form id="form1">
+        <div style="background-color: #bcd4f5;height: 70px;width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Confirm}" alt="Smiley face" height="40px" width="1200px" style="margin-left: 260px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div> 
+            <apex:pageblock id="pbkid1" title="" tabStyle="VG_Policy_Schedule_Endorsement__c">
+                <div class="my_text" style="margin-left: 450px;">
+                    <h1>Policy Schedule Details</h1><span class="my_text" align="right" style="margin-right:45px;"> <h3></h3></span>
+                </div><br/><br/>
+                <apex:pageBlockSection columns="1" title="Asset Details" collapsible="False">
+                    <apex:pageMessage severity="Info" summary="No Assets added to the policy shedule." strength="3" rendered="{!!hasAssets}"/>
+                    <apex:pageBlockTable style="background-color:#D3D3D3;" value="{!psaList}" var="psa" width="450px" id="pbkt1" rendered="{!hasAssets}">
+                        <apex:column headerValue="No.Of" value="{!psa.VG_Number_of_Vehicles__c}" width="20px" id="c1" >
+                        </apex:column>
+                        <apex:column headerValue="Type" value="{!psa.VG_Vehicle_Type__c}" width="20px" id="cl1" >
+                        </apex:column>
+                        <apex:column headerValue="Coverage" value="{!psa.VG_Coverage__c}" width="20px" id="cl2" >
+                        </apex:column>
+                        <apex:column headerValue="Rate" value="{!psa.VG_Rate_Per_Vehicle__c}" width="20px" id="cl3" >
+                        </apex:column>            
+                        
+                        <apex:column headerValue="Premium" value="{!psa.VG_Premium__c}" width="20px" id="cl4" >
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>     
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" title="Risk Capture Details" collapsible="False">
+                    <apex:pageMessage severity="Info" summary="No Risk Cpatures added to the policy shedule." strength="3" rendered="{!!hasRCs}"/>
+                    <apex:pageBlockTable style="background-color:#D3D3D3;" value="{!rcList}" var="rc" width="450px" id="rcpbt1" rendered="{!hasRCs}">
+                        <apex:column headerValue="Drivers Name" value="{!rc.Drivers_Name__c}" width="20px" id="rc1" >
+                        </apex:column>
+                        <apex:column headerValue="Drivers DOB" value="{!rc.Drivers_DOB__c}" width="20px" id="rc2" >
+                        </apex:column>
+                        <apex:column headerValue="Drivers Convictions" value="{!rc.Drivers_Convictions__c}" width="20px" id="rc3" >
+                        </apex:column>
+                        <apex:column headerValue="Drivers Conviction Points" value="{!rc.Drivers_Conviction_Points__c}" width="20px" id="rc4" >
+                        </apex:column>
+                        <apex:column headerValue="Drivers License Ban Details" value="{!rc.Drivers_License_Ban_Details__c}" width="20px" id="rc5" >
+                        </apex:column>
+                        <apex:column headerValue="Drivers Claims" value="{!rc.Drivers_Claims__c}" width="20px" id="rc6" >
+                        </apex:column>
+                        <apex:column headerValue="Drivers Medical Conditions" value="{!rc.Drivers_Medical_Conditions__c}" width="20px" id="rc7" >
+                        </apex:column>
+                    </apex:pageBlockTable>  
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" title="Endorsement Details" collapsible="False">
+                    <apex:pageMessage severity="Info" summary="No Endorsements added to the policy shedule." strength="3" rendered="{!!hasEndorsements}"/>
+                    <apex:pageBlockTable style="background-color:#D3D3D3;" value="{!pseList}" var="pse" width="450px" id="elpbt1" rendered="{!hasEndorsements}">               
+                        <apex:column headerValue="Title">
+                            <apex:outputField value="{!pse.VG_Title__c}" />
+                        </apex:column>
+                        <apex:column headerValue="Endorsement Details">
+                            <apex:outputField value="{!pse.VG_Endorsement_Details__c}" />
+                        </apex:column>
+                        <apex:column headerValue="Premium">
+                            <apex:outputField value="{!pse.VG_Premium__c}" />
+                        </apex:column>                                              
+                    </apex:pageBlockTable>  
+                </apex:pageBlockSection> 
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton action="{!Cancel}" value="Cancel"/><apex:commandButton action="{!Previous}" value="Previous"/>
+                      <apex:actionStatus id="saveStatus">
+                        <apex:facet name="stop">
+                            <apex:commandButton value="Finish" action="{!Finish}" status="saveStatus" rerender="pbkid1" />
+                        </apex:facet>
+                        <apex:facet name="start">
+                            <apex:outputPanel >
+                                <apex:image value="/img/loading32.gif" style="height: 15px;"/>               
+                                <apex:commandButton value="Saving..." disabled="true" status="saveStatus"/>
+                            </apex:outputPanel>
+                        </apex:facet>
+                    </apex:actionStatus>
+                </apex:pageBlockButtons>       
+            </apex:pageBlock>
+        </div>
+    </apex:form>   
+    
+</apex:page>

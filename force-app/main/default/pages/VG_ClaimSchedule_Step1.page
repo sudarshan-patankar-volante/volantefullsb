@@ -1,0 +1,24 @@
+<apex:page controller="VG_ClaimScheduleStepsController" showHeader="false" sidebar="false" >
+    <apex:form >
+    
+    <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Policy_Schedule}" alt="Smiley face" height="40px" width="1200px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+    <div>
+        <apex:pageblock title="Create New Claim Schedule" >
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Select Policy Schedule</apex:outputLabel>
+                    <apex:selectList value="{!selectedPS}" size="1">
+                        <apex:selectOptions value="{!PSItems}" ></apex:selectOptions>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Next" action="{!gotoStep2}"/>
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+        </div>
+    </apex:form>
+</apex:page>

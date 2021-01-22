@@ -1,0 +1,5 @@
+<apex:page controller="DownloadAllTaxesController" contentType="text/csv#{!psName} All Taxes.csv" >{!header}
+   <apex:repeat value="{!taxList}" var="tax">
+       {!tax.Name},{!tax.VG_Tax_Percent__c},{!tax.VG_Taxable_Amount__c},{!tax.VG_Tax_Amount__c},<apex:outputText rendered="{!isVFP}" value="{!tax.VG_Tax_Amount_GWP_100__c}"/><apex:outputText rendered="{!isVFP}" value=","/>{!tax.VG_Tax_Jurisdiction__c},{!tax.VG_Tax_Administered_By__c},{!tax.VG_Tax_Paid_By__c},{!tax.VG_Comment__c},<apex:outputText rendered="{!tax.VG_Override__c}" value="Y"/><apex:outputText rendered="{!!tax.VG_Override__c}" value="N"/>
+   </apex:repeat>
+</apex:page>

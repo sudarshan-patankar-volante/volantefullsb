@@ -1,0 +1,284 @@
+<apex:page controller="VG_NordicsProductSteps" sidebar="false" showHeader="false">
+    <apex:form style="width:1300px;">
+        <div style="width: 100%; margin-bottom:10px;margin-top: 10px;margin-left:100px;">
+            <img src="{!$Resource.Path_RR_IMG}" alt="Smiley face" height="50px" width="950px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <apex:pageBlock tabStyle="Account" title="Net Base Premium" id="pg1" rendered="{!!IsProperty}">
+            <apex:pageBlockSection columns="1" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Exposure Premium</apex:outputLabel>
+                    <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!netExposurePremium_Converted}"/></apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Experience Premium</apex:outputLabel>
+                    <apex:inputText value="{!experiencePremium_Converted}"><apex:actionSupport event="onchange" action="{!UpdateNBP}"  reRender="pg1"  /></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Selected Weight</apex:outputLabel>
+                    <apex:inputText value="{!seletedWeight}"><apex:actionSupport event="onchange" action="{!UpdateNBP}"  reRender="pg1"  /></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Net Base Premium</apex:outputLabel>
+                    <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!netBasePremium_Converted}"/></apex:outputText> 
+                </apex:pageBlockSectionItem>
+               <!-- <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Extended Reporting Period</apex:outputLabel>
+                     <apex:inputField value="{!ps.VG_Extended_Reporting_Period__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Extended Reporting Period (% AP)</apex:outputLabel>
+                     <apex:inputText value="{!ExtReportingPeriod_AP}"  />
+                </apex:pageBlockSectionItem>-->
+ 
+            </apex:pageBlockSection>
+        </apex:pageBlock> 
+        <apex:pageBlock tabStyle="Account" title="Risk Rating Details" id="RRBlock" rendered="{!!IsProperty}" >
+            <apex:pageMessages />  
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Add Risk Rating" action="{!addRR}" rerender="RRBlock"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!gotoStep2}" value="Previous"/><apex:commandButton action="{!gotostep6}" value="Next"/>
+            </apex:pageBlockButtons> 
+            
+            <apex:pageBlockTable value="{!riskRatingList }" var="rr" rendered="{!riskRatingList.size > 0}" >
+                <apex:column title="Coverage"  headerValue="Coverage">
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                       
+                
+                    <apex:selectList value="{!rr.CoverageSelected}" id="so1" size="1" style="width:100px;">
+                        <apex:selectOptions value="{!RRCoverage_Select}"></apex:selectOptions>
+                    </apex:selectList>
+                   </apex:outputPanel>
+                </apex:column>
+                <apex:column headerValue="Territorial Limits" >
+                    <apex:selectList value="{!rr.TerritorialLimitsSelected}" size="1" style="width:100px;">
+                        <apex:selectOptions value="{!TerritorialLimits_Select}"></apex:selectOptions>
+                    </apex:selectList>
+                </apex:column>
+                <apex:column title="Deductible" headerValue="Share" >
+                    <apex:inputText value="{!rr.share}"/>
+                </apex:column>
+                <apex:column title="Deductible" headerValue="Deductible" >
+                    <apex:inputField value="{!rr.psa.VG_Deductible__c}"/>
+                </apex:column>
+                <apex:column title="Sub-limit" headerValue="Sub-limit" >
+                    <apex:inputField value="{!rr.psa.VG_Sub_limit__c}"/>
+                </apex:column>
+               
+                <apex:column style="width:20px" headerValue="Delete" >
+                    <apex:commandButton value="Remove" action="{!RemoveRR}" reRender="RRBlock" ><apex:param name="counter" assignTo="{!Index}"  value="{!rr.Counter}"/></apex:commandButton>
+                </apex:column>
+            </apex:pageBlockTable>
+            
+        </apex:pageBlock>
+        <apex:outputPanel id="pg2" >
+            <apex:pageBlock tabStyle="Account" rendered="{!IsProperty && addAssetMode}" >
+                <apex:pageMessages ></apex:pageMessages>
+                <apex:pageblockSection title="Risk Rating Details" >
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Select Asset</apex:outputLabel>
+                        <apex:actionRegion >
+                        <apex:inputfield value="{!currentAsset.asset.Asset__c}">
+                            <apex:actionSupport event="onchange" action="{!UpdateAssetPremium}"  reRender="pg2"  />
+                        </apex:inputField>
+                        </apex:actionRegion>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >Total Property Damage SI</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.totalPropertyDamageSI}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >Total Sum Insured SI</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.totalSumInsuredSI}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel > Total Business Interruption SI</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.totalBusinessInterruptionSI}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel > Full Value</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.FullValue}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" /><apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >PD Deductible</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.0000}">
+                            <apex:param value="{!currentAsset.PDDeductible}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" /><apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel > Waiting Period</apex:outputLabel>
+                        <apex:outputLabel value="{!currentAsset.WaitingPeriod}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel > BI Indemnity Period</apex:outputLabel>
+                        <apex:outputLabel value="{!currentAsset.BIIndemnityPeriod}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" /><apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >MB PD Deductible</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.0000}">
+                            <apex:param value="{!currentAsset.MBPDDeductible}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" /><apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >MB Waiting Period</apex:outputLabel>
+                        <apex:outputLabel value="{!currentAsset.MBWaitingPeriod}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >MB BI Indemnity Period</apex:outputLabel>
+                        <apex:outputLabel value="{!currentAsset.MBBIIndemnityPeriod}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" /><apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >Adjusted PD Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.AdjustedPDPremium}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >Adjusted BI Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.AdjustedBIPremium}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >Building Discount Loading</apex:outputLabel>
+                        <apex:outputLabel value="{!currentAsset.TotalDiscountLoading}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" /><apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >Net PD Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.NetPDPremium}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >Net BI Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.NetBIPremium}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >Net MB Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.AdjustedMBPremium}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" /><apex:pageBlockSectionItem rendered="{!showAssetDetails}" />
+                    <apex:pageBlockSectionItem rendered="{!showAssetDetails}" >
+                        <apex:outputLabel >Net Risk Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,###,###,##0.00}">
+                            <apex:param value="{!currentAsset.NetRiskPremium}" />
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                </apex:pageblockSection>
+                <apex:pageblockButtons location="bottom" >
+                    <apex:commandButton value="Save" action="{!SaveAsset}"/><apex:commandButton value="Cancel" action="{!CancelAsset}"/>
+                </apex:pageblockButtons>
+            </apex:pageBlock>
+            
+            <apex:pageBlock tabStyle="Account" rendered="{!IsProperty}" title="Risk Ratings List" >
+                <apex:pageBlockButtons location="Bottom" >
+                    <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!gotoStep2}" value="Previous"/><apex:commandButton action="{!gotostep6}" value="Next"/>
+                </apex:pageBlockButtons> 
+                <apex:pageblockButtons location="top" >
+                    <apex:commandButton value="Add Risk Rating" action="{!AddAsset}" rerender="pg2"/>
+                </apex:pageblockButtons>
+                <apex:pageMessage severity="Info"  summary="No Risk Ratings Added" strength="3" rendered="{!assetList.size == 0}"/>
+                <apex:outputPanel layout="" style="width:1000px;">
+                <apex:pageBlockTable columnsWidth="5%" align="center" value="{!assetList}" var="RR" rendered="{!assetList.size != 0}">
+                    <apex:column headerValue="Asset Details" width="5%">
+                        <apex:outputLabel value="{!RR.name}"/>
+                    </apex:column>
+                    <apex:column headerValue="Net PD Premium" >
+                        <apex:outputText value="{0, number, ###,###,###,##0}">
+                            <apex:param value="{!RR.NetPDPremium}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Net BI Premium" >
+                        <apex:outputText value="{0, number, ###,###,###,##0}">
+                            <apex:param value="{!RR.NetBIPremium}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Premium" >
+                        <apex:outputText value="{0, number, ###,###,###,##0}">
+                            <apex:param value="{!RR.NetRiskPremium}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Total PD SI" >
+                        <apex:outputText value="{0, number, ###,###,###,##0}">
+                            <apex:param value="{!RR.totalPropertyDamageSI}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Total BI SI" >
+                        <apex:outputText value="{0, number, ###,###,###,##0}">
+                            <apex:param value="{!RR.totalBusinessInterruptionSI}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Total Sum Insured" >
+                        <apex:outputText value="{0, number, ###,###,###,##0}">
+                            <apex:param value="{!RR.totalSumInsuredSI}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Full Value" >
+                        <apex:outputText value="{0, number, ###,###,###,##0}">
+                            <apex:param value="{!RR.FullValue}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Net MB Premium">
+                        <apex:outputText value="{0, number, ###,###,###,##0}">
+                            <apex:param value="{!RR.AdjustedMBPremium}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Net Risk Premium">
+                        <apex:outputText value="{0, number, ###,###,###,##0}">
+                            <apex:param value="{!RR.NetRiskPremium}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Action" >
+                        <apex:commandButton value="Edit" action="{!EditAsset}" reRender="pg2" ><apex:param name="counter" assignTo="{!Index}"  value="{!RR.Counter}"/></apex:commandButton>
+                        <apex:commandButton value="Remove" action="{!RemoveAsset}" reRender="pg2" ><apex:param name="counter" assignTo="{!Index}"  value="{!RR.Counter}"/></apex:commandButton>
+                    </apex:column>
+                </apex:pageBlockTable>
+                </apex:outputPanel>
+            </apex:pageBlock>
+            
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

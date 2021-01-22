@@ -1,0 +1,93 @@
+<apex:page controller="VG_ReviseAesirStepsController" showHeader="false" sidebar="false">
+        <apex:form style="width:1600px;">
+            <div style="width: 80%; margin-bottom:8px;margin-top: 8px;margin-left:80px;">
+                <img src="{!$Resource.Aesir_RR}" alt="Smiley face" height="45px" width="800px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+            </div>
+            <div style="width:1300px;">
+                <apex:pageblock tabStyle="Account" title="Risk Rating" id="RRBlock" >
+                    <apex:pageMessages rendered="{!errmsg}"/>
+                    <apex:outputPanel id="pg2" >
+                        <apex:pageBlock tabStyle="Account" rendered="{!addRRMode}" >
+                            <apex:pageBlockSection columns="1">
+                                <apex:pageBlockSectionItem >
+                                    <apex:outputLabel >Select No.Of Assets</apex:outputLabel>
+                                    <apex:inputText value="{!RRSize}" html-placeholder="Enter Number "><apex:actionSupport event="onchange" action="{!generateReinstatement}"  reRender="RRBlock"  /></apex:inputText>
+                                </apex:pageBlockSectionItem>
+                            <apex:repeat value="{!createLoop}" id="repeat1"  var="s">
+                                <apex:pageBlockSectionItem >
+                                    <apex:outputLabel >{!s+1}<apex:outputLabel rendered="{!s+1==1}">st</apex:outputLabel><apex:outputLabel rendered="{!s+1==2}">nd</apex:outputLabel><apex:outputLabel rendered="{!s+1==3}">rd</apex:outputLabel><apex:outputLabel rendered="{!s+1>3}">th</apex:outputLabel> Asset</apex:outputLabel>
+                                    <apex:inputField value="{!assetValues[s].Asset__c}" />
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                            </apex:pageBlockSection>
+                            <apex:pageblockButtons location="bottom" >
+                                <apex:commandButton value="Save" action="{!SaveRR}"/><apex:commandButton value="Cancel" action="{!CancelRR}"/>
+                            </apex:pageblockButtons>
+                        </apex:pageBlock>
+                    </apex:outputPanel>
+                    <apex:pageblock tabStyle="Account" title="Added Risk Ratings" >
+                        <apex:pageBlockButtons location="top">
+                            <apex:commandButton action="{!AddRR}" value="Add Risk Rating" reRender=""/>
+                        </apex:pageBlockButtons>
+                        <apex:pageMessage severity="Info"  summary="No Risk Ratings Added" strength="3" rendered="{!addedRRList.size == 0}"/>
+                            <apex:pageblockSection columns="1" >
+                                <apex:pageBlockSectionItem >
+                                    <apex:pageBlockTable value="{!addedRRList}" rendered="{!!(addedRRList.size == 0)}" style="width:1250px;" var="rrw">
+                                        <apex:column headerValue="Selected Asset" style="width:70px;">
+                                            <apex:outputText value="{!rrw.ass.Name}" style="width:70px;"/>
+                                        </apex:column>
+                                         <apex:column headerValue="Risk Start Date" style="width:50px;">
+                                            <apex:inputField value="{!rrw.psa.VG_Risk_start__c}" style="width:50px;"/>
+                                        </apex:column>
+                                         <apex:column headerValue="Risk End Date" style="width:50px;">
+                                            <apex:inputField value="{!rrw.psa.VG_Risk_End__c}" style="width:50px;"/>
+                                        </apex:column>
+                                        <apex:column headerValue="Coverage" style="width:70px;">
+                                            <apex:selectList size="1" value="{!rrw.psa.VG_Coverage__c}" style="width:70px;">
+                                                <apex:selectOptions value="{!coverageOptions}"/>
+                                            </apex:selectList>
+                                        </apex:column>
+                                        <apex:column headerValue="Coverage Type" style="width:70px;">
+                                            <apex:inputField value="{!rrw.psa.VG_Coverage_Type__c}" style="width:70px;"/>
+                                        </apex:column>
+                                         <apex:column headerValue="Limit" style="width:50px;">
+                                            <apex:inputField value="{!rrw.psa.VG_Limit__c}" style="width:50px;"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                                        </apex:column>
+                                         <apex:column headerValue="Attachment" style="width:60px;">
+                                            <apex:inputField value="{!rrw.psa.VG_Attachment__c}" style="width:60px;"/>
+                                        </apex:column>
+                                         <apex:column headerValue="AVG SI" style="width:50px;">
+                                            <apex:inputField value="{!rrw.psa.VG_Avg_SI__c}" style="width:50px;"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                                        </apex:column>
+                                        <apex:column headerValue="Rate (%)" style="width:70px;">
+                                            <apex:inputField value="{!rrw.psa.VG_Base_Premium_Rate__c}" style="width:70px;"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                                        </apex:column>
+                                        <!--<apex:column headerValue="Written Share (%)" style="width:70px;">
+                                            <apex:inputField value="{!rrw.psa.VG_Written_Share__c}" style="width:70px;"/>
+                                        </apex:column>-->
+                                         <apex:column headerValue="Signed Shared (%)" style="width:60px;">
+                                            <apex:inputField value="{!rrw.psa.VG_Signed_Share__c}" style="width:60px;"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                                        </apex:column>
+                                        <apex:column headerValue="Annual Premium" style="width:70px;">
+                                            <apex:outputText value="{0, number,###,##0.00}" style="width:70px;">$ <apex:param value="{!rrw.PremiumUSD}"/></apex:outputText>
+                                        </apex:column>
+                                        <apex:column headerValue="Sum Insured" style="width:70px;">
+                                            <apex:outputText value="{0, number,###,##0.00}" style="width:70px;">$ <apex:param value="{!rrw.SIUSD}"/></apex:outputText>
+                                        </apex:column>
+                                        <apex:column headerValue="Action" style="width:50px;">
+                                            <apex:commandButton value="Remove" action="{!RemoveRR}" reRender="RRBlock" ><apex:param name="counter" assignTo="{!Index}"  value="{!rrw.Counter}"/></apex:commandButton>
+                                        </apex:column>
+                                    </apex:pageBlockTable>
+                                </apex:pageBlockSectionItem>
+                            </apex:pageblockSection>
+                            <apex:outputPanel rendered="{!!(addedRRList.size == 0)}">
+                                <div style="width:70px;float:left;margin-top:10px;margin-left:950px;"></div><div style="width:100px;float:left;margin-top:10px;"><b>Total :&nbsp;</b><b>$ {!TotalPremium}</b></div><div style="width:100px;float:left;margin-top:10px;margin-left:10px;"><b>&nbsp;&nbsp;Max:$ {!TotalSI}</b></div>
+                            </apex:outputPanel>
+                    </apex:pageblock>
+                    <apex:pageBlockButtons location="Bottom" >
+                        <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!gotoStep1}" value="Previous"/><apex:commandButton action="{!gotostep5}" value="Next"/>
+                    </apex:pageBlockButtons> 
+                </apex:pageblock>
+            </div>
+        </apex:form>
+</apex:page>

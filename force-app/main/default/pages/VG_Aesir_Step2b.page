@@ -1,0 +1,76 @@
+<apex:page controller="VG_AesirStepsController" sidebar="false" showHeader="false">
+    <apex:form style="width:1700px;">
+        <apex:pageblock tabStyle="Account" title="Added Risk Ratings" id="RRBlock">        
+            <apex:pageMessage severity="Info"  summary="No Risk Ratings Added" strength="3" rendered="{!addedRRList.size == 0}"/>
+                <apex:variable var="s" value="{!0}"/>
+                <apex:pageBlockTable value="{!addedRRList}" rendered="{!!(addedRRList.size == 0)}" var="rrw">
+                    <apex:column headerValue="S.NO">
+                        <apex:outputLabel >
+                        <apex:variable value="{!s+1}" var="s" />
+                        {!s}
+                        </apex:outputLabel>
+                    </apex:column>
+                    <apex:column headerValue="Selected Asset">
+                        <apex:inputField value="{!rrw.psa.Asset__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Risk Start Date">
+                        <apex:inputField value="{!rrw.psa.VG_Risk_start__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Risk End Date">
+                        <apex:inputField value="{!rrw.psa.VG_Risk_End__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Coverage">
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                             <apex:outputPanel styleClass="requiredBlock"/>                         
+                            <apex:inputField value="{!rrw.psa.VG_Coverage__c}"/>
+                        </apex:outputPanel> 
+                    </apex:column>
+                    <apex:column headerValue="Coverage Type">
+                        <apex:inputField value="{!rrw.psa.VG_Coverage_Type__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Limit">
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>      
+                            <apex:inputField value="{!rrw.psa.VG_Limit__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                        </apex:outputPanel> 
+                    </apex:column>
+                    <apex:column headerValue="Attachment">
+                        <apex:inputField value="{!rrw.psa.VG_Attachment__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="AVG SI">
+                        <apex:inputField value="{!rrw.psa.VG_Avg_SI__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                    </apex:column>                   
+                    <apex:column headerValue="Rate(%)">
+                        <apex:inputField value="{!rrw.psa.VG_Base_Premium_Rate__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                    </apex:column>
+                    <apex:column headerValue="Annual Premium">
+                        <apex:inputField value="{!rrw.psa.VG_Premium__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                    </apex:column>
+                    <apex:column headerValue="Signed Shared(%)">
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel3" >
+                             <apex:outputPanel styleClass="requiredBlock"/>   
+                                <apex:inputField value="{!rrw.psa.VG_Signed_Share__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                        </apex:outputPanel>
+                    </apex:column>                   
+                    <apex:column headerValue="Annual Premium Share">
+                        <apex:inputField value="{!rrw.psa.Annual_Rate_100__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                    </apex:column>
+                    <apex:column headerValue="Sum Insured">
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel4" >
+                             <apex:outputPanel styleClass="requiredBlock"/>                                  
+                             <apex:inputField value="{!rrw.psa.VG_Sum_Insured__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                         </apex:outputPanel>
+                    </apex:column>
+                   
+                </apex:pageBlockTable>
+                <apex:outputPanel rendered="{!!(addedRRList.size == 0)}">
+                    <div style="width:70px;float:left;margin-top:10px;margin-left:1150px;"></div><div style="width:170px;float:left;margin-top:10px;margin-left:140px;"><b>Total Premium:&nbsp;</b><b>$ {!TotalPremium}</b></div><div style="width:120px;float:left;margin-top:10px;margin-left:10px;"><b>&nbsp;&nbsp;MaxSI:$ {!TotalSI}</b></div>
+                </apex:outputPanel>
+                      
+                Added Risk Ratings : {!s}
+                <apex:pageBlockButtons location="top" >
+                    <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!gotoStep2a}" value="Previous"/><apex:commandButton value="Next" action="{!gotoStep5}"/>
+                </apex:pageBlockButtons> 
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

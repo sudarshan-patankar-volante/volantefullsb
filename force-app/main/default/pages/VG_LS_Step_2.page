@@ -1,0 +1,393 @@
+<apex:page controller="LSProductSteps" showHeader="false" sidebar="false">
+    <apex:form style="width:1290px;">
+        <div style="width: 80%; margin-bottom:8px;margin-top: 8px;margin-left:130px;">
+            <img src="{!$Resource.LS_RD}" alt="Smiley face" height="45px" width="800px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <apex:pageblock tabStyle="Account" title="Risk Detail">
+            <apex:pageMessages ></apex:pageMessages>            
+            <div> 
+                <apex:pageBlockSection columns="1" id="ps1">                                  
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}">
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Property Damage">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!pdtext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Business Interruption ">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!BItext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Loss of Licence">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!LLtext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Goods in Transit ">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!GDtext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Money and Assault ">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!MAtext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Fidelity ">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!FLtext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                   <apex:pageBlockSection columns="2" rendered="{!Product=='Liability'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Employer’s Liability">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem >
+                        <apex:selectList value="{!ELtext}" size="1">
+                         <apex:actionSupport reRender="ps1" event="onchange"/>
+                       
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Liability'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Public and Products Liability ">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!PPLtext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Liability'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Professional Indemnity ">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!PItext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Liability' && ELtext!='Not Covered'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Additional Insured, policy type">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem >
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:selectList value="{!APtext}" size="1">
+                                <apex:selectOption itemValue="Parent" itemLabel="Parent"/>
+                                <apex:selectOption itemValue="Child" itemLabel="Child"/>
+                            </apex:selectList>
+                        </apex:outputPanel>   
+                     </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Liability' && ELtext!='Not Covered'}"><apex:pageBlockSectionItem rendered="{!Product=='Liability' && ELtext!='Not Covered'}">
+                         <apex:outputLabel value="Additional Insured, employer name"></apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                            <apex:inputText value="{!AENtext}" /> 
+                     </apex:pageBlockSectionItem></apex:pageBlockSection>
+                      
+                     <apex:pageBlockSection columns="2" rendered="{!Product=='Liability' && ELtext!='Not Covered'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Additional Insured, employer, ERN exempt flag">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem >
+                         <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                         <apex:outputPanel styleClass="requiredBlock"/>
+                             <apex:selectList value="{!AERNtext}" size="1">
+                                 <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                                 <apex:selectOption itemValue="No" itemLabel="No"/>
+                             </apex:selectList>
+                         </apex:outputPanel>   
+                     </apex:pageBlockSectionItem></apex:pageBlockSection>  
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Liability' && ELtext!='Not Covered'}"><apex:pageBlockSectionItem >
+                         <apex:outputLabel value="Additional Insured, employer reference number"></apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                         <apex:outputPanel styleClass="requiredBlock"/>                         
+                             <apex:inputText value="{!AERtext}" /> 
+                         </apex:outputPanel>      
+                     </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='D&O'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Directors and Officers Liability">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!DOtext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                    </apex:selectList>
+                        
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='PA'}">
+                         
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Personal Accident">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!PAtext}" size="1">
+                            <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                            <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Benefit"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:selectList value="{!Bentext}" size="1">
+                                <apex:selectOption itemValue="Insured" itemLabel="Insured"/>
+                                <apex:selectOption itemValue="Not Insured" itemLabel="Not Insured"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Medical Costs"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:selectList value="{!MCtext}" size="1">
+                                <apex:selectOption itemValue="Insured" itemLabel="Insured"/>
+                                <apex:selectOption itemValue="Not Insured" itemLabel="Not Insured"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Loss of Income"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:selectList value="{!LOItext}" size="1">
+                                <apex:selectOption itemValue="Insured" itemLabel="Insured"/>
+                                <apex:selectOption itemValue="Not Insured" itemLabel="Not Insured"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Coma Benefit">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!CBtext}" size="1">
+                            <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                            <apex:selectOption itemValue="No" itemLabel="No"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Childcare Expenses">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!CEtext}" size="1">
+                            <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                            <apex:selectOption itemValue="No" itemLabel="No"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Continued Education Expenses">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!CEEtext}" size="1">
+                            <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                            <apex:selectOption itemValue="No" itemLabel="No"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Domestic Expenses">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!DoEtext}" size="1">
+                            <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                            <apex:selectOption itemValue="No" itemLabel="No"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Driver Expenses">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!DrEtext}" size="1">
+                            <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                            <apex:selectOption itemValue="No" itemLabel="No"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Funeral Expenses">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!FEtext}" size="1">
+                            <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                            <apex:selectOption itemValue="No" itemLabel="No"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Hospital In-Patents Expenses">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!HPEtext}" size="1">
+                            <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                            <apex:selectOption itemValue="No" itemLabel="No"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem ><apex:outputLabel value="Home Modification Expenses">
+                            </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!HMEtext}" size="1">
+                            <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                            <apex:selectOption itemValue="No" itemLabel="No"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Number of adult members"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:inputText value="{!NAMtext}" /> 
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Number of Junior members"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:inputText value="{!NJMtext}"/>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Referees / coaches / Officials"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:inputText value="{!RCOtext}"/>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Clubs"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                             <apex:inputText value="{!ClubText}"/>
+                        </apex:pageBlockSectionItem>
+                        
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Legal'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Legal Expenses">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!LEtext}" size="1">
+                        <apex:selectOption itemValue="Covered" itemLabel="Covered"/>
+                        <apex:selectOption itemValue="Not Covered" itemLabel="Not Covered"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Subsidence Cover">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!SCtext}" size="1">
+                        <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                         <apex:selectOption itemValue="No" itemLabel="No"/> <apex:selectOption itemValue="Not applicable" itemLabel="Not applicable"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Playing Surfaces">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!PStext}" size="1">
+                        <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                         <apex:selectOption itemValue="No" itemLabel="No"/> <apex:selectOption itemValue="Not applicable" itemLabel="Not applicable"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Terrorism">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem ><apex:selectList value="{!AEtext}" size="1">
+                        <apex:selectOption itemValue="Yes" itemLabel="Yes"/>
+                         <apex:selectOption itemValue="No" itemLabel="No"/> <apex:selectOption itemValue="Not applicable" itemLabel="Not applicable"/>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}"><apex:pageBlockSectionItem ><apex:outputLabel value="Inflation Value(%)">
+                        </apex:outputLabel></apex:pageBlockSectionItem><apex:pageBlockSectionItem > 
+                        <apex:inputText value="{!IVtext}" />
+                    </apex:pageBlockSectionItem></apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel ><b>Business Interruption</b></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel ><b>Max Indemnity Period</b></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Gross Profit"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:selectList value="{!GPtext}" size="1">
+                                <apex:selectOption itemValue="12" itemLabel="12"/>
+                                <apex:selectOption itemValue="24" itemLabel="24"/>
+                                <apex:selectOption itemValue="36" itemLabel="36"/>
+                                <apex:selectOption itemValue="48" itemLabel="48"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Gross Revenue"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:selectList value="{!GRtext}" size="1">
+                                <apex:selectOption itemValue="12" itemLabel="12"/>
+                                <apex:selectOption itemValue="24" itemLabel="24"/>
+                                <apex:selectOption itemValue="36" itemLabel="36"/>
+                                <apex:selectOption itemValue="48" itemLabel="48"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Increased Cost of Working"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:selectList value="{!ICWtext}" size="1">
+                                <apex:selectOption itemValue="12" itemLabel="12"/>
+                                <apex:selectOption itemValue="24" itemLabel="24"/>
+                                <apex:selectOption itemValue="36" itemLabel="36"/>
+                                <apex:selectOption itemValue="48" itemLabel="48"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Additional Increased cost of working"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:selectList value="{!AICWtext}" size="1">
+                                <apex:selectOption itemValue="12" itemLabel="12"/>
+                                <apex:selectOption itemValue="24" itemLabel="24"/>
+                                <apex:selectOption itemValue="36" itemLabel="36"/>
+                                <apex:selectOption itemValue="48" itemLabel="48"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Rent Receivable"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:selectList value="{!RRtext}" size="1">
+                                <apex:selectOption itemValue="12" itemLabel="12"/>
+                                <apex:selectOption itemValue="24" itemLabel="24"/>
+                                <apex:selectOption itemValue="36" itemLabel="36"/>
+                                <apex:selectOption itemValue="48" itemLabel="48"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Book Debts"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:selectList value="{!BDtext}" size="1">
+                                <apex:selectOption itemValue="12" itemLabel="12"/>
+                                <apex:selectOption itemValue="24" itemLabel="24"/>
+                                <apex:selectOption itemValue="36" itemLabel="36"/>
+                                <apex:selectOption itemValue="48" itemLabel="48"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection columns="2" rendered="{!Product=='Property'}">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Pool Re Rating Zone"></apex:outputLabel>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                            <apex:outputPanel styleClass="requiredBlock"/>                                   
+                                 <apex:selectList value="{!PRRZtext}" size="1">
+                                    <apex:selectOption itemValue="A" itemLabel="A"/>
+                                    <apex:selectOption itemValue="B" itemLabel="B"/>
+                                    <apex:selectOption itemValue="C" itemLabel="C"/>  
+                                    <apex:selectOption itemValue="D" itemLabel="D"/>                                    
+                                </apex:selectList> 
+                            </apex:outputPanel>                                                  
+                        </apex:pageBlockSectionItem>                       
+                    </apex:pageBlockSection>
+                    
+                </apex:pageBlockSection>
+            </div>
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotostep1}"/><apex:commandButton value="Next" action="{!gotostep3}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

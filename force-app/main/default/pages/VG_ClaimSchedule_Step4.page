@@ -1,0 +1,35 @@
+<apex:page controller="VG_ClaimScheduleStepsController" showHeader="false" sidebar="false" >
+    <style>
+    .OutputField{
+        font-weight:bold;
+    }
+    </style>
+    <apex:form >
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Claim_Endorsements}" alt="Smiley face" height="40px" width="1250px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+            <apex:pageBlock title="Select Policy Endrosement">
+            <apex:pageMessage severity="Info" summary="No Policy Schedule Endorsements Added to the policy shedule." strength="3" rendered="{!(PSEWList.size==0)}"/>                    
+                <apex:pageBlockTable value="{!PSEWList}" var="psew" rendered="{!!(PSEWList.size==0)}" id="pbt1">
+                    <apex:column headerValue="" width="2%" >
+                        <apex:inputcheckbox id="ILETEDSsE" value="{!psew.isSelected}"/>
+                    </apex:column>
+                    <apex:column headerValue="Number" width="8%">
+                        <apex:outputField value="{!psew.pse.VG_Endorsement_Number__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Title" width="8%">
+                        <apex:outputField value="{!psew.pse.VG_Title__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Description" width="8%">
+                        <apex:outputField value="{!psew.pse.VG_Endorsement_Details__c}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/>
+                <apex:commandButton action="{!gotoStep3}" value="Previous"/><apex:commandButton action="{!gotoStep5}" value="Next"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock> 
+        </div>
+    </apex:form>
+</apex:page>

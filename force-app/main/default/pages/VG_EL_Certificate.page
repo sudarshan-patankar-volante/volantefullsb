@@ -1,0 +1,201 @@
+<apex:page contentType="application/msword#BridgeQuoteSheet.doc" cache="true" showHeader="false"  controller="VG_LS_PSButtons_DocumentController"  standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"> 
+    <html xmlns:w="urn:schemas-microsoft-com:office:word">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+        <style type="text/css" media="print">    
+            @page {
+            size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            
+            } 
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Font_OpenSan_CondLight, '/root/to/OpenSans-CondLight.ttf')});
+            }
+            
+            body{
+                font-family: Open Sans Condensed Light;              
+            }
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Doc_Header_Font, '/root/to/OpenSans-CondLight.ttf')});
+            }
+           
+            #header{
+                font-family: Open Sans Condensed Light;
+                font-size:30.0pt;
+            }
+            @page footer{
+            size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            mso-header-margin:0.5in;
+            mso-footer-margin:0.2in;
+            mso-pagination:widow-orphan;
+            mso-paper-source:0;
+            
+            }
+            div.footer
+            {page:footer;}
+            
+            #lasttable {
+            border-collapse:collapse;
+            border-color:#ADB5B0;
+            }
+            
+            @page Main {
+            mso-header:h1;
+            mso-footer:f1;
+            }
+            div.Main{
+            page:Main;
+            }
+            p.MyFoot, li.MyFoot, div.MyFoot{
+            mso-pagination:widow-orphan;
+            tab-stops:center 216.0pt right 432.0pt;
+            mso-header-margin:0.5in;
+            mso-footer-margin:0.2in;
+            }
+            p.MyHead {
+            
+            }
+            table#hrdftrtbl{
+            margin:0in 0in 0in 15in;
+            }    
+        </style>
+        
+        <body>
+            
+            <apex:outputText value="{!PrintView}" escape="false"/>
+           <div class="Main">
+           <table border="0" cellspacing="0" cellpadding="0" style="margin-top:-30px;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+                    <tbody>
+                        <tr style="height:4.4pt;">
+                            
+                            <td valign="bottom" style="width:59.0pt;padding:0in 0in 0in 0in;
+                                                       height:4.4pt">
+                            </td>
+                            <td width="408" colspan="4" rowspan="6" valign="bottom" style="width:391.0pt; padding:0in 0in 0in 0in;height:4.4pt">
+                                
+                                <div align="center" style="margin-top:-5in;margin-right:0.75in;margin-left:0.15in;"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            99%;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none;"><span id="header" style="font-size:18.0pt;line-height:99%;">Certificate of Employers’ Liability Insurance<sup>(a)</sup></span><p id="header" style="margin-top:-12px;font-size:9.0pt;line-height:99%;" align="left">(Where required by regulation 5 of the Employers’ Liability (Compulsory Insurance) Regulations 1998 (the Regulations), one or more copies  of this certificate must be displayed at each place of business at which the policy holder employs persons covered by the policy)</p></p>
+                                </div>                 
+                                <div style="margin-top:-5in;margin-right:0.50in;margin-left:4.75in;">
+                                    <span style="font-size:
+                                                 9.0pt;width:125px;"><b>Policy&nbsp;Number:</b>&nbsp;{!ps.Policy__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"> </span>
+                                    
+                                </div><br/>
+                            </td>
+                            <table id='hrdftrtbl' border='1' cellspacing='0' cellpadding='0'>        
+                                <tr>
+                                    <td width="15%">   </td>
+                                    
+                                    <td align="right" width="60%" style="margin:right:2.0in;">                                               
+                                        <div  id="h1" style="margin-left:400px;mso-element:header;width:350px;height:80px;" align="right;">
+                                            <apex:image url="{!AffnityLogo}" height="80" width="200"/>
+                                        </div>
+                                    </td>
+                                    <td aligh="left" width="40%">                
+                                    </td>
+                                </tr>           
+                            </table> 
+                            <table id='hrdftrtbl' border='1' cellspacing='0' cellpadding='0'>        
+                      <tr>
+                        <td width="30%"> </td>
+                        
+                        <td align="center" width="60%" style="margin:right:1.0in;text-align:left;color:#004040;">                                               
+                            <div style="text-align:left;mso-element:footer;color:#004040" id="f1" >
+                            <p style="text-align:left;font-size:8.0pt;font-family: Calibri light;color:#004040"> &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; This policy is underwritten by Liberty Mutual Insurance Europe SE (LMIE) trading as Liberty Specialty Markets, a member of the Liberty Mutual Insurance 
+                            <br/> &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; Group. LMIE's registered office: 5-7 rue Leon Laval, L-3372, Leudelange, Grand Duchy of Luxembourg, Registered Number B232280 (Registre de 
+                            <br/> &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; Commerce et des Sociétés).  LMIE is a European public limited liability company and is supervised by the Commissariat aux Assurances and licensed by 
+                            <br/> &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; the Luxembourg Minister of Finance as an insurance and reinsurance company.  LMIE’s UK branch registered address is 20 Fenchurch Street, London, 
+                            <br/> &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; EC3M 3AW which is authorised by the Commissariat aux Assurances and subject to limited regulation by the Financial Conduct Authority and Prudential 
+                            <br/> &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; Regulation Authority (registered number 829959).
+                           </p>
+                        </div> 
+                        </td>
+                        <td aligh="left" width="40%">                
+                        </td>
+                    </tr>   
+                          
+                </table>                      
+                        </tr>
+                    </tbody>
+                </table>  
+             
+               <div style="margin-top:-5in;margin-left:1.0in;"> 
+                   <TABLE style="margin-right:1.0in;font-size:9.0pt;"> 
+                          <tr style="">
+                              <td width="10" align="left" valign="top"><b>1.</b>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                              <td width="392">Name of policy holder:&nbsp;{!ps.Policy__r.Insured__r.Name}</td>
+                              
+                          </tr>
+                          <tr style="">
+                              <td width="10" align="left" valign="top"><b>2.</b>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                              <td width="392">Date of commencement of insurance policy:&nbsp;<apex:outputLabel rendered="{!ps.Policy__r.VG_Inception_Date__c!=null}">{!DAY(ps.Policy__r.VG_Inception_Date__c)}/{!Month(ps.Policy__r.VG_Inception_Date__c)}/{!Year(ps.Policy__r.VG_Inception_Date__c)}</apex:outputLabel></td>
+                              
+                          </tr>
+                          <tr style="">
+                              <td width="10" align="left" valign="top"><b>3.</b>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                              <td width="392">Date of expiry of insurance policy:&nbsp;<apex:outputLabel rendered="{!ps.Policy__r.VG_Expiry_Date__c!=null}">{!DAY(ps.Policy__r.VG_Expiry_Date__c)}/{!MONTH(ps.Policy__r.VG_Expiry_Date__c)}/{!YEAR(ps.Policy__r.VG_Expiry_Date__c)}</apex:outputLabel></td>
+                              
+                          </tr>
+                  </table>
+                  <br/>
+                  <div style="font-size:
+                                 9.0pt;">We hereby certify that subject to paragraph 2:-</div>                               
+                  <TABLE style="margin-right:1.0in;font-size:9.0pt;" width='600'> 
+                      <tr>
+                          <td width="10" align="left" valign="top"><br/><b>1.</b>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td width="522"><br/>the policy to which this certificate relates satisfies the requirements of the relevant law applicable in Great Britain, Northern Ireland, the Isle of Man, the Island of Jersey, the Island of Guernsey and the Island of Alderney, or to offshore installations in any waters outside the United Kingdom to which the Employers’ Liability (Compulsory Insurance) Act 1969 or any amending primary legislation applies<sup>(b)</sup>; and</td>
+                          
+                      </tr>
+                      <tr style="">
+                          <td width="10" align="top" valign="top"><br/><b>2.</b>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td width="522"><br/>(a)&nbsp;&nbsp;&nbsp;the minimum amount of cover provided by this policy is no less than GBP 5,000,000 <sup>(c)</sup>
+                                  <br/>(b)&nbsp;&nbsp;&nbsp;<strike>the cover provided under this policy relates to claims in excess of GBP 
+                                                                                        <br/>but not exceeding GBP</strike>
+                          
+                          </td>
+                          
+                      </tr>
+                      <tr style="">
+                          <td width="10" align="top">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td width="522"><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signed on behalf of those Lloyd’s Underwriters subscribing to the above policy (Authorised Insurers)</td>
+                          
+                      </tr>                    
+                  </table>
+                 <br/>
+                  <table style="margin-right:1.0in;" align="right" width='600'>
+                        <tr style="height:3.95pt;">                                                      
+                            <td width="" style="margin-left:3.5in;height:5px;line-height:97%;" align="right"><span style="font-size:9.0pt;color:#004040;text-align:right;">&nbsp;<img src="{!Auth_Sign_Url }" width="65" height="23" style='position:fixed;' /> </span>
+                            </td>               
+                            <td width="" style="height:5px;margin-right:1.5in;" align="right">&nbsp;Signature                                                        
+                            </td>                                                       
+                        </tr> 
+                  </table>
+                <TABLE style="margin-right:1.0in;font-size:9.0pt;" width='600'> 
+                      <tr>
+                          <td width="10" align="left" valign="top"><br/>(a)&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td width="522"><br/>Where the employer is a company to which regulation 3(2) of the Regulations applies, the certificate shall state in a prominent place, either that the policy covers the holding company and all its subsidiaries, or that the policy covers the holding company and all its subsidiaries except any specifically excluded by name, or that the policy covers the holding company and only the named subsidiaries.</td>
+                          
+                      </tr>
+                      <tr>
+                          <td width="10" align="left" valign="top"><br/>(b)&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td width="522"><br/>Specify applicable law as provided for in regulation 4(6) of the Regulations.</td>
+                          
+                      </tr>
+                      <tr>
+                          <td width="10" align="left" valign="top"><br/>(c)&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td width="522"><br/>See regulation 3(1) of the Regulations and delete whichever of paragraphs 2(a) or 2(b) does not apply.  Where 2(b) is applicable, specify the amount of cover provided by the relevant policy.</td>
+                          
+                      </tr>
+ 
+                </table>             
+                        
+             </div>
+                         
+           </div>     
+       </body>
+   </html>          
+</apex:page>

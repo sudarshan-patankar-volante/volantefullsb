@@ -1,0 +1,49 @@
+<apex:page controller="VG_ClaimScheduleStepsController" showHeader="false" sidebar="false" >
+    <style>
+    .OutputField{
+        font-weight:bold;
+    }
+    </style>
+    <apex:form >
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Risk_Detail}" alt="Smiley face" height="40px" width="1250px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+            <apex:pageBlock title="Select Risk Details">
+                <apex:pageMessage severity="Info" summary="No Risk Capture Added to the policy shedule." strength="3" rendered="{!(rcwList.size==0)}"/>                                       
+                <apex:pageBlockTable value="{!rcwList}" var="rcw"  rendered="{!!(rcwList.size==0)}" id="pbt1">
+                
+                    <apex:column headerValue="" width="2%" >
+                        <apex:inputcheckbox id="ILETEDSsE" value="{!rcw.isSelected}"/>
+                    </apex:column>
+                    <apex:column headerValue="Driver Name" width="6%"  >
+                        <apex:outputField value="{!rcw.rc.Drivers_Name__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Driver DOB" width="6%" >
+                        <apex:outputField id="calYearPicker" value="{!rcw.rc.Drivers_DOB__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Driver Convictions" width="6%"  >
+                        <apex:outputField value="{!rcw.rc.Drivers_Convictions__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Driver Conviction Points" width="6%" >
+                        <apex:outputField value="{!rcw.rc.Drivers_Conviction_Points__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Driver License Ban Details" width="6%" >
+                        <apex:outputField value="{!rcw.rc.Drivers_License_Ban_Details__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Driver Claims" width="6%" >
+                        <apex:outputField value="{!rcw.rc.Drivers_Claims__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Driver Medical Conditions" width="6%" >
+                        <apex:outputField value="{!rcw.rc.Drivers_Medical_Conditions__c}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+               
+                <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/>
+                <apex:commandButton action="{!gotoStep2a}" value="Previous"/><apex:commandButton action="{!gotoStep4}" value="Next"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock> 
+        </div>
+    </apex:form>
+</apex:page>

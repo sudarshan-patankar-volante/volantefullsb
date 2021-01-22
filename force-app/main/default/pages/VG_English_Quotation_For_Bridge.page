@@ -1,0 +1,295 @@
+<apex:page contentType="application/msword#English_Quote.doc" cache="true" showHeader="false" controller="VG_Bridge_Quotation" applyHtmlTag="false" applyBodyTag="false"> 
+    <html xmlns:w="urn:schemas-microsoft-com:office:word">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1" rel="stylesheet" />     
+        <style type="text/css" media="print">    
+           <!-- @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Font_OpenSan_CondLight, '/root/to/OpenSans-CondLight.ttf')});
+            }
+            
+            body{
+                font-family: Open Sans Condensed Light;              
+            }
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Doc_Header_Font, '/root/to/OpenSans-CondLight.ttf')});
+            }
+           -->
+            body{
+                font-family: Calibri light;              
+            }
+            #header{
+                font-family: Calibri light;
+                font-size:30.0pt;
+            }
+            .secondpage{
+                margin-top: 25px;
+                margin-left:40px;
+            }
+           
+            
+            @page footer
+            {size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            margin-bottom:0in;
+            mso-header-margin:0.0in;
+            mso-footer-margin:0in;
+            mso-pagination:widow-orphan;
+            mso-paper-source:0;}
+            div.footer
+            {page:footer;}
+            
+        </style>
+        <body>
+            <apex:outputText value="{!PrintView}" escape="false"/>
+            <div class="footer">
+                <apex:image url="{!LogoURL}" height="330" width="795"/>             
+                <br/>
+            </div>
+            <div style="text-align:center;" >
+            
+               <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            99%;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span id="header" style="font-size:25.0pt;line-height:99%;
+                                                                                                                                                 color:#004040"><u>GENERAL INFORMATION</u></span></P>
+                                                                                                                                    <span id="header" style="font-size:25.0pt;line-height:99%;
+                                                                                                                                                 color:#004040">BRIDGE UNDERWRITING AB</span>
+                                                                       
+            </div>
+            <br/><br/>
+            <div  style="margin-left:45px;font-size:9.0pt">                             
+                    
+                    <div style="margin-top:0in;margin-right:47.7pt;margin-bottom:0in;margin-left:
+                            2.0in;margin-bottom:.0001pt;text-indent:-137.5pt;line-height:115%"><b><span>INSURER:</span></b><span style="mso-tab-count:1">
+                            Bridge Underwriting AB on behalf of Berkshire Hathaway European Insurance Designated Activity Company (AA+ rating – Standard&amp;Poor's).
+                            <br/>Berkshire Hathaway European Insurance Designated Activity Company is a fully owned subsidiary of Berkshire Hathaway International Insurance Ltd.
+                            <br/><a href="www.bhiil.com">www.bhiil.com</a><br/><br/>
+                                
+                            By combining top rated insurance capacity, local underwriting experience and expertise, state of the art technology and entrepreneurship our ambition is to add a new dimension to the Nordic insurance market.Information about registration, supervision, remuneration, complaints handling, trial by national boards, products development and main contents of our insurance conditions can be found on our website. You have the right to be provided with the mentioned information in paper format. We kindly ask you to contact us should you require this information on paper. If we do not hear from you, will assume that you are satisfied with finding the information on our website.
+                            <br/><br/>
+                                Bridge Underwriting AB is part of the Volante Global Group of Companies. 
+                                <br/><a href="http://volanteglobal.com/underwriting/bridge-underwriting">http://volanteglobal.com/underwriting/bridge-underwriting </a>
+                            </span>
+                         
+                    </div>
+                    <br/>
+                    <div style="margin-top:0in;margin-right:67.7pt;margin-bottom:0in;margin-left:
+                            2.0in;margin-bottom:.0001pt;text-indent:-137.5pt;line-height:115%"><b><span>ADDRESS:</span></b><span style="mso-tab-count:1">
+                            Bridge Underwriting AB<br/>
+                            Vasagatan 7<br/>
+                            111 20 Stockholm <br/>   
+                            bridgeunderwriting@volanteglobal.com<br/>
+
+                            </span>
+                    </div>
+                    <br/>
+                    <div style="margin-top:0in;margin-right:67.7pt;margin-bottom:0in;margin-left:
+                            2.0in;margin-bottom:.0001pt;text-indent:-137.5pt;line-height:115%"><b><span>COMPANY NUMBER: </span></b><span style="mso-tab-count:1">
+                            559136-4277                                                
+                           </span>
+                    </div>
+                    <br/>
+                   
+            </div>      
+            
+              <table style="margin-left:45px;font-size:9.0pt;margin-right:1in;">
+               
+               <tr>
+                  <td  width="25%"><b>&nbsp;&nbsp;ACCIDENT REPORTING <br/>&nbsp;&nbsp;AND CLAIMS PROCEDURE:</b></td>
+                  
+                  <td>Details of any event which might result in a claim under this policy and all subsequent developments must be reported as soon as possible to our claims handling agent:</td>
+               
+               </tr>
+                <tr>
+                  <td></td>
+                  <td> Sedgwick Sweden AB.</td>
+               </tr>
+                <tr>
+                  <td></td>
+                  <td> info@se.sedgwick.com</td>
+               </tr>              
+              </table>  
+            <br style="page-break-before:always;" /><br/><br/><br/><br/>
+            <div class="" style="font-size:9.0pt">
+             
+                    <div style="text-align:center;" >            
+                     <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:
+                                                            99%;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span id="header" style="font-size:25.0pt;line-height:99%;
+                                                                                                                                                 color:#004040"><u>QUOTED INSURANCE STRUCTURE</u></span></P>
+             
+                     </div><br/>
+                     <div style="margin-right:67.7pt;margin-bottom:0in;margin-left:
+                            2.5in;margin-bottom:.0001pt;text-indent:-137.5pt;line-height:115%"><b><span>INSURED: </span></b><span style="mso-tab-count:1">
+                            {!ps.Policy__r.Insured__r.Name}                                               
+                           </span>
+                    </div>
+                      <br/>
+                    
+                     <table border="1" style="margin-left:0.6in;" width='80%'>
+                        <tr>
+                            <td width='90' style="font-size:
+                                    9.0pt;background:#f4c242;color:#004040;width:100px;"><b>INSURANCE</b></td>
+                            <td width='90' style="font-size:
+                                    9.0pt;background:#f4c242;color:#004040;width:100px;"><b>LAYER</b></td>
+                            <td width='70' style="font-size:
+                                    9.0pt;background:#f4c242;color:#004040;width:100px;"><b>LIMIT</b></td>
+                            <td width='75' style="font-size:
+                                    9.0pt;background:#f4c242;color:#004040;width:100px;"><b>DEDUCTIBLE</b></td>
+                            <td width='75' style="font-size:
+                                    9.0pt;background:#f4c242;color:#004040;width:100px;"><b>PREMIUM</b></td>        
+                        </tr>
+                       
+                        <apex:repeat rendered="{!!(psList.size==0)}"  value="{!psList}" var="ps">
+                        <tr>
+                            <td width='90' style="font-size:
+                                    9.0pt;color:#004040">{!ps.Product__c}</td>
+                            <td width='90' style="font-size:
+                                    9.0pt;color:#004040">{!ps.ILF_Layer__c}</td>
+                            <td width='75' style="font-size:
+                                    9.0pt;color:#004040">{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                    <apex:param value="{!ps.Limit__c}"/>
+                                    </apex:outputText></td>
+                            <td width='75' style="font-size:
+                                    9.0pt;color:#004040">{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                    <apex:param value="{!ps.Attachment__c}"/>
+                                    </apex:outputText></td>
+                            <td width='75' style="font-size:
+                                    9.0pt;color:#004040">{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                    <apex:param value="{!ps.Gross_Written_Premium__c}"/>
+                                    </apex:outputText></td>        
+                        </tr>
+                         </apex:repeat>
+                        
+                         <tr style="height:3.95pt;">
+                            <td width='90' style="font-size:
+                                    9.0pt;color:#004040" colspan="4"></td>
+                            
+                            <div style="">
+                                <td width="248" colspan="1" style="font-size:
+                                                                   9.0pt;background:#f4c242;color:#004040">&nbsp;<b><u>Total:</u></b>&nbsp;{!ps.Policy__r.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                   <apex:param value="{!total}"/>
+                                    </apex:outputText></td>
+                                
+                            </div>                
+                        </tr>   
+                     </table><br/>
+                      <div style="margin-top:0in;margin-right:67.7pt;margin-bottom:0in;margin-left:
+                            2.5in;margin-bottom:.0001pt;text-indent:-137.5pt;line-height:115%"><b><span>INSURANCE STRUCTURE:</span></b><span style="mso-tab-count:1">
+                           Attached to this quotation you will find specific quotes and terms.<br/> The proposed solution is based on the received tender documents.                                              
+                           </span>
+                      </div>
+                      <br/>
+                       <div style="margin-top:0in;margin-right:67.7pt;margin-bottom:0in;margin-left:
+                            2.5in;margin-bottom:.0001pt;text-indent:-137.5pt;line-height:115%"><b><span>QUOTE OPEN UNTIL:</span></b><span style="mso-tab-count:1">
+                            30 days from today date                                              
+                           </span>
+                      </div>
+                       <br/>
+                       <div style="margin-top:0in;margin-right:67.7pt;margin-bottom:0in;margin-left:
+                            2.5in;margin-bottom:.0001pt;text-indent:-137.5pt;line-height:115%"><b><span>COMMISSION:</span></b><span style="mso-tab-count:1">
+                            {!ps.VG_Brokerage_Percent__c}%                                          
+                           </span>
+                      </div>
+                       <br/>
+                       <div style="margin-top:0in;margin-right:67.7pt;margin-bottom:0in;margin-left:
+                            2.5in;margin-bottom:.0001pt;text-indent:-137.5pt;line-height:115%"><b><span>SUBJECTIVES:</span></b><span style="mso-tab-count:1">
+                            XXXXXX                                          
+                           </span>
+                      </div>
+                      <br/>
+                     <div style="margin-top:0in;margin-right:67.7pt;margin-bottom:0in;margin-left:
+                            2.5in;margin-bottom:.0001pt;text-indent:-137.5pt;line-height:115%"><b><span>CONTACT DETAILS:</span></b><span style="mso-tab-count:1">&nbsp; </span><span>
+                                                                        
+                           </span>
+                     </div>  
+                     <br/>
+                     <table border="1" style="margin-left:0.6in;" width='80%'>
+                        <tr>
+                            <td width='114' style="font-size:
+                                    9.0pt;background:#f4c242;color:#004040"><b>NAME</b></td>
+                            <td width='206' style="font-size:
+                                    9.0pt;background:#f4c242;color:#004040"><b>TITLE </b></td>
+                            <td width='208' style="font-size:
+                                    9.0pt;background:#f4c242;color:#004040"><b>E-MAIL</b></td>
+                            <td width='123' style="font-size:
+                                    9.0pt;background:#f4c242;color:#004040"><b>MOBILE</b></td>
+                                    
+                        </tr>
+                        <tr>
+                            <td width='114' style="font-size:
+                                    9.0pt;color:#004040">Rein Vahemann</td>
+                            <td width='206' style="font-size:
+                                    9.0pt;color:#004040">Portfolio Manager Property</td>
+                            <td width='208' style="font-size:
+                                    9.0pt;color:#004040"><a href="rein.vahemann@volanteglobal.com">rein.vahemann@volanteglobal.com</a></td>
+                            <td width='123' style="font-size:
+                                    9.0pt;color:#004040">+46 (0)73 707 30 63</td>
+                                   
+                        </tr>
+                       <tr>
+                            <td width='114' style="font-size:
+                                    9.0pt;color:#004040">Peter Forsberg</td>
+                            <td width='206' style="font-size:
+                                    9.0pt;color:#004040">Portfolio Manager Liability / Financial Lines</td>
+                            <td width='208' style="font-size:
+                                    9.0pt;color:#004040"><a href="peter.forsberg@volanteglobal.com">peter.forsberg@volanteglobal.com</a></td>
+                            <td width='123' style="font-size:
+                                    9.0pt;color:#004040">+46 (0)73 310 03 21</td>
+                                   
+                        </tr>
+                         <tr>
+                            <td width='114' style="font-size:
+                                    9.0pt;color:#004040">Ulf Lennart Gertz Johansson</td>
+                            <td width='206' style="font-size:
+                                    9.0pt;color:#004040">Market &amp; Sales Leader, Senior Underwriter</td>
+                            <td width='208' style="font-size:
+                                    9.0pt;color:#004040"><a href="ulf-lennart@volanteglobal.com">ulf-lennart@volanteglobal.com</a> </td>
+                            <td width='123' style="font-size:
+                                    9.0pt;color:#004040">+46 (0)73 707 32 14</td>
+                                   
+                        </tr>
+                        <tr>
+                            <td width='114' style="font-size:
+                                    9.0pt;color:#004040">Torkel Lindberg</td>
+                            <td width='206' style="font-size:
+                                    9.0pt;color:#004040">Managing Director, Senior Underwriter</td>
+                            <td width='208' style="font-size:
+                                    9.0pt;color:#004040"><a href="torkel.lindberg@volanteglobal.com">torkel.lindberg@volanteglobal.com</a> </td>
+                            <td width='123' style="font-size:
+                                    9.0pt;color:#004040">+46 (0)73 399 09 11</td>
+                                   
+                        </tr>
+                        <tr>
+                            <td width='114' style="font-size:
+                                    9.0pt;color:#004040">Stefan Bendes</td>
+                            <td width='206' style="font-size:
+                                    9.0pt;color:#004040">Operations Director, Senior Underwriter</td>
+                            <td width='208' style="font-size:
+                                    9.0pt;color:#004040"><a href="stefan.bendes@volanteglobal.com">stefan.bendes@volanteglobal.com</a>  </td>
+                            <td width='123' style="font-size:
+                                    9.0pt;color:#004040">+46 (0)73 707 32 16</td>
+                                   
+                        </tr>
+                        <tr>
+                            <td width='114' style="font-size:
+                                    9.0pt;color:#004040">Peter Westman</td>
+                            <td width='206' style="font-size:
+                                    9.0pt;color:#004040">Senior Underwriter Liability / Financial Lines</td>
+                            <td width='208' style="font-size:
+                                    9.0pt;color:#004040"><a href="peter.westman@volanteglobal.com">peter.westman@volanteglobal.com</a>  </td>
+                            <td width='123' style="font-size:
+                                    9.0pt;color:#004040">+46 (0)72 500 6956</td>
+                                   
+                        </tr>
+                     </table>                                         
+               </div>
+               <div style="margin-left:0.6in;"> 
+               <p> If you have any questions or to request any amendments, please feel free to contact us.</p>
+                <p>Best regards</p>
+                <p>Bridge Underwriting AB</p>
+                <p>{!YEAR(QuoteDate)}/{!MONTH(QuoteDate)}/{!DAY(QuoteDate)}</p> 
+                <p><img src="{!Sign_Url}" width="95" height="43" style='position:fixed;' />   </p> 
+               </div>                                                                                                   
+        </body>
+    </html>
+</apex:page>

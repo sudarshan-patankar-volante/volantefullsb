@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="VG_UKNewsExt">
+    <ltng:require scripts="{!$Resource.VG_JQuery}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="news" type="SObject[]"/>
+    <div id="content" style="border:0px solid black;margin-top:15px;">
+        <div id="slide" style="border:0px solid black;width:200px;height:150px;">
+            <div id="s1" style="width:150px;position:absolute;margin-left:0px;" >
+                
+            </div>
+            <div id="s" style="width:275px;position:absolute;margin-left:160px;">
+                
+            </div>
+        </div> 
+        
+    </div>
+</aura:component>

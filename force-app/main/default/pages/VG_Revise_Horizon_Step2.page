@@ -1,0 +1,61 @@
+<apex:page controller="VG_Revise_HorizonStepsController" showHeader="false" sidebar="false">
+    
+    <apex:form >
+        <apex:pageblock tabStyle="Account" title="Risk Detail">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection columns="1" id="ps1">
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Currency</apex:outputLabel>
+                    <apex:inputField label="Select Product" value="{!rc.CurrencyIsoCode}" Style="Width:200px;"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Rate Type</apex:outputLabel>                   
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                          
+                        <apex:inputField value="{!rc.VG_Rate_Type__c}" Style="Width:200px;"/>
+                    </apex:outputPanel>     
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >No of Reinstatements</apex:outputLabel>
+                    <apex:inputField value="{!rc.VG_No_of_Reinstatements__c}" Style="Width:197px;" html-placeholder="Enter Number "><apex:actionSupport event="onchange" action="{!generateReinstatement}"  reRender="ps1"  /></apex:inputField>
+                </apex:pageBlockSectionItem>
+                
+                <apex:repeat value="{!createLoop}" id="repeat1"  var="s">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >{!s+1}<apex:outputLabel rendered="{!s+1==1}">st</apex:outputLabel><apex:outputLabel rendered="{!s+1==2}">nd</apex:outputLabel><apex:outputLabel rendered="{!s+1==3}">rd</apex:outputLabel><apex:outputLabel rendered="{!s+1>3}">th</apex:outputLabel> Reinstatements</apex:outputLabel>
+                        <apex:inputText value="{!NOIList[s]}" Style="Width:197px;"/>
+                    </apex:pageBlockSectionItem>
+                </apex:repeat>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Territorial Scope</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                          
+                        <apex:inputField value="{!rc.VG_Territorial_Scope__c}" Style="Width:200px;"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel > Plan Loss Ratio</apex:outputLabel>
+                    <apex:inputField value="{!rc.VG_Plan_Loss_Ratio__c}" Style="Width:197px;" html-placeholder="Enter percentage "/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Layer </apex:outputLabel>
+                    <apex:inputField value="{!rc.VG_Layer__c}" Style="Width:200px;"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotostep1}"/><apex:commandButton value="Next" action="{!gotostep3}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageblock>
+        
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,22 @@
+<apex:page controller="VG_Edison_PolicyRenewalController" sidebar="false" showHeader="false">
+   <apex:form >
+    <div>
+        <apex:pageblock title="Renew Policy" >
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Policy Inception Date"></apex:outputLabel>
+                    <apex:inputField id="datepicker1" value="{!renewalPolicy.VG_Inception_Date__c}" style="width:80px;"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel Value="Policy Expiry Date"></apex:outputLabel>                 
+                    <apex:inputField label="Policy Expiry Date" id="datepicker2" value="{!renewalPolicy.VG_Expiry_Date__c}" style="width:80px;"/>                 
+                </apex:pageBlockSectionItem>  
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Next" action="{!gotoStep2}"/>
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+        </div>
+    </apex:form>
+</apex:page>

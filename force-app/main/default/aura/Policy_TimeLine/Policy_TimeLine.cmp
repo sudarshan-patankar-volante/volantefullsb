@@ -1,0 +1,72 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="VG_Policy_TimeLine_Controller">
+    <aura:attribute name="psList" type="Policy_Schedule__c[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <aura:iteration items="{!v.psList}" var="ps" indexVar="count">
+        <aura:if isTrue="{!ps.VG_Is_MTA__c}">
+            <ul class="slds-timeline" style="margin-top:0px;">
+                <li style="">
+                    <div class="slds-timeline__item_expandable slds-timeline__item_event" >
+                        <div class="slds-media">
+                            <div class="slds-media__figure">
+                                <div class="slds-icon_container slds-icon-standard-event slds-timeline__icon" title="event" style="margin-left:27.5px;background:white">
+                                    <img src="{!$Resource.VG_TimeLine_Edit}" style="width:15px;height:15px" />
+                                </div>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title="EBC Follow up call">
+                                            <a href="{!'https://dev-volante.cs85.force.com/Edison/s/policy-schedule/'+ps.Id}" target="_blank">
+                                                <strong>{!ps.Name}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <aura:if isTrue="{!ps.VG_MTA_Type__c=='Extension'}">
+                                    <p class="slds-m-horizontal_xx-small"> Policy is <b>Extended</b> from {!ps.VG_MTA_Start_Date__c} to {!ps.VG_MTA_End_Date__c}</p>
+                                </aura:if>
+                                <aura:if isTrue="{!ps.VG_MTA_Type__c=='Cancellation'}">
+                                    <p class="slds-m-horizontal_xx-small"> Policy is <b>cancelled</b> from {!ps.VG_MTA_Start_Date__c} to {!ps.VG_MTA_Cancellation_Date__c}</p>
+                                </aura:if>
+                                <aura:if isTrue="{!ps.VG_MTA_Type__c=='Revision of Cover'}">
+                                    <p class="slds-m-horizontal_xx-small"> Policy is <b>Revised</b> from {!ps.VG_MTA_Start_Date__c} to {!ps.VG_MTA_End_Date__c}</p>
+                                </aura:if>
+                                <aura:if isTrue="{!ps.VG_MTA_Type__c=='Declaration'}">
+                                    <p class="slds-m-horizontal_xx-small"> Policy is <b>Declared</b> from {!ps.VG_MTA_Start_Date__c} to {!ps.VG_MTA_End_Date__c}</p>
+                                </aura:if>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </aura:if>
+        <aura:if isTrue="{!!ps.VG_Is_MTA__c}">
+            
+            <ul class="slds-timeline" style="margin-top:0px;">
+                <li style="">
+                    <div class="slds-timeline__item_expandable slds-timeline__item_event" >
+                        <div class="slds-media">
+                            <div class="slds-media__figure">
+                                <div class="slds-icon_container slds-icon-standard-event slds-timeline__icon" title="event" style="margin-left:27.5px;background:white">
+                                    <img src="{!$Resource.VG_TimeLine_Tick}" style="width:15px;height:15px" />
+                                </div>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title="EBC Follow up call">
+                                            <a href="{!'https://dev-volante.cs85.force.com/Edison/s/policy-schedule/'+ps.Id}" target="_blank">
+                                                <strong>{!ps.Name}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <p class="slds-m-horizontal_xx-small">New Policy Schedule is Created...</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </aura:if>
+    </aura:iteration>
+</aura:component>

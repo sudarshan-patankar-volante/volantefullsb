@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" controller="VG_FIDO_PS_Button_Controller" access="global" >
+    <aura:attribute name="mta" type="boolean" default="false"/>
+    <aura:attribute name="RecordTypeName" type="boolean" default="false"/>
+    <aura:attribute name="url" type="String" />
+    <aura:attribute name="quote" type="boolean" default="false" />  
+    <aura:attribute name="bound" type="boolean" default="false" />  
+    <aura:attribute name="booked" type="boolean" default="false"/>
+    <aura:attribute name="psProduct" type="String" />
+    <aura:attribute name="MTAType" type="String" />
+    <aura:attribute name="allowDelete" type="boolean" default="false"/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:html tag="style">
+        .toastMessage.forceActionsText{
+        white-space : pre-line !important;
+        }
+    </aura:html>
+    <lightning:button name="btn11" variant="brand" label="Download All Taxes" onclick="{!c.downloadAllTaxes}"/>
+    <!-- <a href="{!v.url}" target="_blank">Download All Taxes</a>   -->
+</aura:component>

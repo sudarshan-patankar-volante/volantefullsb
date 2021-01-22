@@ -1,0 +1,561 @@
+<apex:page contentType="application/msword#BridgeQuoteSheet.doc" cache="true" showHeader="false" controller="VG_FIDODocumentController" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"> 
+     <html xmlns:w="urn:schemas-microsoft-com:office:word">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+        <head>            
+            <style type="text/css" media="print">    
+                @page {
+                size:8.27in 11.69in;
+                margin:0in 0in 0in 0in;
+                
+                } 
+                @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Font_OpenSan_CondLight, '/root/to/OpenSans-CondLight.ttf')});
+                }
+                @font-face {
+                font-family: Calibri light;
+                src: url({!URLFOR($Resource.Font_Calibri_Light, '/root/to/calibril.ttf')});
+                }
+                body{
+                font-family: Open Sans Condensed Light;              
+                }
+                @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Doc_Header_Font, '/root/to/OpenSans-CondLight.ttf')});
+                }
+                #Calibri{
+                font-family: Calibri light;
+                }
+                #header{
+                font-family: Open Sans Condensed Light;
+                font-size:30.0pt;
+                }
+                @page footer{
+                size:8.27in 11.69in;
+                margin:0in 0in 0in 0in;
+                mso-header-margin:0.5in;
+                mso-footer-margin:0.2in;
+                mso-pagination:widow-orphan;
+                mso-paper-source:0;
+                
+                }
+                div.footer
+                {page:footer;}
+                
+                #lasttable {
+                border-collapse:collapse;
+                border-color:#ADB5B0;
+                }
+                
+                @page Main {
+                mso-header:h1;
+                mso-footer:f1;
+                }
+                div.Main{
+                page:Main;
+                }
+                p.MyFoot, li.MyFoot, div.MyFoot{
+                mso-pagination:widow-orphan;
+                tab-stops:center 216.0pt right 432.0pt;
+                mso-header-margin:0.5in;
+                mso-footer-margin:0.2in;
+                }
+                p.MyHead {
+                
+                }
+                table#hrdftrtbl{
+                margin:0in 0in 0in 15in;
+                }    
+            </style>
+        </head>
+        
+        <body onload="product();">
+            
+            <apex:outputText value="{!PrintView}" escape="false"/>
+           
+            <div class="Main">            
+                <table border="0" cellspacing="0" cellpadding="0" style="margin-top:-30px;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+                    <tbody>
+                        <tr style="height:4.4pt;">
+                            <td width="15" valign="bottom" style="width:15.0pt;padding:
+                                                                  0in 0in 0in 0in;height:4.4pt" rowspan="13">
+                                <apex:image url="{!MF}" style=" margin-left:30px;"/>
+                            </td>
+                            <td valign="bottom" style="width:59.0pt;padding:0in 0in 0in 0in;
+                                                                  height:4.4pt">
+                            </td>
+                            <td width="408" colspan="4" rowspan="6" valign="bottom" style="width:391.0pt; padding:0in 0in 0in 0in;height:4.4pt">
+                                
+                                <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            99%;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span id="header" style="font-size:21.0pt;line-height:99%;
+                                                                                                                                                 color:#004040"> <apex:outputLabel rendered="{!ps.Product__c =='PI'}">  PROFESSIONAL INDEMNITY<br/>SCHEDULE</apex:outputLabel><apex:outputLabel rendered="{!ps.Product__c =='W&I'}">VOLANTE TRANSACTION SOLUTIONS<br/>QUOTE SHEET</apex:outputLabel></span></p>
+                                                                                                                                                                                                                                                                   
+                          </td>
+                          <table id='hrdftrtbl' border='1' cellspacing='0' cellpadding='0'>        
+                            <tr>
+                                <td width="15%">   </td>
+                                
+                                <td align="right" width="60%" style="margin:right:2.0in;">                                               
+                                    <div  id="h1" style="margin-left:400px;mso-element:header;width:350px;height:80px;" align="right;">
+                                        <apex:image url="{!PILogo}" height="80" width="200"/>
+                                    </div>
+                                </td>
+                                <td aligh="left" width="40%">                
+                                </td>
+                            </tr>           
+                        </table>                       
+                    </tr>
+                </tbody>
+            </table>  
+            
+            <apex:outputPanel rendered="{!ps.Product__c =='PI'}" >             
+             <div  style="margin-left:100px;margin-right:1.0in;">
+                 <TABLE style="margin-right:1.0in;">                      
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Policy Number:</b>&nbsp;{!ps.Policy__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Insured:</b>&nbsp;{!ps.Policy__r.Insured__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Address:</b>&nbsp;<apex:outputLabel rendered="{!ps.Policy__r.Insured__r.ShippingStreet!=null && ps.Policy__r.Insured__r.ShippingCity!=null && ps.Policy__r.Insured__r.ShippingCountry!=null}">{!ps.Policy__r.Insured__r.ShippingStreet},&nbsp;{!ps.Policy__r.Insured__r.ShippingPostalCode},&nbsp;{!ps.Policy__r.Insured__r.ShippingCity},&nbsp;{!ps.Policy__r.Insured__r.ShippingCountry}</apex:outputLabel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr>                                                
+                   </table> 
+                   <br/>
+                   <TABLE style="margin-right:1.0in;">
+                      
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>  Professional Business:</b>&nbsp;</span>
+                                      <span style="white-space: pre;font-size:
+                                                 9.0pt;color:#004040"> As defined in the Proposal Form dated &nbsp;{!DAY(rc.VG_Proposal_form_date__c)}/{!Month(rc.VG_Proposal_form_date__c)}/{!Year(rc.VG_Proposal_form_date__c)}</span>
+                                   
+                                </div>
+                            </td>
+                        </tr> 
+                          <tr style="height:3.95pt;">
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                   <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Policy Period:</b>&nbsp;<br/></span>
+                                   </div><div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span><span style="font-size:
+                                                         9.0pt;color:#004040">&nbsp;&nbsp;&nbsp;<b>Inception date:</b><apex:outputLabel rendered="{!ps.Policy__r.VG_Inception_Date__c!=null}">{!DAY(ps.Policy__r.VG_Inception_Date__c)}/{!Month(ps.Policy__r.VG_Inception_Date__c)}/{!Year(ps.Policy__r.VG_Inception_Date__c)}</apex:outputLabel></span> 
+                                        
+                                   </div><div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span><span style="font-size:
+                                                         9.0pt;color:#004040">&nbsp;&nbsp;&nbsp;<b>Expiry date:</b><apex:outputLabel rendered="{!ps.Policy__r.VG_Expiry_Date__c!=null}">{!DAY(ps.Policy__r.VG_Expiry_Date__c)}/{!MONTH(ps.Policy__r.VG_Expiry_Date__c)}/{!YEAR(ps.Policy__r.VG_Expiry_Date__c)}</apex:outputLabel>&nbsp;(Both days inclusive)</span>
+                                   
+                               </div>
+                            </td>
+                        </tr> 
+                    
+                         <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>  Premium excluding taxes:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                    <apex:param value="{!ps.Gross_Written_Premium__c}"/>
+                                    </apex:outputText>&nbsp;For the Certificate Period</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>  Taxes:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                                                                                <apex:param value="{!taxes}"/>
+                                                                                            </apex:outputText>&nbsp;For the Certificate Period</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                          <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b> Premium  including Taxes:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                                                                                <apex:param value="{!premiumincludingtax}"/>
+                                                                                            </apex:outputText>&nbsp;For the Certificate Period</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                       </tr>                                          
+                 </table>
+                 <br/>
+               <TABLE style="margin-right:1.0in;">
+                      
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>  Limit of Liability:</b>&nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>  Policy Limit of Liability:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                                                                                <apex:param value="{!ps.Sum_Insured__c}"/>
+                                                                                            </apex:outputText>&nbsp;<apex:outputLabel rendered="{!ps.Policy__r.Deductible_or_Excess_Basis__c!=null}">{!ps.Policy__r.Deductible_or_Excess_Basis__c}</apex:outputLabel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                       <tr style="height:3.95pt;">
+                                    
+                            <td width="552" colspan="2">
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Territorial Limits:</b>&nbsp;<apex:outputLabel value="{!IF(ps.Policy__r.VG_Territorial_Limits__c!=null && ps.Policy__r.VG_Territorial_Limits__c=='WW ex USA/Canada','Worldwide Excluding USA/Canada',ps.Policy__r.VG_Territorial_Limits__c)}"></apex:outputLabel> </span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                              
+                            </td>
+                            
+                        </tr>                                
+                                                              
+                       <tr style="height:2.95pt;">
+                            <td width="552" colspan="2">
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Jurisdictional Limits:</b>&nbsp;<apex:outputLabel value="{!IF(ps.Policy__r.Jurisdiction__c!=null && ps.Policy__r.Jurisdiction__c=='WW ex USA/Canada','Worldwide Excluding USA/Canada',ps.Policy__r.Jurisdiction__c)}"></apex:outputLabel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"></span>
+                               </div>
+                               
+                            </td>
+                        </tr>
+                       <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Deductible Basis:</b>&nbsp;Applicable to costs</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                              
+                            </td>
+                            
+                        </tr> 
+                      
+                        <tr style="height:2.95pt;">
+                            <td width="552" colspan="2">
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Deductible:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                                                                                <apex:param value="{!ps.Policy__r.Deductible_or_Excess_Amount__c}"/>
+                                                                                            </apex:outputText>&nbsp;Each and every Claim applicable to Costs</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"></span>
+                                
+                                 </div>                                                                                                               
+                            </td>
+                        </tr>
+                     <tr style="height:3.95pt;">
+                            
+                        <td width="552" colspan="2">
+                            <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                <span style="font-size:
+                                             9.0pt;color:#004040"><b>Retroactive date (if applicable):</b><apex:outputLabel rendered="{!ps.Policy__r.VG_Retroactive_Date_Applicable__c=='No'}">None</apex:outputLabel><apex:outputLabel rendered="{!ps.Policy__r.Retroactive_Date__c!=null && ps.Policy__r.VG_Retroactive_Date_Applicable__c=='Yes'}"> {!DAY(ps.Policy__r.Retroactive_Date__c)}/{!MONTH(ps.Policy__r.Retroactive_Date__c)}/{!YEAR(ps.Policy__r.Retroactive_Date__c)} </apex:outputLabel></span>
+                            </div>
+                        </td>                                    
+                   </tr>
+                    <tr style="height:3.95pt;">
+                            
+                        <td width="552" colspan="2">
+                            <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                <span style="font-size:
+                                             9.0pt;color:#004040"><b>Product Wording: </b>&nbsp;{!ps.Policy__r.VG_Wording__c}</span>
+                            </div>
+                        </td>                                    
+                   </tr>
+                     <tr style="height:3.95pt;">
+                            
+                        <td width="552" colspan="2">
+                            <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                <span style="font-size:
+                                             9.0pt;color:#004040"><b>Premium Payment Terms: </b>&nbsp;{!ps.Policy__r.Terms_of_Trade_Days__c}&nbsp;days</span>
+                            </div>
+                        </td>                                    
+                   </tr>
+                 
+                   <tr style="height:3.95pt;">
+                            
+                        <td width="552" colspan="2">
+                            <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                <span style="font-size:
+                                             9.0pt;color:#004040"><b>Disputes Clause:</b>&nbsp;England &amp; Wales</span>
+                            </div>
+                        </td>                                    
+                   </tr>  
+                    <tr style="height:3.95pt;">
+                            
+                        <td width="552" colspan="2">
+                            <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                <span style="font-size:
+                                             9.0pt;color:#004040"><b>Proposal from dated:</b>&nbsp;{!DAY(rc.VG_Proposal_form_date__c)}/{!Month(rc.VG_Proposal_form_date__c)}/{!Year(rc.VG_Proposal_form_date__c)}</span>
+                            </div>
+                        </td>                                    
+                   </tr>  
+ 
+                </Table>
+              </div>  
+                 <div id="second page" class="footer" style="">
+                <apex:outputPanel rendered="{!!(pseList.size==0)}">
+                 <br style="page-break-before:always;" />                   
+                    <br/><br/><br/>
+                    <div style="margin-right:1.0in;margin-left:155px;">
+                        <TABLE style="background:#DEDAD9;border:2px solid #DEDAD9;margin-right:1.0in;">
+                   
+                             <tr style="height:2.95pt;">
+                                    <td width="548" colspan="2">
+                                        <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                            <span style="font-size:
+                                                         9.0pt;width:25px;color:#004040"><b>Endorsements:</b> &nbsp;&nbsp;</span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"></span>
+                                        </div>
+                                       
+                                        <table id="lasttable" border="1" class="AllowBreakAcrossPages" style="background:#F0EDEB;width:540px;border-collapse: collapse;" width='500' >                                              
+                                            <apex:variable value="{!0}" var="s"/>
+                                            <tr style="height:3.95pt;page-break-inside: avoid;">
+                                                <div style="">
+                                                    <td width="48" style="border:1px solid black;font-size:
+                                                                          9.0pt;color:#004040">Endr.No</td>
+                                                    <td width="652" style="border:1px solid black;font-size:
+                                                                           9.0pt;color:#004040"> Title</td>
+                                                    <td width="422" style="border:1px solid black;font-size:
+                                                                           9.0pt;color:#004040">Sub Limit</td>
+                                                </div>
+                                            </tr> 
+                                            <apex:repeat rendered="{!!(pseList.size==0)}" value="{!pseList}" var="pse">    
+                                                <tr style="height:3.95pt;page-break-inside: avoid;">
+                                                    <div style="">
+                                                        <td width="48" style="border:1px solid black;font-size:
+                                                                              9.0pt;color:#004040">{!pse.VG_Endorsement_Number__c}</td>
+                                                        <td width="652" style="border:1px solid black;font-size:
+                                                                               9.0pt;color:#004040">{!pse.VG_Title__c}</td>
+                                                        <td width="422" style="border:1px solid black;font-size:
+                                                                               9.0pt;color:#004040">{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}">
+                                                                                                    <apex:param value="{!pse.VG_Sub_limit__c}"/>
+                                                                                                    </apex:outputText></td>
+                                                    </div>
+                                                </tr> 
+                                            </apex:repeat>
+                                            <apex:variable value="{!1}" var="s"/>
+                                            
+                                        </table>
+                                    </td>
+                                </tr>
+                       
+                  </table>                                                                                
+               </div>
+             </apex:outputPanel> 
+         </div>  
+         
+         <apex:outputPanel >
+                 <br style="page-break-before:always;" />                 
+                    <br/><br/><br/>
+          <TABLE style="margin-left:155px;margin-right:1.0in;">
+                        <TR>
+                            <td colspan="2"><font color="#F0550C">BROKER</font> </td>
+                        </TR>
+                         <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Broker:</b>&nbsp;{!ps.Policy__r.Broker_Name__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Contact Person:</b>&nbsp;{!ps.Policy__r.Broker_Contact__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Email Address:</b>&nbsp;{!ps.Policy__r.Broker_Contact__r.Email}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                </table>                             
+                <br/>           
+             <div style="margin-left:200px;">
+                    <table style="background:#DEDAD9;" width='400'><tbody>
+                        <tr style="height:3.95pt;">
+                        
+                        
+                            <td width="3" ><span style="background:#F0550C;"> &nbsp;</span></td>
+                            
+                            <td width="102" valign="top" style="height:5px;background:#F0EDEB;text-align:center;line-height:97%;"><span style="font-size:
+                                                         9.0pt;color:#004040;text-align:center;">&nbsp;Underwriters Signature:&nbsp;&nbsp;
+                                                   </span>
+                               </td>               
+                             <td width="252" valign="top" style="height:5px;background:#F0EDEB;"><img src="{!PI_Sign_Url}" width="68" height="33" style='position:fixed;' />
+
+                                                    
+                            </td>
+                            
+                                                   
+                    </tr> 
+                     <tr style="height:3.95pt;">
+                        
+                        <div style="background:#F0EDEB;">
+                            <td width="3" ><span style="background:#F0550C;"> &nbsp;</span></td>
+                            
+                            <td width="502" colspan="2"><span style="font-size:
+                                                         9.0pt;color:#004040">&nbsp;Date:&nbsp;{!DAY(Today())}/{!Month(Today())}/{!Year(Today())} &nbsp;&nbsp;</span>
+                            </td>
+                            
+                        </div>
+                        
+                    </tr>                     
+                    </tbody>
+                </table><br/> 
+                    
+              </div>
+             <apex:outputPanel rendered="{!ps.Policy__r.Underwriter__r.Name == 'kristy Mannin'}">
+                    <TABLE style="margin-right:2.0in;margin-left:205px;">                       
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="547" >
+                                
+                                <div>
+                                    <span style="font-size:
+                                                 9.0pt;">Kristy Mannin<br/>
+                                        Mail: Kristy.Mannin@volanteglobal.com<br/> 
+                                        Tel: +44(0)161 914 6671 &nbsp;&nbsp; Mobile: +44(0)7931 984 553<br/>
+                                    </span>
+                                    
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        
+                    </table> 
+               </apex:outputPanel>
+               <apex:outputPanel rendered="{!ps.Policy__r.Underwriter__r.Name == 'Jenna Terry'}">
+                   <TABLE style="margin-right:2.0in;margin-left:205px;">                       
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="547" >
+                                
+                                <div>
+                                    <span style="font-size:
+                                                 9.0pt;">JENNA TERRY<br/>
+                                        Mail: jenna.terry@volanteglobal.com<br/> 
+                                        Tel: +44 (0)7984 338 923 <br/>
+                                    </span>
+                                    
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        
+                    </table> 
+                </apex:outputPanel>
+          </apex:outputPanel>  
+          <apex:outputPanel rendered="{!!(pseList.size==0)}">    
+                     <br style="page-break-before:always;" />
+                                  <br/>                              
+                    <div style="margin-left:100px;margin-right:1.0in;">
+                        <apex:variable value="{!1}" var="s"/>                      
+                        <table>
+                            <apex:repeat rendered="{!!(pseList.size==0)}" value="{!pseList}" var="pse">
+                            <br style="page-break-before:always;" />
+                                  <br/>     
+                              <tr style="height:3.95pt;page-break-inside: avoid;">
+                                    <td style="font-size:
+                                               13.0pt;color:#004040"><b>Endorsement No:&nbsp;&nbsp;</b>{!s}</td>
+                                    
+                                </tr> 
+                                <tr>
+                                    <td width="422"  style="font-size:
+                                                            13.0pt;margin-right:1.0in;color:#004040"><b>{!pse.VG_Title__c}</b></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td width="622" style="font-size:
+                                                           9.0pt;margin-right:1.0in;color:#004040">{!pse.VG_Endorsement_Details__c}</td>
+                                </tr>
+                                 <apex:variable value="{!s+1}" var="s"/>                              
+                            </apex:repeat>                            
+                        </table>                       
+                    </div>
+                </apex:outputPanel> 
+              </apex:outputPanel> <!-- end of PI Product -->                                                                        
+           </div>      
+       </body>
+    </html>
+</apex:page>

@@ -1,0 +1,24 @@
+.THIS .slds-tabs--path .slds-is-current {
+    background-color: #ff6000!important;
+}
+.THIS .slds-tabs--path .slds-is-complete {
+    background-color: rgb(92, 97, 102);
+}
+.THIS .slds-tabs_path .slds-is-current + .slds-is-incomplete::before {
+    background-color: #ff6000!important;
+}
+.THIS .slds-tabs--path .slds-is-current + .slds-is-incomplete::before{
+    background-color: #ff6000!important;
+}
+.THIS .slds-tabs_path__item+.slds-is-complete:before{
+    background-color: rgb(92, 97, 102)!important;
+}
+.THIS .slds-tabs_path__item+.slds-is-current:before{
+    background-color: rgb(92, 97, 102)!important;
+}
+.THIS .slds-tabs--path__item+.slds-is-complete:before{
+    background-color: rgb(92, 97, 102)!important;
+}
+.THIS .slds-tabs--path__item+.slds-is-current:before{
+   background-color: rgb(92, 97, 102)!important; 
+}

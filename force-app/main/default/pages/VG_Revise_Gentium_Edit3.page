@@ -1,0 +1,34 @@
+<apex:page standardController="Policy_Schedule__c" extensions="VG_ReviseGentiumSteps_Controller" showHeader="false" sidebar="false" title="Policy Schedule">
+    <style>
+    .OutputField{
+        font-weight:bold;
+    }
+    </style>
+    <apex:form >
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Endorsement}" alt="Smiley face" height="40px" width="1350px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+            <apex:pageBlock id="LibraryIndex" title="Endorsement Library">
+                 <apex:pageMessage severity="Info" summary="No endorsements in library." strength="3" rendered="{!(LibraryWrapperList.size==0)}" />
+                 
+                <apex:pageBlockTable value="{!LibraryWrapperList}" var="LW" id="pbt1"  rendered="{!!(LibraryWrapperList.size==0)}">
+                    <apex:column headerValue="" width="2%" >
+                        <apex:inputcheckbox id="ILETEDSsE" value="{!LW.isSelected}"/>
+                    </apex:column>
+                    <apex:column headerValue="Number" width="8%">
+                        <apex:outputField value="{!LW.EL.Name}" />
+                    </apex:column>
+                    <apex:column headerValue="Title" width="90%">
+                       <apex:outputpanel styleClass="OutputField" >
+                        <apex:outputField value="{!LW.EL.Endorsement_Title__c}" />
+                      </apex:outputpanel>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!Previousa}" value="Previous"/><apex:commandButton action="{!Nexta}" value="Next"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock> 
+        </div>
+    </apex:form>
+</apex:page>

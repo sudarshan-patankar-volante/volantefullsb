@@ -1,0 +1,44 @@
+<apex:page docType="html-5.0" controller="VG_NordicsAssetsUploadController" showHeader="False" sidebar="false" lightningStylesheets="true">
+ <apex:sectionHeader title="Attach File"/>
+ 
+ <apex:form id="form_Upload">
+ <apex:pageBlock id="pageblockId">
+
+ <apex:pageBlockButtons >
+   <apex:commandButton action="{!back}" value="Done" />
+   <apex:commandButton action="{!back}" value="Cancel"/>
+ </apex:pageBlockButtons>
+ 
+ <apex:pageMessages escape="false"/>
+ 
+  <apex:pageBlockSection id="pageblockSectionId" columns="1">
+    <apex:pageBlockSectionItem >
+       <apex:outputLabel value="File" for="file_File"/>
+       <apex:inputFile id="file_File" value="{!fileBody}" filename="{!fileName}"/>
+    </apex:pageBlockSectionItem>
+    <apex:pageBlockSectionItem rendered="{!!isAttTypeGiven}" >
+        <apex:outputLabel value="Type" for="type"/> 
+        <apex:selectList size="1" value="{!attType}">
+            <apex:selectOptions value="{!statusOptions}"/>
+        </apex:selectList>
+    </apex:pageBlockSectionItem>  
+    <apex:pageBlockSectionItem rendered="{!isAttTypeGiven}" >
+        <apex:outputLabel value="Type" for="type" /> 
+        <apex:outputLabel value="{!obj.VG_Attachment_Type__c}" />
+    </apex:pageBlockSectionItem>
+    <apex:pageBlockSectionItem rendered="{!isAttTypeGiven}" >
+      <apex:outputLabel value="Template File"/> 
+      <apex:outputLink value="{!URLFOR($Action.Document.Download, templateFile.id)}" target="_blank">Download</apex:outputLink>
+    </apex:pageBlockSectionItem>  
+    <apex:pageBlockSectionItem >
+      <apex:outputLabel value="Description" for="description"/> 
+      <apex:inputTextarea id="description" value="{!description}" rows="4" cols="50"/>
+    </apex:pageBlockSectionItem>  
+     <apex:pageBlockSectionItem >
+      <apex:outputLabel value="" for=""/> 
+      <apex:commandButton id="uploadBtn" value="Attach File" action="{!processUpload}" />
+    </apex:pageBlockSectionItem>        
+  </apex:pageBlockSection>
+ </apex:pageBlock>
+</apex:form>
+</apex:page>

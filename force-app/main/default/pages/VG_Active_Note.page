@@ -1,0 +1,306 @@
+<apex:page controller="VG_Logo_Extension" cache="true" contentType="application/msword#AdviceNote.doc" sidebar="false" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+    <html xmlns:v="urn:schemas-microsoft-com:vml"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:w="urn:schemas-microsoft-com:office:word">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <head>
+            
+            <style>
+                @font-face {
+                    font-family: Open Sans Condensed Light;
+                    src: url({!URLFOR($Resource.Font_OpenSan_CondLight, '/root/to/OpenSans-CondLight.ttf')});
+                }
+                
+                body{
+                    font-family: Open Sans Condensed Light;              
+                }
+                @font-face {
+                    font-family: Open Sans Condensed Light;
+                    src: url({!URLFOR($Resource.Doc_Header_Font, '/root/to/OpenSans-CondLight.ttf')});
+                }
+               
+                #header{
+                    font-family: Open Sans Condensed Light;
+                    font-size:30.0pt;
+                }
+                @page footer
+                {size:8.27in 11.69in;
+                margin:0in 0in 0in 0in;
+                margin-bottom:0in;
+                mso-header-margin:0.5in;
+                mso-footer-margin:0in;
+                mso-pagination:widow-orphan;
+                mso-paper-source:0;}
+                div.footer
+                {page:footer;}
+                
+            </style>
+        </head>
+        <body style='tab-interval:.5in'>
+            <apex:outputText value="{!PrintView}" escape="false"/>
+            <div class="footer" style=''>
+                <div width='300' height='200' align='right' style="margin-right:1.0in;margin-top:0.5in;">
+                    <apex:image url="{!LogoURL}" width="250" height="110"/>
+                </div> 
+                <br/>
+                <div>
+                <table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+                    <tbody>
+                        <tr style="height:4.4pt;">
+                            <td width="15" valign="bottom" style="width:15.0pt;padding:
+                                                                  0in 0in 0in 0in;height:4.4pt" rowspan="13">
+                                <apex:image url="{!MF}" style=" margin-left:30px;"/>
+                            </td>
+                            <td width="10" valign="bottom" style="width:53.0pt;padding:0in 0in 0in 0in;
+                                                                  height:4.4pt">
+                            </td>
+                            <td width="328" colspan="3" rowspan="7" valign="bottom" style="width:261.0pt; padding:0in 0in 0in 0in;height:4.4pt">
+                                
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            99%;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span id="header" style="font-size:30.0pt;line-height:99%;
+                                                                                                                                                 color:#004040">ADVICE</span>
+                                    
+                                    <span style="mso-ignore:vglayout;position:relative;z-index:251660183"><span style="position:absolute;left:-172px;top:-38px;width:27px;height:80px"></span></span><!--[endif]--><span id="header" style="font-size:30.0pt;line-height:99%;
+                                                                                                                                                                                                                                color:gray"><br/>NOTE</span><span style="font-size:12.0pt;line-height:99%;"></span></p>
+                                                                                                                                                                                                                                                                        
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>   
+                    <div style="margin-left:0;">
+                        
+                        <div  style="margin-left:100px;margin-right:1.0in;">
+                            
+                            <table style="background:#DEDAD9;" width='600'><tbody>
+                                <tr >
+                                    <td colspan="2">
+                                        <p style="font-size:13pt;color:rgb(227,114,45)">BROKER</p>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td >
+                                        
+                                    </td>
+                                </tr>
+                                <tr style="height:3.95pt;">
+                                    
+                                    <td width="522" colspan="2">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Name:</b>  {!ps.Policy__r.Broker_Name__r.Name}</span>
+                                        
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height:2.95pt;">
+                                    <td width="300">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;width:25px;color:#004040"><b>Broker Number:</b>  {!ps.Policy__r.Broker_Name__r.VG_Intermediary_Number__c}</span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"></span>
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;width:25px;color:#004040"><b>Date:</b>  {!today}</span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table><br/>
+                            <table style="background:#DEDAD9;" width='600'><tbody>
+                                <tr >
+                                    <td colspan="2">
+                                        <p style="font-size:13pt;color:rgb(227,114,45)">PREMIUM ADVICE NOTE</p>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td >
+                                        
+                                    </td>
+                                </tr>
+                                <tr style="height:3.95pt;">
+                                    
+                                    <td width="522" colspan="2">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Insured:</b>  {!ps.Policy__r.Insured__r.Name}</span>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height:3.95pt;">
+                                    
+                                    <td width="522" colspan="2">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Policy Number:</b>  {!ps.Policy__r.Name}</span>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height:3.95pt;">
+                                    
+                                    <td width="522" colspan="2">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Reason for issue:</b>  {!If(ps.VG_Is_MTA__c==True,'Mid Term Adjustment',If(isRenewal==true, 'Renewal', 'New Business'))}</span>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height:2.95pt;">
+                                    <td width="300">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;width:25px;color:#004040"><b>Effective Date:</b>  {!If(ps.VG_Is_MTA__c==True , MTAStartDateFormat,IncepDateFormat )}</span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"></span>
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;width:25px;color:#004040"><b>Transaction ID:</b>  {!ps.Name}</span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody></table><br/><br/>
+                            <table style="background:#DEDAD9;" width='600'><tbody>
+                                <tr >
+                                    <td colspan="2">
+                                        <p style="font-size:13pt;color:rgb(227,114,45)">PREMIUM</p>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td colspan="2">
+                                        
+                                    </td>
+                                </tr>
+                                <tr style="height:3.95pt;">
+                                    
+                                    <td width="522" colspan="2">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Premium Amount:</b>  £<apex:outputText value="{0, number, ###,##0.00}">
+                                                                                                            <apex:param value="{!ps.Gross_Written_Premium__c}"/>
+                                                                                                       </apex:outputText></span>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height:3.95pt;">
+                                    
+                                    <td width="300" >
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>                                            
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>IPT:</b>  {!IPTPercent}%</span>
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>IPT Amount:</b>  £<apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!ps.IPT__c}"/></apex:outputText></span>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height:3.95pt;">
+                                    
+                                    <td width="300">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Brokerage:</b>  {!ps.VG_Brokerage_Percent__c}% </span>
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Brokerage Amount:</b>  £<apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!ps.VG_Brokerage_Amount__c}"/></apex:outputText></span>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height:3.95pt;">
+                                    
+                                    <td width="300">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Fee Income:</b>  £<apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!ps.VG_Fee_Income__c}"/>
+                        </apex:outputText></span>
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Levies:</b>  £<apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!ps.Levies__c}"/></apex:outputText></span>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height:2.95pt;">
+                                    <td colspan="2">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;width:25px;color:#004040"><b>Total Amount due:</b>  £<apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!TotalAmountdue}"/></apex:outputText></span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table><br/><br/>
+                            <table style="background:#DEDAD9;" width='600'><tbody>
+                                <tr >
+                                    <td >
+                                        <p style="font-size:13pt;color:rgb(227,114,45)">PAYMENT-BACS DETAILS</p>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td >
+                                        
+                                    </td>
+                                </tr>
+                                <tr style="height:3.95pt;">
+                                    
+                                    <td width="522">
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"><b>Account Number:</b>  31774164</span>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height:2.95pt;">
+                                    <td>
+                                        <div style="background:rgb(247,244,242);margin-left:5px;"><span style="background:#F0550C;">  </span>
+                                            <span style="font-size:
+                                                         9.0pt;width:25px;color:#004040"><b>Sort Code:</b>  50-30-20</span>
+                                            <span style="font-size:
+                                                         9.0pt;color:#004040"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody></table>
+                            
+                        </div>
+                    </div>
+                    <div style="margin-left:100px;margin-right:0px;"><p style="font-size:8pt;font-style: italic;">Terms of payment – 60 days from effective date</p></div>
+                </div>
+                 <div  style="margin-bottom:0;" >
+                    <img src="{!AdviceFooterURL}"  height='161.50' width='820' style='position:fixed' />
+                </div> 
+                
+                
+            </div>
+        </body>
+    </html>
+</apex:page>

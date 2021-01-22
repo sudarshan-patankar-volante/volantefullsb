@@ -1,0 +1,226 @@
+<apex:page controller="PaymentDetailsController" sidebar="false" showHeader="false">
+    <head>
+        <style>
+            .disabled
+            {
+            border: 1px solid #999999;
+            background-color: #dddddd;
+            color: #666666;
+            opacity: 0.65; 
+            cursor: not-allowed;
+            }
+            .nonhighlight
+            {
+            background-color: #FF0000;
+            
+            }
+            .highlight
+            {
+            background-color: #00ff00;
+            
+            }
+            .toastMessage.forceActionsText{
+            white-space : pre-line !important;
+            }
+        </style>
+        <script type="text/Javascript">
+        function SubmitOnClick (objSubmitBtn) {
+            
+            document.getElementById(objSubmitBtn.id).disabled = true;
+            document.getElementById(objSubmitBtn.id).classList.add("disabled");
+            objSubmitBtn.value = "Saving…";
+            doSubmit();
+        }
+        
+        </script>
+    </head>
+    <apex:form enctype="multipart/form-data">
+        <apex:pageBlock title="Payment details for {!ps.Name}" id="pb1">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection columns="1" title="Payment Frequency for {!ps.Name}" >
+                <apex:pageBlock >
+                    <apex:commandButton value="Add Payment Frequency" action="{!addPaymentFrequency}" rendered="{!totalPercent < 100}"/>
+                    <apex:commandButton value="Upload Payment Frequency" action="{!uploadPF}" reRender="pb1" rendered="{!totalPercent < 100}"/>
+                    <apex:pageMessage severity="Info" summary="No Payment Frequency added" strength="3" rendered="{!(pfwList.size == 0 && !uploadPF)}"/>
+                    
+                    <apex:pageblock rendered="{!uploadPF}">
+                        <apex:pageBlockButtons >
+                            <apex:commandButton action="{!processUploadPF}" value="Done" />
+                            <apex:commandButton action="{!doneUploadPF}" value="Cancel"/>
+                        </apex:pageBlockButtons>
+                        
+                        <apex:pageBlockSection columns="1" >
+                            
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel value="File"/>
+                                <apex:inputFile id="file_File1" value="{!fileBody}" />
+                            </apex:pageBlockSectionItem>
+                            
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel value="Template File"/> 
+                                <apex:outputLink value="{!URLFOR($Action.Document.Download, PFTemplateFile.id)}" target="_blank">Download</apex:outputLink>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:pageblock>
+                    
+                    <apex:variable var="counter" value="{!0}"/>
+                    <apex:pageBlockTable value="{!pfwList}" var="pfw"  rendered="{!(pfwList.size > 0 && !uploadPF)}">                  
+                        <apex:column headerValue="Due Date" style="width:100px;">
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel1" >
+                                <apex:outputPanel styleClass="requiredBlock"/>  
+                                <apex:inputField style="width:100px;" value="{!pfw.pf.VG_Due_Date__c}"  />
+                            </apex:outputPanel>
+                            <!--<apex:outputField value="{!pfw.pf.VG_Due_Date__c}" rendered="{!!pfw.show}"/>-->
+                        </apex:column>
+                        <apex:column headerValue="Payment(%)" style="width:100px;">
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                                <apex:outputPanel styleClass="requiredBlock"/>  
+                                <apex:inputField value="{!pfw.pf.VG_Payment_Percent__c}" rendered="{!pfw.show}"><apex:actionSupport event="onchange" action="{!thisTimeGWP}" reRender="pb1"/></apex:inputField>
+                            </apex:outputPanel>
+                            <apex:outputField value="{!pfw.pf.VG_Payment_Percent__c}" rendered="{!!pfw.show}"/>
+                        </apex:column>
+                        <apex:column headerValue="GWP This Time ({!ps.CurrencyIsoCode})" style="width:100px;">
+                            <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!pfw.GWP}"/></apex:outputText>
+                        </apex:column>
+                        <!--<apex:column headerValue="GWP This Time " style="width:100px;">
+                            <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!pfw.currenctCurrencyGWP}"/></apex:outputText>
+                        </apex:column>-->
+                        <apex:column headerValue="Comment" style="width:100px;">
+                            <apex:inputField value="{!pfw.pf.VG_Comment__c}" rendered="{!pfw.show}"/>
+                            <apex:outputField value="{!pfw.pf.VG_Comment__c}" rendered="{!!pfw.show}"/>
+                        </apex:column>
+                        <!--<apex:column headerValue="Broker" style="width:100px;">
+                            <apex:inputField value="{!pfw.pf.VG_Broker__c}" rendered="{!pfw.show}"/>
+                            <apex:outputField value="{!pfw.pf.VG_Broker__c}" rendered="{!!pfw.show}"/>
+                        </apex:column>
+                        <apex:column headerValue="Currency" style="width:100px;">
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel3" >
+                                <apex:outputPanel styleClass="requiredBlock"/>  
+                                <apex:inputField value="{!pfw.pf.CurrencyIsoCode}" rendered="{!pfw.show}"><apex:actionSupport event="onchange" action="{!thisTimeGWP}" reRender="pb1"/></apex:inputField>
+                            </apex:outputPanel>
+                            <apex:outputField value="{!pfw.pf.CurrencyIsoCode}" rendered="{!!pfw.show}"/>
+                        </apex:column>-->
+                        <apex:column style="width:20px" headerValue="Delete" >                          
+                            <apex:outputPanel rendered="{!!pfw.pf.VG_Is_Temp_Delete__c}">
+                                <apex:commandButton value="Remove" action="{!RemovePF}" reRender="pb1" rendered="{!(pfw.pf.VG_Policy_Schedule__r.Policy__r.Policy_Status__c!='Booked')}"><apex:param name="counter" assignTo="{!Index}"  value="{!pfw.counter}" /></apex:commandButton>                          
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!pfw.pf.VG_Is_Temp_Delete__c}">
+                                <apex:outputLabel >Deleted</apex:outputLabel>
+                            </apex:outputPanel>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                    <apex:outputPanel rendered="{!(pfwList.size > 0 && !uploadPF)}">
+                        <b><span style="margin-left:280px;">Total Payment (%)  : </span><span >{!totalPFPercent}</span></b><b><span style="margin-left:80px;">Total GWP ({!ps.CurrencyIsoCode}) : </span><span ><apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!totalPFGWP}"/></apex:outputText></span></b>
+                    </apex:outputPanel>
+                </apex:pageBlock>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1" title="Tax for {!ps.Name}">
+                <apex:pageBlock >
+                    
+                    <apex:commandButton value="Add Tax" action="{!addTax}" reRender="pb1" rendered="{!addTax}" />
+                    <apex:commandButton value="Upload Tax" action="{!uploadTax}" reRender="pb1"/>
+                    <apex:commandButton value="Download All Taxes" action="{!downloadAllTaxes}" reRender="pb1" rendered="{!IsDownload}"  oncomplete="window.open('{!URL}', '_blank');"/>
+                    <apex:commandButton disabled="{!ps.VG_Tax_Not_Applicable__c}" rendered="{!(taxwList.size == 0)}" value="No Tax Applicable" action="{!NotApplicableTax}"/>
+                    
+                    <apex:pageMessage severity="Info" summary="No Taxes added" strength="3" rendered="{!(taxwList.size == 0 && !uploadTax)}"/>
+                    
+                    <apex:pageblock rendered="{!uploadTax}">
+                        <apex:pageBlockButtons >
+                            <apex:commandButton action="{!processUploadTax}" value="Done" />
+                            <apex:commandButton action="{!doneUploadTax}" value="Cancel"/>
+                        </apex:pageBlockButtons>
+                        
+                        <apex:pageBlockSection columns="1">
+                            
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel value="File" />
+                                <apex:inputFile id="file_File2" value="{!fileBody}" />
+                            </apex:pageBlockSectionItem>
+                            
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel value="Template File"/> 
+                                <apex:outputLink value="{!URLFOR($Action.Document.Download, taxTemplateFile.id)}" target="_blank">Download</apex:outputLink>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:pageblock>
+                    
+                    <apex:pageBlockTable value="{!taxwList}" var="taxw"  rendered="{!(taxwList.size > 0 && !uploadTax)}">
+                        <apex:column headerValue="Tax Type" style="width:100px;">
+                            <apex:inputField style="width:95px;" value="{!taxw.tax.VG_Tax_Type__c}" rendered="{!!taxw.show}"/>
+                            <apex:outputField value="{!taxw.tax.VG_Tax_Type__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column headerValue="Tax (%)" style="width:100px;">
+                            <apex:inputField style="width:95px;" value="{!taxw.tax.VG_Tax_Percent__c}" rendered="{!!taxw.show}"><apex:actionSupport event="onchange" action="{!thisTimeGWP}" reRender="pb1"/></apex:inputField>
+                            <apex:outputField value="{!taxw.tax.VG_Tax_Percent__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column rendered="{!ps.RecordType.Name!='Edison Motor'}" headerValue="Taxable Amount" style="width:300px;">
+                            <apex:inputField style="width:95px;" value="{!taxw.tax.VG_Taxable_Amount__c}" rendered="{!!taxw.show}"><apex:actionSupport event="onchange" action="{!thisTimeGWP}" reRender="pb1"/></apex:inputField>
+                            <apex:outputField value="{!taxw.tax.VG_Taxable_Amount__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column rendered="{!ps.RecordType.Name=='Edison Motor'}" headerValue="Taxable Amount" style="width:300px;">
+                            <apex:inputField style="width:95px;" value="{!taxw.tax.VG_Taxable_Amount__c}" rendered="{!!taxw.show}"><apex:actionSupport event="onchange" action="{!thisTimeGWP}" reRender="pb1"/></apex:inputField>
+                            <apex:outputField value="{!taxw.tax.VG_Taxable_Amount__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column headerValue="Tax Amount" style="width:300px;"  >
+                            <apex:outputText value="{0, number,###,##0.00}" rendered="{!!taxw.tax.VG_Override__c}"><apex:param value="{!taxw.GWP}" /></apex:outputText>
+                            <apex:inputText style="width:295px;" value="{!taxw.GWP}"  rendered="{!taxw.tax.VG_Override__c}"><apex:actionSupport event="onchange" action="{!thisTimeGWPOR}" reRender="pb1"><apex:param name="counter" assignTo="{!Index}"  value="{!taxw.counter}"/></apex:actionSupport></apex:inputText>
+                        </apex:column>                
+                        <apex:column rendered="{!ps.RecordType.Name=='VFP'}" headerValue="Tax Amount GWP 100%" style="width:300px;"  >
+                            <apex:outputText value="{0, number,###,##0.00}" rendered="{!ps.RecordType.Name=='VFP'}"><apex:param value="{!taxw.tax.VG_Tax_Amount_GWP_100__c}" /></apex:outputText>
+                        </apex:column>
+                        <apex:column headerValue="Tax Included" style="width:100px;"  >
+                            <apex:outputLabel rendered="{!(taxw.tax.VG_Tax_Administered_By__c=='Insured' && taxw.tax.VG_Tax_Paid_By__c=='Insurer') || (taxw.tax.VG_Tax_Administered_By__c=='Broker' && taxw.tax.VG_Tax_Paid_By__c=='Insurer') || (taxw.tax.VG_Tax_Administered_By__c=='Insurer' && taxw.tax.VG_Tax_Paid_By__c=='Insured')}"><input type="checkbox" checked="checked" disabled="true"/></apex:outputLabel>
+                            <apex:outputLabel rendered="{!!((taxw.tax.VG_Tax_Administered_By__c=='Insured' && taxw.tax.VG_Tax_Paid_By__c=='Insurer') || (taxw.tax.VG_Tax_Administered_By__c=='Broker' && taxw.tax.VG_Tax_Paid_By__c=='Insurer') || (taxw.tax.VG_Tax_Administered_By__c=='Insurer' && taxw.tax.VG_Tax_Paid_By__c=='Insured'))}"><input type="checkbox" disabled="true"/></apex:outputLabel>
+                        </apex:column>
+                        <apex:column style="width:100px;" headerValue="Tax Jurisdiction" rendered="{!(RecordType!='Imara' && RecordType!='Bridge' && RecordType!='VFP')}">
+                            <apex:inputField value="{!taxw.tax.VG_Tax_Jurisdiction__c}" rendered="{!!taxw.show}"/>
+                            <apex:outputField value="{!taxw.tax.VG_Tax_Jurisdiction__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column style="width:100px;" headerValue="Tax Jurisdiction" rendered="{!(RecordType=='Bridge' || RecordType=='VFP')}">
+                            <apex:selectList size="1" value="{!taxw.tax.VG_Tax_Jurisdiction__c}" rendered="{!!taxw.show}">
+                                <apex:selectOptions value="{!taxJurisdictionList}"/>
+                            </apex:selectList>
+                            <apex:outputField value="{!taxw.tax.VG_Tax_Jurisdiction__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column style="width:100px;" headerValue="Tax Jurisdiction" rendered="{!RecordType=='Imara'}">
+                            <apex:selectList size="1" value="{!taxw.tax.VG_Tax_Jurisdiction__c}" rendered="{!!taxw.show}">
+                                <apex:selectOptions value="{!taxJurisdictionList}"/>
+                            </apex:selectList>
+                            <apex:outputField value="{!taxw.tax.VG_Tax_Jurisdiction__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column style="width:100px;" headerValue="Tax Administered By" >
+                            <apex:inputField value="{!taxw.tax.VG_Tax_Administered_By__c}" rendered="{!!taxw.show}"><apex:actionSupport event="onchange" action="{!thisTimeGWP}" reRender="pb1"/></apex:inputField>
+                            <apex:outputField value="{!taxw.tax.VG_Tax_Administered_By__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column style="width:100px;" headerValue="Tax Paid By" >
+                            <apex:inputField value="{!taxw.tax.VG_Tax_Paid_By__c}" rendered="{!!taxw.show}"><apex:actionSupport event="onchange" action="{!thisTimeGWP}" reRender="pb1"/></apex:inputField>
+                            <apex:outputField value="{!taxw.tax.VG_Tax_Paid_By__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column style="width:100px;" headerValue="Comment" >
+                            <apex:inputField value="{!taxw.tax.VG_Comment__c}" rendered="{!!taxw.show}"/>
+                            <apex:outputField value="{!taxw.tax.VG_Comment__c}" rendered="{!taxw.show}"/>
+                        </apex:column>
+                        <apex:column style="width:100px;" >
+                            <apex:outputPanel rendered="{!!taxw.tax.VG_Is_Temp_Delete__c}">
+                                <apex:commandButton value="Remove" action="{!RemoveTax}" reRender="pb1" rendered="{!taxw.tax.VG_Policy_Schedule__r.Policy__r.Policy_Status__c!='Booked'}"><apex:param name="counter" assignTo="{!Index}"  value="{!taxw.counter}"/></apex:commandButton>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!taxw.tax.VG_Is_Temp_Delete__c}">
+                                <apex:outputLabel >Deleted</apex:outputLabel>
+                            </apex:outputPanel>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                    <apex:outputPanel rendered="{!(taxwList.size > 0 && !uploadTax)}">
+                        <b><div style="border:0px solid black;margin-left:190px;width:250px;float:left">Total Taxable Amount  : <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!totalTaxableAmount}"/></apex:outputText></div></b><b><div>Total Tax Amount  : <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!totalTaxGWP}"/></apex:outputText></div></b>
+                    </apex:outputPanel>         
+                </apex:pageBlock>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}" />
+                <apex:commandButton value="Finish" id="Submit" onClick="SubmitOnClick(this);" />
+                <apex:actionFunction name="doSubmit" action="{!finish}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

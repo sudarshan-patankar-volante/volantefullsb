@@ -1,0 +1,17 @@
+<apex:page controller="AddComponentDetailsController" showHeader="false" sidebar="false">
+    <apex:form >
+        <apex:pageBlock title="Add Component Details">
+            <apex:pageMessage severity="Info"  summary="No Components available..." strength="3" rendered="{!compList.size == 0}"/>
+            <apex:pageblockTable value="{!compList}" var="cw" rendered="{!compList.size > 0}">
+                <apex:column headerValue="Component Name">{!cw.compName}</apex:column>
+                <apex:column headerValue="Parameter1"><apex:inputText value="{!cw.para1}"/></apex:column>
+                <apex:column headerValue="Parameter2"><apex:inputText value="{!cw.para2}"/></apex:column>
+                <apex:column headerValue="Parameter3"><apex:inputText value="{!cw.para3}"/></apex:column>
+            </apex:pageblockTable>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!save}" rendered="{!compList.size > 0}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

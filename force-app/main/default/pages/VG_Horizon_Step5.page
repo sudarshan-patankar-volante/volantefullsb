@@ -1,0 +1,249 @@
+<apex:page controller="VG_HorizonStepsController" showHeader="false" sidebar="false">
+    
+    <head>
+        <style>
+            .disabled{
+            border: 1px solid #999999;
+            background-color: #dddddd;
+            color: #666666;
+            opacity: 0.65; 
+            cursor: not-allowed;
+            }
+        </style>
+        <script type="text/javascript">
+        function FinalCalc(RPid,EPid,PAid,TLPid){
+            var RP=document.getElementById(RPid).value;
+            //var EP=document.getElementById(EPid).value;
+            var PA=document.getElementById(PAid).value;
+            var TLP=RP+EP+PA;
+            document.getElementById(TLPid).innerHTML = TLP;
+        }
+        function SubmitOnClick (objSubmitBtn) {
+            
+            document.getElementById(objSubmitBtn.id).disabled = true;
+            document.getElementById(objSubmitBtn.id).classList.add("disabled");
+            objSubmitBtn.value = "Saving…";
+            doSubmit();
+        }
+        </script>
+    </head>
+    <body onload="FinalCalc('{!$Component.RP}','{!$Component.EP}','{!$Component.PA}','{!$Component.TLP}');">
+        
+        <apex:form >
+            <apex:pageblock tabStyle="Account" title="Summary" >
+                
+                <apex:pageMessages ></apex:pageMessages>
+                <apex:pageBlockSection columns="2" id="pbs1">
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Risk Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}" ><apex:param value="{!PSRiskPremium}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Brokerage</apex:outputLabel>
+                        <apex:inputText value="{!Brokerage}" Style="Width:197px;"><apex:actionSupport event="onchange" action="{!Calc}"  reRender="pbs1"  /></apex:inputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Endorsement Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!EndorsementPremium}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Overider</apex:outputLabel>
+                        <apex:inputText value="{!Overider}" Style="Width:197px;"><apex:actionSupport event="onchange" action="{!Calc}"  reRender="pbs1"  /></apex:inputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Premium Adjustment</apex:outputLabel>
+                        <apex:inputText id="PA" value="{!PremiumAdjustment}" Style="Width:197px;" ><apex:actionSupport event="onchange" action="{!Calc}"  reRender="pbs1"  /></apex:inputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Brokerage Amount</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!BrokerageAmount}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Total Layer Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}" id="TLP"><apex:param value="{!TotalLayerPremium}"/><apex:actionSupport event="onchange" action="{!Calc}"  reRender="pbs1"  /></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Overider Amount</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!OveriderAmount}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Written Share </apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                          
+                            <apex:inputText value="{!WrittenShare}" Style="Width:197px;"><apex:actionSupport event="onchange" action="{!Calc}"  reRender="pbs1"  /></apex:inputText>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Actual Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!ActualPremium}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Signed Share </apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                          
+                            <apex:inputText value="{!SignedShare}" Style="Width:197px;"><apex:actionSupport event="onchange" action="{!Calc}"  reRender="pbs1"  /></apex:inputText>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Fee Income</apex:outputLabel>
+                        <apex:inputText value="{!FeeIncome}" Style="Width:197px;"><apex:actionSupport event="onchange" action="{!Calc}"  reRender="pbs1"  /></apex:inputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Sum Insured</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!sumInsured}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Rate Change (%)</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                        <apex:inputText value="{!RateChange}"></apex:inputText>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Gross Written Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!GrossWrittenPremium}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Transactional Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!TransactionalPremium}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Gross Technical Loss Ratio (%)</apex:outputLabel>
+                        <apex:inputText value="{!TechnicalLossRatio}" Style="Width:197px;"><apex:actionSupport event="onchange" action="{!Calc}"  reRender="pbs1"  /></apex:inputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Rate On Line</apex:outputLabel>
+                        <apex:outputText value="{0, number,000.00}"><apex:param value="{!RateOnLine}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Technical Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!TechnicalPremium}"/></apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Split Type</apex:outputLabel>
+                        <apex:selectList value="{!ps.Split_Type__c}" size="1" style="width:200px;">
+                            <apex:selectOptions value="{!splitTypes}"></apex:selectOptions>
+                            <apex:actionSupport event="onchange" action="{!Calc}"  reRender="pbs1"  />
+                        </apex:selectList>
+                  </apex:pageBlockSectionItem>  
+                  <apex:pageBlockSectionItem rendered="{!ps.Split_Type__c == 'EEA'}">
+                        <apex:outputLabel >Entity</apex:outputLabel>
+                        <apex:selectList value="{!ps.VG_Volante_Entities__c}" size="1" style="width:100px;">
+                            <apex:selectOptions value="{!EEAVolanteEntity_Select}"></apex:selectOptions>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Capacity Paper</apex:outputLabel>
+                        <apex:selectList value="{!CapacityPaper}" size="1" style="width:200px;">
+                            <apex:selectOption itemValue="--None--" itemLabel="--None--"/>
+                            <apex:selectOption itemValue="Greenlight Re" itemLabel="Greenlight Re"/>
+                            <apex:selectOption itemValue="Fidelis" itemLabel="Fidelis"/>   
+                            <apex:selectOption itemValue="AGCS" itemLabel="AGCS"/>                                                                                     
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Included Risk Details" columns="1">
+                    <apex:pageBlockTable value="{!rc }" var="rc">
+                        
+                        <apex:column title="Currency" >
+                            <apex:facet name="header"><h3>Currency</h3></apex:facet>
+                            <apex:outputField value="{!rc.CurrencyIsoCode}"/>
+                        </apex:column>
+                        
+                        <apex:column title="Rate Type">
+                            <apex:facet name="header"><h3>Rate Type</h3></apex:facet>
+                            <apex:outputField value="{!rc.VG_Rate_Type__c}"/>
+                        </apex:column>
+                        
+                        <apex:column title="No of Reinstatements">
+                            <apex:facet name="header"><h3>No of Reinstatements</h3></apex:facet>
+                            <apex:outputField value="{!rc.VG_No_of_Reinstatements__c}"/>
+                        </apex:column>
+                        
+                        <apex:column title="Layer">
+                            <apex:facet name="header"><h3>Layer</h3></apex:facet>
+                            <apex:outputField value="{!rc.VG_Layer__c}"/>
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Included Risk Ratings" columns="1">
+                    <apex:pageBlockTable value="{!rr }" var="rr">
+                        
+                        <apex:column title="Coverage" >
+                            <apex:facet name="header"><h3>Coverage</h3></apex:facet>
+                            <apex:outputField value="{!rr.VG_Coverage__c}"/>
+                        </apex:column>
+                        
+                        <apex:column title="Deductible" rendered="{!Product!='AGG Stop Loss'}">
+                            <apex:facet name="header"><h3>Deductible</h3></apex:facet>
+                            <apex:outputField value="{!rr.VG_Deductible__c}"/>
+                        </apex:column>
+                        
+                        <apex:column title="Limit" rendered="{!Product!='AGG Stop Loss'}">
+                            <apex:facet name="header"><h3>Limit</h3></apex:facet>
+                            <apex:outputField value="{!rr.VG_Limit__c}"/>
+                        </apex:column>
+                        
+                        <apex:column title="Aggregation" rendered="{!Product!='AGG Stop Loss'}">
+                            <apex:facet name="header"><h3>Aggregate</h3></apex:facet>
+                            <apex:outputField value="{!rr.VG_Aggregate__c}"/>
+                        </apex:column>
+                        
+                        <apex:column title="Deductible" rendered="{!Product=='AGG Stop Loss'}">
+                            <apex:facet name="header"><h3>Deductible</h3></apex:facet>
+                            <apex:outputField value="{!rr.VG_Deductible_Precent__c}"/>
+                        </apex:column>
+                        
+                        <apex:column title="Limit" rendered="{!Product=='AGG Stop Loss'}">
+                            <apex:facet name="header"><h3>Limit</h3></apex:facet>
+                            <apex:outputField value="{!rr.VG_Limit_Precent__c}"/>
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Included Endorsements" columns="1">
+                    
+                    <apex:pageMessage severity="Info" summary="No Endorsements added" strength="3" rendered="{!existingEndorsements.size == 0}"/>
+                    <apex:pageBlockTable value="{!existingEndorsements}" var="EN" id="pbt1" rendered="{!existingEndorsements.size != 0}">
+                        
+                        <apex:column headerValue="Description" width="90%">
+                            <apex:outputField styleClass="OutputField" id="ILETEDSsE" value="{!EN.VG_Title__c }" style="width:950px;"/><br/><br/>
+                            <apex:outputField value="{!EN.VG_Endorsement_Details__c}" /><br/><br/>
+                        </apex:column>
+                        
+                        <apex:column headerValue="Annual Premium" width="20%">
+                            <apex:outputField value="{!EN.VG_Premium__c}" />
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockButtons location="Top" >
+                    <apex:commandButton value="Previous" action="{!gotostep4b}"/><apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/>
+                    <apex:commandButton value="Finish" id="Submit" onClick="SubmitOnClick(this);" />
+                    <apex:actionFunction name="doSubmit" action="{!Finish}" />
+                </apex:pageBlockButtons>
+                
+            </apex:pageblock>
+            
+        </apex:form>
+        
+    </body>
+    
+</apex:page>

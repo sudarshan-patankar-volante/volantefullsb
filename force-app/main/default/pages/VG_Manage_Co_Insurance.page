@@ -1,0 +1,29 @@
+<apex:page controller="VG_ManageCoInsuranceController">
+    <apex:form >
+        <apex:pageBlock title="Manage Co-Insurance {!ps.Name}" id="pb1">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!cancel}" value="Cancel" />
+                <apex:commandButton action="{!finish}" value="Finish" />
+            </apex:pageBlockButtons>
+            <div align="center"><apex:commandButton action="{!addCoInsurance}" value="Add Co-Insurance"  /></div>
+            <apex:pageBlockTable value="{!COIList}" var="coi" id="pgt1"> 
+                <apex:column headerValue="Co-Insurance Name" value="{!coi.Name}"/>
+                <apex:column headerValue="Section No" rendered="{!!coi.IsBase}">
+                    <apex:selectList id="s" size="1" value="{!coi.SectionNo}">
+                        <apex:selectOptions value="{!sectionNoList}"/>
+                    </apex:selectList>
+                </apex:column>
+                <apex:column headerValue="Section No" rendered="{!coi.IsBase}">
+                   <apex:outputField value="{!ps.VG_Capacity_Paper__c}"/>
+                </apex:column>
+                <apex:column headerValue="Share (%)" >
+                    <apex:inputText value="{!coi.sharePrecent }"/>
+                </apex:column>
+                <apex:column >
+                    <apex:commandButton value="Remove" rendered="{!!coi.IsBase}" action="{!removeCoInsurance}" reRender="pb1"><apex:param assignTo="{!Index}" value="{!coi.counter}" name="counter"/></apex:commandButton>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

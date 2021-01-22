@@ -1,0 +1,1297 @@
+<apex:page contentType="application/msword#BridgeQuoteSheet.doc" cache="true" showHeader="false"  controller="VG_LSDocumentController"  standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"> 
+    <html xmlns:w="urn:schemas-microsoft-com:office:word">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+        <style type="text/css" media="print">    
+            @page {
+            size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            
+            } 
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Font_OpenSan_CondLight, '/root/to/OpenSans-CondLight.ttf')});
+            }
+            
+            body{
+                font-family: Open Sans Condensed Light;              
+            }
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Doc_Header_Font, '/root/to/OpenSans-CondLight.ttf')});
+            }
+           
+            #header{
+                font-family: Open Sans Condensed Light;
+                font-size:30.0pt;
+            }
+            @page footer{
+            size:8.27in 11.69in;
+            margin:1in 0in 0.8in 0in;
+            mso-header-margin:0.5in;
+            mso-footer-margin:0in;
+            mso-pagination:widow-orphan;
+            mso-paper-source:0;
+            
+            }
+            div.footer
+            {page:footer;}
+            
+            #lasttable {
+            border-collapse:collapse;
+            border-color:#ADB5B0;
+            }
+            
+            .tableborder{
+                border-bottom: 2px solid #004040;
+            }
+        </style>
+        
+        <body>
+            
+            <apex:outputText value="{!PrintView}" escape="false"/>
+           <div class="footer">
+                <br/>
+              <div style="margin-left:465px;width:370px;height:100px;" id="h1">
+                    <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                </div>
+                <br/><br/>
+                <table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+                    <tbody>
+                        <tr style="height:4.4pt;">
+                            <td width="15" valign="bottom" style="width:15.0pt;padding:
+                                                                  0in 0in 0in 0in;height:4.4pt" rowspan="13">
+                                 <apex:image url="{!MF}" style=" margin-left:30px;"/>
+                            </td>
+                            <td width="25" valign="bottom" style="width:89.0pt;padding:0in 0in 0in 0in;
+                                                                  height:4.4pt">
+                            </td>
+                             <td width="408" colspan="4" rowspan="7" valign="bottom" style="width:291.0pt; padding:0in 0in 0in 0in;height:4.4pt">
+                                
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            99%;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span id="header" style="font-size:21.0pt;line-height:99%;
+                                                                                                                                                 color:#004040"><b>Quote</b></span></p>
+                                                                                                                                                                                                                                                                   
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>            
+                <div  style="margin-left:155px;margin-right:1.0in;font-size: 9.0pt;">
+                   <table class="tableborder"  style="color:#004040;margin-right:1.0in;border-top: 2px solid #004040;">
+                    
+                         <tr style="height:3.95pt;">
+                            <td width="245">                                
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Policy Number:</b></span>
+                            </td>
+                            <td width="275"><span style="font-size:
+                                                 9.0pt;color:#004040">{!pol.Name}</span>                           
+                            </td>
+                        </tr>                      
+                </Table>
+                 <table class="tableborder" style="color:#004040;margin-right:1.0in;">
+                    
+                         <tr style="height:3.95pt;">
+                            <td width="245">                                
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Broker:</b></span>
+                            </td>
+                            <td width="275"><span style="font-size:
+                                                 9.0pt;color:#004040">{!pol.Broker_Name__r.Name}</span>
+                             
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            <td width="245">                                
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Broker Address:</b></span>
+                             </td>
+                            <td width="275"><span style="font-size:
+                                                 9.0pt;color:#004040"><apex:outputLabel rendered="{!pol.Broker_Name__r.ShippingStreet!=null || pol.Broker_Name__r.ShippingCity!=null || pol.Broker_Name__r.ShippingCountry!=null}">{!pol.Broker_Name__r.ShippingStreet},&nbsp;{!pol.Broker_Name__r.ShippingCity},&nbsp;{!pol.Broker_Name__r.ShippingState},&nbsp;{!pol.Broker_Name__r.ShippingCountry},&nbsp;{!pol.Broker_Name__r.ShippingPostalCode}</apex:outputLabel></span>
+                                                              
+                            </td>
+                        </tr>                   
+                </Table>
+                <table class="tableborder" style="color:#004040;margin-right:1.0in;">
+                    <tr style="height:3.95pt;">
+                            <td width="245">                                
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Your Name:</b></span>
+                                    
+                             </td>
+                            <td width="275"><span style="font-size:
+                                                 9.0pt;color:#004040">{!pol.Insured__r.Name}</span>
+                            </td>
+                    </tr> 
+                   <tr style="height:3.95pt;">
+                            <td width="245">                                
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Risk Address:</b></span>
+                                    
+                            </td>
+                            <td width="275"><span style="font-size:
+                                                 9.0pt;color:#004040"><apex:outputLabel rendered="{!pol.Insured__r.ShippingStreet!=null || pol.Insured__r.ShippingCity!=null || pol.Insured__r.ShippingState!=null || pol.Insured__r.ShippingCountry!=null}">{!pol.Insured__r.ShippingStreet},&nbsp;{!pol.Insured__r.ShippingCity},&nbsp;{!pol.Insured__r.ShippingState},&nbsp;{!pol.Insured__r.ShippingCountry},&nbsp;{!pol.Insured__r.ShippingPostalCode}</apex:outputLabel></span>
+                            </td>
+                    </tr> 
+                    <tr style="height:3.95pt;">
+                            <td width="245">                                
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Correspondence Address:</b></span>                                    
+                            </td>
+                            <td width="275"><span style="font-size:
+                                                 9.0pt;color:#004040"><apex:outputLabel rendered="{!pol.Insured__r.BillingStreet!=null || pol.Insured__r.BillingCity!=null || pol.Insured__r.BillingState!=null || pol.Insured__r.BillingCountry!=null}">{!pol.Insured__r.BillingStreet},&nbsp;{!pol.Insured__r.BillingCity},&nbsp;{!pol.Insured__r.BillingState},&nbsp;{!pol.Insured__r.BillingCountry},&nbsp;{!pol.Insured__r.BillingPostalCode}</apex:outputLabel></span>
+                            </td>
+                  </tr> 
+            
+               </table> 
+               <table class="tableborder" style="color:#004040;margin-right:1.0in;">
+                    
+                         <tr style="height:3.95pt;">
+                            <td width="245">                                
+                                <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Business Description:</b></span>
+                            </td>
+                            <td width="275"><span style="font-size:
+                                                 9.0pt;color:#004040">{!pol.Insured__r.Business_Description__c}</span>
+                            </td>
+                        </tr>                          
+                 </Table>
+                 <table class="tableborder" style="color:#004040;margin-right:1.0in;">                    
+                        <tr style="height:3.95pt;">
+                            <td width="245">                                
+                                <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Date of Issue:</b></span>
+
+                                                 
+                             </td>
+                             <td width="275">                                
+                                <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040">{!DAY(Today())}/{!Month(Today())}/{!Year(Today())}</span>                                                            
+                            </td>
+                       </tr>                         
+                  </Table>
+                  <table class="tableborder" style="color:#004040;margin-right:1.0in;">                  
+                       <tr style="height:3.95pt;">
+                           <td width="245">                                
+                                <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Period of Insurance:</b></span>
+                            </td>
+                            <td width="275">                                
+                                <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040">From:  00:00 &nbsp;&nbsp;<apex:outputLabel rendered="{!pol.VG_Inception_Date__c!=null}">{!DAY(pol.VG_Inception_Date__c)}/{!Month(pol.VG_Inception_Date__c)}/{!Year(pol.VG_Inception_Date__c)}</apex:outputLabel> To: 23: 59  &nbsp;&nbsp;<apex:outputLabel rendered="{!pol.VG_Expiry_Date__c!=null}">{!DAY(pol.VG_Expiry_Date__c)}/{!MONTH(pol.VG_Expiry_Date__c)}/{!YEAR(pol.VG_Expiry_Date__c)}</apex:outputLabel><br/>Both dates inclusive, Local Standard Time</span>                                                
+                            </td>
+                        </tr>                       
+                    </Table> 
+                    <br/>
+                 <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                   <apex:outputPanel >
+                      <tr style="">
+                          <td width="245" style=""><span style="font-size:
+                                                 9.0pt;color:#004040">Section 1 – Property Damage</span></td>
+                          <td width="275" style="text-align:left"><span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><apex:outputLabel value="{!IF(pdText = 'Covered','Insured',If(pdText = 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></span></td>
+                      </tr>
+                       <tr style="">
+                          <td width="245">Section 2 – Business Interruption</td>
+                          <td width="275" style="text-align:left"><apex:outputLabel value="{!IF(BItext= 'Covered','Insured',If(BItext= 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></td>
+                      </tr>
+                      <tr style="">
+                          <td width="245"> Section 3 – Loss of Licence</td>
+                          <td width="275" style="text-align:left"><apex:outputLabel value="{!IF(LLtext= 'Covered','Insured',If(LLtext= 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></td>
+                      </tr>
+                      <tr style="">
+                          <td width="245">Section 4 – Goods In Transit</td>
+                          <td width="275" style="text-align:left"><apex:outputLabel value="{!IF(GDtext= 'Covered','Insured',If(GDtext= 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></td>
+                      </tr>
+                      <tr style="">
+                          <td width="245">Section 5 – Money and Assault</td>
+                          <td width="275" style="text-align:left"><apex:outputLabel value="{!IF(MAtext= 'Covered','Insured',If(MAtext= 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></td>
+                      </tr>
+                      <tr style="">
+                          <td width="245">Section 6 – Fidelity</td>
+                          <td width="275" style="text-align:left"><apex:outputLabel value="{!IF(FLtext= 'Covered','Insured',If(FLtext= 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></td>
+                      </tr>                      
+                  </apex:outputPanel>
+                  <apex:outputPanel >
+                      <tr style="">
+                          <td width="245">Section 7 – Employers’ Liability</td>
+                          <td width="275" style="text-align:left"><apex:outputLabel value="{!IF(ELtext= 'Covered','Insured',If(ELtext= 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></td>
+                      </tr>
+                      <tr style="">
+                          <td width="245">Section 8 – Public and Products Liability</td>
+                          <td width="275" style="text-align:left"><apex:outputLabel value="{!IF(PPLtext= 'Covered','Insured',If(PPLtext= 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></td>
+                      </tr>
+                      <tr style="">
+                          <td width="245">Section 9 – Professional Indemnity</td>
+                          <td width="275" style="text-align:left"><apex:outputLabel value="{!IF(PItext= 'Covered','Insured',If(PItext= 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></td>
+                      </tr>
+                    </apex:outputPanel>
+                    <apex:outputPanel >
+                      <tr style="">
+                          <td width="245">Section 10 – Directors’ and Officers’ Liability</td>
+                          <td width="275" style="text-align:left"><apex:outputLabel value="{!IF(DOtext= 'Covered','Insured',If(DOtext = 'Not Covered','Not Insured','Not Insured'))}"></apex:outputLabel></td>
+                      </tr>
+                    </apex:outputPanel>  
+                  
+                  </Table>
+                   <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                          <tr style="">
+                              <td width="245"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040"><b>Premium:</b></span> </td>
+                              <td width="175" style="text-align:left"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">Policy Premium</span></td>
+                              <td width="100" style="text-align:right"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!TotalGwp}"/></apex:outputText></span></td>
+                          </tr>
+                          <tr style="">
+                              <td width="245"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040"></span> </td>
+                              <td width="175" style="text-align:left"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">Insurance Premium Tax</span></td>
+                              <td width="100" style="text-align:right"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!TotalIpt}"/></apex:outputText></span></td>
+                          </tr>
+                          <tr style="">
+                              <td width="245"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040"></span> </td>
+                              <td width="175" style="text-align:left"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">Administration Fee</span></td>
+                              <td width="100" style="text-align:right"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!TotalFeeIncome}"/></apex:outputText></span></td>
+                          </tr>
+                          <tr style="">
+                              <td width="245"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040"></span> </td>
+                              <td width="175" style="text-align:left"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">Total</span></td>
+                              <td width="100" style="text-align:right"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!TotalGwp_Ipt_FIncome}"/></apex:outputText></span></td>
+                          </tr>                                            
+                 </table>
+                 <br/>
+                 <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                      <tr style="">
+                              <td width="245"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040"><b>Schedule of Insurers:</b> </span> </td>
+                              <td width="175" style="text-align:left"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">Liberty Mutual Insurance Europe SE 100%</span></td>
+                              <td width="100" style="text-align:right"><span style="font-size:
+                                                     9.0pt;width:25px;color:#004040">UMR: B087519V02Z5511</span></td>
+                      </tr>                             
+               </table>
+               <div class="tableborder" style="color:#004040;font-size:9.0pt;">
+               This Schedule is an important document that should be read in conjunction with your policy document.
+                    It shows the sections you have chosen to insure</div>
+              </div>            
+               <apex:outputPanel rendered="{!PropertyDamage || sItem}">
+               <div  style="margin-left:155px;margin-right:1.0in;font-size: 9.0pt;">
+                   <br style="page-break-before:always;" />
+                   <br/>
+                    <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/><br/>
+                    <div class="tableborder" style="color:#004040;font-size:9.0pt;">
+                    <b>Note the words "Not Insured" are inserted against all coverages which are not covered by this Policy</b>
+                    </div>
+                   <apex:outputPanel rendered="{!PropertyDamage}">
+                    <table style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="452"><b>Section 1 - Property Damage</b> </td>
+                          <td width="75" style="text-align:right"><b><apex:outputLabel value="{!IF(pdText = 'Covered','Insured',If(pdText = 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr>
+                       <tr style="">
+                          <td width="452">Basis of cover: Reinstatement Day One</td>
+                          <td width="75" style="text-align:right"></td>
+                      </tr>                        
+                    </table>
+                    <br/>
+                 <table style="color:#004040;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="325"><b>Description:</b> </td>
+                          <td width="100" style="text-align:left"><b>Declared Value</b>   </td>
+                          <td width="100" style="text-align:right"><b>Sum Insured </b></td>
+                      </tr>
+               
+                 <apex:repeat value="{!psaList}" var="psa">                 
+                     <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Buildings'}">
+                       <tr style="">
+                          <td width="325">Buildings</td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c*(1+sumInsured )}"/></apex:outputText>   </td>
+                      </tr>
+                      </apex:outputPanel>
+                      <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Buildings - Clubhouse'}">
+                       <tr style="">
+                          <td width="325">Buildings - Clubhouse</td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c*(1+sumInsured )}"/></apex:outputText>   </td>
+                      </tr>
+                      </apex:outputPanel>
+                      <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Buildings - Outbuildings'}">
+                           <tr style="">
+                              <td width="325">Buildings – outbuildings / storage containers</td>
+                              <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                              <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c*(1+sumInsured )}"/></apex:outputText>  </td>
+                          </tr>
+                      </apex:outputPanel>
+                      <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Buildings - Stands'}">
+                       <tr style="">
+                          <td width="325">Buildings – Stands</td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c*(1+sumInsured )}"/></apex:outputText>  </td>
+                      </tr>
+                       </apex:outputPanel>
+                      <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Machinery, Plant and All Other Contents'}">
+                       <tr style="">
+                          <td width="325">Machinery, Plant and All Other Contents   </td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c*(1+sumInsured )}"/></apex:outputText> </td>
+                      </tr>
+                       </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Floodlights'}">
+                       <tr style="">
+                          <td width="325">Floodlights</td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c*(1+sumInsured )}"/></apex:outputText>  </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Computer and Electronic Equipment'}">
+                       <tr style="">
+                          <td width="325">Computer and Electronic Equipment </td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c*(1+sumInsured )}"/></apex:outputText>  </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Gaming, Amusement and Entertainment Equipment'}">
+                       <tr style="">
+                          <td width="325">Gaming, Amusement and Entertainment Equipment</td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c*(1+sumInsured )}"/></apex:outputText>  </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Irrigation Equipment'}">
+                      <tr style="">
+                          <td width="325">Irrigation Equipment</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>  </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Playing Surfaces'}">
+                       <tr style="">
+                          <td width="325">Playing Surfaces</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>   </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Cups and Trophies'}">
+                       <tr style="">
+                          <td width="325">Cups and Trophies</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>  </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Rent Payable'}">
+                       <tr style="">
+                          <td width="325">Rent Payable</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>   </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Plate Glass'}">
+                       <tr style="">
+                          <td width="325">Plate Glass</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>  </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Stock of Food & General'}">
+                       <tr style="">
+                          <td width="325">Stock in Trade</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Stock of Wines, Spirits & Tobacco'}">
+                       <tr style="">
+                          <td width="325">Stock of Wines, Spirits &amp; Tobacco</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Sightscreens and Scoreboards'}">
+                       <tr style="">
+                          <td width="325">Sightscreens and Scoreboards</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>  </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Sporting kit and Equipment'}">
+                       <tr style="">
+                          <td width="325">Sporting kit and Equipment</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>  </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Detioration of Stock'}">
+                       <tr style="">
+                          <td width="325">Deterioration of Stock</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>  </td>
+                      </tr>
+                      </apex:outputPanel>
+                       <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Personal Effects'}">
+                       <tr style="">
+                          <td width="325">Personal Effects</td>
+                          <td width="100" style="text-align:right"></td>
+                          <td width="100" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>  </td>
+                      </tr> 
+                      </apex:outputPanel>
+                                                                     
+                  </apex:repeat> 
+                          
+               </table>
+              </apex:outputPanel>   
+                 <br/>
+               <apex:outputPanel rendered="{!sItem}">
+               <table style="color:#004040;font-size:9.0pt;">                               
+                      <tr style="">
+                          <td width="325"><b>Specified Items </b> </td>
+                          <td width="115" style="text-align:left"> <b> Territorial Limits</b></td>
+                          <td width="85" style="text-align:right"><b> </b> </td>
+                      </tr>
+                       <apex:repeat value="{!psaList}" var="psa">
+                     <apex:outputPanel rendered="{!psa.VG_Coverage__c=='Specified Items'}"> 
+                      <tr style="">
+                          <td width="325"><apex:outputPanel rendered="{!Periltext}"> {!psa.VG_Perils_Text__c}</apex:outputPanel></td>
+                          <td width="115" style="text-align:left;"><apex:outputPanel rendered="{!Periltext}"> {!psa.VG_Territorial_Limits__c}</apex:outputPanel></td>
+                          <td width="85" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></td>
+                      </tr>
+                      </apex:outputPanel>
+                      </apex:repeat>               
+               </table>   
+                 <br/>
+               <table style="color:#004040;font-size:9.0pt;">
+                   <tr style="">
+                          <td width="175">Limit A: </td>
+                          <td width="375">The Premises only, </td>                         
+                   </tr>
+                   <tr style="">
+                          <td width="175">Limit B: </td>
+                          <td width="375">Anywhere in Great Britain, Northern Ireland, the Isle of Man and the Channel Islands</td>                         
+                   </tr>
+                   <tr style="">
+                          <td width="175">Limit C: </td>
+                          <td width="375">Anywhere in Europe which means anywhere in Great Britain, Northern Ireland, the Isle of Man the Channel Islands and countries of the European Union.</td>                         
+                   </tr>
+                   <tr style="">
+                          <td width="175">Limit D: </td>
+                          <td width="375">Anywhere in the world. </td>                         
+                   </tr>
+                   
+               </table>
+               <br/>
+               <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                   <tr style="">
+                          <td width="355"><b>Additional covers</b> </td>
+                          <td width="195"> </td>                         
+                   </tr>
+                    <tr style="">
+                          <td width="355">Playing Surfaces</td>
+                          <td width="195"> <apex:outputLabel value="{!PStext}"></apex:outputLabel></td>                         
+                   </tr>
+                    <tr style="">
+                          <td width="355">Subsidence </td>
+                          <td width="195"><apex:outputLabel value="{!SCtext}"></apex:outputLabel></td>                         
+                   </tr>
+                    <tr style="">
+                          <td width="355">Terrorism </td>
+                          <td width="195"><apex:outputLabel value="{!AEtext}"></apex:outputLabel></td>                         
+                   </tr>
+                 </table> 
+                  <br/>
+                 </apex:outputPanel>  
+              </div>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!BusinessInter || LossLicence || GoodsinTrans || money}">
+             <div  style="margin-left:155px;margin-right:1.0in;font-size: 9.0pt;">
+                   <br style="page-break-before:always;" />
+                   <br/>
+                    <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/>
+                  <apex:outputPanel rendered="{!BusinessInter}">
+                     <table style="color:#004040;margin-right:1.0in;font-size:9.0pt;border-top: 2px solid #004040;">
+                      <tr style="">
+                          <td width="402" style=""><b>Section 2 - Business Interruption</b> </td>
+                          <td width="125" style="text-align:right;"><b><apex:outputLabel value="{!IF(BItext= 'Covered','Insured',If(BItext= 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr>                                            
+                    </table>
+                    <br/>
+                 <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="225"><b>Description:</b> </td>
+                          <td width="150" style="text-align:center"><b>Maximum Indemnity Period</b>   </td>
+                          <td width="150" style="text-align:right"><b>Limit of Indemnity /<br/>Sum Insured </b></td>
+                      </tr> 
+                      <apex:repeat value="{!psaList}" var="psa">
+                      <apex:outputPanel rendered="{!psa.VG_Perils__c=='Gross Profit'}"> 
+                      <tr style="">
+                          <td width="225">Gross Profit </td>
+                          <td width="150" style="text-align:center">{!GPtext} </td>
+                          <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                      </tr> 
+                     </apex:outputPanel>
+                     <apex:outputPanel rendered="{!psa.VG_Perils__c=='Gross Revenue'}"> 
+                      <tr style="">
+                          <td width="225">Gross Revenue </td>
+                          <td width="150" style="text-align:center;">{!GRtext} </td>
+                          <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText></td>
+                      </tr> 
+                     </apex:outputPanel>
+                     <apex:outputPanel rendered="{!psa.VG_Perils__c=='Increased Cost of Working'}">                                           
+                      <tr style="">
+                          <td width="225">Increased Cost of Working </td>
+                          <td width="150" style="text-align:center;">{!ICWtext} </td>
+                          <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText></td>
+                      </tr> 
+                     </apex:outputPanel>
+                     <apex:outputPanel rendered="{!psa.VG_Perils__c=='Additional Increased cost of working'}">                    
+                      <tr style="">
+                          <td width="225"> Additional Increased Cost of Working</td>
+                          <td width="150" style="text-align:center">{!AICWtext}</td>
+                          <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText></td>
+                      </tr>
+                      </apex:outputPanel>
+                     <apex:outputPanel rendered="{!BusinessInter && psa.VG_Perils__c=='Rent Receivable'}">                      
+                      <tr style="">
+                          <td width="225">Rent Receivable</td>
+                          <td width="150" style="text-align:center">{!RRtext} </td>
+                          <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                      </tr> 
+                     </apex:outputPanel>
+                     <apex:outputPanel rendered="{!psa.VG_Perils__c=='Book Debts'}">                      
+                      <tr style="">
+                          <td width="225">Book Debts  </td>
+                          <td width="150" style="text-align:center">{!BDtext} </td>
+                          <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                      </tr> 
+                    </apex:outputPanel>
+                    </apex:repeat> 
+                   </table>
+                </apex:outputPanel>
+                
+                
+                
+                
+                
+                <apex:outputPanel rendered="{!LossLicence}">
+                   <table class="tableborder" style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="402" style=""><b>Section 3 - Loss of Licence </b> </td>
+                          <td width="125" style="text-align:right;"><b><apex:outputLabel value="{!IF(LLtext= 'Covered','Insured',If(LLtext= 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr>  
+                      <br/>
+                     <tr style="">
+                          <td width="402"><b>Description</b></td>
+                          <td width="125" style="text-align:right"><b>Limit of Liability</b></td>
+                      </tr>  
+                    <apex:repeat value="{!psaList}" var="psa"> 
+                    <apex:outputPanel rendered="{!psa.VG_Perils__c=='Loss of License(Per Premises)'}">
+                       <tr style="">
+                          <td width="402">Loss of License - Per Premises</td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText> </td>
+                      </tr>  
+                    </apex:outputPanel>
+                    </apex:repeat>                      
+                    </table>
+                  </apex:outputPanel>
+                   <apex:outputPanel rendered="{!GoodsinTrans}">
+                     <table class="tableborder" style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="402"><b>Section 4 - Goods In Transit    </b> </td>
+                          <td width="125" style="text-align:right"><b><apex:outputLabel value="{!IF(GDtext= 'Covered','Insured',If(GDtext= 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr>
+                      <br/>
+                      <tr style="">
+                          <td width="402"><b>Description</b></td>
+                          <td width="125" style="text-align:right"><b>Limit of Liability</b></td>
+                      </tr>   
+                      <apex:repeat value="{!psaList}" var="psa">
+                      <apex:outputPanel rendered="{!psa.VG_Perils__c=='Any one Transit'}">
+                       <tr style="">
+                          <td width="402">Any one Transit   </td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></td>
+                      </tr>  
+                    </apex:outputPanel> 
+                    </apex:repeat>                     
+                    </table>
+                  </apex:outputPanel>
+                 <apex:outputPanel rendered="{!money}">
+                   <table style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="402" style=""><b>Section 5 - Money and Assault    </b> </td>
+                          <td width="125" style="text-align:right;"><b><apex:outputLabel value="{!IF(MAtext= 'Covered','Insured',If(MAtext= 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr><br/>
+                      <tr style="">
+                          <td width="402"><b>Description</b></td>
+                          <td width="125" style="text-align:right"><b>Limit of Liability</b></td>
+                      </tr>   
+                       <tr style="">
+                          <td width="402"><b>Money </b></td>
+                          <td width="125" style="text-align:right"></td>
+                      </tr>
+                   </table>
+                   
+                   <table style="color:#004040;margin-right:1.0in;font-size:8.0pt;"> 
+                   <apex:repeat value="{!psaList}" var="psa">
+                   <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Business Hours' && !psaPerilsAccess['Money in Safes']}">
+                      <tr style="">
+                          <td width="1" align="top" valign="top"><b>1.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the Premises during business hours:</p></td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psaPerils['Business Hours']}"/></apex:outputText></td>
+                      </tr> 
+                      </apex:outputPanel>
+                    </apex:repeat> 
+                     
+                       <apex:repeat value="{!psaList}" var="psa">             
+                    <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Money in Safes' && !psaPerilsAccess['Business Hours']}">
+                      <tr style="">
+                          <td width="1" align="top" valign="top"><b>2.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the Premises in specified locked safe(s) or strongroom(s) out of                 
+                                       business hours which have been approved by Us as set out below:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Safe 1: TBC</p>                          
+                      </td>
+                       <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psaPerils['Money in Safes']}"/></apex:outputText></td>                     
+                     </tr> 
+                    </apex:outputPanel>
+                     </apex:repeat> 
+                     <apex:variable var="s" value="{!1}"/>
+                      <apex:repeat value="{!psaList}" var="psa">  
+                     
+                     <apex:outputPanel rendered="{!(psaPerilsAccess['Business Hours'] && psaPerilsAccess['Money in Safes'] && s==1)}">
+                          
+                          <apex:variable var="s" value="{!2}"/>
+                          <tr style="">
+                              <td width="1" align="top" valign="top"><b>1.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                      text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the Premises during business hours:</p></td>
+                              <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psaPerils['Business Hours']}"/></apex:outputText></td>
+                          </tr> 
+                          <tr style="">
+                              <td width="1" align="top" valign="top"><b>2.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                      text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the Premises in specified locked safe(s) or strongroom(s) out of                 
+                                           business hours which have been approved by Us as set out below:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Safe 1: TBC</p>                          
+                          </td>
+                           <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psaPerils['Money in Safes']}"/></apex:outputText></td>
+                         </tr> 
+                         
+                    </apex:outputPanel>                  
+                    </apex:repeat>
+                       <tr style="">
+                          <td width="1" align="top" valign="top"><b>3.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the Premises in any other safe or strongroom out of Business Hours:</p></td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;1,000</td>
+                      </tr>   
+                       <tr style="">
+                          <td width="4" align="top" valign="top"><b>4.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the Premises not in a locked Safe or strongroom out of Business Hours:</p></td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;250</td>
+                      </tr> 
+                    <apex:repeat value="{!psaList}" var="psa">
+                    <apex:outputPanel rendered="{!psa.VG_Perils__c== 'In transit (employees)'}">
+                       <tr style="">
+                          <td width="1" align="top" valign="top"><b>5.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Transit, not in the Premises and in the custody of an Employee:</p> </td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></td>
+                      </tr> 
+                     </apex:outputPanel>
+                     <apex:outputPanel rendered="{!psa.VG_Perils__c== 'In transit (security co.)'}">
+                       <tr style="">
+                          <td width="1" align="top" valign="top"><b>6.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Transit, not in the Premises and in the custody of any authorised Security Carrier</p> </td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></td>
+                      </tr> 
+                      </apex:outputPanel>
+                     </apex:repeat>
+                       <tr style="">
+                          <td width="1" align="top" valign="top"><b>7.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deposited in a bank night safe </p></td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!maxSumInsured}"/></apex:outputText></td>
+                      </tr>   
+                       <tr style="">
+                          <td width="1" align="top" valign="top"><b>8.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whilst in the residence of any principal or Employee authorised by You in a locked safe:</p></td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;500</td>
+                      </tr> 
+                       <tr style="">
+                          <td width="1" align="top" valign="top"><b>9.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In gaming machines and ATMs:   </p> </td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;500</td>
+                      </tr> 
+                       <tr style="">
+                          <td width="1" align="top" valign="top"><b>10.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non-negotiable instruments comprising of crossed cheques, crossed national giro 
+                            payments orders crossed postal or money orders, unused National Insurance Stamps, 
+                            premium bonds, credit card or debit card vouchers, crossed bankers' drafts or VAT 
+                            purchase invoices</p>
+                         </td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;250,000</td>
+                     </tr> 
+                      
+                      <tr style="">
+                          <td width="4" align="top" valign="top"><b>11.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damage to clothing or personal effects on an Insured Person directly resulting of theft or 
+                                                            hold up or any attempted theft - Limit per person</p>
+                          </td>
+                          <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;500 </td>    
+                      </tr> 
+                      
+                      
+                      <apex:variable value="{!0}" var="s"/>
+                      <apex:repeat value="{!psaList}" var="psa">                     
+                       <apex:outputPanel rendered="{! psa.VG_Perils__c== 'Annual Carryings (Own Employees)' && !psaPerilsAccess['Annual Carryings (Security Company)']}">
+                       <tr style="">
+                          <td width="4" align="top" valign="top"><b>12.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimated Annual Money Carryings</p>
+                          </td>                         
+                          <td width="125" style="text-align:right"></td>    
+                       </tr> 
+                        <tr style="">
+                              <td width="4" align="top"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>a.</b></p></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                      text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By You or Your Employees</p>
+                              </td>
+                              
+                              <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psaperils['Annual Carryings (Own Employees)']}"/></apex:outputText></td>    
+                      </tr>
+                       <apex:variable value="{!1}" var="s"/>
+                      </apex:outputPanel>
+                       </apex:repeat>
+                        <apex:variable value="{!0}" var="s"/>
+                       <apex:repeat value="{!psaList}" var="psa">   
+                     <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Annual Carryings (Security Company)' && !psaPerilsAccess['Annual Carryings (Own Employees)']}">
+                     <tr style="">
+                          <td width="4" align="top" valign="top"><b>12.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimated Annual Money Carryings</p>
+                          </td>                         
+                          <td width="125" style="text-align:right"></td>    
+                       </tr> 
+                      <tr style="">
+                              <td width="4" align="top" valign="top"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>b.</b></p></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                      text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By an approved Security Carrier</p>
+                              </td>
+                              
+                              <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psaperils['Annual Carryings (Security Company)']}"/></apex:outputText></td>    
+                      </tr>
+                      <apex:variable value="{!1}" var="s"/>
+                      </apex:outputPanel>
+                     </apex:repeat>    
+                     <apex:variable value="{!0}" var="s"/>
+                      <apex:repeat value="{!psaList}" var="psa">    
+                     <apex:outputPanel rendered="{! s==0 && psaPerilsAccess['Annual Carryings (Own Employees)'] && psaPerilsAccess['Annual Carryings (Security Company)']}">
+                     <apex:variable value="{!1}" var="s"/>
+                      <tr style="">
+                          <td width="4" align="top" valign="top"><b>12.</b></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimated Annual Money Carryings</p>
+                          </td>                         
+                          <td width="125" style="text-align:right"></td>    
+                       </tr> 
+                      <tr style="">
+                              <td width="4" align="top"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>a.</b></p></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                      text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By You or Your Employees</p>
+                              </td>
+                              
+                              <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psaperils['Annual Carryings (Own Employees)']}"/></apex:outputText></td>    
+                      </tr>
+                     <tr style="">
+                              <td width="4" align="top" valign="top"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>b.</b></p></td><td width="352"><p style="margin-top:-80px;font-size:9.0pt;text-justify:inter-ideograph;
+                                      text-align:justify;text-indent:-13.55pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By an approved Security Carrier</p>
+                              </td>
+                              
+                              <td width="125" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psaperils['Annual Carryings (Security Company)']}"/></apex:outputText></td>    
+                      </tr>
+                      </apex:outputPanel>
+                       
+                    </apex:repeat>        
+                    </table>
+                   </apex:outputPanel>
+                 </div>
+              </apex:outputPanel>
+               <apex:outputPanel rendered="{!money || fidility || EmpLiability || PublicandProductLiability}">
+                 <div  style="margin-left:155px;margin-right:1.0in;font-size: 9.0pt;">
+                   <br style="page-break-before:always;" />
+                   <br/>
+                    <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/><br/>
+               <apex:outputPanel rendered="{!money}">
+                 <table class="tableborder" style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="32"> <b>Item</b></td>
+                          <td width="335"><b>Injury</b></td>
+                          <td width="155" style="text-align:right"><b>Compensation payable <br/>per Insured Person </b></td>
+                      </tr>
+                       <tr style="">
+                          <td width="32"><b>A.</b> </td>
+                          <td width="335"> Death:  </td>
+                          <td width="155" style="text-align:right"> £20,000</td>
+                      </tr>
+                      <tr style="">
+                          <td width="32"><b>B.</b> </td>
+                          <td width="335">Loss of eye or irrecoverable loss of use of one or both eyes: </td>
+                          <td width="155" style="text-align:right">£20,000</td>
+                      </tr>
+                      <tr style="">
+                          <td width="32"><b>C.</b> </td>
+                          <td width="335">Loss of limb or irrecoverable loss of use of one or more limbs: </td>
+                          <td width="155" style="text-align:right">£20,000</td>
+                      </tr>
+                      <tr style="">
+                          <td width="32"><b>D.</b> </td>
+                          <td width="335">Permanent total disablement:       </td>
+                          <td width="155" style="text-align:right">£20,000</td>
+                      </tr>
+                      <tr style="">
+                          <td width="32"><b>E.</b> </td>
+                          <td width="335">Temporary Total Disablement for each week of its continuance not exceeding  </td>
+                          <td width="155" style="text-align:right">  £20,000</td>
+                      </tr>
+                      <tr style="">
+                          <td width="32"><b>F.</b> </td>
+                          <td width="335"> benefit period of 104 weeks:</td>
+                          <td width="155" style="text-align:right">  £100</td>
+                      </tr>
+                      <tr style="">
+                          <td width="32"><b>G.</b> </td>
+                          <td width="335">Temporary Partial Disablement for each week of its continuance not exceeding a benefit period of 104 weeks:</td>
+                          <td width="155" style="text-align:right">  £50</td>
+                      </tr>
+                  </table>  
+                </apex:outputPanel>  
+                 
+                <apex:outputPanel rendered="{!fidility}">
+                  <table style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="402"><b>Section 6 – Fidelity</b> </td>
+                          <td width="125" style="text-align:right"><b><apex:outputLabel value="{!IF(FLtext= 'Covered','Insured',If(FLtext= 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr>                                            
+                    </table>
+                    <br/>
+                    
+                 <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="375"><b>Description:</b> </td>
+                          <td width="150" style="text-align:right"><b>Limit any one claim</b>   </td>
+                     </tr> 
+                  <apex:repeat value="{!psaList}" var="psa">
+                    <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Any one Loss'}">
+                      <tr style="">
+                          <td width="375">Limit any one claim </td>
+                          <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></td>
+                     </tr> 
+                   </apex:outputPanel> 
+                 </apex:repeat>
+                     <tr style="">
+                          <td width="375">Limit in the aggregate for acts committed during any one Period of Insurance. </td>
+                          <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;25,000 </td>
+                     </tr>  
+                      
+                </table>
+              </apex:outputPanel>
+            <apex:outputPanel rendered="{!EmpLiability}">             
+              <table style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="402" style=""><b>Section 7 – Employers’ Liability</b> </td>
+                          <td width="125" style="text-align:right;"><b><apex:outputLabel value="{!IF(ELtext= 'Covered','Insured',If(ELtext= 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr>                                            
+                 </table>
+                 <br/>
+                <table style="color:#004040;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="375"><b>Limit of Indemnity:</b> </td>
+                          <td width="150" style="text-align:right"> </td>
+                     </tr> 
+                     <tr style="">
+                          <td width="375">Any one claim or series of claims arising from one Occurrence including costs and expenses. </td>
+                          <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;10,000,000</td>
+                     </tr>                   
+              </table>
+              <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="375"><b>Wageroll:</b> </td>
+                          <td width="150" style="text-align:right"> </td>
+                     </tr> 
+                  <apex:repeat value="{!psaList}" var="psa">                 
+                  <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Clerical & Managerial'}">
+                      <tr style="">
+                          <td width="375">Clerical and Managerial: </td>
+                          <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                     </tr>  
+                   </apex:outputPanel>
+                  <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Bar/Catering/Retail/Cleaning'}">
+                     <tr style="">
+                          <td width="375">Bar/Catering/Cleaning: </td>
+                          <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText>  </td>
+                     </tr>  
+                   </apex:outputPanel>
+                  <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Coaches/Instructors/Players'}">
+                      <tr style="">
+                          <td width="375">Coaches/Instructors/Players:</td>
+                          <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                     </tr>  
+                   </apex:outputPanel>
+                  <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Maintenance'}">
+                      <tr style="">
+                          <td width="375">Maintenance: </td>
+                          <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                     </tr>  
+                   </apex:outputPanel>
+                  <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Security'}">
+                      <tr style="">
+                          <td width="375">Security:</td>
+                          <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                     </tr>  
+                   </apex:outputPanel>
+                    <apex:outputPanel rendered="{!psa.VG_Perils__c== 'Animal Handlers'}">
+                      <tr style="">
+                          <td width="375">Animal Handlers:</td>
+                          <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                     </tr>  
+                   </apex:outputPanel>
+                  <apex:outputPanel rendered="{!psa.VG_Perils__c== 'All Others'}">
+                      <tr style="">
+                          <td width="375">All Other Employees:</td>
+                          <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                     </tr> 
+                  </apex:outputPanel>
+                 </apex:repeat>   
+                </table>
+               </apex:outputPanel>
+            
+          <apex:outputPanel rendered="{!PublicandProductLiability}">    
+                     <table style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="402"><b>Section 8 - Public and Products Liability</b> </td>
+                          <td width="125" style="text-align:right"><b><apex:outputLabel value="{!IF(PPLtext= 'Covered','Insured',If(PPLtext= 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr>                                            
+                    </table>
+                    <br/>
+                 <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                    <tr style="">
+                          <td width="375"><b>Limit of Indemnity:</b> </td>
+                          <td width="150" style="text-align:right"> </td>
+                     </tr> 
+                  <apex:repeat value="{!psaList}" var="psa">                 
+                  
+                    <apex:outputPanel rendered="{!psa.VG_Coverage__c=='Public & Product Liability' && psa.VG_Perils__c== 'Estimated Annual Turnover'}" >
+                      <tr style="">
+                          <td width="375">Any one claim or series of claims arising from one Occurrence including costs and expenses and limited in the aggregate in respect of the Products Extension.</td>
+                          <td width="150" style="text-align:right"> <apex:outputLabel rendered="{!psa.VG_Perils__c== 'Estimated Annual Turnover'}">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></apex:outputLabel> </td>
+                     </tr>
+                     <tr style="">
+                          <td width="375">Turnover</td>
+                          <td width="150" style="text-align:right">  {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Declared_Value__c}"/></apex:outputText> </td>
+                     </tr> 
+                     </apex:outputPanel>
+                    <apex:outputPanel rendered="{!psa.VG_Coverage__c=='Public & Product Liability' && psa.VG_Perils__c== 'Number of members'}" >
+                     <tr style="">
+                          <td width="375">Any one claim or series of claims arising from one Occurrence including costs and expenses and limited in the aggregate in respect of the Products Extension.</td>
+                          <td width="150" style="text-align:right"> <apex:outputLabel rendered="{!psa.VG_Perils__c== 'Number of members'}">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></apex:outputLabel> </td>
+                     </tr>
+                     <tr style="">
+                          <td width="375">Number of members</td>
+                          <td width="150" style="text-align:right">{!psa.VG_Declared_Value__c}</td>
+                     </tr> 
+                      <apex:outputPanel rendered="{!psa.VG_Coverage__c=='Public & Product Liability' && psa.VG_Perils__c== 'Clubs'}" >
+                      <tr style="">
+                          <td width="375">Any one claim or series of claims arising from one Occurrence including costs and expenses and limited in the aggregate in respect of the Products Extension.</td>
+                          <td width="150" style="text-align:right"> <apex:outputLabel rendered="{!psa.VG_Perils__c== 'Clubs'}">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></apex:outputLabel> </td>
+                     </tr>
+                     <tr style="">
+                          <td width="375">Number of Clubs</td>
+                          <td width="150" style="text-align:right">{!psa.VG_Declared_Value__c}</td>
+                     </tr> 
+                     </apex:outputPanel>
+                    </apex:outputPanel> 
+                  </apex:repeat> 
+               </table>
+             </apex:outputPanel>
+             
+          </div>  
+        </apex:outputPanel>
+          <apex:outputPanel rendered="{!ProfessionalIndemnity || DirectorsOfficers}">  
+            <div  style="margin-left:155px;margin-right:1.0in;font-size: 9.0pt;">
+                   <br style="page-break-before:always;" />
+                    <br/>
+                    <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/><br/>
+                  
+               <apex:outputPanel rendered="{!ProfessionalIndemnity}">    
+               <table style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="402"><b>Section 9: Professional Indemnity  </b> </td>
+                          <td width="125" style="text-align:right"><b><apex:outputLabel value="{!IF(PItext= 'Covered','Insured',If(PItext= 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr>                                            
+                    </table>
+                    <br/>
+                 <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                    <tr style="">
+                          <td width="375"><b>Limit of Indemnity:</b> </td>
+                          <td width="150" style="text-align:right"> </td>
+                     </tr> 
+                    <apex:repeat value="{!psaList}" var="psa"> 
+                   
+                    <apex:outputPanel rendered="{!psa.VG_Coverage__c=='Professional Indemnity' && psa.VG_Perils__c== 'Estimated Annual Turnover'}">                                    
+                        <tr style="">
+                              <td width="375"> Any one claim or series of claims arising from one Occurrence including costs and expenses and limited in the aggregate.</td>
+                              <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText> </td>
+                         </tr>
+                        
+                     </apex:outputPanel>
+                      <apex:outputPanel rendered="{!psa.VG_Coverage__c=='Professional Indemnity' && psa.VG_Perils__c== 'Number of members'}">                                    
+                        <tr style="">
+                              <td width="375"> Any one claim or series of claims arising from one Occurrence including costs and expenses and limited in the aggregate.</td>
+                              <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText> </td>
+                         </tr>
+                        
+                     </apex:outputPanel> 
+                     <apex:outputPanel rendered="{!psa.VG_Coverage__c=='Professional Indemnity' && psa.VG_Perils__c== 'Clubs'}">                                    
+                        <tr style="">
+                              <td width="375"> Any one claim or series of claims arising from one Occurrence including costs and expenses and limited in the aggregate.</td>
+                              <td width="150" style="text-align:right">{!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText> </td>
+                         </tr>
+                         
+                     </apex:outputPanel> 
+                     </apex:repeat> 
+                     <tr style="">
+                          <td width="375">Retroactive Date: </td>
+                          <td width="150" style="text-align:right"><apex:outputLabel rendered="{!pol.Retroactive_Date__c!=null}">{!DAY(pol.Retroactive_Date__c)}/{!Month(pol.Retroactive_Date__c)}/{!Year(pol.Retroactive_Date__c)}</apex:outputLabel></td>
+                     </tr> 
+                                 
+               </table>
+                </apex:outputPanel>
+               <apex:outputPanel rendered="{!DirectorsOfficers}">   
+                  <table style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="402"><b>Section 10 – Directors’ and Officers’ Liability </b> </td>
+                          <td width="125" style="text-align:right"><b><apex:outputLabel value="{!IF(DOtext= 'Covered','Insured',If(DOtext= 'Not Covered','Not Insured','Insured'))}"></apex:outputLabel></b></td>
+                      </tr>                                            
+                    </table>
+                    <br/>
+                 <table class="tableborder" style="color:#004040;font-size:9.0pt;">
+                 <apex:repeat value="{!psaList}" var="psa"> 
+                   <apex:outputPanel rendered="{!psa.VG_Coverage__c=='D&O' && psa.VG_Perils__c== 'Number of members'}">                                    
+                          <tr style="">
+                              <td width="375"><b>Limit of Reimbursement:</b> </td>
+                              <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></td>
+                          </tr>  
+                     </apex:outputPanel> 
+                     <apex:outputPanel rendered="{!psa.VG_Coverage__c=='D&O' && psa.VG_Perils__c== 'Turnover'}">                                    
+                         <tr style="">
+                              <td width="375"><b>Limit of Reimbursement:</b> </td>
+                              <td width="150" style="text-align:right"> {!pol.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0}"><apex:param value="{!psa.VG_Sum_Insured__c}"/></apex:outputText></td>
+                         </tr>  
+                     </apex:outputPanel>                    
+                   </apex:repeat>                  
+                 </table> 
+              </apex:outputPanel>
+              </div>   
+            </apex:outputPanel>
+            <div  style="margin-left:155px;margin-right:1.0in;font-size: 9.0pt;">
+               <br style="page-break-before:always;" />
+                    <br/>
+                    <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/><br/>
+                  
+               <p style="color:#004040;margin-right:1.0in;font-size:9.0pt;"><b>Policy Deductibles</b><br/>
+                 The Deductibles stated below will be applied to each and every claim made.</p>
+                 
+                 <br/>
+                <table class="tableborder" style="color:#004040;margin-right:1.0in;font-size:9.0pt;">
+                      <tr style="">
+                          <td width="250"> <b>Section</b></td>
+                          <td width="200"><b>Description</b></td>
+                          <td width="80" style="text-align:right"><b>Deductible</b></td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 1 – Property Damage</td>
+                          <td width="200"> Deterioration of food</td>
+                          <td width="80" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;100 </td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 1 – Property Damage</td>
+                          <td width="200"> Flood  </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;250</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 1 – Property Damage</td>
+                          <td width="200">Subsidence</td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;1000</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 1 – Property Damage</td>
+                          <td width="200">  Playing Surfaces</td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;500</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 1 – Property Damage</td>
+                          <td width="200">  Any other insured loss</td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;250</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 1 – Property Damage</td>
+                          <td width="200"> Specified Items </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;100</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 2 – Business Interruption</td>
+                          <td width="200"> Any loss  </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;250</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 3 – Loss of Licence</td>
+                          <td width="200"> Any loss  </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;100</td>
+                      </tr>
+                       <tr style="">
+                          <td width="250">Section 4 – Goods In Transit</td>
+                          <td width="200"> Any loss  </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;100</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 5 – Money and Assault</td>
+                          <td width="200">Money </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;100</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 5 – Money and Assault</td>
+                          <td width="200">Injury    </td>
+                          <td width="80" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;Nil</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 6 – Fidelity</td>
+                          <td width="200">Any loss  </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;100</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 7 – Employers’ Liability</td>
+                          <td width="200">Any loss  </td>
+                          <td width="80" style="text-align:right">{!pol.CurrencyIsoCode}&nbsp;Nil</td>
+                      </tr>
+                      <tr style="">
+                          <td width="250">Section 8 – Public and Products Liability</td>
+                          <td width="200">Third Party Bodily Injury </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;250</td>
+                      </tr>
+                       <tr style="">
+                          <td width="250">Section 8 – Public and Products Liability</td>
+                          <td width="200">  Third Party Property Damage  </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;250</td>
+                      </tr>
+                       <tr style="">
+                          <td width="250">Section 9 – Professional Indemnity</td>
+                          <td width="200">Any loss </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;250</td>
+                      </tr>
+                       <tr style="">
+                          <td width="250">Section 10 – Directors’ and Officers’ Liability    </td>
+                          <td width="200">Any loss </td>
+                          <td width="80" style="text-align:right"> {!pol.CurrencyIsoCode}&nbsp;250</td>
+                      </tr>
+               </table>
+               </div>
+             <div  style="margin-left:155px;margin-right:1.0in;font-size: 9.0pt;">
+                   <br style="page-break-before:always;" />
+                    <br/>
+                    <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/><br/>
+                    <div styel="">
+                       <p style="color:#004040;margin-right:0.5in;font-size: 9.0pt;"><b>Additional Endorsements</b><br/><br/>The endorsements below amend the insured sections and / or clauses and each is otherwise subject to the terms and conditions of this Policy and will override any conflicting term in the Policy.<br/><br/><br/></p>                      
+                       <apex:outputPanel rendered="{!Endorsement}">
+                          <table id="lasttable" border="1" class="AllowBreakAcrossPages">
+                           <apex:variable value="{!1}" var="s"/>
+                                <tr style="height:2.95pt;">
+                                    <th width="56" style="font-size:
+                                                          9.0pt;color:#004040">Endt No</th>           
+                                    <th width="400" style="  font-size:
+                                                           9.0pt;color:#004040"> Title</th>           
+                                </tr>                                               
+                                <apex:repeat rendered="{!!(pseList.size==0)}" value="{!pseList}" var="pse">    
+                                    <tr style="height:3.95pt;page-break-inside: avoid;">
+                                        <div style="">
+                                            <td width="48" style="border:1px solid black;font-size:
+                                                                  9.0pt;color:#004040">{!pse.VG_Endorsement_Number__c}</td>
+                                            <td width="412" style="border:1px solid black;font-size:
+                                                                   9.0pt;color:#004040"> {!pse.VG_Title__c}</td>
+                                        </div>
+                                    </tr> 
+                                     <apex:variable value="{!s+1}" var="s"/>
+                                </apex:repeat>
+                                
+                            </table>
+                         </apex:outputPanel>
+                         <p class="tableborder" style="color:#004040;margin-right:0.5in;font-size: 9.0pt;width:450px;"></p>
+                     </div>
+                     <br/><br/>
+                     <table id="tb1" style="border-collapse:collapse;">
+                        <div style="height:3.95pt">
+                            <tr style="height:3.95pt;">
+                                
+                                
+                                    <td width="202" valign="top" style="height:5px;text-align:center;line-height:97%;"><span style="font-size:
+                                                                 9.0pt;color:#004040;text-align:center;">&nbsp;Authorised Signature:&nbsp;&nbsp;
+                                                           </span>
+                                       </td>               
+                                     <td width="252" valign="top" style="height:5px;"><img src="{!Auth_Sign_Url }" width="65" height="23" style='position:fixed;' />
+        
+                                                            
+                                    </td>
+                                    
+                                                           
+                            </tr> 
+                        </div>
+                  </table>               
+            </div>     
+         </div>
+         <div id="fourth page" class="footer" style="margin-bottom:1in;color:#004040;">
+               <apex:outputPanel rendered="{!!(pseList.size==0)}">
+                 <br style="page-break-before:always;" />
+                    <br/>
+                    <div style="margin-left:450px;width:450px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="100" width="250"/>
+                    </div>
+                    <br/><br/>
+                    <div style="margin-left:155px;margin-right:1.0in;color:#004040;">
+                   <apex:variable value="{!1}" var="s"/>
+                     <table>
+                        <apex:repeat rendered="{!!(pseList.size==0)}" value="{!pseList}" var="pse">    
+                             <br/><br/>
+                             <tr style="height:3.95pt;page-break-inside: avoid;">
+                                  <td style="font-size:
+                                                          9.0pt;color:#004040"><b>Endorsement Number:</b>&nbsp;{!pse.VG_Endorsement_Number__c}</td>
+                                 
+                            </tr> 
+                            <tr>
+                                 <td width="422"  style="font-size:
+                                                           9.0pt;margin-right:1in;color:#004040"><b>{!pse.VG_Title__c}</b></td>
+                                    
+                            </tr>
+                            <tr>
+                                 <td width="622" style="font-size:
+                                                           9.0pt;margin-right:1in;color:#004040;">{!pse.VG_Endorsement_Details__c}</td>
+                            </tr>
+                             <apex:variable value="{!s+1}" var="s"/>
+                        </apex:repeat>
+                     </table>
+                    </div>
+                     </apex:outputPanel> 
+               </div>
+       </body>
+   </html>
+</apex:page>

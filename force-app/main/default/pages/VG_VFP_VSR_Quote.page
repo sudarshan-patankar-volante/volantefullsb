@@ -1,0 +1,337 @@
+<apex:page contentType="application/msword#VFPVSRDocument.doc" cache="true" showHeader="false" controller="VG_VFPVSRDocumentController" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+    <html xmlns:w="urn:schemas-microsoft-com:office:word">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <body style="font-family: Arial;font-size:9.0pt;">
+            <apex:outputText value="{!PrintView}" escape="false"/>
+            <div style="font-family: Arial;font-size:9.0pt;">
+                <div align="center" style="margin-right:-5px;mso-element:header;width:400px;height:100px;" id="h1">
+                    <apex:image url="{!PILogo}" height="100" width="250"/>
+                </div>
+                <p align="center" style="font-family: Arial;border-bottom:2px solid black;"><b><span style="display:none;">test</span> INVESTOR 170(h) LIABILITY QUOTE                                       <span style="display:none;">dchgvvhjmbgdfcvbjsfdfcvxdcfvgtest</span> </b></p>
+                <div >
+                    <p>Please find below Investor 170(h) Liability Quote for Cedar Grove Investments, LLC. This is a summary of the terms and conditions:</p>
+                    <TABLE id="p1" style="font-family: Arial;" align="Right">
+                        <tr style="height:36.95pt;" >
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;"><b>NAMED INSURED:</b>&nbsp;</span>
+                            </td>
+                            <td width="352" colspan="2" >
+                                <span style="font-size:9.0pt;">{!Pol.Insured__r.Name}</span>
+                            </td>
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;"><b>MAILING ADDRESS:</b>&nbsp;</span>
+                            </td>
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;">{!pol.Insured__r.BillingStreet},{!pol.Insured__r.BillingCity}, {!pol.Insured__r.BillingPostalCode}&nbsp;</span>
+                            </td>
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;"><b>CARRIER:</b>&nbsp;</span>
+                            </td>
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;">Liberty Mutual London, RSUI</span>
+                            </td>
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;"><b>PROPOSED POLICY PERIOD:</b>&nbsp;</span>
+                            </td>
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;">{!DAY(pol.VG_Inception_Date__c)}/{!Month(pol.VG_Inception_Date__c)}/{!Year(pol.VG_Inception_Date__c)} - {!DAY(pol.VG_Expiry_Date__c)}/{!Month(pol.VG_Expiry_Date__c)}/{!Year(pol.VG_Expiry_Date__c)} 12:01 A.M. Standard Time at the Mailing Address shown above</span> 
+                            </td>   
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;"><b>EXTENDED REPORTING PERIOD:</b>&nbsp;</span>
+                            </td>
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;"> </span>
+                            </td>
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" colspan="2" align="left"> 
+                                <span style="font-size:9.0pt;"><b>POLICY LIMIT:</b>&nbsp;</span>
+                            </td>
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;">USD&nbsp;<apex:outputText value="{0, number, ###,##0}">
+                                        <apex:param value="{!suminsured}"/>
+                                        </apex:outputText></span>
+                            </td>
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;"><b>POLICY RETENTION:</b>&nbsp;</span>
+                            </td>
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;">USD&nbsp;<apex:outputText value="{0, number, ###,##0}">
+                                        <apex:param value="{!attachment}"/>
+                                        </apex:outputText></span>
+                            </td>
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;"><b>POLICY PREMIUM:</b>&nbsp;</span>
+                            </td> 
+                            <td width="352" colspan="2" align="left">   
+                                <span style="font-size:9.0pt;">USD&nbsp;<apex:outputText value="{0, number, ###,##0}">
+                                        <apex:param value="{!Premium }"/>
+                                        </apex:outputText>(Plus applicable taxes)</span>
+                            </td>
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" colspan="2" align="left">
+                                <span style="font-size:9.0pt;"><b>MINIMUM EARNED PREMIUM: </b>&nbsp;</span>
+                            </td>
+                            <td width="352" colspan="2" align="left">                 
+                                <span style="font-size:9.0pt;">100%</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div style="font-family: Arial;font-size:9.0pt;">
+                    <br style="page-break-before:always;" />
+                    <br/><br/>
+                    <br/>
+                    <div align="center" style="margin-right:-5px;mso-element:header;width:400px;height:100px;" id="h1">
+                        <apex:image url="{!PILogo}" height="100" width="250"/>
+                    </div>
+                    <p align="center" style="font-family: Arial;border-bottom:2px solid black;"><b><span style="display:none;">test</span> SURPLUS LINES DISCLOSURE                                       <span style="display:none;">dchgvvhjmbgdfcvbjsfdfcvxdcfvgtest</span> </b></p>        
+                    <div >
+                        <p align="center">{!InsertedtaxList[0].VG_Tax_Jurisdiction__c}</p>
+                        
+                        <p>"This contract is registered and delivered as a surplus line coverage under the Surplus Line Insurance Law, O.C.G.A. Chapter 33-5."  [33-5-26]</p>
+                        <br/>
+                        <p align="center"><b><u>POLICY PREMIUM AND SURPLUS LINES TAXES SUMMARY</u></b></p>
+                        <h><b>SURPLUS LINES TAX CALCULATION:</b></h>
+                        <TABLE id="p1" style="font-family: Arial;border:2px solid black;" >
+                            <tr style="height:3.95pt;font-size:9.0pt;">
+                                <th width="532" align="center">Description</th>
+                                <th width="1000" align="center">State</th>
+                                <th width="1000" align="center">Taxable Premium</th>
+                                <th width="1000" align="center">Stamping Fee</th>
+                                <th width="1000" align="center">Rate</th>
+                                <th width="1000" align="center">Tax</th>
+                            </tr>
+                            <apex:repeat rendered="{!!(taxWrapperList.size==0)}" value="{!taxWrapperList}" var="tx">
+
+                                <tr style="height:3.95pt;font-size:9.0pt;">
+                                    <td width="1000" align="center">{!tx.taxName}</td>
+                                    <td width="1000"  align="center">{!tx.taxJurisdiction}</td>
+                                    <td width="1000"  align="center">USD&nbsp;{!tx.taxableAmount}</td>
+                                    <td width="1000"  align="center">n/a</td>
+                                    <td width="1000"  align="center"><apex:outputText value="{0, number, ###,##0}">
+                                            <apex:param value="{!tx.taxPercent}"/>
+                                            </apex:outputText>&nbsp;%</td>
+                                    <td width="1000"  align="center">USD&nbsp;{!tx.taxValue}</td>
+                                </tr>
+                            </apex:repeat>
+                            <tr style="height:3.95pt;">
+                                <td width="352" colspan="2" align="right">
+                                    <td style="font-size:9.0pt;"><b>Total Surplus Lines Taxes &amp; Fees:</b>&nbsp;</td>
+                                </td>
+                                <td width="352" colspan="2" align="left">                 
+                                    <td style="font-size:9.0pt;">USD&nbsp;{!totaltax}</td>
+                                </td>
+                            </tr>
+                        </TABLE>
+                        <br/><br/><br/><br/>
+                        <br/><br/><br/><br/>
+                        <br/><br/><br/><br/>
+                        <br/><br/><br/><br/>
+                        <br/><br/><br/><br/>
+                        <p style="font-size:9.0pt;" align="left">
+                            IMPORTANT NOTICE: THE NONADMITTED &amp; REINSURANCE REFORM ACT (NRRA) WENT INTO EFFECT ON JULY 21, 2011. ACCORDINGLY, SURPLUS LINES TAX RATES AND REGULATIONS ARE SUBJECT TO CHANGE WHICH COULD RESULT IN AN INCREASE OR DECREASE OF THE TOTAL SURPLUS TAXES AND FEES OWED ON THIS PLACEMENT. IF A CHANGE IS REQUIRED, WE WILL PROMPTLY NOTIFY YOU. ANY ADDITIONAL TAXES OWED MUST BE PROMPTLY REMITTED TO VOLANTE.
+                        </p>
+                    </div>
+                </div>
+                <div style="font-family: Arial;font-size:9.0pt;">
+                    <br style="page-break-before:always;" />
+                    <br/>
+                    <div align="center" style="margin-right:-5px;mso-element:header;width:400px;height:100px;" id="h1">
+                        <apex:image url="{!PILogo}" height="100" width="250"/>
+                    </div>
+                    <h3 style="font-family: Arial;font-size:11.0pt;">Request to Bind Coverage</h3>
+                    <br/>
+                    <h5><b>Cedar Grove Investments, LLC</b></h5>
+                    <p style="font-family: Arial;font-size:10.0pt;">
+                        We have reviewed the proposal and agree to the terms and conditions of the coverages presented. We are requesting coverage to be bound as outlined by coverage line below:
+                    </p>
+                    <h5>Coverage:</h5>
+                    <p style="Checkbox">
+                        Investor 170(h) Liability Policy   
+                    </p>
+                    <p>
+                        This Authorization to Bind Coverage also acknowledges receipt and review of all disclaimers and disclosures,
+                        including exposures used to develop insurance terms, contained within this proposal
+                    </p>
+                    <br/>
+                    <p>_________________________________________________________________</p>
+                    <p ><b>Signature of Authorized Insurance Representative Date</b></p>
+                    <p>_________________________________________________________________</p>
+                    <p ><b>Title</b></p>
+                    <p>_________________________________________________________________</p>
+                    <p ><b>Print Name</b></p>
+                    <p>_________________________________________________________________</p>
+                    <p ><b>Date</b></p>
+                    <p>
+                        This proposal does not constitute a binder of insurance. Binding is subject to final carrier
+                        approval. The actual terms and conditions of the policy will prevail.
+                    </p>
+                    <p>
+                        Georgia License #208812
+                    </p>
+                </div>
+                <div style="font-family: Arial;font-size:9.0pt;">
+                    <br style="page-break-before:always;" />
+                    <br/>
+                    <p>
+                    
+                        &lt; To be Placed on the Insured / Applicant’s Letterhead &gt;
+                    </p>
+                    <br/><br/>
+                    <br/><br/>
+                    <p>To Underwriter:</p>
+                    <br/><br/>
+                    <p>Re: Warranty Statement for Tax Liability Coverage</p>
+                    <br/><br/>
+                    <p>
+                        After inquiry, the Chief Executive, President and General Counsel has not had any claims or knowledge or information of any act, error or omission which might reasonably be expected to give rise to a claim.  It is understood and agreed that if such knowledge or information exists any claim or action arising there from is excluded from this proposed coverage.
+                    </p>
+                    <br/><br/>
+                    <p>
+                        This warranty statement and all other information which is provided are incorporated into and form the basis of any contract of insurance.
+                    </p>
+                    <br/><br/>
+                    <p>
+                        I HEREBY DECLARE that the above statements and particulars are true and I have not suppressed or misstated any material fact and that I agree that this warranty statement shall be the basis of the contract with you, the Underwriters.
+                    </p>
+                    <br/><br/>
+                    <p>Signature:______________________________________________ </p>
+                    <br/><br/>
+                    <p>Date:__________________ (mm/dd/yy)</p> 
+                    <br/><br/>
+                    <p>The signature must be of a person authorized to execute on behalf of the applicant. </p>
+                    <p>A copy of this should be retained for your records.</p>
+                </div>
+                <div style="font-family: Arial;font-size:9.0pt;">
+                    <br style="page-break-before:always;" />
+                    <br/>
+                    <TABLE id="p1" style="font-family: Arial;" >
+                        <tr style="height:3.95pt;">
+                            <td width="352" colspan="2" align="left">
+                                <div align="center" style="margin-right:-15px;mso-element:header;width:400px;height:100px;" id="h1">
+                                    <apex:image url="{!PILogo}" height="100" width="250"/>
+                                </div>
+                            </td> 
+                            <td width="352" colspan="2" align="left">   
+                                <span style="font-size:
+                                             9.0pt;"> 1595 Peachtree Parkway<br/>
+                                                       ste 204-376<br/>
+                                                       Cumming,GA 30041<br/>
+                                                       Email:annie@vsrlondon.com<br/></span>
+                            </td>
+                        </tr>
+                        </TABLE>
+                        <br/>
+                        <TABLE align="left" style="font-family: Arial;font-size:9.0pt;">
+                         <tr style="height:36.95pt;">
+                            <td width="352" coltd="2" align="left">
+                                <span style="font-size:9.0pt;"><b>Sponsor: </b>&nbsp;</span>
+                                <span style="font-size:9.0pt;">{!Pol.Insured__r.Parent}</span>
+                            </td>
+                            <td width="352" coltd="2" align="left">                 
+                                <span style="font-size:9.0pt;"><b>Invoice#: </b>&nbsp;</span>
+                                <span style="font-size:9.0pt;">92350</span>
+                            </td>
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" coltd="2" align="left">
+                                <span style="font-size:9.0pt;"><b>RE: </b>&nbsp;</span>
+                                <span style="font-size:9.0pt;">{!Pol.Insured__r.Name}</span>
+                            </td>
+                            <td width="352" coltd="2" align="left">                 
+                                <span style="font-size:9.0pt;"><b>Invoice Date: </b>&nbsp;</span>
+                                <span style="font-size:9.0pt;">12/23/2019</span>
+                            </td>
+                        </tr>
+                        <tr style="height:36.95pt;">
+                            <td width="352" coltd="2" align="left">
+                                <span style="font-size:9.0pt;"><b>Address: </b>&nbsp;</span>
+                                <span style="font-size:9.0pt;">{!pol.Insured__r.BillingStreet},{!pol.Insured__r.BillingCity}, {!pol.Insured__r.BillingPostalCode}&nbsp;</span>
+                            </td>
+                            <td width="352" coltd="2" align="left">                 
+                                <span style="font-size:9.0pt;"><b>Contact: </b>&nbsp;</span>
+                                <span style="font-size:9.0pt;"> </span>
+                            </td>
+                        </tr>
+                        </TABLE>
+                        <TABLE id="p1" style="font-family: Arial;" >
+                        <tr style="height:20.95pt;font-size:9.0pt;">
+                                <th width="350" align="center">Effective Date</th>
+                                <th width="1000" align="center">Policy Type</th>
+                                <th width="1000" align="center">Description</th>
+                                <th width="350" align="center">Total</th>
+                            </tr>
+                            <tr style="height:20.95pt;font-size:9.0pt;">
+                            <td width="350" align="center">{!DAY(pol.VG_Inception_Date__c)}/{!Month(pol.VG_Inception_Date__c)}/{!Year(pol.VG_Inception_Date__c)}</td>
+                                <td width="1000"  align="center">Investor 170(h) Liability </td>
+                                <td width="1000"  align="center">Premium</td>
+                                <td width="350"  align="center" >USD&nbsp;<apex:outputText value="{0, number, ###,##0}">
+                                        <apex:param value="{!premium}"/>
+                                        </apex:outputText></td>
+                            </tr>
+                        <apex:repeat rendered="{!!(taxWrapperList.size==0)}" value="{!taxWrapperList}" var="tx">                        
+                        <tr style="height:20.95pt;font-size:9.0pt;">
+                            <td width="350" align="center">{!DAY(pol.VG_Inception_Date__c)}/{!Month(pol.VG_Inception_Date__c)}/{!Year(pol.VG_Inception_Date__c)}</td>
+                                <td width="1000"  align="center">Investor 170(h) Liability </td>
+                                <td width="1000"  align="center">Surplus Lines Taxes and Fees</td>
+                                <td width="350"  align="center" >USD&nbsp;<apex:outputText value="{0, number, ###,##0}">
+                                        <apex:param value="{!tx.taxValue}"/>
+                                        </apex:outputText></td>
+                            </tr>
+                          </apex:repeat> 
+                          
+                            <tr style="height:10.95pt;">
+                                  
+                            <td width="352" coltd="2" align="left">
+                                
+                            </td>
+                            <td width="352" coltd="2" align="left">                 
+                                
+                            </td>
+                       
+                           <td style="font-size:9.0pt;" width="352"  align="right">&nbsp;&nbsp;&nbsp;&nbsp;<b>Total:</b>
+                            </td>
+                            <td style="font-size:9.0pt;" align="left">USD&nbsp;<apex:outputText value="{0, number, ###,##0}">
+                                    <apex:param value="{!totalPayable}"/>
+                                    </apex:outputText>
+                                 
+                            </td>
+                        </tr>
+                        </TABLE>
+                        <br/>
+                        <TABLE>
+                        <tr style="height:3.95pt;">
+                                <td width="352" colspan="2" align="left">
+                                    <span style="font-family: Arial;font-size:9.0pt;color:#FF0000;"><b>Wiring Instruction:</b>&nbsp;</span>
+                                </td>
+                                <td width="352" colspan="2" align="left">                 
+                                    <span style="font-family: Arial;font-size:9.0pt;color:#FF0000;">(Inculde Invoice#)
+                                                                    Volante Specialty Risk,LLC
+                                                                    JP Morgan Chase Bank, N.A.
+                                                                        Account#586178920
+                                                                        Routing#061092387</span>
+                                </td>
+                            </tr>
+                        
+                    </TABLE>
+                    
+                </div>
+            </div> 
+        </body>
+    </html>            
+</apex:page>

@@ -1,0 +1,66 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="VG_PolicyDocumentController">
+    <aura:attribute name="FN" type="String" />
+    <aura:attribute name="AttList" type="VG_Attachment__c[]" />
+    <aura:attribute name="Folder" type="Boolean" default="False"/>
+    <aura:attribute name="File" type="Boolean" default="False"/>
+    <aura:attribute name="noFile" type="Boolean" default="False"/>
+    <aura:attribute name="btn" type="Boolean" default="False"/>
+    <aura:attribute name="FolderNum" type="Integer" default="0"/>
+    <aura:attribute name="accept" type="List" default="['.jpg', '.jpeg', '.png', '.pdf', '.csv', '.xls', '.xlsx', '.doc', '.docx', '.zip', '.rar', '.xlsm', '.XLSB', '.eml ']"/>
+    <aura:attribute name="multiple" type="Boolean" default="True"/>
+    <aura:attribute name="disabled" type="Boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   
+    <p Style="font-size:22px;text-align:center"><img src="{!$Resource.VG_FolderIcon}" style="width:40px;height:40px" />&nbsp;&nbsp;Document Repository </p>
+    <br/>
+    <lightning:layout class="" title="Documents"	>
+        <aura:if isTrue="{!v.Folder}">
+            <div class="">
+                <aura:iteration items="Submission,Underwriting,Policy Documentation,Pricing Spreadsheet,Finance,Reinsurance,Claims" var="item" indexVar="count">
+                    <lightning:layoutItem class="">
+                        <a><div id='{!item}' data-folder='{!item}' onclick='{!c.getFiles}' style="font-family: token(fontFamily);">
+                            {!item}
+                            </div></a>
+                    </lightning:layoutItem>
+                </aura:iteration>
+            </div>
+        </aura:if>
+        <aura:if isTrue="{!v.File}">
+            <div class="">
+                <p style="font-size:14px;"><b>{!v.FN}</b></p>
+                <br/>
+                <aura:iteration items="{!v.AttList}" var="item">
+                    <lightning:layoutItem >
+                        <lightning:layoutItem class="">
+                            <div id='{!item}' data-folder='{!item}' style="" title="{!item.VG_Description__c}"><!--title added added by siddik on 26.2.2018  -->
+                                <a href="{!'/Imara/'+item.VG_Attachment_URL__c}" target="_blank" >
+                                    {!item.Name}-[<ui:outputDateTime value="{!item.CreatedDate}"/>]
+                                </a>
+                            </div>
+                        </lightning:layoutItem>
+                    </lightning:layoutItem>
+                </aura:iteration>
+            </div>
+            
+        </aura:if>
+        
+    </lightning:layout>
+    <aura:if isTrue="{!v.noFile}">
+        <p style="font-size:14px;"><b>{!v.FN}</b></p>
+        <br/>
+        <p style="text-align:center;font-size:18px;">This folder don't have any files...</p>
+    </aura:if>
+    <aura:if isTrue="{!v.btn}">
+        <br/>
+         <div style="text-align:center;font-size:18px;">
+            <lightning:fileUpload  name="fileUploader"
+                                  label= ""
+                                  multiple="{!v.multiple}"
+                                  accept="{!v.accept}"
+                                  disabled="{!v.disabled}"
+                                  recordId="{!v.recordId}"
+                                  onuploadfinished="{! c.handleUploadFinished }"/>
+        </div>
+        <lightning:button name="b1" variant="brand" label="Back" onclick="{!c.goBack}" />
+    </aura:if>
+</aura:component>

@@ -1,0 +1,130 @@
+<apex:page controller="VG_EdisonPS_Ins2_Controller" showHeader="false" sidebar="false" title="Policy Schedule">
+    <script src="/ajax.googleapis.com/ajax/libs/dojo/1.8.1/dojo/dojo.js" type="text/javascript"></script>
+    <script src="/soap/ajax/11.1/connection.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <span id="hideMyParent"></span>
+    
+    <head>
+        <style>
+            .disabled{
+                border: 1px solid #999999;
+                background-color: #b2b2b2;
+                color: #666666;
+                opacity: 0.65; 
+                cursor: not-allowed;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var startYear=1950; //replace 1982 with whatever year you want to start with;
+                var endYear=2034; //replace 2034 with whatever year you want to end with;
+                var optionsString='';
+                if(startYear<endYear){
+                    for(i=startYear;i<endYear+1;i++){
+                        optionsString += "<option value=\""+i+"\">"+i+"</option>";
+                    }
+                    $('#calYearPicker').html(optionsString);
+                }
+                $('#sidebarDiv #hideMyParent').parent().parent().hide();
+                
+                
+            });
+            function SubmitOnClick (objSubmitBtn) {
+                
+                document.getElementById(objSubmitBtn.id).disabled = true;
+                document.getElementById(objSubmitBtn.id).classList.add("disabled");
+                objSubmitBtn.value = "Wait…";
+                doSubmit();
+            }
+        </script>
+    </head>
+    <apex:form style="width:1300px;">
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_RiskCapture}" alt="Smiley face" height="40px" width="1150px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <apex:pageBlock id="pb1" rendered="{!ps.Product__c!='Unisured Loss Recovery'}">
+            <div align="center" draggable="false" >
+                <apex:commandButton action="{!AddRisk}" rerender="pbt1,pb1" value="Add Risk Detail"/>
+            </div> 
+            <apex:pageBlockSection columns="2" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Driver Name</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Name__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers DOB</apex:outputLabel>
+                    <apex:inputField id="dob" value="{!rc.Drivers_DOB__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers Convictions</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Convictions__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers Conviction Points</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Conviction_Points__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers License Ban Details</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_License_Ban_Details__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers Claims</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Claims__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers Medical Conditions</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Medical_Conditions__c}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock> 
+        <apex:pageBlock rendered="{!ps.Product__c!='Unisured Loss Recovery'}">
+            <apex:pageBlockTable value="{!wrcList}" var="wrc" id="pbt1">
+                <apex:column headerValue="Driver Name" width="6%"  >
+                    <apex:outputField value="{!wrc.rc.Drivers_Name__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver DOB" width="6%" >
+                    <apex:outputField id="calYearPicker" value="{!wrc.rc.Drivers_DOB__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver Convictions" width="6%"  >
+                    <apex:outputField value="{!wrc.rc.Drivers_Convictions__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver Conviction Points" width="6%" >
+                    <apex:outputField value="{!wrc.rc.Drivers_Conviction_Points__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver License Ban Details" width="6%" >
+                    <apex:outputField value="{!wrc.rc.Drivers_License_Ban_Details__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver Claims" width="6%" >
+                    <apex:outputField value="{!wrc.rc.Drivers_Claims__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver Medical Conditions" width="6%" >
+                    <apex:outputField value="{!wrc.rc.Drivers_Medical_Conditions__c}"/>
+                </apex:column>
+                <apex:column headerValue="" width="7%" >
+                    <apex:outputPanel rendered="{!!wrc.rc.VG_IsTempDelete__c}">
+                        <apex:commandButton value="Remove" action="{!RemoveRisk}" reRender="pbt1,pb1"><apex:param name="counter" assignTo="{!Index}" value="{!wrc.Counter}"/></apex:commandButton>
+                        <apex:commandButton value="Edit" action="{!EditRisk}" reRender="pbt1,pb1"><apex:param name="counter" assignTo="{!Index}" value="{!wrc.Counter}"/></apex:commandButton>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!wrc.rc.VG_IsTempDelete__c}">
+                        <apex:outputLabel >Deleted</apex:outputLabel>
+                    </apex:outputPanel>
+                </apex:column>
+            </apex:pageBlockTable> 
+            <div align="center" draggable="false" ><br/>
+                <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;next();}" />&nbsp;&nbsp;&nbsp;&nbsp;<apex:commandButton action="{!Previous}" value="Previous" onclick="next()"/>&nbsp;&nbsp;&nbsp;&nbsp;<apex:commandButton value="Next" id="Submit" onClick="return SubmitOnClick(this);" /><apex:actionFunction name="doSubmit" action="{!Next}" />
+            </div >            
+        </apex:pageBlock> 
+        <apex:pageBlock rendered="{!ps.Product__c=='Unisured Loss Recovery'}">
+            <!--<apex:pageBlockSection >                 
+                <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Unisured Loss Recovery</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_Unisured_Loss_Recovery__c}"/>
+                    </apex:pageBlockSectionItem>
+                 </apex:pageBlockSection>  -->
+                  <div align="center" draggable="false" ><br/>
+                    <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;next();}" />&nbsp;&nbsp;&nbsp;&nbsp;<apex:commandButton action="{!Previous}" value="Previous" />&nbsp;&nbsp;&nbsp;&nbsp;<apex:commandButton value="Next" id="Submit" onClick="return SubmitOnClick(this);" /><apex:actionFunction name="doSubmit" action="{!Next}" />
+                </div >                  
+       </apex:pageBlock>
+      
+    </apex:form>
+</apex:page>

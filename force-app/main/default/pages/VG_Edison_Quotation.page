@@ -1,0 +1,1151 @@
+<apex:page >
+<!--<apex:page contentType="application/msword#Edison.doc" cache="true" showHeader="false" controller="VG_Edison_Quotation_Extension" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"> 
+   <html xmlns:w="urn:schemas-microsoft-com:office:word">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+        <style type="text/css" media="print">    
+            @font-face {
+                font-family: "Open Sans";
+                src: local('Open Sans Regular'), local('OpenSans-Regular'),url('https://fonts.gstatic.com/s/opensans/v15/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2') format('woff2');
+            }
+            @font-face {
+                font-family: "Open Sans";
+                src: local('Open Sans Regular'), local('OpenSans-Regular'),url('https://fonts.gstatic.com/s/opensans/v15/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2') format('woff2');
+            }
+            .Neapolitan {
+              height: 10px;
+              width: 5px;
+              background: linear-gradient(to bottom, #F0EDEB 0%, #F0EDEB 33%, #F0550C 33%, #F0550C 66%, #F0EDEB 66%, #F0EDEB 100%);
+            }
+            @page footer
+            {size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            margin-bottom:0in;
+            mso-header-margin:0.5in;
+            mso-footer-margin:0in;
+            mso-pagination:widow-orphan;
+            mso-paper-source:0;}
+            div.footer
+            {page:footer;}
+        </style>
+        <body>
+            <apex:outputText value="{!PrintView}" escape="false"/>
+            <div class="wordsection1">
+                <br/><br/><br/>
+                <div style="margin-left:450px;width:450px;height:100px;" >
+                    <apex:image url="{!LogoURL}" height="100" width="250"/>
+                </div>
+                <br/>
+                
+                <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+                    <tbody>
+                        <tr style="height:4.4pt">
+                            <td width="15" valign="bottom" style="width:15.0pt;padding:
+                                                                  0in 0in 0in 0in;height:4.4pt" rowspan="13">
+                                <apex:image url="{!MF}" style=" margin-left:30px;"/>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:4.4pt">
+                            </td>
+                            <td width="348" colspan="3" rowspan="7" valign="bottom" style="width:261.0pt;
+                                                                                           padding:0in 0in 0in 0in;height:4.4pt">
+                                <span style="font-size:30.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                                             color:#000703">MOTOR FLEET</span>
+                            </td>
+                            
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:4.4pt">
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none">
+                                    <span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none">
+                                    <span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:
+                                                                                                                              9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Reference </span><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">{!pol.Name}</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            
+                            <td width="145" rowspan="4" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:4.1pt">
+                            
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:
+                                                                                                                              9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Date</span>
+                                    <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">{!today}</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="348" colspan="3" rowspan="6" valign="bottom" style="width:261.0pt;
+                                                                                           padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            27.15pt;mso-line-height-rule:exactly;mso-pagination:none;mso-layout-grid-align:
+                                                            none;text-autospace:none"><span style="font-size:30.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+                                                                                                   color:gray">QUOTATION</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"></span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.9pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:
+                                                                                                                              9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">To email/fax</span> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"></span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            
+                            <td width="145" rowspan="2" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:5.05pt">
+                            
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:5.05pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:4.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:5.05pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:4.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:5.05pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:28.9pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:28.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:28.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:28.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;padding:0in 0in 0in 0in;
+                                                                   height:28.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:28.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:28.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:28.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:28.9pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" rowspan="2" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" rowspan="2" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:6.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:
+                                                                                                                              9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Name of insured</span> <span style="font-size:10.5.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">{!pol.Insured__r.Name}</span></p>
+                            </td>
+                            <td width="4" rowspan="2" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                             height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"></span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:
+                                                                                                                              9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Post code</span> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">{!pol.Insured__r.BillingPostalCode}</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:4.1pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="344" colspan="2" valign="bottom" style="width:258.0pt;padding:0in 0in 0in 0in;
+                                                                               height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="344" colspan="2" rowspan="2" valign="bottom" style="width:258.0pt;
+                                                                                           background:#F0EDEB;padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:6.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:
+                                                                                                                              9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Broker</span> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"></span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.45pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.45pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.45pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.45pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="344" colspan="2" valign="bottom" style="width:258.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.45pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.45pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.45pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.45pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="344" colspan="2" rowspan="2" valign="bottom" style="width:258.0pt;
+                                                                                           background:#F0EDEB;padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:6.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:
+                                                                                                                              9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Sub Broker</span> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"></span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.55pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.55pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.55pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.55pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.55pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.55pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.55pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.55pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.55pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" rowspan="2" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" rowspan="2" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:6.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:
+                                                                                                                              9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Current insurer</span> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"></span></p>
+                            </td>
+                            <td width="4" rowspan="2" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                             height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:
+                                                                                                                              9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Renewal date</span> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">{!IncepDateFormat}</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="mso-yfti-lastrow:yes;height:3.35pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                    </tbody></table><br/><br/>
+                
+                <div  style="margin-left:170px;">
+                    <table><tbody>
+                        <tr style="height:3.95pt;">
+                            <td width="573">
+                                <div style="background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span> 
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Vehicles</span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">&nbsp;&nbsp;&nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Nos</span>
+                                    <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> &nbsp;&nbsp;&nbsp;</span>
+                                    
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">as per schedule provided or </span> 
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703"> {!NoV}</span>
+                                </div>
+                            </td>  
+                        </tr>  
+                        <tr style="height:3.95pt;">
+                            <td>
+                                <div style="background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>       
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Cover</span> 
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">&nbsp;&nbsp;&nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Comprehensive</span>  
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#F0EDEB;background-color:#F0EDEB;"><apex:outputPanel rendered="{!comp}"><input type="checkbox" name="comprehensive" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!comp}"><input type="checkbox" name="comprehensive" /></apex:outputPanel></span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">TPF&amp;T</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#F0EDEB;background-color:#F0EDEB;" ><apex:outputPanel rendered="{!tpft}"><input type="checkbox" name="TPFT" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!tpft}"><input type="checkbox" name="TPFT" /></apex:outputPanel></span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">TPO</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#F0EDEB;background-color:#F0EDEB;"><apex:outputPanel rendered="{!tpo}"><input type="checkbox" name="tpo" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!tpo}"><input type="checkbox" name="tpo" /></apex:outputPanel></span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Mixed Cover</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#F0EDEB;background-color:#F0EDEB;"><apex:outputPanel rendered="{!mixed}"><input type="checkbox" name="mixed" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!mixed}"><input type="checkbox" name="mixed" /></apex:outputPanel></span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">FTO</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#F0EDEB;background-color:#F0EDEB;"><apex:outputPanel rendered="{!fto}"><input type="checkbox" name="fto" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!fto}"><input type="checkbox" name="fto" /></apex:outputPanel></span>
+                                </div><br/> 
+                            </td>
+                        </tr>
+                        
+                        <tr style="height:2.95pt;">
+                            <td>
+                                <div style="background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Excess</span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">  £{!pol.Deductible_or_Excess_Amount__c}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr style="height:7.95pt;">
+                            <td>
+                                <div style="background:#F0EDEB;margin-left:5px;height:100px;"><span style="background:#F0550C;height:4px;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Driving Restrictions
+                                    </span><br/><br/><br/><br/>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">&nbsp;</span>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:2.95pt;">
+                            <td>
+                                <div style="background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Class of use(s)</span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703"></span>
+                                </div><br/><br/>
+                            </td>
+                        </tr>
+                        <tr style="height:2.95pt;">
+                            <td>
+                                <div style="background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Premium excl IPT </span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">{!pol.Actual_GWP__c+pol.VG_Brokerage_Amount__c+pol.Levies__c}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:2.95pt;">
+                            <td>
+                                <div style="background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Commission </span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">{!pol.VG_Brokerage_Amount__c}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:2.95pt;">
+                            <td>
+                                <div style="background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Policy form ref </span>  
+                                    &nbsp; <span style="font-size:
+                                                        9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703"> Product to be placed Here</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:4.95pt;"></tr>
+                        <tr style="height:7.95pt;">
+                            <td>
+                                <div style="background:#F0EDEB;margin-left:5px;height:100px;"><span style="background:#F0550C;height:4px;"> &nbsp;</span>  
+                                    <span style="background:#F0EDEB;font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703">Terms &amp;/or Conditions<br/><apex:outputPanel rendered="{!!(pseList.size==0)}" >
+                                        
+                                        <table style="background:#F0EDEB;" width='100%'>
+                                            <tr>
+                                                <td width='200'><b>Endorsement Number</b></td>
+                                                <td width='15'><b>-</b></td>
+                                                <td><b>Endorsement Title</b></td>
+                                            </tr>
+                                            <apex:repeat var="pse" value="{!pseList}">
+                                                <tr>
+                                                    <td>{!pse.VG_Endorsement_Number__c}</td>
+                                                    <td>-</td>
+                                                    <td>{!pse.VG_Title__c}</td>
+                                                </tr>
+                                            </apex:repeat>
+                                        </table>
+                                        </apex:outputPanel><apex:outputPanel rendered="{!(pseList.size==0)}"><br/><br/><br/></apex:outputPanel>
+                                    </span>
+                                    <span style="font-size:
+                                                 9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703"></span>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </div>
+            </div>
+            
+            
+            <div class="WordSection4">
+                
+                <div width='450' height='250' align='right' style="margin-right:70px;margin-top:0.5in;page-break-before:always">
+                    <apex:image url="{!LogoURL}" height="100" width="250"/>
+                </div>
+                <br/>
+                <div style="margin-left:169px;margin-right:70;" >
+                    <div>
+                        
+                        <p  style="margin-top:-20px;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                   normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#F0550C">THIS
+                            QUOTATION IS SUBJECT TO:</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"></span></p>
+                        
+                        
+                        <p style="font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;margin-left:20px;">1.&nbsp;&nbsp;&nbsp;&nbsp; Standard Edison policy terms and conditions unless otherwise agreed and detailed above.</p> 
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;">2.&nbsp;&nbsp;&nbsp;&nbsp;   Standard Edison policy document, policy summary and commonly used endorsement wordings are available on our website [xxxx] or on request. You should also erer to your TOBA for further details. </p>
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;">3.&nbsp;&nbsp;&nbsp;&nbsp;  A signed and satisfactorily completed proposal and confirmed claims experience in market form being received by us within 14 days of the commencement of cover.  </p>
+                        
+                        <p style="margin-top:-30px;margin-left:20px;font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;">4.&nbsp;&nbsp;&nbsp;&nbsp;   No changes to the claims experience or number of vehicles or the fair presentation of the risk between the date of this quotation and the date cover commences.  </p>
+                        
+                        <p style="margin-top:-30px;margin-left:20px;font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;">5.&nbsp;&nbsp;&nbsp;&nbsp;   Standard terms of credit apply unless otherwise agreed and detailed above.  </p>
+                        
+                        <p style="margin-top:-30px;margin-left:20px;font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;"><span>6.&nbsp;&nbsp;&nbsp;&nbsp;<span> Insurance 
+                            
+                            
+                            tax to be added at the existing rate.</span></span> </p>
+                        
+                        <p style="margin-top:-30px;margin-left:20px;font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;">7.&nbsp;&nbsp;&nbsp;&nbsp;    Compliance with the requirement of the Motor Insurers Database and its deadlines.  </p>
+                        
+                        <p style="margin-top:-30px;margin-left:20px;font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;">8.&nbsp;&nbsp;&nbsp;&nbsp;    This quotation is valid for a period of 60 days after which we reserve the right to amend or withdraw it at our option.  </p>
+                        
+                        <p style="margin-top:-30px;margin-left:20px;font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;">9.&nbsp;&nbsp;&nbsp;&nbsp;    Failure to comply with any deadline applied to any subjectivity or policy term or policy condition will result in cover reverting to standard Edison policy terms and conditions.  </p>
+                        
+                        <p style="margin-top:-30px;margin-left:20px;font-size:9.5pt;text-align:justify;text-justify:inter-ideograph;
+                                  text-indent:-16.55pt;line-height:127%;">10.&nbsp;&nbsp;&nbsp;&nbsp;   Any questions concerning this quotation or queries arising therefrom should be referred to the Motor Fleet Underwriting team.  </p>
+                        
+                        
+                    </div>
+                </div>
+                
+                <table id="tb1" style="margin-left:170px;border-collapse:collapse;">
+                    <tr style="height:3.95pt;">
+                        
+                        <div style="background:#F0EDEB;">
+                            <td width="512"><span style="font-size:
+                                                         9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703"><span style="background:#F0550C;"> &nbsp;</span>&nbsp;Underwiters Signature</span>
+                            </td>
+                            
+                        </div>                           
+                    </tr> 
+                    
+                    <tr style="height:3.95pt;">
+                        
+                        <div style="background:#F0EDEB;">
+                            <td width="512"><span style="font-size:
+                                                         9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#000703"><span style="background:#F0550C;"> &nbsp;</span>&nbsp;Date </span>{!today}
+                            </td>
+                            
+                        </div>
+                        
+                    </tr> 
+                </table>
+            </div>
+            <br/>
+           
+            <div class='footer' style="margin-bottom:0;" >
+                <img src="{!FooterURL}"  height='389.152' width='820' style='position:fixed' />
+            </div> 
+            
+        </body>
+    </html> --> 
+</apex:page>

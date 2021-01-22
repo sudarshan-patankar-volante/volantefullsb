@@ -1,0 +1,93 @@
+<apex:page controller="VG_Revise_FIDOProductSteps" sidebar="false" showHeader="false">
+    
+    <apex:form >
+        <div style="width: 80%; margin-bottom:8px;margin-top: 8px;margin-left:80px;">
+            <img src="{!$Resource.LS_PS}" alt="Smiley face" height="45px" width="800px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div> 
+        <apex:pageblock tabStyle="Account" title="Select Product" id="pb1">
+            
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection columns="1" >
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Product</apex:outputLabel>
+                    <apex:selectList value="{!Product}" size="1" style="width:200px;">
+                        <apex:selectOptions value="{!Product_Select}"></apex:selectOptions>
+                        <apex:actionSupport event="onchange" action="{!setLPList}" reRender="pb1"></apex:actionSupport>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>               
+                <apex:pageBlockSectionItem >                   
+                    <apex:outputLabel >Lloyds Product</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                         <apex:outputPanel styleClass="requiredBlock"/>                          
+                        <apex:selectList value="{!LProduct}" id="so1" size="1" style="width:200px;">
+                            <apex:selectOptions value="{!LP_Select}"></apex:selectOptions>
+                        </apex:selectList>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                
+                
+                <apex:pageBlockSectionItem rendered="{!Product == 'D&O' || Product=='Pre-paid Run-off'}">
+                    <apex:outputLabel >D&amp;O Product</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>  
+                        <apex:selectList value="{!DOProduct}"  size="1" style="width:200px;">
+                            <apex:selectOption itemValue="--None--" itemLabel="--None--"/>
+                            <apex:selectOptions value="{!DOProduct_Select}"></apex:selectOptions>
+                        </apex:selectList>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!Product=='FI - D&O'}">
+                    <apex:outputLabel >D&amp;O Product</apex:outputLabel>                     
+                    <apex:selectList value="{!DOProduct}"  size="1" style="width:200px;">
+                        <apex:selectOptions value="{!DOProduct_Select}"></apex:selectOptions>
+                    </apex:selectList>                   
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="3" title="Rentention" rendered="{!Product == 'D&O' || Product=='Pre-paid Run-off' || Product=='FI - D&O'}" collapsible="false">
+                <apex:pageBlockSectionItem rendered="{!Product == 'D&O' || Product=='Pre-paid Run-off' || Product=='FI - D&O'}" dataStyle="width:200px;">
+                    <apex:outputLabel >Side B Amount({!PolicyCurrency})</apex:outputLabel>
+                    <apex:inputText value="{!sideBRentention}"  html-placeholder="Enter Number"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Product == 'D&O' || Product=='Pre-paid Run-off' || Product=='FI - D&O'}" dataStyle="width:200px;">
+                    <apex:outputLabel >Side B Currency</apex:outputLabel>
+                    <apex:selectList value="{!sideBRententionCurrency}"  size="1" style="width:200px;">
+                        <apex:selectOptions value="{!SideCurrencies}"></apex:selectOptions>
+                        <apex:actionSupport event="onchange" reRender="pb1"></apex:actionSupport>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Product == 'D&O' || Product=='Pre-paid Run-off' || Product=='FI - D&O'}" dataStyle="width:200px;">
+                    <apex:outputLabel >Side B Amount({!sideBRententionCurrency})</apex:outputLabel>
+                    <apex:inputText value="{!sideBAmount}"  html-placeholder="Enter Number"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!Product == 'D&O' || Product=='Pre-paid Run-off' || Product=='FI - D&O'}" dataStyle="width:200px;">
+                    <apex:outputLabel >Side C Amount({!PolicyCurrency})</apex:outputLabel>
+                    <apex:inputText value="{!sideCRentention}"  html-placeholder="Enter Number"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Product == 'D&O' || Product=='Pre-paid Run-off' || Product=='FI - D&O'}" dataStyle="width:200px;">
+                    <apex:outputLabel >Side C Currency</apex:outputLabel>
+                    <apex:selectList value="{!sideCRententionCurrency}"  size="1" style="width:200px;">
+                        <apex:selectOptions value="{!SideCurrencies}"></apex:selectOptions>
+                        <apex:actionSupport event="onchange" reRender="pb1"></apex:actionSupport>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Product == 'D&O' || Product=='Pre-paid Run-off' || Product=='FI - D&O'}" dataStyle="width:200px;">
+                    <apex:outputLabel >Side C Amount({!sideCRententionCurrency})</apex:outputLabel>
+                    <apex:inputText value="{!sideCAmount}"  html-placeholder="Enter Number"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Next" action="{!gotostep2}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageblock>
+        
+    </apex:form>
+    
+</apex:page>

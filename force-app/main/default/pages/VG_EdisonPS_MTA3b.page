@@ -1,0 +1,29 @@
+<apex:page controller="VG_EdisonPS_Ins3b_Controller">
+    <apex:form >
+        <div style="background-color: #bcd4f5;height: 70px;width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Endorsement}" alt="Smiley face" height="40px" width="1200px" style="margin-left: 260px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+            <apex:pageBlock id="LibraryIndex" title="Endorsement Details">
+                <apex:pageMessage severity="Info" summary="No endorsements seleted from library.. If needed, you can add a custom endorsement." strength="3" rendered="{!!hasEndorsements}"/>
+                <apex:pageBlockTable value="{!existingEndorsements}" var="EN" id="pbt1" rendered="{!hasEndorsements}">
+                    <apex:column headerValue="Title" width="20%" >
+                        <apex:inputField id="ILETEDSsE" value="{!EN.VG_Title__c }"/>
+                    </apex:column>
+                    <apex:column headerValue="Description" width="70%">
+                        <apex:inputField value="{!EN.VG_Endorsement_Details__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Premium" width="10%">
+                        <apex:inputField value="{!EN.VG_Premium__c}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton action="{!AddCustom}" value="Add Custom Endorsement"/>
+                </apex:pageBlockButtons>
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton action="{!Cancel}" value="Cancel"/><apex:commandButton action="{!Previousb}" value="Previous"/><apex:commandButton action="{!Nextb}" value="Next"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock>   
+        </div>         
+    </apex:form>
+</apex:page>

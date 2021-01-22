@@ -1,0 +1,31 @@
+<apex:page Controller="ChangeBrokerController" standardStylesheets="false">
+   <head>
+   <style>
+        .myFormStyle {
+
+            background-color: #52AEC9 !important;
+
+        }
+
+    </style></head>
+    <body style="background-color: #ffffff !important"> 
+        <apex:form >
+            <apex:pageBlock tabStyle="Account">
+                <apex:pageMessages />
+                <apex:pageBlockSection columns="1" title="Change Broker" collapsible="false"> 
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Broker</apex:outputLabel>
+                        <apex:inputField id="Broker" value="{!policy.Broker_Name__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Broker Contact</apex:outputLabel>
+                        <apex:inputField id="contact" value="{!policy.Broker_Contact__c}"/>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection> 
+                <apex:pageBlockButtons location="bottom" style="align:center">
+                    <apex:commandButton action="{!save}" value="Save" /><apex:commandButton action="{!cancel}" value="Cancel" />
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+        </apex:form>
+    </body> 
+</apex:page>

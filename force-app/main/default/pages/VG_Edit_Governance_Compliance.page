@@ -1,0 +1,272 @@
+<apex:page controller="VG_Edit_Governance_Compliance_Controller" sidebar="false" showHeader="false">
+    <apex:form id="pg1">
+        <apex:pageBlock tabStyle="Account" >
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection columns="2" title="General Information" id="ps1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Account Name</apex:outputLabel>
+                    <apex:outputText value="{!Policy.Insured__r.Name}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Select Policy Schedule</apex:outputLabel>
+                    <apex:selectList value="{!psid}" size="1">
+                        <apex:selectOptions value="{!psList}" ></apex:selectOptions>
+                        <apex:actionSupport event="onchange" action="{!setPSValues}"  reRender="ps1"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>    
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Business Description</apex:outputLabel>
+                    <apex:outputText value="{!policy.Insured__r.Business_Description__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Product</apex:outputLabel>
+                    <apex:outputText value="{!ps.Product__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Broker Name</apex:outputLabel>
+                    <apex:outputText value="{!policy.Broker_Name__r.Name}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Layer</apex:outputLabel>
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!ps.VG_Total_Layer_Premium__c}"/>
+                    </apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Class of Business</apex:outputLabel>
+                    <apex:outputText value="{!policy.Line_Of_Business__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Limit</apex:outputLabel>
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!ps.Limit__c}"/>
+                    </apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Risk Inception Date</apex:outputLabel>
+                    <apex:outputText value="{!policy.VG_Inception_Date__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Signed Share (%)</apex:outputLabel>
+                    <apex:outputText value="{!ps.Share__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Risk Expiry Date</apex:outputLabel>
+                    <apex:outputText value="{!policy.VG_Expiry_Date__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Sum Insured (Amount)</apex:outputLabel>
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!ps.Sum_Insured__c}"/>
+                    </apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Type of Insurance</apex:outputLabel>
+                    <apex:outputText value="{!policy.Type_of_Insurance__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Attachment</apex:outputLabel>
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!ps.Attachment__c}"/>
+                    </apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Lead or Follow</apex:outputLabel>
+                    <apex:outputText value="{!policy.VG_Lead_or_Follow__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Gross Written Premium</apex:outputLabel>
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!ps.Gross_Written_Premium__c}"/>
+                    </apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Wording</apex:outputLabel>
+                    <apex:outputText value="{!policy.VG_Wording__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Brokerage (Amount)</apex:outputLabel>
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!ps.VG_Brokerage_Amount__c}"/>
+                    </apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Territorial Limits</apex:outputLabel>
+                    <apex:outputText value="{!policy.VG_Territorial_Limits__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Created Date</apex:outputLabel>
+                    <apex:outputText value="{!ps.Policy__r.CreatedDate}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Policy Currency</apex:outputLabel>
+                    <apex:outputText value="{!policy.VG_Policy_Currency__c }"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Deadline </apex:outputLabel>
+                    <apex:inputField value="{!policy.VG_Deadline__c}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2" title="Underwriter Assessment" >
+                <apex:pageBlockSectionItem rendered="{!policy.RecordType.Name=='VFP'}">
+                <apex:outputLabel >Slip Reference No</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>  
+                    <apex:inputField value="{!gc.VG_Slip_Reference_No__c}" label="Slip Reference No" style="width:200px;">
+                    </apex:inputField>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!policy.RecordType.Name!='VFP'}">
+                    <apex:outputLabel >Slip Reference No</apex:outputLabel>
+                    <apex:inputField value="{!gc.VG_Slip_Reference_No__c}" label="Slip Reference No" style="width:200px;">
+                    </apex:inputField>                
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!gc.VG_Loss_History__c}" label="Loss History" style="width:200px;">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Pricing_Rationale__c}" label="Pricing Rationale" style="width:200px;">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_UW_Consideration__c}" label="UW Consideration" style="width:200px;">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Key_Clauses_Exclusions__c}" label="Key Clauses/ Exclusions" style="width:200px;">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Conditions_Subjectivites__c}" label="Conditions/Subjectivites" style="width:200px;disabled:true;" >
+                </apex:inputField>
+            </apex:pageBlockSection>
+             <apex:pageBlockSection columns="2" title="Underwriter Referral" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Referral</apex:outputLabel>
+                    <apex:inputField value="{!gc.VG_Referral__c}" required="true" label="Referral">
+                    </apex:inputField>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!gc.VG_Reason_for_Referral__c}" label="Reason for Referral" style="width:200px;">
+                </apex:inputField>
+                <apex:inputField value="{!gc.Referred_to__c}" label="Referred to" style="width:200px;">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Rating_Considerations__c}" label="Rating Considerations" style="width:200px;">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Proposed_Terms__c}" label="Proposed Terms" style="width:200px;">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Referral_Underwirter_Comments__c}" label="Referral Underwirter Comments" style="width:200px;">
+                </apex:inputField>
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Referral Complete</apex:outputLabel>
+                <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                <apex:outputPanel styleClass="requiredBlock"/>  
+                    <apex:inputField value="{!gc.VG_Referral_Complete__c}" label="Referral Complete" style="width:200px;">
+                </apex:inputField>                
+                </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Referral completed By</apex:outputLabel>
+                <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel3" >
+                <apex:outputPanel styleClass="requiredBlock"/>  
+                    <apex:inputField value="{!gc.VG_Referral_completed_By__c}" label="Referral completed By">
+                </apex:inputField>
+                </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>    
+            <apex:pageBlockSection columns="2" title="Peer Review">                
+                <apex:inputField value="{!gc.VG_Peer_Review__c}" required="true" label="Peer Review">
+                </apex:inputField>
+                <apex:pageBlockSectionItem > </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Peer Reviewer 1</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel3" >
+                    <apex:outputPanel styleClass="requiredBlock"/>  
+                        <apex:inputField value="{!gc.VG_Peer_Reviewer_1__c}" label="Peer Reviewer 1">
+                        </apex:inputField>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!gc.VG_Peer_Reviewer_2__c}" label="Peer Reviewer 2">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Peer_Review_1_Comments__c}" label="Peer Review 1 Comments">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Peer_Review_2_Comments__c}" label="Peer Review 2 Comments">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Peer_Review_1_Complete__c}" label="Peer Review 1 Satisfied">
+                </apex:inputField>                
+                <apex:inputField value="{!gc.VG_Peer_Review_2_Complete__c}" label="Peer Review 2 Satisfied">
+                </apex:inputField>
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel >Peer Review 1 Date</apex:outputLabel>
+                <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel3" >
+                <apex:outputPanel styleClass="requiredBlock"/>  
+                    <apex:inputField value="{!gc.VG_Peer_Review_1_Date__c}" label="Peer Review 1 Date">
+                </apex:inputField>
+                </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!gc.VG_Peer_Review_2_Date__c}" label="Peer Review 2 Date">
+                </apex:inputField>
+                <!--<apex:inputField value="{!gc.VG_Peer_Review_1_Date__c}" label="Peer Review 1 Date" onblur="this.blur"></apex:inputField>
+                <apex:inputField value="{!gc.VG_Peer_Review_2_Date__c}" label="Peer Review 2 Date"></apex:inputField>-->
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2" title="Contract Certainty">
+                <apex:inputField value="{!gc.VG_Question_1__c}" label="Are parties clearly identified?">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Question_6__c}" label="Are the limits clearly expressed?">
+                </apex:inputField>
+                
+                <apex:inputField value="{!gc.VG_Question_2__c}" label="Is wording attached or clearly referenced?">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Question_7__c}" label="Is the premium or rate clearly expressed?">
+                </apex:inputField>
+                
+                <apex:inputField value="{!gc.VG_Question_3__c}" label="Are all conditions clearly expressed?">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Question_8__c}" label="Are any applicable taxes expressed?">
+                </apex:inputField>
+                
+                <apex:inputField value="{!gc.VG_Question_4__c}" label="Regulatory requirements addressed?">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Question_9__c}" label="Are any payment terms clearly expressed?">
+                </apex:inputField>
+                
+                <apex:inputField value="{!gc.VG_Question_5__c}" label="Is the period of cover clearly expressed?">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Question_10__c}" label="Are currencies clearly identified?">
+                </apex:inputField>
+                
+                <apex:inputField value="{!gc.VG_Question_11__c}" label="Full Terms and Conditions?">
+                </apex:inputField>
+                <apex:outputlabel ></apex:outputlabel>
+                
+                <apex:inputField value="{!gc.VG_Contract_Certainty__c}" label="Contract Certainty">
+                </apex:inputField>
+                <apex:inputField value="{!gc.VG_Documents_attached__c}" label="Documents attached?">
+                </apex:inputField>
+               
+                <apex:inputField value="{!gc.VG_Contact_Certainty_Date__c}" label="Contact Certainty Date">
+                </apex:inputField>  
+                 <apex:inputField value="{!gc.VG_Contract_Certainty_Comments__c}" label="Contract Certainty Comments">
+                </apex:inputField> 
+                <apex:pageBlockSectionItem rendered="{!policy.RecordType.Name=='VFP' || policy.RecordType.Name=='Affinity' || policy.RecordType.Name=='Edison Motor' || policy.RecordType.Name=='Aesir' || policy.RecordType.Name=='Gentium'}"> 
+                    <apex:outputLabel >Policy Issuance Date</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel3" >
+                    <apex:outputPanel styleClass="requiredBlock"/>  
+                        <apex:inputField value="{!gc.VG_Policy_Issuance_Date__c}" >
+                        </apex:inputField>                      
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!policy.RecordType.Name!='VFP' && policy.RecordType.Name!='Affinity' &&  policy.RecordType.Name!='Edison Motor' && policy.RecordType.Name!='Aesir' && policy.RecordType.Name!='Gentium'}"> 
+                    <apex:outputLabel >Policy Issuance Date</apex:outputLabel>
+                    <apex:inputField value="{!gc.VG_Policy_Issuance_Date__c}">
+                    </apex:inputField>                                       
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Save" action="{!createGC}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

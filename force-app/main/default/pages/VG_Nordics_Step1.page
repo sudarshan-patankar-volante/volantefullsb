@@ -1,0 +1,28 @@
+<apex:page controller="VG_NordicsProductSteps" sidebar="false" showHeader="false">
+    <apex:form >
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;margin-left:150px;">
+            <img src="{!$Resource.Path_PS_IMG}" alt="Smiley face" height="50px" width="950px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <apex:pageblock tabStyle="Account" title="Select Product">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection columns="1" id="so1" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Product</apex:outputLabel>
+                    <apex:selectList value="{!price.VG_Product__c}" size="1">
+                        <apex:selectOptions value="{!Product_Select}"></apex:selectOptions>
+                        <apex:actionSupport event="onchange" action="{!setLPList}" reRender="so1"></apex:actionSupport>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!if(price.VG_Product__c != null && price.VG_Product__c != 'Commercial Combined', True, False)}" >
+                    <apex:outputLabel >Lloyds Product</apex:outputLabel>
+                    <apex:selectList value="{!LProduct}" size="1">
+                        <apex:selectOptions value="{!LP_Select}"></apex:selectOptions>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Next" action="{!gotostep2}"/>
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

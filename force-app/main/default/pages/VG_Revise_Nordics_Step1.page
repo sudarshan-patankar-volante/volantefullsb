@@ -1,0 +1,25 @@
+<apex:page controller="VG_Revise_NordicsProductSteps" sidebar="false" showHeader="false">
+    <apex:form >
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;margin-left:150px;">
+            <img src="{!$Resource.Path_PS_IMG}" alt="Smiley face" height="50px" width="950px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <apex:pageblock tabStyle="Account" title="Select Product">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection columns="1" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Product</apex:outputLabel>
+                        <apex:outputField label="Product" value="{!ps.Product__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Lloyds Product</apex:outputLabel>
+                    <apex:selectList value="{!LProduct}" id="so1" size="1">
+                        <apex:selectOptions value="{!LP_Select}"></apex:selectOptions>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Next" action="{!gotostep2}"/>
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

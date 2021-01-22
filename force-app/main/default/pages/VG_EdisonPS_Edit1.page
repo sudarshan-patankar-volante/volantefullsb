@@ -1,0 +1,347 @@
+<apex:page title="Demo" standardController="Policy_Schedule__c" extensions="VG_PolicyScheduleEdit1_Controller" showHeader="false" sidebar="false">
+    <head>
+        <style>
+            .headerStyle {
+            font-size:50px;
+            }
+        </style>
+        <script type="text/javascript">
+            var counter;
+            if('{!MTAType}'=='Revision of Cover' ){
+                counter=0;
+            }else{
+                if('{!rrCount}' != 0){
+                    counter='{!rrCount}';
+                }else{
+                    counter=1;
+                }
+            }
+            var tpr=0;
+            function calPremium(nofid, rpvId, premiumid,tprid){
+                tpr=0;
+                var nof=document.getElementById(nofid).value;
+                var rate=document.getElementById(rpvId).value;
+                //Code added by siddik on 26.2.2018
+                var regex = new RegExp(',', 'g');
+                rate = rate.replace(regex, '');
+                nof = nof.replace(regex, '');
+                //Code added finished  on 26.2.2018 
+                if(nof != ''  && rate != ''){
+                    var c = nof * rate;
+                    tpr=tpr+c;
+                    document.getElementById(premiumid).innerHTML = c;
+                    tpr=0;
+                    for(var i=0;i<counter;i++){
+                        var id='j_id0:f1:pb2:pbt1:'+i+':prem';
+                        var preval=document.getElementById(id).innerHTML;
+                        tpr=tpr+parseInt(preval,10);
+                        
+                    }
+                    document.getElementById(tprid).innerHTML = tpr;
+                }
+                
+            }
+            function calTechPremium(nofid, turId, techid){
+                var nof=document.getElementById(nofid).value;
+                var rate=document.getElementById(turId).value;
+                //Code added by siddik on 26.2.2018
+                var regex = new RegExp(',', 'g');
+                rate = rate.replace(regex, '');
+                nof = nof.replace(regex, '');
+                //Code added finished  on 26.2.2018 
+                if(nof != ''  && rate != ''){
+                    var c=nof*rate;
+                    document.getElementById(techid).innerHTML = c;
+                }
+                
+            }
+            function removeAss(nofid, rpvId,tprid){
+                var nof1=document.getElementById(nofid).value;
+                var rate1=document.getElementById(rpvId).value;
+                //Code added by siddik on 26.2.2018
+                var regex = new RegExp(',', 'g');
+                rate1 = rate1.replace(regex, '');
+                nof1 = nof1.replace(regex, '');
+                //Code added finished  on 26.2.2018 
+                var d=nof1*rate1;
+                tpr=tpr-d;
+                document.getElementById(tprid).innerHTML = tpr;
+                counter=counter-1;
+            }
+            function ccc(id){
+                alert(id);
+            }
+            function AddAsset(){
+                counter=parseInt(counter, 10)+1;
+            }
+            function SubmitOnClick (objSubmitBtn) {
+            
+            document.getElementById(objSubmitBtn.id).disabled = true;
+            document.getElementById(objSubmitBtn.id).classList.add("disabled");
+            objSubmitBtn.value = "Saving…";
+            doSubmit();
+        }
+        </script>
+    </head>
+    <apex:form id="f1" style="width:1400px;">
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_AddAsset}" alt="Smiley face" height="40px" width="1150px" style="margin-left: 35px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+            <apex:outputPanel id="pbkid2">
+            <apex:actionRegion >
+                <apex:pageBlock title="Mid Term Adjustment Details" rendered="{!IsCancellation||IsRevision||IsExtension||IsDeclaration}">
+                    <apex:pageMessages rendered="{!showError}"/>
+                    <apex:pageBlockSection >
+                        <apex:pageBlockSectionItem rendered="{!IsExtension || IsRevision}" >
+                            <apex:outputLabel >MTA Start Date</apex:outputLabel>
+                            <apex:inputField value="{!ps.VG_MTA_Start_Date__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem rendered="{!IsExtension || IsRevision}"  >
+                            <apex:outputLabel >MTA End Date</apex:outputLabel>
+                            <apex:outputField value="{!ps.VG_MTA_End_Date__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem rendered="{!IsCancellation}"  >
+                            <apex:outputLabel >Cancellation Date</apex:outputLabel>
+                            <apex:inputField value="{!ps.VG_MTA_Cancellation_Date__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem rendered="{!IsCancellation}"  >
+                            <apex:outputLabel >Cancellation Reason</apex:outputLabel>
+                            <apex:inputField value="{!ps.MTA_Reason_for_Cancellation__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem rendered="{!IsDeclaration}"  >
+                            <apex:outputLabel >Declaration Type</apex:outputLabel>
+                            <apex:selectList size="1" value="{!ps.VG_Declaration_Type__c}">
+                                <apex:selectOptions value="{!DecTypes}"></apex:selectOptions>
+                                <apex:actionSupport event="onchange" action="{!updateDeclarationRate}" reRender="pbkid2"  />
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem rendered="{!IsDeclaration}"  >
+                            <apex:outputLabel >Declaration Type %</apex:outputLabel>
+                            <apex:outputField value="{!ps.VG_Declaration_Type_percent__c}"/>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                </apex:pageBlock>
+                <apex:pageBlock title="Policy Schedule Details" rendered="{!!IsCancellation && !IsRevision && !IsExtension && !IsDeclaration}">                
+                    
+                    <apex:pageBlockSection columns="1">
+                        <apex:pageBlockSectionItem rendered="{!COB != 'MOTOR-ULR'}">
+                            <apex:outputLabel >Product</apex:outputLabel>
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel1" >
+                                <apex:outputPanel styleClass="requiredBlock"/>   
+                                <apex:selectList value="{!Product_seleced}" size="1" style="width:200px;">
+                                    <apex:actionSupport reRender="pb2" event="onchange"/>
+                                    <apex:selectOption itemValue="--None--" itemLabel="--None--"/>                  
+                                    <apex:selectOption itemValue="Commercial" itemLabel="Commercial"/>
+                                    <apex:selectOption itemValue="Public Sector" itemLabel="Public Sector"/>
+                                    <apex:selectOption itemValue="Public Sector – Non Conventional" itemLabel="Public Sector – Non Conventional"/>
+                                    <apex:selectOption itemValue="Commercial – Non Conventional" itemLabel="Commercial – Non Conventional"/>
+                                </apex:selectList>
+                            </apex:outputPanel> 
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem rendered="{! COB == 'MOTOR-ULR'}">
+                            <apex:outputLabel >Product</apex:outputLabel>
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel1" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:selectList value="{!Product_seleced}" size="1" style="width:200px;">
+                                    <apex:selectOption itemValue="--None--" itemLabel="--None--"/>                  
+                                    <apex:selectOption itemValue="Uninsured Loss Recovery" itemLabel="Uninsured Loss Recovery"/>
+                                    <apex:actionSupport reRender="pb1" event="onchange"/>
+                                </apex:selectList>
+                            </apex:outputPanel> 
+                        </apex:pageBlockSectionItem>
+                        
+                       <!-- <apex:pageBlockSectionItem rendered="{!COB != 'MOTOR-ULR'}">
+                            <apex:outputLabel >Capacity Paper</apex:outputLabel>
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel1" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:selectList value="{!CapacityPaper}" size="1" style="width:200px;">
+                                    <apex:selectOption itemValue="--None--" itemLabel="--None--"/>
+                                    <apex:selectOption itemValue="Public Sector" itemLabel="Public Sector"/>
+                                    <apex:selectOption itemValue="Non Conventional" itemLabel="Non Conventional"/>
+                                    <apex:selectOption itemValue="Hazardous" itemLabel="Hazardous"/>
+                                    <apex:selectOption itemValue="Ancillary" itemLabel="Ancillary"/> 
+                                    <apex:selectOption itemValue="Haulage" itemLabel="Haulage"/>
+                                    <apex:actionSupport reRender="pb2" event="onchange"/>
+                                </apex:selectList>
+                            </apex:outputPanel> 
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem rendered="{! COB == 'MOTOR-ULR'}">
+                            <apex:outputLabel >Capacity Paper</apex:outputLabel>
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel1" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:selectList value="{!CapacityPaper}" size="1" style="width:200px;">
+                                    <apex:selectOption itemValue="--None--" itemLabel="--None--"/>
+                                    <apex:selectOption itemValue="ULR" itemLabel="ULR" /> 
+                                    <apex:actionSupport reRender="pb2" event="onchange"/>
+                                </apex:selectList>
+                            </apex:outputPanel> 
+                        </apex:pageBlockSectionItem>-->
+                    </apex:pageBlockSection>
+                </apex:pageBlock>
+                </apex:actionRegion>
+            </apex:outputPanel>
+            
+            <apex:pageBlock id="pb1" tabStyle="Account" title="Risk Ratings Details" >
+                <apex:pageMessages rendered="{!showError}"/>
+                <apex:pageBlock rendered="{!(COB != 'MOTOR-ULR' )}">
+                    <apex:pageBlockSection >
+                        <apex:outputLabel value="Upload File" />
+                        <apex:inputFile id="file_File2"  value="{!fileBody}" />
+                        <apex:commandButton rendered="{!(Product_seleced !='Uninsured Loss Recovery')}" action="{!processuploadAsset}" value="Upload" />
+                    </apex:pageBlockSection>
+                </apex:pageBlock>
+               <apex:actionRegion >
+                <apex:pageblock rendered="{!(waList.size > 0 && !uploadAsset && COB != 'MOTOR-ULR' && Product_seleced !='--None--')}">
+                    
+                    <apex:pageBlockTable value="{!waList}" var="wa" rendered="{!(waList.size > 0 && !uploadAsset)}" id="pbt1" title="Risk Details (Annual)">
+                        
+                        <apex:column style="width:60px" headerValue="No. of Vehicles" id="c1" >
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField style="width:60px" id="nof" value="{!wa.psa.VG_Number_of_Vehicles__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="pb1"/> </apex:inputField>
+                            </apex:outputPanel>
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Type">
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel3" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField value="{!wa.psa.VG_Vehicle_Type__c}" />
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:180px" headerValue="Coverage" >
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel4" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:selectList style="width:180px" value="{!wa.psa.VG_Coverage__c}" size="1" multiselect="False">
+                                    <apex:selectOption itemValue="M3 - Fully Comprehensive" itemLabel="M3 - Fully Comprehensive"/>
+                                    <apex:selectOption itemValue="M6 - Third Party Fire & Theft" itemLabel="M6 - Third Party Fire & Theft"/>
+                                    <apex:selectOption itemValue="M6 - Third Party Only" itemLabel="M6 - Third Party Only"/>
+                                    <apex:selectOption itemValue="M6 - Fire & Theft Only" itemLabel="M6 - Fire & Theft Only"/>
+                                    <!--<apex:selectOptions value="{!coverageOptions}"> </apex:selectOptions>-->
+                                </apex:selectList>
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:180px" headerValue="Use" >
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel5" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField style="width:180px" value="{!wa.psa.VG_Use__c}" />
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:60px" headerValue="Deductible" >
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel6" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField style="width:60px" value="{!wa.psa.VG_Deductible__c}" />
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Tech UW Rate" >
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField style="width:70px" id="tur" value="{!wa.psa.VG_Technical_UW_Rate_Annual__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="pb1"/> </apex:inputField>                  
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Actual Rate">
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel7" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField style="width:70px" id="rpv" value="{!wa.psa.VG_Rate_Per_Vehicle__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="pb1"/> </apex:inputField>
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Model Rate">
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel8" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField style="width:65px" id="rpv1" value="{!wa.psa.VG_Model_Rate__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="pb1"/> </apex:inputField>
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Rate change">
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel9" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField style="width:65px" id="rpv2" value="{!wa.psa.VG_Rate_change__c}"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="pb1"/> </apex:inputField>
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Tech UW Premium" >
+                            <apex:outputLabel id="tech">{!wa.techPremium}</apex:outputLabel>
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Actual Premium" >
+                            <apex:outputLabel id="prem">{!wa.psa.VG_Premium__c}</apex:outputLabel>
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Delete" >
+                            <apex:commandButton rendered="{!!wa.psa.VG_IsTempDelete__c }" value="Remove" action="{!RemoveUploadAsset}" reRender="pb1" ><apex:param name="counter" assignTo="{!Index}"  value="{!wa.Counter}"/></apex:commandButton>
+                            <apex:outputPanel rendered="{!wa.psa.VG_IsTempDelete__c }">
+                                <apex:outputLabel >Deleted</apex:outputLabel>
+                            </apex:outputPanel>
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>
+                    
+                    <apex:outputPanel rendered="{!(waList.size > 0 && !uploadAsset)}">
+                        <div align="right" style="margin-right:80px;" >
+                            <b>Total Actual Rate:&nbsp;<apex:outputLabel id="tpr1" >{!totalpre}</apex:outputLabel></b>
+                        </div>
+                        <div align="right" style="margin-right:80px;" >
+                            <b>Total Premium:&nbsp;<apex:outputLabel id="tpr2" >{!totalpre}</apex:outputLabel></b>
+                        </div>
+                    </apex:outputPanel>
+                
+                </apex:pageblock>
+               </apex:actionRegion> 
+                
+                <apex:pageBlock rendered="{!(COB == 'MOTOR-ULR')}">   
+                   
+                    <div align="center" draggable="false" >
+                        <apex:commandButton action="{!addULRAsset}"  rerender="pb1" value="Add Asset" />
+                    </div>
+                    
+                    <apex:pageBlockTable rendered="{! waList.Size > 0}" value="{!waList}" var="wa">
+                        
+                        <apex:column style="width:60px" headerValue="No. of Vehicles" id="c1" >
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField style="width:60px" id="nof" value="{!wa.psa.VG_Number_of_Vehicles__c}"  ><apex:actionSupport event="onchange" action="{!ULRRRCalc}"  reRender="pb1"/> </apex:inputField>
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Actual Rate">
+                            <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel7" >
+                                <apex:outputPanel styleClass="requiredBlock"/>
+                                <apex:inputField style="width:70px" id="rpv" value="{!wa.psa.VG_Rate_Per_Vehicle__c}"><apex:actionSupport event="onchange" action="{!ULRRRCalc}"  reRender="pb1"/> </apex:inputField>
+                            </apex:outputPanel> 
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Actual Premium" >
+                            <apex:outputLabel id="prem">{!wa.psa.VG_Premium__c}</apex:outputLabel>
+                        </apex:column>
+                        
+                        <apex:column style="width:20px" headerValue="Delete" >
+                            <apex:commandButton rendered="{!!wa.psa.VG_IsTempDelete__c }" value="Remove" action="{!RemoveURLAsset}" reRender="pb1" ><apex:param name="counter" assignTo="{!Index}"  value="{!wa.Counter}"/></apex:commandButton>
+                            <apex:outputPanel rendered="{!wa.psa.VG_IsTempDelete__c }">
+                                <apex:outputLabel >Deleted</apex:outputLabel>
+                            </apex:outputPanel>
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>
+                    
+                    <apex:outputPanel rendered="{!!(waList.Size == 0)}" >
+                        <div align="left" style="margin-left:590px;" >
+                            <b>Total Premium:&nbsp;<apex:outputLabel id="tpr1" >{!totalpre}</apex:outputLabel></b>
+                        </div>
+                    </apex:outputPanel>
+                    
+                </apex:pageBlock>
+                
+                <div align="center" draggable="false" >
+                    <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}" />&nbsp;&nbsp;&nbsp;<apex:commandButton value="Next" id="Submit" onClick="return SubmitOnClick(this);" /><apex:actionFunction name="doSubmit" action="{!Nextpsa}" />
+                </div>
+            </apex:pageBlock>    
+        </div> 
+    </apex:form>
+</apex:page>

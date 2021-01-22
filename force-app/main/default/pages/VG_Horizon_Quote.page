@@ -1,0 +1,447 @@
+<apex:page contentType="application/msword#Horizon_Quote.doc" cache="true" showHeader="false" controller="VG_Horizon_Quotation" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"> 
+    <html xmlns:w="urn:schemas-microsoft-com:office:word">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1" rel="stylesheet" />     
+        <style type="text/css" media="print">    
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Font_OpenSan_CondLight, '/root/to/OpenSans-CondLight.ttf')});
+            }
+            
+            body{
+                font-family: Open Sans Condensed Light;              
+            }
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Doc_Header_Font, '/root/to/OpenSans-CondLight.ttf')});
+            }
+           
+            #header{
+                font-family: Open Sans Condensed Light;
+                font-size:30.0pt;
+            }
+            @page footer
+            {size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            margin-bottom:0in;
+            mso-header-margin:0.5in;
+            mso-footer-margin:0in;
+            mso-pagination:widow-orphan;
+            mso-paper-source:0;}
+            div.footer
+            {page:footer;}
+           
+        </style>
+        <body>
+            <apex:outputText value="{!PrintView}" escape="false"/>
+            <div class="footer">
+                <br/><br/><br/>
+                <div style="margin-left:450px;width:450px;height:100px;" >
+                    <apex:image url="{!LogoURL}" height="100" width="250"/>
+                </div>
+                <br/>
+              <table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+                    <tbody>
+                        <tr style="height:4.4pt;">
+                            <td width="15" valign="bottom" style="width:15.0pt;padding:
+                                                                  0in 0in 0in 0in;height:4.4pt" rowspan="13">
+                                <apex:image url="{!MF}" style=" margin-left:30px;"/>
+                            </td>
+                            <td width="25" valign="bottom" style="width:89.0pt;padding:0in 0in 0in 0in;
+                                                                  height:4.4pt">
+                            </td>
+                            <td width="328" colspan="3" rowspan="7" valign="bottom" style="width:261.0pt; padding:0in 0in 0in 0in;height:4.4pt">
+                                
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            99%;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span id="header" style="font-size:30.0pt;line-height:99%;
+                                                                                                                                                 color:#004040">Horizon Quotation</span>
+                                    
+                                </p>                                                                                                                                                                                                                                    
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>          
+                <div  style="margin-left:155px;margin-right:1.0in;">
+                    <TABLE style="list-style-type;background:#DEDAD9;margin-right:1.0in;border:2px solid #DEDAD9;">
+                          <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Quote / Policy Number:</b>{!ps.Policy__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"> </span>
+                                    
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Policy Holder:</b>{!ps.Policy__r.Insured__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"> </span>
+                                    
+                                </div>
+                            </td>
+                        </tr> 
+                       <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>    Company Registration No:</b>563221</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"> </span>
+                                    
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Address:</b></span>                                    
+                                </div>
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040">   20 St Dunstan’s Hill </span>                                    
+                                </div>
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040">London</span>                                    
+                                </div>
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040">EC3R 8HL</span>                                    
+                                </div>
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"> UK </span>                                    
+                                </div>
+                            </td>
+                        </tr> 
+                     </table> 
+                     
+                     <br/>
+                     
+                     <TABLE style="background:#DEDAD9;margin-right:1.0in;border:2px solid #DEDAD9;">
+                      
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Insurer:</b>{!ps.Policy__r.Insured__r.Name} </span>
+                                   
+                                </div>
+                            </td>
+                        </tr> 
+                        
+                        <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Product:</b>&nbsp;{!ps.Product__c}</span>
+                                   
+                                </div>
+                            </td>
+                        </tr>     
+                         <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Policy Period:</b>&nbsp; {!ps.Policy__r.VG_Inception_Date__c}-{!ps.Policy__r.VG_Expiry_Date__c} </span>
+                                   
+                                </div>
+                            </td>
+                        </tr>     
+                         <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>No of Reinstatements:</b>&nbsp;2</span>
+                                   
+                                </div>
+                            </td>
+                        </tr>     
+                         <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Layer:</b>&nbsp;2nd Layer</span>
+                                   
+                                </div>
+                            </td>
+                        </tr>   
+                        <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Policy Limit:</b>&nbsp;GBP 100,000,000 each claim and in the annual aggregate</span>
+                                   
+                                </div>
+                            </td>
+                        </tr>   
+                         <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Territorial Limit:</b>&nbsp;Worldwide</span>
+                                   
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Coverages:</b>&nbsp;  Property Damage</span>
+                                   
+                                </div>
+                            </td>
+                        </tr>
+                         <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Deductible:</b>&nbsp;GBP 100,000,000 each claim </span>
+                                   
+                                </div>
+                            </td>
+                        </tr>       
+                    </table>  
+                    
+                    <br/>
+                    <TABLE style="background:#DEDAD9;margin-right:1.0in;border:2px solid #DEDAD9;">
+                      
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Retroactive date(if applicable):</b></span>
+                                   
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b> Extended Reporting Period(if applicable): </b> </span>
+                                   
+                                </div>
+                            </td>
+                        </tr> 
+                       
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Continuous Cover Date (if applicable):  </b></span>
+                                   
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Wording: </b> </span>
+                                   
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Endorsements: </b> </span>
+                                   
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Premium excluding taxes: </b>   GBP 150,000 </span>
+                                   
+                                </div>
+                            </td>
+                        </tr> 
+                        
+                     </table>  
+                  </div>                   
+            </div>
+            
+            <div id="second page" class="footer" style="">
+               
+                    <br style="page-break-before:always;" />
+                    <br/><br/><br/>
+                    <div style="margin-left:450px;width:450px;height:100px;" >
+                        <apex:image url="{!LogoURL}" height="100" width="250"/>
+                    </div>
+                    <br/><br/>
+                    <div style="margin-left:155px;margin-right:1.0in;">
+                        <table style="background:#DEDAD9;margin-right:1.0in;border:2px solid #DEDAD9;">
+                            <tr style="height:3.95pt;">                           
+                                <td width="522" colspan="2">                                   
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>       Brokerage: </b> 10% </span>                                       
+                                    </div>
+                                </td>
+                            </tr>                                                                            
+                        </table>
+                        
+                        <br/>
+                        
+                         <table style="background:#DEDAD9;margin-right:1.0in;border:2px solid #DEDAD9;">
+                            <TR>
+                                <td width="522" colspan="2"><font color="#F0550C">Broker</font> </td>
+                            </TR>
+                            <tr style="height:3.95pt;">                           
+                                <td width="522" colspan="2">                                   
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b> Contact Person:  </b> </span>                                       
+                                    </div>
+                                </td>
+                            </tr>                                                    
+                            <tr style="height:3.95pt;">                           
+                                <td width="522" colspan="2">                                   
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b> Address of firm:  </b> </span>                                       
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="height:3.95pt;">                           
+                                <td width="522" colspan="2">                                   
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>Telephone number:  </b> </span>                                       
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <br/>
+                        
+                          <table style="background:#DEDAD9;margin-right:1.0in;border:2px solid #DEDAD9;">
+                            <TR>
+                                <td width="522" colspan="2"><font color="#F0550C">NOTIFICATION OF LOSS  </font> </td>
+                            </TR>
+                            <tr style="height:3.95pt;">                           
+                                <td width="522" colspan="2">                                   
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>   Any loss or claim reported to:   </b> </span>                                       
+                                    </div>
+                                </td>
+                            </tr>                                                    
+                            <tr style="height:3.95pt;">                           
+                                <td width="522" colspan="2">                                   
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b> Address:  </b> </span>                                       
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="height:3.95pt;">                           
+                                <td width="522" colspan="2">                                   
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>Telephone number:  </b> </span>                                       
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                         </div>
+                        <br/>
+                        
+                      <div style="margin-left:169px;margin-right:70;" >
+                       <div>
+                        
+                        <p  style="margin-top:-20px;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                   normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;color:#F0550C">THIS
+                            QUOTATION IS SUBJECT TO:</span><span style="font-size:12.0pt;"></span></p>
+                        
+                        <p style="font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;margin-left:20px;color:#004040"><b>1.</b>&nbsp;&nbsp;&nbsp;&nbsp; Standard Horizon policy terms and conditions unless otherwise outlined in this quotation.</p> 
+                        
+                         <p style="font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;margin-left:20px;color:#004040"><b>2.</b>&nbsp;&nbsp;&nbsp;&nbsp; IF APPLICABLE [A signed and satisfactorily completed proposal and confirmed claims experience received by us within [xx] days of the commencement of cover.] </p> 
+                        <p style="font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;margin-left:20px;color:#004040"><b>3.</b>&nbsp;&nbsp;&nbsp;&nbsp; This quotation is valid for a period of [XX] days after which we reserve the right to amend or withdraw it at our option.</p> 
+                        
+                        <p style="font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;margin-left:20px;color:#004040"><b>4.</b>&nbsp;&nbsp;&nbsp;&nbsp; <b>ADDITIONAL SUBJECTIVITIES</b></p> 
+                        
+                       
+                    </div>
+                    <table id="tb1" style="margin-left:140px;border-collapse:collapse;" width="60%">
+                    <div style="background:#F0EDEB;height:3.95pt">
+                    <tr style="height:3.95pt;">
+                        
+                        
+                            <td width="3" ><span style="background:#F0550C;"> &nbsp;</span></td>
+                            
+                            <td width="102" valign="top" style="height:5px;background:#F0EDEB;text-align:left;line-height:97%;"><span style="font-size:
+                                                         9.0pt;color:#004040;text-align:center;">&nbsp;Underwriters Signature:&nbsp;&nbsp;
+                                                   </span>
+                               </td>               
+                             <td width="52" valign="top" style="height:5px;background:#F0EDEB;">Talbir bains
+
+                                                    
+                            </td>
+                            
+                                                   
+                    </tr> 
+                    </div>
+                    
+                    <tr style="height:3.95pt;">
+                        
+                        <div style="background:#F0EDEB;">
+                            <td width="3" ><span style="background:#F0550C;"> &nbsp;</span></td>
+                            
+                            <td width="502" colspan="2"><span style="font-size:
+                                                         9.0pt;color:#004040">&nbsp;Date:&nbsp;&nbsp; </span>
+                            </td>
+                            
+                        </div>
+                        
+                    </tr> 
+                </table>
+                </div>
+             </div>
+        </body>
+     </html>
+
+</apex:page>

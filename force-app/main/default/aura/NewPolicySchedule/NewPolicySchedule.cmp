@@ -1,0 +1,30 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="VG_Policy_ButtonsController">
+    <aura:attribute name="record" type="Policy__c" 
+                    description="The record object to be displayed"/>
+    <aura:attribute name="simpleRecord" type="Object" 
+                    description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String" 
+                    description="An error message bound to force:recordData"/>
+    <aura:attribute name="ps" type="boolean" default="false"/>
+    
+    <aura:attribute name="mta" type="boolean" default="false"/>
+    
+    <force:recordData aura:id="policyRecord"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      recordUpdated="{!c.doInit}"
+                      mode="VIEW"/>
+    <aura:handler name="change" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:if isTrue="{!v.mta}">
+       <lightning:button name="b1" variant="brand" label="New Policy Schedule" onclick="{!c.handleClick }"/>
+     </aura:if>
+    <aura:if isTrue="{!v.ps}">
+       <lightning:button name="b2" variant="brand" label="Mid Term Adjustment" onclick="{!c.handleClick }" />
+     </aura:if>
+    
+    
+</aura:component>

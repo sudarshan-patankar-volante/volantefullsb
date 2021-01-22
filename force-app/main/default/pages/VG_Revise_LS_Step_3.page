@@ -1,0 +1,206 @@
+<apex:page controller="ReviseLSProductSteps" sidebar="false" showHeader="false">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"/>
+    <script>
+        (function($) {
+            function addYearsToDatePickers() {
+                var currentYear = $('select#calYearPicker > option:first-child').val();
+                for (var year = currentYear - 1; year > 1984; year--) {
+                    $('<option value="' + year + '">' + year + '</option>').prependTo('select#calYearPicker');
+                }
+            }
+            $(document).ready(addYearsToDatePickers);
+        })(jQuery.noConflict());
+    </script>
+    
+    <apex:form style="width:1380px;">
+        <div style="width: 80%; margin-bottom:8px;margin-top: 8px;margin-left:130px;">
+            <img src="{!$Resource.LS_RR}" alt="Smiley face" height="45px" width="800px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div> 
+        <div>       
+            <apex:pageBlock tabStyle="Account" title="Risk Rating Details" id="RRBlock">
+                <apex:pageMessages />  
+                
+                <apex:pageBlockButtons location="top" >
+                    <apex:commandButton value="Add Risk Rating" action="{!addRR}" rerender="RRBlock"/>
+                </apex:pageBlockButtons>
+                
+                <apex:pageBlockButtons location="Bottom" >
+                    <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!gotoStep2}" value="Previous"/><apex:commandButton action="{!gotostep4}" value="Next"/>
+                </apex:pageBlockButtons> 
+                
+                <apex:pageBlockTable value="{!riskRatingList}" var="rr" rendered="{!riskRatingList.size > 0}" >
+                    
+                    <apex:column title="Coverage"  headerValue="Coverage" style="width:100px;">
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel3" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:selectList value="{!rr.CoverageSelected}" id="so1" size="1" style="width:150px;"> 
+                                <apex:selectOptions value="{!RRCoverage_Select}"></apex:selectOptions>
+                                <apex:actionSupport event="onchange" reRender="RRBlock"></apex:actionSupport>
+                            </apex:selectList>
+                        </apex:outputPanel> 
+                    </apex:column>
+                    
+                    <apex:column title="Description" headerValue="Description" style="width:100px;">
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:100px;" rendered="{!rr.CoverageSelected=='' ||rr.CoverageSelected=='--None--'}">
+                            <apex:selectOption itemValue="--None--" itemLabel="--None--"/>
+                        </apex:selectList>
+                        
+                        <apex:selectList id="perils" value="{!rr.PerilsSelected}" size="1" style="width:150px;" rendered="{!rr.CoverageSelected=='Property Damage'}">
+                            <apex:selectOption itemValue="Buildings" itemLabel="Buildings"/>
+                            <apex:selectOption itemValue="Buildings - Clubhouse" itemLabel="Buildings - Clubhouse"/>  
+                            <apex:selectOption itemValue="Buildings - Outbuildings" itemLabel="Buildings - Outbuildings"/>  
+                            <apex:selectOption itemValue="Buildings - Stands" itemLabel="Buildings - Stands"/>
+                            <apex:selectOption itemValue="Machinery, Plant and All Other Contents" itemLabel="Machinery, Plant and All Other Contents"/>  
+                            <apex:selectOption itemValue="Floodlights" itemLabel="Floodlights"/>  
+                            <apex:selectOption itemValue="Computer and Electronic Equipment" itemLabel="Computer and Electronic Equipment"/>
+                            <apex:selectOption itemValue="Gaming, Amusement and Entertainment Equipment" itemLabel="Gaming, Amusement and Entertainment Equipment"/>  
+                            <apex:selectOption itemValue="Irrigation Equipment" itemLabel="Irrigation Equipment"/>  
+                            <apex:selectOption itemValue="Playing Surfaces" itemLabel="Playing Surfaces"/>
+                            <apex:selectOption itemValue="Cups and Trophies" itemLabel="Cups and Trophies"/>  
+                            <apex:selectOption itemValue="Rent Payable" itemLabel="Rent Payable"/>  
+                            <apex:selectOption itemValue="Plate Glass" itemLabel="Plate Glass"/>
+                            <apex:selectOption itemValue="Stock of Food & General" itemLabel="Stock of Food & General"/>  
+                            <apex:selectOption itemValue="Stock of Wines, Spirits & Tobacco" itemLabel="Stock of Wines, Spirits & Tobacco"/>  
+                            <apex:selectOption itemValue="Sightscreens and Scoreboards" itemLabel="Sightscreens and Scoreboards"/>
+                            <apex:selectOption itemValue="Sporting kit and Equipment" itemLabel="Sporting kit and Equipment"/>  
+                            <apex:selectOption itemValue="Detioration of Stock" itemLabel="Detioration of Stock"/>  
+                            <apex:selectOption itemValue="Personal Effects" itemLabel="Personal Effects"/>                   
+                        </apex:selectList> 
+                        
+                        <apex:outputPanel rendered="{!rr.CoverageSelected=='Specified Items'}">
+                            <apex:inputField value="{!rr.psa.VG_Perils_Text__c}" style="width:100px;"/>                      
+                        </apex:outputPanel> 
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:100px;" rendered="{!rr.CoverageSelected=='Business Interruption'}">
+                            <apex:selectOption itemValue="Gross Profit" itemLabel="Gross Profit"/>
+                            <apex:selectOption itemValue="Gross Revenue" itemLabel="Gross Revenue"/>
+                            <apex:selectOption itemValue="Increased Cost of Working" itemLabel="Increased Cost of Working"/>
+                            <apex:selectOption itemValue="Additional Increased cost of working" itemLabel="Additional Increased cost of working"/>  
+                            <apex:selectOption itemValue="Rent Payable" itemLabel="Rent Payable"/>
+                            <apex:selectOption itemValue="Book Debts" itemLabel="Book Debts"/>
+                        </apex:selectList>
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:100px;" rendered="{!rr.CoverageSelected=='Loss of License'}">
+                            <apex:selectOption itemValue="Loss of License(Per Premises)" itemLabel="Loss of License(Per Premises)"/>
+                        </apex:selectList> 
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:100px;" rendered="{!rr.CoverageSelected=='Goods In Transit'}">
+                            <apex:selectOption itemValue="Any one Transit" itemLabel="Any one Transit"/>
+                        </apex:selectList> 
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" rendered="{!rr.CoverageSelected=='Money'}">
+                            <apex:selectOption itemValue="Annual Carryings (Own Employees)" itemLabel="Annual Carryings (Own Employees)"/>
+                            <apex:selectOption itemValue="Annual Carryings (Security Company)" itemLabel="Annual Carryings (Security Company)"/>
+                            <apex:selectOption itemValue="Money in Safes" itemLabel="Money in Safes"/>
+                            <apex:selectOption itemValue="Business Hours" itemLabel="Business Hours"/>
+                            <apex:selectOption itemValue="In transit (employees)" itemLabel="In transit (employees)"/>  
+                            <apex:selectOption itemValue="In transit (security co.)" itemLabel="In transit (security co.)"/>
+                            <apex:selectOption itemValue="Premises During Bus. Hours" itemLabel="Premises During Bus. Hours"/>
+                            <apex:selectOption itemValue="Money In Locked Safes" itemLabel="Money In Locked Safes"/> 
+                            <apex:selectOption itemValue="Gaming Machine" itemLabel="Gaming Machine"/>
+                            <apex:selectOption itemValue="Non Negotiable" itemLabel="Non Negotiable"/>
+                            <apex:selectOption itemValue="Employee Effects" itemLabel="Employee Effects"/>
+                            <apex:selectOption itemValue="Private Dwelling" itemLabel="Private Dwelling"/>
+                        </apex:selectList> 
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:100px;" rendered="{!rr.CoverageSelected=='Fidelity'}">
+                            <apex:selectOption itemValue="Any one Loss" itemLabel="Any one Loss"/>
+                            <apex:selectOption itemValue="In the aggregate" itemLabel="Limit in the aggregate"/>
+                        </apex:selectList>  
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:100px;" rendered="{!rr.CoverageSelected=='Employers Liability'}">
+                            <apex:selectOption itemValue="Clerical & Managerial" itemLabel="Clerical & Managerial"/>
+                            <apex:selectOption itemValue="Bar/Catering/Retail/Cleaning" itemLabel="Bar/Catering/Retail/Cleaning"/>
+                            <apex:selectOption itemValue="Coaches/Instructors/Players" itemLabel="Coaches/Instructors/Players"/>
+                            <apex:selectOption itemValue="Maintenance" itemLabel="Maintenance"/>
+                            <apex:selectOption itemValue="Security" itemLabel="Security"/>
+                            <apex:selectOption itemValue="Animal Handlers" itemLabel="Animal Handlers"/>
+                            <apex:selectOption itemValue="All Others" itemLabel="All Others"/>
+                        </apex:selectList> 
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1"  style="width:100px;" rendered="{!rr.CoverageSelected=='Public & Product Liability'}">
+                            <apex:selectOption itemValue="Estimated Annual Turnover" itemLabel="Estimated Annual Turnover"/>
+                            <apex:selectOption itemValue="Number of members" itemLabel="Number of members"/>
+                            <apex:selectOption itemValue="Clubs" itemLabel="Clubs"/>
+                        </apex:selectList>  
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:100px;" rendered="{!rr.CoverageSelected=='Professional Indemnity'}">
+                            <apex:selectOption itemValue="Estimated Annual Turnover" itemLabel="Estimated Annual Turnover"/>
+                            <apex:selectOption itemValue="Number of members" itemLabel="Number of members"/>
+                            <apex:selectOption itemValue="Clubs" itemLabel="Clubs"/>
+                        </apex:selectList>  
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:100px;" rendered="{!rr.CoverageSelected=='D&O' || rr.CoverageSelected=='Legal Expenses'}">
+                            <apex:selectOption itemValue="Number of members" itemLabel="Number of members"/>
+                            <apex:selectOption itemValue="Turnover" itemLabel="Turnover"/>
+                        </apex:selectList> 
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:100px;" rendered="{!rr.CoverageSelected=='Personal Accident'}">
+                            <apex:selectOption itemValue="Death" itemLabel="Death"/>
+                            <apex:selectOption itemValue="Medical Costs" itemLabel="Medical Costs"/>
+                            <apex:selectOption itemValue="Loss of Income" itemLabel="Loss of Income"/>
+                        </apex:selectList> 
+                        
+                        <apex:selectList value="{!rr.PerilsSelected}" size="1" style="width:150px;" rendered="{!rr.CoverageSelected=='Terrorism'}">
+                            <apex:selectOption itemValue="Total Sum Insured" itemLabel="Total Sum Insured"/>
+                        </apex:selectList> 
+                        
+                    </apex:column> 
+                    
+                    <apex:column title="Declared Value" headerValue="Declared Value" style="width:100px;" rendered="{!Product=='Property'}">
+                        <apex:inputField value="{!rr.psa.VG_Declared_Value__c}" style="width:100px;"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                    </apex:column>  
+                    
+                    <apex:column title="Declared Value" headerValue="Rating Basis" style="width:100px;" rendered="{!Product!='Property'}">
+                        <apex:inputField value="{!rr.psa.VG_Declared_Value__c}" style="width:100px;"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>
+                    </apex:column>
+                    
+                    <apex:column title="Deductible" headerValue="Deductible" style="width:130px;">
+                        <apex:inputField value="{!rr.psa.VG_Deductible__c}" style="width:130px;"/>
+                    </apex:column>
+                    
+                    <apex:column title="Territorial Limits" headerValue="Territorial Limits" rendered="{!Product!='D&O'}" style="width:180px;">
+                        <apex:inputField value="{!rr.psa.VG_Territorial_Limits__c}" style="width:180px;"/>
+                    </apex:column>
+                    
+                     <apex:column title="Sum Insured" headerValue="Sum Insured" style="width:80px;" rendered="{!Product=='Property'}">
+                         <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                         <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:inputField value="{!rr.psa.VG_Sum_Insured__c}" style="width:80px;"/>
+                        </apex:outputPanel>   
+                    </apex:column>
+                    
+                    <apex:column title="Limit of Indemnity" headerValue="Limit of Indemnity" style="width:80px;"  rendered="{!Product!='Property'}">
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                         <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:inputField value="{!rr.psa.VG_Sum_Insured__c}" style="width:80px;"/>
+                        </apex:outputPanel>    
+                    </apex:column>
+                    
+                    <apex:column title="Rate(%)" headerValue="Rate (%)" rendered="{!Product!='PA'}" style="width:90px;">
+                        <apex:inputField value="{!rr.psa.VG_Base_Premium_Rate__c}" id="kpt2" style="width:90px;"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>                    
+                    </apex:column>
+                    
+                    <apex:column title="Rate(pm)" headerValue="Rate (pm)" rendered="{!Product=='PA'}" style="width:90px;">
+                        <apex:inputField value="{!rr.psa.VG_Base_Premium_Rate__c}" id="kpt3" style="width:90px;"><apex:actionSupport event="onchange" action="{!RRCalc}"  reRender="RRBlock"/></apex:inputField>                    
+                    </apex:column>
+                    
+                    <apex:column title="Premium" headerValue="Premium" style="width:80px;">
+                        <apex:outputField value="{!rr.psa.VG_Premium__c}"  style="width:80px;" id="kpt1"></apex:outputField>                    
+                    </apex:column>
+                    
+                    <apex:column style="width:15px" headerValue="Delete">
+                        <apex:commandButton value="Remove" action="{!RemoveRR}" reRender="RRBlock" ><apex:param name="counter" assignTo="{!Index}"  value="{!rr.Counter}"/></apex:commandButton>
+                    </apex:column>
+                    
+                </apex:pageBlockTable> 
+                
+            </apex:pageBlock>
+            
+        </div>   
+        
+    </apex:form>
+    
+</apex:page>

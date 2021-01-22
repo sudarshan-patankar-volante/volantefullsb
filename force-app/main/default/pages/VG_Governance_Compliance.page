@@ -1,0 +1,35 @@
+<apex:page standardController="Policy__c" extensions="VG_Governance_Compliance_Controller" sidebar="false" showHeader="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection columns="2">
+                    <apex:outputField value="{!gc.VG_Question_1__c}" label="Are parties clearly identified?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_6__c}" label="Are the limits clearly expressed?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_2__c}" label="Is wording attached or clearly referenced?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_7__c}" label="Is the premium or rate clearly expressed?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_3__c}" label="Are all conditions clearly expressed?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_8__c}" label="Are any applicable taxes expressed?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_4__c}" label="Regulatory requirements addressed?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_9__c}" label="Are any payment terms clearly expressed?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_5__c}" label="Is the period of cover clearly expressed?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_10__c}" label="Are currencies clearly identified?">
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Question_11__c}" label="Full Terms and Conditions?">
+                    </apex:outputField>
+                    <apex:outputlabel ></apex:outputlabel>
+                    <apex:outputField value="{!gc.VG_Contact_Certainty_Date__c}" label="Contact Certainty Date">                    
+                    </apex:outputField>
+                    <apex:outputField value="{!gc.VG_Contract_Certainty__c}" label="Contract Certainty">                    
+                    </apex:outputField>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

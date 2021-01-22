@@ -1,0 +1,667 @@
+<apex:page contentType="application/msword#BridgeQuoteSheet.doc" cache="true" showHeader="false"  controller="VG_LSDocumentController"  standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"> 
+    <html xmlns:w="urn:schemas-microsoft-com:office:word">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+        <style type="text/css" media="print">    
+            @page {
+            size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            
+            } 
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Font_OpenSan_CondLight, '/root/to/OpenSans-CondLight.ttf')});
+            }
+            
+            body{
+                font-family: Open Sans Condensed Light;              
+            }
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Doc_Header_Font, '/root/to/OpenSans-CondLight.ttf')});
+            }
+           
+            #header{
+                font-family: Open Sans Condensed Light;
+                font-size:30.0pt;
+            }
+            @page footer{
+            size:8.27in 11.69in;
+            margin:1in 0in 1in 0in;
+            margin-bottom:0in;
+            mso-header-margin:0.5in;
+            mso-footer-margin:0in;
+            mso-pagination:widow-orphan;
+            mso-paper-source:0;
+            
+            }
+            div.footer
+            {page:footer;}
+            
+            #lasttable {
+            border-collapse:collapse;
+            border-color:#ADB5B0;
+            }
+           li { margin: 1px 2; }
+        </style>
+        
+        <body>
+            
+            <apex:outputText value="{!PrintView}" escape="false"/>
+           <div class="footer">
+                <br/>
+              <div style="margin-left:465px;width:370px;height:100px;" id="h1">
+                    <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                </div>
+                <br/><br/>
+                <table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+                    <tbody>
+                        <tr style="height:4.4pt;">
+                            <td width="15" valign="bottom" style="width:15.0pt;padding:
+                                                                  0in 0in 0in 0in;height:4.4pt" rowspan="13">
+                                 <apex:image url="{!MF}" style=" margin-left:30px;"/>
+                            </td>
+                            <td width="25" valign="bottom" style="width:89.0pt;padding:0in 0in 0in 0in;
+                                                                  height:4.4pt">
+                            </td>
+                             <td width="408" colspan="4" rowspan="7" valign="bottom" style="width:291.0pt; padding:0in 0in 0in 0in;height:4.4pt">
+                                
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            99%;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span id="header" style="font-size:21.0pt;line-height:99%;
+                                                                                                                                                 color:#004040">Statement of Fact</span></p>
+                                                                                                                                                                                                                                                                   
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>            
+                
+                <div  style="margin-left:155px;margin-right:1.0in;">
+                    <TABLE style="background:#DEDAD9;border:2px solid #DEDAD9;margin-right:1.0in;">
+                        <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Insured:</b>&nbsp;{!pol.Insured__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"> </span>
+                                    
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Risk Address:</b>&nbsp;<apex:outputLabel rendered="{!pol.Insured__r.ShippingStreet!=null || pol.Insured__r.ShippingCity!=null || pol.Insured__r.ShippingState!=null || pol.Insured__r.ShippingCountry!=null}">{!pol.Insured__r.ShippingStreet}, {!pol.Insured__r.ShippingCity}, {!pol.Insured__r.ShippingState}, {!pol.Insured__r.ShippingCountry}, {!pol.Insured__r.ShippingPostalCode}</apex:outputLabel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"> </span>
+                                    
+                                </div>
+                            </td>
+                        </tr> 
+                       <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Correspondence Address:</b>&nbsp;<apex:outputLabel rendered="{!pol.Insured__r.BillingStreet!=null || pol.Insured__r.BillingCity!=null || pol.Insured__r.BillingState!=null || pol.Insured__r.BillingCountry!=null}">{!pol.Insured__r.BillingStreet}, {!pol.Insured__r.BillingCity}, {!pol.Insured__r.BillingState}, {!pol.Insured__r.BillingCountry}, {!pol.Insured__r.BillingPostalCode}</apex:outputLabel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"> </span>
+                                    
+                                </div>
+                            </td>
+                        </tr> 
+                       
+                        <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Quote / Policy Number:</b>&nbsp;{!pol.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"> </span>
+                                    
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            <td width="522" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Quotation Valid Until:</b>&nbsp;{!DAY(Today)}/{!Month(Today)}/{!Year(Today)}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"> </span>
+                                    
+                                </div>
+                            </td>
+                        </tr> 
+                    </Table>
+              </div>
+             <div  style="margin-left:155px;margin-right:1.0in;">
+                 <p style="font-size:9.0pt;">
+                     You, or anyone representing you have a duty to provide a fair presentation of risk.  A fair presentation is one which, in a reasonably clear and accessible manner, provides the material facts which you know or ought to know following a reasonable search.  Failing that, the information provides must be sufficient to warn us that additional enquiries must be made to fully understand the risk.  The information provided must be substantially correct, complete and made in good faith.
+                 </p>
+                 <p style="font-size:9.0pt;">The Statement of Fact is a record of information that you provided your broker, Intermediary or Agent and any assumption made about you and your business upon which your insurance quotation is based.</p>
+                 <p style="font-size:9.0pt;">The Statement of fact the Schedule the Policy and any endorsements should be read together as one contract and is the contract between you and Us </p>
+                 <p style="font-size:9.0pt;">You are not required to sign the Statement of Fact </p>
+                 <p style="font-size:9.0pt;">Please check all the information you have provided any assumptions made about you and your business on this Statement of Fact is correct and complete. </p>
+                 <p style="font-size:9.0pt;">In accurate or incomplete information may result in your insurance being voided from it start date and any claim not being paid. </p>
+                 <p style="font-size:9.0pt;">If any of the information is incorrect or incomplete you should immediately notify your broker, intermediary or agent who arranged the Policy.  The broker, intermediary or agent will issue you with an updated Statement of Fact and Schedule. </p>
+                 
+            </div>
+            <div  style="font-size:9.0pt;margin-left:155px;margin-right:1.0in;">
+            <br style="page-break-before:always;" />
+               <br/>
+                    <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/>
+              <table style="font-size:9.0pt;border:1px solid black;">
+                    <TR>
+                        <th Style="text-align:left;" width="452">Financial  <br/>
+                                Neither I nor any director or partner in any business or company either in this business or in the name of any other business in which any of you have an interest have ever;
+                        </th>
+                        <th Style="text-align:left;" width="75">
+                            
+                        </th>
+                    </TR>
+                  <ul>
+                  <tr style="">
+                      <td width="452" valign="top"><li style="margin-top:-10px;"> been the subject of any form of bankruptcy insolvency or winding up procedure either as private individuals or in connection with any business in the last 10 years </li></td>
+                      <td width="75" style="text-align:right;margin-top:-10px;">Correct </td>
+                  </tr>
+                  <tr style="">
+                      <td width="452"><li style="margin-top:-10px;"> ever been disqualified from holding a directorship</li></td> 
+                      <td width="75" style="text-align:right;margin-top:-10px;">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li> been the subject of a County Court Judgement, High Court Judgement or any other judgement fine or order that would have been recorded within the Register of Judgements, Fines and Orders (or Scottish Equivalents) in respect of debt as private individuals or in connection with any business within the last 10 years</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li> been a director or partner in a business that has been the subject of a County Court Judgement, High Court Judgement or any other judgement fine or order that would have been recorded within the Register of Judgements, Fines and Orders (or Scottish Equivalents) in respect of debt as private individuals or in connection with any business within the last 10 years</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li> been officers of a company that has been declared insolvent or had a receiver or liquidator appointed, or entered into arrangements with creditors in accordance with the Insolvency Act 1986 or been subject of any form insolvency or winding up procedure within the last 10 years</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li> been convicted of or charged with but not yet tried for a criminal offence excluding any motor offences or any offences which are spent under the Rehabilitation of Offenders Act 1974? </li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul>
+              </table>
+              <br/>
+              
+              <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Insurance<br/>
+                            Neither I nor any director or partner in any business or company either in this business or in the name of any other business in which any of you have an interest have ever;
+                             </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                        
+                  <ul>
+                  <tr style="">
+                      <td width="452"><li> Had an insurance contract cancelled by an insurer </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li> Had an insurance contract declared void by an insurer</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>Had difference terms applied to an insurance contract by an insurer due to misrepresentation</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>Had insurance cover restricted or cancelled due to non-compliance with risk improvement requirements</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li> Made a claim or suffered an incident that could give rise to a claim in respect of business insurance at these premises or any other currently occupied or previously occupied business premises in the last 5 years.</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul>                   
+              </table>
+              <br style="page-break-before:always;" />
+                    <br/>
+                     <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/>
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Business </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                   <ul>     
+                  <tr style="">
+                      <td width="452"> <li>The business at the premises is solely based in and trading from Great Britain, Northern Ireland, the Isle of Man or the Channel Islands</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>The business is the sole occupant of the premises</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>The premises or any part of the premises is not unoccupied</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr> </ul>                  
+              </table>
+              <br/>
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Premises </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                   <ul>     
+                  <tr style="">
+                      <td width="452"><li>The buildings to be insured are entirely constructed of:<br/>
+                                1. Walls; brick, stone, concrete or other non-combustible materials<br/>
+                                2. External covering of roof: slate, tile or concrete 
+                                 </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>The premises are and will be maintained and in a good state of repair</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>The premises are not and will not be undergoing any structural alternations or repairs or have planning permission or planning permission is being sought to undertake any such alteration or repair</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>The premises have undergone an electrical installation inspection in accordance with British Standard BS7671 and all requirements have been completed</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>No part of the premises are listed by English Heritage or Cadw or Historic Scotland</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul>   
+                 
+              </table>
+              <br/>
+              
+              
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452"> Minimum Security</th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                   <ul>     
+                  <tr style="">
+                      <td width="452">All buildings at the premises comply with the following; </td> 
+                      <td width="75" style="text-align:right"></td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>All final exit doors are secured as follows;<br/>
+                            1. timber doors – by mortice deadlocks having five or more levers or confirming to BS3621 with matching boxed striking plate;<br/>
+                            2.  aluminium doors – by cylinder mortice lock operating a swinging lock bolt; <br/>
+                            3. PVCu doors – by key operated multi-point locking devices having three or more locking points. The first closing leaf of double leaf doors must be fitted internally with bolts top and bottom.
+                            </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>All other external doors and internal doors leading to common areas or other premises must be secured:<br/>
+                            1. by the means set out above<br/>
+                            2. by key operated security bolts fitted top and bottom<br/>
+                            </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>Where we have agreed the use storage containers, they shall;<br/>
+                            1. be securely locked and purpose built containers constructed of steel<br/>
+                            2. be protected by at least one 6mm – 16mm Mul-T-Lock (C Series) closed shackle padlock to at least the main closure half door opening arms.  The centre of the container must be fitted with a metal covering box with 11mm – 13 mm Mul-T-Lock Slide bolt lock securing the two halves within.
+                             </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>  </ul>                      
+              </table>
+              <br style="page-break-before:always;" />
+                    <br/>
+                     <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/><br/>
+              
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Intruder alarm </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                   <ul>    
+                  <tr style="">
+                      <td width="452"><li>The premises are protected by an intruder alarm</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>The intruder alarm is annually maintained under contract</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul>                       
+              </table>
+              <br/>
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Flooding </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                    <ul>   
+                  <tr style="">
+                      <td width="452"><li>To our knowledge the premises have never been flooded nor show any signs of having flooded</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul>                       
+              </table>
+              <br/>
+              
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Subsidence, landslip and Ground Heave  </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                  <ul>   
+                  <tr style="">
+                      <td width="452"><li>The premises have not suffered from, or show, any visible sign of damage from subsidence, landslip or ground heave</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>The premises have not been underpinned </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>The premises have not suffered structural movement or are showing signs of any structural movement or cracking whether internal or external</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>To our knowledge the surrounding area within 100 metres of the premises is not susceptible to subsidence, landslip or ground heave </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>The premises are not within 100 metres of any river bank, rail embankment or cutting, cliff or quarry, mine or other underground working or on made up ground</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>There are no trees or shrubs over 7metres in height or within 10 metres of the premises</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul> 
+                   
+              </table>
+              <br/>
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Loss of licence </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                  <ul> 
+                  <tr style="">
+                      <td width="452"><li>We are not aware of any environmental, planning, compulsory purchase or similar local authority legislation likely to affect the future of our licence</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>There are no matters pending that are likely to affect the future of the licence</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul> 
+                  
+              </table>
+              <br/>
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Health &amp; Safety </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                  <ul> 
+                  <tr style="">
+                      <td width="452"> <li>We have a written Health &amp; Safety policy in place (or verbal if we have less than 5 employees) which is communicated to all staff</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>We have Health &amp; Safety training in place which is documented and signed by all staff </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>We have completed and / or reviewed all relevant risk assessments to our assessments within the last 2 years including a fire risk assessment</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>We have access to a Competent Person as required under the Health and Safety at Work legislation</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"> <li>We have an accident book at work which is kept for a minimum of 3 years</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>We have undertaken a first aid risk assessment and have the appropriate number of Appointed first aiders</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>Where Bona-Fide Sub Contractors are used at our premises we ensure they are insured for Public and products liability insurance</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul>                           
+              </table>
+             <br style="page-break-before:always;" />
+                    <br/>
+                     <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/><br/>
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452"> Work Away from the Premises</th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                  <ul>    
+                  <tr style="">
+                      <td width="452"> <li>We do not undertake manual work outside of Great Britain, Northern Ireland, the Isle of Man or the Channel Islands</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>Where we do undertaken work away from the premises this does not involve;</li><br/>
+                        1. &nbsp;&nbsp;the use of welding or cutting equipment or other equipment involving the application of heat, the use of explosives, 
+                        </td> 
+                      <td width="75" style="text-align:right"> </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452">2.&nbsp;&nbsp; any work carried out 5 metres or higher above ground level or below 3 metres from ground level </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>Where Bona-Fide Sub Contractors are used when away from the premises we ensure they are insured for Public and products liability insurance</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul> 
+                      
+              </table>
+              <br/>
+              
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Our Business Activities </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                   <ul>     
+                  <tr style="">
+                      <td width="452"> As part of our business we do not handle or store any of the following in connection with our business</td> 
+                      <td width="75" style="text-align:right"> </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li> silica, asbestos, any other industrial materials that are toxic, explosive, flammable or are classed as an irritant</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li> store liquids or gases in bulk</li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li> discharge toxic or dangerous substances into the atmosphere, sewers, waterways or elsewhere </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"><li>As part of our business we do not carry out any work involving or in connection with:</li><br/>
+                            1. roofing scaffolding or demolition
+                             </td> 
+                      <td width="75" style="text-align:right"> </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452">2. quarrying, tunnelling or mining </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452">3. piling, ground stabilisation, underpinning or dewatering </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452">4. towers, steeples or chimney shafts </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452">5. bridges, viaducts, flyovers or underpasses </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>   
+                  <tr style="">
+                      <td width="452"> 6. docks, harbours, piers or wharves</td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr>    
+                   <tr style="">
+                      <td width="452"> 7. dams, reservoirs, lakes, rivers, water diversion, underwater working, flood protection or sea defences</td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul>        
+              </table>
+                <br style="page-break-before:always;" />
+                    <br/>
+                    <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/><br/>
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Pollution and Contamination </th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                  <ul>
+                   <tr style="">
+                      <td width="452"><li>Neither we or to the best of our knowledge, any former owner or occupier of the site in respect of the premises at any time have not;</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr> 
+                   <tr style="">
+                      <td width="452"><li> Been prosecuted or sued for any pollution problems</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr> 
+                   <tr style="">
+                      <td width="452"><li>Had any incidents of pollution or incidents likely to cause pollution</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr> 
+                   <tr style="">
+                      <td width="452"><li>Carried out any industrial activity which was the subject of an environmental permit or licence</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul> 
+               </table>
+               <br/>
+               <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="452">Directors and Officers Liability</th>
+                        <th width="75" style="text-align:right"></th>
+                  </TR> 
+                   <tr style="">
+                      <td width="452">An Insured Person of the Company confirms the following;</td> 
+                      <td width="75" style="text-align:right"> </td>
+                  </tr> 
+                  <ul>
+                   <tr style="">
+                      <td width="452"><li> The Company is not a sole trader, partnership or listed on a stock exchange</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr> 
+                   <tr style="">
+                      <td width="452"><li>The last consolidated annual accounts had a positive net worth (total assets exceed total
+                                        liabilities)
+                                       </li> </td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr> 
+                   <tr style="">
+                      <td width="452"><li>The Company have been trading for not less than 12 months</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr> 
+                   <tr style="">
+                      <td width="452"><li>The last audited accounts have an unqualified audit opinion (if applicable)</li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr> 
+                   <tr style="">
+                      <td width="452"><li>There are no circumstances that might reasonably be expected to give rise to any claim against
+                                any proposed person for this insurance including any director, secretary, executive officer or Employee of the Company;
+                                </li></td> 
+                      <td width="75" style="text-align:right">Correct </td>
+                  </tr></ul>
+                  
+                  </table>
+                  <br/>
+                  <table style="font-size:9.0pt;border:1px solid black;">
+                  <TR>
+                        <th Style="text-align:left;" width="482">Please advise below if there are any variations to the statement of fact and immediately contact your broker, intermediary or agent who arranged the Policy.    </th>
+                        <th width="45" style="text-align:right"></th>
+                  </TR> 
+                  <tr style="">
+                      <td width="482">There are no amendment to be made</td> 
+                     
+                  </tr> 
+                  </table>
+                  <br/>
+                  
+                   <br style="page-break-before:always;" />
+                    <br/>
+                    <div style="margin-left:315px;width:350px;height:100px;" >
+                        <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+                    </div>
+                    <br/><br/>
+             <table style="font-size:9.0pt;">     
+                 <TR>
+                        <th Style="text-align:left;" width="522">Privacy Notice</th>
+                 </TR>  
+                 <TR>
+                        <th Style="text-align:left;" width="522">How Liberty Specialty Markets uses your personal data </th>
+                 </TR> 
+                  <tr style="">
+                      <td width="522">
+                          Liberty Specialty Markets takes the protection of your personal data seriously and is committed to protecting your privacy. There are a number of different companies within our group. The specific company within Liberty Specialty Markets which acts as the "data controller" of your personal data will be the organisation providing your policy as set out in the documentation that is provided to you. If you are unsure you can also contact us at any time by e-mailing us at: 
+                          <a>dataprotectionofficer@libertyglobalgroup.com</a> or by post at Data Protection Officer, Liberty Specialty Markets, 20 Fenchurch Street, London EC3M 3AW, UK.  Where you provide us or your agent or broker with details about other people, you must provide this notice to them.
+                          <br/><br/>
+                          In order for us to deliver our insurance services, deal with any claims or complaints that might arise and prevent and detect fraud, we need to collect and process personal data. The type of personal data that we collect will depend on our relationship with you: for example, as a policyholder, third party claimant or witness to an incident.  Your information will also be used for business and management activities such as financial management and analysis. This may involve sharing your information with, and obtaining information about you from, our group companies and third parties such as brokers, credit reference agencies, reinsurers, claims handlers and loss adjusters, professional advisors, our regulators or fraud prevention agencies. We also collect personal data about our suppliers and business partners (such as brokers) for the purposes of business management and relationship development. 
+                          <br/><br/>
+                          Please see the full privacy notice available at www.libertyspecialtymarkets.com/privacy-cookies for further information on how your personal data is used and the rights that you have in relation to the personal data we hold about you. Please contact us using the details above if you wish to see the privacy notice in hard copy. 
+                      </td>                      
+                  </tr>          
+            </table> 
+            <br/> <br style="page-break-before:always;" /> 
+            <br/>
+            <div style="margin-left:315px;width:350px;height:100px;" >
+                <apex:image url="{!AffnityLogo}" height="75" width="205"/>
+            </div>
+            <br/><br/>
+            <table style="font-size:9.0pt;">           
+                  <TR>
+                        <th Style="text-align:left;" width="522"> Employers Liability Tracing Office (ELTO)</th>
+                 </TR> 
+                  <tr style="">
+                      <td width="522"> In accordance with the Employers Liability Insurance:  Disclosure by Insurers Instrument 2010 made by the Prudential Regulation Authority (PRA) and Financial Conduct Authority (FCA) we will be required to provide some of your information to the Employers Liability Tracing Office (ELTO)
+                      <br/>
+                      The information that we supply in accordance with this requirement will be added to an electronic database that will be managed by the Employers Liability Tracing Office (ELTO), it will be subject to periodic update and certification and will be audited annually.
+                      <br/>Access to the database and the information stored on it will assist claimants, their appointed representatives, employers' liability insurers and other persons or entities with legal access to the information to:<br/>
+                      1. identify which insurer (or insurers) provided employers' liability insurance during the relevant period(s) of employment; and
+                        <br/>2. identify the relevant employers' liability insurance policies.<br/>
+                        <br/>The information supplied to the Employers' Liability Tracing Office will include;<br/>
+                        1. Policy number(s)    <br/> 
+                        2. Employers' previous and current names and addresses (including subsidiary companies)<br/>
+                        3. Coverage dates <br/>  
+                        4. Companies House Reference Numbers (where relevant)   <br/>
+                        5. Her Majesty's Revenue and Customs Employers Reference Numbers<br/>
+                     </td> 
+                      
+                  </tr>                   
+              </table>
+                      
+            </div>
+            
+                
+           </div>
+       </body>
+   </html>
+</apex:page>

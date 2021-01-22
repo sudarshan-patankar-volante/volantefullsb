@@ -1,0 +1,10 @@
+<aura:component implements="lightning:actionOverride,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="VG_GetProfile">
+    <aura:attribute name="recordError" type="String" access="private"/>
+   <force:recordData aura:id="recordHandler"
+        recordId="{!v.recordId}"
+        fields="Id"
+        targetError="{!v.recordError}"
+        recordUpdated="{!c.handleRecordUpdated}" />
+    <lightning:button label="Delete" name="btn1" variant="brand" onclick="{!c.handleDelete}"/>
+    <lightning:button label="Edit" name="btn1" variant="brand" onclick="{!c.handleEdit}"/>
+</aura:component>

@@ -1,0 +1,27 @@
+<apex:page controller="VG_FIDOProductSteps" sidebar="false" showHeader="false">
+    <apex:form style="width:1300px;">
+       <div style="width: 80%; margin-bottom:8px;margin-top: 8px;margin-left:140px;">
+            <img src="{!$Resource.LS_ENDR}" alt="Smiley face" height="45px" width="800px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div> 
+        <apex:pageBlock tabStyle="Account" id="LibraryIndex" title="Update Sub-Limit Details">
+            <apex:pageMessages />
+            <apex:pageMessage severity="Info" summary="No Sub-Limits seleted from library..." strength="3" rendered="{!!hasEndorsements}"/>
+            <apex:pageBlockTable value="{!existingEndorsements1}" var="EN" id="pbt1" rendered="{!hasEndorsements}">
+                    <apex:column headerValue="Description" width="90%">
+                        <apex:inputField styleClass="OutputField" id="ILETEDSsE" value="{!EN.VG_Title__c }" style="width:850px;"/><br/><br/>
+                        <apex:inputTextArea value="{!EN.VG_Endorsement_Details__c}" cols="4" rows="10" richText="true"/><br/><br/>
+                    </apex:column>
+                    <apex:column headerValue="Premium" width="20%">
+                        <apex:inputField value="{!EN.VG_Premium__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Sub-limit" width="20%">
+                        <apex:inputField value="{!EN.VG_Sub_limit__c}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+                
+            <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotoStep4}"/><apex:commandButton value="Next" action="{!gotoStep5}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock> 
+    </apex:form>
+</apex:page>

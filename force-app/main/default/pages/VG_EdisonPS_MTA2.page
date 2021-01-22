@@ -1,0 +1,123 @@
+<apex:page controller="VG_EdisonPS_Ins2_Controller">
+    <script src="/js/dojo/0.4.1/dojo.js"></script>
+    <script src="/soap/ajax/11.1/connection.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    dojo.require("dojo.collections.Store");
+    dojo.require("dojo.charting.Chart");
+    dojo.require('dojo.json');
+    var arYears = getYears();
+    function swapYears(){
+        // Contact Birth day
+        if(document.getElementById('calYearPicker') != null) {
+            var select = document.getElementById('calYearPicker');
+            var curValue = select.value; 
+            var parentx = select.parentNode;
+            parentx.removeChild(select);
+            select = document.createElement('select');
+            select.size = 1;
+            select.id = 'calYearPicker';
+            select.name = 'calYearPicker';
+            parentx.appendChild(select);
+        }
+        if(select != null) {
+            for(x=0;x<100;x++) {        
+                select.options[x] = new Option(arYears[x], arYears[x], false, false);
+            }
+        }
+    }
+    function getYears() {
+        sforce.sessionId = getCookie('sid');
+        sforce.connection.sessionId=sforce.sessionId;
+        var out = [];
+        // generate dates for the last 100 years
+        var currentTime = new Date()
+        var year = currentTime.getFullYear()
+        try {
+            for(x=0;x<100;x++) {
+                out[x] = x+year-99;
+            }   
+                    
+        } catch(error) {
+            alert(error);       
+        }   
+        return out;
+    }
+    dojo.addOnLoad(swapYears);
+    </script>
+    <apex:form >
+        <div style="background-color: #bcd4f5;height: 70px;width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_RiskCapture}" alt="Smiley face" height="40px" width="1200px" style="margin-left: 260px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+        <apex:pageBlock id="pb1" >
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!AddRisk}" rerender="pbt1,pb1" value="Add"/>
+            </apex:pageBlockButtons> 
+            <apex:pageBlockSection columns="2" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Driver Name</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Name__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers DOB</apex:outputLabel>
+                    <apex:inputField id="dob" value="{!rc.Drivers_DOB__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers Convictions</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Convictions__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers Conviction Points</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Conviction_Points__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers License Ban Details</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_License_Ban_Details__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers Claims</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Claims__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Drivers Medical Conditions</apex:outputLabel>
+                    <apex:inputField value="{!rc.Drivers_Medical_Conditions__c}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock> 
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!wrcList}" var="wrc" id="pbt1">
+                <apex:column headerValue="Driver Name" width="6%"  >
+                    <apex:outputField value="{!wrc.rc.Drivers_Name__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver DOB" width="6%" >
+                    <apex:outputField value="{!wrc.rc.Drivers_DOB__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver Convictions" width="6%"  >
+                    <apex:outputField value="{!wrc.rc.Drivers_Convictions__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver Conviction Points" width="6%" >
+                    <apex:outputField value="{!wrc.rc.Drivers_Conviction_Points__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver License Ban Details" width="6%" >
+                    <apex:outputField value="{!wrc.rc.Drivers_License_Ban_Details__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver Claims" width="6%" >
+                    <apex:outputField value="{!wrc.rc.Drivers_Claims__c}"/>
+                </apex:column>
+                <apex:column headerValue="Driver Medical Conditions" width="6%" >
+                    <apex:outputField value="{!wrc.rc.Drivers_Medical_Conditions__c}"/>
+                </apex:column>
+                 <apex:column headerValue="" width="7%" >
+                    <apex:commandButton value="Remove" action="{!RemoveRisk}" reRender="pbt1"><apex:param name="counter" assignTo="{!Index}" value="{!wrc.Counter}"/></apex:commandButton>
+                    <apex:commandButton value="Edit" action="{!EditRisk}" reRender="pbt1,pb1"><apex:param name="counter" assignTo="{!Index}" value="{!wrc.Counter}"/></apex:commandButton>
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!Cancel}" value="Cancel" /><apex:commandButton action="{!Previous}" value="Previous"/><apex:commandButton action="{!Next}" value="Next"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock> 
+        
+        </div>
+        
+    </apex:form>
+</apex:page>

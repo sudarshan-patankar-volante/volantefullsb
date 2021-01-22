@@ -1,0 +1,23 @@
+<apex:page controller="VG_ShowPolicyAssets_Ext" title="Policy Assets">
+    <apex:pageBlock rendered="{!!(psaList2.size==0)}">
+        <apex:pageBlockTable value="{!psaMap}" var="psa">
+            <apex:column headerValue="Type">{!psa}</apex:column>
+            <apex:column headerValue="No.Of Vehicle" >{!psaMap[psa]}</apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    <apex:pageBlock rendered="{!!(psaList.size==0)}">
+        <apex:variable value="{!0}" var="total"/>
+        <apex:pageBlockTable value="{!psaList}" var="psa">
+            <apex:column headerValue="No.Of Vehicle" >{!psa.VG_Number_of_Vehicles__c}<apex:variable value="{!total+psa.VG_Number_of_Vehicles__c}" var="total"/></apex:column>
+            <apex:column headerValue="Type" value="{!psa.VG_Vehicle_Type__c}"/>
+            <apex:column headerValue="Coverage" value="{!psa.VG_Coverage__c}"/>
+            <apex:column headerValue="Use" value="{!psa.VG_Use__c}"/>
+            <apex:column headerValue="Rate" value="{!psa.VG_Rate_Per_Vehicle__c}"/>
+        </apex:pageBlockTable>
+        <apex:outputPanel rendered="{!!(psaList.size==0)}">
+            <br/>
+            Currently Available Vehicles : {!total}
+        </apex:outputPanel>
+    </apex:pageBlock>
+    <apex:pageMessage rendered="{!(psaList.size==0)}" severity="Info"> No Policy Asset available in this policy....</apex:pageMessage>
+</apex:page>

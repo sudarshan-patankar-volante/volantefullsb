@@ -1,0 +1,45 @@
+<apex:page controller="VG_ClaimScheduleStepsController" showHeader="false" sidebar="false" >
+    <style>
+    .OutputField{
+        font-weight:bold;
+    }
+    </style>
+    <apex:form >
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Asset}" alt="Smiley face" height="40px" width="1250px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+            <apex:pageBlock title="Select Assets">
+            <apex:pageMessage severity="Info" summary="No Assets Available For this Account." strength="3" rendered="{!(AWList.size==0)}"/>                    
+                
+                <apex:pageBlockTable value="{!AWList}" var="aw" rendered="{!!(AWList.size==0)}" id="pbt1">
+                    <apex:column headerValue="" width="2%" >
+                        <apex:inputcheckbox id="ILETEDSsE" value="{!aw.isSelected}"/>
+                    </apex:column>
+                    <apex:column headerValue="Name" width="8%">
+                        <apex:outputField value="{!aw.ass.Name}" />
+                    </apex:column>
+                    <apex:column headerValue="Date Added" width="8%">
+                        <apex:outputField value="{!aw.ass.VG_Date_Added__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Date Removed" width="8%">
+                        <apex:outputField value="{!aw.ass.VG_Date_Removed__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Status" width="8%">
+                        <apex:outputField value="{!aw.ass.VG_Status__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Vehicle Make" width="8%" rendered="{!IF($Profile.Name =='Edison Partner Community', true , false)}">
+                        <apex:outputField value="{!aw.ass.Vehicle_Make__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Vehicle Model" width="8%" rendered="{!IF($Profile.Name =='Edison Partner Community', true , false)}">
+                        <apex:outputField value="{!aw.ass.Vehicle_Model__c}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/>
+                <apex:commandButton action="{!gotoStep1}" value="Previous"/><apex:commandButton action="{!gotoStep2a}" value="Next"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock> 
+        </div>
+    </apex:form>
+</apex:page>

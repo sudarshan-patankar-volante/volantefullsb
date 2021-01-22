@@ -1,0 +1,71 @@
+<apex:page controller="VG_AesirStepsController" showHeader="false" sidebar="false">
+    
+    <apex:form >
+        <div style="width: 80%; margin-bottom:8px;margin-top: 8px;margin-left:80px;">
+            <img src="{!$Resource.Aesir_RD}" alt="Smiley face" height="45px" width="800px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <apex:pageblock tabStyle="Account" >
+            
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Next" action="{!gotostep2a}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection columns="1" id="ps3" title="Risk Details">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Notice of Event Limit : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Number " value="{!NoticeofEventLimit}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Proof of Loss Limit : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Number " value="{!ProofofLossLimit}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Payment after POL limit : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Number " value="{!PaymentafterPOLlimit}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Sunset Clause : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Text " value="{!SunsetClause}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Salvage Provisions : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Text " value="{!SalvageProvisions}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >CTL Provisions : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Number " value="{!CTLProvisions}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Loss Minimisation : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Number " value="{!LossMinimisation}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Power Margin (%): </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Percent " value="{!PowerMargin}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Propellant Margin : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Number " value="{!PropellantMargin}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Loss Formula : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Text " value="{!LossFormula}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >AVN 41/21 : </apex:outputLabel>
+                    <apex:inputText html-placeholder="Enter Text " value="{!AVN4121}"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+        </apex:pageblock>
+        
+    </apex:form>
+    
+</apex:page>

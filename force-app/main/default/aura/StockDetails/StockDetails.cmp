@@ -1,0 +1,46 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="companyDetailController">
+    <ltng:require scripts="{!$Resource.JQuery}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="accId" type="string"/>
+    <aura:attribute name="price" type="string"/>
+    <aura:attribute name="cname" type="string"/>
+    <aura:attribute name="description" type="string"/>
+    <aura:attribute name="sector" type="string"/>
+    <aura:attribute name="img" type="string"/>
+    <aura:attribute name="cr" type="string"/>
+    <aura:attribute name="web" type="string"/>
+    	
+    <div class="slds-box" style="background-color:white;font-size:20px">
+        <lightning:tile label="{!v.cname}" href="{!v.web}" >
+            <aura:set attribute="media">
+				<img src="{!v.img}"/>
+            </aura:set>
+            <dl class="slds-dl_horizontal">
+                <dt class="slds-dl_horizontal__label">
+                    <p class="button" >Price:</p>
+                </dt>
+                <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                    <p class="slds-truncate" >{!v.price}</p>
+                </dd>
+                <dt class="slds-dl_horizontal__label">
+                    <p class="slds-truncate" >Changes (%):</p>
+                </dt>
+                <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                    <p class="slds-truncate" >{!v.cr}</p>
+                </dd>
+                <dt class="slds-dl_horizontal__label">
+                    <p class="slds-truncate" >Sector:</p>
+                </dt>
+                <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                    <p class="slds-truncate" >{!v.sector}</p>
+                </dd>
+                <dt class="slds-dl_horizontal__label">
+                    <p class="slds-truncate" >Description:</p>
+                </dt>
+                <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                    <p class="slds-truncate" >{!v.description}</p>
+                </dd>
+            </dl>
+        </lightning:tile>
+    </div>
+</aura:component>

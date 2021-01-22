@@ -1,0 +1,18 @@
+<apex:page controller="MTAStepsController" showHeader="false" sidebar="false">
+        <apex:form >
+        <apex:pageblock title="Create New MTA" >
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection > 
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Select MTA Type</apex:outputLabel>
+                    <apex:selectList value="{!seletedType}" size="1" style="width:200px;">
+                        <apex:selectOptions value="{!MTATypes}" ></apex:selectOptions>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}"/><apex:commandButton value="Next" action="{!gotostep2}"/>
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

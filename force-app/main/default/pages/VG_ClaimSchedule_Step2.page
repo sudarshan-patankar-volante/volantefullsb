@@ -1,0 +1,48 @@
+<apex:page controller="VG_ClaimScheduleStepsController" showHeader="false" sidebar="false" title="Policy Schedule">
+    <style>
+    .OutputField{
+        font-weight:bold;
+    }
+    </style>
+    <apex:form >
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Asset}" alt="Smiley face" height="40px" width="1250px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+            <apex:pageBlock id="LibraryIndex" title="Select Risk Rating">
+            <apex:pageMessage severity="Info" summary="No Risk rating Added to the policy shedule." strength="3" rendered="{!(RiskRatingWrapperList.size==0)}"/>                    
+                
+                <apex:pageBlockTable value="{!RiskRatingWrapperList}" var="RRW"  rendered="{!!(RiskRatingWrapperList.size==0)}" id="pbt1">                
+                    <apex:column headerValue="" width="2%" >
+                        <apex:inputcheckbox id="ILETEDSsE" value="{!RRW.isSelected}"/>
+                    </apex:column>
+                    <apex:column headerValue="RiskRating Name" width="8%">
+                        <apex:outputField value="{!RRW.RR.Name}" />
+                    </apex:column>
+                    <apex:column headerValue="Number Of Vehicles" width="8%" rendered="{!IF($Profile.Name =='Edison Partner Community', true , false)}">
+                        <apex:outputField value="{!RRW.RR.VG_Number_of_Vehicles__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Vehicle Type" width="8%" rendered="{!IF($Profile.Name =='Edison Partner Community', true , false)}">
+                        <apex:outputField value="{!RRW.RR.VG_Vehicle_Type__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Coverage" width="8%">
+                        <apex:outputField value="{!RRW.RR.VG_Coverage__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Use" width="8%" rendered="{!IF($Profile.Name =='Edison Partner Community', true , false)}">
+                        <apex:outputField value="{!RRW.RR.VG_Use__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Annual Rate Per Vehicle" width="8%" rendered="{!IF($Profile.Name =='Edison Partner Community', true , false)}">
+                        <apex:outputField value="{!RRW.RR.VG_Rate_Per_Vehicle__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Premium" width="8%">
+                        <apex:outputField value="{!RRW.RR.VG_Premium__c}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/>
+                <apex:commandButton action="{!gotoStep6}" value="Previous"/><apex:commandButton action="{!gotoStep3}" value="Next"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock> 
+        </div>
+    </apex:form>
+</apex:page>

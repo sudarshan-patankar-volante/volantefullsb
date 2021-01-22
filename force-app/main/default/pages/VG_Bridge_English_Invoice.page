@@ -1,0 +1,538 @@
+<apex:page contentType="application/msword#BridgeQuoteSheet.doc" cache="true" showHeader="false" controller="VG_BridegeInvoiceController" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"> 
+    <html xmlns:w="urn:schemas-microsoft-com:office:word">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+        <style type="text/css" media="print">    
+            @page {
+            size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            
+            } 
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Font_OpenSan_CondLight, '/root/to/OpenSans-CondLight.ttf')});
+            }
+            
+            body{
+                font-family: Open Sans Condensed Light;              
+            }
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Doc_Header_Font, '/root/to/OpenSans-CondLight.ttf')});
+            }
+           
+            #header{
+                font-family: Open Sans Condensed Light;
+                font-size:30.0pt;
+            }
+            @page footer{
+            size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            margin-bottom:0in;
+            mso-header-margin:0.5in;
+            mso-footer-margin:0in;
+            mso-pagination:widow-orphan;
+            mso-paper-source:0;
+            
+            }
+            div.footer
+            {page:footer;}
+            
+            #lasttable {
+            border-collapse:collapse;
+            border-color:#ADB5B0;
+            }
+            
+            .footerdiv {
+               position: fixed;
+               left: 0in;
+               bottom: 0in;
+               width: 100%;
+               background-color: white;
+               color: white;
+               text-align: left;
+            }
+        </style>
+        
+        <body>
+            
+            <apex:outputText value="{!PrintView}" escape="false"/>
+            <div class="footer">
+                <br/><br/><br/>
+                <div style="margin-left:450px;width:450px;height:100px;" id="h1">
+                    <apex:image url="{!Logo}" height="100" width="250"/>
+                </div>
+                <table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+                    <tbody>
+                        <tr style="height:4.4pt;">
+                            <td width="15" valign="bottom" style="width:15.0pt;padding:
+                                                                  0in 0in 0in 0in;height:4.4pt" rowspan="13">
+                                 <apex:image url="{!MF}" style=" margin-left:30px;"/>
+                            </td>
+                            <td width="25" valign="bottom" style="width:89.0pt;padding:0in 0in 0in 0in;
+                                                                  height:4.4pt">
+                            </td>
+                            <td width="358" colspan="4" rowspan="7" valign="bottom" style="width:291.0pt; padding:0in 0in 0in 0in;height:4.4pt">
+                                
+                                <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            99%;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span id="header" style="font-size:30.0pt;line-height:99%;
+                                                                                                                                                 color:#004040">Invoice</span><br/><span id="header" style="font-size:12.0pt;line-height:99%;
+                                                                                                                                                 color:#004040">Invoice Number: {!pf.VG_Invoice_Number__c}</span></p>
+                                                                                                                                                                                                                                                                   
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>  
+             <div  style="margin-left:155px;margin-right:1.0in;">
+                 <TABLE style="margin-right:1.0in;">
+                        <TR>
+                            <td colspan="2"><font color="#F0550C">POLICY HOLDER</font> </td>
+                        </TR>
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Insured:</b>&nbsp;{!ps.Policy__r.Insured__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Company Registration No:</b>&nbsp;{!ps.Policy__r.Insured__r.Company_Registration_Number__c}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Policy number:</b>&nbsp;{!ps.Policy__r.Name}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Reason for Issue:</b>&nbsp;<apex:outputLabel value="{!IF(ps.VG_MTA_Type__c = 'Extension','Extension',If(ps.VG_MTA_Type__c ='Cancellation','Cancellation',If(ps.VG_MTA_Type__c ='Revision of Cover','Revision of Cover' ,If(ps.Policy__r.VG_Is_Renewal__c,'Renewal','New Policy'))))}"> </apex:outputLabel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Line of Business:</b>&nbsp;<apex:outputLabel value="{!IF(ps.Product__c != null,ps.Product__c,'None')}"></apex:outputLabel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr> 
+                         <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Policy period:</b>&nbsp;{!YEAR(ps.Policy__r.VG_Inception_Date__c)}/{!MONTH(ps.Policy__r.VG_Inception_Date__c)}/{!DAY(ps.Policy__r.VG_Inception_Date__c)}&nbsp; - &nbsp;{!YEAR(ps.Policy__r.VG_Expiry_Date__c)}/{!MONTH(ps.Policy__r.VG_Expiry_Date__c)}/{!DAY(ps.Policy__r.VG_Expiry_Date__c)} </span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr>  
+                        <apex:outputPanel rendered="{!ps.VG_MTA_Type__c ='Revision of Cover' || ps.VG_MTA_Type__c ='Extension'}">
+                             <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Effective Date:</b>&nbsp;{!YEAR(ps.VG_MTA_Start_Date__c)}/{!MONTH(ps.VG_MTA_Start_Date__c)}/{!DAY(ps.VG_MTA_Start_Date__c)} </span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr>  
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!ps.VG_MTA_Type__c ='Cancellation'}">
+                             <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Effective Date:</b>&nbsp;{!YEAR(ps.VG_MTA_Cancellation_Date__c)}/{!MONTH(ps.VG_MTA_Cancellation_Date__c)}/{!DAY(ps.VG_MTA_Cancellation_Date__c)} </span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr>  
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!ps.VG_MTA_Type__c ='' || ps.VG_MTA_Type__c = null}">
+                             <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Effective Date:</b>&nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                </div>
+                            </td>
+                        </tr>  
+                        </apex:outputPanel>
+                   </table> 
+                   <br/>
+                   <apex:outputPanel rendered="{!!ps.VG_Is_Co_Insurance__c}">
+                       <TABLE style="margin-right:1.0in;">
+                            <TR>
+                                <td colspan="2"><font color="#F0550C">PREMIUM</font> </td>
+                            </TR>
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b> Payment Reference:</b>&nbsp;{!pf.Name}</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                            </tr> 
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b> Payment Frequency:</b>&nbsp;<apex:outputLabel rendered="{!pf.VG_Payment_Percent__c!=null}" value="{!IF(pf.VG_Payment_Percent__c == 25,'Quarterly payment',If(pf.VG_Payment_Percent__c == 50,'Bi-annual payment',If(pf.VG_Payment_Percent__c == 100,'Annual payment',pf.VG_Payment_Percent__c)))}"> </apex:outputlabel></span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                            </tr>                       
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>   Premium amount:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}">
+                                        <apex:param value="{!pf.VG_GWP_This_Time__c}"/>
+                                        </apex:outputText></span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                            </tr> 
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>Broker Commission*:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}">
+                                        <apex:param value="{!BrokerCommisson}"/>
+                                        </apex:outputText></span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                            </tr> 
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:9.0pt;color:#004040"><b> Taxes:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}">
+                                        <apex:param value="{!totalTaxAmount}"/>
+                                        </apex:outputText> </span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                         </tr>                     
+                         <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>Total amount due:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}">
+                                        <apex:param value="{!totalAmountDue}"/>
+                                        </apex:outputText></span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                     </div>
+                              </td>
+                             
+                        </tr>
+                        <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">   * As a service Bridge Underwriting administrate the broker commission agreed between&nbsp;</span>
+                                       <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span> <span style="font-size:
+                                                     9.0pt;color:#004040">the client and the broker.</span></div>
+                                     </div>
+                            </td>
+                        </tr>  
+                     </table>
+                 </apex:outputPanel>
+                 <apex:outputPanel rendered="{!ps.VG_Is_Co_Insurance__c}">
+                       <TABLE style="margin-right:1.0in;">
+                            <TR>
+                                <td colspan="2"><font color="#F0550C">PREMIUM</font> </td>
+                            </TR>
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b> Payment Reference:</b>&nbsp;{!pf.Name}</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                            </tr> 
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b> Payment Frequency:</b>&nbsp;<apex:outputLabel rendered="{!pf.VG_Payment_Percent__c!=null}" value="{!IF(pf.VG_Payment_Percent__c == 25,'Quarterly payment',If(pf.VG_Payment_Percent__c == 50,'Bi-annual payment',If(pf.VG_Payment_Percent__c == 100,'Annual payment',pf.VG_Payment_Percent__c)))}"> </apex:outputlabel></span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                            </tr>                       
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>   Premium amount:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}">
+                                        <apex:param value="{!ps.VG_Gross_Written_Premium_100__c}"/>
+                                        </apex:outputText></span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                            </tr> 
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>Broker Commission*:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}">
+                                        <apex:param value="{!BrokerCommisson}"/>
+                                        </apex:outputText></span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                            </tr> 
+                            <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:9.0pt;color:#004040"><b> Taxes:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}">
+                                        <apex:param value="{!totalTaxAmount}"/>
+                                        </apex:outputText> </span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                    </div>
+                                </td>
+                         </tr>                     
+                         <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040"><b>Total amount due:</b>&nbsp;{!ps.CurrencyIsoCode}<apex:outputText value="{0, number, ###,##0.00}">
+                                        <apex:param value="{!totalAmountDue}"/>
+                                        </apex:outputText></span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">  </span>
+                                     </div>
+                              </td>
+                             
+                        </tr>
+                        <tr style="height:3.95pt;">
+                                
+                                <td width="552" colspan="3">
+                                    
+                                    <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                        <span style="font-size:
+                                                     9.0pt;color:#004040">   * As a service Bridge Underwriting administrate the broker commission agreed between&nbsp;</span>
+                                       <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span> <span style="font-size:
+                                                     9.0pt;color:#004040">the client and the broker.</span></div>
+                                     </div>
+                            </td>
+                        </tr>  
+                     </table>
+                 </apex:outputPanel>
+                 <br/>
+                 
+                 <TABLE style="margin-right:1.0in;">
+                        <TR>
+                            <td colspan="2"><font color="#F0550C">PAYMENT – BANK DETAILS</font> </td>
+                        </TR>
+                        <tr style="height:3.95pt;">                         
+                           
+                          <td width="276">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Invoice date:</b>&nbsp;{!DAY(inceptiondate)}/{!MONTH(inceptiondate)}/{!YEAR(inceptiondate)}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                          </td>
+                           <td width="276">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Due date:</b>&nbsp;{!DAY(pf.VG_Due_Date__c)}/{!MONTH(pf.VG_Due_Date__c)}/{!YEAR(pf.VG_Due_Date__c)}</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                          </td>
+                    </tr> 
+                     <tr style="height:3.95pt;">
+                            
+                            <td width="552" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>  Bankgiro:</b>&nbsp;<apex:outputLabel value="{!IF(ps.CurrencyIsoCode == 'SEK','5272-7658','')}" /></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                        </td>
+                    </tr>
+                </table>
+                
+                <TABLE style="margin-right:1.0in;">
+                    <tr style="height:3.95pt;">
+                            
+                            <td width="276" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   Bank:</b>&nbsp;Skandinaviska Enskilda Banken</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                          </td>
+                          <td width="276">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   IBAN:</b>&nbsp;<apex:outputLabel value="{!IF(ps.CurrencyIsoCode == 'SEK','SE6550000000052771119005',IF(ps.CurrencyIsoCode == 'EUR','SE2650000000051238284191',IF(ps.CurrencyIsoCode == 'NOK','SE4850000000051238284183',IF(ps.CurrencyIsoCode == 'DKK','SE7050000000051238284175',IF(ps.CurrencyIsoCode == 'USD','SE9250000000051238284167','')))))}" /></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                          </td>
+                    </tr>  
+                     <tr style="height:3.95pt;">
+                            
+                            <td width="276" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>   SWIFT/BIC:</b>&nbsp;ESSESESS</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                          </td>
+                          <td width="276">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>  Bank Account Number:</b>&nbsp;<apex:outputLabel value="{!IF(ps.CurrencyIsoCode == 'SEK','52771119005',IF(ps.CurrencyIsoCode == 'EUR','51238284191',IF(ps.CurrencyIsoCode == 'NOK','51238284183',IF(ps.CurrencyIsoCode == 'DKK','51238284175',IF(ps.CurrencyIsoCode == 'USD','51238284167','')))))}" /></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                          </td>
+                    </tr>  
+                    <tr style="height:3.95pt;">
+                            
+                            <td width="276" colspan="2">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>  Approved for:  </b>&nbsp;F-Tax</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                          </td>
+                          <td width="276">
+                                
+                                <div style="background:#F0EDEB;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>  VAT Registration Number:</b>&nbsp;51238284167 </span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">  </span>
+                                 </div>
+                          </td>
+                    </tr>  
+                  </table>
+                  <br/>                   
+                  <br/>
+                 
+             <br/><br/><br/><br/>
+               <TABLE style="margin-right:2.0in;">                       
+                        <tr style="height:3.95pt;">
+                            
+                            <td width="547" >
+                                
+                                <div>
+                                    <span style="font-size:
+                                                 7.0pt;color:#004040">The Volante Group of Companies. © 2017 Volante Global Limited. All rights reserved.   Bridge Underwriting AB incorporated in Sweden, registration No. 559136-4277 and registered office of Vasagatan 7, 111 20 Stockholm, Sweden and is authorised and regulated by the Swedish Finansinspektionen.</span>
+                                   
+                                 </div>
+                          </td>
+                          
+                       </tr>
+                       
+                  </table>       
+             </div>
+             
+          </div>  
+            
+       </body>
+    </html>
+
+
+</apex:page>

@@ -1,0 +1,5 @@
+<apex:page standardController="Policy__c">
+
+    <apex:pageMessage severity="Info" summary="Please go to Account for creating new policy..." strength="1"/>
+
+</apex:page>

@@ -1,0 +1,47 @@
+<apex:page controller="VG_EdisonPS_Ins3b_Controller"  showHeader="false" sidebar="false" title="Policy Shedule">
+   <style>
+    .OutputField{
+        font-weight:bold;
+    }
+    .disabled{
+            border: 1px solid #999999;
+            background-color: #b2b2b2;
+            color: #666666;
+            opacity: 0.65; 
+            cursor: not-allowed;
+        }
+    </style>
+    <script type="text/javascript">
+        function SubmitOnClick (objSubmitBtn) {
+            document.getElementById(objSubmitBtn.id).disabled = true;
+            document.getElementById(objSubmitBtn.id).classList.add("disabled");
+            objSubmitBtn.value = "Wait…";
+            doSubmit();
+        }
+    </script>
+    <apex:form style="width:1200px;">
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Endorsement}" alt="Smiley face" height="40px" width="1150px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+            <apex:pageBlock id="LibraryIndex" title="Endorsement Details">
+                <apex:pageMessage severity="Info" summary="No endorsements seleted from library.. If needed, you can add a custom endorsement." strength="3" rendered="{!!hasEndorsements}"/>
+                <apex:pageBlockTable value="{!existingEndorsements}" var="EN" id="pbt1" rendered="{!hasEndorsements}">
+                    <apex:column headerValue="Description" width="85%">
+                        <apex:inputField styleClass="OutputField" id="ILETEDSsE" value="{!EN.VG_Title__c }" style="width:950px;"/><br/><br/>
+                        <apex:inputTextArea value="{!EN.VG_Endorsement_Details__c}" cols="4" rows="10" richText="true"/><br/><br/>
+                    </apex:column>
+                    <apex:column headerValue="Premium" width="20%">
+                        <apex:inputField value="{!EN.VG_Premium__c}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton action="{!AddCustom}" value="Add Manuscript Endorsement"/>
+                </apex:pageBlockButtons>
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!Previousb}" value="Previous"/><apex:commandButton value="Next" id="Submit" onClick="return SubmitOnClick(this);" /><apex:actionFunction name="doSubmit" action="{!Nextb}" />
+                </apex:pageBlockButtons>
+            </apex:pageBlock>   
+        </div>         
+    </apex:form>
+</apex:page>

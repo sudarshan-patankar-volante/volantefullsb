@@ -1,0 +1,227 @@
+<apex:page controller="VG_ReviseAlphaStepsController" showHeader="false" sidebar="false">
+    
+     <apex:form >
+        <div style="width: 80%; margin-bottom:8px;margin-top: 8px;margin-left:80px;">
+            <img src="{!$Resource.LS_RD}" alt="Smiley face" height="45px" width="800px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <apex:pageblock tabStyle="Account" title="Risk Detail" id="pbmain">
+            
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageblock tabStyle="Account" rendered="{!layerlist}">
+                
+                <apex:pageBlockSection columns="1" id="ps1">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Rate Type</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                          
+                            <apex:inputField value="{!rc.VG_Rate_Type__c}" style="width:200px;"/>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem rendered="{!(Product_Select == 'Excess of Loss Per Risk' || Product_Select == 'Excess of Loss Per Event'|| Product_Select == 'Excess of Loss Per Risk & Event')}">
+                        <apex:outputLabel >No of Reinstatements</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_No_of_Reinstatements__c}" style="width:197px;" ><apex:actionSupport event="onchange" action="{!generateReinstatement}"  reRender="ps1"  /></apex:inputField>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:repeat value="{!createLoop}" id="repeat1"  var="s">
+                        <apex:pageBlockSectionItem dataTitle="Per Risk">
+                            <apex:outputLabel >Per Risk<apex:outputLabel rendered="{!s+1==1}">{!s+1}st</apex:outputLabel><apex:outputLabel rendered="{!s+1==2}">{!s+1}nd</apex:outputLabel><apex:outputLabel rendered="{!s+1==3}">{!s+1}rd</apex:outputLabel><apex:outputLabel rendered="{!s+1>3}">{!s+1}th</apex:outputLabel> Reinstatements</apex:outputLabel>
+                            <apex:inputText value="{!NOIList[s]}" style="width:197px;"/>
+                        </apex:pageBlockSectionItem>
+                    </apex:repeat>
+                    <apex:repeat value="{!createLoop}" id="repeat2"  var="s">
+                        <apex:pageBlockSectionItem dataTitle="Per Risk">
+                            <apex:outputLabel >Per Event<apex:outputLabel rendered="{!s+1==1}">{!s+1}st</apex:outputLabel><apex:outputLabel rendered="{!s+1==2}">{!s+1}nd</apex:outputLabel><apex:outputLabel rendered="{!s+1==3}">{!s+1}rd</apex:outputLabel><apex:outputLabel rendered="{!s+1>3}">{!s+1}th</apex:outputLabel> Reinstatements</apex:outputLabel>
+                            <apex:inputText value="{!NOIList2[s]}" style="width:197px;"/>
+                        </apex:pageBlockSectionItem>
+                    </apex:repeat>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Territorial Scope</apex:outputLabel>
+                         <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                         <apex:outputPanel styleClass="requiredBlock"/>                          
+                            <apex:selectList value="{!TT_Select}" size="1" style="width:200px;">
+                                <apex:selectOptions value="{!TT_List}"></apex:selectOptions>
+                            </apex:selectList>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel > Plan Loss Ratio</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_Plan_Loss_Ratio__c}" style="width:197px;" html-placeholder="Enter percentage "/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Layer</apex:outputLabel>
+                        <apex:selectList id="s" size="1" value="{!rc.VG_Layer__c}" style="width:200px;">
+                            <apex:selectoption itemLabel="1st Layer" itemValue="1st Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="2nd Layer" itemValue="2nd Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="3rd Layer" itemValue="3rd Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="4th Layer" itemValue="4th Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="5th Layer" itemValue="5th Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="6th Layer" itemValue="6th Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="7th Layer" itemValue="7th Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="8th Layer" itemValue="8th Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="9th Layer" itemValue="9th Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="10th Layer" itemValue="10th Layer"></apex:selectoption>
+                            <apex:selectoption itemLabel="Primary" itemValue="Primary"></apex:selectoption>
+                            <apex:selectoption itemLabel="Excess" itemValue="Excess"></apex:selectoption>
+                        </apex:selectList> 
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+            </apex:pageblock>
+            
+            <apex:pageblock tabStyle="Account" rendered="{!RD1to4}">
+                <apex:pageBlockSection columns="1" id="ps5">
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Rate Type</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                          
+                            <apex:inputField value="{!rc.VG_Rate_Type__c}" style="width:200px;"/>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Territorial Scope</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                          
+                            <apex:selectList value="{!TT_Select}" size="1" style="width:200px;">
+                                <apex:selectOptions value="{!TT_List}"></apex:selectOptions>
+                            </apex:selectList>
+                        </apex:outputPanel>  
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel > Plan Loss Ratio</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_Plan_Loss_Ratio__c}" style="width:197px;" html-placeholder="Enter percentage "/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Layer </apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_Layer__c}" style="width:200px;" />
+                    </apex:pageBlockSectionItem>
+                    
+                </apex:pageBlockSection>
+            </apex:pageblock>
+            
+            <apex:pageblock tabStyle="Account" rendered="{!RD5to6}">
+                <apex:pageBlockSection columns="1" id="ps2">
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Territorial Scope</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                          
+                            <apex:selectList value="{!TT_Select}" size="1" style="width:200px;">
+                                <apex:selectOptions value="{!TT_List}"></apex:selectOptions>
+                            </apex:selectList>
+                         </apex:outputPanel>  
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel > Plan Loss Ratio</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_Plan_Loss_Ratio__c}" style="width:197px;" html-placeholder="Enter percentage "/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        
+                        <apex:outputLabel > Ceding Commission Type</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_Ceding_Commission_Type__c}" style="width:200px;"/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Income Basis</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_Income_Basis__c}" style="width:200px;"/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Claims Notification Threshold</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_Claims_Notification_Threshold__c}" style="width:197px;" html-placeholder="Enter Currency "/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Cash Loss Limit</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_Cash_Loss_Limit__c}" style="width:197px;" html-placeholder="Enter Currency "/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >First Premium Payment Date</apex:outputLabel>
+                        <apex:inputField value="{!rc.VG_First_Premium_Payment_Date__c}" style="width:197px;" html-placeholder="Enter Date"/>
+                    </apex:pageBlockSectionItem>
+                    
+                </apex:pageBlockSection>
+            </apex:pageblock>
+            
+            <apex:pageblock tabStyle="Account" rendered="{!RD7to8}">
+                <apex:pageBlockSection columns="1" id="ps3" title="Underlying Policy Details">
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Cedent: </apex:outputLabel>
+                        <apex:inputText value="{!Insurer}" style="width:197px;" html-placeholder="Enter Cedent"/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Cedent Policy Number : </apex:outputLabel>
+                        <apex:inputText value="{!Insurer}" style="width:197px;" html-placeholder="Enter Policy Number"/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Cedent Policy Currency : </apex:outputLabel>
+                        <apex:selectList value="{!InsurerPolicyCurrency}" size="1" style="width:200px;">
+                            <apex:selectOptions value="{!Currency_List}"></apex:selectOptions>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Underlying policy limit : </apex:outputLabel>
+                        <apex:inputText value="{!InsurerPolicyLimit}" style="width:197px;" html-placeholder="Enter Currency"/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Cedent Policy Dedctible : </apex:outputLabel>
+                        <apex:inputText value="{!InsurerPolicyDedctible}" style="width:197px;" html-placeholder="Enter Currency"/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >100% Premium for underlying policy : </apex:outputLabel>
+                        <apex:inputText value="{!InsurerPolicyPremium}" style="width:197px;" html-placeholder="Enter Currency"/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Cedent's share of underlying policy : </apex:outputLabel>                       
+                        <apex:inputText value="{!InsurerPolicyShare}" style="width:197px;" html-placeholder="Enter Percentage"/>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection columns="1" id="ps4" title="Reinsurance Details" >                   
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Territorial Scope</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                          
+                            <apex:selectList value="{!TT_Select}" size="1" style="width:200px;">
+                                <apex:selectOptions value="{!TT_List}"></apex:selectOptions>
+                            </apex:selectList>
+                        </apex:outputPanel>
+                        
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Layer</apex:outputLabel>
+                        <apex:selectList id="s" size="1" value="{!rc.VG_Layer__c}" style="width:200px;">
+                            <apex:selectoption itemLabel="Primary" itemValue="Primary"></apex:selectoption>
+                            <apex:selectoption itemLabel="Excess" itemValue="Excess"></apex:selectoption>
+                        </apex:selectList>    
+                    </apex:pageBlockSectionItem>
+                    
+                </apex:pageBlockSection>
+            </apex:pageblock>
+            
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotostep1}"/><apex:commandButton value="Next" action="{!gotostep3}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageblock>
+        
+    </apex:form>
+    
+</apex:page>

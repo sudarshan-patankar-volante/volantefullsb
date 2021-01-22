@@ -1,0 +1,306 @@
+<apex:page standardController="Policy_Schedule__c" extensions="VG_PolicyScheduleEdit1_Controller" showHeader="false" sidebar="false" title="Policy Schedule" action="{!updateCalc}">
+    <style>
+        
+        .my_text
+        {
+        font-family:    Arial, Helvetica, sans-serif
+        font-size:      75;
+        font-weight:    bold;
+        font-height:    10%;
+        
+        }
+        h1{
+        font-size: 150%;
+        }
+        h3{
+        font-size: 130%;
+        }
+        .s{
+        font-weight: bold !important;
+        }
+    </style>
+    <apex:form id="form1" style="width:1300px;">
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_Confirm}" alt="Smiley face" height="40px" width="1150px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div> 
+            <apex:pageblock title="" tabStyle="VG_Policy_Schedule_Endorsement__c">
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!Previous4}" value="Previous"/>
+                    <apex:actionStatus id="saveStatus">
+                        <apex:facet name="stop">
+                            <apex:commandButton value="Finish" action="{!Finish}" status="saveStatus" rerender="pbkid1,pbkid2" />
+                        </apex:facet>
+                        <apex:facet name="start">
+                            <apex:outputPanel >
+                                <apex:image value="/img/loading32.gif" style="height: 15px;"/>               
+                                <apex:commandButton value="Saving..." disabled="true" status="saveStatus"/>
+                            </apex:outputPanel>
+                        </apex:facet>
+                    </apex:actionStatus>
+                </apex:pageBlockButtons>       
+                <div class="my_text" style="margin-left: 400px;">
+                    <h1>Policy Schedule Details</h1><span class="my_text" align="right" style="margin-right:45px;"> <h3></h3></span>
+                </div><br/><br/>
+            </apex:pageBlock>
+            <apex:pageBlock tabStyle="VG_Policy_Schedule_Endorsement__c" rendered="{!!IsCancellation&&!IsExtension}" id="pbkid1" >
+                <apex:pageBlockSection title="Policy Schedule Details">                    
+                    
+                    <apex:pageBlockSectionItem rendered="{!(Product_seleced =='Uninsured Loss Recovery')}">
+                        <apex:outputLabel >Technical Model Premium</apex:outputLabel>
+                        <apex:inputField value="{!ps.VG_Technical_Model_Premium__c}" >
+                            <apex:actionSupport event="onchange" action="{!updateCalc}" reRender="pbkid1"  />
+                        </apex:inputField>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{!(Product_seleced !='Uninsured Loss Recovery')}">
+                        <apex:outputLabel >Technical Model Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,##0.00}">
+                            <apex:param value="{!techModelPremium}"/>
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Actual Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,##0.00}">
+                            <apex:param value="{!actPremium}"/>
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem> 
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Technical UW Premium </apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,##0.00}">
+                            <apex:param value="{!techUWPre}"/>
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Risk Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,##0.00}">
+                            <apex:param value="{!riskPremiumPro}"/>
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                   
+                   <apex:pageBlockSectionItem >
+                   </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Endorsement Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,##0.00}">
+                            <apex:param value="{!endPremiumPro }"/>
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem rendered="{!!(IsCancellation||IsExtension)}" >
+                        <apex:outputLabel >Levies</apex:outputLabel>
+                        <apex:inputField value="{!ps.Levies__c}" >
+                            <apex:actionSupport event="onchange" action="{!updateCalc}" reRender="pbkid1"  />
+                        </apex:inputField>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem rendered="{!!(IsCancellation||IsExtension)}">
+                        <apex:outputLabel >Premium Adjustment</apex:outputLabel>
+                        <apex:inputField value="{!ps.Premium_Adjustment__c}" >
+                            <apex:actionSupport event="onchange" action="{!updateCalc}" reRender="pbkid1"  />
+                        </apex:inputField>
+                    </apex:pageBlockSectionItem>       
+                    
+                    <apex:pageBlockSectionItem rendered="{!!(IsCancellation||IsExtension)}">
+                        <apex:outputLabel >Fee Income</apex:outputLabel>
+                        <apex:inputField value="{!ps.VG_Fee_Income__c}" >
+                            <apex:actionSupport event="onchange" action="{!updateCalc}" reRender="pbkid1"  />
+                        </apex:inputField>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Gross Written Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,##0.00}">
+                            <apex:param value="{!grossWrittenPremium}"/>
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem> 
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Transactional Premium</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,##0.00}">
+                            <apex:param value="{!transactPremium}"/>
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem rendered="{!!(IsCancellation||IsExtension)}"  >
+                        <apex:outputLabel >Brokerage (%)</apex:outputLabel>
+                        <apex:inputField value="{!ps.VG_Brokerage_Percent__c}" >
+                            <apex:actionSupport event="onchange" action="{!updateCalc}" reRender="pbkid1"  />
+                        </apex:inputField>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem rendered="{!!(IsCancellation||IsExtension)}"  >
+                        <apex:outputLabel >VAT (%)</apex:outputLabel>
+                        <apex:inputField value="{!ps.VG_VAT__c}" >
+                            <apex:actionSupport event="onchange" action="{!updateCalc}" reRender="pbkid1"  />
+                        </apex:inputField>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Brokerage(Amount)</apex:outputLabel>
+                        <apex:outputText value="{0, number,###,##0}"><apex:param value="{!brokerageAmount }"/></apex:outputText>
+                    </apex:pageBlockSectionItem> 
+                  
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >VAT (Amount)</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,##0.00}">
+                            <apex:param value="{!ps.VG_VAT_Amount__c}"/>
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Rate Change (%)</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                        <apex:inputText value="{!RateChange}" />
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Split Type</apex:outputLabel>
+                        <apex:selectList value="{!ps.Split_Type__c}" size="1" style="width:100px;">
+                            <apex:selectOptions value="{!splitTypes}"></apex:selectOptions>
+                            <apex:actionSupport event="onchange" action="{!updateCalc}" reRender="pbkid1"  />
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem>                
+                    <apex:pageBlockSectionItem rendered="{!ps.Split_Type__c == 'Non EEA'}">
+                        <apex:outputLabel >Entity</apex:outputLabel>
+                        <apex:selectList value="{!ps.VG_Volante_Entities__c}" size="1" style="width:100px;">
+                            <apex:selectOptions value="{!NonEEAVolanteEntity_Select}"></apex:selectOptions>
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem>   
+                    <apex:pageBlockSectionItem rendered="{!COB != 'MOTOR-ULR'}">
+                        <apex:outputLabel >Capacity Paper</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel1" >
+                            <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:selectList value="{!CapacityPaper}" size="1" style="width:200px;">
+                                <apex:selectOption itemValue="--None--" itemLabel="--None--"/>
+                                <apex:selectOption itemValue="Public Sector" itemLabel="Public Sector"/>
+                                <apex:selectOption itemValue="Non Conventional" itemLabel="Non Conventional"/>
+                                <apex:selectOption itemValue="Hazardous" itemLabel="Hazardous"/>
+                                <apex:selectOption itemValue="Ancillary" itemLabel="Ancillary"/> 
+                                <apex:selectOption itemValue="Haulage" itemLabel="Haulage"/>
+                            </apex:selectList>
+                        </apex:outputPanel> 
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem rendered="{! COB == 'MOTOR-ULR'}">
+                        <apex:outputLabel >Capacity Paper</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel1" >
+                            <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:selectList value="{!CapacityPaper}" size="1" style="width:200px;">
+                                <apex:selectOption itemValue="--None--" itemLabel="--None--"/>
+                                <apex:selectOption itemValue="ULR" itemLabel="ULR" />                                 
+                            </apex:selectList>
+                        </apex:outputPanel> 
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" title="Asset Details" collapsible="False">
+                    <apex:pageMessage severity="Info" summary="No Assets added to the policy shedule." strength="3" rendered="{!!hasAssets}"/>
+                    <apex:pageBlockTable style="background-color:#D3D3D3;" value="{!psaList}" var="psa" width="450px" id="pbkt1" rendered="{!hasAssets && (COB != 'MOTOR-ULR')}">
+                        <apex:column rendered="{!!psa.VG_IsTempDelete__c}" headerValue="Number of Vehicles" width="20px" id="c1" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.VG_Number_of_Vehicles__c}"/>
+                            </apex:outputText>
+                        </apex:column>
+                        <apex:column rendered="{!!psa.VG_IsTempDelete__c}" headerValue="Type" value="{!psa.VG_Vehicle_Type__c}" width="20px" id="cl1" >
+                        </apex:column>
+                        <apex:column rendered="{!!psa.VG_IsTempDelete__c}" headerValue="Coverage" value="{!psa.VG_Coverage__c}" width="20px" id="cl2" >
+                        </apex:column>
+                        <apex:column rendered="{!!psa.VG_IsTempDelete__c}" headerValue="Deductible" width="20px" id="cl3" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.VG_Deductible__c}"/>
+                            </apex:outputText>
+                        </apex:column>
+                        <apex:column rendered="{!!psa.VG_IsTempDelete__c}" headerValue="Technical UW Rate (Annual)" width="20px" id="cl6" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.VG_Technical_UW_Rate_Annual__c}"/>
+                            </apex:outputText>
+                        </apex:column>    
+                        <apex:column rendered="{!!psa.VG_IsTempDelete__c}" headerValue="Actual Rate(Annual)" width="20px" id="cl4" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.VG_Rate_Per_Vehicle__c}"/>
+                            </apex:outputText>
+                        </apex:column>
+                        <apex:column rendered="{!!psa.VG_IsTempDelete__c}" headerValue="Technical UW Premium" width="20px" id="cl7" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.Technical_UW_Premium__c}"/>
+                            </apex:outputText>
+                        </apex:column>          
+                        <apex:column rendered="{!!psa.VG_IsTempDelete__c}" headerValue="Actual Premium" width="20px" id="cl5" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.VG_Premium__c}"/>
+                            </apex:outputText>
+                        </apex:column>    
+                        <apex:column headerValue="Model Rate" width="20px" id="cl9" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.VG_Model_Rate__c}"/>
+                            </apex:outputText>
+                        </apex:column>                    
+                    </apex:pageBlockTable> 
+                    <apex:pageBlockTable style="background-color:#D3D3D3;" value="{!psaList}" var="psa" width="450px" id="pbkt3" rendered="{!hasAssets && (Product_seleced =='Uninsured Loss Recovery')}">
+                        <apex:column headerValue="Number of Vehicles" width="20px" id="c1" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.VG_Number_of_Vehicles__c}"/>
+                            </apex:outputText>
+                        </apex:column>
+                        <apex:column headerValue="Actual Rate(Annual)" width="20px" id="cl4" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.VG_Rate_Per_Vehicle__c}"/>
+                            </apex:outputText>
+                        </apex:column>
+                        <apex:column headerValue="Actual Premium" width="20px" id="cl5" >
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!psa.VG_Premium__c}"/>
+                            </apex:outputText>
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>                         
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" title="Risk Capture Details" collapsible="False">
+                    <apex:pageMessage severity="Info" summary="No Risk Capture added to the policy shedule." strength="3" rendered="{!wrcList.size==0}"/>
+                    <apex:pageBlockTable style="background-color:#D3D3D3;" value="{!wrcList}" var="wrc" width="450px" id="rcpbt1" rendered="{!wrcList.size>0 && (COB != 'MOTOR-ULR')}">
+                        <apex:column rendered="{!!wrc.rc.VG_IsTempDelete__c}" headerValue="Drivers Name" value="{!wrc.rc.Drivers_Name__c}" width="20px" id="rc1" >
+                        </apex:column>
+                        <apex:column rendered="{!!wrc.rc.VG_IsTempDelete__c}" headerValue="Drivers DOB" value="{!wrc.rc.Drivers_DOB__c}" width="20px" id="rc2" >
+                        </apex:column>
+                        <apex:column rendered="{!!wrc.rc.VG_IsTempDelete__c}" headerValue="Drivers Convictions" value="{!wrc.rc.Drivers_Convictions__c}" width="20px" id="rc3" >
+                        </apex:column>
+                        <apex:column rendered="{!!wrc.rc.VG_IsTempDelete__c}" headerValue="Drivers Conviction Points" value="{!wrc.rc.Drivers_Conviction_Points__c}" width="20px" id="rc4" >
+                        </apex:column>
+                        <apex:column rendered="{!!wrc.rc.VG_IsTempDelete__c}" headerValue="Drivers License Ban Details" value="{!wrc.rc.Drivers_License_Ban_Details__c}" width="20px" id="rc5" >
+                        </apex:column>
+                        <apex:column rendered="{!!wrc.rc.VG_IsTempDelete__c}" headerValue="Drivers Claims" value="{!wrc.rc.Drivers_Claims__c}" width="20px" id="rc6" >
+                        </apex:column>
+                        <apex:column rendered="{!!wrc.rc.VG_IsTempDelete__c}" headerValue="Drivers Medical Conditions" value="{!wrc.rc.Drivers_Medical_Conditions__c}" width="20px" id="rc7" >
+                        </apex:column>
+                    </apex:pageBlockTable>                      
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" title="Endorsement Details" collapsible="False">
+                    <apex:pageMessage severity="Info" summary="No Endorsements added to the policy shedule." strength="3" rendered="{!!hasEndorsements}"/>
+                    <apex:pageBlockTable style="background-color:#D3D3D3;" value="{!pseList}" var="pse" width="450px" id="elpbt1" rendered="{!hasEndorsements}">               
+                        <apex:column rendered="{!!pse.VG_IsTempDelete__c}" headerValue="Title" >
+                            <b><apex:outputField value="{!pse.VG_Title__c}" style="font-weight: bold !important;"/></b>
+                        </apex:column>
+                        <apex:column rendered="{!!pse.VG_IsTempDelete__c}" headerValue="Endorsement Details">
+                            <apex:outputField value="{!pse.VG_Endorsement_Details__c}" />
+                        </apex:column>
+                        <apex:column rendered="{!!pse.VG_IsTempDelete__c}" headerValue="Premium">
+                            <apex:outputText value="{0, number, ###,##0}">
+                                <apex:param value="{!pse.VG_Premium__c}"/>
+                            </apex:outputText>
+                        </apex:column>                                              
+                    </apex:pageBlockTable>  
+                </apex:pageBlockSection> 
+            </apex:pageBlock>
+                    
+        </div>
+    </apex:form>   
+    
+</apex:page>

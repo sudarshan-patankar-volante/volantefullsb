@@ -1,0 +1,76 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="VG_Gentium_Policy_ButtonsController">
+    <aura:attribute name="spinner" type="boolean" default="FALSE"/>
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="ps" type="boolean" default="false"/>    
+    <aura:attribute name="mta" type="boolean" default="false"/>
+    <aura:attribute name="uD" type="boolean" default="True"/>
+    <aura:attribute name="basePolicy" type="boolean" default="false"/>
+    <aura:attribute name="policyName" type="String"/>
+    <aura:attribute name="InsuredAcc" type="String" />
+    <aura:attribute name="CurCode" type="String" />
+    <aura:attribute name="notRenewal" type="boolean" default="false"/>
+    
+    <aura:html tag="style">
+        .toastMessage.forceActionsText{
+        white-space : pre-line !important;
+        }
+    </aura:html>
+    <aura:if isTrue="{!v.spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading...</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>  
+    <aura:if isTrue="{!v.isOpen}">
+        
+        <!--###### MODAL BOX Start######--> 
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- ###### MODAL BOX HEADER Start ######-->
+                <header class="slds-modal__header">
+                    
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Renewal Alert</h2>
+                </header>
+                <!--###### MODAL BOX BODY Part Start######-->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <b>You cannot renew a policy if there is premium outstanding on an expiring policy. Please confirm premium has been collected?</b>
+                </div>
+                <!--###### MODAL BOX FOOTER Part Start ######-->
+                <footer class="slds-modal__footer">
+                    <div align="center"><lightning:button aura:id="YES" label="YES" class="slds-m-top_medium" onclick="{!c.renewpolicy}" />
+                        <lightning:button aura:id="NO" label="NO" class="slds-m-top_medium" onclick="{! c.cancelRenew }"/></div>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <!--###### MODAL BOX Part END Here ######-->
+        
+    </aura:if>
+    
+    <aura:if isTrue="{!v.mta}">
+        <lightning:button name="b1" variant="brand" label="Edit" onclick="{!c.handleEditClick}"/>        
+    </aura:if>
+    <aura:if isTrue="{!v.ps}">
+        <lightning:button name="b2" variant="brand" label="Ext/Canc/Redtn" onclick="{!c.handleMTAClick }" />
+    </aura:if>
+    <aura:if isTrue="{!v.notRenewal}">
+        <lightning:button name="btn8" variant="brand" label="Renew Policy" onclick="{!c.conformRenew}" />
+    </aura:if>
+    <aura:if isTrue="{!v.basePolicy}">
+        <lightning:button name="BasePolicy" variant="brand" label="Open Base Policy" onclick="{!c.gotoBasePolicy}" />
+    </aura:if>
+    <aura:if isTrue="{!v.uD}">
+        <lightning:button name="b3" variant="brand" label="Upload Documents" onclick="{!c.uploadDocuments}" />
+    </aura:if>    
+    <aura:handler name="change" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>    
+    <aura:if isTrue="{!v.mta}">
+        <lightning:button name="b1" variant="brand" label="New Policy Schedule" onclick="{!c.handlePSClick }"/>
+    </aura:if>
+    <lightning:button name="b5" variant="brand" label="Governance and Compliance" onclick="{!c.handleGCClick}"/>        
+    
+    <!--<lightning:button name="btn6" variant="brand" label="Policy Summary" onclick="{!c.checkPolicyAssets}" />-->
+</aura:component>

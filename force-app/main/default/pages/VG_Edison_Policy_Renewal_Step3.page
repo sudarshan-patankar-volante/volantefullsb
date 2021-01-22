@@ -1,0 +1,30 @@
+<apex:page controller="VG_Edison_PolicyRenewalController" sidebar="false" showHeader="false">
+    <script>
+    function termsAccepted(nof) {
+        document.getElementById(nof).disabled = true;
+    }
+    </script>
+    <apex:form id="f1">
+        <apex:pageBlock tabStyle="Account" id="LibraryIndex" title="Endrosements">
+            <apex:pageMessage severity="Info" summary="No Endrosements available." strength="3" rendered="{!(pseWrapList.size==0)}" />
+            <apex:pageBlockTable value="{!pseWrapList}" var="psew" id="pbt1" rendered="{!!(pseWrapList.size==0)}">
+                <apex:column headerValue="" width="2%" >
+                    <apex:inputcheckbox id="ILETEDSsE" value="{!psew.isSelected}"/>
+                </apex:column>
+                <apex:column headerValue="Number" width="8%">
+                    <apex:outputField value="{!psew.pse.Name}" />
+                </apex:column>
+                <apex:column headerValue="Title" width="90%">
+                   <apex:outputpanel styleClass="OutputField" >
+                    <apex:outputField value="{!psew.pse.VG_Title__c}" />
+                  </apex:outputpanel>
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockButtons location="both">
+            <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/>
+            <apex:commandButton value="Previous" action="{!gotoStep2}"/>
+            <apex:commandButton id="tncs" value="Next" action="{!Next}" onclick="termsAccepted('{!$Component.tncs}');" reRender="f1"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock> 
+    </apex:form>
+</apex:page>

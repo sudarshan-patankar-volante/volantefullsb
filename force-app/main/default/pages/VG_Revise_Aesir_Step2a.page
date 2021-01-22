@@ -1,0 +1,20 @@
+<apex:page controller="VG_ReviseAesirStepsController" sidebar="false" showHeader="false">
+    
+    <apex:form style="width:1200px;">
+        <apex:pageblock tabStyle="Account" title="Risk Rating Upload" id="RRBlock">
+            <apex:pageMessages rendered="{!pmsg}"></apex:pageMessages>
+            
+            <apex:pageblocksection >
+                <apex:outputLabel >Upload File</apex:outputLabel>
+                <apex:inputFile id="file_File" value="{!fileBody}" filename="{!fileName}"/>
+            </apex:pageblocksection>
+            
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!gotoStep1}" value="Previous"/><apex:commandButton value="Next" action="{!gotoStep2b}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageblock>
+        
+    </apex:form>
+    
+</apex:page>

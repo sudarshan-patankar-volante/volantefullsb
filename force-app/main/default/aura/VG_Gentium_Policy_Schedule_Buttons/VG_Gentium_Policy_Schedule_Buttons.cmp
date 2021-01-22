@@ -1,0 +1,25 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" controller="VG_Horizon_PS_Button_Controller" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute name="quote" type="boolean" default="false" />
+    <aura:attribute name="booked" type="boolean" default="false"/>
+    <aura:attribute name="mta" type="boolean" default="false"/>
+    <aura:attribute name="product" type="String"/>
+    <aura:attribute name="allowDelete" type="boolean" default="false"/>
+    <aura:if isTrue="{!!v.mta}">
+        <lightning:button name="btn8" variant="brand" label="Revise" onclick="{!c.handleReviseClick}" />
+    </aura:if>
+    <aura:if isTrue="{!v.booked}">
+        <lightning:button name="btn5" variant="brand" label="Book" onclick="{!c.Booked}" />
+    </aura:if>
+    <lightning:button name="btn9" variant="brand" label="Payment Frequency" onclick="{!c.handlePFClick}" />    <aura:if isTrue="{!v.quote}">
+    <!-- <lightning:button name="btn1" variant="brand" label="Print Quote" />-->
+    </aura:if>
+    <aura:if isTrue="{!v.mta}">
+        <lightning:button name="btn8" variant="brand" label="ROC" onclick="{!c.handleROCClick}" />
+    </aura:if>
+    <aura:if isTrue="{!v.allowDelete}">
+        <aura:if isTrue="{!!v.mta}">
+            <lightning:button name="btn10" variant="brand" label="Delete PS" onclick="{!c.deletePS}" />
+        </aura:if>
+    </aura:if>
+</aura:component>

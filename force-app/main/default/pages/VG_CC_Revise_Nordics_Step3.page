@@ -1,0 +1,1014 @@
+<apex:page controller="VG_CC_Revise_Nordics_StepController" sidebar="false" showheader="false" tabStyle="Account" docType="html-5.0">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Previous" action="{!gotostep2}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+                <apex:commandButton value="Next" action="{!gotostep4}"/>
+            </apex:pageBlockButtons>
+            <apex:outputpanel id="mainPageBlock">
+                <apex:pageBlockSection title="{!if(addCoverageMode == 'Select Coverage', '', addCoverageMode)} Coverage Details" rendered="{!addCoverageMode != ''}" collapsible="false" columns="1">
+                    <apex:pageBlockSection collapsible="false" rendered="{!addCoverageMode == 'Select Coverage'}" columns="1">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel >Select Coverage</apex:outputLabel>
+                            <apex:selectList size="1" value="{!currentCW.selectedCoverage}" >
+                                <apex:actionSupport event="onchange" action="{!setCoverageContext}" reRender="mainPageBlock"/>
+                                <apex:selectOption itemValue="--None--" itemLabel="--None--"></apex:selectOption>
+                                <apex:selectOptions value="{!currentCW.coveragesList}"></apex:selectOptions>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Epidemic Disease'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}" >
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Epidemic Disease SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Deductible or waiting Period?</apex:outputLabel>
+                                <apex:selectRadio value="{!currentCW.variable.dedOrWP}">
+                                    <apex:actionSupport event="onchange" action="{!refreshView}" reRender="mainPageBlock"/>
+                                    <apex:SelectOption itemValue="Deductible" itemLabel="Deductible"/>
+                                    <apex:SelectOption itemValue="Waiting Preiod" itemLabel="Waiting Preiod"/>
+                                </apex:selectRadio>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem rendered="{!currentCW.variable.dedOrWP == 'Deductible'}">
+                                <apex:outputLabel >Epidemic Disease Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem rendered="{!currentCW.variable.dedOrWP == 'Deductible'}">
+                                <apex:outputLabel >Epidemic Disease Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem rendered="{!currentCW.variable.dedOrWP == 'Waiting Preiod'}">
+                                <apex:outputLabel >Epidemic Disease Waiting Period (Hours)</apex:outputLabel>
+                                <apex:selectList size="1" value="{!currentCW.variable.WPFactor.price }" >
+                                    <apex:selectOptions value="{!currentCW.variable.WPFactor.factors}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Epidemic Disease Indemnity Period</apex:outputLabel>
+                                <apex:selectList size="1" value="{!currentCW.variable.IPFactor.price}" >
+                                    <apex:selectOptions value="{!currentCW.variable.IPFactor.factors}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Business Interruption'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}" >
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >BI Gross Profit</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.GrossProfit}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Liability GL/PL'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}" >
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >GL SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >GL Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >GL Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Annual Turnover Split (Nordics)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.ATSNordics}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Annual Turnover Split (EU)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.ATSEU}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >PL SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >PL Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLdeductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >PL Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLPBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Risk Quality</apex:outputLabel>
+                                <apex:selectList size="1" value="{!currentCW.variable.RQFactor.price }" >
+                                    <apex:selectOptions value="{!currentCW.variable.RQFactor.factors}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Description of Risk Quality</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.description }"/>
+                            </apex:pageBlockSectionItem>
+                            
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Crime'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Crime SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Crime Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Crime Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Tools'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Tools SI (per vehicle)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >No of vehicles</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.noOfVehicles}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Tools Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Tools Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Lift'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Lift SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Lift Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Lift Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Forklift'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Forklift SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Forklift Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Forklift Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Business Sample'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Business Sample SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Business Sample Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Business Sample Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Business Interruption due to Health Problems'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageblockTable value="{!currentCW.variable.BIHList}" var="BIH">
+                                <apex:column headerValue="Individual">
+                                    <apex:inputText value="{!BIH.Individual}"/>
+                                </apex:column>
+                                <apex:column headerValue="Date of birth">
+                                    <apex:input value="{!BIH.DOB}" type="date"/>
+                                </apex:column>
+                                <apex:column headerValue="Total SI">
+                                    <apex:inputText value="{!BIH.SI}"/>
+                                </apex:column>
+                            </apex:pageblockTable>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Professional Indemnity'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Professional Indemnity SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Professional Indemnity Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Professional Indemnity Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Crisis'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pagemessage severity="info">No additional information required for Crisis coverage. Please click Save.</apex:pagemessage>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Personal Accident (visitor)'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pagemessage severity="info">No additional information required for Personal Accident (visitor) coverage. Please click Save.</apex:pagemessage>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'All Risk'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pagemessage severity="info">No additional information required for All Risk coverage. Please click Save.</apex:pagemessage>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Assault'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pagemessage severity="info">No additional information required for Assault coverage. Please click Save.</apex:pagemessage>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Fire'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>                                                     
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Norwegian Nat Cat Pool Premium (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.fireNatCatPoolPremium}"/>
+                            </apex:pageBlockSectionItem> 
+                                                                                                                                   
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Fire Deducitble (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>                            
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Fire Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>                            
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Requested First risk SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.RFRSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Full Value SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.FVSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem ></apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Loss Limit</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.Losslimit}"/>
+                            </apex:pageBlockSectionItem> 
+                             
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Machinery BI'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Annual Gross Profit</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.FVSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Indeminity Period</apex:outputLabel>
+                                <apex:selectList size="1" value="{!currentCW.variable.IPFactor.price }" >
+                                    <apex:selectOptions value="{!currentCW.variable.IPFactor.factors}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Waiting Time</apex:outputLabel>
+                                <apex:selectList size="1" value="{!currentCW.variable.WPFactor.price}" >
+                                    <apex:selectOptions value="{!currentCW.variable.WPFactor.factors}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Extra Costs'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Fire, Burglary and Water SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Machinery SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.FVSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Indeminity Period (Months)</apex:outputLabel>
+                                <apex:selectList size="1" value="{!currentCW.variable.IPFactor.price }" >
+                                    <apex:selectOptions value="{!currentCW.variable.IPFactor.factors}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Extra Costs Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Extra Costs Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Loss of Rent'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Rental Income</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Loss of Rent SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Indeminity Period (Months)</apex:outputLabel>
+                                <apex:selectList size="1" value="{!currentCW.variable.IPFactor.price }" >
+                                    <apex:selectOptions value="{!currentCW.variable.IPFactor.factors}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Loss of Rent (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Loss of Rent Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'CAR/EAR'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Annual Construction Turnover</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.AnnualContstructionTurnover}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Works SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Works Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Works Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Major Material Value SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.MajorMaterialValue}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Extra Costs SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.ExtraCostSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Extra Costs Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLdeductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Extra Costs Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLPBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Risky Jobs SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.RiskyJobSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Risky Jobs Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.RiskyJobDeductible}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Risky Jobs Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.RiskyJobPBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Equip Mobile Crane SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.MobileCraneSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Equip Excavator and Piling SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.EAPM}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Equip Other Aids SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.OtherAids}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Equip Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.MCDeductible}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Equip Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.MCPBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Existing Property SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.EPSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Existing Property SI Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.EPDeductible}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Existing Property SI Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.EPPBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Access and Rest SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.AccessSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Access and Rest Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.AccessDeductible}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Access and Rest Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.AccessPBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Contractor BI SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.ContractorSI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Contractor BI Indemnity Period</apex:outputLabel>
+                                <apex:selectList size="1" value="{!currentCW.variable.IPFactor.price }" >
+                                    <apex:selectOptions value="{!currentCW.variable.IPFactor.factors}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Contractor BI Waiting Period</apex:outputLabel>
+                                <apex:selectList size="1" value="{!currentCW.variable.WPFactor.price}" >
+                                    <apex:selectOptions value="{!currentCW.variable.WPFactor.factors}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Burglary'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Tobacco and Spirits SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.TAS}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Silver SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.Silver}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Gold SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.Gold}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Electronics SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.Electronics}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Antiques SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.Antiques}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Weapons SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.Weapons}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Personal Computers SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PC}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Money and Stamps SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.MAS}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Burglary Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Burglary Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Contents Deducible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLdeductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Contents Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLPBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Water'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Year Built</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.Year}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Water Buildings Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Water Buildings Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Water Contents Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLdeductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Water Contents Deductible (PBA)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLPBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Escaping Liquid'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Oil Damage Own Property SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.ODOP}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Oil Damage Third Property SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.ODTP}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Oil Damage Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Oil Damage Deductible (PBA)</apex:outputLabel>
+                                    <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Consumption (1000 m^3)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.Consumption}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Cistern'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Cistern SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Cistern Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Cistern Deductible (PBA)</apex:outputLabel>
+                                    <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Machinery Breakdown'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >MB Buildings Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >MB Buildings Deductible (PBA)</apex:outputLabel>
+                                    <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >MB Machinery Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.PLdeductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >MB MachineryDeductible (PBA)</apex:outputLabel>
+                                    <apex:inputtext value="{!currentCW.variable.PLPBA}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel > Computer SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >MB Computer and Data Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.MCDeductible}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >MB Computer and Data Deductible (PBA)</apex:outputLabel>
+                                    <apex:inputtext value="{!currentCW.variable.MCPBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Legal Aid'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Legal Aid SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                             <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Legal Aid SI Agg</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SIAgg}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Legal Aid Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Legal Aid Deductible (PBA)</apex:outputLabel>
+                                    <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Freeze & Refrigerator'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Freezer SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Freezer Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Freezer Deductible (PBA)</apex:outputLabel>
+                                    <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Robbery'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Robbery SI</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.SI}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem />
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Robbery Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Robbery Deductible (PBA)</apex:outputLabel>
+                                    <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!addCoverageMode == 'Special Objects'}">
+                        <apex:pageBlockSection collapsible="false" columns="2">
+                            <apex:repeat value="{!currentCW.factors}" var="price">
+                                <apex:pageBlockSectionItem rendered="{!price.showOnUI}">
+                                    <apex:outputLabel >{!price.factorName}</apex:outputLabel>
+                                    <apex:selectList size="1" value="{!price.price }" >
+                                        <apex:selectOptions value="{!price.factors}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </apex:pageBlockSectionItem>
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+                        <apex:pageblockTable value="{!soWrapperList}" var="SO">
+                            <apex:column headerValue="Object">
+                                <apex:selectList value="{!SO.SelectedObject}" size="1">
+                                    <apex:selectOptions value="{!SO.obj}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:column>
+                            <apex:column headerValue="Sum Insured">
+                                <apex:input value="{!SO.SI}"/>
+                            </apex:column>
+                            <apex:column headerValue="Location covered">
+                                <apex:selectList value="{!SO.selectedLocation}" size="1">
+                                    <apex:selectOptions value="{!SO.location}"></apex:selectOptions>
+                                </apex:selectList>
+                            </apex:column>
+                            <apex:column headerValue="UW base rate" >
+                                <apex:input value="{!SO.UWBaseRate}"/>
+                            </apex:column>
+                        </apex:pageblockTable>
+                        <apex:pageBlockSection >
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Sp Obj Deductible (Curr)</apex:outputLabel>
+                                <apex:inputtext value="{!currentCW.variable.deductibleAmount}"/>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel >Sp Obj Deductible (PBA)</apex:outputLabel>
+                                    <apex:inputtext value="{!currentCW.variable.PBA}"/>
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                    </apex:outputPanel>
+                    <apex:pageBlockSectionItem >
+                        <apex:commandButton style="margin-left:350px;" value="Save" action="{!setCoveragePricings}"/>
+                        <apex:commandButton value="Cancel" action="{!setCoveragePricings}"/>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+            </apex:outputpanel>
+            <apex:pageBlockSection title="Added Risk Ratings" columns="1">
+                <apex:facet name="header"><apex:outputPanel ><apex:outputText >Added Risk Rating</apex:outputText><apex:commandButton style="margin-left:250px;" value="Add Risk Rating" action="{!addRiskRating}" reRender="mainPageBlock"/></apex:outputPanel></apex:facet>
+                <apex:pagemessage rendered="{!CoverageIsEmpty}" severity="INFO">No Risk Ratings added</apex:pagemessage>
+                <apex:pageblockTable rendered="{!NOT(CoverageIsEmpty)}" value="{!coverages}" var="CW">
+                    <apex:column headerValue="Coverage" value="{!coverages[CW].selectedCoverage}"/>
+                    <apex:column headerValue="Premium">
+                        <apex:outputText value="{0, number, ###,##0}">
+                            <apex:param value="{!coverages[CW].Premium}"/>
+                        </apex:outputText>
+                    </apex:column>
+                </apex:pageblockTable>
+                 <apex:outputPanel rendered="{!NOT(CoverageIsEmpty)}">
+                    <div align="right" style="margin-right:80px;" >
+                        <b><apex:outputLabel >Total Premium:&nbsp;</apex:outputLabel>
+                        <apex:outputText value="{0, number, ###,##0}">
+                            <apex:param value="{!totalpre}"/>
+                        </apex:outputText></b>
+                    </div>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

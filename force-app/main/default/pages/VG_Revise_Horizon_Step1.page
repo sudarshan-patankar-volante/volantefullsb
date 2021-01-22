@@ -1,0 +1,29 @@
+<apex:page controller="VG_Revise_HorizonStepsController" showHeader="false" sidebar="false">
+    
+    <apex:form >
+        <apex:pageblock tabStyle="Account" title="Select Product" >
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection columns="1" >
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Product</apex:outputLabel>                   
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                                                 
+                        <apex:selectList value="{!Product}" id="so1" size="1" Style="Width:200px;">
+                            <apex:selectOptions value="{!Product_Select}"></apex:selectOptions>
+                        </apex:selectList>
+                    </apex:outputPanel>   
+                </apex:pageBlockSectionItem>
+               
+
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Next" action="{!gotostep2}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageblock>
+        
+    </apex:form>
+    
+</apex:page>

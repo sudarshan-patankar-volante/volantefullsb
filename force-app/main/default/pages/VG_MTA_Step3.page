@@ -1,0 +1,30 @@
+<apex:page controller="MTAStepsController" showHeader="false" sidebar="false">
+    <apex:form id="f1" style="width:1300px;">
+        <apex:pageBlock title="Mid Term Adjustment Details" rendered="{!IsCancellation||IsRevision||IsExtension||IsDeclaration}">
+            <apex:pageMessages />
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >MTA Start Date</apex:outputLabel>
+                    <apex:inputField value="{!ps.VG_MTA_Start_Date__c}" style="width:197px;"/> 
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!seletedType!='Run-off'}" >
+                    <apex:outputLabel >MTA End Date</apex:outputLabel>
+                    <apex:outputField value="{!ps.VG_MTA_End_Date__c}" style="width:197px;"/>                    
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!seletedType=='Run-off'}" >
+                    <apex:outputLabel >MTA End Date</apex:outputLabel>
+                    <apex:inputField value="{!ps.VG_MTA_End_Date__c}" style="width:197px;"/>
+                </apex:pageBlockSectionItem>
+                 <apex:pageBlockSectionItem rendered="{!seletedType!='Run-off' && RecordType!='Aesir' && RecordType!='GentiumScheme'}">
+                    <apex:outputLabel >select Premium option</apex:outputLabel>
+                    <apex:selectList value="{!seletedProrateoption}" size="1" style="width:200px;">
+                        <apex:selectOptions value="{!Prorateoption}"></apex:selectOptions>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="both" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotostep1}"/><apex:commandButton value="Next" action="{!gotostep4}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

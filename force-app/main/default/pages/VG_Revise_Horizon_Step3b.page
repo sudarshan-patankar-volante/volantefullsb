@@ -1,0 +1,149 @@
+<apex:page controller="VG_Revise_HorizonStepsController" showHeader="false" sidebar="false">
+    
+    <apex:form >
+        <apex:pageblock tabStyle="Account" title="Risk Rating" id="ps1">
+            
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection columns="2">
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Coverage</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                                                 
+                        <apex:inputField value="{!rr.VG_Coverage__c}"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel ></apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Limit</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                          
+                         <apex:inputField value="{!rr.VG_Limit_Precent__c}" style="Width:197px;" html-placeholder="Enter Percentage "/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Deductible</apex:outputLabel>
+                    <apex:inputField value="{!rr.VG_Deductible_Precent__c}" style="Width:197px;" html-placeholder="Enter Percentage "/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Flat Premium'}">
+                    <apex:outputLabel >GNPI</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                          
+                        <apex:inputField value="{!rr.VG_GNPI__c}" style="Width:197px;" html-placeholder="Enter Currency "></apex:inputField>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem > </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Return Period Entry</apex:outputLabel>
+                    <apex:inputField value="{!rr.VG_Return_Period_Entry__c}" style="Width:197px;" html-placeholder="Enter Number "/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Return Period Exit</apex:outputLabel>
+                    <apex:inputField value="{!rr.VG_Return_Period_Exit__c}" style="Width:197px;" html-placeholder="Enter Number "/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Flat Premium'}">
+                    <apex:outputLabel >Risk Premium</apex:outputLabel>
+                    <apex:inputText value="{!RiskPremium}" style="Width:197px;" html-placeholder="Enter Currency "><apex:actionSupport event="onchange" action="{!updatePremiums}"  reRender="ps1"  /></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Flat Premium'}">
+                    <apex:outputLabel ></apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Rate on Income'}">
+                    <apex:outputLabel >GNPI</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                          
+                        <apex:inputField value="{!rr.VG_GNPI__c}" style="Width:197px;" html-placeholder="Enter Currency "><apex:actionSupport event="onchange" action="{!RiskRatingCalc}"  reRender="ps1"  /></apex:inputField>
+                   </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Rate on Income'}">
+                    <apex:outputLabel >Rate on Income</apex:outputLabel>
+                    <apex:inputField value="{!rr.VG_Rate_on_Income__c}" style="Width:197px;" html-placeholder="Enter percentage "><apex:actionSupport event="onchange" action="{!RiskRatingCalc}"  reRender="ps1"  /></apex:inputField>
+                </apex:pageBlockSectionItem>  
+                
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Rate on Income'}">
+                    <apex:outputLabel >Risk Premium</apex:outputLabel>
+                    <apex:outputText value="{0, number,###,##0.00}" style="Width:197px;"> <apex:param value="{!RiskPremium}"/><apex:actionSupport event="onchange" action="{!updatePremiums}"  reRender="ps1"  /></apex:outputText>
+                </apex:pageBlockSectionItem>                
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Rate on Income'}">
+                    <apex:outputLabel ></apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Swing rate'}">
+                    <apex:outputLabel >GNPI</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                          
+                        <apex:inputField value="{!rr.VG_GNPI__c}" style="Width:197px;" html-placeholder="Enter Currency "><apex:actionSupport event="onchange" action="{!RiskRatingCalc}"  reRender="ps1"  /></apex:inputField>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Swing rate'}">
+                    <apex:outputLabel >Provisional Rate</apex:outputLabel>
+                    <apex:inputField value="{!rr.VG_Provisional_Rate__c}" style="Width:197px;" html-placeholder="Enter percentage "><apex:actionSupport event="onchange" action="{!RiskRatingCalc}"  reRender="ps1"  /></apex:inputField>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Swing rate'}">
+                    <apex:outputLabel >Min Rate</apex:outputLabel>
+                    <apex:inputField value="{!rr.VG_Min_Rate__c}" style="Width:197px;" html-placeholder="Enter percentage "/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Swing rate'}">
+                    <apex:outputLabel >Max Rate</apex:outputLabel>
+                    <apex:inputField value="{!rr.VG_Max_Rate__c}" style="Width:197px;" html-placeholder="Enter percentage "/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Swing rate'}">
+                    <apex:outputLabel >Swing Load</apex:outputLabel>
+                    <apex:inputField value="{!rr.VG_Swing_Load__c}" style="Width:197px;" html-placeholder="Enter Number"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!rc.VG_Rate_Type__c=='Swing rate'}">
+                    <apex:outputLabel >Risk Premium</apex:outputLabel>
+                    <apex:outputText value="{0, number,###,##0.00}" style="Width:197px;" > <apex:param value="{!RiskPremium}"/><apex:actionSupport event="onchange" action="{!updatePremiums}"  reRender="ps1"  /></apex:outputText>
+                </apex:pageBlockSectionItem>        
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Minimum Premium %</apex:outputLabel>
+                    <apex:outputField value="{!rr.VG_Minimum_Premium__c}" style="Width:197px;"></apex:outputField>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Deposit Premium %</apex:outputLabel>
+                    <apex:outputField value="{!rr.VG_Deposit_Premium__c}" style="Width:197px;"></apex:outputField>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Minimum Premium</apex:outputLabel>
+                        <apex:inputText value="{!MinimumPremium}" style="Width:197px;"><apex:actionSupport event="onchange" action="{!RiskRatingCalc}"  reRender="ps1"  /></apex:inputText>                   
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Deposit Premium </apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                          
+                        <apex:inputText value="{!DepositPremium}" style="Width:197px;"><apex:actionSupport event="onchange" action="{!RiskRatingCalc}"  reRender="ps1"  /></apex:inputText>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>              
+                                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >No Claims Bonus</apex:outputLabel>
+                    <apex:inputField value="{!rr.VG_No_Claims_Bonus__c}" style="Width:197px;" html-placeholder="Enter percentage "><apex:actionSupport event="onchange" action="{!RiskRatingCalc}"  reRender="ps1"  /></apex:inputField>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >No Claims Bonus Value</apex:outputLabel>
+                    <apex:outputText value="{!NCBValue}" style="Width:197px;"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotostep2}"/><apex:commandButton value="Next" action="{!gotostep6a}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageblock>
+        
+    </apex:form>
+    
+</apex:page>

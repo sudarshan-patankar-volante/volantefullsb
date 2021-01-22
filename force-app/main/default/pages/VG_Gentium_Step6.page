@@ -1,0 +1,110 @@
+<apex:page controller="VG_GentiumStepsController" sidebar="false" showHeader="false">
+    <apex:form style="width:2900px;">
+        <apex:pageblock tabStyle="Account" title="Added Risk Ratings" id="RRBlock">
+            <apex:pageMessage severity="Info"  summary="No Risk Ratings Added" strength="3" rendered="{!rrwList.size == 0}"/>
+                <apex:variable var="s" value="{!0}"/>
+                <apex:pageBlockTable value="{!rrwList}" rendered="{!!(rrwList.size == 0)}" var="rrw">
+                    <apex:column headerValue="S.NO">
+                        <apex:outputLabel >
+                        <apex:variable value="{!s+1}" var="s" />
+                        {!s}
+                        </apex:outputLabel>
+                    </apex:column>
+                    <apex:column headerValue="Scheme Name">
+                        <apex:outputField value="{!rrw.psa.VG_Scheme_Name__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Binder Ref">
+                        <apex:outputField value="{!rrw.psa.VG_Binder_Ref__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Policy No">
+                        <apex:outputField value="{!rrw.psa.VG_Policy_No__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Transaction Type">
+                        <apex:outputField value="{!rrw.psa.VG_Transaction_Type__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Bordereax Date">
+                        <apex:outputField value="{!rrw.psa.VG_Bordereax_Date__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Policy Cover Start Date">
+                        <apex:outputField value="{!rrw.psa.VG_Policy_Cover_Start_Date__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Policy Cover End Date">
+                        <apex:outputField value="{!rrw.psa.VG_Policy_Cover_End_Date__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Transaction Effective date">
+                        <apex:outputField value="{!rrw.psa.VG_Transaction_Effective_date__c}"/>
+                    </apex:column>                   
+                    <apex:column headerValue="Insured Name">
+                        <apex:outputField value="{!rrw.psa.VG_Insured_Name__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Date of Birth">
+                        <apex:outputField value="{!rrw.psa.VG_Date_of_Birth__c}"/>
+                    </apex:column>                   
+                    <apex:column headerValue="Address">
+                        <apex:outputField value="{!rrw.psa.VG_Address__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Address2">
+                        <apex:outputField value="{!rrw.psa.VG_Address2__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Address3">
+                        <apex:outputField value="{!rrw.psa.VG_Address3__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Postcode">
+                        <apex:outputField value="{!rrw.psa.VG_Postcode__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Country">
+                        <apex:outputField value="{!rrw.psa.VG_Country__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Vehicle Make">
+                        <apex:outputField value="{!rrw.psa.VG_Vehicle_Make__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Vehicle Model">
+                        <apex:outputField value="{!rrw.psa.VG_Vehicle_Model__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Vehicle Type">
+                        <apex:outputField value="{!rrw.psa.VG_Vehicle_Type__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Registration Plate">
+                        <apex:outputField value="{!rrw.psa.VG_Registration_Plate__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Sub broker">
+                        <apex:outputField value="{!rrw.psa.VG_Sub_broker__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Coverage">
+                        <apex:outputField value="{!rrw.psa.VG_Coverage__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Currency">
+                        <apex:outputField value="{!rrw.psa.CurrencyISOCode}"/>
+                    </apex:column>
+                    <apex:column headerValue="SumInsured">
+                        <apex:outputField value="{!rrw.psa.VG_Sum_Insured__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Deductible">
+                        <apex:outputField value="{!rrw.psa.VG_Deductible__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Gross Written Premium">
+                        <apex:outputField value="{!rrw.psa.VG_Gross_Written_Premium__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Brokerage">
+                        <apex:outputField value="{!rrw.psa.VG_Brokerage__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Tax on Premium">
+                        <apex:outputField value="{!rrw.psa.VG_Tax_on_Premium__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="CH Commission">
+                        <apex:outputField value="{!rrw.psa.VG_CH_Commission__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Payment Terms">
+                        <apex:outputField value="{!rrw.psa.VG_Payment_Terms__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Payment Ref">
+                        <apex:outputField value="{!rrw.psa.VG_Payment_Ref__c}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+                Added Risk Ratings : {!s}
+                <apex:pageBlockButtons location="Both" >
+                    <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!gotoStep2b}" value="Previous"/><apex:commandButton value="Next" action="{!gotoStep7}"/>
+                </apex:pageBlockButtons> 
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

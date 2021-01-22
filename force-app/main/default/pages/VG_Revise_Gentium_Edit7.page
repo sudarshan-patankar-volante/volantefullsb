@@ -1,0 +1,138 @@
+<apex:page controller="VG_ReviseGentiumStepsController2"  showHeader="false" sidebar="false" >
+    
+    <head>
+        <style>
+            .disabled
+            {
+            border: 1px solid #999999;
+            background-color: #dddddd;
+            color: #666666;
+            opacity: 0.65; 
+            cursor: not-allowed;
+            }
+        </style>
+        <script type="text/Javascript">
+        function SubmitOnClick (objSubmitBtn) {
+            
+            document.getElementById(objSubmitBtn.id).disabled = true;
+            document.getElementById(objSubmitBtn.id).classList.add("disabled");
+            objSubmitBtn.value = "Saving…";
+            doSubmit();
+        }
+        </script>
+    </head>
+    
+    <apex:form style="width:1300px;">
+        <apex:pageBlock title="Summary" tabStyle="Account" id="pg1" >
+            
+            <apex:pageBlockButtons location="Top">
+                <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotoStep6}"/>
+                <apex:commandButton value="Finish" id="Submit" onClick="SubmitOnClick(this);" />
+                <apex:actionFunction name="doSubmit" action="{!Finish}" />
+            </apex:pageBlockButtons>
+            
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection >
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Technical Model Premium</apex:outputLabel>
+                    <apex:inputText value="{!TechnicalModelPremium}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Actual Premium</apex:outputLabel>
+                    <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!ActualPremium}"/></apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Gross Written Premium</apex:outputLabel>
+                    <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!sumGWP}"/></apex:outputText>
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Fee Income</apex:outputLabel>
+                    <apex:inputText value="{!FeeIncome}"><apex:actionSupport event="onchange" action="{!summaryCalc}"  reRender="pg1"/></apex:inputText>
+                </apex:pageBlockSectionItem>  
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Brokerage (%)</apex:outputLabel>
+                    <apex:inputText value="{!BrokeragePrecent}"><apex:actionSupport event="onchange" action="{!summaryCalc}"  reRender="pg1"/></apex:inputText>
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Rate Change (%)</apex:outputLabel>
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                        <apex:inputText value="{!RateChange}"></apex:inputText>
+                        </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!MTAType != 'Revision of Cover'}">
+                    <apex:outputLabel >Brokerage(Amount)</apex:outputLabel>
+                    <apex:outputText value="{0, number,###,##0}"><apex:param value="{!brokerageAmount }"/></apex:outputText>
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem rendered="{!MTAType == 'Revision of Cover'}">
+                    <apex:outputLabel >Brokerage(Amount)</apex:outputLabel>
+                    <apex:inputText value="{!brokerageAmount}" />
+                </apex:pageBlockSectionItem> 
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel ></apex:outputLabel>
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Coverholder Commission</apex:outputLabel>
+                    <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!CCAmount}"/></apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel ></apex:outputLabel>
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Coverholder Commission (%)</apex:outputLabel>
+                    <apex:outputText value="{0, number,###,##0.00%}"><apex:param value="{!CCPrecent}"/></apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel ></apex:outputLabel>
+                </apex:pageBlockSectionItem> 
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Included Risk Ratings" columns="1">
+                
+                <apex:pageMessage severity="Info"  summary="No Risk Ratings Added" strength="3" rendered="{!rrwList.size == 0}"/>
+                <apex:pageBlockTable value="{!rrwList}" rendered="{!!(rrwList.size == 0)}" var="rrw">
+                    
+                    <apex:column headerValue="Vehicle Make">
+                        <apex:outputField value="{!rrw.psa.VG_Vehicle_Make__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Vehicle Model">
+                        <apex:outputField value="{!rrw.psa.VG_Vehicle_Model__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Coverage">
+                        <apex:outputField value="{!rrw.psa.VG_Coverage__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Gross Written Premium">
+                        <apex:outputField value="{!rrw.psa.VG_Gross_Written_Premium__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Brokerage">
+                        <apex:outputField value="{!rrw.psa.VG_Brokerage__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Tax on Premium">
+                        <apex:outputField value="{!rrw.psa.VG_Tax_on_Premium__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="CH Commission">
+                        <apex:outputField value="{!rrw.psa.VG_CH_Commission__c}"/>
+                    </apex:column>
+                    
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>  
+            
+        </apex:pageBlock>
+        
+    </apex:form>
+    
+</apex:page>

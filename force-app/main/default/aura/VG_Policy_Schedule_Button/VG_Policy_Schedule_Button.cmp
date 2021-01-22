@@ -1,0 +1,36 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" controller="VG_PolicySheduleButton_Controller" access="global" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>        
+    <aura:attribute name="mta" type="boolean" default="false"/>
+    <aura:attribute name="policyid" type="String"/>
+    <aura:attribute name="bound" type="boolean"/>
+    <aura:attribute name="boundcertificate" type="boolean" default="false"/>
+    <aura:attribute name="quote" type="boolean" default="false"/>
+    <aura:attribute name="booked" type="boolean" default="false"/>
+    <aura:handler name="change" value="{!this}" action="{!c.doInit}"/>
+    <aura:html tag="style">
+        .toastMessage.forceActionsText{
+        	white-space : pre-line !important;
+        }
+    </aura:html>
+    <aura:if isTrue="{!v.mta}">
+        <lightning:button name="btn1" variant="brand" label="Dec/RoC" onclick="{!c.handleMTAClick}" />
+    </aura:if>
+    <aura:if isTrue="{!!v.mta}">
+        <lightning:button name="btn8" variant="brand" label="Revise" onclick="{!c.handleReviseClick}" />
+    </aura:if>
+    <aura:if isTrue="{!v.booked}">
+        <lightning:button name="btn5" variant="brand" label="Book" onclick="{!c.Booked}" />
+    </aura:if>
+    <aura:if isTrue="{!v.quote}">
+        <lightning:button name="btn3" variant="brand" label="Print Quote" onclick="{!c.GenerateEdisonQuotation}" />
+    </aura:if>
+    <aura:if isTrue="{!v.bound}">
+        <lightning:button name="btn4" variant="brand" label="Print Schedule" onclick="{!c.GenerateEdisonSchedule}" />
+        <lightning:button name="btn2" variant="brand" label="Print Advice Note" onclick="{!c.GenerateDoc}" />   	    
+        <lightning:button name="btn6" variant="brand" label="Print Certificate" onclick="{!c.GenerateMotorCertificate}" />        
+    </aura:if>
+    <lightning:button name="btn7" variant="brand" label="Policy Summary" onclick="{!c.checkPolicyAssets}" />  
+    <lightning:button name="btn9" variant="brand" label="Payment Frequency" onclick="{!c.handlePFClick}" />
+    
+</aura:component>

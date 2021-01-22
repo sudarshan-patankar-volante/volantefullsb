@@ -1,0 +1,3 @@
+.THIS li::before {
+  color: blue; /* or whatever color you prefer */
+}

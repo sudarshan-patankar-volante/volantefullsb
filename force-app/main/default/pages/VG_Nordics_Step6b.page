@@ -1,0 +1,26 @@
+<apex:page controller="VG_NordicsProductSteps" sidebar="false" showHeader="false">
+    <apex:form >
+    <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;margin-left:150px;">
+            <img src="{!$Resource.Path_EDM_IMG}" alt="Smiley face" height="50px" width="950px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <apex:pageBlock tabStyle="Account" id="LibraryIndex" title="Update Sub-Limit Details">
+            <apex:pageMessage severity="Info" summary="No Sub-Limits seleted from library..." strength="3" rendered="{!!hasEndorsements}"/>
+            <apex:pageBlockTable value="{!existingEndorsements1}" var="EN" id="pbt1" rendered="{!hasEndorsements}">
+                    <apex:column headerValue="Description" width="90%">
+                        <apex:inputField styleClass="OutputField" id="ILETEDSsE" value="{!EN.VG_Title__c }" style="width:950px;"/><br/><br/>
+                        <apex:inputTextArea value="{!EN.VG_Endorsement_Details__c}" cols="4" rows="10" richText="true"/><br/><br/>
+                    </apex:column>
+                    <apex:column headerValue="Premium" width="20%">
+                        <apex:inputField value="{!EN.VG_Premium__c}" />
+                    </apex:column>
+                    <apex:column headerValue="Sub-limit" width="20%">
+                        <apex:inputField value="{!EN.VG_Sub_limit__c}" />
+                    </apex:column>
+                </apex:pageBlockTable>
+                
+            <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotoStep6}"/><apex:commandButton value="Next" action="{!gotoStep4}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock> 
+    </apex:form>
+</apex:page>

@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+	<lightning:button name="btn1" variant="brand" label="New Claim Recovery" onclick="{!c.createClaimRecovery}" />
+    <lightning:button name="btn2" variant="brand" label="New Claim Expense" onclick="{!c.createClaimExpense}" />
+    <lightning:button name="btn3" variant="brand" label="New Claim Financial" onclick="{!c.createClaimFinancial}" />
+</aura:component>

@@ -1,0 +1,123 @@
+<apex:page title="Demo" standardController="Policy_Schedule__c" extensions="VG_ReviseGentiumSteps_Controller" showHeader="false" sidebar="false">
+    
+    <head>
+        <script type="text/javascript">
+        function calPremium(nofid, rpvId, premiumid, turId, techid){
+            var nof=document.getElementById(nofid).value;
+            var rate=document.getElementById(rpvId).value;
+            var regex = new RegExp(',', 'g');
+            rate = rate.replace(regex, '');
+            nof = nof.replace(regex, '');
+            if(nof != ''  && rate != ''){
+                var c=nof*rate;
+                document.getElementById(premiumid).innerHTML = c;
+            }
+            calTechPremium(nofid, turId, techid);
+        }
+        function calTechPremium(nofid, turId, techid){
+            var nof=document.getElementById(nofid).value;
+            var rate=document.getElementById(turId).value;
+            var regex = new RegExp(',', 'g');
+            rate = rate.replace(regex, '');
+            nof = nof.replace(regex, '');
+            if(nof != ''  && rate != ''){
+                var c=nof*rate;
+                document.getElementById(techid).innerHTML = c;
+            }
+            
+        }
+        function ccc(id){
+            alert(id);
+        }
+        
+        </script>
+     
+    </head>
+    
+    <apex:form id="f1">
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;">
+            <img src="{!$Resource.VG_AddAsset}" alt="Smiley face" height="40px" width="1350px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <div>
+            <apex:pageBlock id="pb1"> 
+                <apex:pageMessages rendered="{!!showError}"/>  
+                
+                <div align="center" draggable="false" >
+                    <apex:commandButton action="{!addAsset}" rerender="pb1" value="Add Asset"/>
+                </div>
+                
+                <apex:pageBlockTable rendered="{!!(waList.Size == 0)}" value="{!waList}" var="wa" id="pbt1">
+                    <apex:column style="width:60px" headerValue="No. of Vehicles" id="c1" >
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel1" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                    
+                            <apex:inputField style="width:60px" id="nof" value="{!wa.psa.VG_Number_of_Vehicles__c}" onchange="calPremium('{!$Component.nof}','{!$Component.rpv}','{!$Component.prem}','{!$Component.tur}','{!$Component.tech}')" />
+                        </apex:outputPanel>
+                    </apex:column>
+                    
+                    <apex:column style="width:20px" headerValue="Type">
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>                                           
+                            <apex:inputField value="{!wa.psa.VG_Vehicle_Type__c}" />
+                        </apex:outputPanel>    
+                    </apex:column>
+                    
+                    <apex:column headerValue="Coverage" style="width:180px">
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel3" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:selectList value="{!wa.psa.VG_Coverage__c}" size="1" multiselect="False">
+                                <apex:selectOptions value="{!coverageOptions}"> </apex:selectOptions>
+                            </apex:selectList>
+                        </apex:outputPanel>
+                    </apex:column>
+                    
+                    <apex:column style="width:160px" headerValue="Use" >
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel4" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:inputField style="width:160px" value="{!wa.psa.VG_Use__c}" />
+                       </apex:outputPanel>
+                    </apex:column>
+                    
+                    <apex:column style="width:60px" headerValue="Deductible" >
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel5" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:inputField style="width:60px" value="{!wa.psa.VG_Deductible__c}" />
+                        </apex:outputPanel>
+                    </apex:column>
+                    
+                    <apex:column style="width:20px" headerValue="Tech UW Rate" >
+                        <apex:inputField style="width:70px" id="tur" value="{!wa.psa.VG_Technical_UW_Rate_Annual__c}" onchange="calTechPremium('{!$Component.nof}','{!$Component.tur}','{!$Component.tech}')"/>
+                    </apex:column>
+                    
+                    <apex:column style="width:20px" headerValue="Actual Rate">
+                        <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel6" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:inputField style="width:70px" id="rpv" value="{!wa.psa.VG_Rate_Per_Vehicle__c}" onchange="calPremium('{!$Component.nof}','{!$Component.rpv}','{!$Component.prem}','{!$Component.tur}','{!$Component.tech}')"/>
+                        </apex:outputPanel>
+                    </apex:column>
+                    
+                    <apex:column style="width:20px" headerValue="Tech UW Premium" >
+                        <apex:outputLabel id="tech">{!wa.techPremium}</apex:outputLabel>
+                    </apex:column>
+                    
+                    <apex:column style="width:20px" headerValue="Actual Premium" >
+                        <apex:outputLabel id="prem">{!wa.psa.VG_Premium__c}</apex:outputLabel>
+                    </apex:column>
+                    
+                    <apex:column style="width:20px" headerValue="Delete" >
+                        <apex:commandButton value="Remove" action="{!RemoveAsset}" rendered="{!!wa.psa.VG_IsTempDelete__c}" reRender="pb1"><apex:param name="counter" assignTo="{!Index}" value="{!wa.Counter}"/></apex:commandButton>
+                        <apex:outputLabel rendered="{!wa.psa.VG_IsTempDelete__c}">Deleted</apex:outputLabel>
+                    </apex:column>
+                    
+                </apex:pageBlockTable>
+                
+                <div align="center" draggable="false" >
+                    <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}" />&nbsp;&nbsp;&nbsp;<apex:commandButton action="{!NextPSA}" value="Next"/>
+                </div>
+                
+            </apex:pageBlock> 
+            
+        </div> 
+        
+    </apex:form>
+    
+</apex:page>

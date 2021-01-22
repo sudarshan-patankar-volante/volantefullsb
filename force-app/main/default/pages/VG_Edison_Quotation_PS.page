@@ -1,0 +1,1241 @@
+<apex:page contentType="application/msword#Edison_Quote.doc" cache="true" showHeader="false" controller="VG_Edison_Quotation_PS_Extension" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"> 
+    <html xmlns:w="urn:schemas-microsoft-com:office:word">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1" rel="stylesheet" />     
+        <style type="text/css" media="print">    
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Font_OpenSan_CondLight, '/root/to/OpenSans-CondLight.ttf')});
+            }
+            
+            body{
+                font-family: Open Sans Condensed Light;              
+            }
+            @font-face {
+                font-family: Open Sans Condensed Light;
+                src: url({!URLFOR($Resource.Doc_Header_Font, '/root/to/OpenSans-CondLight.ttf')});
+            }
+           
+            #header{
+                font-family: Open Sans Condensed Light;
+                font-size:30.0pt;
+            }
+            @page footer
+            {size:8.27in 11.69in;
+            margin:0in 0in 0in 0in;
+            margin-bottom:0in;
+            mso-header-margin:0.5in;
+            mso-footer-margin:0in;
+            mso-pagination:widow-orphan;
+            mso-paper-source:0;}
+            div.footer
+            {page:footer;}
+            
+        </style>
+        <body>
+            <apex:outputText value="{!PrintView}" escape="false"/>
+            <div class="wordsection1">
+                <br/><br/><br/>
+                <div style="margin-left:450px;width:450px;height:100px;" >
+                    <apex:image url="{!LogoURL}" height="100" width="250"/>
+                </div>
+                <br/>
+                
+                <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="font-size:9.0pt;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+                    <tbody>
+                        <tr style="height:4.4pt">
+                            <td width="15" valign="bottom" style="width:15.0pt;padding:
+                                                                  0in 0in 0in 0in;height:4.4pt" rowspan="13">
+                                <apex:image url="{!MF}" style=" margin-left:30px;"/>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:4.4pt">
+                            </td>
+                            <td width="348" colspan="3" rowspan="7" valign="bottom" style="width:261.0pt;
+                                                                                           padding:0in 0in 0in 0in;height:4.4pt">
+                                <span id="header" style="font-size:30.0pt;
+                                             color:#004040">MOTOR FLEET</span>
+                            </td>
+                            
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:4.4pt">
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none">
+                                    <span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none">
+                                    <span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;font-size:9.0pt;margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-family: Open Sans Condensed Light;font-size:
+                                                                                                                              9.0pt;color:#004040"><b>Reference:</b>&nbsp;{!ps.Policy__r.Name} </span><span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            
+                            <td width="145" rowspan="4" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:4.1pt">
+                            
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-family: Open Sans Condensed Light;font-size:
+                                                                                                                              9.0pt;color:#004040"><b>Date:</b>&nbsp;{!today}</span>
+                                    <span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="348" colspan="3" rowspan="6" valign="bottom" style="width:261.0pt;
+                                                                                           padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            27.15pt;mso-line-height-rule:exactly;mso-pagination:none;mso-layout-grid-align:
+                                                            none;text-autospace:none"><span id="header" style="font-size:30.0pt;
+                                                                                                   color:gray">QUOTATION</span><span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.9pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-family: Open Sans Condensed Light;font-size:
+                                                                                                                              9.0pt;color:#004040"><b>To email/fax:</b>&nbsp;</span> <span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            
+                            <td width="145" rowspan="2" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:5.05pt">
+                            
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:5.05pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:4.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:5.05pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:4.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:5.05pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:28.9pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:28.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:9.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:28.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:9.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:28.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:9.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;padding:0in 0in 0in 0in;
+                                                                   height:28.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:9.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:28.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:9.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:28.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:9.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:28.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:9.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:28.9pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" rowspan="2" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" rowspan="2" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:6.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-family: Open Sans Condensed Light;font-size:
+                                                                                                                              9.0pt;color:#004040"><b>Name of insured:</b>&nbsp;{!ps.Policy__r.Insured__r.Name}  </span> <span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="4" rowspan="2" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                             height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;"></span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-family: Open Sans Condensed Light;font-size:
+                                                                                                                              9.0pt;color:#004040"><b>Post code:</b>&nbsp;{!ps.Policy__r.Insured__r.ShippingPostalCode}</span> <span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:4.1pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="344" colspan="2" valign="bottom" style="width:258.0pt;padding:0in 0in 0in 0in;
+                                                                               height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:4.1pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="344" colspan="2" rowspan="2" valign="bottom" style="width:258.0pt;
+                                                                                           background:#F0EDEB;padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:6.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-family: Open Sans Condensed Light;font-size:
+                                                                                                                              9.0pt;color:#004040"><b>Broker:</b>&nbsp;{!ps.Policy__r.Broker_Name__r.Name}</span> <span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.45pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.45pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.45pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.45pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="344" colspan="2" valign="bottom" style="width:258.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.45pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.45pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.45pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.45pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="344" colspan="2" rowspan="2" valign="bottom" style="width:258.0pt;
+                                                                                           background:#F0EDEB;padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:6.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-family: Open Sans Condensed Light;font-size:
+                                                                                                                              9.0pt;color:#004040"><b>Sub Broker:</b>&nbsp;{!ps.Policy__r.VG_Sub_Broker__r.Name}</span> <span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.35pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.55pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.55pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.55pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.55pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.55pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.55pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.55pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.55pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.55pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:3.95pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" rowspan="2" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                               height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" rowspan="2" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:6.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-family: Open Sans Condensed Light;font-size:
+                                                                                                                              9.0pt;color:#004040"><b>Current insurer:</b>&nbsp;{!ps.Policy__r.VG_Current_Insurer__r.Name}</span> <span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="4" rowspan="2" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                             height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:3.0pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" rowspan="2" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                               padding:0in 0in 0in 0in;height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-top:0in;margin-right:0in;margin-bottom:0in;
+                                                            margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal;mso-pagination:
+                                                            none;mso-layout-grid-align:none;text-autospace:none"><span style="font-family: Open Sans Condensed Light;font-size:
+                                                                                                                              9.0pt;color:#004040"><b>Renewal date:</b>&nbsp;{!IncepDateFormat}</span> <span style="font-size:9.0pt;"></span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.95pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="height:7.65pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0550C;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:6.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:7.65pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr style="mso-yfti-lastrow:yes;height:3.35pt">
+                            <td width="27" valign="bottom" style="width:20.0pt;padding:0in 0in 0in 0in;
+                                                                  height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="145" valign="bottom" style="width:109.0pt;padding:0in 0in 0in 0in;
+                                                                   height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="340" valign="bottom" style="width:255.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="4" valign="bottom" style="width:3.0pt;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="3" valign="bottom" style="width:2.0pt;background:#F0EDEB;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="215" valign="bottom" style="width:161.0pt;background:#F0EDEB;
+                                                                   padding:0in 0in 0in 0in;height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:2.5pt;">&nbsp;</span></p>
+                            </td>
+                            <td width="0" valign="bottom" style="width:0in;padding:0in 0in 0in 0in;
+                                                                 height:3.35pt">
+                                <p class="MsoNormal" style="font-size:9.0pt;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                                            normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:1.0pt;">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                    </tbody></table><br/><br/>
+                
+                <div  style="margin-left:170px;font-size:9.0pt;">
+                    <table style="font-size:9.0pt;"><tbody>
+                        <tr style="height:3.95pt;">
+                           
+                            <td width="569">
+                                <div style="background:#F0EDEB;margin-left:5.5px;"><span style="background:#F0550C;">  &nbsp;</span>
+                            
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Vehicle</b></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Nos:</b>&nbsp;{!NoV}</span>
+                                    <span style="font-size:9.0pt;"></span>
+                                    
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">as per schedule </span> 
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"></span>
+                                </div>
+                            </td>  
+                        </tr>  
+                        <tr style="height:3.95pt;">
+                            <td width="569">
+                                <div style="background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>       
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Cover:</b>&nbsp;&nbsp;</span> 
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">&nbsp;&nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">Comprehensive</span>  
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;color:#F0EDEB;background-color:#F0EDEB;"><apex:outputPanel rendered="{!comp}"><input type="checkbox" name="comprehensive" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!comp}"><input type="checkbox" name="comprehensive" /></apex:outputPanel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">TPF&amp;T</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;color:#F0EDEB;background-color:#F0EDEB;" ><apex:outputPanel rendered="{!tpft}"><input type="checkbox" name="TPFT" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!tpft}"><input type="checkbox" name="TPFT" /></apex:outputPanel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">TPO</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;color:#F0EDEB;background-color:#F0EDEB;"><apex:outputPanel rendered="{!tpo}"><input type="checkbox" name="tpo" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!tpo}"><input type="checkbox" name="tpo" /></apex:outputPanel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">Mixed Cover</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;color:#F0EDEB;background-color:#F0EDEB;"><apex:outputPanel rendered="{!mixed}"><input type="checkbox" name="mixed" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!mixed}"><input type="checkbox" name="mixed" /></apex:outputPanel></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">FTO</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:10px;color:#F0EDEB;background-color:#F0EDEB;"><apex:outputPanel rendered="{!fto}"><input type="checkbox" name="fto" checked="True"/></apex:outputPanel><apex:outputPanel rendered="{!!fto}"><input type="checkbox" name="fto" /></apex:outputPanel></span>
+                                </div><br/> 
+                            </td>
+                        </tr>
+                        
+                        <tr style="height:2.95pt;">
+                            <td width="569">
+                                <div style="background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;width:25px;color:#004040"><b>Excess:</b></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">£<apex:outputText value="{0, number, ###,##0}">
+                                                                                                                                <apex:param value="{!ps.Policy__r.Deductible_or_Excess_Amount__c}"/>
+                                                                                                                           </apex:outputText></span>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr style="height:7.95pt;">
+                            <td width="569">
+                                <div style="font-size:9.0pt;background:#F0EDEB;margin-left:5px;height:100px;"><span style="background:#F0550C;height:4px;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Driving Restrictions:</b>&nbsp;
+                                    </span><br/><br/><br/><br/>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"></span>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:2.95pt;">
+                            <td width="569">
+                                <div style="font-size:9.0pt;background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Class of&nbsp;use(s):</b>&nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"></span>
+                                </div><br/>
+                            </td>
+                        </tr>
+                        <tr style="height:2.95pt;">
+                            <td width="569">
+                                <div style="font-size:9.0pt;background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Premium excl IPT:</b></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">£<apex:outputText value="{0, number, ###,##0.00}">
+                                                                        <apex:param value="{!ps.Gross_Written_Premium__c}"/>
+                                                                   </apex:outputText></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:2.95pt;">
+                            <td width="569">
+                                <div style="font-size:9.0pt;background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Commission:</b></span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040">{!ps.VG_Brokerage_Percent__c}%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:2.95pt;">
+                            <td width="569">
+                                <div style="font-size:9.0pt;background:#F0EDEB;margin-left:5px;"><span style="background:#F0550C;"> &nbsp;</span>
+                                    <span style="font-size:
+                                                 9.0pt;color:#004040"><b>Policy form ref:</b></span>  
+                                    <span style="font-size:
+                                                        9.0pt;color:#004040">{!If(ps.Product__c=='Commercial' ,'010121 COMMERCIAL FLEET',If(ps.Product__c=='Public Sector' ,'010121 PUBLIC SECTOR',If(ps.Product__c=='Public Sector – Non Conventional' ,'290719 PUBLIC SECTOR – NON CONVENTIONAL',If(ps.Product__c=='Commercial – Non Conventional' ,'290719 COMMERCIAL FLEET – NON CONVENTIONAL',''))))}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:4.95pt;"></tr>
+                        <tr style="height:7.95pt;">
+                            <td width="569">
+                                <div style="font-size:9.0pt;background:#F0EDEB;margin-left:5px;height:100px;"><span style="background:#F0550C;height:4px;"> &nbsp;</span>  
+                                    <span style="background:#F0EDEB;font-size:
+                                                 9.0pt;color:#004040"><b>Terms &amp;/or Conditions:</b>&nbsp;&nbsp;<br/><apex:outputPanel rendered="{!!(pseList1.size==0)}" >
+                                        
+                                        <table style="background:#F0EDEB;-fs-table-paginate: paginate;" width='100%'>
+                                            <tr>
+                                                <td width='105' style="font-size:
+                                                        9.0pt;color:#004040"><b>Endorsement Number</b></td>
+                                                <td width='15' style="font-size:
+                                                        9.0pt;color:#004040"><b>&nbsp;</b></td>
+                                                <td width='120' style="font-size:
+                                                        9.0pt;color:#004040"><b>Endorsement Title</b></td>
+                                            </tr>
+                                            <apex:repeat var="pse" value="{!pseList1}">
+                                                <tr>
+                                                    <td style="font-size:
+                                                        9.0pt;color:#004040">{!pse.VG_Endorsement_Number__c}</td>
+                                                    <td style="font-size:
+                                                        9.0pt;color:#0040400">-</td>
+                                                    <td style="font-size:
+                                                        9.0pt;color:#004040">{!pse.VG_Title__c}</td>
+                                                </tr>
+                                            </apex:repeat>
+                                        </table>
+                                        </apex:outputPanel> 
+                                        <apex:outputPanel rendered="{!(pseList.size==0)}"><br/><br/><br/></apex:outputPanel>
+                                     
+                                        </span></div>
+                              </td>
+                        </tr>
+                        </tbody></table>
+                </div>
+            </div>   
+                              
+                <div style="margin-left:170px;font-size:9.0pt;">
+                          <apex:outputPanel rendered="{!!(pseList2.size==0)}">
+                            <br style="page-break-before:always;" />
+                    <br/><br/><br/>                                  
+                                <div style="margin-top:0.5in;margin-left:300px;width:450px;height:100px;" >
+                                   
+                                    <apex:image url="{!LogoURL}" height="100" width="250"/>
+                                </div>
+                                        <table style="background:#F0EDEB;-fs-table-paginate: paginate;margin-right:70;" width='71%'>
+                                            <tr>
+                                                <td width='105' style="font-size:
+                                                        9.0pt;color:#004040"><b>Endorsement Number</b></td>
+                                                <td width='15' style="font-size:
+                                                        9.0pt;color:#004040"><b>&nbsp;</b></td>
+                                                <td width='120' style="font-size:
+                                                        9.0pt;color:#004040"><b>Endorsement Title</b></td>
+                                            </tr>
+                                            <apex:repeat var="pse" value="{!pseList2}">
+                                                <tr>
+                                                    <td style="font-size:
+                                                        9.0pt;color:#004040">{!pse.VG_Endorsement_Number__c}</td>
+                                                    <td style="font-size:
+                                                        9.0pt;color:#0040400">-</td>
+                                                    <td style="font-size:
+                                                        9.0pt;color:#004040">{!pse.VG_Title__c}</td>
+                                                </tr>
+                                            </apex:repeat>
+                                        </table>
+                                        </apex:outputPanel>
+                                        
+                                        <apex:outputPanel rendered="{!(pseList.size==0)}"><br/><br/><br/></apex:outputPanel>
+                                                                                                           
+                                </div>
+                               
+                     <div style="margin-left:170px;margin-right:70;font-size:9.0pt;">
+                                        <apex:outputPanel rendered="{!!(pseList3.size==0)}">
+                                        <br style="page-break-before:always;" />
+                                            <br/><br/><br/> 
+                                <div style="margin-top:0.5in;margin-left:300px;width:450px;height:100px;" >
+                                   
+                                    <apex:image url="{!LogoURL}" height="100" width="250"/>
+                                </div>
+                                        <table style="background:#F0EDEB;-fs-table-paginate: paginate;margin-right:70;" width='71%'>
+                                            <tr>
+                                                <td width='105' style="font-size:
+                                                        9.0pt;color:#004040"><b>Endorsement Number</b></td>
+                                                <td width='15' style="font-size:
+                                                        9.0pt;color:#004040"><b>&nbsp;</b></td>
+                                                <td width='120' style="font-size:
+                                                        9.0pt;color:#004040"><b>Endorsement Title</b></td>
+                                            </tr>
+                                            <apex:repeat var="pse" value="{!pseList3}">
+                                                <tr>
+                                                    <td style="font-size:
+                                                        9.0pt;color:#004040">{!pse.VG_Endorsement_Number__c}</td>
+                                                    <td style="font-size:
+                                                        9.0pt;color:#0040400">-</td>
+                                                    <td style="font-size:
+                                                        9.0pt;color:#004040">{!pse.VG_Title__c}</td>
+                                                </tr>
+                                            </apex:repeat>
+                                        </table>
+                                        </apex:outputPanel>
+                                        
+                                        <apex:outputPanel rendered="{!(pseList.size==0)}"><br/><br/><br/></apex:outputPanel>                                                                         
+                                    
+                                </div>
+                            
+            
+            <br style="page-break-before:always;" />
+                    <br/><br/><br/><br/>
+            <div class="WordSection4">
+                
+                <div width='450' height='250' align='right' style="margin-right:70px;">
+                    <apex:image url="{!LogoURL}" height="100" width="250"/>
+                </div>
+                <br/>
+                <div style="margin-left:169px;margin-right:70;" >
+                    <div>
+                        
+                        <p  style="margin-top:-20px;margin-bottom:0in;margin-bottom:.0001pt;line-height:
+                                   normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:none"><span style="font-size:10.0pt;color:#F0550C">THIS
+                            QUOTATION IS SUBJECT TO:</span><span style="font-size:12.0pt;"></span></p>
+                        
+                      <p style="font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;margin-left:20px;color:#004040"><b>1.</b>&nbsp;&nbsp;&nbsp;&nbsp; Standard Edison policy terms and conditions unless otherwise agreed and detailed above.</p> 
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>2.</b>&nbsp;&nbsp;&nbsp;&nbsp; Standard Edison policy document, policy summary and commonly used endorsement wordings are available on our website www.volanteglobal.com  or on request. You should also refer to your TOBA for further details. </p>
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>3.</b>&nbsp;&nbsp;&nbsp;&nbsp; A signed and satisfactorily completed proposal and confirmed claims experience in market form being received by us within 14 days of the commencement of cover.  </p>
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>4.</b>&nbsp;&nbsp;&nbsp;&nbsp; No changes to the claims experience or number of vehicles or the fair presentation of the risk between the date of this quotation and the date cover commences.  </p>
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>5.</b>&nbsp;&nbsp;&nbsp;&nbsp; For each accident or claim, a copy of the driver’s driving licence must be provided. If that is not available you must give Edison or their appointed representatives permission to carry out a driving licence check with the DVLA. </p>
+                        
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>6.</b>&nbsp;&nbsp;&nbsp;&nbsp; Standard terms of credit are 60 days from inception and apply unless otherwise agreed and detailed above.  </p>
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>7.</b>&nbsp;&nbsp;&nbsp;&nbsp; Insurance tax to be added at the existing rate. </p>
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>8.</b>&nbsp;&nbsp;&nbsp;&nbsp; Compliance with the requirement of the Motor Insurers Database and its deadlines.  </p>
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>9.</b>&nbsp;&nbsp;&nbsp;&nbsp; This quotation is valid for a period of 60 days after which we reserve the right to amend or withdraw it at our option.  </p>
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>10.</b>&nbsp;&nbsp;&nbsp;&nbsp; Failure to comply with any deadline applied to any subjectivity or policy term or policy condition will result in cover reverting to standard Edison policy terms and conditions.  </p>
+                        
+                        <p style="margin-top:-80px;margin-left:20px;font-size:9.5pt;text-justify:inter-ideograph;
+                                  text-align:justify;text-indent:-16.55pt;color:#004040"><b>11.</b>&nbsp;&nbsp;&nbsp;Any questions concerning this quotation or queries arising therefrom should be referred to the Motor Fleet Underwriting team.  </p>
+                                             
+                    </div>
+                </div>
+                
+                <table id="tb1" style="margin-left:170px;border-collapse:collapse;">
+                    <div style="background:#F0EDEB;height:3.95pt">
+                    <tr style="height:3.95pt;">
+                        
+                        
+                            <td width="3" ><span style="background:#F0550C;"> &nbsp;</span></td>
+                            
+                            <td width="102" valign="top" style="height:5px;background:#F0EDEB;text-align:center;line-height:97%;"><span style="font-size:
+                                                         9.0pt;color:#004040;text-align:center;">&nbsp;Underwriters Signature:&nbsp;&nbsp;
+                                                   </span>
+                               </td>               
+                             <td width="252" valign="top" style="height:5px;background:#F0EDEB;"><img src="{!Sign_Url}" width="65" height="23" style='position:fixed;' />
+
+                                                    
+                            </td>
+                            
+                                                   
+                    </tr> 
+                    </div>
+                    
+                    <tr style="height:3.95pt;">
+                        
+                        <div style="background:#F0EDEB;">
+                            <td width="3" ><span style="background:#F0550C;"> &nbsp;</span></td>
+                            
+                            <td width="502" colspan="2"><span style="font-size:
+                                                         9.0pt;color:#004040">&nbsp;Date:&nbsp;&nbsp;{!today} </span>
+                            </td>
+                            
+                        </div>
+                        
+                    </tr> 
+                </table>
+            </div>            
+            <div class='footer' style="margin-bottom:0in;" >
+                <img src="{!FooterURL}"  height='337.50' width='820' style='position:fixed' />
+            </div>           
+         </body>
+    </html>
+</apex:page>

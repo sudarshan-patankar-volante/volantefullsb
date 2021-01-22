@@ -1,0 +1,71 @@
+<apex:page controller="VG_CC_Nordics_StepController" sidebar="false" showheader="false" tabStyle="Account">
+    <script type="text/javascript">
+        function selectAllCheckboxes(obj,receivedInputID){
+            var inputCheckBox = document.getElementsByTagName("input");                  
+            for(var i=0; i<inputCheckBox.length; i++){          
+                if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){                                     
+                    inputCheckBox[i].checked = obj.checked;
+                }
+            }
+        }
+    </script>
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+                <apex:commandButton value="Next" action="{!gotoStep3}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="General Company Information" columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputText >Municipality</apex:outputText>
+                    <apex:SelectList size="1" value="{!selectedMunicipality}" style="width:200px;">
+                        <apex:selectOption itemLabel="--None--" itemValue="--None--"></apex:selectOption>
+                        <apex:selectOptions value="{!municipalitiesList}"></apex:selectOptions>
+                    </apex:SelectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText >Occupancy Code</apex:outputText>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                               
+                        <apex:SelectList size="1" value="{!selectedOccupancy}" style="width:200px;">
+                            <apex:selectOption itemLabel="--None--" itemValue="--None--"></apex:selectOption>
+                             <apex:selectOptions value="{!occupanciesList}"></apex:selectOptions>
+                             <apex:selectOptions value="{!occupanciesList2}"></apex:selectOptions>
+                        </apex:SelectList>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Wording" for="Wording" /> 
+                    <apex:inputField value="{!ps.VG_Wording__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText >Annual Turnover (SEK)</apex:outputText>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                                                                                            
+                        <apex:inputtext value="{!annualTurnover}" style="width:197px;"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Assets" columns="1"> 
+                <apex:pagemessage severity="INFO" rendered="{!!hasAssets}">No assets found for this account</apex:pagemessage>
+                <apex:repeat value="{!awlList}" var="awl">
+                    <apex:pageblockTable value="{!awl.assetWrapperList}" var="wrapper" rendered="{!hasAssets}">
+                       <apex:column >
+                            <apex:facet name="header">
+                                <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')"/>
+                            </apex:facet>
+                            <apex:inputCheckbox value="{!wrapper.isSelected}" id="inputId"/>                             
+                        </apex:column>
+                        <apex:column headerValue="Asset Name">
+                            <apex:outputText value="{!wrapper.asset.Name}"/>
+                        </apex:column>
+                        <apex:column headerValue="Street">
+                            <apex:outputText value="{!wrapper.asset.VG_Street__c}"/>
+                        </apex:column>
+                    </apex:pageblockTable>
+                </apex:repeat>
+            </apex:pageBlockSection>
+        </apex:pageblock>
+        
+    </apex:form>
+</apex:page>

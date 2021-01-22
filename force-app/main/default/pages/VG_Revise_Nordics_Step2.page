@@ -1,0 +1,273 @@
+<apex:page controller="VG_Revise_NordicsProductSteps" sidebar="false" showHeader="false">
+    <apex:form >
+        <div style="width: 100%; margin-bottom:  10px;margin-top: 10px;margin-left:150px;">
+            <img src="{!$Resource.Path_PS_IMG}" alt="Smiley face" height="50px" width="950px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        <apex:pageblock tabStyle="Account" title="General Company Information" id="pg1" >
+            <apex:pageMessages ></apex:pageMessages>             
+                 <apex:pageBlockSection columns="3" rendered="{!!IsProperty}" >
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel ></apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel >Company Information</apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel >Base Rate</apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem rendered="{!price.VG_Product__c != 'Clinical Trials'}" >
+                         <apex:outputLabel >Turn Over({!policyCurrency}):</apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem rendered="{!price.VG_Product__c != 'Clinical Trials'}" >
+                         <apex:actionRegion >
+                             <apex:outputLabel ><apex:inputText value="{!Turnover_Converted}"><apex:actionSupport event="onchange" action="{!updateExposure}"  reRender="pg1,pg2,pg3"  /></apex:inputText></apex:outputLabel>
+                         </apex:actionRegion>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem rendered="{!price.VG_Product__c != 'Clinical Trials'}">
+                         <apex:outputLabel ></apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'Clinical Trials'}" >
+                         <apex:outputLabel >Number of Patients:</apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'Clinical Trials'}"  >
+                         <apex:actionRegion >
+                             <apex:inputText value="{!numberOfPatients_Converted }"><apex:actionSupport event="onchange" action="{!updateExposure}"  reRender="pg1,pg2,pg3"  /></apex:inputText>
+                         </apex:actionRegion>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'Clinical Trials'}"  >
+                         <apex:outputLabel ></apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel >Type Of Operation:</apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                         <apex:outputPanel styleClass="requiredBlock"/>
+                         <apex:actionRegion > 
+                             <apex:selectList id="pr" value="{!pricingRate}" size="1" required="true">  
+                                   <apex:actionSupport event="onchange" action="{!updateExposure}" reRender="pg1, pg2, pg3">
+                                       <apex:param assignTo="{!category}" value="Type Of Operation"/> 
+                                   </apex:actionSupport>                       
+                                <apex:selectOptions value="{!typeOfOperation.factors}"/>                            
+                            </apex:selectList>                            
+                        </apex:actionRegion>
+                        </apex:outputPanel>                     
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel id="ol1">{!TOPRate }</apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel ></apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel >Net Base Premium:</apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel id="ol2"><apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!Round((NBP_Converted),2) }"/></apex:outputText></apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                 </apex:pageBlockSection>    
+                 
+                 <apex:pageBlockSection columns="2" rendered="{!IsProperty}" >
+                     <apex:pageblockSectionItem >
+                         <apex:outputLabel >Occupancy</apex:outputLabel>
+                         <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                         <apex:outputPanel styleClass="requiredBlock"/>
+                         <apex:actionRegion > 
+                                 <apex:selectList id="pr" value="{!selectedOccupancy}" size="1" required="true">  
+                                       <apex:actionSupport event="onchange" action="{!updateExposure}" reRender="pg1, pg2, pg3">
+                                       </apex:actionSupport>                       
+                                    <apex:selectOptions value="{!occupanciesList}"/>                            
+                                </apex:selectList>
+                            </apex:actionRegion>
+                         </apex:outputPanel>     
+                     </apex:pageblockSectionItem>
+                     <apex:pageblockSectionItem > </apex:pageblockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel >PD Base Rate</apex:outputLabel>
+                         <apex:outputLabel >{!PDBaseRate}</apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageblockSectionItem > </apex:pageblockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel >BI Base Rate</apex:outputLabel>
+                         <apex:outputLabel >{!BIBaseRate}</apex:outputLabel>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageblockSectionItem > </apex:pageblockSectionItem>
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel >Machinery Breakdown Cover</apex:outputLabel>
+                         <apex:actionRegion > 
+                             <apex:selectList id="pr" value="{!MachineryBreakdownCover}" size="1" required="true">  
+                                   <apex:actionSupport event="onchange" action="{!updateExposure}" reRender="pg1, pg2, pg3">
+                                   </apex:actionSupport>                       
+                                <apex:selectOptions value="{!MBCList}"/>                            
+                            </apex:selectList>
+                        </apex:actionRegion>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageblockSectionItem > 
+                         <apex:outputLabel > Norwegian Nat Cat Pool Premium: </apex:outputLabel>
+                         <apex:inputText value="{!fireNatCatPoolPremium}" />
+                     </apex:pageblockSectionItem>
+                     
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel >Machinery Breakdown BI Cover</apex:outputLabel>
+                         <apex:actionRegion > 
+                             <apex:selectList id="pr" value="{!MachineryBreakdownBICover}" size="1" required="true">  
+                                   <apex:actionSupport event="onchange" action="{!updateExposure}" reRender="pg1, pg2, pg3">
+                                   </apex:actionSupport>                       
+                                <apex:selectOptions value="{!MBBICList}"/>                            
+                            </apex:selectList>
+                         </apex:actionRegion>
+                     </apex:pageBlockSectionItem>
+                     
+                     <apex:pageblockSectionItem > 
+                         <apex:outputLabel >Loss Limit({!policyCurrency}): </apex:outputLabel>
+                         <apex:inputText value="{!Losslimit}" />
+                     </apex:pageblockSectionItem>
+                 </apex:pageBlockSection>                                         
+        </apex:pageblock>
+        
+        <apex:pageblock tabStyle="Account" title="Exposure Premium Calculation" id="pg2"> 
+            <apex:pageBlockTable value="{!otherFactors }" var="pricing">
+                <apex:column width="600px" >
+                     <apex:facet name="header"></apex:facet>
+                    <apex:outputLabel >{!pricing.factorName}</apex:outputLabel>
+                </apex:column> 
+                <apex:column >
+                    <apex:facet name="header">Rating Factor</apex:facet>
+                    <apex:actionRegion >
+                        <apex:selectList id="pr1" value="{!pricing.price}" size="1" required="true">
+                            <apex:actionSupport event="onchange" action="{!updateExposure}" reRender="pg1, pg2, pg3"/>
+                            <apex:selectOptions value="{!pricing.factors}"/>                             
+                        </apex:selectList><br/><br/> 
+                    </apex:actionRegion>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Rate</apex:facet>
+                    <apex:outputLabel >{!pricing.priceDecimal}</apex:outputLabel>
+                </apex:column> 
+                <apex:column rendered="{!!IsProperty}" >
+                    <apex:facet name="header">Premium Movement</apex:facet>
+                    <apex:outputLabel ><apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!pricing.premiumMovement_Converted}"/></apex:outputText></apex:outputLabel>
+                </apex:column> 
+            </apex:pageBlockTable>
+            <apex:outputPanel rendered="{!price.VG_Product__c == 'FIPI'}">
+                <apex:outputLabel >Net PI Premium</apex:outputLabel>
+                <apex:outputLabel >{!netPIPremium_Converted}</apex:outputLabel>
+            </apex:outputPanel>
+            <apex:pageBlockTable value="{!FIPIFactors }" var="pricing" rendered="{!price.VG_Product__c == 'FIPI'}">
+                <apex:column width="600px" >
+                     <apex:facet name="header"></apex:facet>
+                    <apex:outputLabel >{!pricing.factorName}</apex:outputLabel>
+                </apex:column> 
+                <apex:column >
+                    <apex:facet name="header">Rating Factor</apex:facet>
+                    <apex:actionRegion >
+                        <apex:selectList id="pr1" value="{!pricing.price}" size="1" required="true">
+                            <apex:actionSupport event="onchange" action="{!updateExposure}" reRender="pg1, pg2, pg3"/>
+                            <apex:selectOptions value="{!pricing.factors}"/>                             
+                        </apex:selectList><br/><br/> 
+                    </apex:actionRegion>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Rate</apex:facet>
+                    <apex:outputLabel >{!pricing.priceDecimal}</apex:outputLabel>
+                </apex:column> 
+                <apex:column rendered="{!!IsProperty}" >
+                    <apex:facet name="header">Premium Movement</apex:facet>
+                    <apex:outputLabel >{!pricing.premiumMovement_Converted}</apex:outputLabel>
+                </apex:column> 
+            </apex:pageBlockTable>
+            
+            <apex:pageBlockSection columns="1" rendered="{!IsProperty}" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Adjustment Factor</apex:outputLabel>
+                    <apex:outputLabel >{!adjustmentFactor}</apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Adjusted PD Base Rate</apex:outputLabel>
+                    <apex:outputLabel >{!adjustedPDBaseRate}</apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Adjusted BI Base Rate</apex:outputLabel>
+                    <apex:outputLabel >{!adjustedBIBaseRate}</apex:outputLabel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="Bottom" rendered="{!IsProperty}" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!gotoStep1A}" value="Previous"/><apex:commandButton action="{!gotoStep3}" value="Next"/>
+            </apex:pageBlockButtons>         
+        </apex:pageblock>
+        
+        <apex:pageblock tabStyle="Account" title="Other Factors" id="pg3" rendered="{!!IsProperty}">
+            <apex:pageBlockSection columns="4" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >CREDIT (Augur) SCORE</apex:outputLabel>
+                    <apex:inputText value="{!creditScore}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem /><apex:pageBlockSectionItem /><apex:pageBlockSectionItem />
+                
+                <apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'D&O'}">
+                   Retired Directors
+                   <apex:inputText value="{!RDYear}" html-placeholder="Enter Year" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'D&O'}">
+                    <apex:inputText value="{!RDAP}" html-placeholder="Enter Additional Premium" />
+                </apex:pageBlockSectionItem><apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'D&O'}" /><apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'D&O'}" />
+                
+                <apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'D&O'}">
+                    Auto-acquisition Threshold
+                    <apex:inputText value="{!AutoacqThreshold}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'D&O'}">
+                    
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'D&O'}" />
+                <apex:pageBlockSectionItem rendered="{!price.VG_Product__c == 'D&O'}" />
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel ><h2>Other ad hoc factors</h2></apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem /><apex:pageBlockSectionItem /><apex:pageBlockSectionItem />
+                <apex:inputText value="{!otherFactorsList[0].otherFactor}" html-placeholder="Enter description" />
+                <apex:inputText value="{!otherFactorsList[0].factor}" html-placeholder="Enter reason" />
+                <apex:inputText value="{!otherFactorsList[0].rate}" html-placeholder="Enter rate" ><apex:actionSupport event="onchange" action="{!updateExposure}"  reRender="pg1,pg2,pg3"  /></apex:inputText>
+                <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!otherFactorsList[0].premiumMovement_Converted }"/></apex:outputText>
+                
+                <apex:inputText value="{!otherFactorsList[1].otherFactor}" html-placeholder="Enter description" />
+                <apex:inputText value="{!otherFactorsList[1].factor}" html-placeholder="Enter reason" />
+                <apex:inputText value="{!otherFactorsList[1].rate}" html-placeholder="Enter rate" ><apex:actionSupport event="onchange" action="{!updateExposure}"  reRender="pg1,pg2,pg3"  /></apex:inputText>
+                <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!otherFactorsList[1].premiumMovement_Converted }"/></apex:outputText>               
+                
+                <apex:inputText value="{!otherFactorsList[2].otherFactor}" html-placeholder="Enter description" />
+                <apex:inputText value="{!otherFactorsList[2].factor}" html-placeholder="Enter reason" />
+                <apex:inputText value="{!otherFactorsList[2].rate}" html-placeholder="Enter rate" ><apex:actionSupport event="onchange" action="{!updateExposure}"  reRender="pg1,pg2,pg3"  /></apex:inputText>
+                <apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!otherFactorsList[2].premiumMovement_Converted }"/></apex:outputText>                                               
+                
+                <apex:outputLabel >Deductible Adjustment</apex:outputLabel>
+                <apex:actionRegion rendered="False"> 
+                     <apex:selectList id="pr" value="{!DeductibleRate}" size="1" required="true">  
+                           <apex:actionSupport event="onchange" action="{!updateExposure}" reRender="pg1, pg2, pg3">
+                               <apex:param assignTo="{!category}" value="Deductible Adjustment"/> 
+                           </apex:actionSupport>                       
+                        <apex:selectOptions value="{!deductibleFactor.factors}"/>                            
+                    </apex:selectList>
+                </apex:actionRegion>
+                <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel" >
+                    <apex:outputPanel styleClass="requiredBlock"/>
+                        <apex:inputText value="{!DeductibleRate_Converted}" html-placeholder="Deductible" ><apex:actionSupport event="onchange" action="{!updateExposure}"  reRender="pg1,pg2,pg3"  /></apex:inputText>
+                </apex:outputPanel> 
+                <apex:outputLabel id="dol1">{!deductibleFactor.price}</apex:outputLabel>
+                <apex:outputLabel id="dol2"><apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!deductibleFactor.premiumMovement_Converted}"/></apex:outputText></apex:outputLabel>
+                
+                <apex:pageblockSectionItem /><apex:pageblockSectionItem />
+                
+                <apex:outputLabel rendered="{!netExposurePremium != null && netExposurePremium != 0}" ><h2>Final Net Exposure Premium:</h2></apex:outputLabel>
+                <apex:outputLabel ><h2><apex:outputText value="{0, number,###,##0.00}"><apex:param value="{!netExposurePremium_Converted }"/></apex:outputText></h2></apex:outputLabel>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton action="{!gotoStep1A}" value="Previous"/><apex:commandButton action="{!gotoStep3}" value="Next"/>
+            </apex:pageBlockButtons>  
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

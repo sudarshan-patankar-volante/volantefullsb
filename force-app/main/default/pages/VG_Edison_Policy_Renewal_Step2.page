@@ -1,0 +1,85 @@
+<apex:page controller="VG_Edison_PolicyRenewalController" sidebar="false" showHeader="false">
+    <apex:form >
+        <apex:pageBlock tabStyle="Account" id="LibraryIndex" title="Risk Ratings">
+            <apex:pageMessage severity="Info" summary="No Risk Rating available." strength="3" rendered="{! rrWrapList.size == 0}" />
+            <apex:pageMessages />
+            <apex:pageBlockTable value="{!rrWrapList}" var="rrw" id="pbt2" rendered="{! (rrWrapList.size > 0  && policy.Line_Of_Business__c == 'MOTOR-ULR')}" >
+                <apex:column headerValue="" width="2%" >
+                    <apex:inputcheckbox id="ILETEDSsE" value="{!rrw.isSelected}"/>
+                </apex:column>
+                <apex:column style="width:60px" headerValue="No. of Vehicles" id="c1" >
+                    <apex:outputPanel layout="block" id="pwPanel2" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                        <apex:outputField style="width:60px" id="nof" value="{!rrw.psa.VG_Number_of_Vehicles__c}"  />
+                    </apex:outputPanel> 
+                </apex:column>
+                
+                <apex:column style="width:20px" headerValue="Actual Rate">
+                    <apex:outputPanel layout="block" id="pwPanel7" >
+                        <apex:outputPanel styleClass="requiredBlock"/>
+                        <apex:outputField style="width:60px" id="ar" value="{!rrw.psa.VG_Rate_Per_Vehicle__c}"  />
+                    </apex:outputPanel> 
+                </apex:column>
+            
+                <apex:column style="width:20px" headerValue="Actual Premium" >
+                    <apex:outputLabel id="prem">{!rrw.psa.VG_Premium__c}</apex:outputLabel>
+                </apex:column>
+            </apex:pageBlockTable>
+            
+            <apex:pageBlockTable value="{!rrWrapList}" var="rrw" id="pbt1" rendered="{! (rrWrapList.size > 0  && policy.Line_Of_Business__c != 'MOTOR-ULR')}" >
+                <apex:column headerValue="" width="2%" >
+                    <apex:inputcheckbox id="ILETEDSsE" value="{!rrw.isSelected}"/>
+                </apex:column>
+                <apex:column headerValue="Asset Name" value="{!rrw.psa.Name}" width="20px" id="cl" >
+                </apex:column>
+                <apex:column headerValue="Number of Vehicles" width="20px" id="c1" >
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!rrw.psa.VG_Number_of_Vehicles__c}"/>
+                    </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="Type" value="{!rrw.psa.VG_Vehicle_Type__c}" width="20px" id="cl1" >
+                </apex:column>
+                <apex:column headerValue="Coverage" value="{!rrw.psa.VG_Coverage__c}" width="20px" id="cl2" >
+                </apex:column>
+                <apex:column headerValue="Deductible" width="20px" id="cl3" >
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!rrw.psa.VG_Deductible__c}"/>
+                    </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="Technical UW Rate (Annual)" width="20px" id="cl6" >
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!rrw.psa.VG_Technical_UW_Rate_Annual__c}"/>
+                    </apex:outputText>
+                </apex:column>    
+                <apex:column headerValue="Actual Rate(Annual)" width="20px" id="cl4" >
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!rrw.psa.VG_Rate_Per_Vehicle__c}"/>
+                    </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="Model Rate" width="20px" id="cl8" >
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!rrw.psa.VG_Model_Rate__c}"/>
+                    </apex:outputText>
+                </apex:column>                
+                <apex:column headerValue="Rate change" width="20px" id="cl9" >
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!rrw.psa.VG_Rate_change__c}"/>
+                    </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="Technical UW Premium" width="20px" id="cl7" >
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!rrw.psa.Technical_UW_Premium__c}"/>
+                    </apex:outputText>
+                </apex:column>          
+                <apex:column headerValue="Actual Premium" width="20px" id="cl5" >
+                    <apex:outputText value="{0, number, ###,##0}">
+                        <apex:param value="{!rrw.psa.VG_Premium__c}"/>
+                    </apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockButtons location="both">
+            <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotoStep1}"/><apex:commandButton value="Next" action="{!gotoStep3}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock> 
+    </apex:form>
+</apex:page>

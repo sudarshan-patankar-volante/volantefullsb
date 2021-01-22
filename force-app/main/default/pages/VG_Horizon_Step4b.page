@@ -1,0 +1,22 @@
+<apex:page controller="VG_HorizonStepsController" sidebar="false" showHeader="false">
+    <apex:form >
+        <apex:pageBlock tabStyle="Account" id="LibraryIndex" title="Update Endorsement Details">
+            <apex:pageMessage severity="Info" summary="No endorsements seleted from library.. If needed, you can add a custom endorsement." strength="3" rendered="{!!hasEndorsements}"/>
+            <apex:pageBlockTable value="{!existingEndorsements}" var="EN" id="pbt1" rendered="{!hasEndorsements}">
+                    <apex:column headerValue="Description" width="90%">
+                        <apex:inputField styleClass="OutputField" id="ILETEDSsE" value="{!EN.VG_Title__c }" style="width:950px;"/><br/><br/>
+                        <apex:inputTextArea value="{!EN.VG_Endorsement_Details__c}" cols="4" rows="10" richText="true"/><br/><br/>
+                    </apex:column>
+                    <apex:column headerValue="Premium" width="20%">
+                        <apex:inputField value="{!EN.VG_Premium__c}" ><apex:actionSupport event="onchange" action="{!Calc}"/></apex:InputField>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton action="{!AddCustom}" value="Add Manuscript Endorsement"/>
+                </apex:pageBlockButtons>
+            <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!Cancel}" value="Cancel" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Previous" action="{!gotoStep4a}"/><apex:commandButton value="Next" action="{!gotoStep5}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock> 
+    </apex:form>
+</apex:page>

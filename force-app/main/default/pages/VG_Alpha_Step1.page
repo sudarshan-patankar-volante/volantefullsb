@@ -1,0 +1,50 @@
+<apex:page controller="VG_AlphaStepsController" sidebar="false" showHeader="false">
+    
+    <apex:form >
+        <div style="width: 80%; margin-bottom:8px;margin-top: 8px;margin-left:80px;">
+            <img src="{!$Resource.LS_PS}" alt="Smiley face" height="45px" width="800px" style="margin-left: 15px;margin-top: 15px;margin-bottom:10px;"/>
+        </div>
+        
+        <apex:pageblock tabStyle="Account" title="Product Section" id="pb1">
+            <apex:pageMessages ></apex:pageMessages>
+            
+            <apex:pageBlockSection columns="1" >
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Structure</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                          
+                        <apex:selectList value="{!Structure_Select}" size="1" style="width:200px;">
+                            <apex:selectOptions value="{!Structure_List}"></apex:selectOptions>
+                            <apex:actionSupport event="onchange" action="{!setProductList}" reRender="pb1"></apex:actionSupport>
+                        </apex:selectList>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Product</apex:outputLabel>
+                    <apex:outputPanel styleClass="requiredInput" layout="block" id="pwPanel2" >
+                    <apex:outputPanel styleClass="requiredBlock"/>                          
+                        <apex:selectList value="{!SubProduct_Select}" size="1" style="width:200px;">
+                            <apex:selectOptions value="{!SubProduct_List}"></apex:selectOptions>
+                        </apex:selectList>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!Product_List.size > 0}">
+                    <apex:outputLabel >Type Of Product</apex:outputLabel>
+                    <apex:selectList value="{!Product_Select}" size="1" style="width:200px;">
+                        <apex:selectOptions value="{!Product_List}"></apex:selectOptions>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>                                        
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" onclick="if(!confirm('Are you sure?')){return false;}"/><apex:commandButton value="Next" action="{!gotostep2}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageblock>
+        
+    </apex:form>
+    
+</apex:page>
