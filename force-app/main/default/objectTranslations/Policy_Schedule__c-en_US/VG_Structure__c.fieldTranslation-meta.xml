@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Structure --></label>
+    <name>VG_Structure__c</name>
+    <picklistValues>
+        <masterLabel>Aggregate Stop Loss</masterLabel>
+        <translation><!-- Aggregate Stop Loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aggregate XoL</masterLabel>
+        <translation><!-- Aggregate XoL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excess of Loss</masterLabel>
+        <translation><!-- Excess of Loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Proportional</masterLabel>
+        <translation><!-- Non-Proportional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proportional</masterLabel>
+        <translation><!-- Proportional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quota Share</masterLabel>
+        <translation><!-- Quota Share --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surplus</masterLabel>
+        <translation><!-- Surplus --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

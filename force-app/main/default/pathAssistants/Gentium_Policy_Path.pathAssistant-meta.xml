@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Policy__c</entityName>
+    <fieldName>Policy_Status__c</fieldName>
+    <masterLabel>Gentium Policy Path</masterLabel>
+    <recordTypeName>Gentium</recordTypeName>
+</PathAssistant>

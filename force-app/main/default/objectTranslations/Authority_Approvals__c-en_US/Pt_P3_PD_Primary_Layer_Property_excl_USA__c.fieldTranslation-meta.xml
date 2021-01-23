@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pt_P3-PD Primary Layer Property excl USA --></label>
+    <name>Pt_P3_PD_Primary_Layer_Property_excl_USA__c</name>
+</CustomFieldTranslation>

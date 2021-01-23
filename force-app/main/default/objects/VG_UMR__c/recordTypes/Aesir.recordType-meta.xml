@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aesir</fullName>
+    <active>true</active>
+    <label>Aesir</label>
+    <picklistValues>
+        <picklist>Net_MGA_Commission_Option__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Capacity_Paper__c</picklist>
+        <values>
+            <fullName>2018 Liberty Company Stamp - 2018 year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2019 - 2019 YOA - 10 MUSD - 60%25 Liberty%2C 10%25 Swiss%2C 30%25 Everest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2019 - 2020 YOA - 10 MUSD - 60%25 Liberty%2C 10%25 Swiss%2C 30%25 Everest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2019 - 2020 YOA - 10 MUSD - 90%25 Liberty%2C 10%25 Swiss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2019 - 2020 YOA - after Partner PT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 - 13%2E5 MUSD %283%2B1%2C 1%2E5%2C 2%2E5%2B2%2E5%2B0%2E5%2B2%2E5%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 - 4 MUSD %28Liberty 3 %2B Swiss 1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 - 5%2E5 MUSD %28Liberty 3 %2B Swiss 1%2C Fidelis 0%2BPartner 1%2E5%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 - Liberty and Lineslip %28Argentina%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 - Lineslip %2B Partner Re 9%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 Post Lineslip PT 1 %28CAS 500-2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 Post Lineslip PT 2 %28CAS 500-1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 Post Lineslip PT 3 %28S17%2C MP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 Post Lineslip PT 4 %28Legion I%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 Post lineslip PT %28Ovzon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 Post lineslip PT %28Resurs%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020 Post lineslip PT 6 %28Roscosmos %2B ELSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2021 - 15%2E5 MUSD %283%2B1%2C 1%2E5%2C 2%2E5%2B2%2E5%2B2%2E5%2B2%2E5%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2021 - Lineslip %2B Partner Re 11%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2021 - Special - Legion Top-up 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All - EEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All - Non EEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liberty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI Liberty 100%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI Liberty Co</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI Liberty Lloyds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT into 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special - Express PT Stamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special - Inmarsat PT Stamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special - Measat PT Stamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special - Ovzon PT Stamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special - Resurs PT Stamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Written in 2020</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Currency__c</picklist>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DKK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GBP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HKD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JPY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZAR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_RI_Coverage__c</picklist>
+        <values>
+            <fullName>7T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M3 - Fully Comprehensive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 - Fire %26 Theft Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 - Third Party Fire %26 Theft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 - Third Party Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC%2C SO%2C SL%2C V %26 AP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_RI_Product__c</picklist>
+        <values>
+            <fullName>Aviation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casualty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facultative and Treaty Property and Casualty Reinsurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Lines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Space</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_RI_Share_Type__c</picklist>
+        <values>
+            <fullName>Non-proportional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proportional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_RI_Type__c</picklist>
+        <values>
+            <fullName>Gross</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Retrocession__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Type__c</picklist>
+        <values>
+            <fullName>Capacity</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Co-Insurance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Volante_Entities__c</picklist>
+        <values>
+            <fullName>BUAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VEML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VG UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VSR LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VTSL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

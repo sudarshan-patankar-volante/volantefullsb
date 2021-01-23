@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Public Sector</fullName>
+                <default>false</default>
+                <label>Public Sector</label>
+            </value>
+            <value>
+                <fullName>GLPL</fullName>
+                <default>false</default>
+                <label>GLPL</label>
+            </value>
+            <value>
+                <fullName>Life Sciences</fullName>
+                <default>false</default>
+                <label>Life Sciences</label>
+            </value>
+            <value>
+                <fullName>Clinical Trials</fullName>
+                <default>false</default>
+                <label>Clinical Trials</label>
+            </value>
+            <value>
+                <fullName>D&amp;O</fullName>
+                <default>false</default>
+                <label>D&amp;O</label>
+            </value>
+            <value>
+                <fullName>PI</fullName>
+                <default>false</default>
+                <label>PI</label>
+            </value>
+            <value>
+                <fullName>FIPI</fullName>
+                <default>false</default>
+                <label>FIPI</label>
+            </value>
+            <value>
+                <fullName>Crime</fullName>
+                <default>false</default>
+                <label>Crime</label>
+            </value>
+            <value>
+                <fullName>Property</fullName>
+                <default>false</default>
+                <label>Property</label>
+            </value>
+            <value>
+                <fullName>Property Per Event</fullName>
+                <default>false</default>
+                <label>Property Per Event</label>
+            </value>
+            <value>
+                <fullName>Property Per Risk</fullName>
+                <default>false</default>
+                <label>Property Per Risk</label>
+            </value>
+            <value>
+                <fullName>AGG XL</fullName>
+                <default>false</default>
+                <label>AGG XL</label>
+            </value>
+            <value>
+                <fullName>AGG Stop Loss</fullName>
+                <default>false</default>
+                <label>AGG Stop Loss</label>
+            </value>
+            <value>
+                <fullName>Fleet</fullName>
+                <default>false</default>
+                <label>Fleet</label>
+            </value>
+            <value>
+                <fullName>Schemes</fullName>
+                <default>false</default>
+                <label>Schemes</label>
+            </value>
+            <value>
+                <fullName>Commercial Combined</fullName>
+                <default>false</default>
+                <label>Commercial Combined</label>
+            </value>
+            <value>
+                <fullName>Public Sector – Non Conventional</fullName>
+                <default>false</default>
+                <label>Public Sector – Non Conventional</label>
+            </value>
+            <value>
+                <fullName>Commercial – Non Conventional</fullName>
+                <default>false</default>
+                <label>Commercial – Non Conventional</label>
+            </value>
+            <value>
+                <fullName>Motor</fullName>
+                <default>false</default>
+                <label>Motor</label>
+            </value>
+            <value>
+                <fullName>FI - PI</fullName>
+                <default>false</default>
+                <label>FI - PI</label>
+            </value>
+            <value>
+                <fullName>FI - Cyber</fullName>
+                <default>false</default>
+                <label>FI - Cyber</label>
+            </value>
+            <value>
+                <fullName>FI - D&amp;O</fullName>
+                <default>false</default>
+                <label>FI - D&amp;O</label>
+            </value>
+            <value>
+                <fullName>Liability</fullName>
+                <default>false</default>
+                <label>Liability</label>
+            </value>
+            <value>
+                <fullName>PA</fullName>
+                <default>false</default>
+                <label>PA</label>
+            </value>
+            <value>
+                <fullName>FI - Crime</fullName>
+                <default>false</default>
+                <label>FI - Crime</label>
+            </value>
+            <value>
+                <fullName>FI - Blend</fullName>
+                <default>false</default>
+                <label>FI - Blend</label>
+            </value>
+            <value>
+                <fullName>Commercial Crime</fullName>
+                <default>false</default>
+                <label>Commercial Crime</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

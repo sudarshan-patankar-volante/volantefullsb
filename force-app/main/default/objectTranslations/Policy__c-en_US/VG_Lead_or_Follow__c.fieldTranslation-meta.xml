@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lead or Follow --></label>
+    <name>VG_Lead_or_Follow__c</name>
+    <picklistValues>
+        <masterLabel>Follow</masterLabel>
+        <translation><!-- Follow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead</masterLabel>
+        <translation><!-- Lead --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

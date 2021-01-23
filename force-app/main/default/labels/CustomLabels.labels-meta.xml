@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Aesir_EEAVolanteEntity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Aesir_EEAVolanteEntity</shortDescription>
+        <value>VG UK</value>
+    </labels>
+    <labels>
+        <fullName>Aesir_NonEEAVolanteEntity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Aesir_NonEEAVolanteEntity</shortDescription>
+        <value>VIL</value>
+    </labels>
+    <labels>
+        <fullName>Aesir_Policy</fullName>
+        <categories>Policy Record Type Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Aesir_Policy</shortDescription>
+        <value>0120O000000LAxa</value>
+    </labels>
+    <labels>
+        <fullName>Affinity_EEAVolanteEntity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Affinity_EEAVolanteEntity</shortDescription>
+        <value>VG UK</value>
+    </labels>
+    <labels>
+        <fullName>Affinity_NonEEAVolanteEntity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Affinity_NonEEAVolanteEntity</shortDescription>
+        <value>VIL</value>
+    </labels>
+    <labels>
+        <fullName>Affinity_Policy</fullName>
+        <categories>Policy Record Type Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Affinity_Policy</shortDescription>
+        <value>0120O000000LAxb</value>
+    </labels>
+    <labels>
+        <fullName>Alpha_Territories</fullName>
+        <categories>Alpha, Territories</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Alpha_Territories</shortDescription>
+        <value>Algeria;Angola;Benin;Botswana;Burkina Faso;Burundi;Cameroon;Cape Verde;Central African RePublic;Chad;Comoros;RePublic of the Congo;Democratic RePublic of the Congo;Djibouti;Egypt;Equatorial Guinea;Eritrea;Ethiopia;Gabon;Gambia;Ghana;Guinea;Guinea-Bissau;Ivory Coast;Kenya;Lesotho;Liberia;Libya;Madagascar;Malawi;Mali;Mauritania;Mauritius;Morocco;Mozambique;Namibia;Niger;Nigeria;Rwanda;Sao Tome and Principe;Senegal;Seychelles;Sierra Leone;Somalia;South Africa;South Sudan;Sudan;Swaziland;Tanzania;Togo;Tunisia;Uganda;Zambia;Zimbabwe;Africa;Worldwide;Wolrdwide excl USA;Worldwide Ex North America;Europe;Asia;Austria;Belgium;Cyprus;Croatia;Czech RePublic;Denmark;Estonia;Finland;France;Germany;Greece;Hungary;Ireland;Italy;Latvia;Lithuania;Luxembourg;Malta;Netherlands;Poland;Portugal;Romania;Slovakia;Slovenia;Spain;Sweden;United Kingdom;</value>
+    </labels>
+    <labels>
+        <fullName>BDX_Fix_Batch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BDX Fix Batch</shortDescription>
+        <value>select id,Name,Policy__c,VG_Capacity_Paper__c, RecordTypeId, Account_Id__c, Policy__r.Name,Policy__r.VG_Expiry_Date__c,Policy__r.VG_Inception_Date__c,VG_Gross_Written_Premium_100__c,VG_MTA_Start_Date__c,VG_MTA_Type__c,VG_Is_MTA__c,VG_MTA_End_Date__c,Risk_Premium_Pro__c,CurrencyISOCode,Endorsement_Premium_Pro__c,Net_Premium__c,Bordereaux_Override__c, Transaction_GWP__c,Limit__c ,Attachment__c,Sum_Insured__c,ILF_Layer__c,Written_share__c,Gross_Written_Premium__c,Gross_or_Net_Premium__c,Technical_UW_Premium__c,VG_Technical_Model_Premium__c,VG_Brokerage_Percent__c,Actual_GWP__c,VG_Brokerage_Amount__c,IPT__c,IPT_Percent__c,Levies__c,VG_Fee_Income__c,Share__c,Premium_Adjustment_2__c,Premium_Adjustment__c,VG_VAT__c,VG_VAT_Amount__c,VG_Witholding_Tax_Amount__c from Policy_Schedule__c where RecordType.Name = &apos;Edison Motor&apos; AND VG_Capacity_Paper__c != null</value>
+    </labels>
+    <labels>
+        <fullName>Berkshire_Group_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Berkshire Group Id</shortDescription>
+        <value>00G0O000003ADys</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_Coverages_NonCC_CT</fullName>
+        <categories>Bridge, NonCC, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_Coverages_NonCC_CT</shortDescription>
+        <value>Clinical Trials;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_Coverages_NonCC_Commercial</fullName>
+        <categories>Bridge, NonCC, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_Coverages_NonCC_Commercial</shortDescription>
+        <value>Fire;Burglary;Water;All risk;Robbery;Debris removal;Change of locks;Exrta cost/overtime;Existing property;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_Coverages_NonCC_Crime</fullName>
+        <categories>Bridge, NonCC, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_Coverages_NonCC_Crime</shortDescription>
+        <value>Crime;Renting of replacement equipment or premises;Substituting staff and overtime payments;Transport of equipment and documents;Interest;Contractual Penalties;Auditors’ fees;Representation and Litigation Costs;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_Coverages_NonCC_D_O</fullName>
+        <categories>Bridge, NonCC, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_Coverages_NonCC_D_O</shortDescription>
+        <value>Directors &amp; Officers Liability;Emergency Defence Costs;Public Relations Expenses;Company Reimbursement;Insured Persons;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_Coverages_NonCC_FIPI</fullName>
+        <categories>Bridge, NonCC, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_Coverages_NonCC_FIPI</shortDescription>
+        <value>Professional Indemnity;Defence costs;FI - Professional Indemnity;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_Coverages_NonCC_GLPL</fullName>
+        <categories>Bridge, NonCC, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_Coverages_NonCC_GLPL</shortDescription>
+        <value>General and Products Liability;General Liability;Products Liability;General Data Protection Regulation and corresponding legislation;Property in care,  custody or control of the insured;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_Coverages_NonCC_LS</fullName>
+        <categories>Bridge, NonCC, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_Coverages_NonCC_LS</shortDescription>
+        <value>Life Science;General Liability;Products liability;General Data Protection Regulation and corresponding legislation;Property in care,  custody or control of the insured;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_Coverages_NonCC_PI</fullName>
+        <categories>Bridge, NonCC, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_Coverages_NonCC_PI</shortDescription>
+        <value>Professional Indemnity;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_LoydsProduct_NonCC_CT</fullName>
+        <categories>Bridge, NonCC, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_LoydsProduct_NonCC_CT</shortDescription>
+        <value>Clinical Trials;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_LoydsProduct_NonCC_Commercial</fullName>
+        <categories>Bridge, NonCC, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_LoydsProduct_NonCC_Commercial</shortDescription>
+        <value>CB-Eng  annual renewabl e incl CAR EAR MB CPE B&amp;M EEI Treaty LOD;CC-Eng Single Proj non renewable incl CAR EAR Traty RAD;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_LoydsProduct_NonCC_Crime</fullName>
+        <categories>Bridge, NonCC, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_LoydsProduct_NonCC_Crime</shortDescription>
+        <value>BB-Crime;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_LoydsProduct_NonCC_D_O</fullName>
+        <categories>Bridge, NonCC, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_LoydsProduct_NonCC_D_O</shortDescription>
+        <value>D4-D&amp;O FI incl USA;D5-D&amp;O FI excl USA;D2-D&amp;O excl FI incl USA;D3-D&amp;O excl FI excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_LoydsProduct_NonCC_FIPI</fullName>
+        <categories>Bridge, NonCC, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_LoydsProduct_NonCC_FIPI</shortDescription>
+        <value>F2-PI FI incl USA;F3-PI FI excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_LoydsProduct_NonCC_GLPL</fullName>
+        <categories>Bridge, NonCC, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_LoydsProduct_NonCC_GLPL</shortDescription>
+        <value>NA-GL/ PL excl Claims Made excl USA;NC-GL/ PL Claims Made excl USA;PB-Product Recall;UA-GL/ PL excl Claims Made incl USA;7T-Terrorism TPL;UC-GL/ PL Claims Made incl USA;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_LoydsProduct_NonCC_LS</fullName>
+        <categories>Bridge, NonCC, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_LoydsProduct_NonCC_LS</shortDescription>
+        <value>NA-GL/ PL excl Claims Made excl USA;NC-GL/ PL Claims Made excl USA;PB-Product Recall;UA-GL/ PL excl Claims Made incl USA;UC-GL/ PL Claims Made incl USA;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_LoydsProduct_NonCC_PI</fullName>
+        <categories>Bridge, NonCC, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_LoydsProduct_NonCC_PI</shortDescription>
+        <value>E2-PI Legal incl USA;E3-PI Legal excl USA;E4-PI Acc incl USA;E5-PI Acc excl USA;E6-PI Arch/ Eng incl USA;E7-PI Arch/ Eng excl USA;E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA;E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA;F4-PI Tech/ TelCo incl USA;F5-PI Tech/ TelCo excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_LoydsProduct_NonCC_Property</fullName>
+        <categories>Bridge, NonCC, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_LoydsProduct_NonCC_Property</shortDescription>
+        <value>P3-PD Primary Layer Property excl USA;P4-PD Full Value Property incl USA;P5-PD Full Value Property excl USA;P6-PD XS Layer Property incl USA;P7-PD XS Layer Property excl USA;PG-Op Power Gen Transmission/ Util excl Const;TR-PD (Direct Prop RI);6T-Overseas Legal Terrorism - Property;B5-PD Binder Comm Prop excl USA;V-Cargo (All Risks incl War,  excl War Risks only);X3-NM Prop or Pecuniary Loss XL on XL Retrocession;PB-Product Recall;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_NonCC_TerritorialLimits</fullName>
+        <categories>Bridge, NonCC, Territorial Limits</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_NonCC_TerritorialLimits</shortDescription>
+        <value>Worldwide;World wide excluding North America;World wide excluding North America but including business trips and trade shows world wide;Europe;Nordic;Sweden;Denmark;Finland;Norway;Iceland;</value>
+    </labels>
+    <labels>
+        <fullName>Bridge_Policy</fullName>
+        <categories>Policy Record Type Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bridge_Policy</shortDescription>
+        <value>0120O000000L91q</value>
+    </labels>
+    <labels>
+        <fullName>Claim_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Claim Name</shortDescription>
+        <value>0834123</value>
+    </labels>
+    <labels>
+        <fullName>Comply_Advantage_API_Key</fullName>
+        <categories>Comply Advantage, Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comply Advantage API Key</shortDescription>
+        <value>Bls6vPew1r9njWTWuYY7XmC3mpGx7fXs</value>
+    </labels>
+    <labels>
+        <fullName>Comply_Advantage_Fuzziness</fullName>
+        <categories>Comply Advantage, Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comply Advantage Fuzziness</shortDescription>
+        <value>0.5</value>
+    </labels>
+    <labels>
+        <fullName>Comply_Advantage_Test_Account</fullName>
+        <categories>Comply Advantage, Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comply Advantage Test Account</shortDescription>
+        <value>0010O00002Bib4b</value>
+    </labels>
+    <labels>
+        <fullName>Delete_PS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete PS</shortDescription>
+        <value>Charlotte Flook</value>
+    </labels>
+    <labels>
+        <fullName>EEA_Countries</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EEA_Countries</shortDescription>
+        <value>Austria;Belgium;Bulgaria;Croatia;Republic of Cyprus;Czech Republic;Denmark;Estonia;Finland;France;Germany;Greece;Hungary;Iceland;Ireland;Italy;Latvia;Liechtenstein;Lithuania;Luxembourg;Malta;Netherlands;Norway;Poland;Portugal;Romania;Slovakia;Slovenia;Spain;Sweden</value>
+    </labels>
+    <labels>
+        <fullName>Edison_Motor_Policy</fullName>
+        <categories>Policy Record Type Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edison_Motor_Policy</shortDescription>
+        <value>0120O000000RMzT</value>
+    </labels>
+    <labels>
+        <fullName>Edison_NonEEAVolanteEntity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edison_NonEEAVolanteEntity</shortDescription>
+        <value>VIL;</value>
+    </labels>
+    <labels>
+        <fullName>EmailID2_DuplicatePolicyNumberDetector</fullName>
+        <categories>Email Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailID2_DuplicatePolicyNumberDetector</shortDescription>
+        <value>vtxpartners@volanteglobal.com</value>
+    </labels>
+    <labels>
+        <fullName>EmailID_DuplicatePolicyNumberDetector</fullName>
+        <categories>Email Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailID_DuplicatePolicyNumberDetector</shortDescription>
+        <value>venkatc@clovetrix.com</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_ALL_FI_SectionNumber</fullName>
+        <categories>FIDO,Section Number</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_ALL_FI_SectionNumber</shortDescription>
+        <value>Liberty Mutual - FI (FY 2019);Liberty Mutual - FI Open Market (2020);Liberty Mutual - FI CE (2019);Liberty Mutual - FI CE (2020);Liberty Mutual - FI CE - 2021;VSR - FI - Amwin;VSR - FI - Allianz;VSR - FI - Aspen;VSR - FI - RSUI;Liberty Mutual - D&amp;O/Crime;VSR - AmWINS - Defense Only;VSR - AmWINS - Funds Mgmt;VSR FI - Amtrust;LMIE - FI Open Market - Section A - EEA Risks;LMIE - FI Open Market - Section B - Non EEA Risks;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_CC</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_CC</shortDescription>
+        <value>D4-D&amp;O FI incl;D5-D&amp;O FI excl USA;F2-PI FI incl USA;F3-PI FI excl USA;E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA;E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA;BB-Crime;CY-Cyber;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_D_O</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_D_O</shortDescription>
+        <value>D2-D&amp;O excl FI incl USA;D3-D&amp;O excl FI excl USA;D6-EPL incl USA;D7-EPL excl USA;7T-Terrorism TPL;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_FI_Blend</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_FI_Blend</shortDescription>
+        <value>BB-Crime;F2-PI FI incl USA;F3-PI FI excl USA;D4-D&amp;O FI incl USA;D5-D&amp;O FI excl USA;D6-EPL incl USA;D7-EPL excl USA;E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA;E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA;CY-Cyber;FI - Fiduciary;7T-Terrorism TPL;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_FI_Crime</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_FI_Crime</shortDescription>
+        <value>BB-Crime;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_FI_Cyber</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_FI_Cyber</shortDescription>
+        <value>CY-Cyber;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_FI_D_O</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_FI_D_O</shortDescription>
+        <value>D4-D&amp;O FI incl USA;D5-D&amp;O FI excl USA;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_FI_Fiduciary</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_FI_Fiduciary</shortDescription>
+        <value>FI - Fiduciary;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_FI_PI</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_FI_PI</shortDescription>
+        <value>F2-PI FI incl USA;F3-PI FI excl USA;E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA;E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_PI</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_PI</shortDescription>
+        <value>E3-PI Legal excl USA;E5-PI Acc excl USA;E7-PI Arch/ Eng excl USA;E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA;7T-Terrorism TPL;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Coverages_WI</fullName>
+        <categories>FIDO, Coverages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Coverages_WI</shortDescription>
+        <value>D8-TL incl USA;D9-TL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_D_O_Crime_SectionNumber</fullName>
+        <categories>FIDO,Section Number</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_D_O_Crime_SectionNumber</shortDescription>
+        <value>LMIE - D&amp;O/Crime - Section B - Non EEA Risks;Liberty Mutual - D&amp;O/Crime;Liberty Mutual - FI;LMIE - D&amp;O/Crime - Section A - EEA Risks;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_FI_Industry_Select</fullName>
+        <categories>FIDO,Industry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_FI_Industry_Select</shortDescription>
+        <value>BAL - Alternative lenders;BCB - Commercial Banks;BCA – Collection Agents;BCD - Commodity Dealers;BBD - Broker Dealers;BFP - Financial Planners;BFU - Wealth / Asset Managers;BTR - Trust Administrators;BMF - Miscellaneous Financial;BNF - Miscellaneous Non Financial;BRE - Real Estate Investment Trusts;BNL - Non-Life Insurance Companies;BLI - Life Insurance Companies;BCI - Composite Insurance Companies;BHF - Hedge Funds;BMB - Mortgage Banks / Broker;BIB - Investment / Merchant Banks;BMU – Mutual Fund USA Domiciled;BFX- FX Dealers;BEP - Exchange Platforms;BOT - Other;BPE - Private Equity;BVC - Venture Capital/ Private Equity;BBR – Stockbrokers;CRY - Crypto;CVE - Conservation Easement;BCH – Clearing House;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Industry_Select</fullName>
+        <categories>FIDO,Industry</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Industry_Select</shortDescription>
+        <value>Accountants;Advertising;Aerospace &amp; Defense;Agriculture;Apparel;Architects;Biotechnology;Business Services;Capital Projects &amp; Infrastructure;Charities;Chemicals;Communications;Construction;Consulting;Design and Construction;Education;Electronics;Employment Agents;Energy;Engineering;Entertainment;Environmental;Finance;Food &amp; Beverage;Government;Haulage;Hazardous Goods;Healthcare;Hospitality;Machinery;Management Consultants;Manufacturing;Media;Metals;Mining;Miscellaneous;Miscellaneous Financial;Not For Profit;Other;Pharmaceutical;Professional Services;Public Authority;Real Estate;Recreation;Retail;Shipping;Solicitors;Surveyors;Technology;Telecommunications;Transportation;Utilities;Waste;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_CC</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_CC</shortDescription>
+        <value>D4-D&amp;O FI incl;D5-D&amp;O FI excl USA;F2-PI FI incl USA;F3-PI FI excl USA;E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA;E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA;BB-Crime;CY-Cyber;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_D_O</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_D_O</shortDescription>
+        <value>D2-D&amp;O excl FI incl USA;D3-D&amp;O excl FI excl USA;D6-EPL incl USA;D7-EPL excl USA;7T-Terrorism TPL;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_FI_Blend</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_FI_Blend</shortDescription>
+        <value>BB-Crime;F2-PI FI incl USA;F3-PI FI excl USA;D4-D&amp;O FI incl USA;D5-D&amp;O FI excl USA;D6-EPL incl USA;D7-EPL excl USA;E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA;E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA;CY-Cyber;FI - Fiduciary;7T-Terrorism TPL;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_FI_Crime</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_FI_Crime</shortDescription>
+        <value>BB-Crime;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_FI_Cyber</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_FI_Cyber</shortDescription>
+        <value>CY-Cyber;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_FI_D_O</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_FI_D_O</shortDescription>
+        <value>D4-D&amp;O FI incl USA;D5-D&amp;O FI excl USA;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_FI_Fiduciary</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_FI_Fiduciary</shortDescription>
+        <value>FI - Fiduciary;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_FI_PI</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_FI_PI</shortDescription>
+        <value>F2-PI FI incl USA;F3-PI FI excl USA;E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA;E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA;7T-Terrorism TPL;D6-EPL incl USA;D7-EPL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_PI</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_PI</shortDescription>
+        <value>E3-PI Legal excl USA;E5-PI Acc excl USA;E7-PI Arch/ Eng excl USA;E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA;7T-Terrorism TPL;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_LoydsProduct_WI</fullName>
+        <categories>FIDO, Loyds Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_LoydsProduct_WI</shortDescription>
+        <value>D8-TL incl USA;D9-TL excl USA;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_Others_SectionNumber</fullName>
+        <categories>FIDO,Section Number</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_Others_SectionNumber</shortDescription>
+        <value>Liberty Mutual VFP;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_PI_SectionNumber</fullName>
+        <categories>FIDO,Section Number</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_PI_SectionNumber</shortDescription>
+        <value>PI Liberty 100%;PI Liberty Co;PI Liberty Lloyds;LMIE - PI - Section A - EEA Risks;LMIE - PI - Section B - Non EEA Risks;</value>
+    </labels>
+    <labels>
+        <fullName>FIDO_W_I_Crime_SectionNumber</fullName>
+        <categories>FIDO,Section Number</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIDO_W_I_Crime_SectionNumber</shortDescription>
+        <value>Warranty &amp; Indemnity;</value>
+    </labels>
+    <labels>
+        <fullName>Gentium_Policy</fullName>
+        <categories>Policy Record Type Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Gentium_Policy</shortDescription>
+        <value>0120O000000LANx</value>
+    </labels>
+    <labels>
+        <fullName>Horizon_EEAVolanteEntity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Horizon_EEAVolanteEntity</shortDescription>
+        <value>Horizon Europe AG</value>
+    </labels>
+    <labels>
+        <fullName>Horizon_Policy</fullName>
+        <categories>Policy Record Type Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Horizon_Policy</shortDescription>
+        <value>0120O000000L9Lq</value>
+    </labels>
+    <labels>
+        <fullName>Imara_NonEEAVolanteEntity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Imara_NonEEAVolanteEntity</shortDescription>
+        <value>VIL</value>
+    </labels>
+    <labels>
+        <fullName>Imara_Policy</fullName>
+        <categories>Policy Record Type Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Imara_Policy</shortDescription>
+        <value>0120O000000LAVO</value>
+    </labels>
+    <labels>
+        <fullName>Nordics_100k_Approval_Process_External_Id</fullName>
+        <categories>Approval Process Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nordics &gt; 100k Approval Process External Id</shortDescription>
+        <value>04a0O000000LBjP</value>
+    </labels>
+    <labels>
+        <fullName>Nordics_250k_Approval_Process_External_Id</fullName>
+        <categories>Approval Process Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nordics &gt; 250k Approval Process External Id</shortDescription>
+        <value>04a0O000000LBjQ</value>
+    </labels>
+    <labels>
+        <fullName>Nordics_Commercial_Combined_PBA_Rate</fullName>
+        <categories>Bridge, CC, PBA Rate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nordics Commercial Combined PBA Rate</shortDescription>
+        <value>45500</value>
+    </labels>
+    <labels>
+        <fullName>Nordics_EEAVolanteEntity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nordics_EEAVolanteEntity</shortDescription>
+        <value>BUAB</value>
+    </labels>
+    <labels>
+        <fullName>Tax_Jurisdiction1</fullName>
+        <categories>Payments &amp; Taxes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax_Jurisdiction1</shortDescription>
+        <value>Algeria;Antigua &amp; Barbuda;Argentina;Australia;Australia – Northern Territory (NT);Australia – South Australia (SA);Australia – Western Territory (WA);Australia – Queensland (QLD);Australia – New South Wales (NSW);Australia – Victoria (VIC);Australia – Tasmania (TAS);Australia – Australian Capital Territory (ACT);Australia – Jervis Bay Territory (JBT);Austria;Bahamas;Bahrain;Bangladesh;Barbados;Belgium;Belize;Bermuda;Bhutan;Bolivia;Bonaire;Brazil;British Virgin Islands;Brunei;Bulgaria;Cambodia;Cameroon;Canada;Canada – Alberta (AB);Canada – British Columbia (BC);Canada – Manitoba (MB);Canada – New Brunswick (NB);Canada – NewFoundland and Labrador (NL);Canada – Nova Scotia (NS);Canada – Northwest Territories (NT);Canada – Nunavut (NU);Canada – Ontario (ON);Canada – Prince Edward Island (PE);Canada – Quebec (QC);Canada – Saskatchewan (SK);Canada – Yukon (YT);Cape Verde;Cayman Islands;Chile;China;Colombia;Cook Islands;Costa Rica;Country;Croatia;Curacao;Cyprus;Czech RePublic;</value>
+    </labels>
+    <labels>
+        <fullName>Tax_Jurisdiction2</fullName>
+        <categories>Payments &amp; Taxes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax_Jurisdiction2</shortDescription>
+        <value>Denmark;Dominica;Dominican RePublic;Ecuador;Egypt;El Salvador;Estonia;Ethiopia;Faroe Islands;Fiji;Finland;France;French Guiana;French Polynesia;Gabon;Gambia;Germany;Ghana;Gibraltar;Greece;Greenland;Grenada;Guadeloupe;Guatemala;Guernsey;Guyana;Haiti;Honduras;Hong Kong;Hungary;Iceland;India;Indonesia;Ireland;Isle of Man;Israel;Italy;Jamaica;Japan;Jersey;Jordan;Kazakhstan;Kenya;Kiribati;Kuwait;Kyrgyzstan;Laos;Latvia;Lebanon;Lesotho;Liechtenstein;Libya;Lithuania;Luxembourg;Macau;Macedonia;Madagascar;Malawi;Malaysia;Maldives;Mali;Malta;Marshall Islands;Martinique;Mauritius;Mayotte;Mexico;Moldova;Monaco;Mongolia;Montserrat;Morocco;Mozambique;Myanmar;Namibia;Nepal;Netherlands;Netherlands Antilles;New Caledonia;New Zealand;Nicaragua;Niger;Nigeria;Norway;Oman;Pakistan;Palau;Panama;Papua New Guinea;Paraguay;Peru;Philippines;Poland;Portugal;Puerto Rico;Reunion Island;Qatar;Romania;Russia;Rwanda;</value>
+    </labels>
+    <labels>
+        <fullName>Tax_Jurisdiction3</fullName>
+        <categories>Payments &amp; Taxes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax_Jurisdiction3</shortDescription>
+        <value>Saint Lucia;Samoa;San Marino;Sao Tome &amp; Principe;Saudi Arabia;Saint Kitts &amp; Nevis;Senegal;Serbia;Seychelles;Singapore;Slovakia;Slovenia;South Africa;South Korea;Spain;Sri Lanka;Suriname;Sweden;Switzerland;Taiwan;Tajikistan;Tanzania;Thailand;Togo;Tonga;Trinidad &amp; Tobago;Tunisia;Turkey;Turkmenistan;Turks &amp; Caicos ;Uganda;Ukraine;United Arab Emirates;United Kingdom;United States;United States - Alabama (AL);United States - Colorado (CO);United States - Florida (FL);United States - Georgia (GA);United States - Illinois (IL);United States - Kentucky (KY);United States - Louisiana (LA);United States - Mississippi (MS);United States - Missouri (MO);United States - New York (NY);United States - North Carolina (NC);United States - South Carolina (SC);United States - Tennessee (TN);Uruguay;Venezuela;Vietnam;Virgin Islands;Zambia;</value>
+    </labels>
+    <labels>
+        <fullName>Tax_Jurisdiction5</fullName>
+        <categories>Imara,Payments &amp; Taxes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax_Jurisdiction5</shortDescription>
+        <value>Algeria;Angola;Argentina;Australia - Northern Territory (NT);Australia - South Australia (SA);Australia - Western Territory (WA);Australia - Queensland (QLD);Australia - New South Wales (NSW);Australia - Victoria (VIC);Australia - Tasmania (TAS);Australia - Australian Capital Territory (ACT);Australia - Jervis Bay Territory (JBT);Benin;Botswana;Bonaire;Brazil;Burkina Faso ;Burundi;Cameroon;Canada - Alberta (AB);Canada - British Columbia (BC);Canada - Manitoba (MB);Canada - New Brunswick (NB);Canada - NewFoundland and Labrador (NL);Canada - Nova Scotia (NS);Canada - Northwest Territories (NT);Canada - Nunavut (NU);Canada - Ontario (ON);Canada - Prince Edward Island (PE);Canada - Quebec (QC);Canada - Saskatchewan (SK);Canada - Yukon (YT);Cape Verde;Central African Republic;Chad;Comoros;Curacao;Republic of the Congo;Dominica;Democratic Republic of the Congo;Djibouti;Egypt;Equatorial Guinea;Eritrea;Ethiopia;Gabon;Gambia;Ghana;Guinea;Guinea-Bissau;Ivory Coast;Kenya;Lesotho;Liberia;</value>
+    </labels>
+    <labels>
+        <fullName>Tax_Jurisdiction6</fullName>
+        <categories>Imara,Payments &amp; Taxes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax_Jurisdiction6</shortDescription>
+        <value>Libya;Madagascar;Malawi;Mali;Mauritania;Mauritius;Mayotte;Morocco;Mozambique;Myanmar;Namibia;Niger;Nigeria;Reunion Island;Rwanda;Sao Tome and Principe;Saint Kitts &amp; Nevis;Senegal;Seychelles;Sierra Leone;Somalia;South Africa;South Sudan;Sri Lanka;Sudan;Swaziland;Tanzania;Togo;Tunisia;Uganda;United States - Kentucky (KY);United States - Illinois (IL);Zambia;Zimbabwe;</value>
+    </labels>
+    <labels>
+        <fullName>VFP_100k_Approval_Process_External_Id</fullName>
+        <categories>Approval Process Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VFP 100k Approval Process External Id</shortDescription>
+        <value>04a0O000000LBuJ</value>
+    </labels>
+    <labels>
+        <fullName>VFP_Policy</fullName>
+        <categories>Policy Record Type Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VFP_Policy</shortDescription>
+        <value>0120O000000L9je</value>
+    </labels>
+</CustomLabels>

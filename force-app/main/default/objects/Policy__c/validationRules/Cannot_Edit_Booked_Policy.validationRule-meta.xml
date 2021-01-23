@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_Booked_Policy</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISPICKVAL( Policy_Status__c , &quot;Booked&quot;) ),
+ISPICKVAL( PRIORVALUE(Policy_Status__c) , &quot;Booked&quot;) , NOT(ISPICKVAL( Policy_Status__c , &quot;Bound&quot;)),NOT(ISPICKVAL(  VG_Sub_Status__c , &quot;Awaiting Approval&quot;)), NOT( $Setup.VG_Functionality_Switches__c.Allow_Booked_Policy_Status_Update__c ))</errorConditionFormula>
+    <errorMessage>Cannot Edit a booked policy</errorMessage>
+</ValidationRule>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PI_E3-PI Legal excl USA --></label>
+    <name>PI_E3_PI_Legal_excl_USA__c</name>
+</CustomFieldTranslation>

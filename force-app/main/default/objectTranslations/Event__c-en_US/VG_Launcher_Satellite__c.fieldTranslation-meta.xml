@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Launcher /Satellite --></label>
+    <name>VG_Launcher_Satellite__c</name>
+    <picklistValues>
+        <masterLabel>Satellite</masterLabel>
+        <translation><!-- Satellite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>launcher</masterLabel>
+        <translation><!-- launcher --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

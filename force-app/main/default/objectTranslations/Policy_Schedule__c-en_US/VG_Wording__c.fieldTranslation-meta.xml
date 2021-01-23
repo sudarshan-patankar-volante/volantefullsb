@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Wording --></label>
+    <name>VG_Wording__c</name>
+    <picklistValues>
+        <masterLabel>BBC (f)2.0 - Commercial Crime</masterLabel>
+        <translation><!-- BBC (f)2.0 - Commercial Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBCAR 2.0 - All Risk Insurance for Construction Works Activities</masterLabel>
+        <translation><!-- BBCAR 2.0 - All Risk Insurance for Construction Works Activities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBDO 2.0 - Directors  Officers Liability Insurance</masterLabel>
+        <translation><!-- BBDO 2.0 - Directors  Officers Liability Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBE 2.0 - Crisis Insurance</masterLabel>
+        <translation><!-- BBE 2.0 - Crisis Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBG 2.0 - General Conditions and Definitions</masterLabel>
+        <translation><!-- BBG 2.0 - General Conditions and Definitions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBG 2.2 - General Conditions and Definitions</masterLabel>
+        <translation><!-- BBG 2.2 - General Conditions and Definitions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBLE 2.0 - Legal Expenses Insurance</masterLabel>
+        <translation><!-- BBLE 2.0 - Legal Expenses Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBLI (f) 2.0 - Public and Products Liability Insurance</masterLabel>
+        <translation><!-- BBLI (f) 2.0 - Public and Products Liability Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBP 2.0 - All Risks Commercial Property Insurance</masterLabel>
+        <translation><!-- BBP 2.0 - All Risks Commercial Property Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBS 2.0 - Safety Regulations</masterLabel>
+        <translation><!-- BBS 2.0 - Safety Regulations --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

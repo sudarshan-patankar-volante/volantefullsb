@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tax Type --></label>
+    <name>VG_Tax_Type__c</name>
+    <picklistValues>
+        <masterLabel>Business Turnover Tax</masterLabel>
+        <translation><!-- Business Turnover Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consorcio Winding Up Fund</masterLabel>
+        <translation><!-- Consorcio Winding Up Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumption Tax (ISC)</masterLabel>
+        <translation><!-- Consumption Tax (ISC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumption Tax [ISC]</masterLabel>
+        <translation><!-- Consumption Tax [ISC] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contributions Liberation Economique</masterLabel>
+        <translation><!-- Contributions Liberation Economique --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excise Tax</masterLabel>
+        <translation><!-- Excise Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSB Supervisory Levy</masterLabel>
+        <translation><!-- FSB Supervisory Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Excise Tax</masterLabel>
+        <translation><!-- Federal Excise Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Transaction Tax</masterLabel>
+        <translation><!-- Financial Transaction Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foreign Currency Exchange Tax</masterLabel>
+        <translation><!-- Foreign Currency Exchange Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foreign Exchange Fee</masterLabel>
+        <translation><!-- Foreign Exchange Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Goods and Services Tax</masterLabel>
+        <translation><!-- Goods and Services Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government Levy</masterLabel>
+        <translation><!-- Government Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IOF [Tax on Financial Transactions]</masterLabel>
+        <translation><!-- IOF [Tax on Financial Transactions] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Income Tax</masterLabel>
+        <translation><!-- Income Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Act Charge</masterLabel>
+        <translation><!-- Insurance Act Charge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Compensation Fund Levy</masterLabel>
+        <translation><!-- Insurance Compensation Fund Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Employees Pension Fund</masterLabel>
+        <translation><!-- Insurance Employees Pension Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Employees Pension Fund [Life]</masterLabel>
+        <translation><!-- Insurance Employees Pension Fund [Life] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Institute Levy</masterLabel>
+        <translation><!-- Insurance Institute Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Levy</masterLabel>
+        <translation><!-- Insurance Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Premium Tax</masterLabel>
+        <translation><!-- Insurance Premium Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Premium Tax 2.5%</masterLabel>
+        <translation><!-- Insurance Premium Tax 2.5% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Premium Tax 5%</masterLabel>
+        <translation><!-- Insurance Premium Tax 5% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Premium Tax [Fidelity]</masterLabel>
+        <translation><!-- Insurance Premium Tax [Fidelity] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Premium Tax [Licenced Insurer]</masterLabel>
+        <translation><!-- Insurance Premium Tax [Licenced Insurer] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Premium Tax [Local Intermediary]</masterLabel>
+        <translation><!-- Insurance Premium Tax [Local Intermediary] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Premium Tax [No Alberta Special Broker]</masterLabel>
+        <translation><!-- Insurance Premium Tax [No Alberta Special Broker] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Premium Tax [Unlicenced Insurer &amp; Special Broker]</masterLabel>
+        <translation><!-- Insurance Premium Tax [Unlicenced Insurer &amp; Special Broker] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Premium Tax [Unlicenced Insurer]</masterLabel>
+        <translation><!-- Insurance Premium Tax [Unlicenced Insurer] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Regulatory Levy</masterLabel>
+        <translation><!-- Insurance Regulatory Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Tax</masterLabel>
+        <translation><!-- Internal Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Levy to Finance Insurance Ombudsman</masterLabel>
+        <translation><!-- Levy to Finance Insurance Ombudsman --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Solidarity Fund</masterLabel>
+        <translation><!-- National Solidarity Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Life Insurance Tax</masterLabel>
+        <translation><!-- Non-Life Insurance Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premium Surcharge</masterLabel>
+        <translation><!-- Premium Surcharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provincial Sales Tax [Licenced Insurer]</masterLabel>
+        <translation><!-- Provincial Sales Tax [Licenced Insurer] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provincial Sales Tax [Unlicenced Insurer]</masterLabel>
+        <translation><!-- Provincial Sales Tax [Unlicenced Insurer] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinsurance Tax</masterLabel>
+        <translation><!-- Reinsurance Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remittance Tax</masterLabel>
+        <translation><!-- Remittance Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remittance Tax [Reduced Rate]</masterLabel>
+        <translation><!-- Remittance Tax [Reduced Rate] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Sales Tax [Licenced Insurer]</masterLabel>
+        <translation><!-- Retail Sales Tax [Licenced Insurer] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Sales Tax [Prior 1st July 2019]</masterLabel>
+        <translation><!-- Retail Sales Tax [Prior 1st July 2019] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Sales Tax [Unlicenced Insurer]</masterLabel>
+        <translation><!-- Retail Sales Tax [Unlicenced Insurer] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self Procurement [Oklahoma]</masterLabel>
+        <translation><!-- Self Procurement [Oklahoma] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Services Tax</masterLabel>
+        <translation><!-- Social Services Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solidarity Fund Levy</masterLabel>
+        <translation><!-- Solidarity Fund Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solidarity Fund for Victims of Extortion</masterLabel>
+        <translation><!-- Solidarity Fund for Victims of Extortion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stamp Duty</masterLabel>
+        <translation><!-- Stamp Duty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stamp Duty Additional</masterLabel>
+        <translation><!-- Stamp Duty Additional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stamp Duty [Disability &amp; Personal Accident]</masterLabel>
+        <translation><!-- Stamp Duty [Disability &amp; Personal Accident] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stamp Duty [Insured]</masterLabel>
+        <translation><!-- Stamp Duty [Insured] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stamp Duty [Insurer]</masterLabel>
+        <translation><!-- Stamp Duty [Insurer] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stamp Duty [New Policy]</masterLabel>
+        <translation><!-- Stamp Duty [New Policy] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stamp Duty [Professional Liability Occupations]</masterLabel>
+        <translation><!-- Stamp Duty [Professional Liability Occupations] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stamp Duty [Renewal Policy]</masterLabel>
+        <translation><!-- Stamp Duty [Renewal Policy] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stamping Fee New York</masterLabel>
+        <translation><!-- Stamping Fee New York --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Superintendencia de Seguros de la nacion [SSN] Levy</masterLabel>
+        <translation><!-- Superintendencia de Seguros de la nacion [SSN] Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervisory Levy</masterLabel>
+        <translation><!-- Supervisory Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surplus Lines Tax</masterLabel>
+        <translation><!-- Surplus Lines Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surplus Lines Tax California</masterLabel>
+        <translation><!-- Surplus Lines Tax California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surplus Lines Tax New York</masterLabel>
+        <translation><!-- Surplus Lines Tax New York --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Improvement Fund</masterLabel>
+        <translation><!-- Traffic Improvement Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turnover Tax</masterLabel>
+        <translation><!-- Turnover Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VAT</masterLabel>
+        <translation><!-- VAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VoE Tax</masterLabel>
+        <translation><!-- VoE Tax --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

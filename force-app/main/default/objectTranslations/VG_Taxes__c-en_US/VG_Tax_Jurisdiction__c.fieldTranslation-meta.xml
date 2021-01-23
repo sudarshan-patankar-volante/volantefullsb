@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tax Jurisdiction --></label>
+    <name>VG_Tax_Jurisdiction__c</name>
+    <picklistValues>
+        <masterLabel>AU</masterLabel>
+        <translation><!-- AU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Argentina</masterLabel>
+        <translation><!-- Argentina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia - Australian Capital Territory (ACT)</masterLabel>
+        <translation><!-- Australia - Australian Capital Territory (ACT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia - Jervis Bay Territory (JBT)</masterLabel>
+        <translation><!-- Australia - Jervis Bay Territory (JBT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia - New South Wales (NSW)</masterLabel>
+        <translation><!-- Australia - New South Wales (NSW) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia - Northern Territory (NT)</masterLabel>
+        <translation><!-- Australia - Northern Territory (NT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia - Queensland (QLD)</masterLabel>
+        <translation><!-- Australia - Queensland (QLD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia - South Australia (SA)</masterLabel>
+        <translation><!-- Australia - South Australia (SA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia - Tasmania (TAS)</masterLabel>
+        <translation><!-- Australia - Tasmania (TAS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia - Victoria (VIC)</masterLabel>
+        <translation><!-- Australia - Victoria (VIC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australia - Western Territory (WA)</masterLabel>
+        <translation><!-- Australia - Western Territory (WA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bonaire</masterLabel>
+        <translation><!-- Bonaire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brazil</masterLabel>
+        <translation><!-- Brazil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Alberta (AB)</masterLabel>
+        <translation><!-- Canada - Alberta (AB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - British Columbia (BC)</masterLabel>
+        <translation><!-- Canada - British Columbia (BC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Manitoba (MB)</masterLabel>
+        <translation><!-- Canada - Manitoba (MB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - New Brunswick (NB)</masterLabel>
+        <translation><!-- Canada - New Brunswick (NB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - NewFoundland and Labrador (NL)</masterLabel>
+        <translation><!-- Canada - NewFoundland and Labrador (NL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Northwest Territories (NT)</masterLabel>
+        <translation><!-- Canada - Northwest Territories (NT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Nova Scotia (NS)</masterLabel>
+        <translation><!-- Canada - Nova Scotia (NS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Nunavut (NU)</masterLabel>
+        <translation><!-- Canada - Nunavut (NU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Ontario (ON)</masterLabel>
+        <translation><!-- Canada - Ontario (ON) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Prince Edward Island (PE)</masterLabel>
+        <translation><!-- Canada - Prince Edward Island (PE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Quebec (QC)</masterLabel>
+        <translation><!-- Canada - Quebec (QC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Saskatchewan (SK)</masterLabel>
+        <translation><!-- Canada - Saskatchewan (SK) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada - Yukon (YT)</masterLabel>
+        <translation><!-- Canada - Yukon (YT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Curacao</masterLabel>
+        <translation><!-- Curacao --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DK</masterLabel>
+        <translation><!-- DK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dominica</masterLabel>
+        <translation><!-- Dominica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IN</masterLabel>
+        <translation><!-- IN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Libya</masterLabel>
+        <translation><!-- Libya --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mayotte</masterLabel>
+        <translation><!-- Mayotte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Myanmar</masterLabel>
+        <translation><!-- Myanmar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poland</masterLabel>
+        <translation><!-- Poland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunion Island</masterLabel>
+        <translation><!-- Reunion Island --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saint Kitts &amp; Nevis</masterLabel>
+        <translation><!-- Saint Kitts &amp; Nevis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sri Lanka</masterLabel>
+        <translation><!-- Sri Lanka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UK</masterLabel>
+        <translation><!-- UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USA</masterLabel>
+        <translation><!-- USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United States - Illinois (IL)</masterLabel>
+        <translation><!-- United States - Illinois (IL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United States - Kentucky (KY)</masterLabel>
+        <translation><!-- United States - Kentucky (KY) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pt_P4-PD Full Value Property incl USA --></label>
+    <name>Pt_P4_PD_Full_Value_Property_incl_USA__c</name>
+</CustomFieldTranslation>

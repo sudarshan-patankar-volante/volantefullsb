@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Adjustment_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Adjustment Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Good Risk</fullName>
+                <default>false</default>
+                <label>Good Risk</label>
+            </value>
+            <value>
+                <fullName>Bad Risk</fullName>
+                <default>false</default>
+                <label>Bad Risk</label>
+            </value>
+            <value>
+                <fullName>Broker Relationship</fullName>
+                <default>false</default>
+                <label>Broker Relationship</label>
+            </value>
+            <value>
+                <fullName>Customer Relationship</fullName>
+                <default>false</default>
+                <label>Customer Relationship</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

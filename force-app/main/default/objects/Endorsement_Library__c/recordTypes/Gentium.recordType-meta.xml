@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gentium</fullName>
+    <active>true</active>
+    <label>Gentium</label>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Add Assets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endorsements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk Details</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Endorsements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub-limits</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Product__c</picklist>
+        <values>
+            <fullName>All Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burglary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Interruption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Interruption due to Health Problems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Sample</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAR%2FEAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cistern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinical Trials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Combined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crisis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%26O</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Epidemic Disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escaping Liquid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extra Costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forklift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freeze %26 Refrigerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLPL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Aid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liability GL%2FPL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loss of Rent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery Breakdown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Accident%28visitor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Indemnity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robbery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Objects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

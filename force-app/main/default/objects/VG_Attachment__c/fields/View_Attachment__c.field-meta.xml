@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View_Attachment__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS($Api.Partner_Server_URL_290, &quot;Edison&quot;), HYPERLINK(&quot;/Edison/servlet/servlet.FileDownload?file=&quot;+ VG_Attachment__c , &quot;View Attachment&quot;), IF(CONTAINS($Api.Partner_Server_URL_290, &quot;Bridge&quot;), HYPERLINK(&quot;/Bridge/servlet/servlet.FileDownload?file=&quot;+ VG_Attachment__c , &quot;View Attachment&quot;),
+IF(CONTAINS($Api.Partner_Server_URL_290, &quot;LS&quot;), HYPERLINK(&quot;/LS/servlet/servlet.FileDownload?file=&quot;+ VG_Attachment__c , &quot;View Attachment&quot;), &quot;&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>View</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

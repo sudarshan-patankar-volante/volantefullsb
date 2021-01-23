@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MTA Type --></label>
+    <name>VG_MTA_Type__c</name>
+    <picklistValues>
+        <masterLabel>Cancellation</masterLabel>
+        <translation><!-- Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Declaration</masterLabel>
+        <translation><!-- Declaration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extension</masterLabel>
+        <translation><!-- Extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reduction</masterLabel>
+        <translation><!-- Reduction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revision of Cover</masterLabel>
+        <translation><!-- Revision of Cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Run-Off</masterLabel>
+        <translation><!-- Run-Off --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

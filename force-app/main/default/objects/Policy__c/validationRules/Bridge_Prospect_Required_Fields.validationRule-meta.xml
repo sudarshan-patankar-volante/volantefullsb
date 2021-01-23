@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_Prospect_Required_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( RecordType.Name =&apos;Bridge&apos;, ISPICKVAL( Policy_Status__c , &apos;Prospect&apos;) , OR( VG_Inception_Date__c ==null,ISBLANK(TEXT( CurrencyIsoCode ))) )</errorConditionFormula>
+    <errorMessage>Must enter value on Prospect Premium,Current Insurer,Inception Date,Currency</errorMessage>
+</ValidationRule>

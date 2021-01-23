@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Use__c</fullName>
+    <externalId>false</externalId>
+    <label>Use</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SD&amp;P</fullName>
+                <default>false</default>
+                <label>SD&amp;P</label>
+            </value>
+            <value>
+                <fullName>Hire &amp; Reward</fullName>
+                <default>false</default>
+                <label>Hire &amp; Reward</label>
+            </value>
+            <value>
+                <fullName>Private Hire</fullName>
+                <default>false</default>
+                <label>Private Hire</label>
+            </value>
+            <value>
+                <fullName>Public Hire</fullName>
+                <default>false</default>
+                <label>Public Hire</label>
+            </value>
+            <value>
+                <fullName>Own Goods</fullName>
+                <default>false</default>
+                <label>Own Goods</label>
+            </value>
+            <value>
+                <fullName>Business Use – Class 1</fullName>
+                <default>false</default>
+                <label>Business Use – Class 1</label>
+            </value>
+            <value>
+                <fullName>Business Use – Class 2</fullName>
+                <default>false</default>
+                <label>Business Use – Class 2</label>
+            </value>
+            <value>
+                <fullName>Business Use – Class 3</fullName>
+                <default>false</default>
+                <label>Business Use – Class 3</label>
+            </value>
+            <value>
+                <fullName>OBU</fullName>
+                <default>false</default>
+                <label>OBU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

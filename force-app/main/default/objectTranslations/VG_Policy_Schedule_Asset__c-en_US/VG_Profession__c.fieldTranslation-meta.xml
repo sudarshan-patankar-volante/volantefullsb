@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Profession --></label>
+    <name>VG_Profession__c</name>
+    <picklistValues>
+        <masterLabel>Audit, Accountancy, Company Tax - Financial Institutions</masterLabel>
+        <translation><!-- Audit, Accountancy, Company Tax - Financial Institutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit, Accountancy, Company Tax - Quoted Companies &amp; PLCs</masterLabel>
+        <translation><!-- Audit, Accountancy, Company Tax - Quoted Companies &amp; PLCs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit, Accountancy, Company Tax - Unquoted Companies</masterLabel>
+        <translation><!-- Audit, Accountancy, Company Tax - Unquoted Companies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computer Consultancy</masterLabel>
+        <translation><!-- Computer Consultancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Directorships</masterLabel>
+        <translation><!-- Directorships --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executorships &amp; Trusteeships</masterLabel>
+        <translation><!-- Executorships &amp; Trusteeships --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Accountancy &amp; Bookkeeping</masterLabel>
+        <translation><!-- General Accountancy &amp; Bookkeeping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generial Insurance Commissions</masterLabel>
+        <translation><!-- Generial Insurance Commissions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Individual Voluntary Arrangements</masterLabel>
+        <translation><!-- Individual Voluntary Arrangements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insolvency, Liquidiation  Receivership</masterLabel>
+        <translation><!-- Insolvency, Liquidiation  Receivership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management Consultancy</masterLabel>
+        <translation><!-- Management Consultancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mergers &amp; Acquisitions and Corporate Finance</masterLabel>
+        <translation><!-- Mergers &amp; Acquisitions and Corporate Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Investment Commissions</masterLabel>
+        <translation><!-- Other Investment Commissions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Work (High risk)</masterLabel>
+        <translation><!-- Other Work (High risk) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Work (Low risk)</masterLabel>
+        <translation><!-- Other Work (Low risk) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Work (Medium risk)</masterLabel>
+        <translation><!-- Other Work (Medium risk) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Taxation</masterLabel>
+        <translation><!-- Personal Taxation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretarial and Share registration</masterLabel>
+        <translation><!-- Secretarial and Share registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stock &amp; Share commissions</masterLabel>
+        <translation><!-- Stock &amp; Share commissions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBA</masterLabel>
+        <translation><!-- TBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax Mitigation Schemes</masterLabel>
+        <translation><!-- Tax Mitigation Schemes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

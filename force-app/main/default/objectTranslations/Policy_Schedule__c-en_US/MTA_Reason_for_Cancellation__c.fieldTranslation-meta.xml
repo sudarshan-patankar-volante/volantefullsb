@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Cancellation --></label>
+    <name>MTA_Reason_for_Cancellation__c</name>
+    <picklistValues>
+        <masterLabel>Alternative product purchased</masterLabel>
+        <translation><!-- Alternative product purchased --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover no longer required</masterLabel>
+        <translation><!-- Cover no longer required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover overlapped with pre-existing cover</masterLabel>
+        <translation><!-- Cover overlapped with pre-existing cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not known</masterLabel>
+        <translation><!-- Not known --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (administrative reason)</masterLabel>
+        <translation><!-- Other (administrative reason) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor service/complaint</masterLabel>
+        <translation><!-- Poor service/complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product cancelled by underwriter</masterLabel>
+        <translation><!-- Product cancelled by underwriter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product cancelled within cooling off period</masterLabel>
+        <translation><!-- Product cancelled within cooling off period --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product too expensive</masterLabel>
+        <translation><!-- Product too expensive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product unsuitable / misunderstood</masterLabel>
+        <translation><!-- Product unsuitable / misunderstood --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

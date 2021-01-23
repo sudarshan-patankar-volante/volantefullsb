@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Profession__c</fullName>
+    <externalId>false</externalId>
+    <label>Profession</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TBA</fullName>
+                <default>false</default>
+                <label>TBA</label>
+            </value>
+            <value>
+                <fullName>Audit, Accountancy, Company Tax - Quoted Companies &amp; PLCs</fullName>
+                <default>false</default>
+                <label>Audit, Accountancy, Company Tax - Quoted Companies &amp; PLCs</label>
+            </value>
+            <value>
+                <fullName>Audit, Accountancy, Company Tax - Financial Institutions</fullName>
+                <default>false</default>
+                <label>Audit, Accountancy, Company Tax - Financial Institutions</label>
+            </value>
+            <value>
+                <fullName>Audit, Accountancy, Company Tax - Unquoted Companies</fullName>
+                <default>false</default>
+                <label>Audit, Accountancy, Company Tax - Unquoted Companies</label>
+            </value>
+            <value>
+                <fullName>General Accountancy &amp; Bookkeeping</fullName>
+                <default>false</default>
+                <label>General Accountancy &amp; Bookkeeping</label>
+            </value>
+            <value>
+                <fullName>Personal Taxation</fullName>
+                <default>false</default>
+                <label>Personal Taxation</label>
+            </value>
+            <value>
+                <fullName>Insolvency, Liquidiation  Receivership</fullName>
+                <default>false</default>
+                <label>Insolvency, Liquidiation  Receivership</label>
+            </value>
+            <value>
+                <fullName>Mergers &amp; Acquisitions and Corporate Finance</fullName>
+                <default>false</default>
+                <label>Mergers &amp; Acquisitions and Corporate Finance</label>
+            </value>
+            <value>
+                <fullName>Secretarial and Share registration</fullName>
+                <default>false</default>
+                <label>Secretarial and Share registration</label>
+            </value>
+            <value>
+                <fullName>Executorships &amp; Trusteeships</fullName>
+                <default>false</default>
+                <label>Executorships &amp; Trusteeships</label>
+            </value>
+            <value>
+                <fullName>Directorships</fullName>
+                <default>false</default>
+                <label>Directorships</label>
+            </value>
+            <value>
+                <fullName>Generial Insurance Commissions</fullName>
+                <default>false</default>
+                <label>Generial Insurance Commissions</label>
+            </value>
+            <value>
+                <fullName>Stock &amp; Share commissions</fullName>
+                <default>false</default>
+                <label>Stock &amp; Share commissions</label>
+            </value>
+            <value>
+                <fullName>Other Investment Commissions</fullName>
+                <default>false</default>
+                <label>Other Investment Commissions</label>
+            </value>
+            <value>
+                <fullName>Management Consultancy</fullName>
+                <default>false</default>
+                <label>Management Consultancy</label>
+            </value>
+            <value>
+                <fullName>Computer Consultancy</fullName>
+                <default>false</default>
+                <label>Computer Consultancy</label>
+            </value>
+            <value>
+                <fullName>Individual Voluntary Arrangements</fullName>
+                <default>false</default>
+                <label>Individual Voluntary Arrangements</label>
+            </value>
+            <value>
+                <fullName>Tax Mitigation Schemes</fullName>
+                <default>false</default>
+                <label>Tax Mitigation Schemes</label>
+            </value>
+            <value>
+                <fullName>Other Work (Low risk)</fullName>
+                <default>false</default>
+                <label>Other Work (Low risk)</label>
+            </value>
+            <value>
+                <fullName>Other Work (Medium risk)</fullName>
+                <default>false</default>
+                <label>Other Work (Medium risk)</label>
+            </value>
+            <value>
+                <fullName>Other Work (High risk)</fullName>
+                <default>false</default>
+                <label>Other Work (High risk)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

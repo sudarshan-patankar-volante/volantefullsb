@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payload Manufacturer --></label>
+    <name>VG_Payload_Manufacturer__c</name>
+    <picklistValues>
+        <masterLabel>AIRBUS DEFENCE AND SPACE</masterLabel>
+        <translation><!-- AIRBUS DEFENCE AND SPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANTRIX</masterLabel>
+        <translation><!-- ANTRIX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING SATELLITE SYSTEMS</masterLabel>
+        <translation><!-- BOEING SATELLITE SYSTEMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAST</masterLabel>
+        <translation><!-- CAST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONAE</masterLabel>
+        <translation><!-- CONAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENERGYIA</masterLabel>
+        <translation><!-- ENERGYIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GILMOUR AEROSPACE</masterLabel>
+        <translation><!-- GILMOUR AEROSPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOMSPACE</masterLabel>
+        <translation><!-- GOMSPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IAI</masterLabel>
+        <translation><!-- IAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JSC RESHETNEV ISS</masterLabel>
+        <translation><!-- JSC RESHETNEV ISS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KARI - Korea Aerospace Research Institute</masterLabel>
+        <translation><!-- KARI - Korea Aerospace Research Institute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAVOCHKIN</masterLabel>
+        <translation><!-- LAVOCHKIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOCKHEED MARTIN CORPORATION</masterLabel>
+        <translation><!-- LOCKHEED MARTIN CORPORATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lockheed Martin Space Systems</masterLabel>
+        <translation><!-- Lockheed Martin Space Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAXAR (SSL)</masterLabel>
+        <translation><!-- MAXAR (SSL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDA</masterLabel>
+        <translation><!-- MDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MELCO</masterLabel>
+        <translation><!-- MELCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northrop Grumman Innovation Systems (NGIS)</masterLabel>
+        <translation><!-- Northrop Grumman Innovation Systems (NGIS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHB Italia</masterLabel>
+        <translation><!-- OHB Italia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ORBITAL ATK</masterLabel>
+        <translation><!-- ORBITAL ATK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SATREVOLUTION</masterLabel>
+        <translation><!-- SATREVOLUTION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SITAEL S.P.A.</masterLabel>
+        <translation><!-- SITAEL S.P.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEX</masterLabel>
+        <translation><!-- SPACEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSL</masterLabel>
+        <translation><!-- SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SURREY SATELLITES TECHNOLOGY</masterLabel>
+        <translation><!-- SURREY SATELLITES TECHNOLOGY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBA</masterLabel>
+        <translation><!-- TBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>THALES ALENIA SPACE</masterLabel>
+        <translation><!-- THALES ALENIA SPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIRGIN ORBIT</masterLabel>
+        <translation><!-- VIRGIN ORBIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VNIIEM</masterLabel>
+        <translation><!-- VNIIEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YORK SPACE SYSTEMS</masterLabel>
+        <translation><!-- YORK SPACE SYSTEMS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

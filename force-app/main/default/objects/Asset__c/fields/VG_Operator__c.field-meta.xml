@@ -1,0 +1,2111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Operator__c</fullName>
+    <externalId>false</externalId>
+    <label>Satellite Operator</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aalborg University</fullName>
+                <default>false</default>
+                <label>Aalborg University</label>
+            </value>
+            <value>
+                <fullName>Aalto University</fullName>
+                <default>false</default>
+                <label>Aalto University</label>
+            </value>
+            <value>
+                <fullName>Aarhus University</fullName>
+                <default>false</default>
+                <label>Aarhus University</label>
+            </value>
+            <value>
+                <fullName>ABAE - Venezuela (Bolivarian Agency for Space Activities)</fullName>
+                <default>false</default>
+                <label>ABAE - Venezuela (Bolivarian Agency for Space Activities)</label>
+            </value>
+            <value>
+                <fullName>ABS</fullName>
+                <default>false</default>
+                <label>ABS</label>
+            </value>
+            <value>
+                <fullName>ACAE/ITCR (Joint)</fullName>
+                <default>false</default>
+                <label>ACAE/ITCR (Joint)</label>
+            </value>
+            <value>
+                <fullName>Aeronautical Research and Test Institute (VZLU)</fullName>
+                <default>false</default>
+                <label>Aeronautical Research and Test Institute (VZLU)</label>
+            </value>
+            <value>
+                <fullName>AGENCE SPATIALE ALGERIENNE</fullName>
+                <default>false</default>
+                <label>AGENCE SPATIALE ALGERIENNE</label>
+            </value>
+            <value>
+                <fullName>Aichi University of Technology</fullName>
+                <default>false</default>
+                <label>Aichi University of Technology</label>
+            </value>
+            <value>
+                <fullName>Airbus Defence and Space Communications, Intelligence &amp; Security - CIS (Op.)</fullName>
+                <default>false</default>
+                <label>Airbus Defence and Space Communications, Intelligence &amp; Security - CIS (Op.)</label>
+            </value>
+            <value>
+                <fullName>Airbus Defence and Space GEO Intelligence (Op.)</fullName>
+                <default>false</default>
+                <label>Airbus Defence and Space GEO Intelligence (Op.)</label>
+            </value>
+            <value>
+                <fullName>Airbus Defence and Space Milsat Services GmbH (Op.)</fullName>
+                <default>false</default>
+                <label>Airbus Defence and Space Milsat Services GmbH (Op.)</label>
+            </value>
+            <value>
+                <fullName>AISTECH SPACE</fullName>
+                <default>false</default>
+                <label>AISTECH SPACE</label>
+            </value>
+            <value>
+                <fullName>Al-Farabi Kazakh National University (KazGU)</fullName>
+                <default>false</default>
+                <label>Al-Farabi Kazakh National University (KazGU)</label>
+            </value>
+            <value>
+                <fullName>All Nations University (ANUC)</fullName>
+                <default>false</default>
+                <label>All Nations University (ANUC)</label>
+            </value>
+            <value>
+                <fullName>American University of Sharjah (AUS)</fullName>
+                <default>false</default>
+                <label>American University of Sharjah (AUS)</label>
+            </value>
+            <value>
+                <fullName>AMSAT-C (China)/CAMSAT - Chinese Amateur Satellite</fullName>
+                <default>false</default>
+                <label>AMSAT-C (China)/CAMSAT - Chinese Amateur Satellite</label>
+            </value>
+            <value>
+                <fullName>AMSAT-NA (North America)</fullName>
+                <default>false</default>
+                <label>AMSAT-NA (North America)</label>
+            </value>
+            <value>
+                <fullName>AMSAT-NL</fullName>
+                <default>false</default>
+                <label>AMSAT-NL</label>
+            </value>
+            <value>
+                <fullName>AMSAT- Radio Amateur Satellite Corp. (HQ)</fullName>
+                <default>false</default>
+                <label>AMSAT- Radio Amateur Satellite Corp. (HQ)</label>
+            </value>
+            <value>
+                <fullName>Analytical Space</fullName>
+                <default>false</default>
+                <label>Analytical Space</label>
+            </value>
+            <value>
+                <fullName>Arabsat (Arab Satellite Communications Organisation)</fullName>
+                <default>false</default>
+                <label>Arabsat (Arab Satellite Communications Organisation)</label>
+            </value>
+            <value>
+                <fullName>ARSAT</fullName>
+                <default>false</default>
+                <label>ARSAT</label>
+            </value>
+            <value>
+                <fullName>Asgardia</fullName>
+                <default>false</default>
+                <label>Asgardia</label>
+            </value>
+            <value>
+                <fullName>ASI/CNES Joint</fullName>
+                <default>false</default>
+                <label>ASI/CNES Joint</label>
+            </value>
+            <value>
+                <fullName>Asiasat - Asia Satellite Telecommunications Co. Limited</fullName>
+                <default>false</default>
+                <label>Asiasat - Asia Satellite Telecommunications Co. Limited</label>
+            </value>
+            <value>
+                <fullName>Astranis Space Technologies</fullName>
+                <default>false</default>
+                <label>Astranis Space Technologies</label>
+            </value>
+            <value>
+                <fullName>Astrocast SA</fullName>
+                <default>false</default>
+                <label>Astrocast SA</label>
+            </value>
+            <value>
+                <fullName>Astro Digital</fullName>
+                <default>false</default>
+                <label>Astro Digital</label>
+            </value>
+            <value>
+                <fullName>AT&amp;T</fullName>
+                <default>false</default>
+                <label>AT&amp;T</label>
+            </value>
+            <value>
+                <fullName>ATSB - Astronautic Technology (M) Sdn. Bhd.</fullName>
+                <default>false</default>
+                <label>ATSB - Astronautic Technology (M) Sdn. Bhd.</label>
+            </value>
+            <value>
+                <fullName>Audacy Corp</fullName>
+                <default>false</default>
+                <label>Audacy Corp</label>
+            </value>
+            <value>
+                <fullName>Australian Ministry of Defence</fullName>
+                <default>false</default>
+                <label>Australian Ministry of Defence</label>
+            </value>
+            <value>
+                <fullName>AVANTI</fullName>
+                <default>false</default>
+                <label>AVANTI</label>
+            </value>
+            <value>
+                <fullName>AZERCOSMOS</fullName>
+                <default>false</default>
+                <label>AZERCOSMOS</label>
+            </value>
+            <value>
+                <fullName>Bangladesh Communication Satellite Company Limited (BCSCL)</fullName>
+                <default>false</default>
+                <label>Bangladesh Communication Satellite Company Limited (BCSCL)</label>
+            </value>
+            <value>
+                <fullName>Bank Rakyat Indonesia</fullName>
+                <default>false</default>
+                <label>Bank Rakyat Indonesia</label>
+            </value>
+            <value>
+                <fullName>BCT Mission Operations Center (Op.)</fullName>
+                <default>false</default>
+                <label>BCT Mission Operations Center (Op.)</label>
+            </value>
+            <value>
+                <fullName>Beijing Landview Mapping Information Co LTD (BLMIT)</fullName>
+                <default>false</default>
+                <label>Beijing Landview Mapping Information Co LTD (BLMIT)</label>
+            </value>
+            <value>
+                <fullName>Beijing Space View Technology Co Ltd</fullName>
+                <default>false</default>
+                <label>Beijing Space View Technology Co Ltd</label>
+            </value>
+            <value>
+                <fullName>Belarusian State University (BSU)</fullName>
+                <default>false</default>
+                <label>Belarusian State University (BSU)</label>
+            </value>
+            <value>
+                <fullName>BELINTERSAT</fullName>
+                <default>false</default>
+                <label>BELINTERSAT</label>
+            </value>
+            <value>
+                <fullName>Ben-Gurion University of the Negev</fullName>
+                <default>false</default>
+                <label>Ben-Gurion University of the Negev</label>
+            </value>
+            <value>
+                <fullName>Bhutan Ministry of Information and Communications (MOIC)</fullName>
+                <default>false</default>
+                <label>Bhutan Ministry of Information and Communications (MOIC)</label>
+            </value>
+            <value>
+                <fullName>Blue Origin LLC</fullName>
+                <default>false</default>
+                <label>Blue Origin LLC</label>
+            </value>
+            <value>
+                <fullName>Boeing Commercial Satellite Services (Op.)</fullName>
+                <default>false</default>
+                <label>Boeing Commercial Satellite Services (Op.)</label>
+            </value>
+            <value>
+                <fullName>BOEING SATELLITE SYSTEMS</fullName>
+                <default>false</default>
+                <label>BOEING SATELLITE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>Bolivarsat</fullName>
+                <default>false</default>
+                <label>Bolivarsat</label>
+            </value>
+            <value>
+                <fullName>BOLIVIA GOVERNMENT</fullName>
+                <default>false</default>
+                <label>BOLIVIA GOVERNMENT</label>
+            </value>
+            <value>
+                <fullName>BRAC University</fullName>
+                <default>false</default>
+                <label>BRAC University</label>
+            </value>
+            <value>
+                <fullName>Brown University</fullName>
+                <default>false</default>
+                <label>Brown University</label>
+            </value>
+            <value>
+                <fullName>B-SAT - Broadcasting Satellite System Corp</fullName>
+                <default>false</default>
+                <label>B-SAT - Broadcasting Satellite System Corp</label>
+            </value>
+            <value>
+                <fullName>Budapest University of Technology and Economics</fullName>
+                <default>false</default>
+                <label>Budapest University of Technology and Economics</label>
+            </value>
+            <value>
+                <fullName>Bulgaria Sat</fullName>
+                <default>false</default>
+                <label>Bulgaria Sat</label>
+            </value>
+            <value>
+                <fullName>California State University, Northridge (CSUN)</fullName>
+                <default>false</default>
+                <label>California State University, Northridge (CSUN)</label>
+            </value>
+            <value>
+                <fullName>Cal Poly Aerospace Engineering</fullName>
+                <default>false</default>
+                <label>Cal Poly Aerospace Engineering</label>
+            </value>
+            <value>
+                <fullName>Canadian Department of National Defence</fullName>
+                <default>false</default>
+                <label>Canadian Department of National Defence</label>
+            </value>
+            <value>
+                <fullName>Capella Space</fullName>
+                <default>false</default>
+                <label>Capella Space</label>
+            </value>
+            <value>
+                <fullName>Cape Peninsula University of Technology</fullName>
+                <default>false</default>
+                <label>Cape Peninsula University of Technology</label>
+            </value>
+            <value>
+                <fullName>CASC - China Aerospace Science and Technology Corp</fullName>
+                <default>false</default>
+                <label>CASC - China Aerospace Science and Technology Corp</label>
+            </value>
+            <value>
+                <fullName>CASIC - China Aerospace and Industry Corp.</fullName>
+                <default>false</default>
+                <label>CASIC - China Aerospace and Industry Corp.</label>
+            </value>
+            <value>
+                <fullName>CAST</fullName>
+                <default>false</default>
+                <label>CAST</label>
+            </value>
+            <value>
+                <fullName>Chang Guang Satellite Technology Ltd</fullName>
+                <default>false</default>
+                <label>Chang Guang Satellite Technology Ltd</label>
+            </value>
+            <value>
+                <fullName>Chiba Institute of Technology/Tohoku University JOINT</fullName>
+                <default>false</default>
+                <label>Chiba Institute of Technology/Tohoku University JOINT</label>
+            </value>
+            <value>
+                <fullName>Chilean Air Force (FACh)</fullName>
+                <default>false</default>
+                <label>Chilean Air Force (FACh)</label>
+            </value>
+            <value>
+                <fullName>China Academy of Sciences/National Space Science Center</fullName>
+                <default>false</default>
+                <label>China Academy of Sciences/National Space Science Center</label>
+            </value>
+            <value>
+                <fullName>China Satcom</fullName>
+                <default>false</default>
+                <label>China Satcom</label>
+            </value>
+            <value>
+                <fullName>China Satellite Surveying and Mapping Application Centre (SASMAC)</fullName>
+                <default>false</default>
+                <label>China Satellite Surveying and Mapping Application Centre (SASMAC)</label>
+            </value>
+            <value>
+                <fullName>China State Bureau of Surveying and Mapping</fullName>
+                <default>false</default>
+                <label>China State Bureau of Surveying and Mapping</label>
+            </value>
+            <value>
+                <fullName>China State Meteorological Administration</fullName>
+                <default>false</default>
+                <label>China State Meteorological Administration</label>
+            </value>
+            <value>
+                <fullName>Chinese Ministry of Defence</fullName>
+                <default>false</default>
+                <label>Chinese Ministry of Defence</label>
+            </value>
+            <value>
+                <fullName>Chinese National University of Defence Technology (NUDT)</fullName>
+                <default>false</default>
+                <label>Chinese National University of Defence Technology (NUDT)</label>
+            </value>
+            <value>
+                <fullName>Chosun University</fullName>
+                <default>false</default>
+                <label>Chosun University</label>
+            </value>
+            <value>
+                <fullName>Chungnam National University - CNU</fullName>
+                <default>false</default>
+                <label>Chungnam National University - CNU</label>
+            </value>
+            <value>
+                <fullName>City University of New York (CUNY)</fullName>
+                <default>false</default>
+                <label>City University of New York (CUNY)</label>
+            </value>
+            <value>
+                <fullName>CNES - Centre National d&apos;Etudes Spatiales</fullName>
+                <default>false</default>
+                <label>CNES - Centre National d&apos;Etudes Spatiales</label>
+            </value>
+            <value>
+                <fullName>CNSA/CNES Joint</fullName>
+                <default>false</default>
+                <label>CNSA/CNES Joint</label>
+            </value>
+            <value>
+                <fullName>CNSA - China National Space Administration</fullName>
+                <default>false</default>
+                <label>CNSA - China National Space Administration</label>
+            </value>
+            <value>
+                <fullName>College of Engineering Pune (COEP)</fullName>
+                <default>false</default>
+                <label>College of Engineering Pune (COEP)</label>
+            </value>
+            <value>
+                <fullName>Colombian Air Force (FAC)</fullName>
+                <default>false</default>
+                <label>Colombian Air Force (FAC)</label>
+            </value>
+            <value>
+                <fullName>CONIDA (Peruvian National Commission for Aerospace Research and Development)</fullName>
+                <default>false</default>
+                <label>CONIDA (Peruvian National Commission for Aerospace Research and Development)</label>
+            </value>
+            <value>
+                <fullName>ConsenSys - Space Division</fullName>
+                <default>false</default>
+                <label>ConsenSys - Space Division</label>
+            </value>
+            <value>
+                <fullName>Cornell University</fullName>
+                <default>false</default>
+                <label>Cornell University</label>
+            </value>
+            <value>
+                <fullName>DARPA - Defence and Advanced Research Projects Agency</fullName>
+                <default>false</default>
+                <label>DARPA - Defence and Advanced Research Projects Agency</label>
+            </value>
+            <value>
+                <fullName>Delft University of Technology (TU Delft)</fullName>
+                <default>false</default>
+                <label>Delft University of Technology (TU Delft)</label>
+            </value>
+            <value>
+                <fullName>DigitalGlobe Inc.</fullName>
+                <default>false</default>
+                <label>DigitalGlobe Inc.</label>
+            </value>
+            <value>
+                <fullName>DirecTV Inc.</fullName>
+                <default>false</default>
+                <label>DirecTV Inc.</label>
+            </value>
+            <value>
+                <fullName>DLR - Deutsches Zentrum fur Luft- und Raumfahrt</fullName>
+                <default>false</default>
+                <label>DLR - Deutsches Zentrum fur Luft- und Raumfahrt</label>
+            </value>
+            <value>
+                <fullName>DMC International Imaging Limited (DMC ii)</fullName>
+                <default>false</default>
+                <label>DMC International Imaging Limited (DMC ii)</label>
+            </value>
+            <value>
+                <fullName>DongFangHong (DFH) Satellite Company (Part of CAST)</fullName>
+                <default>false</default>
+                <label>DongFangHong (DFH) Satellite Company (Part of CAST)</label>
+            </value>
+            <value>
+                <fullName>DSTO (Australia) - Defence Science and Technology Organisation</fullName>
+                <default>false</default>
+                <label>DSTO (Australia) - Defence Science and Technology Organisation</label>
+            </value>
+            <value>
+                <fullName>EarthWatch Inc.</fullName>
+                <default>false</default>
+                <label>EarthWatch Inc.</label>
+            </value>
+            <value>
+                <fullName>EchoStar/SES Joint</fullName>
+                <default>false</default>
+                <label>EchoStar/SES Joint</label>
+            </value>
+            <value>
+                <fullName>EchoStar - Hughes Network Systems</fullName>
+                <default>false</default>
+                <label>EchoStar - Hughes Network Systems</label>
+            </value>
+            <value>
+                <fullName>EchoStar Satellite Services</fullName>
+                <default>false</default>
+                <label>EchoStar Satellite Services</label>
+            </value>
+            <value>
+                <fullName>Ecole Polytechnique</fullName>
+                <default>false</default>
+                <label>Ecole Polytechnique</label>
+            </value>
+            <value>
+                <fullName>Ecuadorian Civil Space Agency</fullName>
+                <default>false</default>
+                <label>Ecuadorian Civil Space Agency</label>
+            </value>
+            <value>
+                <fullName>EGYPT MOD</fullName>
+                <default>false</default>
+                <label>EGYPT MOD</label>
+            </value>
+            <value>
+                <fullName>Elysium Space Inc</fullName>
+                <default>false</default>
+                <label>Elysium Space Inc</label>
+            </value>
+            <value>
+                <fullName>EnduroSat AD</fullName>
+                <default>false</default>
+                <label>EnduroSat AD</label>
+            </value>
+            <value>
+                <fullName>Es&apos;Hailsat/ICT Qatar</fullName>
+                <default>false</default>
+                <label>Es&apos;Hailsat/ICT Qatar</label>
+            </value>
+            <value>
+                <fullName>EU GSA</fullName>
+                <default>false</default>
+                <label>EU GSA</label>
+            </value>
+            <value>
+                <fullName>EUMETSAT</fullName>
+                <default>false</default>
+                <label>EUMETSAT</label>
+            </value>
+            <value>
+                <fullName>Euro Broadband Infrastructure Sarl</fullName>
+                <default>false</default>
+                <label>Euro Broadband Infrastructure Sarl</label>
+            </value>
+            <value>
+                <fullName>EUROPEAN SPACE AGENCY ESA</fullName>
+                <default>false</default>
+                <label>EUROPEAN SPACE AGENCY ESA</label>
+            </value>
+            <value>
+                <fullName>Eutelsat S.A.</fullName>
+                <default>false</default>
+                <label>Eutelsat S.A.</label>
+            </value>
+            <value>
+                <fullName>exactEarth Ltd</fullName>
+                <default>false</default>
+                <label>exactEarth Ltd</label>
+            </value>
+            <value>
+                <fullName>Exseed Space</fullName>
+                <default>false</default>
+                <label>Exseed Space</label>
+            </value>
+            <value>
+                <fullName>FH Aachen, University of Applied Science</fullName>
+                <default>false</default>
+                <label>FH Aachen, University of Applied Science</label>
+            </value>
+            <value>
+                <fullName>Fleet Space Technologies</fullName>
+                <default>false</default>
+                <label>Fleet Space Technologies</label>
+            </value>
+            <value>
+                <fullName>French Ministry of Defence</fullName>
+                <default>false</default>
+                <label>French Ministry of Defence</label>
+            </value>
+            <value>
+                <fullName>FSpace Laboratory</fullName>
+                <default>false</default>
+                <label>FSpace Laboratory</label>
+            </value>
+            <value>
+                <fullName>Fukuoka Institute of Technology</fullName>
+                <default>false</default>
+                <label>Fukuoka Institute of Technology</label>
+            </value>
+            <value>
+                <fullName>GARYSH SAPARY</fullName>
+                <default>false</default>
+                <label>GARYSH SAPARY</label>
+            </value>
+            <value>
+                <fullName>GAUSS - Group of Astrodynamics for use of Space Systems</fullName>
+                <default>false</default>
+                <label>GAUSS - Group of Astrodynamics for use of Space Systems</label>
+            </value>
+            <value>
+                <fullName>GAZPROM</fullName>
+                <default>false</default>
+                <label>GAZPROM</label>
+            </value>
+            <value>
+                <fullName>GEO Optics LLC/Broadreach Engineering</fullName>
+                <default>false</default>
+                <label>GEO Optics LLC/Broadreach Engineering</label>
+            </value>
+            <value>
+                <fullName>Georgia Tech</fullName>
+                <default>false</default>
+                <label>Georgia Tech</label>
+            </value>
+            <value>
+                <fullName>German Ministry of Defence (BND)</fullName>
+                <default>false</default>
+                <label>German Ministry of Defence (BND)</label>
+            </value>
+            <value>
+                <fullName>German Orbital Systems GmbH</fullName>
+                <default>false</default>
+                <label>German Orbital Systems GmbH</label>
+            </value>
+            <value>
+                <fullName>Ghalam LLP (JV)</fullName>
+                <default>false</default>
+                <label>Ghalam LLP (JV)</label>
+            </value>
+            <value>
+                <fullName>GILMOUR AEROSPACE</fullName>
+                <default>false</default>
+                <label>GILMOUR AEROSPACE</label>
+            </value>
+            <value>
+                <fullName>GISTDA - GEO-Informatics &amp; Space Technology Development Agency</fullName>
+                <default>false</default>
+                <label>GISTDA - GEO-Informatics &amp; Space Technology Development Agency</label>
+            </value>
+            <value>
+                <fullName>GLOBAL IP</fullName>
+                <default>false</default>
+                <label>GLOBAL IP</label>
+            </value>
+            <value>
+                <fullName>Globalstar Inc</fullName>
+                <default>false</default>
+                <label>Globalstar Inc</label>
+            </value>
+            <value>
+                <fullName>GOMSPACE</fullName>
+                <default>false</default>
+                <label>GOMSPACE</label>
+            </value>
+            <value>
+                <fullName>GomSpace Operations (Op.)</fullName>
+                <default>false</default>
+                <label>GomSpace Operations (Op.)</label>
+            </value>
+            <value>
+                <fullName>Government of Mexico - SCT</fullName>
+                <default>false</default>
+                <label>Government of Mexico - SCT</label>
+            </value>
+            <value>
+                <fullName>Government of Morocco</fullName>
+                <default>false</default>
+                <label>Government of Morocco</label>
+            </value>
+            <value>
+                <fullName>Government of USSR (Soviet Union)</fullName>
+                <default>false</default>
+                <label>Government of USSR (Soviet Union)</label>
+            </value>
+            <value>
+                <fullName>Guoxing Yuhang Technology Co Ltd (ADA Space)</fullName>
+                <default>false</default>
+                <label>Guoxing Yuhang Technology Co Ltd (ADA Space)</label>
+            </value>
+            <value>
+                <fullName>Hankuk/Korea Aviation University</fullName>
+                <default>false</default>
+                <label>Hankuk/Korea Aviation University</label>
+            </value>
+            <value>
+                <fullName>Harbin Institute of Technology (HIT)</fullName>
+                <default>false</default>
+                <label>Harbin Institute of Technology (HIT)</label>
+            </value>
+            <value>
+                <fullName>Harris Satellite Operations Center (HSOC) (Op.)</fullName>
+                <default>false</default>
+                <label>Harris Satellite Operations Center (HSOC) (Op.)</label>
+            </value>
+            <value>
+                <fullName>Havelsan</fullName>
+                <default>false</default>
+                <label>Havelsan</label>
+            </value>
+            <value>
+                <fullName>Helios Wire</fullName>
+                <default>false</default>
+                <label>Helios Wire</label>
+            </value>
+            <value>
+                <fullName>Hellas-Sat S.A.</fullName>
+                <default>false</default>
+                <label>Hellas-Sat S.A.</label>
+            </value>
+            <value>
+                <fullName>Herzliya Science Centre - Space Laboratory</fullName>
+                <default>false</default>
+                <label>Herzliya Science Centre - Space Laboratory</label>
+            </value>
+            <value>
+                <fullName>HiberGlobal</fullName>
+                <default>false</default>
+                <label>HiberGlobal</label>
+            </value>
+            <value>
+                <fullName>High Performance Space Structures (HPS)</fullName>
+                <default>false</default>
+                <label>High Performance Space Structures (HPS)</label>
+            </value>
+            <value>
+                <fullName>HISDESAT</fullName>
+                <default>false</default>
+                <label>HISDESAT</label>
+            </value>
+            <value>
+                <fullName>Hispamar Satellites S.A.</fullName>
+                <default>false</default>
+                <label>Hispamar Satellites S.A.</label>
+            </value>
+            <value>
+                <fullName>Hispasat S.A.</fullName>
+                <default>false</default>
+                <label>Hispasat S.A.</label>
+            </value>
+            <value>
+                <fullName>Horizons Satellite Holdings LLC</fullName>
+                <default>false</default>
+                <label>Horizons Satellite Holdings LLC</label>
+            </value>
+            <value>
+                <fullName>IAI</fullName>
+                <default>false</default>
+                <label>IAI</label>
+            </value>
+            <value>
+                <fullName>ICEYE</fullName>
+                <default>false</default>
+                <label>ICEYE</label>
+            </value>
+            <value>
+                <fullName>Indosat Ooredoo (PT Indosat)</fullName>
+                <default>false</default>
+                <label>Indosat Ooredoo (PT Indosat)</label>
+            </value>
+            <value>
+                <fullName>INMARSAT</fullName>
+                <default>false</default>
+                <label>INMARSAT</label>
+            </value>
+            <value>
+                <fullName>INPE - Centro Regional Sul de Pesquisas Espaciais (CRS)</fullName>
+                <default>false</default>
+                <label>INPE - Centro Regional Sul de Pesquisas Espaciais (CRS)</label>
+            </value>
+            <value>
+                <fullName>INPE - Instituto Nacional de Pesquisas Espaciais</fullName>
+                <default>false</default>
+                <label>INPE - Instituto Nacional de Pesquisas Espaciais</label>
+            </value>
+            <value>
+                <fullName>Instituto TecnolÃ³gico de AeronÃ¡utica</fullName>
+                <default>false</default>
+                <label>Instituto TecnolÃ³gico de AeronÃ¡utica</label>
+            </value>
+            <value>
+                <fullName>INTA - Instituto Nacional De Tecnica Aerospacial</fullName>
+                <default>false</default>
+                <label>INTA - Instituto Nacional De Tecnica Aerospacial</label>
+            </value>
+            <value>
+                <fullName>INTELSAT</fullName>
+                <default>false</default>
+                <label>INTELSAT</label>
+            </value>
+            <value>
+                <fullName>Iraqi Ministry of Higher Education and Scientific Research</fullName>
+                <default>false</default>
+                <label>Iraqi Ministry of Higher Education and Scientific Research</label>
+            </value>
+            <value>
+                <fullName>IRIDIUM</fullName>
+                <default>false</default>
+                <label>IRIDIUM</label>
+            </value>
+            <value>
+                <fullName>Irvine Public Schools Foundation (IPSF)</fullName>
+                <default>false</default>
+                <label>Irvine Public Schools Foundation (IPSF)</label>
+            </value>
+            <value>
+                <fullName>ISA/CNES Joint</fullName>
+                <default>false</default>
+                <label>ISA/CNES Joint</label>
+            </value>
+            <value>
+                <fullName>ISIS BV - Innovative Solutions in Space</fullName>
+                <default>false</default>
+                <label>ISIS BV - Innovative Solutions in Space</label>
+            </value>
+            <value>
+                <fullName>ISRO</fullName>
+                <default>false</default>
+                <label>ISRO</label>
+            </value>
+            <value>
+                <fullName>Istanbul Technical University/KIT JOINT</fullName>
+                <default>false</default>
+                <label>Istanbul Technical University/KIT JOINT</label>
+            </value>
+            <value>
+                <fullName>Istanbul Technical University/Turkish Air Force Academy Joint</fullName>
+                <default>false</default>
+                <label>Istanbul Technical University/Turkish Air Force Academy Joint</label>
+            </value>
+            <value>
+                <fullName>Istanbul Technical University (ITU)</fullName>
+                <default>false</default>
+                <label>Istanbul Technical University (ITU)</label>
+            </value>
+            <value>
+                <fullName>Italian Ministry of Defence</fullName>
+                <default>false</default>
+                <label>Italian Ministry of Defence</label>
+            </value>
+            <value>
+                <fullName>JAPANESE AVIATION INSURANCE POOL</fullName>
+                <default>false</default>
+                <label>JAPANESE AVIATION INSURANCE POOL</label>
+            </value>
+            <value>
+                <fullName>Japanese Cabinet Satellite Intelligence Center (CSICE)</fullName>
+                <default>false</default>
+                <label>Japanese Cabinet Satellite Intelligence Center (CSICE)</label>
+            </value>
+            <value>
+                <fullName>Japanese Ministry of Land, Infrastructure, Transport and Tourism (MLIT)</fullName>
+                <default>false</default>
+                <label>Japanese Ministry of Land, Infrastructure, Transport and Tourism (MLIT)</label>
+            </value>
+            <value>
+                <fullName>Japan Meteorological Agency (JMA)</fullName>
+                <default>false</default>
+                <label>Japan Meteorological Agency (JMA)</label>
+            </value>
+            <value>
+                <fullName>JAXA - Japan Aerospace Exploration Agency</fullName>
+                <default>false</default>
+                <label>JAXA - Japan Aerospace Exploration Agency</label>
+            </value>
+            <value>
+                <fullName>JLT</fullName>
+                <default>false</default>
+                <label>JLT</label>
+            </value>
+            <value>
+                <fullName>Johns Hopkins Applied Physics Laboratory</fullName>
+                <default>false</default>
+                <label>Johns Hopkins Applied Physics Laboratory</label>
+            </value>
+            <value>
+                <fullName>Jordan University of Science and Technology (JUST)</fullName>
+                <default>false</default>
+                <label>Jordan University of Science and Technology (JUST)</label>
+            </value>
+            <value>
+                <fullName>JSAT Corp</fullName>
+                <default>false</default>
+                <label>JSAT Corp</label>
+            </value>
+            <value>
+                <fullName>JSC Gonets SatCom</fullName>
+                <default>false</default>
+                <label>JSC Gonets SatCom</label>
+            </value>
+            <value>
+                <fullName>JSC Voentelecom</fullName>
+                <default>false</default>
+                <label>JSC Voentelecom</label>
+            </value>
+            <value>
+                <fullName>kacific</fullName>
+                <default>false</default>
+                <label>kacific</label>
+            </value>
+            <value>
+                <fullName>Kagoshima University</fullName>
+                <default>false</default>
+                <label>Kagoshima University</label>
+            </value>
+            <value>
+                <fullName>KAIST (SaTReC)</fullName>
+                <default>false</default>
+                <label>KAIST (SaTReC)</label>
+            </value>
+            <value>
+                <fullName>Kansas University</fullName>
+                <default>false</default>
+                <label>Kansas University</label>
+            </value>
+            <value>
+                <fullName>KARI - Korea Aerospace Research Institute</fullName>
+                <default>false</default>
+                <label>KARI - Korea Aerospace Research Institute</label>
+            </value>
+            <value>
+                <fullName>KAZAKHSTAN GOVERNMENT</fullName>
+                <default>false</default>
+                <label>KAZAKHSTAN GOVERNMENT</label>
+            </value>
+            <value>
+                <fullName>Kepler Communications</fullName>
+                <default>false</default>
+                <label>Kepler Communications</label>
+            </value>
+            <value>
+                <fullName>Khalifa University (KUSTAR)</fullName>
+                <default>false</default>
+                <label>Khalifa University (KUSTAR)</label>
+            </value>
+            <value>
+                <fullName>King Mongkut&apos;s University of Technology North Bangkok (KMUTNB)</fullName>
+                <default>false</default>
+                <label>King Mongkut&apos;s University of Technology North Bangkok (KMUTNB)</label>
+            </value>
+            <value>
+                <fullName>Korea Aerospace University - KAU</fullName>
+                <default>false</default>
+                <label>Korea Aerospace University - KAU</label>
+            </value>
+            <value>
+                <fullName>KOSMOTRAS</fullName>
+                <default>false</default>
+                <label>KOSMOTRAS</label>
+            </value>
+            <value>
+                <fullName>KT Corp/Korean Agency for Defence Development Joint</fullName>
+                <default>false</default>
+                <label>KT Corp/Korean Agency for Defence Development Joint</label>
+            </value>
+            <value>
+                <fullName>KT CORPORATION</fullName>
+                <default>false</default>
+                <label>KT CORPORATION</label>
+            </value>
+            <value>
+                <fullName>KT Sat</fullName>
+                <default>false</default>
+                <label>KT Sat</label>
+            </value>
+            <value>
+                <fullName>Kyung Hee University</fullName>
+                <default>false</default>
+                <label>Kyung Hee University</label>
+            </value>
+            <value>
+                <fullName>Kyushu Institute of Technology (KIT)</fullName>
+                <default>false</default>
+                <label>Kyushu Institute of Technology (KIT)</label>
+            </value>
+            <value>
+                <fullName>Kyushu Institute of Technology (KIT)/Nanyang Technological University (JOINT)</fullName>
+                <default>false</default>
+                <label>Kyushu Institute of Technology (KIT)/Nanyang Technological University (JOINT)</label>
+            </value>
+            <value>
+                <fullName>Lambda Team</fullName>
+                <default>false</default>
+                <label>Lambda Team</label>
+            </value>
+            <value>
+                <fullName>LaoSat 1 Joint Venture Company</fullName>
+                <default>false</default>
+                <label>LaoSat 1 Joint Venture Company</label>
+            </value>
+            <value>
+                <fullName>LaserFleet</fullName>
+                <default>false</default>
+                <label>LaserFleet</label>
+            </value>
+            <value>
+                <fullName>Lawrence Livermore National Laboratory</fullName>
+                <default>false</default>
+                <label>Lawrence Livermore National Laboratory</label>
+            </value>
+            <value>
+                <fullName>LinkSpace Aerospace Technology Group</fullName>
+                <default>false</default>
+                <label>LinkSpace Aerospace Technology Group</label>
+            </value>
+            <value>
+                <fullName>Lithuanian Space Association</fullName>
+                <default>false</default>
+                <label>Lithuanian Space Association</label>
+            </value>
+            <value>
+                <fullName>LOCKHEED MARTIN CORPORATION</fullName>
+                <default>false</default>
+                <label>LOCKHEED MARTIN CORPORATION</label>
+            </value>
+            <value>
+                <fullName>Los Alamos National Laboratory</fullName>
+                <default>false</default>
+                <label>Los Alamos National Laboratory</label>
+            </value>
+            <value>
+                <fullName>Los Angeles County Museum Of Art (LACMA)</fullName>
+                <default>false</default>
+                <label>Los Angeles County Museum Of Art (LACMA)</label>
+            </value>
+            <value>
+                <fullName>Lulea University of Technology</fullName>
+                <default>false</default>
+                <label>Lulea University of Technology</label>
+            </value>
+            <value>
+                <fullName>Luxembourg Directorate of Defence</fullName>
+                <default>false</default>
+                <label>Luxembourg Directorate of Defence</label>
+            </value>
+            <value>
+                <fullName>LuxGovSat</fullName>
+                <default>false</default>
+                <label>LuxGovSat</label>
+            </value>
+            <value>
+                <fullName>MARSH</fullName>
+                <default>false</default>
+                <label>MARSH</label>
+            </value>
+            <value>
+                <fullName>MAXAR (SSL)</fullName>
+                <default>false</default>
+                <label>MAXAR (SSL)</label>
+            </value>
+            <value>
+                <fullName>MDA</fullName>
+                <default>false</default>
+                <label>MDA</label>
+            </value>
+            <value>
+                <fullName>MEASAT SATELLITE SYSTEMS</fullName>
+                <default>false</default>
+                <label>MEASAT SATELLITE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>Meggiorin Group</fullName>
+                <default>false</default>
+                <label>Meggiorin Group</label>
+            </value>
+            <value>
+                <fullName>Meisei Electric Co Ltd</fullName>
+                <default>false</default>
+                <label>Meisei Electric Co Ltd</label>
+            </value>
+            <value>
+                <fullName>Micro-NST (Beijing Micro-Nano Star Technology Co. Ltd)</fullName>
+                <default>false</default>
+                <label>Micro-NST (Beijing Micro-Nano Star Technology Co. Ltd)</label>
+            </value>
+            <value>
+                <fullName>Microspace Rapid Systems</fullName>
+                <default>false</default>
+                <label>Microspace Rapid Systems</label>
+            </value>
+            <value>
+                <fullName>Millennium Space Systems</fullName>
+                <default>false</default>
+                <label>Millennium Space Systems</label>
+            </value>
+            <value>
+                <fullName>Mines ParisTech (ENSMP)</fullName>
+                <default>false</default>
+                <label>Mines ParisTech (ENSMP)</label>
+            </value>
+            <value>
+                <fullName>MIT Lincoln Laboratory</fullName>
+                <default>false</default>
+                <label>MIT Lincoln Laboratory</label>
+            </value>
+            <value>
+                <fullName>MIT SSL (Space Systems Laboratory)</fullName>
+                <default>false</default>
+                <label>MIT SSL (Space Systems Laboratory)</label>
+            </value>
+            <value>
+                <fullName>Montana State University</fullName>
+                <default>false</default>
+                <label>Montana State University</label>
+            </value>
+            <value>
+                <fullName>Morehead State University</fullName>
+                <default>false</default>
+                <label>Morehead State University</label>
+            </value>
+            <value>
+                <fullName>Moscow Aviation Institute</fullName>
+                <default>false</default>
+                <label>Moscow Aviation Institute</label>
+            </value>
+            <value>
+                <fullName>Mullard Space Science Laboratory, UCL</fullName>
+                <default>false</default>
+                <label>Mullard Space Science Laboratory, UCL</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Nanjing University of Science and Technology</fullName>
+                <default>false</default>
+                <label>Nanjing University of Science and Technology</label>
+            </value>
+            <value>
+                <fullName>Nanosatisfi LLC</fullName>
+                <default>false</default>
+                <label>Nanosatisfi LLC</label>
+            </value>
+            <value>
+                <fullName>Nanyang Technological University (NTU)</fullName>
+                <default>false</default>
+                <label>Nanyang Technological University (NTU)</label>
+            </value>
+            <value>
+                <fullName>Narvik University</fullName>
+                <default>false</default>
+                <label>Narvik University</label>
+            </value>
+            <value>
+                <fullName>NASA/DLR Joint</fullName>
+                <default>false</default>
+                <label>NASA/DLR Joint</label>
+            </value>
+            <value>
+                <fullName>NASA (National Aeronautics and Space Administration)</fullName>
+                <default>false</default>
+                <label>NASA (National Aeronautics and Space Administration)</label>
+            </value>
+            <value>
+                <fullName>NASA Ames Research Center</fullName>
+                <default>false</default>
+                <label>NASA Ames Research Center</label>
+            </value>
+            <value>
+                <fullName>NASA Goddard Space Flight Center (GSFC)</fullName>
+                <default>false</default>
+                <label>NASA Goddard Space Flight Center (GSFC)</label>
+            </value>
+            <value>
+                <fullName>NASA JPL - Jet Propulsion Laboratory</fullName>
+                <default>false</default>
+                <label>NASA JPL - Jet Propulsion Laboratory</label>
+            </value>
+            <value>
+                <fullName>NASRDA - Nigerian National Space Research and Development Agency</fullName>
+                <default>false</default>
+                <label>NASRDA - Nigerian National Space Research and Development Agency</label>
+            </value>
+            <value>
+                <fullName>National Cheng Kung University (NCKU)</fullName>
+                <default>false</default>
+                <label>National Cheng Kung University (NCKU)</label>
+            </value>
+            <value>
+                <fullName>National Satellite Ocean Application Service, China (NSOAS)</fullName>
+                <default>false</default>
+                <label>National Satellite Ocean Application Service, China (NSOAS)</label>
+            </value>
+            <value>
+                <fullName>National Technical University of Ukraine/Shenyang Aerospace University Joint</fullName>
+                <default>false</default>
+                <label>National Technical University of Ukraine/Shenyang Aerospace University Joint</label>
+            </value>
+            <value>
+                <fullName>National Technical University of Ukraine (NTUU KPI)</fullName>
+                <default>false</default>
+                <label>National Technical University of Ukraine (NTUU KPI)</label>
+            </value>
+            <value>
+                <fullName>National University of Mongolia (NUM)</fullName>
+                <default>false</default>
+                <label>National University of Mongolia (NUM)</label>
+            </value>
+            <value>
+                <fullName>National University of Singapore</fullName>
+                <default>false</default>
+                <label>National University of Singapore</label>
+            </value>
+            <value>
+                <fullName>Nevada Museum of Art</fullName>
+                <default>false</default>
+                <label>Nevada Museum of Art</label>
+            </value>
+            <value>
+                <fullName>New ICO</fullName>
+                <default>false</default>
+                <label>New ICO</label>
+            </value>
+            <value>
+                <fullName>NGIS Operations (Op.)</fullName>
+                <default>false</default>
+                <label>NGIS Operations (Op.)</label>
+            </value>
+            <value>
+                <fullName>NHK (Nippon Hoso Kyokai)</fullName>
+                <default>false</default>
+                <label>NHK (Nippon Hoso Kyokai)</label>
+            </value>
+            <value>
+                <fullName>NIGERIA COM SAT</fullName>
+                <default>false</default>
+                <label>NIGERIA COM SAT</label>
+            </value>
+            <value>
+                <fullName>Nigerian Federal University of Technology Akure (FUTA)</fullName>
+                <default>false</default>
+                <label>Nigerian Federal University of Technology Akure (FUTA)</label>
+            </value>
+            <value>
+                <fullName>Nihon University</fullName>
+                <default>false</default>
+                <label>Nihon University</label>
+            </value>
+            <value>
+                <fullName>Nilesat</fullName>
+                <default>false</default>
+                <label>Nilesat</label>
+            </value>
+            <value>
+                <fullName>NOAA - National Oceanic &amp; Atmospheric Administration</fullName>
+                <default>false</default>
+                <label>NOAA - National Oceanic &amp; Atmospheric Administration</label>
+            </value>
+            <value>
+                <fullName>Northrop Grumman NovaWorks</fullName>
+                <default>false</default>
+                <label>Northrop Grumman NovaWorks</label>
+            </value>
+            <value>
+                <fullName>Northwestern Polytechnical University (NPU)</fullName>
+                <default>false</default>
+                <label>Northwestern Polytechnical University (NPU)</label>
+            </value>
+            <value>
+                <fullName>Northwest Nazarene University (NNU)</fullName>
+                <default>false</default>
+                <label>Northwest Nazarene University (NNU)</label>
+            </value>
+            <value>
+                <fullName>Norwegian Space Centre (NSC)</fullName>
+                <default>false</default>
+                <label>Norwegian Space Centre (NSC)</label>
+            </value>
+            <value>
+                <fullName>NRL Satellite Tracking Facility (Op.)</fullName>
+                <default>false</default>
+                <label>NRL Satellite Tracking Facility (Op.)</label>
+            </value>
+            <value>
+                <fullName>NRO/US Special Operations Command Joint</fullName>
+                <default>false</default>
+                <label>NRO/US Special Operations Command Joint</label>
+            </value>
+            <value>
+                <fullName>NRO - National Reconnaissance Office</fullName>
+                <default>false</default>
+                <label>NRO - National Reconnaissance Office</label>
+            </value>
+            <value>
+                <fullName>NTT Docomo Inc</fullName>
+                <default>false</default>
+                <label>NTT Docomo Inc</label>
+            </value>
+            <value>
+                <fullName>OHB-System Operations (Op.)</fullName>
+                <default>false</default>
+                <label>OHB-System Operations (Op.)</label>
+            </value>
+            <value>
+                <fullName>Oneweb</fullName>
+                <default>false</default>
+                <label>Oneweb</label>
+            </value>
+            <value>
+                <fullName>Open Source Satellite Initiative</fullName>
+                <default>false</default>
+                <label>Open Source Satellite Initiative</label>
+            </value>
+            <value>
+                <fullName>Optus Communications Pty Ltd</fullName>
+                <default>false</default>
+                <label>Optus Communications Pty Ltd</label>
+            </value>
+            <value>
+                <fullName>Orbital ATK Space Operations (Op.)</fullName>
+                <default>false</default>
+                <label>Orbital ATK Space Operations (Op.)</label>
+            </value>
+            <value>
+                <fullName>Osaka Prefecture University</fullName>
+                <default>false</default>
+                <label>Osaka Prefecture University</label>
+            </value>
+            <value>
+                <fullName>Overhorizon</fullName>
+                <default>false</default>
+                <label>Overhorizon</label>
+            </value>
+            <value>
+                <fullName>Pakistan Space &amp; Upper Atmosphere Research Commission (SUPARCO)</fullName>
+                <default>false</default>
+                <label>Pakistan Space &amp; Upper Atmosphere Research Commission (SUPARCO)</label>
+            </value>
+            <value>
+                <fullName>Panamsat Corp</fullName>
+                <default>false</default>
+                <label>Panamsat Corp</label>
+            </value>
+            <value>
+                <fullName>PEASSS Consortium</fullName>
+                <default>false</default>
+                <label>PEASSS Consortium</label>
+            </value>
+            <value>
+                <fullName>Pennsylvania State University (PSU)</fullName>
+                <default>false</default>
+                <label>Pennsylvania State University (PSU)</label>
+            </value>
+            <value>
+                <fullName>Planet</fullName>
+                <default>false</default>
+                <label>Planet</label>
+            </value>
+            <value>
+                <fullName>Planetary Resources</fullName>
+                <default>false</default>
+                <label>Planetary Resources</label>
+            </value>
+            <value>
+                <fullName>Polytechnic School of Lausanne (EPFL)</fullName>
+                <default>false</default>
+                <label>Polytechnic School of Lausanne (EPFL)</label>
+            </value>
+            <value>
+                <fullName>Polytechnic University of Catalonia (UPC)</fullName>
+                <default>false</default>
+                <label>Polytechnic University of Catalonia (UPC)</label>
+            </value>
+            <value>
+                <fullName>Polytechnic University of Turin</fullName>
+                <default>false</default>
+                <label>Polytechnic University of Turin</label>
+            </value>
+            <value>
+                <fullName>Project Biarri</fullName>
+                <default>false</default>
+                <label>Project Biarri</label>
+            </value>
+            <value>
+                <fullName>PSN</fullName>
+                <default>false</default>
+                <label>PSN</label>
+            </value>
+            <value>
+                <fullName>PT Telekomunikasi Indonesia Tbk (PT Telkom)</fullName>
+                <default>false</default>
+                <label>PT Telekomunikasi Indonesia Tbk (PT Telkom)</label>
+            </value>
+            <value>
+                <fullName>Pumpkin Inc.</fullName>
+                <default>false</default>
+                <label>Pumpkin Inc.</label>
+            </value>
+            <value>
+                <fullName>Q RE</fullName>
+                <default>false</default>
+                <label>Q RE</label>
+            </value>
+            <value>
+                <fullName>Quan Tu Tong Co</fullName>
+                <default>false</default>
+                <label>Quan Tu Tong Co</label>
+            </value>
+            <value>
+                <fullName>RascomStar</fullName>
+                <default>false</default>
+                <label>RascomStar</label>
+            </value>
+            <value>
+                <fullName>Reaktor Radio Archive</fullName>
+                <default>false</default>
+                <label>Reaktor Radio Archive</label>
+            </value>
+            <value>
+                <fullName>Republic of Korea Air Force Academy</fullName>
+                <default>false</default>
+                <label>Republic of Korea Air Force Academy</label>
+            </value>
+            <value>
+                <fullName>Rome University Aerospace Research Centre</fullName>
+                <default>false</default>
+                <label>Rome University Aerospace Research Centre</label>
+            </value>
+            <value>
+                <fullName>Rosaviakosmos</fullName>
+                <default>false</default>
+                <label>Rosaviakosmos</label>
+            </value>
+            <value>
+                <fullName>ROSCOSMOS</fullName>
+                <default>false</default>
+                <label>ROSCOSMOS</label>
+            </value>
+            <value>
+                <fullName>Roscosmos Space Agency</fullName>
+                <default>false</default>
+                <label>Roscosmos Space Agency</label>
+            </value>
+            <value>
+                <fullName>Rowan University</fullName>
+                <default>false</default>
+                <label>Rowan University</label>
+            </value>
+            <value>
+                <fullName>RSA - Russian Space Agency</fullName>
+                <default>false</default>
+                <label>RSA - Russian Space Agency</label>
+            </value>
+            <value>
+                <fullName>RSCC</fullName>
+                <default>false</default>
+                <label>RSCC</label>
+            </value>
+            <value>
+                <fullName>Russian Ministry of Defence - VKS</fullName>
+                <default>false</default>
+                <label>Russian Ministry of Defence - VKS</label>
+            </value>
+            <value>
+                <fullName>Ryman Satellite Project (RSP)</fullName>
+                <default>false</default>
+                <label>Ryman Satellite Project (RSP)</label>
+            </value>
+            <value>
+                <fullName>Salish Kootenai College</fullName>
+                <default>false</default>
+                <label>Salish Kootenai College</label>
+            </value>
+            <value>
+                <fullName>Samara State Aerospace University (SSAU)</fullName>
+                <default>false</default>
+                <label>Samara State Aerospace University (SSAU)</label>
+            </value>
+            <value>
+                <fullName>San Jose State University</fullName>
+                <default>false</default>
+                <label>San Jose State University</label>
+            </value>
+            <value>
+                <fullName>San Jose State University/University of Idaho Joint</fullName>
+                <default>false</default>
+                <label>San Jose State University/University of Idaho Joint</label>
+            </value>
+            <value>
+                <fullName>SANSA - South African National Space Agency</fullName>
+                <default>false</default>
+                <label>SANSA - South African National Space Agency</label>
+            </value>
+            <value>
+                <fullName>Satellogic SA</fullName>
+                <default>false</default>
+                <label>Satellogic SA</label>
+            </value>
+            <value>
+                <fullName>Sathyabama University</fullName>
+                <default>false</default>
+                <label>Sathyabama University</label>
+            </value>
+            <value>
+                <fullName>SATREVOLUTION</fullName>
+                <default>false</default>
+                <label>SATREVOLUTION</label>
+            </value>
+            <value>
+                <fullName>SCS Space</fullName>
+                <default>false</default>
+                <label>SCS Space</label>
+            </value>
+            <value>
+                <fullName>Seoul National University</fullName>
+                <default>false</default>
+                <label>Seoul National University</label>
+            </value>
+            <value>
+                <fullName>SERC - Space Engineering Research Center</fullName>
+                <default>false</default>
+                <label>SERC - Space Engineering Research Center</label>
+            </value>
+            <value>
+                <fullName>SES</fullName>
+                <default>false</default>
+                <label>SES</label>
+            </value>
+            <value>
+                <fullName>Shanghai University of Science and Technology</fullName>
+                <default>false</default>
+                <label>Shanghai University of Science and Technology</label>
+            </value>
+            <value>
+                <fullName>Shenzhen (DFH) Aerospace Spacesat Company</fullName>
+                <default>false</default>
+                <label>Shenzhen (DFH) Aerospace Spacesat Company</label>
+            </value>
+            <value>
+                <fullName>Shizuoka University</fullName>
+                <default>false</default>
+                <label>Shizuoka University</label>
+            </value>
+            <value>
+                <fullName>Singapore Telecommunications Limited (Singtel)</fullName>
+                <default>false</default>
+                <label>Singapore Telecommunications Limited (Singtel)</label>
+            </value>
+            <value>
+                <fullName>Singtel Optus Pty Limited</fullName>
+                <default>false</default>
+                <label>Singtel Optus Pty Limited</label>
+            </value>
+            <value>
+                <fullName>SITAEL S.P.A.</fullName>
+                <default>false</default>
+                <label>SITAEL S.P.A.</label>
+            </value>
+            <value>
+                <fullName>Sky and Space Global (SAS)</fullName>
+                <default>false</default>
+                <label>Sky and Space Global (SAS)</label>
+            </value>
+            <value>
+                <fullName>SKY Perfect</fullName>
+                <default>false</default>
+                <label>SKY Perfect</label>
+            </value>
+            <value>
+                <fullName>SKYRORA</fullName>
+                <default>false</default>
+                <label>SKYRORA</label>
+            </value>
+            <value>
+                <fullName>Slovak Organization for Space Activities (SOSA)</fullName>
+                <default>false</default>
+                <label>Slovak Organization for Space Activities (SOSA)</label>
+            </value>
+            <value>
+                <fullName>Soka University</fullName>
+                <default>false</default>
+                <label>Soka University</label>
+            </value>
+            <value>
+                <fullName>Southern Stars</fullName>
+                <default>false</default>
+                <label>Southern Stars</label>
+            </value>
+            <value>
+                <fullName>Soviet Ministry of Defence (MOP)</fullName>
+                <default>false</default>
+                <label>Soviet Ministry of Defence (MOP)</label>
+            </value>
+            <value>
+                <fullName>Space Communications Corp (SSC)</fullName>
+                <default>false</default>
+                <label>Space Communications Corp (SSC)</label>
+            </value>
+            <value>
+                <fullName>Space Dynamics Laboratory (Part of Utah State Univ Research Foundation)</fullName>
+                <default>false</default>
+                <label>Space Dynamics Laboratory (Part of Utah State Univ Research Foundation)</label>
+            </value>
+            <value>
+                <fullName>SPACEIL</fullName>
+                <default>false</default>
+                <label>SPACEIL</label>
+            </value>
+            <value>
+                <fullName>SpacePharma SA</fullName>
+                <default>false</default>
+                <label>SpacePharma SA</label>
+            </value>
+            <value>
+                <fullName>SpaceQuest Satellite Operations (Op.)</fullName>
+                <default>false</default>
+                <label>SpaceQuest Satellite Operations (Op.)</label>
+            </value>
+            <value>
+                <fullName>SpaceTY (Commercial arm of Tiangyi Research Institute)</fullName>
+                <default>false</default>
+                <label>SpaceTY (Commercial arm of Tiangyi Research Institute)</label>
+            </value>
+            <value>
+                <fullName>SPACEX</fullName>
+                <default>false</default>
+                <label>SPACEX</label>
+            </value>
+            <value>
+                <fullName>SpaceX - Flight Operations (Op.)</fullName>
+                <default>false</default>
+                <label>SpaceX - Flight Operations (Op.)</label>
+            </value>
+            <value>
+                <fullName>Spire - SatOps (Op.)</fullName>
+                <default>false</default>
+                <label>Spire - SatOps (Op.)</label>
+            </value>
+            <value>
+                <fullName>SPUTNIX Ltd</fullName>
+                <default>false</default>
+                <label>SPUTNIX Ltd</label>
+            </value>
+            <value>
+                <fullName>SRI International</fullName>
+                <default>false</default>
+                <label>SRI International</label>
+            </value>
+            <value>
+                <fullName>SSTL Satellite Operations Centre (Op.)</fullName>
+                <default>false</default>
+                <label>SSTL Satellite Operations Centre (Op.)</label>
+            </value>
+            <value>
+                <fullName>Stanford University/NASA Ames</fullName>
+                <default>false</default>
+                <label>Stanford University/NASA Ames</label>
+            </value>
+            <value>
+                <fullName>Star One S.A</fullName>
+                <default>false</default>
+                <label>Star One S.A</label>
+            </value>
+            <value>
+                <fullName>Stellenbosch University</fullName>
+                <default>false</default>
+                <label>Stellenbosch University</label>
+            </value>
+            <value>
+                <fullName>St Thomas More Cathedral School</fullName>
+                <default>false</default>
+                <label>St Thomas More Cathedral School</label>
+            </value>
+            <value>
+                <fullName>Swarm Technologies</fullName>
+                <default>false</default>
+                <label>Swarm Technologies</label>
+            </value>
+            <value>
+                <fullName>SWSU - South-West State University (YuZGU)</fullName>
+                <default>false</default>
+                <label>SWSU - South-West State University (YuZGU)</label>
+            </value>
+            <value>
+                <fullName>Tama Art University</fullName>
+                <default>false</default>
+                <label>Tama Art University</label>
+            </value>
+            <value>
+                <fullName>TBA</fullName>
+                <default>false</default>
+                <label>TBA</label>
+            </value>
+            <value>
+                <fullName>Technical University of Berlin (TU Berlin)</fullName>
+                <default>false</default>
+                <label>Technical University of Berlin (TU Berlin)</label>
+            </value>
+            <value>
+                <fullName>Technical University of Denmark (DTU)</fullName>
+                <default>false</default>
+                <label>Technical University of Denmark (DTU)</label>
+            </value>
+            <value>
+                <fullName>Technical University of Dresden</fullName>
+                <default>false</default>
+                <label>Technical University of Dresden</label>
+            </value>
+            <value>
+                <fullName>Technical University of Munich (TUM)</fullName>
+                <default>false</default>
+                <label>Technical University of Munich (TUM)</label>
+            </value>
+            <value>
+                <fullName>Teenagers Amateur Radio Center of Activity, Huaian</fullName>
+                <default>false</default>
+                <label>Teenagers Amateur Radio Center of Activity, Huaian</label>
+            </value>
+            <value>
+                <fullName>Telebras</fullName>
+                <default>false</default>
+                <label>Telebras</label>
+            </value>
+            <value>
+                <fullName>Telenor Satellite AS</fullName>
+                <default>false</default>
+                <label>Telenor Satellite AS</label>
+            </value>
+            <value>
+                <fullName>Telesat</fullName>
+                <default>false</default>
+                <label>Telesat</label>
+            </value>
+            <value>
+                <fullName>Telesat/APT Satellite Holdings Joint</fullName>
+                <default>false</default>
+                <label>Telesat/APT Satellite Holdings Joint</label>
+            </value>
+            <value>
+                <fullName>Thaicom PCL</fullName>
+                <default>false</default>
+                <label>Thaicom PCL</label>
+            </value>
+            <value>
+                <fullName>The Aerospace Corporation</fullName>
+                <default>false</default>
+                <label>The Aerospace Corporation</label>
+            </value>
+            <value>
+                <fullName>The Planetary Society</fullName>
+                <default>false</default>
+                <label>The Planetary Society</label>
+            </value>
+            <value>
+                <fullName>The Weiss School</fullName>
+                <default>false</default>
+                <label>The Weiss School</label>
+            </value>
+            <value>
+                <fullName>Tiangyi Research Institute - Changsha</fullName>
+                <default>false</default>
+                <label>Tiangyi Research Institute - Changsha</label>
+            </value>
+            <value>
+                <fullName>Tohoku University</fullName>
+                <default>false</default>
+                <label>Tohoku University</label>
+            </value>
+            <value>
+                <fullName>Tokyo Institute of Technology</fullName>
+                <default>false</default>
+                <label>Tokyo Institute of Technology</label>
+            </value>
+            <value>
+                <fullName>Tsinghua (Qinghua) University</fullName>
+                <default>false</default>
+                <label>Tsinghua (Qinghua) University</label>
+            </value>
+            <value>
+                <fullName>Turkish Ministry of National Defence (MSB)</fullName>
+                <default>false</default>
+                <label>Turkish Ministry of National Defence (MSB)</label>
+            </value>
+            <value>
+                <fullName>Turkmenistan National Space Agency (TNSA)</fullName>
+                <default>false</default>
+                <label>Turkmenistan National Space Agency (TNSA)</label>
+            </value>
+            <value>
+                <fullName>Turksat AS</fullName>
+                <default>false</default>
+                <label>Turksat AS</label>
+            </value>
+            <value>
+                <fullName>Turk Telekom</fullName>
+                <default>false</default>
+                <label>Turk Telekom</label>
+            </value>
+            <value>
+                <fullName>Tyvak Nano-Satellite Systems Inc</fullName>
+                <default>false</default>
+                <label>Tyvak Nano-Satellite Systems Inc</label>
+            </value>
+            <value>
+                <fullName>United States Coast Guard (USCG)</fullName>
+                <default>false</default>
+                <label>United States Coast Guard (USCG)</label>
+            </value>
+            <value>
+                <fullName>Universidad Alas Peruanas</fullName>
+                <default>false</default>
+                <label>Universidad Alas Peruanas</label>
+            </value>
+            <value>
+                <fullName>Universidad del Turabo</fullName>
+                <default>false</default>
+                <label>Universidad del Turabo</label>
+            </value>
+            <value>
+                <fullName>Universidad Nacional Ingenieria, Peru</fullName>
+                <default>false</default>
+                <label>Universidad Nacional Ingenieria, Peru</label>
+            </value>
+            <value>
+                <fullName>Universita Degli Studi Di Roma - La Sapienza</fullName>
+                <default>false</default>
+                <label>Universita Degli Studi Di Roma - La Sapienza</label>
+            </value>
+            <value>
+                <fullName>Universiti Teknologi MARA</fullName>
+                <default>false</default>
+                <label>Universiti Teknologi MARA</label>
+            </value>
+            <value>
+                <fullName>University of Alberta</fullName>
+                <default>false</default>
+                <label>University of Alberta</label>
+            </value>
+            <value>
+                <fullName>University of Applied Sciences, Wiener Neustadt</fullName>
+                <default>false</default>
+                <label>University of Applied Sciences, Wiener Neustadt</label>
+            </value>
+            <value>
+                <fullName>University of Arizona</fullName>
+                <default>false</default>
+                <label>University of Arizona</label>
+            </value>
+            <value>
+                <fullName>University of Brasilia (Serpens Consortium)</fullName>
+                <default>false</default>
+                <label>University of Brasilia (Serpens Consortium)</label>
+            </value>
+            <value>
+                <fullName>University of Bucharest</fullName>
+                <default>false</default>
+                <label>University of Bucharest</label>
+            </value>
+            <value>
+                <fullName>University of California, Berkeley</fullName>
+                <default>false</default>
+                <label>University of California, Berkeley</label>
+            </value>
+            <value>
+                <fullName>University of California, Los Angeles (UCLA)</fullName>
+                <default>false</default>
+                <label>University of California, Los Angeles (UCLA)</label>
+            </value>
+            <value>
+                <fullName>University of Central Florida (UCF)</fullName>
+                <default>false</default>
+                <label>University of Central Florida (UCF)</label>
+            </value>
+            <value>
+                <fullName>University of Chile - SPEL</fullName>
+                <default>false</default>
+                <label>University of Chile - SPEL</label>
+            </value>
+            <value>
+                <fullName>University of Colorado</fullName>
+                <default>false</default>
+                <label>University of Colorado</label>
+            </value>
+            <value>
+                <fullName>University of Hawai&apos;i at Manoa</fullName>
+                <default>false</default>
+                <label>University of Hawai&apos;i at Manoa</label>
+            </value>
+            <value>
+                <fullName>University of Illinois</fullName>
+                <default>false</default>
+                <label>University of Illinois</label>
+            </value>
+            <value>
+                <fullName>University of Kentucky</fullName>
+                <default>false</default>
+                <label>University of Kentucky</label>
+            </value>
+            <value>
+                <fullName>University of Michigan</fullName>
+                <default>false</default>
+                <label>University of Michigan</label>
+            </value>
+            <value>
+                <fullName>University of Montpellier 2</fullName>
+                <default>false</default>
+                <label>University of Montpellier 2</label>
+            </value>
+            <value>
+                <fullName>University of Nairobi</fullName>
+                <default>false</default>
+                <label>University of Nairobi</label>
+            </value>
+            <value>
+                <fullName>University of New South Wales</fullName>
+                <default>false</default>
+                <label>University of New South Wales</label>
+            </value>
+            <value>
+                <fullName>University of North Carolina</fullName>
+                <default>false</default>
+                <label>University of North Carolina</label>
+            </value>
+            <value>
+                <fullName>University of Patras</fullName>
+                <default>false</default>
+                <label>University of Patras</label>
+            </value>
+            <value>
+                <fullName>University of Southern Indiana</fullName>
+                <default>false</default>
+                <label>University of Southern Indiana</label>
+            </value>
+            <value>
+                <fullName>University of Surrey - Surrey Space Centre</fullName>
+                <default>false</default>
+                <label>University of Surrey - Surrey Space Centre</label>
+            </value>
+            <value>
+                <fullName>University of Sydney</fullName>
+                <default>false</default>
+                <label>University of Sydney</label>
+            </value>
+            <value>
+                <fullName>University of Texas - Austin</fullName>
+                <default>false</default>
+                <label>University of Texas - Austin</label>
+            </value>
+            <value>
+                <fullName>University of the Philippines - Diliman</fullName>
+                <default>false</default>
+                <label>University of the Philippines - Diliman</label>
+            </value>
+            <value>
+                <fullName>University of Tokyo</fullName>
+                <default>false</default>
+                <label>University of Tokyo</label>
+            </value>
+            <value>
+                <fullName>University of Tsukuba</fullName>
+                <default>false</default>
+                <label>University of Tsukuba</label>
+            </value>
+            <value>
+                <fullName>University of Vigo</fullName>
+                <default>false</default>
+                <label>University of Vigo</label>
+            </value>
+            <value>
+                <fullName>University of Wurzburg</fullName>
+                <default>false</default>
+                <label>University of Wurzburg</label>
+            </value>
+            <value>
+                <fullName>UNSEENLABS</fullName>
+                <default>false</default>
+                <label>UNSEENLABS</label>
+            </value>
+            <value>
+                <fullName>UrtheCast Corp</fullName>
+                <default>false</default>
+                <label>UrtheCast Corp</label>
+            </value>
+            <value>
+                <fullName>Urumqi 20 High School</fullName>
+                <default>false</default>
+                <label>Urumqi 20 High School</label>
+            </value>
+            <value>
+                <fullName>US Air Force</fullName>
+                <default>false</default>
+                <label>US Air Force</label>
+            </value>
+            <value>
+                <fullName>US Air Force Research Laboratory (AFRL)</fullName>
+                <default>false</default>
+                <label>US Air Force Research Laboratory (AFRL)</label>
+            </value>
+            <value>
+                <fullName>US Army Space and Missile Defence Command</fullName>
+                <default>false</default>
+                <label>US Army Space and Missile Defence Command</label>
+            </value>
+            <value>
+                <fullName>US Department of Defense (DoD)</fullName>
+                <default>false</default>
+                <label>US Department of Defense (DoD)</label>
+            </value>
+            <value>
+                <fullName>US Geological Survey</fullName>
+                <default>false</default>
+                <label>US Geological Survey</label>
+            </value>
+            <value>
+                <fullName>US Naval Academy</fullName>
+                <default>false</default>
+                <label>US Naval Academy</label>
+            </value>
+            <value>
+                <fullName>US Naval Academy/George Washington University</fullName>
+                <default>false</default>
+                <label>US Naval Academy/George Washington University</label>
+            </value>
+            <value>
+                <fullName>US Naval Research Laboratory (NRL)</fullName>
+                <default>false</default>
+                <label>US Naval Research Laboratory (NRL)</label>
+            </value>
+            <value>
+                <fullName>US Navy</fullName>
+                <default>false</default>
+                <label>US Navy</label>
+            </value>
+            <value>
+                <fullName>US Navy Postgraduate School (NPS)</fullName>
+                <default>false</default>
+                <label>US Navy Postgraduate School (NPS)</label>
+            </value>
+            <value>
+                <fullName>Utah State University</fullName>
+                <default>false</default>
+                <label>Utah State University</label>
+            </value>
+            <value>
+                <fullName>UTIAS Space Flight Laboratory</fullName>
+                <default>false</default>
+                <label>UTIAS Space Flight Laboratory</label>
+            </value>
+            <value>
+                <fullName>Vanderbilt University</fullName>
+                <default>false</default>
+                <label>Vanderbilt University</label>
+            </value>
+            <value>
+                <fullName>Viasat Inc</fullName>
+                <default>false</default>
+                <label>Viasat Inc</label>
+            </value>
+            <value>
+                <fullName>Vietnam Academy for Science and Technology (VAST)</fullName>
+                <default>false</default>
+                <label>Vietnam Academy for Science and Technology (VAST)</label>
+            </value>
+            <value>
+                <fullName>Vietnam Post and Telecommunications Corp</fullName>
+                <default>false</default>
+                <label>Vietnam Post and Telecommunications Corp</label>
+            </value>
+            <value>
+                <fullName>Vilnius University</fullName>
+                <default>false</default>
+                <label>Vilnius University</label>
+            </value>
+            <value>
+                <fullName>VIRGIN ORBIT</fullName>
+                <default>false</default>
+                <label>VIRGIN ORBIT</label>
+            </value>
+            <value>
+                <fullName>VNSC (Vietnam National Satellite Center)</fullName>
+                <default>false</default>
+                <label>VNSC (Vietnam National Satellite Center)</label>
+            </value>
+            <value>
+                <fullName>Wakayama University</fullName>
+                <default>false</default>
+                <label>Wakayama University</label>
+            </value>
+            <value>
+                <fullName>Warsaw Polytechnic</fullName>
+                <default>false</default>
+                <label>Warsaw Polytechnic</label>
+            </value>
+            <value>
+                <fullName>Waseda University</fullName>
+                <default>false</default>
+                <label>Waseda University</label>
+            </value>
+            <value>
+                <fullName>Wuhan University</fullName>
+                <default>false</default>
+                <label>Wuhan University</label>
+            </value>
+            <value>
+                <fullName>Xtar LLC</fullName>
+                <default>false</default>
+                <label>Xtar LLC</label>
+            </value>
+            <value>
+                <fullName>Yahsat - Al Yah Satellite Communications Co</fullName>
+                <default>false</default>
+                <label>Yahsat - Al Yah Satellite Communications Co</label>
+            </value>
+            <value>
+                <fullName>Yonsei University</fullName>
+                <default>false</default>
+                <label>Yonsei University</label>
+            </value>
+            <value>
+                <fullName>YORK SPACE SYSTEMS</fullName>
+                <default>false</default>
+                <label>YORK SPACE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>Zhejiang Li Yi (LiTong) Electronic Technology Co</fullName>
+                <default>false</default>
+                <label>Zhejiang Li Yi (LiTong) Electronic Technology Co</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Launcher Manufacturer --></label>
+    <name>VG_Prime_Manufacturer__c</name>
+    <picklistValues>
+        <masterLabel>AIRBUS DEFENCE AND SPACE</masterLabel>
+        <translation><!-- AIRBUS DEFENCE AND SPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blue Origin LLC</masterLabel>
+        <translation><!-- Blue Origin LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CALT</masterLabel>
+        <translation><!-- CALT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GILMOUR AEROSPACE</masterLabel>
+        <translation><!-- GILMOUR AEROSPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IHI Corporation</masterLabel>
+        <translation><!-- IHI Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISRO</masterLabel>
+        <translation><!-- ISRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KHRUNICHEV</masterLabel>
+        <translation><!-- KHRUNICHEV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOCKHEED MARTIN CORPORATION</masterLabel>
+        <translation><!-- LOCKHEED MARTIN CORPORATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MHI</masterLabel>
+        <translation><!-- MHI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northrop Grumman Innovation Systems (NGIS)</masterLabel>
+        <translation><!-- Northrop Grumman Innovation Systems (NGIS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROGRESS ROCKET SPACE CENTRE</masterLabel>
+        <translation><!-- PROGRESS ROCKET SPACE CENTRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROCKET LAB</masterLabel>
+        <translation><!-- ROCKET LAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SKYRORA</masterLabel>
+        <translation><!-- SKYRORA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEX</masterLabel>
+        <translation><!-- SPACEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBA</masterLabel>
+        <translation><!-- TBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIRGIN ORBIT</masterLabel>
+        <translation><!-- VIRGIN ORBIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YUZHNOYE</masterLabel>
+        <translation><!-- YUZHNOYE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

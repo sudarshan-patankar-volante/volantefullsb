@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pt_P6_PD_XS_Layer_Property_incl_USA__c</fullName>
+    <externalId>false</externalId>
+    <label>Pt_P6-PD XS Layer Property incl USA</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

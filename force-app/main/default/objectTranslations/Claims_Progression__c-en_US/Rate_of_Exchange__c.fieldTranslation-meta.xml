@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rate of Exchange --></label>
+    <name>Rate_of_Exchange__c</name>
+    <picklistValues>
+        <masterLabel>Ex1</masterLabel>
+        <translation><!-- Ex1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ex2</masterLabel>
+        <translation><!-- Ex2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Co-Insurance Parent --></label>
+    <name>VG_Co_Insurance_Parent__c</name>
+    <relationshipLabel><!-- Policy Schedules (Co-Insurance Parent) --></relationshipLabel>
+</CustomFieldTranslation>

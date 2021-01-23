@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Type__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Record Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aesir</fullName>
+                <default>true</default>
+                <label>Aesir</label>
+            </value>
+            <value>
+                <fullName>Affinity</fullName>
+                <default>false</default>
+                <label>Affinity</label>
+            </value>
+            <value>
+                <fullName>Bridge</fullName>
+                <default>false</default>
+                <label>Bridge</label>
+            </value>
+            <value>
+                <fullName>Edison Motor</fullName>
+                <default>false</default>
+                <label>Edison Motor</label>
+            </value>
+            <value>
+                <fullName>Gentium</fullName>
+                <default>false</default>
+                <label>Gentium</label>
+            </value>
+            <value>
+                <fullName>Horizon</fullName>
+                <default>false</default>
+                <label>Horizon</label>
+            </value>
+            <value>
+                <fullName>Imara</fullName>
+                <default>false</default>
+                <label>Imara</label>
+            </value>
+            <value>
+                <fullName>VCL</fullName>
+                <default>false</default>
+                <label>VCL</label>
+            </value>
+            <value>
+                <fullName>VFP</fullName>
+                <default>false</default>
+                <label>VFP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

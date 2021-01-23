@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Profession__c</fullName>
+    <externalId>false</externalId>
+    <label>Profession</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accountants</fullName>
+                <default>false</default>
+                <label>Accountants</label>
+            </value>
+            <value>
+                <fullName>Architects</fullName>
+                <default>false</default>
+                <label>Architects</label>
+            </value>
+            <value>
+                <fullName>Design and Construction - High Risk</fullName>
+                <default>false</default>
+                <label>Design and Construction - High Risk</label>
+            </value>
+            <value>
+                <fullName>Design and Construction - Med Risk</fullName>
+                <default>false</default>
+                <label>Design and Construction - Med Risk</label>
+            </value>
+            <value>
+                <fullName>Design and Construction - Low Risk</fullName>
+                <default>false</default>
+                <label>Design and Construction - Low Risk</label>
+            </value>
+            <value>
+                <fullName>Employment Agents</fullName>
+                <default>false</default>
+                <label>Employment Agents</label>
+            </value>
+            <value>
+                <fullName>Engineers</fullName>
+                <default>false</default>
+                <label>Engineers</label>
+            </value>
+            <value>
+                <fullName>Insurance Brokers</fullName>
+                <default>false</default>
+                <label>Insurance Brokers</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Lloyd&apos;s Brokers</fullName>
+                <default>false</default>
+                <label>Lloyd&apos;s Brokers</label>
+            </value>
+            <value>
+                <fullName>Management Consultants</fullName>
+                <default>false</default>
+                <label>Management Consultants</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>MGAs</fullName>
+                <default>false</default>
+                <label>MGAs</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Solicitors</fullName>
+                <default>false</default>
+                <label>Solicitors</label>
+            </value>
+            <value>
+                <fullName>Surveyors</fullName>
+                <default>false</default>
+                <label>Surveyors</label>
+            </value>
+            <value>
+                <fullName>Design and Construction</fullName>
+                <default>false</default>
+                <label>Design and Construction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

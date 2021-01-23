@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assets</value>
+    </caseValues>
+    <layouts>
+        <layout>Aesir Asset Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Further Information --></label>
+            <section>Further Information</section>
+        </sections>
+        <sections>
+            <label><!-- General --></label>
+            <section>General</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Asset Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Bridge Asset Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Affinity --></label>
+        <name>Affinity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Nordics Property --></label>
+        <name>VG_Nordics_Property</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- VG_BulkUploadAssets --></label>
+        <name>VG_BulkUploadAssets</name>
+    </webLinks>
+</CustomObjectTranslation>

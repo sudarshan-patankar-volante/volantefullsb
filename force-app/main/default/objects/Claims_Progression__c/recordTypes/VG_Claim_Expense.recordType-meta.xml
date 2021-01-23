@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Claim_Expense</fullName>
+    <active>true</active>
+    <label>Claim Expense</label>
+    <picklistValues>
+        <picklist>Original_Currency__c</picklist>
+        <values>
+            <fullName>EUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rate_of_Exchange__c</picklist>
+        <values>
+            <fullName>Ex1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Foam supression system? --></label>
+    <name>VG_Foam_supression_system__c</name>
+    <picklistValues>
+        <masterLabel>High Level</masterLabel>
+        <translation><!-- High Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low level</masterLabel>
+        <translation><!-- Low level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medium Level</masterLabel>
+        <translation><!-- Medium Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

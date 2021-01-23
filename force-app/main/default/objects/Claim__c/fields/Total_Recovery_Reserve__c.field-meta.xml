@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Recovery_Reserve__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Recovery Reserve</label>
+    <summarizedField>Claims_Schedule__c.Total_Recovery_Reserve__c</summarizedField>
+    <summaryForeignKey>Claims_Schedule__c.Claim__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

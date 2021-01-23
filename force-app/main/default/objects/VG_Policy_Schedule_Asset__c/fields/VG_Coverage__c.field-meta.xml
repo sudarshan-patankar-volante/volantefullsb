@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Coverage__c</fullName>
+    <externalId>false</externalId>
+    <label>Coverage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>M3 - Fully Comprehensive</fullName>
+                <default>false</default>
+                <label>M3 - Fully Comprehensive</label>
+            </value>
+            <value>
+                <fullName>M6 - Third Party Fire &amp; Theft</fullName>
+                <default>false</default>
+                <label>M6 - Third Party Fire &amp; Theft</label>
+            </value>
+            <value>
+                <fullName>M6 - Third Party Only</fullName>
+                <default>false</default>
+                <label>M6 - Third Party Only</label>
+            </value>
+            <value>
+                <fullName>M6 - Fire &amp; Theft Only</fullName>
+                <default>false</default>
+                <label>M6 - Fire &amp; Theft Only</label>
+            </value>
+            <value>
+                <fullName>All perils</fullName>
+                <default>false</default>
+                <label>All perils</label>
+            </value>
+            <value>
+                <fullName>Terrorism</fullName>
+                <default>false</default>
+                <label>Terrorism</label>
+            </value>
+            <value>
+                <fullName>Fire and allied perils</fullName>
+                <default>false</default>
+                <label>Fire and allied perils</label>
+            </value>
+            <value>
+                <fullName>CAR</fullName>
+                <default>false</default>
+                <label>CAR</label>
+            </value>
+            <value>
+                <fullName>EAR</fullName>
+                <default>false</default>
+                <label>EAR</label>
+            </value>
+            <value>
+                <fullName>Motor Hull</fullName>
+                <default>false</default>
+                <label>Motor Hull</label>
+            </value>
+            <value>
+                <fullName>Loss of profit</fullName>
+                <default>false</default>
+                <label>Loss of profit</label>
+            </value>
+            <value>
+                <fullName>CatNat</fullName>
+                <default>false</default>
+                <label>CatNat</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Combined Flight-Launch Vehicle Flight</fullName>
+                <default>false</default>
+                <label>Combined Flight-Launch Vehicle Flight</label>
+            </value>
+            <value>
+                <fullName>Combined Flight-Post Separation</fullName>
+                <default>false</default>
+                <label>Combined Flight-Post Separation</label>
+            </value>
+            <value>
+                <fullName>Comined Flight-In-Orbit</fullName>
+                <default>false</default>
+                <label>Comined Flight-In-Orbit</label>
+            </value>
+            <value>
+                <fullName>In-Orbit</fullName>
+                <default>false</default>
+                <label>In-Orbit</label>
+            </value>
+            <value>
+                <fullName>Launch Vehicle Flight Only</fullName>
+                <default>false</default>
+                <label>Launch Vehicle Flight Only</label>
+            </value>
+            <value>
+                <fullName>Assembly,Intetgratio and Testing</fullName>
+                <default>false</default>
+                <label>Assembly,Intetgratio and Testing</label>
+            </value>
+            <value>
+                <fullName>Transit</fullName>
+                <default>false</default>
+                <label>Transit</label>
+            </value>
+            <value>
+                <fullName>Pre-Launch</fullName>
+                <default>false</default>
+                <label>Pre-Launch</label>
+            </value>
+            <value>
+                <fullName>Engine Testing</fullName>
+                <default>false</default>
+                <label>Engine Testing</label>
+            </value>
+            <value>
+                <fullName>Launch Third Party Liabilities</fullName>
+                <default>false</default>
+                <label>Launch Third Party Liabilities</label>
+            </value>
+            <value>
+                <fullName>In-Orbit Third Party Liabilities</fullName>
+                <default>false</default>
+                <label>In-Orbit Third Party Liabilities</label>
+            </value>
+            <value>
+                <fullName>MF-Overseas PD PL ex USA</fullName>
+                <default>false</default>
+                <label>MF-Overseas PD TPL ex USA</label>
+            </value>
+            <value>
+                <fullName>MP-EU PD TPL ex UK</fullName>
+                <default>false</default>
+                <label>MP-EU PD TPL ex UK</label>
+            </value>
+            <value>
+                <fullName>Named Perils</fullName>
+                <default>false</default>
+                <label>Named Perils</label>
+            </value>
+            <value>
+                <fullName>All Risk</fullName>
+                <default>false</default>
+                <label>All Risk</label>
+            </value>
+            <value>
+                <fullName>Business Interruption</fullName>
+                <default>false</default>
+                <label>Business Interruption</label>
+            </value>
+            <value>
+                <fullName>Office Comprehensive</fullName>
+                <default>false</default>
+                <label>Office Comprehensive</label>
+            </value>
+            <value>
+                <fullName>Domestic Package</fullName>
+                <default>false</default>
+                <label>Domestic Package</label>
+            </value>
+            <value>
+                <fullName>Industrial All Risk</fullName>
+                <default>false</default>
+                <label>Industrial All Risk</label>
+            </value>
+            <value>
+                <fullName>Per Risk Treaty</fullName>
+                <default>false</default>
+                <label>Per Risk Treaty</label>
+            </value>
+            <value>
+                <fullName>Per Event Treaty</fullName>
+                <default>false</default>
+                <label>Per Event Treaty</label>
+            </value>
+            <value>
+                <fullName>Contractor&apos;s Plant &amp; Machinery (CPM)</fullName>
+                <default>false</default>
+                <label>Contractor&apos;s Plant &amp; Machinery (CPM)</label>
+            </value>
+            <value>
+                <fullName>Electronic and Electric Equipment (EEE)</fullName>
+                <default>false</default>
+                <label>Electronic and Electric Equipment (EEE)</label>
+            </value>
+            <value>
+                <fullName>Machinery Breakdown (MB)</fullName>
+                <default>false</default>
+                <label>Machinery Breakdown (MB)</label>
+            </value>
+            <value>
+                <fullName>External Data Media Cover</fullName>
+                <default>false</default>
+                <label>External Data Media Cover</label>
+            </value>
+            <value>
+                <fullName>Increased Cost of Working (ICOW) Cover</fullName>
+                <default>false</default>
+                <label>Increased Cost of Working (ICOW) Cover</label>
+            </value>
+            <value>
+                <fullName>Engineering Treaty</fullName>
+                <default>false</default>
+                <label>Engineering Treaty</label>
+            </value>
+            <value>
+                <fullName>Motor Comprehensive</fullName>
+                <default>false</default>
+                <label>Motor Comprehensive</label>
+            </value>
+            <value>
+                <fullName>Motor Third Party Only</fullName>
+                <default>false</default>
+                <label>Motor Third Party Only</label>
+            </value>
+            <value>
+                <fullName>Motor Comprehensive Fleet</fullName>
+                <default>false</default>
+                <label>Motor Comprehensive Fleet</label>
+            </value>
+            <value>
+                <fullName>Motor Third Party Only Fleet</fullName>
+                <default>false</default>
+                <label>Motor Third Party Only Fleet</label>
+            </value>
+            <value>
+                <fullName>Motor Occupants/ Passengers</fullName>
+                <default>false</default>
+                <label>Motor Occupants/ Passengers</label>
+            </value>
+            <value>
+                <fullName>Motor Windscreen cover</fullName>
+                <default>false</default>
+                <label>Motor Windscreen cover</label>
+            </value>
+            <value>
+                <fullName>Motor Car replacement extension</fullName>
+                <default>false</default>
+                <label>Motor Car replacement extension</label>
+            </value>
+            <value>
+                <fullName>Motor Treaty</fullName>
+                <default>false</default>
+                <label>Motor Treaty</label>
+            </value>
+            <value>
+                <fullName>CAT</fullName>
+                <default>false</default>
+                <label>CAT</label>
+            </value>
+            <value>
+                <fullName>Public Liability (PL)</fullName>
+                <default>false</default>
+                <label>Public Liability (PL)</label>
+            </value>
+            <value>
+                <fullName>Employers&apos; Liability (EL)</fullName>
+                <default>false</default>
+                <label>Employers&apos; Liability (EL)</label>
+            </value>
+            <value>
+                <fullName>Workers&apos; Compensation (WC)</fullName>
+                <default>false</default>
+                <label>Workers&apos; Compensation (WC)</label>
+            </value>
+            <value>
+                <fullName>Product Liability</fullName>
+                <default>false</default>
+                <label>Product Liability</label>
+            </value>
+            <value>
+                <fullName>Product Recall</fullName>
+                <default>false</default>
+                <label>Product Recall</label>
+            </value>
+            <value>
+                <fullName>Professional Indemnity</fullName>
+                <default>false</default>
+                <label>Professional Indemnity</label>
+            </value>
+            <value>
+                <fullName>Bankers&apos; Blanker Bond (BBB)</fullName>
+                <default>false</default>
+                <label>Bankers&apos; Blanker Bond (BBB)</label>
+            </value>
+            <value>
+                <fullName>Crime/ Fidelity Guarantee</fullName>
+                <default>false</default>
+                <label>Crime/ Fidelity Guarantee</label>
+            </value>
+            <value>
+                <fullName>Medical Malpractice</fullName>
+                <default>false</default>
+                <label>Medical Malpractice</label>
+            </value>
+            <value>
+                <fullName>Directors &amp; Officers (D&amp;O)</fullName>
+                <default>false</default>
+                <label>Directors &amp; Officers (D&amp;O)</label>
+            </value>
+            <value>
+                <fullName>Cyber Liability</fullName>
+                <default>false</default>
+                <label>Cyber Liability</label>
+            </value>
+            <value>
+                <fullName>Owners/ Occupiers&apos; Liability</fullName>
+                <default>false</default>
+                <label>Owners/ Occupiers&apos; Liability</label>
+            </value>
+            <value>
+                <fullName>Burglary or Theft</fullName>
+                <default>false</default>
+                <label>Burglary or Theft</label>
+            </value>
+            <value>
+                <fullName>Goods In Transit</fullName>
+                <default>false</default>
+                <label>Goods In Transit</label>
+            </value>
+            <value>
+                <fullName>Liability Treaty</fullName>
+                <default>false</default>
+                <label>Liability Treaty</label>
+            </value>
+            <value>
+                <fullName>Personal Accident</fullName>
+                <default>false</default>
+                <label>Personal Accident</label>
+            </value>
+            <value>
+                <fullName>Group Accident</fullName>
+                <default>false</default>
+                <label>Group Accident</label>
+            </value>
+            <value>
+                <fullName>Personal Accident Treaty</fullName>
+                <default>false</default>
+                <label>Personal Accident Treaty</label>
+            </value>
+            <value>
+                <fullName>Money (Cash in Transit &amp; Cash in Safe)</fullName>
+                <default>false</default>
+                <label>Money (Cash in Transit &amp; Cash in Safe)</label>
+            </value>
+            <value>
+                <fullName>Hull Pleasure crafts/ Yatchs</fullName>
+                <default>false</default>
+                <label>Hull Pleasure crafts/ Yatchs</label>
+            </value>
+            <value>
+                <fullName>Hull Ferries &amp; Tour Boats</fullName>
+                <default>false</default>
+                <label>Hull Ferries &amp; Tour Boats</label>
+            </value>
+            <value>
+                <fullName>Hull Commercial/fishing boats</fullName>
+                <default>false</default>
+                <label>Hull Commercial/fishing boats</label>
+            </value>
+            <value>
+                <fullName>Hull Container ships</fullName>
+                <default>false</default>
+                <label>Hull Container ships</label>
+            </value>
+            <value>
+                <fullName>Cargo Single policy</fullName>
+                <default>false</default>
+                <label>Cargo Single policy</label>
+            </value>
+            <value>
+                <fullName>Cargo Open policy</fullName>
+                <default>false</default>
+                <label>Cargo Open policy</label>
+            </value>
+            <value>
+                <fullName>Marine Treaty</fullName>
+                <default>false</default>
+                <label>Marine Treaty</label>
+            </value>
+            <value>
+                <fullName>Marine Hull Treaty</fullName>
+                <default>false</default>
+                <label>Marine Hull Treaty</label>
+            </value>
+            <value>
+                <fullName>Marine Cargo Treaty</fullName>
+                <default>false</default>
+                <label>Marine Cargo Treaty</label>
+            </value>
+            <value>
+                <fullName>Marine Inland Insurance</fullName>
+                <default>false</default>
+                <label>Marine Inland Insurance</label>
+            </value>
+            <value>
+                <fullName>Cyber Insurance</fullName>
+                <default>false</default>
+                <label>Cyber Insurance</label>
+            </value>
+            <value>
+                <fullName>Retrocession</fullName>
+                <default>false</default>
+                <label>Retrocession</label>
+            </value>
+            <value>
+                <fullName>Specie &amp; Fine Art</fullName>
+                <default>false</default>
+                <label>Specie &amp; Fine Art</label>
+            </value>
+            <value>
+                <fullName>Surety Bond Insurance</fullName>
+                <default>false</default>
+                <label>Surety Bond Insurance</label>
+            </value>
+            <value>
+                <fullName>Political Violence</fullName>
+                <default>false</default>
+                <label>Political Violence</label>
+            </value>
+            <value>
+                <fullName>Agriculture (Livestock &amp; Crop)</fullName>
+                <default>false</default>
+                <label>Agriculture (Livestock &amp; Crop)</label>
+            </value>
+            <value>
+                <fullName>Trade Credit</fullName>
+                <default>false</default>
+                <label>Trade Credit</label>
+            </value>
+            <value>
+                <fullName>Health (Corporate)</fullName>
+                <default>false</default>
+                <label>Health (Corporate)</label>
+            </value>
+            <value>
+                <fullName>Health (Micro)</fullName>
+                <default>false</default>
+                <label>Health (Micro)</label>
+            </value>
+            <value>
+                <fullName>Travel (Group)</fullName>
+                <default>false</default>
+                <label>Travel (Group)</label>
+            </value>
+            <value>
+                <fullName>Takaful</fullName>
+                <default>false</default>
+                <label>Takaful</label>
+            </value>
+            <value>
+                <fullName>Combined Flight-Post SeparatIn-Orbitn</fullName>
+                <default>false</default>
+                <label>Combined Flight-Post SeparatIn-Orbitn</label>
+            </value>
+            <value>
+                <fullName>Deorbit</fullName>
+                <default>false</default>
+                <label>Deorbit</label>
+            </value>
+            <value>
+                <fullName>WPB/Incentives</fullName>
+                <default>false</default>
+                <label>WPB/Incentives</label>
+            </value>
+            <value>
+                <fullName>Property Risk</fullName>
+                <default>false</default>
+                <label>Property Risk</label>
+            </value>
+            <value>
+                <fullName>Property CAT</fullName>
+                <default>false</default>
+                <label>Property CAT</label>
+            </value>
+            <value>
+                <fullName>Motor</fullName>
+                <default>false</default>
+                <label>Motor</label>
+            </value>
+            <value>
+                <fullName>Liability</fullName>
+                <default>false</default>
+                <label>Liability</label>
+            </value>
+            <value>
+                <fullName>Marine</fullName>
+                <default>false</default>
+                <label>Marine</label>
+            </value>
+            <value>
+                <fullName>PVT</fullName>
+                <default>false</default>
+                <label>PVT</label>
+            </value>
+            <value>
+                <fullName>Aviation</fullName>
+                <default>false</default>
+                <label>Aviation</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+                <label>Agriculture</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Travel</fullName>
+                <default>false</default>
+                <label>Travel</label>
+            </value>
+            <value>
+                <fullName>Multiline</fullName>
+                <default>false</default>
+                <label>Multiline</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

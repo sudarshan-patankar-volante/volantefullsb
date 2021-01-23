@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Policy_Basis__c</fullName>
+    <externalId>false</externalId>
+    <label>Policy Basis</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Claims Made</fullName>
+                <default>false</default>
+                <label>Claims Made</label>
+            </value>
+            <value>
+                <fullName>Claims Occurred</fullName>
+                <default>false</default>
+                <label>Claims Occurred</label>
+            </value>
+            <value>
+                <fullName>Risk Attaching</fullName>
+                <default>false</default>
+                <label>Risk Attaching</label>
+            </value>
+            <value>
+                <fullName>Risks Attaching During (RAD)</fullName>
+                <default>false</default>
+                <label>Risks Attaching During (RAD)</label>
+            </value>
+            <value>
+                <fullName>Losses Occurring During (LOD)</fullName>
+                <default>false</default>
+                <label>Losses Occurring During (LOD)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

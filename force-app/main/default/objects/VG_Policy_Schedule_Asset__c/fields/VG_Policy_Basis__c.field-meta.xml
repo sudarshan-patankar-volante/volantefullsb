@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Policy_Basis__c</fullName>
+    <externalId>false</externalId>
+    <label>Policy Basis</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Claims Made</fullName>
+                <default>false</default>
+                <label>Claims Made</label>
+            </value>
+            <value>
+                <fullName>Claims Occurred</fullName>
+                <default>false</default>
+                <label>Claims Occurred</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- System Impact --></label>
+    <name>VG_System_Impact__c</name>
+    <picklistValues>
+        <masterLabel>Loss of Function</masterLabel>
+        <translation><!-- Loss of Function --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of Lifetime</masterLabel>
+        <translation><!-- Loss of Lifetime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of Pointing</masterLabel>
+        <translation><!-- Loss of Pointing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of Power</masterLabel>
+        <translation><!-- Loss of Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of TM</masterLabel>
+        <translation><!-- Loss of TM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of Thermal</masterLabel>
+        <translation><!-- Loss of Thermal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Account</fullName>
+    <active>true</active>
+    <label>Account</label>
+    <picklistValues>
+        <picklist>VG_Attachment_Type__c</picklist>
+        <values>
+            <fullName>Assets File</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanctions Search Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Folder__c</picklist>
+        <values>
+            <fullName>Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policy Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Spreadsheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reinsurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underwriting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

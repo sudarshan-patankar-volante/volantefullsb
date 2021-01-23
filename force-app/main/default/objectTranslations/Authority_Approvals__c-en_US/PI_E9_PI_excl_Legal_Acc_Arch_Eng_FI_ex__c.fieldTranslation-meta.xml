@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- E9-PI excl Legal/ Acc / Arch/ Eng/ FI ex --></label>
+    <name>PI_E9_PI_excl_Legal_Acc_Arch_Eng_FI_ex__c</name>
+</CustomFieldTranslation>

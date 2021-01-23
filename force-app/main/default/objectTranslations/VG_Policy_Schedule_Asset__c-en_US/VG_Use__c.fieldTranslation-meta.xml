@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Use --></label>
+    <name>VG_Use__c</name>
+    <picklistValues>
+        <masterLabel>Business Use – Class 1</masterLabel>
+        <translation><!-- Business Use – Class 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Use – Class 2</masterLabel>
+        <translation><!-- Business Use – Class 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Use – Class 3</masterLabel>
+        <translation><!-- Business Use – Class 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hire &amp; Reward</masterLabel>
+        <translation><!-- Hire &amp; Reward --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBU</masterLabel>
+        <translation><!-- OBU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Own Goods</masterLabel>
+        <translation><!-- Own Goods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Hire</masterLabel>
+        <translation><!-- Private Hire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Hire</masterLabel>
+        <translation><!-- Public Hire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SD&amp;P</masterLabel>
+        <translation><!-- SD&amp;P --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Wording__c</fullName>
+    <externalId>false</externalId>
+    <label>Wording</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BBP 2.0 - All Risks Commercial Property Insurance</fullName>
+                <default>false</default>
+                <label>BBP 2.0 - All Risks Commercial Property Insurance</label>
+            </value>
+            <value>
+                <fullName>BBCAR 2.0 - All Risk Insurance for Construction Works Activities</fullName>
+                <default>false</default>
+                <label>BBCAR 2.0 - All Risk Insurance for Construction Works Activities</label>
+            </value>
+            <value>
+                <fullName>BBE 2.0 - Crisis Insurance</fullName>
+                <default>false</default>
+                <label>BBE 2.0 - Crisis Insurance</label>
+            </value>
+            <value>
+                <fullName>BBS 2.0 - Safety Regulations</fullName>
+                <default>false</default>
+                <label>BBS 2.0 - Safety Regulations</label>
+            </value>
+            <value>
+                <fullName>BBLI (f) 2.0 - Public and Products Liability Insurance</fullName>
+                <default>false</default>
+                <label>BBLI (f) 2.0 - Public and Products Liability Insurance</label>
+            </value>
+            <value>
+                <fullName>BBLE 2.0 - Legal Expenses Insurance</fullName>
+                <default>false</default>
+                <label>BBLE 2.0 - Legal Expenses Insurance</label>
+            </value>
+            <value>
+                <fullName>BBC (f)2.0 - Commercial Crime</fullName>
+                <default>false</default>
+                <label>BBC (f)2.0 - Commercial Crime</label>
+            </value>
+            <value>
+                <fullName>BBDO 2.0 - Directors  Officers Liability Insurance</fullName>
+                <default>false</default>
+                <label>BBDO 2.0 - Directors  Officers Liability Insurance</label>
+            </value>
+            <value>
+                <fullName>BBG 2.0 - General Conditions and Definitions</fullName>
+                <default>false</default>
+                <label>BBG 2.0 - General Conditions and Definitions</label>
+            </value>
+            <value>
+                <fullName>BBG 2.2 - General Conditions and Definitions</fullName>
+                <default>false</default>
+                <label>BBG 2.2 - General Conditions and Definitions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

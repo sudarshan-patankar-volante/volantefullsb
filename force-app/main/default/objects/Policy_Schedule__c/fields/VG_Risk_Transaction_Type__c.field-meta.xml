@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Risk_Transaction_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(  Policy__r.VG_Is_Renewal__c ,&apos;Renewal&apos;,if( TEXT(VG_MTA_Type__c) =&apos;Cancellation&apos;,&apos;Cancellation&apos;,if( TEXT(VG_MTA_Type__c) =&apos;Extension&apos;,&apos;Extension&apos;,if(  OR(TEXT(VG_MTA_Type__c) =&apos;Declaration&apos;,TEXT(VG_MTA_Type__c) =&apos;Revision of Cover&apos;),&apos;Endorsement&apos;,&apos;New Business&apos;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Transaction Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

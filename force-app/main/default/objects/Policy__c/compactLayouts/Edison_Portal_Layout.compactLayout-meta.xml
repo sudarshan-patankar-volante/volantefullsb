@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edison_Portal_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Insured__c</fields>
+    <fields>VG_Inception_Date__c</fields>
+    <fields>VG_Expiry_Date__c</fields>
+    <fields>Line_Of_Business__c</fields>
+    <fields>Actual_GWP__c</fields>
+    <fields>AP_TP__c</fields>
+    <label>Edison Portal Layout</label>
+</CompactLayout>

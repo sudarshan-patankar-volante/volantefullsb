@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Fields_Check_Horizon</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.Name ==&apos;Horizon&apos;,OR(ISPICKVAL(Policy_Status__c, &quot;Working&quot;), ISPICKVAL(Policy_Status__c, &quot;Quoted&quot;), ISPICKVAL(Policy_Status__c, &quot;Bound&quot;), ISPICKVAL(Policy_Status__c, &quot;Booked&quot;)), OR(ISBLANK(Broker_Name__c), ISBLANK(Underwriter__c), ISBLANK(TEXT(Type_of_Insurance__c))))</errorConditionFormula>
+    <errorMessage>Please enter all required fields: [Broker Name, Underwriter, Type of Insurance]</errorMessage>
+</ValidationRule>

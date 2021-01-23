@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Sub_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NTU_Or_Declined__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Submission Received</fullName>
+                <default>false</default>
+                <label>Submission Received</label>
+            </value>
+            <value>
+                <fullName>Additional Info Required</fullName>
+                <default>false</default>
+                <label>Additional Info Required</label>
+            </value>
+            <value>
+                <fullName>Awaiting Approval</fullName>
+                <default>false</default>
+                <label>Awaiting Approval</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>NTU - Price</fullName>
+                <default>false</default>
+                <label>NTU - Price</label>
+            </value>
+            <value>
+                <fullName>NTU - Terms</fullName>
+                <default>false</default>
+                <label>NTU - Terms</label>
+            </value>
+            <value>
+                <fullName>NTU - Capacity</fullName>
+                <default>false</default>
+                <label>NTU - Capacity</label>
+            </value>
+            <value>
+                <fullName>NTU - Service</fullName>
+                <default>false</default>
+                <label>NTU - Service</label>
+            </value>
+            <value>
+                <fullName>NTU - Other</fullName>
+                <default>false</default>
+                <label>NTU - Other</label>
+            </value>
+            <value>
+                <fullName>Declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
+            <value>
+                <fullName>Approval Rejected</fullName>
+                <default>false</default>
+                <label>Approval Rejected</label>
+            </value>
+            <value>
+                <fullName>Lapsed</fullName>
+                <default>false</default>
+                <label>Lapsed</label>
+            </value>
+            <value>
+                <fullName>Decline - Price</fullName>
+                <default>false</default>
+                <label>Decline - Price</label>
+            </value>
+            <value>
+                <fullName>Decline - Risk Profile</fullName>
+                <default>false</default>
+                <label>Decline - Risk Profile</label>
+            </value>
+            <value>
+                <fullName>Decline - Quality of Risk</fullName>
+                <default>false</default>
+                <label>Decline - Quality of Risk</label>
+            </value>
+            <value>
+                <fullName>Decline - Location</fullName>
+                <default>false</default>
+                <label>Decline - Location</label>
+            </value>
+            <value>
+                <fullName>Decline - Attachment</fullName>
+                <default>false</default>
+                <label>Decline - Attachment</label>
+            </value>
+            <value>
+                <fullName>Decline - Terms / Wording</fullName>
+                <default>false</default>
+                <label>Decline - Terms / Wording</label>
+            </value>
+            <value>
+                <fullName>Decline - Licensing Restrictions</fullName>
+                <default>false</default>
+                <label>Decline - Licensing Restrictions</label>
+            </value>
+            <value>
+                <fullName>Decline - Territorial Scope</fullName>
+                <default>false</default>
+                <label>Decline - Territorial Scope</label>
+            </value>
+            <value>
+                <fullName>Decline - Line of Business</fullName>
+                <default>false</default>
+                <label>Decline - Line of Business</label>
+            </value>
+            <value>
+                <fullName>Decline - Type of Business e.g Direct vs QS</fullName>
+                <default>false</default>
+                <label>Decline - Type of Business e.g Direct vs QS</label>
+            </value>
+            <value>
+                <fullName>Decline - Binding Authority Restrictions</fullName>
+                <default>false</default>
+                <label>Decline - Binding Authority Restrictions</label>
+            </value>
+            <value>
+                <fullName>Decline - Referall Declined</fullName>
+                <default>false</default>
+                <label>Decline - Referall Declined</label>
+            </value>
+            <value>
+                <fullName>Decline - Conflict with Volante Capacity Provider</fullName>
+                <default>false</default>
+                <label>Decline - Conflict with Volante Capacity Provider</label>
+            </value>
+            <value>
+                <fullName>Decline - Aggregation with carrier</fullName>
+                <default>false</default>
+                <label>Decline - Aggregation with carrier</label>
+            </value>
+            <value>
+                <fullName>Decline - Assured Financials</fullName>
+                <default>false</default>
+                <label>Decline - Assured Financials</label>
+            </value>
+            <value>
+                <fullName>Decline - Other</fullName>
+                <default>false</default>
+                <label>Decline - Other</label>
+            </value>
+            <value>
+                <fullName>Decline - Duplicate</fullName>
+                <default>false</default>
+                <label>Decline - Duplicate</label>
+            </value>
+            <value>
+                <fullName>NTU - Renewed with Existing Panel</fullName>
+                <default>false</default>
+                <label>NTU - Renewed with Existing Panel</label>
+            </value>
+            <value>
+                <fullName>NTU - Broker&apos;s Order Reduced</fullName>
+                <default>false</default>
+                <label>NTU - Broker&apos;s Order Reduced</label>
+            </value>
+            <value>
+                <fullName>NTU - Lost to Local Market</fullName>
+                <default>false</default>
+                <label>NTU - Lost to Local Market</label>
+            </value>
+            <value>
+                <fullName>NTU - Security</fullName>
+                <default>false</default>
+                <label>NTU - Security</label>
+            </value>
+            <value>
+                <fullName>NTU - Cancelled by Client / No longer required</fullName>
+                <default>false</default>
+                <label>NTU - Cancelled by Client / No longer required</label>
+            </value>
+            <value>
+                <fullName>NTU - Claims Proposition</fullName>
+                <default>false</default>
+                <label>NTU - Claims Proposition</label>
+            </value>
+            <value>
+                <fullName>NTU - Exclusions</fullName>
+                <default>false</default>
+                <label>NTU - Exclusions</label>
+            </value>
+            <value>
+                <fullName>NTU - Volante Financials</fullName>
+                <default>false</default>
+                <label>NTU - Volante Financials</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Not Applicable</controllingFieldValue>
+            <valueName>Submission Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Applicable</controllingFieldValue>
+            <valueName>Additional Info Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Applicable</controllingFieldValue>
+            <valueName>Awaiting Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Applicable</controllingFieldValue>
+            <valueName>Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Applicable</controllingFieldValue>
+            <valueName>Declined</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Applicable</controllingFieldValue>
+            <valueName>Approval Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Applicable</controllingFieldValue>
+            <valueName>Lapsed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Terms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Renewed with Existing Panel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Broker&apos;s Order Reduced</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Lost to Local Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Cancelled by Client / No longer required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Claims Proposition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Exclusions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NTU</controllingFieldValue>
+            <valueName>NTU - Volante Financials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Risk Profile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Quality of Risk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Attachment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Terms / Wording</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Licensing Restrictions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Territorial Scope</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Line of Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Type of Business e.g Direct vs QS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Binding Authority Restrictions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Referall Declined</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Conflict with Volante Capacity Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Aggregation with carrier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Assured Financials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Decline - Duplicate</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

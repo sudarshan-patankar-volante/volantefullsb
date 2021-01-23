@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Expense_Paid__c</fullName>
+    <externalId>false</externalId>
+    <formula>VG_Claim_Expense_Paid__c + VG_Legal_Fee_Paid__c + VG_Adjustor_Fee_Paid__c + TPA_Fees_Paid__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Expense Paid</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

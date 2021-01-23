@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- RI Coverage --></label>
+    <name>VG_RI_Coverage__c</name>
+    <picklistValues>
+        <masterLabel>7T</masterLabel>
+        <translation><!-- 7T --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B, CT, GS, JB, G, GC, O, T, TS, V</masterLabel>
+        <translation><!-- B, CT, GS, JB, G, GC, O, T, TS, V --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B4, B5, P3, P5, P7, 6T, 7T, LE</masterLabel>
+        <translation><!-- B4, B5, P3, P5, P7, 6T, 7T, LE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB</masterLabel>
+        <translation><!-- BB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB, D3, D5, D7, D9, E3, E5, E7, E9, F3, F5, NA, W4, FG, GM</masterLabel>
+        <translation><!-- BB, D3, D5, D7, D9, E3, E5, E7, E9, F3, F5, NA, W4, FG, GM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CB, CC</masterLabel>
+        <translation><!-- CB, CC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CY, CZ, KS, KT, N, NB</masterLabel>
+        <translation><!-- CY, CZ, KS, KT, N, NB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D2</masterLabel>
+        <translation><!-- D2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D3</masterLabel>
+        <translation><!-- D3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D4</masterLabel>
+        <translation><!-- D4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D5</masterLabel>
+        <translation><!-- D5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D6</masterLabel>
+        <translation><!-- D6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D7</masterLabel>
+        <translation><!-- D7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GX, TX, VX, X2, XE, XT</masterLabel>
+        <translation><!-- GX, TX, VX, X2, XE, XT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KX, XG, XH</masterLabel>
+        <translation><!-- KX, XG, XH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M3 - Fully Comprehensive</masterLabel>
+        <translation><!-- M3 - Fully Comprehensive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Fire &amp; Theft Only</masterLabel>
+        <translation><!-- M6 - Fire &amp; Theft Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Third Party Fire &amp; Theft</masterLabel>
+        <translation><!-- M6 - Third Party Fire &amp; Theft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Third Party Only</masterLabel>
+        <translation><!-- M6 - Third Party Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MF</masterLabel>
+        <translation><!-- MF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NX</masterLabel>
+        <translation><!-- NX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC, SO, SL, V &amp; AP</masterLabel>
+        <translation><!-- SC, SO, SL, V &amp; AP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR, X3, XC, XR</masterLabel>
+        <translation><!-- TR, X3, XC, XR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VL, EG, EH, EZ, EA, EB, EF, H2, H3, L2, L3, AO, AP</masterLabel>
+        <translation><!-- VL, EG, EH, EZ, EA, EB, EF, H2, H3, L2, L3, AO, AP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XM, XN</masterLabel>
+        <translation><!-- XM, XN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XY, X1</masterLabel>
+        <translation><!-- XY, X1 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

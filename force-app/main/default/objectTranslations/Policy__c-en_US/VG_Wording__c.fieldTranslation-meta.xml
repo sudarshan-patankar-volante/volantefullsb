@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Wording --></label>
+    <name>VG_Wording__c</name>
+    <picklistValues>
+        <masterLabel>All Risks Commercial Property Insurance – BBP 2.0</masterLabel>
+        <translation><!-- All Risks Commercial Property Insurance – BBP 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All Risks Insurance for Construction Activities – BBCAR 2.0</masterLabel>
+        <translation><!-- All Risks Insurance for Construction Activities – BBCAR 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architects</masterLabel>
+        <translation><!-- Architects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architects and Engineers</masterLabel>
+        <translation><!-- Architects and Engineers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBG 2.2 - General Conditions and Definitions</masterLabel>
+        <translation><!-- BBG 2.2 - General Conditions and Definitions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Trials Liability Insurance – BBCT 2.0</masterLabel>
+        <translation><!-- Clinical Trials Liability Insurance – BBCT 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Crime Insurance – BBC 2.0</masterLabel>
+        <translation><!-- Commercial Crime Insurance – BBC 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crime Insurance for Financial Institutions – BBFIC 2.0</masterLabel>
+        <translation><!-- Crime Insurance for Financial Institutions – BBFIC 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design and Construct</masterLabel>
+        <translation><!-- Design and Construct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Directors and Officers Liability Insurance BBDO 2.0</masterLabel>
+        <translation><!-- Directors and Officers Liability Insurance BBDO 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excess</masterLabel>
+        <translation><!-- Excess --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expert</masterLabel>
+        <translation><!-- Expert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT</masterLabel>
+        <translation><!-- IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Brokers</masterLabel>
+        <translation><!-- Insurance Brokers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Expenses Insurance – BBLE 2.0</masterLabel>
+        <translation><!-- Legal Expenses Insurance – BBLE 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Life Science Liability Insurance – BBLS 2.0</masterLabel>
+        <translation><!-- Life Science Liability Insurance – BBLS 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MGA</masterLabel>
+        <translation><!-- MGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media</masterLabel>
+        <translation><!-- Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Indemnity Insurance BBPI 2.0</masterLabel>
+        <translation><!-- Professional Indemnity Insurance BBPI 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Indemnity Insurance for Financial Institutions  - BBFIPI 2.0</masterLabel>
+        <translation><!-- Professional Indemnity Insurance for Financial Institutions  - BBFIPI 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Indemnity for Financial Institutions-BBFIPI 2.0</masterLabel>
+        <translation><!-- Professional Indemnity for Financial Institutions-BBFIPI 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospectus Liability Insurance – BBPL – 2.0</masterLabel>
+        <translation><!-- Prospectus Liability Insurance – BBPL – 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public and Products Liability Insurance – BBLI 2.0</masterLabel>
+        <translation><!-- Public and Products Liability Insurance – BBLI 2.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surveyors</masterLabel>
+        <translation><!-- Surveyors --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Perils --></label>
+    <name>VG_Perils__c</name>
+    <picklistValues>
+        <masterLabel>All Others</masterLabel>
+        <translation><!-- All Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Animal Handlers</masterLabel>
+        <translation><!-- Animal Handlers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Annual Carryings</masterLabel>
+        <translation><!-- Annual Carryings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one Loss</masterLabel>
+        <translation><!-- Any one Loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one Transit</masterLabel>
+        <translation><!-- Any one Transit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bar/Catering/Retail/Cleaning</masterLabel>
+        <translation><!-- Bar/Catering/Retail/Cleaning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Book Debts</masterLabel>
+        <translation><!-- Book Debts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buildings</masterLabel>
+        <translation><!-- Buildings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Hours</masterLabel>
+        <translation><!-- Business Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clerical &amp; Managerial</masterLabel>
+        <translation><!-- Clerical &amp; Managerial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clubs</masterLabel>
+        <translation><!-- Clubs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coaches/Instructors/Players</masterLabel>
+        <translation><!-- Coaches/Instructors/Players --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computer and Electronic Equipment</masterLabel>
+        <translation><!-- Computer and Electronic Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Detioration of Stock</masterLabel>
+        <translation><!-- Detioration of Stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Effects</masterLabel>
+        <translation><!-- Employee Effects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated Annual Turnover</masterLabel>
+        <translation><!-- Estimated Annual Turnover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gaming Machine</masterLabel>
+        <translation><!-- Gaming Machine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gaming, Amusement and Entertainment Equipment</masterLabel>
+        <translation><!-- Gaming, Amusement and Entertainment Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gross Profit</masterLabel>
+        <translation><!-- Gross Profit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gross Revenue</masterLabel>
+        <translation><!-- Gross Revenue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICOW</masterLabel>
+        <translation><!-- ICOW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machinery, Plant and All Other Contents</masterLabel>
+        <translation><!-- Machinery, Plant and All Other Contents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance</masterLabel>
+        <translation><!-- Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance/Security</masterLabel>
+        <translation><!-- Maintenance/Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Money in Safes</masterLabel>
+        <translation><!-- Money in Safes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non Negotiable</masterLabel>
+        <translation><!-- Non Negotiable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Number of Junior members</masterLabel>
+        <translation><!-- Number of Junior members --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Number of adult members</masterLabel>
+        <translation><!-- Number of adult members --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Number of members</masterLabel>
+        <translation><!-- Number of members --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outbuildings / Storage containers</masterLabel>
+        <translation><!-- Outbuildings / Storage containers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Per Premises</masterLabel>
+        <translation><!-- Per Premises --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plate Glass</masterLabel>
+        <translation><!-- Plate Glass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Dwelling</masterLabel>
+        <translation><!-- Private Dwelling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referees / coaches / Officials</masterLabel>
+        <translation><!-- Referees / coaches / Officials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rent Payable</masterLabel>
+        <translation><!-- Rent Payable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rent Receivable</masterLabel>
+        <translation><!-- Rent Receivable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security</masterLabel>
+        <translation><!-- Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stock of Food &amp; General</masterLabel>
+        <translation><!-- Stock of Food &amp; General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stock of Wines, Spirits &amp; Tobacco</masterLabel>
+        <translation><!-- Stock of Wines, Spirits &amp; Tobacco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turnover</masterLabel>
+        <translation><!-- Turnover --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

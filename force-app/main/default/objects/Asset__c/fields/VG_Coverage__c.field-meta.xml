@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Coverage__c</fullName>
+    <externalId>false</externalId>
+    <label>Coverage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>M3 - Fully Comprehensive</fullName>
+                <default>false</default>
+                <label>M3 - Fully Comprehensive</label>
+            </value>
+            <value>
+                <fullName>M6 - Fire &amp; Theft Only</fullName>
+                <default>false</default>
+                <label>M6 - Fire &amp; Theft Only</label>
+            </value>
+            <value>
+                <fullName>M6 - Third Party Fire &amp; Theft</fullName>
+                <default>false</default>
+                <label>M6 - Third Party Fire &amp; Theft</label>
+            </value>
+            <value>
+                <fullName>M6 - Third Party Only</fullName>
+                <default>false</default>
+                <label>M6 - Third Party Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

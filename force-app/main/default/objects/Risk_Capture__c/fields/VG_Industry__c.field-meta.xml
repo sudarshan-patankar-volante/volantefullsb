@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stockbroker/ broker-dealer/ financial planner</fullName>
+                <default>false</default>
+                <label>Stockbroker/ broker-dealer/ financial planner</label>
+            </value>
+            <value>
+                <fullName>Building Society/ Savings Bank</fullName>
+                <default>false</default>
+                <label>Building Society/ Savings Bank</label>
+            </value>
+            <value>
+                <fullName>Commercial Bank</fullName>
+                <default>false</default>
+                <label>Commercial Bank</label>
+            </value>
+            <value>
+                <fullName>Bankers Exchange House</fullName>
+                <default>false</default>
+                <label>Bankers Exchange House</label>
+            </value>
+            <value>
+                <fullName>Mutual Funds</fullName>
+                <default>false</default>
+                <label>Mutual Funds</label>
+            </value>
+            <value>
+                <fullName>Hedge Funds</fullName>
+                <default>false</default>
+                <label>Hedge Funds</label>
+            </value>
+            <value>
+                <fullName>General Fund/ Asset Managers</fullName>
+                <default>false</default>
+                <label>General Fund/ Asset Managers</label>
+            </value>
+            <value>
+                <fullName>Government/ Central Bank</fullName>
+                <default>false</default>
+                <label>Government/ Central Bank</label>
+            </value>
+            <value>
+                <fullName>Composite Insurance Companies</fullName>
+                <default>false</default>
+                <label>Composite Insurance Companies</label>
+            </value>
+            <value>
+                <fullName>General Life Insurance Companies</fullName>
+                <default>false</default>
+                <label>General Life Insurance Companies</label>
+            </value>
+            <value>
+                <fullName>Banks/ Life Ins</fullName>
+                <default>false</default>
+                <label>Banks/ Life Ins</label>
+            </value>
+            <value>
+                <fullName>Merchant/ Investment Bank</fullName>
+                <default>false</default>
+                <label>Merchant/ Investment Bank</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Financial</fullName>
+                <default>false</default>
+                <label>Miscellaneous Financial</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Trustees</fullName>
+                <default>false</default>
+                <label>Trustees</label>
+            </value>
+            <value>
+                <fullName>Bankers Venture Capitalists</fullName>
+                <default>false</default>
+                <label>Bankers Venture Capitalists</label>
+            </value>
+            <value>
+                <fullName>Commercial Crime</fullName>
+                <default>false</default>
+                <label>Commercial Crime</label>
+            </value>
+            <value>
+                <fullName>Credit Unions</fullName>
+                <default>false</default>
+                <label>Credit Unions</label>
+            </value>
+            <value>
+                <fullName>Alternative Lenders</fullName>
+                <default>false</default>
+                <label>Alternative Lenders</label>
+            </value>
+            <value>
+                <fullName>Mortgage banks/ Brokers</fullName>
+                <default>false</default>
+                <label>Mortgage banks/ Brokers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

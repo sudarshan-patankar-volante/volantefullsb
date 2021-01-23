@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Observed_cause__c</fullName>
+    <externalId>false</externalId>
+    <label>Observed cause</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Short Circuit</fullName>
+                <default>false</default>
+                <label>Short Circuit</label>
+            </value>
+            <value>
+                <fullName>Wear-out</fullName>
+                <default>false</default>
+                <label>Wear-out</label>
+            </value>
+            <value>
+                <fullName>Structural Failure</fullName>
+                <default>true</default>
+                <label>Structural Failure</label>
+            </value>
+            <value>
+                <fullName>Thermal runaway</fullName>
+                <default>false</default>
+                <label>Thermal runaway</label>
+            </value>
+            <value>
+                <fullName>Overconsumption</fullName>
+                <default>false</default>
+                <label>Overconsumption</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

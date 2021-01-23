@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Event_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Event Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Launch</fullName>
+                <default>false</default>
+                <label>Pre-Launch</label>
+            </value>
+            <value>
+                <fullName>Future Launch</fullName>
+                <default>false</default>
+                <label>Future Launch</label>
+            </value>
+            <value>
+                <fullName>Launch Failure (Launcher)</fullName>
+                <default>false</default>
+                <label>Launch Failure (Launcher)</label>
+            </value>
+            <value>
+                <fullName>Launch Failure (Satellite)</fullName>
+                <default>false</default>
+                <label>Launch Failure (Satellite)</label>
+            </value>
+            <value>
+                <fullName>Launch Success</fullName>
+                <default>false</default>
+                <label>Launch Success</label>
+            </value>
+            <value>
+                <fullName>Deorbit Failure</fullName>
+                <default>false</default>
+                <label>Deorbit Failure</label>
+            </value>
+            <value>
+                <fullName>Deorbit Success</fullName>
+                <default>false</default>
+                <label>Deorbit Success</label>
+            </value>
+            <value>
+                <fullName>Docking Failure</fullName>
+                <default>false</default>
+                <label>Docking Failure</label>
+            </value>
+            <value>
+                <fullName>Docking Success</fullName>
+                <default>false</default>
+                <label>Docking Success</label>
+            </value>
+            <value>
+                <fullName>Landing Failure</fullName>
+                <default>false</default>
+                <label>Landing Failure</label>
+            </value>
+            <value>
+                <fullName>Landing Success</fullName>
+                <default>false</default>
+                <label>Landing Success</label>
+            </value>
+            <value>
+                <fullName>In-Orbit event</fullName>
+                <default>false</default>
+                <label>In-Orbit event</label>
+            </value>
+            <value>
+                <fullName>Transit</fullName>
+                <default>false</default>
+                <label>Transit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

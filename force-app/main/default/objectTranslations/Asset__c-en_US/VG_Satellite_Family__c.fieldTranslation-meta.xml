@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Satellite Family --></label>
+    <name>VG_Satellite_Family__c</name>
+    <picklistValues>
+        <masterLabel>AIRBUS OTHER</masterLabel>
+        <translation><!-- AIRBUS OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALPHABUS</masterLabel>
+        <translation><!-- ALPHABUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMOS HP</masterLabel>
+        <translation><!-- AMOS HP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASTROBUS 100</masterLabel>
+        <translation><!-- ASTROBUS 100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASTROBUS 1000</masterLabel>
+        <translation><!-- ASTROBUS 1000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASTROBUS 250</masterLabel>
+        <translation><!-- ASTROBUS 250 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASTROSAT 500</masterLabel>
+        <translation><!-- ASTROSAT 500 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATV</masterLabel>
+        <translation><!-- ATV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BCP</masterLabel>
+        <translation><!-- BCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BCP 2000 (BGIS-2000</masterLabel>
+        <translation><!-- BCP 2000 (BGIS-2000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 376HP</masterLabel>
+        <translation><!-- BOEING 376HP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 376W</masterLabel>
+        <translation><!-- BOEING 376W --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 601</masterLabel>
+        <translation><!-- BOEING 601 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 601 (GOES-NP)</masterLabel>
+        <translation><!-- BOEING 601 (GOES-NP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 601 HP</masterLabel>
+        <translation><!-- BOEING 601 HP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 601 MODIFIED</masterLabel>
+        <translation><!-- BOEING 601 MODIFIED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 601M</masterLabel>
+        <translation><!-- BOEING 601M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 702 CONCENTRATORS</masterLabel>
+        <translation><!-- BOEING 702 CONCENTRATORS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 702 SP</masterLabel>
+        <translation><!-- BOEING 702 SP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 702HP</masterLabel>
+        <translation><!-- BOEING 702HP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 702HP GEM</masterLabel>
+        <translation><!-- BOEING 702HP GEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING 702HP MODIFIED</masterLabel>
+        <translation><!-- BOEING 702HP MODIFIED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAST OTHER</masterLabel>
+        <translation><!-- CAST OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUBESAT 1.5U</masterLabel>
+        <translation><!-- CUBESAT 1.5U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUBESAT 12U</masterLabel>
+        <translation><!-- CUBESAT 12U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUBESAT 1U</masterLabel>
+        <translation><!-- CUBESAT 1U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUBESAT 2U</masterLabel>
+        <translation><!-- CUBESAT 2U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUBESAT 3U</masterLabel>
+        <translation><!-- CUBESAT 3U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUBESAT 5U</masterLabel>
+        <translation><!-- CUBESAT 5U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUBESAT 6U</masterLabel>
+        <translation><!-- CUBESAT 6U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CYGNUS</masterLabel>
+        <translation><!-- CYGNUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DF</masterLabel>
+        <translation><!-- DF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFH 3</masterLabel>
+        <translation><!-- DFH 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFH 3A</masterLabel>
+        <translation><!-- DFH 3A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFH 3B</masterLabel>
+        <translation><!-- DFH 3B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFH 4</masterLabel>
+        <translation><!-- DFH 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFH 4E</masterLabel>
+        <translation><!-- DFH 4E --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFH 4S</masterLabel>
+        <translation><!-- DFH 4S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFH 5</masterLabel>
+        <translation><!-- DFH 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRAGON CRS</masterLabel>
+        <translation><!-- DRAGON CRS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRAGON CRS 2</masterLabel>
+        <translation><!-- DRAGON CRS 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DS 2000</masterLabel>
+        <translation><!-- DS 2000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELITEBUS</masterLabel>
+        <translation><!-- ELITEBUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENERGYIA LEO</masterLabel>
+        <translation><!-- ENERGYIA LEO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 2000+</masterLabel>
+        <translation><!-- EUROSTAR 2000+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 3000</masterLabel>
+        <translation><!-- EUROSTAR 3000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 3000 NEO</masterLabel>
+        <translation><!-- EUROSTAR 3000 NEO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 3000GM</masterLabel>
+        <translation><!-- EUROSTAR 3000GM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 3000H</masterLabel>
+        <translation><!-- EUROSTAR 3000H --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 3000L</masterLabel>
+        <translation><!-- EUROSTAR 3000L --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 3000LX</masterLabel>
+        <translation><!-- EUROSTAR 3000LX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 3000M</masterLabel>
+        <translation><!-- EUROSTAR 3000M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 3000S</masterLabel>
+        <translation><!-- EUROSTAR 3000S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROSTAR 3000SX</masterLabel>
+        <translation><!-- EUROSTAR 3000SX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXPRESS</masterLabel>
+        <translation><!-- EXPRESS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXPRESS 1000N</masterLabel>
+        <translation><!-- EXPRESS 1000N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXPRESS 2000A</masterLabel>
+        <translation><!-- EXPRESS 2000A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXPRESS A</masterLabel>
+        <translation><!-- EXPRESS A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXPRESS AM</masterLabel>
+        <translation><!-- EXPRESS AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLEXBUS</masterLabel>
+        <translation><!-- FLEXBUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GALILEO FOC</masterLabel>
+        <translation><!-- GALILEO FOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GALILEO IOV</masterLabel>
+        <translation><!-- GALILEO IOV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GLONASS</masterLabel>
+        <translation><!-- GLONASS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOM 3U</masterLabel>
+        <translation><!-- GOM 3U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOM 6U</masterLabel>
+        <translation><!-- GOM 6U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPS</masterLabel>
+        <translation><!-- GPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HTV</masterLabel>
+        <translation><!-- HTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISRO I2K</masterLabel>
+        <translation><!-- ISRO I2K --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISRO I3K</masterLabel>
+        <translation><!-- ISRO I3K --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISRO I6K</masterLabel>
+        <translation><!-- ISRO I6K --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LM 2100</masterLabel>
+        <translation><!-- LM 2100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LM 2100 A</masterLabel>
+        <translation><!-- LM 2100 A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LM 2100 AX</masterLabel>
+        <translation><!-- LM 2100 AX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LM 2100 AXS</masterLabel>
+        <translation><!-- LM 2100 AXS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LM A2100 M</masterLabel>
+        <translation><!-- LM A2100 M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LM A2100 M (GPS IIIA)</masterLabel>
+        <translation><!-- LM A2100 M (GPS IIIA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LM A2100 M (SBIRS)</masterLabel>
+        <translation><!-- LM A2100 M (SBIRS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LM EARLY</masterLabel>
+        <translation><!-- LM EARLY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LM2100 NEO</masterLabel>
+        <translation><!-- LM2100 NEO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAXAR (SSL)</masterLabel>
+        <translation><!-- MAXAR (SSL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHB LUXOR</masterLabel>
+        <translation><!-- OHB LUXOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation><!-- OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oneweb Mk1</masterLabel>
+        <translation><!-- Oneweb Mk1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROGRESS</masterLabel>
+        <translation><!-- PROGRESS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROGRESS M  (7K-TGM)</masterLabel>
+        <translation><!-- PROGRESS M  (7K-TGM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROGRESS M (DIGITAL) 11F615A60</masterLabel>
+        <translation><!-- PROGRESS M (DIGITAL) 11F615A60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROGRESS M-SO POISK/PIRS (GKM)</masterLabel>
+        <translation><!-- PROGRESS M-SO POISK/PIRS (GKM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROGRESS M1 (7K-TGM1)</masterLabel>
+        <translation><!-- PROGRESS M1 (7K-TGM1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROGRESS MS</masterLabel>
+        <translation><!-- PROGRESS MS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ</masterLabel>
+        <translation><!-- SOYUZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ MS</masterLabel>
+        <translation><!-- SOYUZ MS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ T (7K-ST)</masterLabel>
+        <translation><!-- SOYUZ T (7K-ST) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ TM (7K-M)</masterLabel>
+        <translation><!-- SOYUZ TM (7K-M) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ TMA (7K-STMA) 11F732</masterLabel>
+        <translation><!-- SOYUZ TMA (7K-STMA) 11F732 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ TMA MODIFIED</masterLabel>
+        <translation><!-- SOYUZ TMA MODIFIED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 2000</masterLabel>
+        <translation><!-- SPACEBUS 2000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 3000A</masterLabel>
+        <translation><!-- SPACEBUS 3000A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 3000B2</masterLabel>
+        <translation><!-- SPACEBUS 3000B2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 3000B3</masterLabel>
+        <translation><!-- SPACEBUS 3000B3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 3000B3S</masterLabel>
+        <translation><!-- SPACEBUS 3000B3S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 3000E</masterLabel>
+        <translation><!-- SPACEBUS 3000E --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 4000B2</masterLabel>
+        <translation><!-- SPACEBUS 4000B2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 4000B3</masterLabel>
+        <translation><!-- SPACEBUS 4000B3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 4000C1</masterLabel>
+        <translation><!-- SPACEBUS 4000C1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 4000C2</masterLabel>
+        <translation><!-- SPACEBUS 4000C2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 4000C3</masterLabel>
+        <translation><!-- SPACEBUS 4000C3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEBUS 4000C4</masterLabel>
+        <translation><!-- SPACEBUS 4000C4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPOT MK1-5</masterLabel>
+        <translation><!-- SPOT MK1-5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSL 1300</masterLabel>
+        <translation><!-- SSL 1300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSL LEGION</masterLabel>
+        <translation><!-- SSL LEGION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSTL 100</masterLabel>
+        <translation><!-- SSTL 100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSTL 12</masterLabel>
+        <translation><!-- SSTL 12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSTL 150</masterLabel>
+        <translation><!-- SSTL 150 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSTL 300</masterLabel>
+        <translation><!-- SSTL 300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSTL 42</masterLabel>
+        <translation><!-- SSTL 42 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSTL X50KZ</masterLabel>
+        <translation><!-- SSTL X50KZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STAR 2</masterLabel>
+        <translation><!-- STAR 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STAR 2.3</masterLabel>
+        <translation><!-- STAR 2.3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STAR 2.4</masterLabel>
+        <translation><!-- STAR 2.4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STAR 2.4 E</masterLabel>
+        <translation><!-- STAR 2.4 E --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STAR 3</masterLabel>
+        <translation><!-- STAR 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STS</masterLabel>
+        <translation><!-- STS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBA</masterLabel>
+        <translation><!-- TBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNIQUE CONAE</masterLabel>
+        <translation><!-- UNIQUE CONAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNIQUE SITAEL</masterLabel>
+        <translation><!-- UNIQUE SITAEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YAMAL</masterLabel>
+        <translation><!-- YAMAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YORK S-CLASS</masterLabel>
+        <translation><!-- YORK S-CLASS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>boeing 702 mp</masterLabel>
+        <translation><!-- boeing 702 mp --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- US Classification --></label>
+    <name>VG_US_Classification__c</name>
+    <picklistValues>
+        <masterLabel>Exempt</masterLabel>
+        <translation><!-- Exempt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Illinois Licensed</masterLabel>
+        <translation><!-- Illinois Licensed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kentucky Licensed</masterLabel>
+        <translation><!-- Kentucky Licensed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Regulated</masterLabel>
+        <translation><!-- Non-Regulated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Reinsurance</masterLabel>
+        <translation><!-- US Reinsurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Surplus Lines</masterLabel>
+        <translation><!-- US Surplus Lines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USVI Licensed (US Virgin Islands)</masterLabel>
+        <translation><!-- USVI Licensed (US Virgin Islands) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

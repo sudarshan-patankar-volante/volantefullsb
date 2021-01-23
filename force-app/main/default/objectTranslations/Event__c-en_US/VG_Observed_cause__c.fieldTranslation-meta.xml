@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Observed cause --></label>
+    <name>VG_Observed_cause__c</name>
+    <picklistValues>
+        <masterLabel>Overconsumption</masterLabel>
+        <translation><!-- Overconsumption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Circuit</masterLabel>
+        <translation><!-- Short Circuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Structural Failure</masterLabel>
+        <translation><!-- Structural Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal runaway</masterLabel>
+        <translation><!-- Thermal runaway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wear-out</masterLabel>
+        <translation><!-- Wear-out --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

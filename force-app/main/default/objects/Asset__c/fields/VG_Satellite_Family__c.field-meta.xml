@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Satellite_Family__c</fullName>
+    <externalId>false</externalId>
+    <label>Satellite Family</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AIRBUS OTHER</fullName>
+                <default>false</default>
+                <label>AIRBUS OTHER</label>
+            </value>
+            <value>
+                <fullName>ALPHABUS</fullName>
+                <default>false</default>
+                <label>ALPHABUS</label>
+            </value>
+            <value>
+                <fullName>AMOS HP</fullName>
+                <default>false</default>
+                <label>AMOS HP</label>
+            </value>
+            <value>
+                <fullName>ASTROBUS 100</fullName>
+                <default>false</default>
+                <label>ASTROBUS 100</label>
+            </value>
+            <value>
+                <fullName>ASTROBUS 1000</fullName>
+                <default>false</default>
+                <label>ASTROBUS 1000</label>
+            </value>
+            <value>
+                <fullName>ASTROBUS 250</fullName>
+                <default>false</default>
+                <label>ASTROBUS 250</label>
+            </value>
+            <value>
+                <fullName>ASTROSAT 500</fullName>
+                <default>false</default>
+                <label>ASTROSAT 500</label>
+            </value>
+            <value>
+                <fullName>ATV</fullName>
+                <default>false</default>
+                <label>ATV</label>
+            </value>
+            <value>
+                <fullName>BCP</fullName>
+                <default>false</default>
+                <label>BCP</label>
+            </value>
+            <value>
+                <fullName>BCP 2000 (BGIS-2000</fullName>
+                <default>false</default>
+                <label>BCP 2000 (BGIS-2000</label>
+            </value>
+            <value>
+                <fullName>BOEING 376HP</fullName>
+                <default>false</default>
+                <label>BOEING 376HP</label>
+            </value>
+            <value>
+                <fullName>BOEING 376W</fullName>
+                <default>false</default>
+                <label>BOEING 376W</label>
+            </value>
+            <value>
+                <fullName>BOEING 601</fullName>
+                <default>false</default>
+                <label>BOEING 601</label>
+            </value>
+            <value>
+                <fullName>BOEING 601 (GOES-NP)</fullName>
+                <default>false</default>
+                <label>BOEING 601 (GOES-NP)</label>
+            </value>
+            <value>
+                <fullName>BOEING 601 HP</fullName>
+                <default>false</default>
+                <label>BOEING 601 HP</label>
+            </value>
+            <value>
+                <fullName>BOEING 601M</fullName>
+                <default>false</default>
+                <label>BOEING 601M</label>
+            </value>
+            <value>
+                <fullName>BOEING 601 MODIFIED</fullName>
+                <default>false</default>
+                <label>BOEING 601 MODIFIED</label>
+            </value>
+            <value>
+                <fullName>BOEING 702 CONCENTRATORS</fullName>
+                <default>false</default>
+                <label>BOEING 702 CONCENTRATORS</label>
+            </value>
+            <value>
+                <fullName>BOEING 702HP</fullName>
+                <default>false</default>
+                <label>BOEING 702HP</label>
+            </value>
+            <value>
+                <fullName>BOEING 702HP GEM</fullName>
+                <default>false</default>
+                <label>BOEING 702HP GEM</label>
+            </value>
+            <value>
+                <fullName>BOEING 702HP MODIFIED</fullName>
+                <default>false</default>
+                <label>BOEING 702HP MODIFIED</label>
+            </value>
+            <value>
+                <fullName>boeing 702 mp</fullName>
+                <default>false</default>
+                <label>boeing 702 mp</label>
+            </value>
+            <value>
+                <fullName>BOEING 702 SP</fullName>
+                <default>false</default>
+                <label>BOEING 702 SP</label>
+            </value>
+            <value>
+                <fullName>CAST OTHER</fullName>
+                <default>false</default>
+                <label>CAST OTHER</label>
+            </value>
+            <value>
+                <fullName>CUBESAT 1.5U</fullName>
+                <default>false</default>
+                <label>CUBESAT 1.5U</label>
+            </value>
+            <value>
+                <fullName>CUBESAT 12U</fullName>
+                <default>false</default>
+                <label>CUBESAT 12U</label>
+            </value>
+            <value>
+                <fullName>CUBESAT 1U</fullName>
+                <default>false</default>
+                <label>CUBESAT 1U</label>
+            </value>
+            <value>
+                <fullName>CUBESAT 2U</fullName>
+                <default>false</default>
+                <label>CUBESAT 2U</label>
+            </value>
+            <value>
+                <fullName>CUBESAT 3U</fullName>
+                <default>false</default>
+                <label>CUBESAT 3U</label>
+            </value>
+            <value>
+                <fullName>CUBESAT 5U</fullName>
+                <default>false</default>
+                <label>CUBESAT 5U</label>
+            </value>
+            <value>
+                <fullName>CUBESAT 6U</fullName>
+                <default>false</default>
+                <label>CUBESAT 6U</label>
+            </value>
+            <value>
+                <fullName>CYGNUS</fullName>
+                <default>false</default>
+                <label>CYGNUS</label>
+            </value>
+            <value>
+                <fullName>DF</fullName>
+                <default>false</default>
+                <label>DF</label>
+            </value>
+            <value>
+                <fullName>DFH 3</fullName>
+                <default>false</default>
+                <label>DFH 3</label>
+            </value>
+            <value>
+                <fullName>DFH 3A</fullName>
+                <default>false</default>
+                <label>DFH 3A</label>
+            </value>
+            <value>
+                <fullName>DFH 3B</fullName>
+                <default>false</default>
+                <label>DFH 3B</label>
+            </value>
+            <value>
+                <fullName>DFH 4</fullName>
+                <default>false</default>
+                <label>DFH 4</label>
+            </value>
+            <value>
+                <fullName>DFH 4E</fullName>
+                <default>false</default>
+                <label>DFH 4E</label>
+            </value>
+            <value>
+                <fullName>DFH 4S</fullName>
+                <default>false</default>
+                <label>DFH 4S</label>
+            </value>
+            <value>
+                <fullName>DFH 5</fullName>
+                <default>false</default>
+                <label>DFH 5</label>
+            </value>
+            <value>
+                <fullName>DRAGON CRS</fullName>
+                <default>false</default>
+                <label>DRAGON CRS</label>
+            </value>
+            <value>
+                <fullName>DRAGON CRS 2</fullName>
+                <default>false</default>
+                <label>DRAGON CRS 2</label>
+            </value>
+            <value>
+                <fullName>DS 2000</fullName>
+                <default>false</default>
+                <label>DS 2000</label>
+            </value>
+            <value>
+                <fullName>ELITEBUS</fullName>
+                <default>false</default>
+                <label>ELITEBUS</label>
+            </value>
+            <value>
+                <fullName>ENERGYIA LEO</fullName>
+                <default>false</default>
+                <label>ENERGYIA LEO</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 2000+</fullName>
+                <default>false</default>
+                <label>EUROSTAR 2000+</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 3000</fullName>
+                <default>false</default>
+                <label>EUROSTAR 3000</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 3000GM</fullName>
+                <default>false</default>
+                <label>EUROSTAR 3000GM</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 3000H</fullName>
+                <default>false</default>
+                <label>EUROSTAR 3000H</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 3000L</fullName>
+                <default>false</default>
+                <label>EUROSTAR 3000L</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 3000LX</fullName>
+                <default>false</default>
+                <label>EUROSTAR 3000LX</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 3000M</fullName>
+                <default>false</default>
+                <label>EUROSTAR 3000M</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 3000 NEO</fullName>
+                <default>false</default>
+                <label>EUROSTAR 3000 NEO</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 3000S</fullName>
+                <default>false</default>
+                <label>EUROSTAR 3000S</label>
+            </value>
+            <value>
+                <fullName>EUROSTAR 3000SX</fullName>
+                <default>false</default>
+                <label>EUROSTAR 3000SX</label>
+            </value>
+            <value>
+                <fullName>EXPRESS</fullName>
+                <default>false</default>
+                <label>EXPRESS</label>
+            </value>
+            <value>
+                <fullName>EXPRESS 1000N</fullName>
+                <default>false</default>
+                <label>EXPRESS 1000N</label>
+            </value>
+            <value>
+                <fullName>EXPRESS 2000A</fullName>
+                <default>false</default>
+                <label>EXPRESS 2000A</label>
+            </value>
+            <value>
+                <fullName>EXPRESS A</fullName>
+                <default>false</default>
+                <label>EXPRESS A</label>
+            </value>
+            <value>
+                <fullName>EXPRESS AM</fullName>
+                <default>false</default>
+                <label>EXPRESS AM</label>
+            </value>
+            <value>
+                <fullName>FLEXBUS</fullName>
+                <default>false</default>
+                <label>FLEXBUS</label>
+            </value>
+            <value>
+                <fullName>GALILEO FOC</fullName>
+                <default>false</default>
+                <label>GALILEO FOC</label>
+            </value>
+            <value>
+                <fullName>GALILEO IOV</fullName>
+                <default>false</default>
+                <label>GALILEO IOV</label>
+            </value>
+            <value>
+                <fullName>GLONASS</fullName>
+                <default>false</default>
+                <label>GLONASS</label>
+            </value>
+            <value>
+                <fullName>GOM 3U</fullName>
+                <default>false</default>
+                <label>GOM 3U</label>
+            </value>
+            <value>
+                <fullName>GOM 6U</fullName>
+                <default>false</default>
+                <label>GOM 6U</label>
+            </value>
+            <value>
+                <fullName>GPS</fullName>
+                <default>false</default>
+                <label>GPS</label>
+            </value>
+            <value>
+                <fullName>HTV</fullName>
+                <default>false</default>
+                <label>HTV</label>
+            </value>
+            <value>
+                <fullName>ISRO I2K</fullName>
+                <default>false</default>
+                <label>ISRO I2K</label>
+            </value>
+            <value>
+                <fullName>ISRO I3K</fullName>
+                <default>false</default>
+                <label>ISRO I3K</label>
+            </value>
+            <value>
+                <fullName>ISRO I6K</fullName>
+                <default>false</default>
+                <label>ISRO I6K</label>
+            </value>
+            <value>
+                <fullName>LM 2100</fullName>
+                <default>false</default>
+                <label>LM 2100</label>
+            </value>
+            <value>
+                <fullName>LM 2100 A</fullName>
+                <default>false</default>
+                <label>LM 2100 A</label>
+            </value>
+            <value>
+                <fullName>LM 2100 AX</fullName>
+                <default>false</default>
+                <label>LM 2100 AX</label>
+            </value>
+            <value>
+                <fullName>LM 2100 AXS</fullName>
+                <default>false</default>
+                <label>LM 2100 AXS</label>
+            </value>
+            <value>
+                <fullName>LM2100 NEO</fullName>
+                <default>false</default>
+                <label>LM2100 NEO</label>
+            </value>
+            <value>
+                <fullName>LM A2100 M</fullName>
+                <default>false</default>
+                <label>LM A2100 M</label>
+            </value>
+            <value>
+                <fullName>LM A2100 M (GPS IIIA)</fullName>
+                <default>false</default>
+                <label>LM A2100 M (GPS IIIA)</label>
+            </value>
+            <value>
+                <fullName>LM A2100 M (SBIRS)</fullName>
+                <default>false</default>
+                <label>LM A2100 M (SBIRS)</label>
+            </value>
+            <value>
+                <fullName>LM EARLY</fullName>
+                <default>false</default>
+                <label>LM EARLY</label>
+            </value>
+            <value>
+                <fullName>MAXAR (SSL)</fullName>
+                <default>false</default>
+                <label>MAXAR (SSL)</label>
+            </value>
+            <value>
+                <fullName>OHB LUXOR</fullName>
+                <default>false</default>
+                <label>OHB LUXOR</label>
+            </value>
+            <value>
+                <fullName>Oneweb Mk1</fullName>
+                <default>false</default>
+                <label>Oneweb Mk1</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>PROGRESS</fullName>
+                <default>false</default>
+                <label>PROGRESS</label>
+            </value>
+            <value>
+                <fullName>PROGRESS M  (7K-TGM)</fullName>
+                <default>false</default>
+                <label>PROGRESS M  (7K-TGM)</label>
+            </value>
+            <value>
+                <fullName>PROGRESS M (DIGITAL) 11F615A60</fullName>
+                <default>false</default>
+                <label>PROGRESS M (DIGITAL) 11F615A60</label>
+            </value>
+            <value>
+                <fullName>PROGRESS M1 (7K-TGM1)</fullName>
+                <default>false</default>
+                <label>PROGRESS M1 (7K-TGM1)</label>
+            </value>
+            <value>
+                <fullName>PROGRESS MS</fullName>
+                <default>false</default>
+                <label>PROGRESS MS</label>
+            </value>
+            <value>
+                <fullName>PROGRESS M-SO POISK/PIRS (GKM)</fullName>
+                <default>false</default>
+                <label>PROGRESS M-SO POISK/PIRS (GKM)</label>
+            </value>
+            <value>
+                <fullName>SOYUZ</fullName>
+                <default>false</default>
+                <label>SOYUZ</label>
+            </value>
+            <value>
+                <fullName>SOYUZ MS</fullName>
+                <default>false</default>
+                <label>SOYUZ MS</label>
+            </value>
+            <value>
+                <fullName>SOYUZ T (7K-ST)</fullName>
+                <default>false</default>
+                <label>SOYUZ T (7K-ST)</label>
+            </value>
+            <value>
+                <fullName>SOYUZ TM (7K-M)</fullName>
+                <default>false</default>
+                <label>SOYUZ TM (7K-M)</label>
+            </value>
+            <value>
+                <fullName>SOYUZ TMA (7K-STMA) 11F732</fullName>
+                <default>false</default>
+                <label>SOYUZ TMA (7K-STMA) 11F732</label>
+            </value>
+            <value>
+                <fullName>SOYUZ TMA MODIFIED</fullName>
+                <default>false</default>
+                <label>SOYUZ TMA MODIFIED</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 2000</fullName>
+                <default>false</default>
+                <label>SPACEBUS 2000</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 3000A</fullName>
+                <default>false</default>
+                <label>SPACEBUS 3000A</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 3000B2</fullName>
+                <default>false</default>
+                <label>SPACEBUS 3000B2</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 3000B3</fullName>
+                <default>false</default>
+                <label>SPACEBUS 3000B3</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 3000B3S</fullName>
+                <default>false</default>
+                <label>SPACEBUS 3000B3S</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 3000E</fullName>
+                <default>false</default>
+                <label>SPACEBUS 3000E</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 4000B2</fullName>
+                <default>false</default>
+                <label>SPACEBUS 4000B2</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 4000B3</fullName>
+                <default>false</default>
+                <label>SPACEBUS 4000B3</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 4000C1</fullName>
+                <default>false</default>
+                <label>SPACEBUS 4000C1</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 4000C2</fullName>
+                <default>false</default>
+                <label>SPACEBUS 4000C2</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 4000C3</fullName>
+                <default>false</default>
+                <label>SPACEBUS 4000C3</label>
+            </value>
+            <value>
+                <fullName>SPACEBUS 4000C4</fullName>
+                <default>false</default>
+                <label>SPACEBUS 4000C4</label>
+            </value>
+            <value>
+                <fullName>SPOT MK1-5</fullName>
+                <default>false</default>
+                <label>SPOT MK1-5</label>
+            </value>
+            <value>
+                <fullName>SSL 1300</fullName>
+                <default>false</default>
+                <label>SSL 1300</label>
+            </value>
+            <value>
+                <fullName>SSL LEGION</fullName>
+                <default>false</default>
+                <label>SSL LEGION</label>
+            </value>
+            <value>
+                <fullName>SSTL 100</fullName>
+                <default>false</default>
+                <label>SSTL 100</label>
+            </value>
+            <value>
+                <fullName>SSTL 12</fullName>
+                <default>false</default>
+                <label>SSTL 12</label>
+            </value>
+            <value>
+                <fullName>SSTL 150</fullName>
+                <default>false</default>
+                <label>SSTL 150</label>
+            </value>
+            <value>
+                <fullName>SSTL 300</fullName>
+                <default>false</default>
+                <label>SSTL 300</label>
+            </value>
+            <value>
+                <fullName>SSTL 42</fullName>
+                <default>false</default>
+                <label>SSTL 42</label>
+            </value>
+            <value>
+                <fullName>SSTL X50KZ</fullName>
+                <default>false</default>
+                <label>SSTL X50KZ</label>
+            </value>
+            <value>
+                <fullName>STAR 2</fullName>
+                <default>false</default>
+                <label>STAR 2</label>
+            </value>
+            <value>
+                <fullName>STAR 2.3</fullName>
+                <default>false</default>
+                <label>STAR 2.3</label>
+            </value>
+            <value>
+                <fullName>STAR 2.4</fullName>
+                <default>false</default>
+                <label>STAR 2.4</label>
+            </value>
+            <value>
+                <fullName>STAR 2.4 E</fullName>
+                <default>false</default>
+                <label>STAR 2.4 E</label>
+            </value>
+            <value>
+                <fullName>STAR 3</fullName>
+                <default>false</default>
+                <label>STAR 3</label>
+            </value>
+            <value>
+                <fullName>STS</fullName>
+                <default>false</default>
+                <label>STS</label>
+            </value>
+            <value>
+                <fullName>TBA</fullName>
+                <default>false</default>
+                <label>TBA</label>
+            </value>
+            <value>
+                <fullName>UNIQUE CONAE</fullName>
+                <default>false</default>
+                <label>UNIQUE CONAE</label>
+            </value>
+            <value>
+                <fullName>UNIQUE SITAEL</fullName>
+                <default>false</default>
+                <label>UNIQUE SITAEL</label>
+            </value>
+            <value>
+                <fullName>YAMAL</fullName>
+                <default>false</default>
+                <label>YAMAL</label>
+            </value>
+            <value>
+                <fullName>YORK S-CLASS</fullName>
+                <default>false</default>
+                <label>YORK S-CLASS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

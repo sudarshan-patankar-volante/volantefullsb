@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cause of Loss --></label>
+    <name>Cause_of_Loss__c</name>
+    <picklistValues>
+        <masterLabel>Earthquake</masterLabel>
+        <translation><!-- Earthquake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire</masterLabel>
+        <translation><!-- Fire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flood</masterLabel>
+        <translation><!-- Flood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Theft</masterLabel>
+        <translation><!-- Theft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Leak</masterLabel>
+        <translation><!-- Water Leak --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

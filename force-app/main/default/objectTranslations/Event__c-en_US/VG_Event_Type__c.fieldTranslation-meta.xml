@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Event Type --></label>
+    <name>VG_Event_Type__c</name>
+    <picklistValues>
+        <masterLabel>Deorbit Failure</masterLabel>
+        <translation><!-- Deorbit Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deorbit Success</masterLabel>
+        <translation><!-- Deorbit Success --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Docking Failure</masterLabel>
+        <translation><!-- Docking Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Docking Success</masterLabel>
+        <translation><!-- Docking Success --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Future Launch</masterLabel>
+        <translation><!-- Future Launch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Orbit event</masterLabel>
+        <translation><!-- In-Orbit event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landing Failure</masterLabel>
+        <translation><!-- Landing Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landing Success</masterLabel>
+        <translation><!-- Landing Success --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Launch Failure (Launcher)</masterLabel>
+        <translation><!-- Launch Failure (Launcher) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Launch Failure (Satellite)</masterLabel>
+        <translation><!-- Launch Failure (Satellite) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Launch Success</masterLabel>
+        <translation><!-- Launch Success --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Launch</masterLabel>
+        <translation><!-- Pre-Launch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transit</masterLabel>
+        <translation><!-- Transit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

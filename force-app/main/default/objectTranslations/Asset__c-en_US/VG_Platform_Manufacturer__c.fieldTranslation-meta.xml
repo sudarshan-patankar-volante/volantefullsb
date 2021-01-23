@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Platform Manufacturer --></label>
+    <name>VG_Platform_Manufacturer__c</name>
+    <picklistValues>
+        <masterLabel>AIRBUS DEFENCE AND SPACE</masterLabel>
+        <translation><!-- AIRBUS DEFENCE AND SPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMSAT- Radio Amateur Satellite Corp. (HQ)</masterLabel>
+        <translation><!-- AMSAT- Radio Amateur Satellite Corp. (HQ) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANTRIX</masterLabel>
+        <translation><!-- ANTRIX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARSAT</masterLabel>
+        <translation><!-- ARSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATSB - Astronautic Technology (M) Sdn. Bhd.</masterLabel>
+        <translation><!-- ATSB - Astronautic Technology (M) Sdn. Bhd. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AVANTI</masterLabel>
+        <translation><!-- AVANTI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aalborg University</masterLabel>
+        <translation><!-- Aalborg University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aalto University</masterLabel>
+        <translation><!-- Aalto University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aeronautical Research and Test Institute (VZLU)</masterLabel>
+        <translation><!-- Aeronautical Research and Test Institute (VZLU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aerospace DongFangHong (DFH) Development Limited</masterLabel>
+        <translation><!-- Aerospace DongFangHong (DFH) Development Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aerospatiale Espace</masterLabel>
+        <translation><!-- Aerospatiale Espace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aichi University of Technology</masterLabel>
+        <translation><!-- Aichi University of Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Airbus Defence and Space (Elancourt)</masterLabel>
+        <translation><!-- Airbus Defence and Space (Elancourt) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Airbus Defence and Space (Stevenage)</masterLabel>
+        <translation><!-- Airbus Defence and Space (Stevenage) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Airbus Defence and Space GmbH (Friedrichshafen)</masterLabel>
+        <translation><!-- Airbus Defence and Space GmbH (Friedrichshafen) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Airbus Defence and Space/Thales Alenia Space JOINT</masterLabel>
+        <translation><!-- Airbus Defence and Space/Thales Alenia Space JOINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Al-Farabi Kazakh National University (KazGU)</masterLabel>
+        <translation><!-- Al-Farabi Kazakh National University (KazGU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alcatel Alenia Space (Cannes)</masterLabel>
+        <translation><!-- Alcatel Alenia Space (Cannes) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alcatel Space Industries (Cannes)</masterLabel>
+        <translation><!-- Alcatel Space Industries (Cannes) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical Space</masterLabel>
+        <translation><!-- Analytical Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aquila Space</masterLabel>
+        <translation><!-- Aquila Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asgardia</masterLabel>
+        <translation><!-- Asgardia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Astranis Space Technologies</masterLabel>
+        <translation><!-- Astranis Space Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Astrium Limited - Stevenage (Part of EADS)</masterLabel>
+        <translation><!-- Astrium Limited - Stevenage (Part of EADS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Astrium Satellites GMBH - Friedrichshafen (Part of EADS)</masterLabel>
+        <translation><!-- Astrium Satellites GMBH - Friedrichshafen (Part of EADS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Astrium Satellites SAS (Toulouse) (Part of EADS)</masterLabel>
+        <translation><!-- Astrium Satellites SAS (Toulouse) (Part of EADS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Astrium Satellites SAS (Velizy) (Part of EADS)</masterLabel>
+        <translation><!-- Astrium Satellites SAS (Velizy) (Part of EADS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Astro Digital</masterLabel>
+        <translation><!-- Astro Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Astrocast SA</masterLabel>
+        <translation><!-- Astrocast SA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BALL AEROSPACE AND TECHNOLOGIES CORP</masterLabel>
+        <translation><!-- BALL AEROSPACE AND TECHNOLOGIES CORP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOEING SATELLITE SYSTEMS</masterLabel>
+        <translation><!-- BOEING SATELLITE SYSTEMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beijing Bayi High School</masterLabel>
+        <translation><!-- Beijing Bayi High School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beijing Commsat Co</masterLabel>
+        <translation><!-- Beijing Commsat Co --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belarusian State University (BSU)</masterLabel>
+        <translation><!-- Belarusian State University (BSU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ben-Gurion University of the Negev</masterLabel>
+        <translation><!-- Ben-Gurion University of the Negev --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Berkeley</masterLabel>
+        <translation><!-- Berkeley --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blue Canyon Technologies (BCT)</masterLabel>
+        <translation><!-- Blue Canyon Technologies (BCT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boeing - Rocketdyne Propulsion and Power</masterLabel>
+        <translation><!-- Boeing - Rocketdyne Propulsion and Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boeing Aerospace</masterLabel>
+        <translation><!-- Boeing Aerospace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>British Aerospace Space Systems - Stevenage</masterLabel>
+        <translation><!-- British Aerospace Space Systems - Stevenage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brown University</masterLabel>
+        <translation><!-- Brown University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Budapest University of Technology and Economics</masterLabel>
+        <translation><!-- Budapest University of Technology and Economics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CALT</masterLabel>
+        <translation><!-- CALT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAST</masterLabel>
+        <translation><!-- CAST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CNP 4444</masterLabel>
+        <translation><!-- CNP 4444 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONAE</masterLabel>
+        <translation><!-- CONAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSUN/NASA JPL JOINT</masterLabel>
+        <translation><!-- CSUN/NASA JPL JOINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cal Poly Aerospace Engineering</masterLabel>
+        <translation><!-- Cal Poly Aerospace Engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canopus Systems US</masterLabel>
+        <translation><!-- Canopus Systems US --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cape Peninsula University of Technology</masterLabel>
+        <translation><!-- Cape Peninsula University of Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Capella Space</masterLabel>
+        <translation><!-- Capella Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chang Guang Satellite Technology Ltd</masterLabel>
+        <translation><!-- Chang Guang Satellite Technology Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chiba Institute of Technology/Tohoku University JOINT</masterLabel>
+        <translation><!-- Chiba Institute of Technology/Tohoku University JOINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>China Academy of Sciences/National Space Science Center</masterLabel>
+        <translation><!-- China Academy of Sciences/National Space Science Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>China Spacesat Co. Ltd  - Part of CASC</masterLabel>
+        <translation><!-- China Spacesat Co. Ltd  - Part of CASC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chinese National University of Defence Technology (NUDT)</masterLabel>
+        <translation><!-- Chinese National University of Defence Technology (NUDT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chosun University</masterLabel>
+        <translation><!-- Chosun University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chungnam National University - CNU</masterLabel>
+        <translation><!-- Chungnam National University - CNU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City University of New York (CUNY)</masterLabel>
+        <translation><!-- City University of New York (CUNY) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clyde Space Ltd</masterLabel>
+        <translation><!-- Clyde Space Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>College of Engineering Pune (COEP)</masterLabel>
+        <translation><!-- College of Engineering Pune (COEP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cornell University</masterLabel>
+        <translation><!-- Cornell University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DARPA - Defence and Advanced Research Projects Agency</masterLabel>
+        <translation><!-- DARPA - Defence and Advanced Research Projects Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dauria Aerospace</masterLabel>
+        <translation><!-- Dauria Aerospace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delft University of Technology (TU Delft)</masterLabel>
+        <translation><!-- Delft University of Technology (TU Delft) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DongFangHong (DFH) Satellite Company (Part of CAST)</masterLabel>
+        <translation><!-- DongFangHong (DFH) Satellite Company (Part of CAST) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dornier Satellitensysteme</masterLabel>
+        <translation><!-- Dornier Satellitensysteme --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EADS Astrium/Thales Consortium</masterLabel>
+        <translation><!-- EADS Astrium/Thales Consortium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENERGYIA</masterLabel>
+        <translation><!-- ENERGYIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ecole Polytechnique</masterLabel>
+        <translation><!-- Ecole Polytechnique --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ecuadorian Civil Space Agency</masterLabel>
+        <translation><!-- Ecuadorian Civil Space Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elysium Space Inc</masterLabel>
+        <translation><!-- Elysium Space Inc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EnduroSat AD</masterLabel>
+        <translation><!-- EnduroSat AD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exseed Space</masterLabel>
+        <translation><!-- Exseed Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FH Aachen</masterLabel>
+        <translation><!-- FH Aachen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSpace Laboratory</masterLabel>
+        <translation><!-- FSpace Laboratory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firmamentum - Part of Tethers Unlimited</masterLabel>
+        <translation><!-- Firmamentum - Part of Tethers Unlimited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fleet Space Technologies</masterLabel>
+        <translation><!-- Fleet Space Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ford Aerospace</masterLabel>
+        <translation><!-- Ford Aerospace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fukuoka Institute of Technology</masterLabel>
+        <translation><!-- Fukuoka Institute of Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GAUSS - Group of Astrodynamics for use of Space Systems</masterLabel>
+        <translation><!-- GAUSS - Group of Astrodynamics for use of Space Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE Astrospace (East Windsor)</masterLabel>
+        <translation><!-- GE Astrospace (East Windsor) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GILMOUR AEROSPACE</masterLabel>
+        <translation><!-- GILMOUR AEROSPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOMSPACE</masterLabel>
+        <translation><!-- GOMSPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Dynamics Advanced Information Systems</masterLabel>
+        <translation><!-- General Dynamics Advanced Information Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Georgia Tech</masterLabel>
+        <translation><!-- Georgia Tech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>German Orbital Systems GmbH</masterLabel>
+        <translation><!-- German Orbital Systems GmbH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ghalam LLP (JV)</masterLabel>
+        <translation><!-- Ghalam LLP (JV) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Western</masterLabel>
+        <translation><!-- Global Western --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GomSpace Sweden AB (GS Sweden AB)</masterLabel>
+        <translation><!-- GomSpace Sweden AB (GS Sweden AB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guangdong Kechuang Aerospace Technology Co Ltd</masterLabel>
+        <translation><!-- Guangdong Kechuang Aerospace Technology Co Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hangtian Dongfanghong Weixing Corporation (part of CAST)</masterLabel>
+        <translation><!-- Hangtian Dongfanghong Weixing Corporation (part of CAST) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hankuk/Korea Aviation University</masterLabel>
+        <translation><!-- Hankuk/Korea Aviation University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harbin Institute of Technology (HIT)</masterLabel>
+        <translation><!-- Harbin Institute of Technology (HIT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harris Corporation</masterLabel>
+        <translation><!-- Harris Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Havelsan</masterLabel>
+        <translation><!-- Havelsan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Herzliya Science Centre - Space Laboratory</masterLabel>
+        <translation><!-- Herzliya Science Centre - Space Laboratory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Performance Space Structures (HPS)</masterLabel>
+        <translation><!-- High Performance Space Structures (HPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hughes Space and Communications Co</masterLabel>
+        <translation><!-- Hughes Space and Communications Co --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IAI</masterLabel>
+        <translation><!-- IAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INPE - Centro Regional Sul de Pesquisas Espaciais (CRS)</masterLabel>
+        <translation><!-- INPE - Centro Regional Sul de Pesquisas Espaciais (CRS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INTA - Instituto Nacional De Tecnica Aerospacial</masterLabel>
+        <translation><!-- INTA - Instituto Nacional De Tecnica Aerospacial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INTELSAT</masterLabel>
+        <translation><!-- INTELSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISIS BV - Innovative Solutions in Space</masterLabel>
+        <translation><!-- ISIS BV - Innovative Solutions in Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISRO</masterLabel>
+        <translation><!-- ISRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISRO Satellite Centre (ISAC)</masterLabel>
+        <translation><!-- ISRO Satellite Centre (ISAC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITS - Institute of Telecommunication Satellites (Part of CAST)</masterLabel>
+        <translation><!-- ITS - Institute of Telecommunication Satellites (Part of CAST) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instituto TecnolÃ³gico de AeronÃ¡utica</masterLabel>
+        <translation><!-- Instituto TecnolÃ³gico de AeronÃ¡utica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Irvine Public Schools Foundation (IPSF)</masterLabel>
+        <translation><!-- Irvine Public Schools Foundation (IPSF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Istanbul Technical University (ITU)</masterLabel>
+        <translation><!-- Istanbul Technical University (ITU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Istanbul Technical University/Turkish Air Force Academy Joint</masterLabel>
+        <translation><!-- Istanbul Technical University/Turkish Air Force Academy Joint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JSC RESHETNEV ISS</masterLabel>
+        <translation><!-- JSC RESHETNEV ISS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jena-Optronik GMBH (DASA)</masterLabel>
+        <translation><!-- Jena-Optronik GMBH (DASA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Johns Hopkins Applied Physics Laboratory</masterLabel>
+        <translation><!-- Johns Hopkins Applied Physics Laboratory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KAIST (SaTReC)</masterLabel>
+        <translation><!-- KAIST (SaTReC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KARI - Korea Aerospace Research Institute</masterLabel>
+        <translation><!-- KARI - Korea Aerospace Research Institute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KOSMOTRAS</masterLabel>
+        <translation><!-- KOSMOTRAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kagawa University</masterLabel>
+        <translation><!-- Kagawa University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kagoshima University</masterLabel>
+        <translation><!-- Kagoshima University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kansas University</masterLabel>
+        <translation><!-- Kansas University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kentucky Space Consortium</masterLabel>
+        <translation><!-- Kentucky Space Consortium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Khrunichev/Astrium Satellites</masterLabel>
+        <translation><!-- Khrunichev/Astrium Satellites --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>King Mongkut&apos;s University of Technology North Bangkok (KMUTNB)</masterLabel>
+        <translation><!-- King Mongkut&apos;s University of Technology North Bangkok (KMUTNB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Korea Aerospace University - KAU</masterLabel>
+        <translation><!-- Korea Aerospace University - KAU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kyung Hee University</masterLabel>
+        <translation><!-- Kyung Hee University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kyushu Institute of Technology (KIT)</masterLabel>
+        <translation><!-- Kyushu Institute of Technology (KIT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kyushu Institute of Technology (KIT)/Nanyang Technological University (JOINT)</masterLabel>
+        <translation><!-- Kyushu Institute of Technology (KIT)/Nanyang Technological University (JOINT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAVOCHKIN</masterLabel>
+        <translation><!-- LAVOCHKIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LIBERTY MUTUAL INSURANCE EUROPE SE</masterLabel>
+        <translation><!-- LIBERTY MUTUAL INSURANCE EUROPE SE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOCKHEED MARTIN CORPORATION</masterLabel>
+        <translation><!-- LOCKHEED MARTIN CORPORATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lambda Team</masterLabel>
+        <translation><!-- Lambda Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lawrence Livermore National Laboratory</masterLabel>
+        <translation><!-- Lawrence Livermore National Laboratory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LinkSpace Aerospace Technology Group</masterLabel>
+        <translation><!-- LinkSpace Aerospace Technology Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lithuanian Space Association</masterLabel>
+        <translation><!-- Lithuanian Space Association --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lockheed Martin Astro Space</masterLabel>
+        <translation><!-- Lockheed Martin Astro Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lockheed Martin Astronautics</masterLabel>
+        <translation><!-- Lockheed Martin Astronautics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lockheed Martin Manned Space Systems</masterLabel>
+        <translation><!-- Lockheed Martin Manned Space Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lockheed Martin Space Systems</masterLabel>
+        <translation><!-- Lockheed Martin Space Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles (UCLA)</masterLabel>
+        <translation><!-- Los Angeles (UCLA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M42 Technologies</masterLabel>
+        <translation><!-- M42 Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAXAR (SSL)</masterLabel>
+        <translation><!-- MAXAR (SSL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MELCO</masterLabel>
+        <translation><!-- MELCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MIT Lincoln Laboratory</masterLabel>
+        <translation><!-- MIT Lincoln Laboratory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MIT SSL (Space Systems Laboratory)</masterLabel>
+        <translation><!-- MIT SSL (Space Systems Laboratory) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Martin Marietta Astro Space</masterLabel>
+        <translation><!-- Martin Marietta Astro Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Masdar Institute of Science and Technology</masterLabel>
+        <translation><!-- Masdar Institute of Science and Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Matra Marconi Space (Velizy)</masterLabel>
+        <translation><!-- Matra Marconi Space (Velizy) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Matra Marconi Space UK Limited  (Stevenage)</masterLabel>
+        <translation><!-- Matra Marconi Space UK Limited  (Stevenage) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meggiorin Group</masterLabel>
+        <translation><!-- Meggiorin Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meisei Electric Co Ltd</masterLabel>
+        <translation><!-- Meisei Electric Co Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Micro-NST (Beijing Micro-Nano Star Technology Co. Ltd)</masterLabel>
+        <translation><!-- Micro-NST (Beijing Micro-Nano Star Technology Co. Ltd) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microspace Rapid Systems</masterLabel>
+        <translation><!-- Microspace Rapid Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MilTech</masterLabel>
+        <translation><!-- MilTech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Millennium Engineering and Integration Company</masterLabel>
+        <translation><!-- Millennium Engineering and Integration Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Millennium Space Systems</masterLabel>
+        <translation><!-- Millennium Space Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mines ParisTech (ENSMP)</masterLabel>
+        <translation><!-- Mines ParisTech (ENSMP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mitsubishi Heavy Industries / Electric Company Joint</masterLabel>
+        <translation><!-- Mitsubishi Heavy Industries / Electric Company Joint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Montana State University</masterLabel>
+        <translation><!-- Montana State University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morehead State University</masterLabel>
+        <translation><!-- Morehead State University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moscow Aviation Institute</masterLabel>
+        <translation><!-- Moscow Aviation Institute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mullard Space Science Laboratory</masterLabel>
+        <translation><!-- Mullard Space Science Laboratory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NASA (National Aeronautics and Space Administration)</masterLabel>
+        <translation><!-- NASA (National Aeronautics and Space Administration) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NASA Ames Research Center</masterLabel>
+        <translation><!-- NASA Ames Research Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NASA Glenn Research Center</masterLabel>
+        <translation><!-- NASA Glenn Research Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NASA Goddard Space Flight Center (GSFC)</masterLabel>
+        <translation><!-- NASA Goddard Space Flight Center (GSFC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NASA JPL - Jet Propulsion Laboratory</masterLabel>
+        <translation><!-- NASA JPL - Jet Propulsion Laboratory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NASA JPL/NASA GSFC/Cal Poly (JOINT)</masterLabel>
+        <translation><!-- NASA JPL/NASA GSFC/Cal Poly (JOINT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NASA Langley Research Center</masterLabel>
+        <translation><!-- NASA Langley Research Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPO Prikladnoi Mekhaniki</masterLabel>
+        <translation><!-- NPO Prikladnoi Mekhaniki --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nanjing University of Science and Technology</masterLabel>
+        <translation><!-- Nanjing University of Science and Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nanosatisfi LLC</masterLabel>
+        <translation><!-- Nanosatisfi LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nanyang Technological University (NTU)</masterLabel>
+        <translation><!-- Nanyang Technological University (NTU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Narvik University</masterLabel>
+        <translation><!-- Narvik University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Cheng Kung University (NCKU)</masterLabel>
+        <translation><!-- National Cheng Kung University (NCKU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Technical University of Ukraine (NTUU KPI)</masterLabel>
+        <translation><!-- National Technical University of Ukraine (NTUU KPI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Technical University of Ukraine/Shenyang Aerospace University Joint</masterLabel>
+        <translation><!-- National Technical University of Ukraine/Shenyang Aerospace University Joint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National University of Singapore</masterLabel>
+        <translation><!-- National University of Singapore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NearSpace Launch (NSL)</masterLabel>
+        <translation><!-- NearSpace Launch (NSL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Mexico Institute of Mining and Technology</masterLabel>
+        <translation><!-- New Mexico Institute of Mining and Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nihon University</masterLabel>
+        <translation><!-- Nihon University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northrop Grumman Aerospace Systems</masterLabel>
+        <translation><!-- Northrop Grumman Aerospace Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northrop Grumman Innovation Systems (NGIS)</masterLabel>
+        <translation><!-- Northrop Grumman Innovation Systems (NGIS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northwest Nazarene University (NNU)</masterLabel>
+        <translation><!-- Northwest Nazarene University (NNU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northwestern Polytechnical University (NPU)</masterLabel>
+        <translation><!-- Northwestern Polytechnical University (NPU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norwegian Space Centre (NSC)</masterLabel>
+        <translation><!-- Norwegian Space Centre (NSC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHB</masterLabel>
+        <translation><!-- OHB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHB Italia</masterLabel>
+        <translation><!-- OHB Italia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OKB-1 Korolev Design</masterLabel>
+        <translation><!-- OKB-1 Korolev Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ORBITAL ATK</masterLabel>
+        <translation><!-- ORBITAL ATK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ORBITAL ATK INC.</masterLabel>
+        <translation><!-- ORBITAL ATK INC. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Cosmos Ltd</masterLabel>
+        <translation><!-- Open Cosmos Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Source Satellite Initiative</masterLabel>
+        <translation><!-- Open Source Satellite Initiative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Osaka Prefecture University</masterLabel>
+        <translation><!-- Osaka Prefecture University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PEASSS Consortium</masterLabel>
+        <translation><!-- PEASSS Consortium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pennsylvania State University (PSU)</masterLabel>
+        <translation><!-- Pennsylvania State University (PSU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peru</masterLabel>
+        <translation><!-- Peru --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planet - Spacecraft manufacturing department</masterLabel>
+        <translation><!-- Planet - Spacecraft manufacturing department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planetary Resources</masterLabel>
+        <translation><!-- Planetary Resources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polytechnic School of Lausanne (EPFL)</masterLabel>
+        <translation><!-- Polytechnic School of Lausanne (EPFL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polytechnic University of Catalonia (UPC)</masterLabel>
+        <translation><!-- Polytechnic University of Catalonia (UPC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polytechnic University of Turin</masterLabel>
+        <translation><!-- Polytechnic University of Turin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pumpkin Inc.</masterLabel>
+        <translation><!-- Pumpkin Inc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qian Academy of Youth Academy of Astronautics</masterLabel>
+        <translation><!-- Qian Academy of Youth Academy of Astronautics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RSC Energia (RKK Energia)</masterLabel>
+        <translation><!-- RSC Energia (RKK Energia) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RSCC</masterLabel>
+        <translation><!-- RSCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reaktor Space Lab Oy</masterLabel>
+        <translation><!-- Reaktor Space Lab Oy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Republic of Korea Air Force Academy</masterLabel>
+        <translation><!-- Republic of Korea Air Force Academy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rome University Aerospace Research Centre</masterLabel>
+        <translation><!-- Rome University Aerospace Research Centre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rowan University</masterLabel>
+        <translation><!-- Rowan University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ryman Satellite Project (RSP)</masterLabel>
+        <translation><!-- Ryman Satellite Project (RSP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAST - Shanghai Academy of Spaceflight Technology</masterLabel>
+        <translation><!-- SAST - Shanghai Academy of Spaceflight Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SATREVOLUTION</masterLabel>
+        <translation><!-- SATREVOLUTION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCS Space</masterLabel>
+        <translation><!-- SCS Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SECM - Shanghai Engineering Center for Microsatellites</masterLabel>
+        <translation><!-- SECM - Shanghai Engineering Center for Microsatellites --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SERC - Space Engineering Research Center</masterLabel>
+        <translation><!-- SERC - Space Engineering Research Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SITAEL S.P.A.</masterLabel>
+        <translation><!-- SITAEL S.P.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPACEX</masterLabel>
+        <translation><!-- SPACEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPUTNIX Ltd</masterLabel>
+        <translation><!-- SPUTNIX Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSL</masterLabel>
+        <translation><!-- SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SURREY SATELLITES TECHNOLOGY</masterLabel>
+        <translation><!-- SURREY SATELLITES TECHNOLOGY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SWSU - South-West State University (YuZGU)</masterLabel>
+        <translation><!-- SWSU - South-West State University (YuZGU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salish Kootenai College</masterLabel>
+        <translation><!-- Salish Kootenai College --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Samara State Aerospace University (SSAU)</masterLabel>
+        <translation><!-- Samara State Aerospace University (SSAU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose State University</masterLabel>
+        <translation><!-- San Jose State University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose State University/University of Idaho Joint</masterLabel>
+        <translation><!-- San Jose State University/University of Idaho Joint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Satellogic SA</masterLabel>
+        <translation><!-- Satellogic SA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sathyabama University</masterLabel>
+        <translation><!-- Sathyabama University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seoul National University</masterLabel>
+        <translation><!-- Seoul National University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shanghai Institute of Satellite Engineering (Part of SAST)</masterLabel>
+        <translation><!-- Shanghai Institute of Satellite Engineering (Part of SAST) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shenzhen (DFH) Aerospace Spacesat Company</masterLabel>
+        <translation><!-- Shenzhen (DFH) Aerospace Spacesat Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shizuoka University</masterLabel>
+        <translation><!-- Shizuoka University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skybox Imaging</masterLabel>
+        <translation><!-- Skybox Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slovak Organization for Space Activities (SOSA)</masterLabel>
+        <translation><!-- Slovak Organization for Space Activities (SOSA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soka University</masterLabel>
+        <translation><!-- Soka University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Southern Stars</masterLabel>
+        <translation><!-- Southern Stars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Space Dynamics Laboratory (Part of Utah State Univ Research Foundation)</masterLabel>
+        <translation><!-- Space Dynamics Laboratory (Part of Utah State Univ Research Foundation) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SpaceQuest Ltd</masterLabel>
+        <translation><!-- SpaceQuest Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SpaceTY (Commercial arm of Tiangyi Research Institute)</masterLabel>
+        <translation><!-- SpaceTY (Commercial arm of Tiangyi Research Institute) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SpaceX - Manufacturing Plant</masterLabel>
+        <translation><!-- SpaceX - Manufacturing Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spectrum Astro Inc.</masterLabel>
+        <translation><!-- Spectrum Astro Inc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spire Global Inc</masterLabel>
+        <translation><!-- Spire Global Inc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St Louis University</masterLabel>
+        <translation><!-- St Louis University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St Thomas More Cathedral School</masterLabel>
+        <translation><!-- St Thomas More Cathedral School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stanford University</masterLabel>
+        <translation><!-- Stanford University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stellenbosch University</masterLabel>
+        <translation><!-- Stellenbosch University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swarm Technologies</masterLabel>
+        <translation><!-- Swarm Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBA</masterLabel>
+        <translation><!-- TBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TESLA</masterLabel>
+        <translation><!-- TESLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>THALES ALENIA SPACE</masterLabel>
+        <translation><!-- THALES ALENIA SPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TU Berlin - Institute of Aeronautics and Astronautics</masterLabel>
+        <translation><!-- TU Berlin - Institute of Aeronautics and Astronautics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tama Art University</masterLabel>
+        <translation><!-- Tama Art University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical University of Denmark (DTU)</masterLabel>
+        <translation><!-- Technical University of Denmark (DTU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical University of Dresden</masterLabel>
+        <translation><!-- Technical University of Dresden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical University of Munich (TUM)</masterLabel>
+        <translation><!-- Technical University of Munich (TUM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telespazio SpA</masterLabel>
+        <translation><!-- Telespazio SpA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thales Alenia Space France (Cannes)</masterLabel>
+        <translation><!-- Thales Alenia Space France (Cannes) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thales Alenia Space France (Toulouse)</masterLabel>
+        <translation><!-- Thales Alenia Space France (Toulouse) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thales Alenia Space Italia</masterLabel>
+        <translation><!-- Thales Alenia Space Italia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Aerospace Corporation</masterLabel>
+        <translation><!-- The Aerospace Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Planetary Society</masterLabel>
+        <translation><!-- The Planetary Society --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tiangyi Research Institute - Changsha</masterLabel>
+        <translation><!-- Tiangyi Research Institute - Changsha --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tohoku University</masterLabel>
+        <translation><!-- Tohoku University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tokyo Institute of Technology</masterLabel>
+        <translation><!-- Tokyo Institute of Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkish Aerospace Industries (TAI)</masterLabel>
+        <translation><!-- Turkish Aerospace Industries (TAI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tyvak Nano-Satellite Systems Inc</masterLabel>
+        <translation><!-- Tyvak Nano-Satellite Systems Inc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UCL</masterLabel>
+        <translation><!-- UCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UIB</masterLabel>
+        <translation><!-- UIB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNKNOWN</masterLabel>
+        <translation><!-- UNKNOWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Air Force Research Laboratory (AFRL)</masterLabel>
+        <translation><!-- US Air Force Research Laboratory (AFRL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Army Space and Missile Defence Command</masterLabel>
+        <translation><!-- US Army Space and Missile Defence Command --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Naval Academy</masterLabel>
+        <translation><!-- US Naval Academy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Naval Academy/George Washington University</masterLabel>
+        <translation><!-- US Naval Academy/George Washington University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Naval Research Laboratory (NRL)</masterLabel>
+        <translation><!-- US Naval Research Laboratory (NRL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTIAS Space Flight Laboratory</masterLabel>
+        <translation><!-- UTIAS Space Flight Laboratory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Universidad Alas Peruanas</masterLabel>
+        <translation><!-- Universidad Alas Peruanas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Universidad Nacional Ingenieria</masterLabel>
+        <translation><!-- Universidad Nacional Ingenieria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Universidad del Turabo</masterLabel>
+        <translation><!-- Universidad del Turabo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Universita Degli Studi Di Roma - La Sapienza</masterLabel>
+        <translation><!-- Universita Degli Studi Di Roma - La Sapienza --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Alberta</masterLabel>
+        <translation><!-- University of Alberta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Applied Science</masterLabel>
+        <translation><!-- University of Applied Science --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Applied Sciences</masterLabel>
+        <translation><!-- University of Applied Sciences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Arizona</masterLabel>
+        <translation><!-- University of Arizona --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Brasilia (Serpens Consortium)</masterLabel>
+        <translation><!-- University of Brasilia (Serpens Consortium) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Bucharest</masterLabel>
+        <translation><!-- University of Bucharest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of California</masterLabel>
+        <translation><!-- University of California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Central Florida (UCF)</masterLabel>
+        <translation><!-- University of Central Florida (UCF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Chile - SPEL</masterLabel>
+        <translation><!-- University of Chile - SPEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Colorado</masterLabel>
+        <translation><!-- University of Colorado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Florida</masterLabel>
+        <translation><!-- University of Florida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Hawai&apos;i at Manoa</masterLabel>
+        <translation><!-- University of Hawai&apos;i at Manoa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Illinois</masterLabel>
+        <translation><!-- University of Illinois --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Michigan</masterLabel>
+        <translation><!-- University of Michigan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Montpellier 2</masterLabel>
+        <translation><!-- University of Montpellier 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Nairobi</masterLabel>
+        <translation><!-- University of Nairobi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of New South Wales</masterLabel>
+        <translation><!-- University of New South Wales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Patras</masterLabel>
+        <translation><!-- University of Patras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Southern Indiana</masterLabel>
+        <translation><!-- University of Southern Indiana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Surrey - Surrey Space Centre</masterLabel>
+        <translation><!-- University of Surrey - Surrey Space Centre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Sydney</masterLabel>
+        <translation><!-- University of Sydney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Texas - Austin</masterLabel>
+        <translation><!-- University of Texas - Austin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Tokyo</masterLabel>
+        <translation><!-- University of Tokyo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Tsukuba</masterLabel>
+        <translation><!-- University of Tsukuba --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Vigo</masterLabel>
+        <translation><!-- University of Vigo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University of Wurzburg</masterLabel>
+        <translation><!-- University of Wurzburg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utah State University</masterLabel>
+        <translation><!-- Utah State University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIRGIN ORBIT</masterLabel>
+        <translation><!-- VIRGIN ORBIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VNIIEM</masterLabel>
+        <translation><!-- VNIIEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vanderbilt University</masterLabel>
+        <translation><!-- Vanderbilt University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vilnius University</masterLabel>
+        <translation><!-- Vilnius University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wakayama University</masterLabel>
+        <translation><!-- Wakayama University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warsaw Polytechnic</masterLabel>
+        <translation><!-- Warsaw Polytechnic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waseda University</masterLabel>
+        <translation><!-- Waseda University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wiener Neustadt</masterLabel>
+        <translation><!-- Wiener Neustadt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YORK SPACE SYSTEMS</masterLabel>
+        <translation><!-- YORK SPACE SYSTEMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YUZHNOYE</masterLabel>
+        <translation><!-- YUZHNOYE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zhejiang Li Yi (LiTong) Electronic Technology Co</masterLabel>
+        <translation><!-- Zhejiang Li Yi (LiTong) Electronic Technology Co --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>kacific</masterLabel>
+        <translation><!-- kacific --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

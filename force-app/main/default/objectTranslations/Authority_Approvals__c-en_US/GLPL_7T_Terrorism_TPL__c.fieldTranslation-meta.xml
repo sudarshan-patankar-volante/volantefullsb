@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GLPL_7T-Terrorism TPL --></label>
+    <name>GLPL_7T_Terrorism_TPL__c</name>
+</CustomFieldTranslation>

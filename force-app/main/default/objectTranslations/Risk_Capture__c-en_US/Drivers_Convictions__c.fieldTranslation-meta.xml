@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Drivers Convictions --></label>
+    <name>Drivers_Convictions__c</name>
+    <picklistValues>
+        <masterLabel>AC10</masterLabel>
+        <translation><!-- AC10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AC20</masterLabel>
+        <translation><!-- AC20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AC30</masterLabel>
+        <translation><!-- AC30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BA10</masterLabel>
+        <translation><!-- BA10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BA30</masterLabel>
+        <translation><!-- BA30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BA40</masterLabel>
+        <translation><!-- BA40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BA60</masterLabel>
+        <translation><!-- BA60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD10</masterLabel>
+        <translation><!-- CD10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD20</masterLabel>
+        <translation><!-- CD20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD30</masterLabel>
+        <translation><!-- CD30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD40</masterLabel>
+        <translation><!-- CD40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD50</masterLabel>
+        <translation><!-- CD50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD60</masterLabel>
+        <translation><!-- CD60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD70</masterLabel>
+        <translation><!-- CD70 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD80</masterLabel>
+        <translation><!-- CD80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CD90</masterLabel>
+        <translation><!-- CD90 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CU10</masterLabel>
+        <translation><!-- CU10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CU20</masterLabel>
+        <translation><!-- CU20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CU30</masterLabel>
+        <translation><!-- CU30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CU40</masterLabel>
+        <translation><!-- CU40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CU50</masterLabel>
+        <translation><!-- CU50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CU80</masterLabel>
+        <translation><!-- CU80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DD10</masterLabel>
+        <translation><!-- DD10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DD40</masterLabel>
+        <translation><!-- DD40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DD60</masterLabel>
+        <translation><!-- DD60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DD80</masterLabel>
+        <translation><!-- DD80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DD90</masterLabel>
+        <translation><!-- DD90 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DG10</masterLabel>
+        <translation><!-- DG10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DG40</masterLabel>
+        <translation><!-- DG40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DG60</masterLabel>
+        <translation><!-- DG60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR10</masterLabel>
+        <translation><!-- DR10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR20</masterLabel>
+        <translation><!-- DR20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR30</masterLabel>
+        <translation><!-- DR30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR31</masterLabel>
+        <translation><!-- DR31 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR40</masterLabel>
+        <translation><!-- DR40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR50</masterLabel>
+        <translation><!-- DR50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR60</masterLabel>
+        <translation><!-- DR60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR61</masterLabel>
+        <translation><!-- DR61 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR70</masterLabel>
+        <translation><!-- DR70 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR80</masterLabel>
+        <translation><!-- DR80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR90</masterLabel>
+        <translation><!-- DR90 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IN10</masterLabel>
+        <translation><!-- IN10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC20</masterLabel>
+        <translation><!-- LC20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC30</masterLabel>
+        <translation><!-- LC30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC40</masterLabel>
+        <translation><!-- LC40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC50</masterLabel>
+        <translation><!-- LC50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MR09</masterLabel>
+        <translation><!-- MR09 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MR19</masterLabel>
+        <translation><!-- MR19 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MR29</masterLabel>
+        <translation><!-- MR29 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MR39</masterLabel>
+        <translation><!-- MR39 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MR49</masterLabel>
+        <translation><!-- MR49 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MR59</masterLabel>
+        <translation><!-- MR59 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS10</masterLabel>
+        <translation><!-- MS10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS20</masterLabel>
+        <translation><!-- MS20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS30</masterLabel>
+        <translation><!-- MS30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS50</masterLabel>
+        <translation><!-- MS50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS60</masterLabel>
+        <translation><!-- MS60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS70</masterLabel>
+        <translation><!-- MS70 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS80</masterLabel>
+        <translation><!-- MS80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS90</masterLabel>
+        <translation><!-- MS90 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MW10</masterLabel>
+        <translation><!-- MW10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PC10</masterLabel>
+        <translation><!-- PC10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PC20</masterLabel>
+        <translation><!-- PC20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PC30</masterLabel>
+        <translation><!-- PC30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP10</masterLabel>
+        <translation><!-- SP10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP20</masterLabel>
+        <translation><!-- SP20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP30</masterLabel>
+        <translation><!-- SP30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP40</masterLabel>
+        <translation><!-- SP40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP50</masterLabel>
+        <translation><!-- SP50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TS10</masterLabel>
+        <translation><!-- TS10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TS20</masterLabel>
+        <translation><!-- TS20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TS30</masterLabel>
+        <translation><!-- TS30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TS40</masterLabel>
+        <translation><!-- TS40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TS50</masterLabel>
+        <translation><!-- TS50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TS60</masterLabel>
+        <translation><!-- TS60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TS70</masterLabel>
+        <translation><!-- TS70 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UT50</masterLabel>
+        <translation><!-- UT50 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

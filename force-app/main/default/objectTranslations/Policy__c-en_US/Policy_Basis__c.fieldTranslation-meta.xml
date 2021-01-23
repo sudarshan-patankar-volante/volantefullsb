@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Policy Basis --></label>
+    <name>Policy_Basis__c</name>
+    <picklistValues>
+        <masterLabel>Claims Made</masterLabel>
+        <translation><!-- Claims Made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claims Occurred</masterLabel>
+        <translation><!-- Claims Occurred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Losses Occurring During (LOD)</masterLabel>
+        <translation><!-- Losses Occurring During (LOD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk Attaching</masterLabel>
+        <translation><!-- Risk Attaching --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risks Attaching During (RAD)</masterLabel>
+        <translation><!-- Risks Attaching During (RAD) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

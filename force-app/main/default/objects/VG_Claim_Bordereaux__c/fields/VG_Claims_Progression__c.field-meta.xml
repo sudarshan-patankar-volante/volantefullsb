@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Claims_Progression__c</fullName>
+    <externalId>false</externalId>
+    <label>Claims Progression</label>
+    <referenceTo>Claims_Progression__c</referenceTo>
+    <relationshipLabel>Claim Bordereaux</relationshipLabel>
+    <relationshipName>Claim_Bordereaux</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Capacity_Financials_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(ISBLANK(VG_RI_Share__c), ISBLANK(VG_MGA_Commission__c), ISBLANK(VG_RI_Binder_Commission__c))</errorConditionFormula>
+    <errorMessage>Please enter capacity financial [RI Share (%), MGA Commission (%), RI Binder Commission (%)]</errorMessage>
+</ValidationRule>

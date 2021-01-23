@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Policies_Prospect_Working</fullName>
+    <columns>NAME</columns>
+    <columns>Insured__c</columns>
+    <columns>Broker_Name__c</columns>
+    <columns>VG_Inception_Date__c</columns>
+    <columns>VG_Expiry_Date__c</columns>
+    <columns>Policy_Status__c</columns>
+    <columns>Gross_Written_Premium__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Am_I_Underwriter__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </filters>
+    <filters>
+        <field>Policy_Status__c</field>
+        <operation>equals</operation>
+        <value>Prospect,Working</value>
+    </filters>
+    <label>My Policies (Prospect - Working)</label>
+</ListView>

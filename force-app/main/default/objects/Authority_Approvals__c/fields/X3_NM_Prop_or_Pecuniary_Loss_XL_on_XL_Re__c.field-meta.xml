@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_NM_Prop_or_Pecuniary_Loss_XL_on_XL_Re__c</fullName>
+    <externalId>false</externalId>
+    <label>X3-NM Prop or Pecuniary Loss XL on XL Re</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

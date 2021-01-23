@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participation_Ceded__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(Share_Override__c), VG_UMR__r.VG_RI_Share__c, Share_Override__c)</formula>
+    <label>Participation % ceded</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

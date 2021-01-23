@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Tax_Jurisdiction__c</fullName>
+    <externalId>false</externalId>
+    <label>Tax Jurisdiction</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UK</fullName>
+                <default>false</default>
+                <label>UK</label>
+            </value>
+            <value>
+                <fullName>USA</fullName>
+                <default>false</default>
+                <label>USA</label>
+            </value>
+            <value>
+                <fullName>DK</fullName>
+                <default>false</default>
+                <label>DK</label>
+            </value>
+            <value>
+                <fullName>IN</fullName>
+                <default>false</default>
+                <label>IN</label>
+            </value>
+            <value>
+                <fullName>AU</fullName>
+                <default>false</default>
+                <label>AU</label>
+            </value>
+            <value>
+                <fullName>Poland</fullName>
+                <default>false</default>
+                <label>Poland</label>
+            </value>
+            <value>
+                <fullName>Argentina</fullName>
+                <default>false</default>
+                <label>Argentina</label>
+            </value>
+            <value>
+                <fullName>Australia - Northern Territory (NT)</fullName>
+                <default>false</default>
+                <label>Australia - Northern Territory (NT)</label>
+            </value>
+            <value>
+                <fullName>Australia - Western Territory (WA)</fullName>
+                <default>false</default>
+                <label>Australia - Western Territory (WA)</label>
+            </value>
+            <value>
+                <fullName>Australia - New South Wales (NSW)</fullName>
+                <default>false</default>
+                <label>Australia - New South Wales (NSW)</label>
+            </value>
+            <value>
+                <fullName>Australia - South Australia (SA)</fullName>
+                <default>false</default>
+                <label>Australia - South Australia (SA)</label>
+            </value>
+            <value>
+                <fullName>Australia - Queensland (QLD)</fullName>
+                <default>false</default>
+                <label>Australia - Queensland (QLD)</label>
+            </value>
+            <value>
+                <fullName>Australia - Victoria (VIC)</fullName>
+                <default>false</default>
+                <label>Australia - Victoria (VIC)</label>
+            </value>
+            <value>
+                <fullName>Australia - Tasmania (TAS)</fullName>
+                <default>false</default>
+                <label>Australia - Tasmania (TAS)</label>
+            </value>
+            <value>
+                <fullName>Australia - Australian Capital Territory (ACT)</fullName>
+                <default>false</default>
+                <label>Australia - Australian Capital Territory (ACT)</label>
+            </value>
+            <value>
+                <fullName>Australia - Jervis Bay Territory (JBT)</fullName>
+                <default>false</default>
+                <label>Australia - Jervis Bay Territory (JBT)</label>
+            </value>
+            <value>
+                <fullName>Bonaire</fullName>
+                <default>false</default>
+                <label>Bonaire</label>
+            </value>
+            <value>
+                <fullName>Brazil</fullName>
+                <default>false</default>
+                <label>Brazil</label>
+            </value>
+            <value>
+                <fullName>Canada - Alberta (AB)</fullName>
+                <default>false</default>
+                <label>Canada - Alberta (AB)</label>
+            </value>
+            <value>
+                <fullName>Canada - British Columbia (BC)</fullName>
+                <default>false</default>
+                <label>Canada - British Columbia (BC)</label>
+            </value>
+            <value>
+                <fullName>Canada - NewFoundland and Labrador (NL)</fullName>
+                <default>false</default>
+                <label>Canada - NewFoundland and Labrador (NL)</label>
+            </value>
+            <value>
+                <fullName>Canada - Northwest Territories (NT)</fullName>
+                <default>false</default>
+                <label>Canada - Northwest Territories (NT)</label>
+            </value>
+            <value>
+                <fullName>Canada - Nunavut (NU)</fullName>
+                <default>false</default>
+                <label>Canada - Nunavut (NU)</label>
+            </value>
+            <value>
+                <fullName>Canada - Manitoba (MB)</fullName>
+                <default>false</default>
+                <label>Canada - Manitoba (MB)</label>
+            </value>
+            <value>
+                <fullName>Canada - New Brunswick (NB)</fullName>
+                <default>false</default>
+                <label>Canada - New Brunswick (NB)</label>
+            </value>
+            <value>
+                <fullName>Canada - Nova Scotia (NS)</fullName>
+                <default>false</default>
+                <label>Canada - Nova Scotia (NS)</label>
+            </value>
+            <value>
+                <fullName>Canada - Ontario (ON)</fullName>
+                <default>false</default>
+                <label>Canada - Ontario (ON)</label>
+            </value>
+            <value>
+                <fullName>Canada - Prince Edward Island (PE)</fullName>
+                <default>false</default>
+                <label>Canada - Prince Edward Island (PE)</label>
+            </value>
+            <value>
+                <fullName>Canada - Quebec (QC)</fullName>
+                <default>false</default>
+                <label>Canada - Quebec (QC)</label>
+            </value>
+            <value>
+                <fullName>Canada - Saskatchewan (SK)</fullName>
+                <default>false</default>
+                <label>Canada - Saskatchewan (SK)</label>
+            </value>
+            <value>
+                <fullName>Canada - Yukon (YT)</fullName>
+                <default>false</default>
+                <label>Canada - Yukon (YT)</label>
+            </value>
+            <value>
+                <fullName>Curacao</fullName>
+                <default>false</default>
+                <label>Curacao</label>
+            </value>
+            <value>
+                <fullName>United States - Kentucky (KY)</fullName>
+                <default>false</default>
+                <label>United States - Kentucky (KY)</label>
+            </value>
+            <value>
+                <fullName>United States - Illinois (IL)</fullName>
+                <default>false</default>
+                <label>United States - Illinois (IL)</label>
+            </value>
+            <value>
+                <fullName>Dominica</fullName>
+                <default>false</default>
+                <label>Dominica</label>
+            </value>
+            <value>
+                <fullName>Mayotte</fullName>
+                <default>false</default>
+                <label>Mayotte</label>
+            </value>
+            <value>
+                <fullName>Myanmar</fullName>
+                <default>false</default>
+                <label>Myanmar</label>
+            </value>
+            <value>
+                <fullName>Libya</fullName>
+                <default>false</default>
+                <label>Libya</label>
+            </value>
+            <value>
+                <fullName>Reunion Island</fullName>
+                <default>false</default>
+                <label>Reunion Island</label>
+            </value>
+            <value>
+                <fullName>Saint Kitts &amp; Nevis</fullName>
+                <default>false</default>
+                <label>Saint Kitts &amp; Nevis</label>
+            </value>
+            <value>
+                <fullName>Sri Lanka</fullName>
+                <default>false</default>
+                <label>Sri Lanka</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

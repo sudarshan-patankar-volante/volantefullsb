@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Policy Endorsements</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Policy Endorsements</value>
+    </caseValues>
+    <layouts>
+        <layout>Policy Schedule Endorsement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UMR Policy Schedule Endorsement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot update Policy Endorsement number --></errorMessage>
+        <name>PE_Name_Updation</name>
+    </validationRules>
+</CustomObjectTranslation>

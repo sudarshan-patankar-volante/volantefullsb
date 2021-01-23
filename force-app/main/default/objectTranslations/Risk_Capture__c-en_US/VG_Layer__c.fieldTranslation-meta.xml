@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Layer --></label>
+    <name>VG_Layer__c</name>
+    <picklistValues>
+        <masterLabel>1st Layer</masterLabel>
+        <translation><!-- 1st Layer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2nd Layer</masterLabel>
+        <translation><!-- 2nd Layer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Layer</masterLabel>
+        <translation><!-- 3rd Layer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4th Layer</masterLabel>
+        <translation><!-- 4th Layer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5th Layer</masterLabel>
+        <translation><!-- 5th Layer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

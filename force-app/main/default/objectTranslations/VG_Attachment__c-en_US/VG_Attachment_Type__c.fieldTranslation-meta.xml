@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Attachment Type --></label>
+    <name>VG_Attachment_Type__c</name>
+    <picklistValues>
+        <masterLabel>Assets File</masterLabel>
+        <translation><!-- Assets File --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanctions Search Certificate</masterLabel>
+        <translation><!-- Sanctions Search Certificate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOBA</masterLabel>
+        <translation><!-- TOBA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

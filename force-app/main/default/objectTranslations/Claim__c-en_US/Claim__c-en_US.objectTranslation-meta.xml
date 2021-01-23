@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Claim</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Claims</value>
+    </caseValues>
+    <layouts>
+        <layout>Claim Layout</layout>
+        <sections>
+            <label><!-- Claim Overview --></label>
+            <section>Claim Overview</section>
+        </sections>
+        <sections>
+            <label><!-- Claim Particulars --></label>
+            <section>Claim Particulars</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detailed Financials --></label>
+            <section>Detailed Financials</section>
+        </sections>
+        <sections>
+            <label><!-- Incurred Financials --></label>
+            <section>Incurred Financials</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Overview --></label>
+            <section>Policy Overview</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

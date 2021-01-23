@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Question_1__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Are parties clearly identified?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Are parties clearly identified?</inlineHelpText>
+    <label>Contract Certainty Question</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

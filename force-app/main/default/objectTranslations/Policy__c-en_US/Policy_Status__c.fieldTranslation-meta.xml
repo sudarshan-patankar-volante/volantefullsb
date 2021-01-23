@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Policy Status --></label>
+    <name>Policy_Status__c</name>
+    <picklistValues>
+        <masterLabel>Booked</masterLabel>
+        <translation><!-- Booked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bound</masterLabel>
+        <translation><!-- Bound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU/Decline</masterLabel>
+        <translation><!-- NTU/Decline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospect</masterLabel>
+        <translation><!-- Prospect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quoted</masterLabel>
+        <translation><!-- Quoted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working</masterLabel>
+        <translation><!-- Working --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

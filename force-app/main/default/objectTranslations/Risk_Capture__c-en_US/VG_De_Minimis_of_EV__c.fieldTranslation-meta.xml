@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- De Minimis (% of EV) --></label>
+    <name>VG_De_Minimis_of_EV__c</name>
+</CustomFieldTranslation>

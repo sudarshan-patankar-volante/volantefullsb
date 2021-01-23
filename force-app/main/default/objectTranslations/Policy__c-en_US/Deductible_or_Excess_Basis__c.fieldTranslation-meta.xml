@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deductible or Excess Basis --></label>
+    <name>Deductible_or_Excess_Basis__c</name>
+    <picklistValues>
+        <masterLabel>Any one accident or occurrence</masterLabel>
+        <translation><!-- Any one accident or occurrence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one claim</masterLabel>
+        <translation><!-- Any one claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one claim, costs in addition</masterLabel>
+        <translation><!-- Any one claim, costs in addition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one claim, costs inclusive</masterLabel>
+        <translation><!-- Any one claim, costs inclusive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one event</masterLabel>
+        <translation><!-- Any one event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one interest</masterLabel>
+        <translation><!-- Any one interest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one loss</masterLabel>
+        <translation><!-- Any one loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one loss, costs in addition</masterLabel>
+        <translation><!-- Any one loss, costs in addition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one loss, costs inclusive</masterLabel>
+        <translation><!-- Any one loss, costs inclusive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any one person, passenger or patient</masterLabel>
+        <translation><!-- Any one person, passenger or patient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined single limit</masterLabel>
+        <translation><!-- Combined single limit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined single limit, any one loss, costs in addition</masterLabel>
+        <translation><!-- Combined single limit, any one loss, costs in addition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined single limit, any one loss, costs inclusive</masterLabel>
+        <translation><!-- Combined single limit, any one loss, costs inclusive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined single limit, costs in addition</masterLabel>
+        <translation><!-- Combined single limit, costs in addition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined single limit, costs inclusive</masterLabel>
+        <translation><!-- Combined single limit, costs inclusive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combines single limit any one loss</masterLabel>
+        <translation><!-- Combines single limit any one loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Each and every interest</masterLabel>
+        <translation><!-- Each and every interest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Each and every loss</masterLabel>
+        <translation><!-- Each and every loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Each and every loss, costs in addition</masterLabel>
+        <translation><!-- Each and every loss, costs in addition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Each and every loss, costs inclusive</masterLabel>
+        <translation><!-- Each and every loss, costs inclusive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In aggregate</masterLabel>
+        <translation><!-- In aggregate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In aggregate, costs in addition</masterLabel>
+        <translation><!-- In aggregate, costs in addition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In aggregate, costs inclusive</masterLabel>
+        <translation><!-- In aggregate, costs inclusive --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

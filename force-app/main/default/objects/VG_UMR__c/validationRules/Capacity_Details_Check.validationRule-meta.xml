@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Capacity_Details_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(ISBLANK(VG_RI_Product__c),ISBLANK(VG_RI_Coverage__c),ISBLANK(TEXT(VG_RI_Type__c)),ISBLANK(TEXT(VG_RI_Share_Type__c)),ISBLANK(VG_RI_Inception_Date__c),ISBLANK(VG_RI_Expiry_Date__c),ISBLANK(VG_RI_Binder_Broker__c),ISBLANK(TEXT(VG_Currency__c)))</errorConditionFormula>
+    <errorMessage>Please enter all capacity details [RI Product, RI Coverage, RI Type, RI Share Type, RI Inception Date, RI Expiry Date, RI Binder Broker, Currency]</errorMessage>
+</ValidationRule>

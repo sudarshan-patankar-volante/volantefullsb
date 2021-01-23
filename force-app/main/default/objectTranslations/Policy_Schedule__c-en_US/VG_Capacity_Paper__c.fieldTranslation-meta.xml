@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Section No --></label>
+    <name>VG_Capacity_Paper__c</name>
+    <picklistValues>
+        <masterLabel>2018 Liberty Company Stamp - 2018 year</masterLabel>
+        <translation><!-- 2018 Liberty Company Stamp - 2018 year --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2019 - 2019 YOA - 10 MUSD - 60% Liberty, 10% Swiss, 30% Everest</masterLabel>
+        <translation><!-- 2019 - 2019 YOA - 10 MUSD - 60% Liberty, 10% Swiss, 30% Everest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2019 - 2020 YOA - 10 MUSD - 60% Liberty, 10% Swiss, 30% Everest</masterLabel>
+        <translation><!-- 2019 - 2020 YOA - 10 MUSD - 60% Liberty, 10% Swiss, 30% Everest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2019 - 2020 YOA - 10 MUSD - 90% Liberty, 10% Swiss</masterLabel>
+        <translation><!-- 2019 - 2020 YOA - 10 MUSD - 90% Liberty, 10% Swiss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2019 - 2020 YOA - after Partner PT</masterLabel>
+        <translation><!-- 2019 - 2020 YOA - after Partner PT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 - 13.5 MUSD (3+1, 1.5, 2.5+2.5+0.5+2.5)</masterLabel>
+        <translation><!-- 2020 - 13.5 MUSD (3+1, 1.5, 2.5+2.5+0.5+2.5) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 - 4 MUSD (Liberty 3 + Swiss 1)</masterLabel>
+        <translation><!-- 2020 - 4 MUSD (Liberty 3 + Swiss 1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 - 5.5 MUSD (Liberty 3+Swiss 1, Fidelis 0+Partner 1.5)</masterLabel>
+        <translation><!-- 2020 - 5.5 MUSD (Liberty 3+Swiss 1, Fidelis 0+Partner 1.5) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 - Liberty and Lineslip (Argentina)</masterLabel>
+        <translation><!-- 2020 - Liberty and Lineslip (Argentina) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 - Lineslip + Partner Re 9.5</masterLabel>
+        <translation><!-- 2020 - Lineslip + Partner Re 9.5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 Post Lineslip PT 1 (CAS 500-2)</masterLabel>
+        <translation><!-- 2020 Post Lineslip PT 1 (CAS 500-2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 Post Lineslip PT 2 (CAS 500-1)</masterLabel>
+        <translation><!-- 2020 Post Lineslip PT 2 (CAS 500-1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 Post Lineslip PT 3 (S17, MP)</masterLabel>
+        <translation><!-- 2020 Post Lineslip PT 3 (S17, MP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 Post Lineslip PT 4 (Legion I)</masterLabel>
+        <translation><!-- 2020 Post Lineslip PT 4 (Legion I) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 Post lineslip PT (Ovzon)</masterLabel>
+        <translation><!-- 2020 Post lineslip PT (Ovzon) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 Post lineslip PT (Resurs)</masterLabel>
+        <translation><!-- 2020 Post lineslip PT (Resurs) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2020 Post lineslip PT 6 (Roscosmos + ELSA)</masterLabel>
+        <translation><!-- 2020 Post lineslip PT 6 (Roscosmos + ELSA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2021 - 15.5 MUSD (3+1, 1.5, 2.5+2.5+2.5+2.5)</masterLabel>
+        <translation><!-- 2021 - 15.5 MUSD (3+1, 1.5, 2.5+2.5+2.5+2.5) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2021 - Lineslip + Partner Re 11.5</masterLabel>
+        <translation><!-- 2021 - Lineslip + Partner Re 11.5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2021 - Special - Legion Top-up 2</masterLabel>
+        <translation><!-- 2021 - Special - Legion Top-up 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All - EEA</masterLabel>
+        <translation><!-- All - EEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All - Non EEA</masterLabel>
+        <translation><!-- All - Non EEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ancillary</masterLabel>
+        <translation><!-- Ancillary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bridge Default</masterLabel>
+        <translation><!-- Bridge Default --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haulage</masterLabel>
+        <translation><!-- Haulage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hazardous</masterLabel>
+        <translation><!-- Hazardous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberty</masterLabel>
+        <translation><!-- Liberty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberty Mutual - D&amp;O/Crime</masterLabel>
+        <translation><!-- Liberty Mutual - D&amp;O/Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberty Mutual - FI</masterLabel>
+        <translation><!-- Liberty Mutual - FI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberty Mutual - FI CE (2019)</masterLabel>
+        <translation><!-- Liberty Mutual - FI CE (2019) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberty Mutual - FI CE (2020)</masterLabel>
+        <translation><!-- Liberty Mutual - FI CE (2020) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberty Mutual - FI Open Market (2020)</masterLabel>
+        <translation><!-- Liberty Mutual - FI Open Market (2020) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberty Mutual VFP</masterLabel>
+        <translation><!-- Liberty Mutual VFP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non Conventional</masterLabel>
+        <translation><!-- Non Conventional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PI Liberty 100%</masterLabel>
+        <translation><!-- PI Liberty 100% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PI Liberty Co</masterLabel>
+        <translation><!-- PI Liberty Co --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PI Liberty Lloyds</masterLabel>
+        <translation><!-- PI Liberty Lloyds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PT into 2020</masterLabel>
+        <translation><!-- PT into 2020 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Sector</masterLabel>
+        <translation><!-- Public Sector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special - Inmarsat PT Stamp</masterLabel>
+        <translation><!-- Special - Inmarsat PT Stamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special - Measat PT Stamp</masterLabel>
+        <translation><!-- Special - Measat PT Stamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special - Ovzon PT Stamp</masterLabel>
+        <translation><!-- Special - Ovzon PT Stamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special - Resurs PT Stamp</masterLabel>
+        <translation><!-- Special - Resurs PT Stamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Written in 2020</masterLabel>
+        <translation><!-- Written in 2020 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

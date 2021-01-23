@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Claims Progression --></label>
+    <name>VG_Claims_Progression__c</name>
+    <relationshipLabel><!-- Claim Bordereaux --></relationshipLabel>
+</CustomFieldTranslation>

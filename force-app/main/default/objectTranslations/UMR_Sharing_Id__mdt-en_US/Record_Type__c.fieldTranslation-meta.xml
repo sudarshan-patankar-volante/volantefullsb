@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Record Type --></label>
+    <name>Record_Type__c</name>
+    <picklistValues>
+        <masterLabel>Aesir</masterLabel>
+        <translation><!-- Aesir --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Affinity</masterLabel>
+        <translation><!-- Affinity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bridge</masterLabel>
+        <translation><!-- Bridge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edison Motor</masterLabel>
+        <translation><!-- Edison Motor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gentium</masterLabel>
+        <translation><!-- Gentium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Horizon</masterLabel>
+        <translation><!-- Horizon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imara</masterLabel>
+        <translation><!-- Imara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VCL</masterLabel>
+        <translation><!-- VCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VFP</masterLabel>
+        <translation><!-- VFP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

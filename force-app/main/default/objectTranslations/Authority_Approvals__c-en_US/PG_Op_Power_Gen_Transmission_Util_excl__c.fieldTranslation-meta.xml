@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PG-Op Power Gen Transmission/ Util excl --></label>
+    <name>PG_Op_Power_Gen_Transmission_Util_excl__c</name>
+</CustomFieldTranslation>

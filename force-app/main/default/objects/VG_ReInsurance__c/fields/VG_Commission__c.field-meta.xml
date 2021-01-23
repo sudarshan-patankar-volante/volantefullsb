@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Commission__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(VG_Policy_Schedule__r.Gross_Written_Premium__c = 0,0,VG_MGA_Commission_Amount__c  /  VG_Policy_Schedule__r.Gross_Written_Premium__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Commission %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

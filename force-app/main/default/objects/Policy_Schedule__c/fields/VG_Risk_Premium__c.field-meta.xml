@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Risk_Premium__c</fullName>
+    <externalId>false</externalId>
+    <label>Risk Premium (Annual)</label>
+    <summarizedField>VG_Policy_Schedule_Asset__c.VG_Premium__c</summarizedField>
+    <summaryForeignKey>VG_Policy_Schedule_Asset__c.VG_Policy_Schedule__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

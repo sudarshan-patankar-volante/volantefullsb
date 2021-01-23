@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Coverages --></label>
+    <name>VG_Coverages__c</name>
+    <picklistValues>
+        <masterLabel>All Perils</masterLabel>
+        <translation><!-- All Perils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Interruption</masterLabel>
+        <translation><!-- Business Interruption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAR</masterLabel>
+        <translation><!-- CAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CatNat</masterLabel>
+        <translation><!-- CatNat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAR</masterLabel>
+        <translation><!-- EAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire and Allied Perils</masterLabel>
+        <translation><!-- Fire and Allied Perils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of Profit</masterLabel>
+        <translation><!-- Loss of Profit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M3 - Fully Comprehensive</masterLabel>
+        <translation><!-- M3 - Fully Comprehensive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Fire &amp; Theft Only</masterLabel>
+        <translation><!-- M6 - Fire &amp; Theft Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Third Party Fire &amp; Theft</masterLabel>
+        <translation><!-- M6 - Third Party Fire &amp; Theft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Third Party Only</masterLabel>
+        <translation><!-- M6 - Third Party Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mixed</masterLabel>
+        <translation><!-- Mixed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Hull</masterLabel>
+        <translation><!-- Motor Hull --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Named Perils</masterLabel>
+        <translation><!-- Named Perils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBA</masterLabel>
+        <translation><!-- TBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terrorism</masterLabel>
+        <translation><!-- Terrorism --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

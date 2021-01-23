@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pt_B5-PD Binder Comm Prop excl USA --></label>
+    <name>Pt_B5_PD_Binder_Comm_Prop_excl_USA__c</name>
+</CustomFieldTranslation>

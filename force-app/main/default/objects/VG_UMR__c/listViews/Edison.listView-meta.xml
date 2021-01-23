@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edison</fullName>
+    <columns>NAME</columns>
+    <columns>VG_Account__c</columns>
+    <columns>VG_RI_Inception_Date__c</columns>
+    <columns>VG_RI_Expiry_Date__c</columns>
+    <columns>VG_Premium_Limit__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>VG_UMR__c.Edison_Motor</value>
+    </filters>
+    <label>Edison</label>
+</ListView>

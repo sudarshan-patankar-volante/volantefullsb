@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Sector__c</fullName>
+    <externalId>false</externalId>
+    <label>Sector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture, Forestry and Fishing</fullName>
+                <default>false</default>
+                <label>Agriculture, Forestry and Fishing</label>
+            </value>
+            <value>
+                <fullName>Mining and Quarrying</fullName>
+                <default>false</default>
+                <label>Mining and Quarrying</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Electricity, gas, steam and air conditioning supply</fullName>
+                <default>false</default>
+                <label>Electricity, gas, steam and air conditioning supply</label>
+            </value>
+            <value>
+                <fullName>Water supply, sewerage, waste management and remediation activities</fullName>
+                <default>false</default>
+                <label>Water supply, sewerage, waste management and remediation activities</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Wholesale and retail trade; repair of motor vehicles and motorcycles</fullName>
+                <default>false</default>
+                <label>Wholesale and retail trade; repair of motor vehicles and motorcycles</label>
+            </value>
+            <value>
+                <fullName>Transportation and storage</fullName>
+                <default>false</default>
+                <label>Transportation and storage</label>
+            </value>
+            <value>
+                <fullName>Accommodation and food service activities</fullName>
+                <default>false</default>
+                <label>Accommodation and food service activities</label>
+            </value>
+            <value>
+                <fullName>Information and communication</fullName>
+                <default>false</default>
+                <label>Information and communication</label>
+            </value>
+            <value>
+                <fullName>Financial and insurance activities</fullName>
+                <default>false</default>
+                <label>Financial and insurance activities</label>
+            </value>
+            <value>
+                <fullName>Real estate activities</fullName>
+                <default>false</default>
+                <label>Real estate activities</label>
+            </value>
+            <value>
+                <fullName>Professional, scientific and technical activities</fullName>
+                <default>false</default>
+                <label>Professional, scientific and technical activities</label>
+            </value>
+            <value>
+                <fullName>Administrative and support service activities</fullName>
+                <default>false</default>
+                <label>Administrative and support service activities</label>
+            </value>
+            <value>
+                <fullName>Public administration and defence; compulsory social security</fullName>
+                <default>false</default>
+                <label>Public administration and defence; compulsory social security</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Human health and social work activities</fullName>
+                <default>false</default>
+                <label>Human health and social work activities</label>
+            </value>
+            <value>
+                <fullName>Arts, entertainment and recreation</fullName>
+                <default>false</default>
+                <label>Arts, entertainment and recreation</label>
+            </value>
+            <value>
+                <fullName>Other service activities</fullName>
+                <default>false</default>
+                <label>Other service activities</label>
+            </value>
+            <value>
+                <fullName>Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use</fullName>
+                <default>false</default>
+                <label>Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use</label>
+            </value>
+            <value>
+                <fullName>Activities of extraterritorial organisations and bodies</fullName>
+                <default>false</default>
+                <label>Activities of extraterritorial organisations and bodies</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

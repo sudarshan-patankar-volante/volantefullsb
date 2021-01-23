@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Ex_Gratia_Payment__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Ex-Gratia Payment</label>
+    <summarizedField>Claims_Progression__c.Ex_gratia_payment__c</summarizedField>
+    <summaryForeignKey>Claims_Progression__c.VG_Claims_Schedule__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

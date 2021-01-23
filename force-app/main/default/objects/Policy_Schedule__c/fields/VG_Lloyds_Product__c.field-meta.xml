@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Lloyds_Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Risk Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PB-Product Recall</fullName>
+                <default>false</default>
+                <label>PB-Product Recall</label>
+            </value>
+            <value>
+                <fullName>UA-GL/ PL excl Claims Made incl USA</fullName>
+                <default>false</default>
+                <label>UA-GL/ PL excl Claims Made incl USA</label>
+            </value>
+            <value>
+                <fullName>7T-Terrorism TPL</fullName>
+                <default>false</default>
+                <label>7T-Terrorism TPL</label>
+            </value>
+            <value>
+                <fullName>UC-GL/ PL Claims Made incl USA</fullName>
+                <default>false</default>
+                <label>UC-GL/ PL Claims Made incl USA</label>
+            </value>
+            <value>
+                <fullName>NA-GL/ PL excl Claims Made excl USA</fullName>
+                <default>false</default>
+                <label>NA-GL/ PL excl Claims Made excl USA</label>
+            </value>
+            <value>
+                <fullName>NC-GL/ PL Claims Made excl USA</fullName>
+                <default>false</default>
+                <label>NC-GL/ PL Claims Made excl USA</label>
+            </value>
+            <value>
+                <fullName>Clinical Trials</fullName>
+                <default>false</default>
+                <label>Clinical Trials</label>
+            </value>
+            <value>
+                <fullName>D2-D&amp;O excl FI incl USA</fullName>
+                <default>false</default>
+                <label>D2-D&amp;O excl FI incl USA</label>
+            </value>
+            <value>
+                <fullName>D3-D&amp;O excl FI excl USA</fullName>
+                <default>false</default>
+                <label>D3-D&amp;O excl FI excl USA</label>
+            </value>
+            <value>
+                <fullName>D4-D&amp;O FI incl USA</fullName>
+                <default>false</default>
+                <label>D4-D&amp;O FI incl USA</label>
+            </value>
+            <value>
+                <fullName>D5-D&amp;O FI excl USA</fullName>
+                <default>false</default>
+                <label>D5-D&amp;O FI excl USA</label>
+            </value>
+            <value>
+                <fullName>BB-Crime</fullName>
+                <default>false</default>
+                <label>BB-Crime</label>
+            </value>
+            <value>
+                <fullName>E2-PI Legal incl USA</fullName>
+                <default>false</default>
+                <label>E2-PI Legal incl USA</label>
+            </value>
+            <value>
+                <fullName>E3-PI Legal excl USA</fullName>
+                <default>false</default>
+                <label>E3-PI Legal excl USA</label>
+            </value>
+            <value>
+                <fullName>E4-PI Acc incl USA</fullName>
+                <default>false</default>
+                <label>E4-PI Acc incl USA</label>
+            </value>
+            <value>
+                <fullName>E5-PI Acc excl USA</fullName>
+                <default>false</default>
+                <label>E5-PI Acc excl USA</label>
+            </value>
+            <value>
+                <fullName>E6-PI Arch/ Eng incl USA</fullName>
+                <default>false</default>
+                <label>E6-PI Arch/ Eng incl USA</label>
+            </value>
+            <value>
+                <fullName>E7-PI Arch/ Eng excl USA</fullName>
+                <default>false</default>
+                <label>E7-PI Arch/ Eng excl USA</label>
+            </value>
+            <value>
+                <fullName>E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA</fullName>
+                <default>false</default>
+                <label>E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA</label>
+            </value>
+            <value>
+                <fullName>E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA</fullName>
+                <default>false</default>
+                <label>E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA</label>
+            </value>
+            <value>
+                <fullName>F2-PI FI incl USA</fullName>
+                <default>false</default>
+                <label>F2-PI FI incl USA</label>
+            </value>
+            <value>
+                <fullName>F3-PI FI excl USA</fullName>
+                <default>false</default>
+                <label>F3-PI FI excl USA</label>
+            </value>
+            <value>
+                <fullName>F4-PI Tech/ TelCo incl USA</fullName>
+                <default>false</default>
+                <label>F4-PI Tech/ TelCo incl USA</label>
+            </value>
+            <value>
+                <fullName>F5-PI Tech/ TelCo excl USA</fullName>
+                <default>false</default>
+                <label>F5-PI Tech/ TelCo excl USA</label>
+            </value>
+            <value>
+                <fullName>P3-PD Primary Layer Property excl USA</fullName>
+                <default>false</default>
+                <label>P3-PD Primary Layer Property excl USA</label>
+            </value>
+            <value>
+                <fullName>P4-PD Full Value Property incl USA</fullName>
+                <default>false</default>
+                <label>P4-PD Full Value Property incl USA</label>
+            </value>
+            <value>
+                <fullName>P5-PD Full Value Property excl USA</fullName>
+                <default>false</default>
+                <label>P5-PD Full Value Property excl USA</label>
+            </value>
+            <value>
+                <fullName>P6-PD XS Layer Property incl USA</fullName>
+                <default>false</default>
+                <label>P6-PD XS Layer Property incl USA</label>
+            </value>
+            <value>
+                <fullName>P7-PD XS Layer Property excl USA</fullName>
+                <default>false</default>
+                <label>P7-PD XS Layer Property excl USA</label>
+            </value>
+            <value>
+                <fullName>PG-Op Power Gen Transmission/ Util excl Const</fullName>
+                <default>false</default>
+                <label>PG-Op Power Gen Transmission/ Util excl Const</label>
+            </value>
+            <value>
+                <fullName>TR-PD (Direct Prop RI)</fullName>
+                <default>false</default>
+                <label>TR-PD (Direct Prop RI)</label>
+            </value>
+            <value>
+                <fullName>6T-Overseas Legal Terrorism - Property</fullName>
+                <default>false</default>
+                <label>6T-Overseas Legal Terrorism - Property</label>
+            </value>
+            <value>
+                <fullName>B5-PD Binder Comm Prop excl USA</fullName>
+                <default>false</default>
+                <label>B5-PD Binder Comm Prop excl USA</label>
+            </value>
+            <value>
+                <fullName>V-Cargo (All Risks incl War, excl War Risks only)</fullName>
+                <default>false</default>
+                <label>V-Cargo (All Risks incl War, excl War Risks only)</label>
+            </value>
+            <value>
+                <fullName>X3-NM Prop or Pecuniary Loss XL on XL Retrocession</fullName>
+                <default>false</default>
+                <label>X3-NM Prop or Pecuniary Loss XL on XL Retrocession</label>
+            </value>
+            <value>
+                <fullName>CB-Eng  annual renewabl e incl CAR EAR MB CPE B&amp;M EEI Treaty LOD</fullName>
+                <default>false</default>
+                <label>CB-Eng  annual renewabl e incl CAR EAR MB CPE B&amp;M EEI Treaty LOD</label>
+            </value>
+            <value>
+                <fullName>CC-Eng Single Proj non renewable incl CAR EAR Traty RAD</fullName>
+                <default>false</default>
+                <label>CC-Eng Single Proj non renewable incl CAR EAR Traty RAD</label>
+            </value>
+            <value>
+                <fullName>Mixed</fullName>
+                <default>false</default>
+                <label>Mixed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

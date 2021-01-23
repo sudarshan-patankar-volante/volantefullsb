@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Waiting Period --></label>
+    <name>VG_Waiting_Period__c</name>
+    <picklistValues>
+        <masterLabel>120 Hours</masterLabel>
+        <translation><!-- 120 Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>144 Hours</masterLabel>
+        <translation><!-- 144 Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>168 Hours</masterLabel>
+        <translation><!-- 168 Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>24 Hours</masterLabel>
+        <translation><!-- 24 Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>48 Hours</masterLabel>
+        <translation><!-- 48 Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>72 Hours</masterLabel>
+        <translation><!-- 72 Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>96 Hours</masterLabel>
+        <translation><!-- 96 Hours --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

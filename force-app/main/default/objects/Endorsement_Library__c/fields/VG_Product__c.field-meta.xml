@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GLPL</fullName>
+                <default>false</default>
+                <label>GLPL</label>
+            </value>
+            <value>
+                <fullName>Clinical Trials</fullName>
+                <default>false</default>
+                <label>Clinical Trials</label>
+            </value>
+            <value>
+                <fullName>D&amp;O</fullName>
+                <default>false</default>
+                <label>D&amp;O</label>
+            </value>
+            <value>
+                <fullName>Crime</fullName>
+                <default>false</default>
+                <label>Crime</label>
+            </value>
+            <value>
+                <fullName>PI</fullName>
+                <default>false</default>
+                <label>PI</label>
+            </value>
+            <value>
+                <fullName>Property</fullName>
+                <default>false</default>
+                <label>Property</label>
+            </value>
+            <value>
+                <fullName>Fire</fullName>
+                <default>false</default>
+                <label>Fire</label>
+            </value>
+            <value>
+                <fullName>Burglary</fullName>
+                <default>false</default>
+                <label>Burglary</label>
+            </value>
+            <value>
+                <fullName>Water</fullName>
+                <default>false</default>
+                <label>Water</label>
+            </value>
+            <value>
+                <fullName>All Risk</fullName>
+                <default>false</default>
+                <label>All Risk</label>
+            </value>
+            <value>
+                <fullName>Machinery Breakdown</fullName>
+                <default>false</default>
+                <label>Machinery Breakdown</label>
+            </value>
+            <value>
+                <fullName>CAR/EAR</fullName>
+                <default>false</default>
+                <label>CAR/EAR</label>
+            </value>
+            <value>
+                <fullName>Escaping Liquid</fullName>
+                <default>false</default>
+                <label>Escaping Liquid</label>
+            </value>
+            <value>
+                <fullName>Cistern</fullName>
+                <default>false</default>
+                <label>Cistern</label>
+            </value>
+            <value>
+                <fullName>Freeze &amp; Refrigerator</fullName>
+                <default>false</default>
+                <label>Freeze &amp; Refrigerator</label>
+            </value>
+            <value>
+                <fullName>Robbery</fullName>
+                <default>false</default>
+                <label>Robbery</label>
+            </value>
+            <value>
+                <fullName>Special Objects</fullName>
+                <default>false</default>
+                <label>Special Objects</label>
+            </value>
+            <value>
+                <fullName>Business Interruption</fullName>
+                <default>false</default>
+                <label>Business Interruption</label>
+            </value>
+            <value>
+                <fullName>Machinery BI</fullName>
+                <default>false</default>
+                <label>Machinery BI</label>
+            </value>
+            <value>
+                <fullName>Extra Costs</fullName>
+                <default>false</default>
+                <label>Extra Costs</label>
+            </value>
+            <value>
+                <fullName>Loss of Rent</fullName>
+                <default>false</default>
+                <label>Loss of Rent</label>
+            </value>
+            <value>
+                <fullName>Epidemic Disease</fullName>
+                <default>false</default>
+                <label>Epidemic Disease(BI)</label>
+            </value>
+            <value>
+                <fullName>Liability GL/PL</fullName>
+                <default>false</default>
+                <label>Liability GL/PL</label>
+            </value>
+            <value>
+                <fullName>Legal Aid</fullName>
+                <default>false</default>
+                <label>Legal Aid</label>
+            </value>
+            <value>
+                <fullName>Crisis</fullName>
+                <default>false</default>
+                <label>Crisis</label>
+            </value>
+            <value>
+                <fullName>Personal Accident(visitor)</fullName>
+                <default>false</default>
+                <label>Personal Accident(visitor)</label>
+            </value>
+            <value>
+                <fullName>Assault</fullName>
+                <default>false</default>
+                <label>Assault</label>
+            </value>
+            <value>
+                <fullName>Tools</fullName>
+                <default>false</default>
+                <label>Tools</label>
+            </value>
+            <value>
+                <fullName>Lift</fullName>
+                <default>false</default>
+                <label>Lift</label>
+            </value>
+            <value>
+                <fullName>Forklift</fullName>
+                <default>false</default>
+                <label>Forklift</label>
+            </value>
+            <value>
+                <fullName>Business Sample</fullName>
+                <default>false</default>
+                <label>Business Sample</label>
+            </value>
+            <value>
+                <fullName>Professional Indemnity</fullName>
+                <default>false</default>
+                <label>Professional Indemnity</label>
+            </value>
+            <value>
+                <fullName>Business Interruption due to Health Problems</fullName>
+                <default>false</default>
+                <label>Business Interruption due to Health Problems</label>
+            </value>
+            <value>
+                <fullName>Commercial Combined</fullName>
+                <default>false</default>
+                <label>Commercial Combined</label>
+            </value>
+            <value>
+                <fullName>FIPI</fullName>
+                <default>false</default>
+                <label>FIPI</label>
+            </value>
+            <value>
+                <fullName>Life Sciences</fullName>
+                <default>false</default>
+                <label>Life Sciences</label>
+            </value>
+            <value>
+                <fullName>Liability</fullName>
+                <default>false</default>
+                <label>Liability</label>
+            </value>
+            <value>
+                <fullName>CC_Crime</fullName>
+                <default>false</default>
+                <label>CC_Crime</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

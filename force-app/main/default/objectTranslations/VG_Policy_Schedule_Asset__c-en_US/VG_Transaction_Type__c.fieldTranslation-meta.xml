@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Transaction Type --></label>
+    <name>VG_Transaction_Type__c</name>
+    <picklistValues>
+        <masterLabel>Cancellation</masterLabel>
+        <translation><!-- Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extension</masterLabel>
+        <translation><!-- Extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTA</masterLabel>
+        <translation><!-- MTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewal</masterLabel>
+        <translation><!-- Renewal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revision of Cover</masterLabel>
+        <translation><!-- Revision of Cover --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

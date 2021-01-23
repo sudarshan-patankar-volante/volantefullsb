@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Broker Name --></label>
+    <lookupFilter>
+        <errorMessage><!-- Please select an approved broker or sub-broker --></errorMessage>
+    </lookupFilter>
+    <name>Broker_Name__c</name>
+    <relationshipLabel><!-- Policies (Broker) --></relationshipLabel>
+</CustomFieldTranslation>

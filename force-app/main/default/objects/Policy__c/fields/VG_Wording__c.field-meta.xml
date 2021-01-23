@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Wording__c</fullName>
+    <externalId>false</externalId>
+    <label>Wording</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All Risks Commercial Property Insurance – BBP 2.0</fullName>
+                <default>false</default>
+                <label>All Risks Commercial Property Insurance – BBP 2.0</label>
+            </value>
+            <value>
+                <fullName>All Risks Insurance for Construction Activities – BBCAR 2.0</fullName>
+                <default>false</default>
+                <label>All Risks Insurance for Construction Activities – BBCAR 2.0</label>
+            </value>
+            <value>
+                <fullName>Public and Products Liability Insurance – BBLI 2.0</fullName>
+                <default>false</default>
+                <label>Public and Products Liability Insurance – BBLI 2.0</label>
+            </value>
+            <value>
+                <fullName>Directors and Officers Liability Insurance BBDO 2.0</fullName>
+                <default>false</default>
+                <label>Directors and Officers Liability Insurance BBDO 2.0</label>
+            </value>
+            <value>
+                <fullName>Commercial Crime Insurance – BBC 2.0</fullName>
+                <default>false</default>
+                <label>Commercial Crime Insurance – BBC 2.0</label>
+            </value>
+            <value>
+                <fullName>Life Science Liability Insurance – BBLS 2.0</fullName>
+                <default>false</default>
+                <label>Life Science Liability Insurance – BBLS 2.0</label>
+            </value>
+            <value>
+                <fullName>Clinical Trials Liability Insurance – BBCT 2.0</fullName>
+                <default>false</default>
+                <label>Clinical Trials Liability Insurance – BBCT 2.0</label>
+            </value>
+            <value>
+                <fullName>Professional Indemnity for Financial Institutions-BBFIPI 2.0</fullName>
+                <default>false</default>
+                <label>Professional Indemnity for Financial Institutions-BBFIPI 2.0</label>
+            </value>
+            <value>
+                <fullName>Crime Insurance for Financial Institutions – BBFIC 2.0</fullName>
+                <default>false</default>
+                <label>Crime Insurance for Financial Institutions – BBFIC 2.0</label>
+            </value>
+            <value>
+                <fullName>Prospectus Liability Insurance – BBPL – 2.0</fullName>
+                <default>false</default>
+                <label>Prospectus Liability Insurance – BBPL – 2.0</label>
+            </value>
+            <value>
+                <fullName>Legal Expenses Insurance – BBLE 2.0</fullName>
+                <default>false</default>
+                <label>Legal Expenses Insurance – BBLE 2.0</label>
+            </value>
+            <value>
+                <fullName>Architects and Engineers</fullName>
+                <default>false</default>
+                <label>Architects and Engineers</label>
+            </value>
+            <value>
+                <fullName>Surveyors</fullName>
+                <default>false</default>
+                <label>Surveyors</label>
+            </value>
+            <value>
+                <fullName>Expert</fullName>
+                <default>false</default>
+                <label>Expert</label>
+            </value>
+            <value>
+                <fullName>Design and Construct</fullName>
+                <default>false</default>
+                <label>Design and Construct</label>
+            </value>
+            <value>
+                <fullName>Architects</fullName>
+                <default>false</default>
+                <label>Architects</label>
+            </value>
+            <value>
+                <fullName>Excess</fullName>
+                <default>false</default>
+                <label>Excess</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Insurance Brokers</fullName>
+                <default>false</default>
+                <label>Insurance Brokers</label>
+            </value>
+            <value>
+                <fullName>MGA</fullName>
+                <default>false</default>
+                <label>MGA</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Professional Indemnity Insurance BBPI 2.0</fullName>
+                <default>false</default>
+                <label>Professional Indemnity Insurance BBPI 2.0</label>
+            </value>
+            <value>
+                <fullName>BBG 2.2 - General Conditions and Definitions</fullName>
+                <default>false</default>
+                <label>BBG 2.2 - General Conditions and Definitions</label>
+            </value>
+            <value>
+                <fullName>Professional Indemnity Insurance for Financial Institutions  - BBFIPI 2.0</fullName>
+                <default>false</default>
+                <label>Professional Indemnity Insurance for Financial Institutions  - BBFIPI 2.0</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

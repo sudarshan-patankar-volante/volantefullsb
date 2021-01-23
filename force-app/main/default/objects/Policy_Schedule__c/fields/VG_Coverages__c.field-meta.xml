@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Coverages__c</fullName>
+    <externalId>false</externalId>
+    <label>Coverages</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TBA</fullName>
+                <default>false</default>
+                <label>TBA</label>
+            </value>
+            <value>
+                <fullName>Named Perils</fullName>
+                <default>false</default>
+                <label>Named Perils</label>
+            </value>
+            <value>
+                <fullName>M3 - Fully Comprehensive</fullName>
+                <default>false</default>
+                <label>M3 - Fully Comprehensive</label>
+            </value>
+            <value>
+                <fullName>M6 - Third Party Fire &amp; Theft</fullName>
+                <default>false</default>
+                <label>M6 - Third Party Fire &amp; Theft</label>
+            </value>
+            <value>
+                <fullName>M6 - Third Party Only</fullName>
+                <default>false</default>
+                <label>M6 - Third Party Only</label>
+            </value>
+            <value>
+                <fullName>M6 - Fire &amp; Theft Only</fullName>
+                <default>false</default>
+                <label>M6 - Fire &amp; Theft Only</label>
+            </value>
+            <value>
+                <fullName>Business Interruption</fullName>
+                <default>false</default>
+                <label>Business Interruption</label>
+            </value>
+            <value>
+                <fullName>All Perils</fullName>
+                <default>false</default>
+                <label>All Perils</label>
+            </value>
+            <value>
+                <fullName>Terrorism</fullName>
+                <default>false</default>
+                <label>Terrorism</label>
+            </value>
+            <value>
+                <fullName>Fire and Allied Perils</fullName>
+                <default>false</default>
+                <label>Fire and Allied Perils</label>
+            </value>
+            <value>
+                <fullName>CAR</fullName>
+                <default>false</default>
+                <label>CAR</label>
+            </value>
+            <value>
+                <fullName>EAR</fullName>
+                <default>false</default>
+                <label>EAR</label>
+            </value>
+            <value>
+                <fullName>Motor Hull</fullName>
+                <default>false</default>
+                <label>Motor Hull</label>
+            </value>
+            <value>
+                <fullName>Loss of Profit</fullName>
+                <default>false</default>
+                <label>Loss of Profit</label>
+            </value>
+            <value>
+                <fullName>CatNat</fullName>
+                <default>false</default>
+                <label>CatNat</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Mixed</fullName>
+                <default>false</default>
+                <label>Mixed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

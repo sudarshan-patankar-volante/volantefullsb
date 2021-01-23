@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product --></label>
+    <name>VG_Product__c</name>
+    <picklistValues>
+        <masterLabel>All Risk</masterLabel>
+        <translation><!-- All Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assault</masterLabel>
+        <translation><!-- Assault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burglary</masterLabel>
+        <translation><!-- Burglary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Interruption</masterLabel>
+        <translation><!-- Business Interruption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Interruption due to Health Problems</masterLabel>
+        <translation><!-- Business Interruption due to Health Problems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Sample</masterLabel>
+        <translation><!-- Business Sample --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAR/EAR</masterLabel>
+        <translation><!-- CAR/EAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC_Crime</masterLabel>
+        <translation><!-- CC_Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cistern</masterLabel>
+        <translation><!-- Cistern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Trials</masterLabel>
+        <translation><!-- Clinical Trials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Combined</masterLabel>
+        <translation><!-- Commercial Combined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crime</masterLabel>
+        <translation><!-- Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crisis</masterLabel>
+        <translation><!-- Crisis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D&amp;O</masterLabel>
+        <translation><!-- D&amp;O --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Epidemic Disease(BI)</masterLabel>
+        <translation><!-- Epidemic Disease(BI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escaping Liquid</masterLabel>
+        <translation><!-- Escaping Liquid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extra Costs</masterLabel>
+        <translation><!-- Extra Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIPI</masterLabel>
+        <translation><!-- FIPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire</masterLabel>
+        <translation><!-- Fire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forklift</masterLabel>
+        <translation><!-- Forklift --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freeze &amp; Refrigerator</masterLabel>
+        <translation><!-- Freeze &amp; Refrigerator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GLPL</masterLabel>
+        <translation><!-- GLPL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Aid</masterLabel>
+        <translation><!-- Legal Aid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liability</masterLabel>
+        <translation><!-- Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liability GL/PL</masterLabel>
+        <translation><!-- Liability GL/PL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Life Sciences</masterLabel>
+        <translation><!-- Life Sciences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lift</masterLabel>
+        <translation><!-- Lift --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of Rent</masterLabel>
+        <translation><!-- Loss of Rent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machinery BI</masterLabel>
+        <translation><!-- Machinery BI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machinery Breakdown</masterLabel>
+        <translation><!-- Machinery Breakdown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PI</masterLabel>
+        <translation><!-- PI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Accident(visitor)</masterLabel>
+        <translation><!-- Personal Accident(visitor) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Indemnity</masterLabel>
+        <translation><!-- Professional Indemnity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property</masterLabel>
+        <translation><!-- Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Robbery</masterLabel>
+        <translation><!-- Robbery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Objects</masterLabel>
+        <translation><!-- Special Objects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tools</masterLabel>
+        <translation><!-- Tools --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water</masterLabel>
+        <translation><!-- Water --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

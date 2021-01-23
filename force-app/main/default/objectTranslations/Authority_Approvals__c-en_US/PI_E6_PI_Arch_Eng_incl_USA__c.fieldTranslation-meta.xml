@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PI_E6-PI Arch/ Eng incl USA --></label>
+    <name>PI_E6_PI_Arch_Eng_incl_USA__c</name>
+</CustomFieldTranslation>

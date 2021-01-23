@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product --></label>
+    <name>Product__c</name>
+    <picklistValues>
+        <masterLabel>AGG Stop Loss</masterLabel>
+        <translation><!-- AGG Stop Loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGG XL</masterLabel>
+        <translation><!-- AGG XL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Trials</masterLabel>
+        <translation><!-- Clinical Trials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation><!-- Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Combined</masterLabel>
+        <translation><!-- Commercial Combined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Crime</masterLabel>
+        <translation><!-- Commercial Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial – Non Conventional</masterLabel>
+        <translation><!-- Commercial – Non Conventional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crime</masterLabel>
+        <translation><!-- Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D&amp;O</masterLabel>
+        <translation><!-- D&amp;O --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI - Blend</masterLabel>
+        <translation><!-- FI - Blend --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI - Crime</masterLabel>
+        <translation><!-- FI - Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI - Cyber</masterLabel>
+        <translation><!-- FI - Cyber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI - D&amp;O</masterLabel>
+        <translation><!-- FI - D&amp;O --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI - PI</masterLabel>
+        <translation><!-- FI - PI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIPI</masterLabel>
+        <translation><!-- FIPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fleet</masterLabel>
+        <translation><!-- Fleet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GLPL</masterLabel>
+        <translation><!-- GLPL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liability</masterLabel>
+        <translation><!-- Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Life Sciences</masterLabel>
+        <translation><!-- Life Sciences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor</masterLabel>
+        <translation><!-- Motor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA</masterLabel>
+        <translation><!-- PA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PI</masterLabel>
+        <translation><!-- PI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property</masterLabel>
+        <translation><!-- Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Per Event</masterLabel>
+        <translation><!-- Property Per Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Per Risk</masterLabel>
+        <translation><!-- Property Per Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Sector</masterLabel>
+        <translation><!-- Public Sector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Sector – Non Conventional</masterLabel>
+        <translation><!-- Public Sector – Non Conventional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schemes</masterLabel>
+        <translation><!-- Schemes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Risk Rating</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Risk Rating</value>
+    </caseValues>
+    <layouts>
+        <layout>Bridge Policy Schedule Asset Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Premium --></label>
+            <section>Premium</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy Schedule Asset Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Exposure --></label>
+            <section>Exposure</section>
+        </sections>
+        <sections>
+            <label><!-- Limits &amp; Deductibles --></label>
+            <section>Limits &amp; Deductibles</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Premium --></label>
+            <section>Premium</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Aesir --></label>
+        <name>Aesir</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Affinity --></label>
+        <name>Affinity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Bridge --></label>
+        <name>Bridge</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Edison --></label>
+        <name>Edison</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Gentium --></label>
+        <name>Gentium</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Horizon --></label>
+        <name>Horizon</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Imara --></label>
+        <name>Imara</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VFP --></label>
+        <name>VFP</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot update Risk Rating number --></errorMessage>
+        <name>RR_Name_Updation</name>
+    </validationRules>
+</CustomObjectTranslation>

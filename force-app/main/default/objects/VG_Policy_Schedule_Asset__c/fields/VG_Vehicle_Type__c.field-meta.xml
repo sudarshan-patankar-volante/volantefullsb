@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Vehicle_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Vehicle Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cars</fullName>
+                <default>false</default>
+                <label>Cars</label>
+            </value>
+            <value>
+                <fullName>Cars – High Value</fullName>
+                <default>false</default>
+                <label>Cars – High Value</label>
+            </value>
+            <value>
+                <fullName>Buses – 17+ seats</fullName>
+                <default>false</default>
+                <label>Buses – 17+ seats</label>
+            </value>
+            <value>
+                <fullName>Coaches – 17 + seats</fullName>
+                <default>false</default>
+                <label>Coaches – 17 + seats</label>
+            </value>
+            <value>
+                <fullName>Minibuses – upto 7 seats</fullName>
+                <default>false</default>
+                <label>Minibuses – upto 7 seats</label>
+            </value>
+            <value>
+                <fullName>Minibuses – upto 16 seats</fullName>
+                <default>false</default>
+                <label>Minibuses – upto 16 seats</label>
+            </value>
+            <value>
+                <fullName>Commercial Vehicles upto 3.5t</fullName>
+                <default>false</default>
+                <label>Commercial Vehicles upto 3.5t</label>
+            </value>
+            <value>
+                <fullName>Commercial Vehicles upto 7.5t</fullName>
+                <default>false</default>
+                <label>Commercial Vehicles upto 7.5t</label>
+            </value>
+            <value>
+                <fullName>Commercial Vehicles upto 12t</fullName>
+                <default>false</default>
+                <label>Commercial Vehicles upto 12t</label>
+            </value>
+            <value>
+                <fullName>Commercial Vehicles upto 18t</fullName>
+                <default>false</default>
+                <label>Commercial Vehicles upto 18t</label>
+            </value>
+            <value>
+                <fullName>Commercial Vehicles upto 24t</fullName>
+                <default>false</default>
+                <label>Commercial Vehicles upto 24t</label>
+            </value>
+            <value>
+                <fullName>Commercial Vehicles upto 30t</fullName>
+                <default>false</default>
+                <label>Commercial Vehicles upto 30t</label>
+            </value>
+            <value>
+                <fullName>Commercial Vehicles upto 44t</fullName>
+                <default>false</default>
+                <label>Commercial Vehicles upto 44t</label>
+            </value>
+            <value>
+                <fullName>Commercial Vehicles over 44t</fullName>
+                <default>false</default>
+                <label>Commercial Vehicles over 44t</label>
+            </value>
+            <value>
+                <fullName>Trade Plate</fullName>
+                <default>false</default>
+                <label>Trade Plate</label>
+            </value>
+            <value>
+                <fullName>Ghost Vehicle</fullName>
+                <default>false</default>
+                <label>Ghost Vehicle</label>
+            </value>
+            <value>
+                <fullName>Motor Cycle</fullName>
+                <default>false</default>
+                <label>Motor Cycle</label>
+            </value>
+            <value>
+                <fullName>Special Types</fullName>
+                <default>false</default>
+                <label>Special Types</label>
+            </value>
+            <value>
+                <fullName>Plant</fullName>
+                <default>false</default>
+                <label>Plant</label>
+            </value>
+            <value>
+                <fullName>Trailer</fullName>
+                <default>false</default>
+                <label>Trailer</label>
+            </value>
+            <value>
+                <fullName>Cars – Bluelight</fullName>
+                <default>false</default>
+                <label>Cars – Bluelight</label>
+            </value>
+            <value>
+                <fullName>Vans – Bluelight</fullName>
+                <default>false</default>
+                <label>Vans – Bluelight</label>
+            </value>
+            <value>
+                <fullName>Fire Engine</fullName>
+                <default>false</default>
+                <label>Fire Engine</label>
+            </value>
+            <value>
+                <fullName>Ambulance</fullName>
+                <default>false</default>
+                <label>Ambulance</label>
+            </value>
+            <value>
+                <fullName>Motorcycle – Bluelight</fullName>
+                <default>false</default>
+                <label>Motorcycle – Bluelight</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

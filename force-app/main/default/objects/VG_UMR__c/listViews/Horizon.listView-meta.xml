@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Horizon</fullName>
+    <columns>NAME</columns>
+    <columns>VG_Account__c</columns>
+    <columns>VG_RI_Inception_Date__c</columns>
+    <columns>VG_RI_Expiry_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>VG_UMR__c.Horizon</value>
+    </filters>
+    <label>Horizon</label>
+</ListView>

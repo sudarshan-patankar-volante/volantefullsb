@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Root cause of event --></label>
+    <name>VG_Root_cause_of_event__c</name>
+    <picklistValues>
+        <masterLabel>Design error</masterLabel>
+        <translation><!-- Design error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiation - SELU/GR</masterLabel>
+        <translation><!-- Radiation - SELU/GR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiation - SEU</masterLabel>
+        <translation><!-- Radiation - SEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Random component failure</masterLabel>
+        <translation><!-- Random component failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workmanship</masterLabel>
+        <translation><!-- Workmanship --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

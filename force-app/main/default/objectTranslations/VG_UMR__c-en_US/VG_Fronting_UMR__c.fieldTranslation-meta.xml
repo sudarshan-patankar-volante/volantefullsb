@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Fronting UMR --></label>
+    <name>VG_Fronting_UMR__c</name>
+    <relationshipLabel><!-- Capacity Details --></relationshipLabel>
+</CustomFieldTranslation>

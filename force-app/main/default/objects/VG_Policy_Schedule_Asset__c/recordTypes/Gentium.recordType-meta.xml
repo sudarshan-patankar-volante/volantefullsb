@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gentium</fullName>
+    <active>true</active>
+    <label>Gentium</label>
+    <picklistValues>
+        <picklist>VG_Coverage_Type__c</picklist>
+        <values>
+            <fullName>Full cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incentives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TLO %28Total Loss Only%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Coverage__c</picklist>
+        <values>
+            <fullName>All perils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assembly%2CIntetgratio and Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Interruption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CatNat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combined Flight-Launch Vehicle Flight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combined Flight-Post Separation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comined Flight-In-Orbit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire and allied perils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Orbit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Orbit Third Party Liabilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Launch Third Party Liabilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Launch Vehicle Flight Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loss of profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M3 - Fully Comprehensive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 - Fire %26 Theft Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 - Third Party Fire %26 Theft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 - Third Party Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MF-Overseas PD PL ex USA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MP-EU PD TPL ex UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Hull</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Named Perils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Launch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terrorism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Payment_Terms__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half yearly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qtrly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Perils__c</picklist>
+        <values>
+            <fullName>All Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animal Handlers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annual Carryings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any one Loss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any one Transit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bar%2FCatering%2FRetail%2FCleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Book Debts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buildings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clerical %26 Managerial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coaches%2FInstructors%2FPlayers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer and Electronic Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detioration of Stock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Effects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimated Annual Turnover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaming Machine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaming%2C Amusement and Entertainment Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gross Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gross Revenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICOW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery%2C Plant and All Other Contents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance%2FSecurity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Money in Safes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Negotiable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Number of Junior members</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Number of adult members</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Number of members</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbuildings %2F Storage containers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Premises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plate Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Dwelling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referees %2F coaches %2F Officials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent Payable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent Receivable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stock of Food %26 General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stock of Wines%2C Spirits %26 Tobacco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turnover</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Policy_Basis__c</picklist>
+        <values>
+            <fullName>Claims Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claims Occurred</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Profession__c</picklist>
+        <values>
+            <fullName>Audit%2C Accountancy%2C Company Tax - Financial Institutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit%2C Accountancy%2C Company Tax - Quoted Companies %26 PLCs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit%2C Accountancy%2C Company Tax - Unquoted Companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directorships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executorships %26 Trusteeships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Accountancy %26 Bookkeeping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generial Insurance Commissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Voluntary Arrangements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insolvency%2C Liquidiation  Receivership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mergers %26 Acquisitions and Corporate Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Investment Commissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Work %28High risk%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Work %28Low risk%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Work %28Medium risk%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Taxation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secretarial and Share registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stock %26 Share commissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Mitigation Schemes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Sub_Coverages__c</picklist>
+        <values>
+            <fullName>Agriculture Crop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture Livestock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Risks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aviation Cargo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aviation Hull</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aviation Spares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bankers Blanket Bond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Interruption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash in Safe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash in transit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consequential Loss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constuction All Risks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyber Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employers Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erection all Risks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fidelity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire %26 Allied Perils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Third Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good in Transit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Group Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Group Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inland Transit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery Breakdown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Cargo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Hull</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchandise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Money</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Passenger Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Physical Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Third Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offshore Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onshore Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PML Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Political Violence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Products Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Indemnity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stock Throughput</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terrorism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Theft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>War</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workmens Compensation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Territorial_Limits__c</picklist>
+        <values>
+            <fullName>Channel Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denmark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Great Britain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Isle of Man</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limit A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limit B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limit C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limit D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nordic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northern Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rest of world excluding North America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>World wide excluding North America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>World wide excluding North America but including</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worldwide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>business trips and trade shows world wide</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Transaction_Type__c</picklist>
+        <values>
+            <fullName>Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revision of Cover</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Use__c</picklist>
+        <values>
+            <fullName>Business Use %E2%80%93 Class 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Use %E2%80%93 Class 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Use %E2%80%93 Class 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hire %26 Reward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OBU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Own Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Hire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Hire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD%26P</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Vehicle_Type__c</picklist>
+        <values>
+            <fullName>Ambulance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buses %E2%80%93 17%2B seats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cars</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cars %E2%80%93 Bluelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cars %E2%80%93 High Value</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coaches %E2%80%93 17 %2B seats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Vehicles upto 12t</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Vehicles upto 18t</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Vehicles upto 24t</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Vehicles upto 3%2E5t</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Vehicles upto 30t</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Vehicles upto 44t</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Vehicles upto 7%2E5t</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Engine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ghost Vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minibuses %E2%80%93 upto 16 seats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minibuses %E2%80%93 upto 7 seats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Cycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motorcycle %E2%80%93 Bluelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Types</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Plate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vans %E2%80%93 Bluelight</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Equipments --></label>
+    <name>VG_Equipments__c</name>
+    <picklistValues>
+        <masterLabel>AOCS - CMG</masterLabel>
+        <translation><!-- AOCS - CMG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AOCS - Earth Sensor</masterLabel>
+        <translation><!-- AOCS - Earth Sensor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AOCS - FMW</masterLabel>
+        <translation><!-- AOCS - FMW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AOCS - GPS receiver</masterLabel>
+        <translation><!-- AOCS - GPS receiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AOCS - Gyro Assembly</masterLabel>
+        <translation><!-- AOCS - Gyro Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AOCS - Magnetotorquer</masterLabel>
+        <translation><!-- AOCS - Magnetotorquer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AOCS - Reaction wheel</masterLabel>
+        <translation><!-- AOCS - Reaction wheel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AOCS - Star Tracker</masterLabel>
+        <translation><!-- AOCS - Star Tracker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AOCS - Sun Sensor</masterLabel>
+        <translation><!-- AOCS - Sun Sensor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C and C - Beacon</masterLabel>
+        <translation><!-- C and C - Beacon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C and C - Central computer</masterLabel>
+        <translation><!-- C and C - Central computer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C and C - Crypto module</masterLabel>
+        <translation><!-- C and C - Crypto module --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C and C - RIU/PIU</masterLabel>
+        <translation><!-- C and C - RIU/PIU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C and C - TC Receiver</masterLabel>
+        <translation><!-- C and C - TC Receiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C and C - TM Transmitter</masterLabel>
+        <translation><!-- C and C - TM Transmitter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EO Payload - Data Formatting Unit</masterLabel>
+        <translation><!-- EO Payload - Data Formatting Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EO Payload - Data transmitter</masterLabel>
+        <translation><!-- EO Payload - Data transmitter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EO Payload - Solid State Recorder</masterLabel>
+        <translation><!-- EO Payload - Solid State Recorder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EO Payload - TR Module (SAR)</masterLabel>
+        <translation><!-- EO Payload - TR Module (SAR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EO payload - Imaging Instrument</masterLabel>
+        <translation><!-- EO payload - Imaging Instrument --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - Deployable Antenna</masterLabel>
+        <translation><!-- Mechanisms - Deployable Antenna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - HOP actuator</masterLabel>
+        <translation><!-- Mechanisms - HOP actuator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - Kevlar cutter</masterLabel>
+        <translation><!-- Mechanisms - Kevlar cutter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - Other actuator</masterLabel>
+        <translation><!-- Mechanisms - Other actuator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - Pyro actuator</masterLabel>
+        <translation><!-- Mechanisms - Pyro actuator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - Robotic arm</masterLabel>
+        <translation><!-- Mechanisms - Robotic arm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - SADM</masterLabel>
+        <translation><!-- Mechanisms - SADM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - Solar Array deployment</masterLabel>
+        <translation><!-- Mechanisms - Solar Array deployment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - Steerable Antenna</masterLabel>
+        <translation><!-- Mechanisms - Steerable Antenna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanisms - Unfurlable Antenna</masterLabel>
+        <translation><!-- Mechanisms - Unfurlable Antenna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power - Distribution</masterLabel>
+        <translation><!-- Power - Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power - Li Ion Battery</masterLabel>
+        <translation><!-- Power - Li Ion Battery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power - NiH Battery</masterLabel>
+        <translation><!-- Power - NiH Battery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power - Regulator</masterLabel>
+        <translation><!-- Power - Regulator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power - Solar Array GaAs</masterLabel>
+        <translation><!-- Power - Solar Array GaAs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power - Solar Array Si</masterLabel>
+        <translation><!-- Power - Solar Array Si --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - Apogee engine</masterLabel>
+        <translation><!-- Propulsion - Apogee engine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - Arcjet</masterLabel>
+        <translation><!-- Propulsion - Arcjet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - BiProp thruster</masterLabel>
+        <translation><!-- Propulsion - BiProp thruster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - Filter</masterLabel>
+        <translation><!-- Propulsion - Filter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - ImpHET</masterLabel>
+        <translation><!-- Propulsion - ImpHET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - Latch valve</masterLabel>
+        <translation><!-- Propulsion - Latch valve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - Monoprop thruster</masterLabel>
+        <translation><!-- Propulsion - Monoprop thruster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - Power converter</masterLabel>
+        <translation><!-- Propulsion - Power converter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - SPT thruster</masterLabel>
+        <translation><!-- Propulsion - SPT thruster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Propulsion - XIPS thruster</masterLabel>
+        <translation><!-- Propulsion - XIPS thruster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Structure</masterLabel>
+        <translation><!-- Structure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD</masterLabel>
+        <translation><!-- TBD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - Centralised Power Supply</masterLabel>
+        <translation><!-- TC Payload - Centralised Power Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - Downconverter</masterLabel>
+        <translation><!-- TC Payload - Downconverter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - EPC</masterLabel>
+        <translation><!-- TC Payload - EPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - LNA</masterLabel>
+        <translation><!-- TC Payload - LNA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - MLO</masterLabel>
+        <translation><!-- TC Payload - MLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - Payload processor</masterLabel>
+        <translation><!-- TC Payload - Payload processor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - Receiver</masterLabel>
+        <translation><!-- TC Payload - Receiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - SSPA</masterLabel>
+        <translation><!-- TC Payload - SSPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - TWTA</masterLabel>
+        <translation><!-- TC Payload - TWTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TC Payload - Upconverter</masterLabel>
+        <translation><!-- TC Payload - Upconverter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal - Control unit</masterLabel>
+        <translation><!-- Thermal - Control unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal - Embedded Heatpipe</masterLabel>
+        <translation><!-- Thermal - Embedded Heatpipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal - Heater</masterLabel>
+        <translation><!-- Thermal - Heater --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal - Loop Heat Pipe</masterLabel>
+        <translation><!-- Thermal - Loop Heat Pipe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal - Pumped loop</masterLabel>
+        <translation><!-- Thermal - Pumped loop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal - Thermistor</masterLabel>
+        <translation><!-- Thermal - Thermistor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

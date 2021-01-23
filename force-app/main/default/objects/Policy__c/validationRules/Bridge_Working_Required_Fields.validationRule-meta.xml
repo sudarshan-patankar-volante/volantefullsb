@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_Working_Required_Fields</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( RecordType.Name =&apos;Bridge&apos;,ISPICKVAL( Policy_Status__c , &apos;Working&apos;) , OR(ISBLANK(TEXT( Insured__r.CurrencyIsoCode )), Insured__r.Name == null, ISBLANK(TEXT(Insured__r.Industry)), ISBLANK(TEXT(Insured__r.Customer_Size_GBP_Revenue__c)) ) )</errorConditionFormula>
+    <errorMessage>Must Enter Value on This Policy associated Account Record before move to Working Status...
+*Account Name
+*Account Currency
+*Industry
+*Customer Revenue</errorMessage>
+</ValidationRule>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Prime_Manufacturer__c</fullName>
+    <externalId>false</externalId>
+    <label>Launcher Manufacturer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AIRBUS DEFENCE AND SPACE</fullName>
+                <default>false</default>
+                <label>AIRBUS DEFENCE AND SPACE</label>
+            </value>
+            <value>
+                <fullName>Blue Origin LLC</fullName>
+                <default>false</default>
+                <label>Blue Origin LLC</label>
+            </value>
+            <value>
+                <fullName>CALT</fullName>
+                <default>false</default>
+                <label>CALT</label>
+            </value>
+            <value>
+                <fullName>GILMOUR AEROSPACE</fullName>
+                <default>false</default>
+                <label>GILMOUR AEROSPACE</label>
+            </value>
+            <value>
+                <fullName>IHI Corporation</fullName>
+                <default>false</default>
+                <label>IHI Corporation</label>
+            </value>
+            <value>
+                <fullName>ISRO</fullName>
+                <default>false</default>
+                <label>ISRO</label>
+            </value>
+            <value>
+                <fullName>KHRUNICHEV</fullName>
+                <default>false</default>
+                <label>KHRUNICHEV</label>
+            </value>
+            <value>
+                <fullName>LOCKHEED MARTIN CORPORATION</fullName>
+                <default>false</default>
+                <label>LOCKHEED MARTIN CORPORATION</label>
+            </value>
+            <value>
+                <fullName>MHI</fullName>
+                <default>false</default>
+                <label>MHI</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Northrop Grumman Innovation Systems (NGIS)</fullName>
+                <default>false</default>
+                <label>Northrop Grumman Innovation Systems (NGIS)</label>
+            </value>
+            <value>
+                <fullName>PROGRESS ROCKET SPACE CENTRE</fullName>
+                <default>false</default>
+                <label>PROGRESS ROCKET SPACE CENTRE</label>
+            </value>
+            <value>
+                <fullName>ROCKET LAB</fullName>
+                <default>false</default>
+                <label>ROCKET LAB</label>
+            </value>
+            <value>
+                <fullName>SKYRORA</fullName>
+                <default>false</default>
+                <label>SKYRORA</label>
+            </value>
+            <value>
+                <fullName>SPACEX</fullName>
+                <default>false</default>
+                <label>SPACEX</label>
+            </value>
+            <value>
+                <fullName>TBA</fullName>
+                <default>false</default>
+                <label>TBA</label>
+            </value>
+            <value>
+                <fullName>VIRGIN ORBIT</fullName>
+                <default>false</default>
+                <label>VIRGIN ORBIT</label>
+            </value>
+            <value>
+                <fullName>YUZHNOYE</fullName>
+                <default>false</default>
+                <label>YUZHNOYE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

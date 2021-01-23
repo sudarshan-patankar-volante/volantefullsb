@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Add Assets</masterLabel>
+        <translation><!-- Add Assets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confirm</masterLabel>
+        <translation><!-- Confirm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endorsements</masterLabel>
+        <translation><!-- Endorsements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk Details</masterLabel>
+        <translation><!-- Risk Details --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

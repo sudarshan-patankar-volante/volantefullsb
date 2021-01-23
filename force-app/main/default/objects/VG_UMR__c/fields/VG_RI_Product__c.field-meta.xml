@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_RI_Product__c</fullName>
+    <externalId>false</externalId>
+    <label>RI Product</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aviation</fullName>
+                <default>false</default>
+                <label>Aviation</label>
+            </value>
+            <value>
+                <fullName>Casualty</fullName>
+                <default>false</default>
+                <label>Casualty</label>
+            </value>
+            <value>
+                <fullName>Cyber</fullName>
+                <default>false</default>
+                <label>Cyber</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>Marine</fullName>
+                <default>false</default>
+                <label>Marine</label>
+            </value>
+            <value>
+                <fullName>Motor</fullName>
+                <default>false</default>
+                <label>Motor</label>
+            </value>
+            <value>
+                <fullName>Property</fullName>
+                <default>false</default>
+                <label>Property</label>
+            </value>
+            <value>
+                <fullName>Financial Lines</fullName>
+                <default>false</default>
+                <label>Financial Lines</label>
+            </value>
+            <value>
+                <fullName>Leisure and Sport</fullName>
+                <default>false</default>
+                <label>Leisure and Sport</label>
+            </value>
+            <value>
+                <fullName>Financial Institutions</fullName>
+                <default>false</default>
+                <label>Financial Institutions</label>
+            </value>
+            <value>
+                <fullName>Professions</fullName>
+                <default>false</default>
+                <label>Professions</label>
+            </value>
+            <value>
+                <fullName>Facultative and Treaty Property and Casualty Reinsurance</fullName>
+                <default>false</default>
+                <label>Facultative and Treaty Property and Casualty Reinsurance</label>
+            </value>
+            <value>
+                <fullName>Space</fullName>
+                <default>false</default>
+                <label>Space</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

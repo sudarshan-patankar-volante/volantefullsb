@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Layer__c</fullName>
+    <externalId>false</externalId>
+    <label>Layer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1st Layer</fullName>
+                <default>false</default>
+                <label>1st Layer</label>
+            </value>
+            <value>
+                <fullName>2nd Layer</fullName>
+                <default>false</default>
+                <label>2nd Layer</label>
+            </value>
+            <value>
+                <fullName>3rd Layer</fullName>
+                <default>false</default>
+                <label>3rd Layer</label>
+            </value>
+            <value>
+                <fullName>4th Layer</fullName>
+                <default>false</default>
+                <label>4th Layer</label>
+            </value>
+            <value>
+                <fullName>5th Layer</fullName>
+                <default>false</default>
+                <label>5th Layer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

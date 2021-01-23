@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Coverage Type --></label>
+    <name>VG_Coverage_Type__c</name>
+    <picklistValues>
+        <masterLabel>Contingency</masterLabel>
+        <translation><!-- Contingency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full cover</masterLabel>
+        <translation><!-- Full cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IPI</masterLabel>
+        <translation><!-- IPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incentives</masterLabel>
+        <translation><!-- Incentives --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investor Protection</masterLabel>
+        <translation><!-- Investor Protection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOR</masterLabel>
+        <translation><!-- LOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenue</masterLabel>
+        <translation><!-- Revenue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TLO</masterLabel>
+        <translation><!-- TLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TLO (Total Loss Only)</masterLabel>
+        <translation><!-- TLO (Total Loss Only) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

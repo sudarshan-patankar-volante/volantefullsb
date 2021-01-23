@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub-Structure --></label>
+    <name>VG_Sub_Structure__c</name>
+    <picklistValues>
+        <masterLabel>Per Event</masterLabel>
+        <translation><!-- Per Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Per Risk</masterLabel>
+        <translation><!-- Per Risk --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

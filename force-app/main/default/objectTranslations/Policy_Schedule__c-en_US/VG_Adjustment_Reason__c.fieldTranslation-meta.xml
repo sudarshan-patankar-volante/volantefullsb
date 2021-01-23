@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Adjustment Reason --></label>
+    <name>VG_Adjustment_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Bad Risk</masterLabel>
+        <translation><!-- Bad Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker Relationship</masterLabel>
+        <translation><!-- Broker Relationship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Relationship</masterLabel>
+        <translation><!-- Customer Relationship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Good Risk</masterLabel>
+        <translation><!-- Good Risk --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

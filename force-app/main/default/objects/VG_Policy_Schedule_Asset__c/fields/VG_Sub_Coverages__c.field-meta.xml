@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Sub_Coverages__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Coverages</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Motor Third Party</fullName>
+                <default>false</default>
+                <label>Motor Third Party</label>
+            </value>
+            <value>
+                <fullName>General Third Party</fullName>
+                <default>false</default>
+                <label>General Third Party</label>
+            </value>
+            <value>
+                <fullName>Political Violence</fullName>
+                <default>false</default>
+                <label>Political Violence</label>
+            </value>
+            <value>
+                <fullName>Specie</fullName>
+                <default>false</default>
+                <label>Specie</label>
+            </value>
+            <value>
+                <fullName>Cash in transit</fullName>
+                <default>false</default>
+                <label>Cash in transit</label>
+            </value>
+            <value>
+                <fullName>Cash in Safe</fullName>
+                <default>false</default>
+                <label>Cash in Safe</label>
+            </value>
+            <value>
+                <fullName>Products Liability</fullName>
+                <default>false</default>
+                <label>Products Liability</label>
+            </value>
+            <value>
+                <fullName>Professional Indemnity</fullName>
+                <default>false</default>
+                <label>Professional Indemnity</label>
+            </value>
+            <value>
+                <fullName>Workmens Compensation</fullName>
+                <default>false</default>
+                <label>Workmens Compensation</label>
+            </value>
+            <value>
+                <fullName>Employers Liability</fullName>
+                <default>false</default>
+                <label>Employers Liability</label>
+            </value>
+            <value>
+                <fullName>Personal Accident</fullName>
+                <default>false</default>
+                <label>Personal Accident</label>
+            </value>
+            <value>
+                <fullName>Fidelity</fullName>
+                <default>false</default>
+                <label>Fidelity</label>
+            </value>
+            <value>
+                <fullName>Theft</fullName>
+                <default>false</default>
+                <label>Theft</label>
+            </value>
+            <value>
+                <fullName>Inland Transit</fullName>
+                <default>false</default>
+                <label>Inland Transit</label>
+            </value>
+            <value>
+                <fullName>Agriculture Livestock</fullName>
+                <default>false</default>
+                <label>Agriculture Livestock</label>
+            </value>
+            <value>
+                <fullName>Agriculture Crop</fullName>
+                <default>false</default>
+                <label>Agriculture Crop</label>
+            </value>
+            <value>
+                <fullName>Bankers Blanket Bond</fullName>
+                <default>false</default>
+                <label>Bankers Blanket Bond</label>
+            </value>
+            <value>
+                <fullName>Fire &amp; Allied Perils</fullName>
+                <default>false</default>
+                <label>Fire &amp; Allied Perils</label>
+            </value>
+            <value>
+                <fullName>Onshore Energy</fullName>
+                <default>false</default>
+                <label>Onshore Energy</label>
+            </value>
+            <value>
+                <fullName>Machinery Breakdown</fullName>
+                <default>false</default>
+                <label>Machinery Breakdown</label>
+            </value>
+            <value>
+                <fullName>Constuction All Risks</fullName>
+                <default>false</default>
+                <label>Constuction All Risks</label>
+            </value>
+            <value>
+                <fullName>Marine Hull</fullName>
+                <default>false</default>
+                <label>Marine Hull</label>
+            </value>
+            <value>
+                <fullName>Marine Cargo</fullName>
+                <default>false</default>
+                <label>Marine Cargo</label>
+            </value>
+            <value>
+                <fullName>Aviation Hull</fullName>
+                <default>false</default>
+                <label>Aviation Hull</label>
+            </value>
+            <value>
+                <fullName>Aviation Cargo</fullName>
+                <default>false</default>
+                <label>Aviation Cargo</label>
+            </value>
+            <value>
+                <fullName>Aviation Spares</fullName>
+                <default>false</default>
+                <label>Aviation Spares</label>
+            </value>
+            <value>
+                <fullName>Merchandise</fullName>
+                <default>false</default>
+                <label>Merchandise</label>
+            </value>
+            <value>
+                <fullName>Stock Throughput</fullName>
+                <default>false</default>
+                <label>Stock Throughput</label>
+            </value>
+            <value>
+                <fullName>Offshore Energy</fullName>
+                <default>false</default>
+                <label>Offshore Energy</label>
+            </value>
+            <value>
+                <fullName>PML Error</fullName>
+                <default>false</default>
+                <label>PML Error</label>
+            </value>
+            <value>
+                <fullName>Consequential Loss</fullName>
+                <default>false</default>
+                <label>Consequential Loss</label>
+            </value>
+            <value>
+                <fullName>Electronic Equipment</fullName>
+                <default>false</default>
+                <label>Electronic Equipment</label>
+            </value>
+            <value>
+                <fullName>All Risks</fullName>
+                <default>false</default>
+                <label>All Risks</label>
+            </value>
+            <value>
+                <fullName>Money</fullName>
+                <default>false</default>
+                <label>Money</label>
+            </value>
+            <value>
+                <fullName>Good in Transit</fullName>
+                <default>false</default>
+                <label>Good in Transit</label>
+            </value>
+            <value>
+                <fullName>Glass</fullName>
+                <default>false</default>
+                <label>Glass</label>
+            </value>
+            <value>
+                <fullName>Terrorism</fullName>
+                <default>false</default>
+                <label>Terrorism</label>
+            </value>
+            <value>
+                <fullName>Business Interruption</fullName>
+                <default>false</default>
+                <label>Business Interruption</label>
+            </value>
+            <value>
+                <fullName>Erection all Risks</fullName>
+                <default>false</default>
+                <label>Erection all Risks</label>
+            </value>
+            <value>
+                <fullName>Motor Physical Damage</fullName>
+                <default>false</default>
+                <label>Motor Physical Damage</label>
+            </value>
+            <value>
+                <fullName>Motor Passenger Liability</fullName>
+                <default>false</default>
+                <label>Motor Passenger Liability</label>
+            </value>
+            <value>
+                <fullName>Cyber Liability</fullName>
+                <default>false</default>
+                <label>Cyber Liability</label>
+            </value>
+            <value>
+                <fullName>War</fullName>
+                <default>false</default>
+                <label>War</label>
+            </value>
+            <value>
+                <fullName>Bonds</fullName>
+                <default>false</default>
+                <label>Bonds</label>
+            </value>
+            <value>
+                <fullName>Trade Credit</fullName>
+                <default>false</default>
+                <label>Trade Credit</label>
+            </value>
+            <value>
+                <fullName>Personal Health</fullName>
+                <default>false</default>
+                <label>Personal Health</label>
+            </value>
+            <value>
+                <fullName>Group Health</fullName>
+                <default>false</default>
+                <label>Group Health</label>
+            </value>
+            <value>
+                <fullName>Personal Travel</fullName>
+                <default>false</default>
+                <label>Personal Travel</label>
+            </value>
+            <value>
+                <fullName>Group Travel</fullName>
+                <default>false</default>
+                <label>Group Travel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

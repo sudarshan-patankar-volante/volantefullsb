@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_MGA_Commission_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+     NOT(ISBLANK(VG_UMR__r.RI_Share_Cap__c)),
+     IF(VG_Policy_Schedule__r.Gross_Written_Premium__c = 0, 0 , round((IF(ISBLANK(VG_MGA_Commission_Override__c),  VG_UMR__r.VG_MGA_Commission__c, (VALUE(VG_MGA_Commission_Override__c) )/100)* VG_RI_Premium__c) + IF(ISPICKVAL( VG_UMR__r.Net_MGA_Commission_Option__c ,&quot;Yes&quot;), Brokerage_Amount__c, 0),2)/VG_Policy_Schedule__r.Gross_Written_Premium__c) &gt;  VG_UMR__r.RI_Share_Cap__c) ,
+ VG_UMR__r.RI_Share_Cap__c * VG_Policy_Schedule__r.Gross_Written_Premium__c, 
+round((IF(ISBLANK(VG_MGA_Commission_Override__c),  VG_UMR__r.VG_MGA_Commission__c, (VALUE(VG_MGA_Commission_Override__c) )/100)* VG_RI_Premium__c) + IF(ISPICKVAL( VG_UMR__r.Net_MGA_Commission_Option__c ,&quot;Yes&quot;), Brokerage_Amount__c, 0),2))</formula>
+    <label>Commission Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

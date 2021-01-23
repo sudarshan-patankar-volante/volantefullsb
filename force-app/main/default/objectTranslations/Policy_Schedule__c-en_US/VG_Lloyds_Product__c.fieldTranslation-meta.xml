@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Risk Code --></label>
+    <name>VG_Lloyds_Product__c</name>
+    <picklistValues>
+        <masterLabel>6T-Overseas Legal Terrorism - Property</masterLabel>
+        <translation><!-- 6T-Overseas Legal Terrorism - Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7T-Terrorism TPL</masterLabel>
+        <translation><!-- 7T-Terrorism TPL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B5-PD Binder Comm Prop excl USA</masterLabel>
+        <translation><!-- B5-PD Binder Comm Prop excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB-Crime</masterLabel>
+        <translation><!-- BB-Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CB-Eng  annual renewabl e incl CAR EAR MB CPE B&amp;M EEI Treaty LOD</masterLabel>
+        <translation><!-- CB-Eng  annual renewabl e incl CAR EAR MB CPE B&amp;M EEI Treaty LOD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC-Eng Single Proj non renewable incl CAR EAR Traty RAD</masterLabel>
+        <translation><!-- CC-Eng Single Proj non renewable incl CAR EAR Traty RAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Trials</masterLabel>
+        <translation><!-- Clinical Trials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D2-D&amp;O excl FI incl USA</masterLabel>
+        <translation><!-- D2-D&amp;O excl FI incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D3-D&amp;O excl FI excl USA</masterLabel>
+        <translation><!-- D3-D&amp;O excl FI excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D4-D&amp;O FI incl USA</masterLabel>
+        <translation><!-- D4-D&amp;O FI incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D5-D&amp;O FI excl USA</masterLabel>
+        <translation><!-- D5-D&amp;O FI excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E2-PI Legal incl USA</masterLabel>
+        <translation><!-- E2-PI Legal incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E3-PI Legal excl USA</masterLabel>
+        <translation><!-- E3-PI Legal excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E4-PI Acc incl USA</masterLabel>
+        <translation><!-- E4-PI Acc incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E5-PI Acc excl USA</masterLabel>
+        <translation><!-- E5-PI Acc excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E6-PI Arch/ Eng incl USA</masterLabel>
+        <translation><!-- E6-PI Arch/ Eng incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E7-PI Arch/ Eng excl USA</masterLabel>
+        <translation><!-- E7-PI Arch/ Eng excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA</masterLabel>
+        <translation><!-- E8-PI excl Legal/ Acc / Arch/ Eng/ FI incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA</masterLabel>
+        <translation><!-- E9-PI excl Legal/ Acc / Arch/ Eng/ FI excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F2-PI FI incl USA</masterLabel>
+        <translation><!-- F2-PI FI incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F3-PI FI excl USA</masterLabel>
+        <translation><!-- F3-PI FI excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F4-PI Tech/ TelCo incl USA</masterLabel>
+        <translation><!-- F4-PI Tech/ TelCo incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F5-PI Tech/ TelCo excl USA</masterLabel>
+        <translation><!-- F5-PI Tech/ TelCo excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mixed</masterLabel>
+        <translation><!-- Mixed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA-GL/ PL excl Claims Made excl USA</masterLabel>
+        <translation><!-- NA-GL/ PL excl Claims Made excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NC-GL/ PL Claims Made excl USA</masterLabel>
+        <translation><!-- NC-GL/ PL Claims Made excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P3-PD Primary Layer Property excl USA</masterLabel>
+        <translation><!-- P3-PD Primary Layer Property excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P4-PD Full Value Property incl USA</masterLabel>
+        <translation><!-- P4-PD Full Value Property incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P5-PD Full Value Property excl USA</masterLabel>
+        <translation><!-- P5-PD Full Value Property excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P6-PD XS Layer Property incl USA</masterLabel>
+        <translation><!-- P6-PD XS Layer Property incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P7-PD XS Layer Property excl USA</masterLabel>
+        <translation><!-- P7-PD XS Layer Property excl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PB-Product Recall</masterLabel>
+        <translation><!-- PB-Product Recall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PG-Op Power Gen Transmission/ Util excl Const</masterLabel>
+        <translation><!-- PG-Op Power Gen Transmission/ Util excl Const --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR-PD (Direct Prop RI)</masterLabel>
+        <translation><!-- TR-PD (Direct Prop RI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UA-GL/ PL excl Claims Made incl USA</masterLabel>
+        <translation><!-- UA-GL/ PL excl Claims Made incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UC-GL/ PL Claims Made incl USA</masterLabel>
+        <translation><!-- UC-GL/ PL Claims Made incl USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Cargo (All Risks incl War, excl War Risks only)</masterLabel>
+        <translation><!-- V-Cargo (All Risks incl War, excl War Risks only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X3-NM Prop or Pecuniary Loss XL on XL Retrocession</masterLabel>
+        <translation><!-- X3-NM Prop or Pecuniary Loss XL on XL Retrocession --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NTU_Decline_Status_Lock</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $Profile.Name !=&apos;System Administrator&apos;,AND( ISCHANGED( Policy_Status__c ) , ISPICKVAL(PRIORVALUE(Policy_Status__c ), &apos;NTU/Decline&apos;), NOT(ISPICKVAL(Policy_Status__c , &apos;NTU/Decline&apos;)),NOT(ISPICKVAL(Policy_Status__c , &apos;Quoted&apos;)) ))</errorConditionFormula>
+    <errorMessage>Once reached NTU/Decline can&apos;t change status</errorMessage>
+</ValidationRule>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>AESIR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>AESIR</label>
+        <sharedTo>
+            <group>VG_Aesir</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Aesir</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>AFS_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>AFS Sharing Rule</label>
+        <sharedTo>
+            <group>VG_AFS</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Affinity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Alpha_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Alpha Sharing Rule</label>
+        <sharedTo>
+            <group>Imara</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Imara</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Bridge_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Bridge Sharing Rule</label>
+        <sharedTo>
+            <group>VG_Bridge</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Bridge</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Edison_Motor_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Edison Motor Sharing Rule</label>
+        <sharedTo>
+            <group>Edison_Motor</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Edison Motor</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Gentium_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Gentium Sharing Rule</label>
+        <sharedTo>
+            <group>Gentium</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Gentium</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Horizon_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Horizon Sharing Rule</label>
+        <sharedTo>
+            <group>VG_Horizon</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Horizon</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>VFP_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>VFP Sharing Rule</label>
+        <sharedTo>
+            <group>VG_VFP</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>VFP</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

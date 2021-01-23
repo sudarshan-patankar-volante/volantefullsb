@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Capacity Bordereaux</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Capacity Bordereaux</value>
+    </caseValues>
+    <layouts>
+        <layout>ReInsurance Layout</layout>
+        <sections>
+            <label><!-- Bordereaux --></label>
+            <section>Bordereaux</section>
+        </sections>
+        <sections>
+            <label><!-- Bordereaux (USD) --></label>
+            <section>Bordereaux (USD)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot change Capacity Bordereaux number --></errorMessage>
+        <name>CB_Name_Updation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot override commission once policy schedule is booked --></errorMessage>
+        <name>Commission_Override_editable</name>
+    </validationRules>
+</CustomObjectTranslation>

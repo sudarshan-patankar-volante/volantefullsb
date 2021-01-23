@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Nordics_Property</fullName>
+    <active>true</active>
+    <label>Nordics Property</label>
+    <picklistValues>
+        <picklist>VG_Asset_Type__c</picklist>
+        <values>
+            <fullName>Launcher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satellite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Automatic_Fire_alarm__c</picklist>
+        <values>
+            <fullName>High Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_BI_Indemnity_Period__c</picklist>
+        <values>
+            <fullName>12 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9 Months</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Coverage__c</picklist>
+        <values>
+            <fullName>M3 - Fully Comprehensive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 - Fire %26 Theft Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 - Third Party Fire %26 Theft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 - Third Party Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Equipments__c</picklist>
+        <values>
+            <fullName>AOCS - CMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AOCS - Earth Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AOCS - FMW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AOCS - GPS receiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AOCS - Gyro Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AOCS - Magnetotorquer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AOCS - Reaction wheel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AOCS - Star Tracker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AOCS - Sun Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C and C - Beacon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C and C - Central computer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C and C - Crypto module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C and C - RIU%2FPIU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C and C - TC Receiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C and C - TM Transmitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EO Payload - Data Formatting Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EO Payload - Data transmitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EO Payload - Solid State Recorder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EO Payload - TR Module %28SAR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EO payload - Imaging Instrument</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - Deployable Antenna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - HOP actuator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - Kevlar cutter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - Other actuator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - Pyro actuator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - Robotic arm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - SADM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - Solar Array deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - Steerable Antenna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanisms - Unfurlable Antenna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power - Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power - Li Ion Battery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power - NiH Battery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power - Regulator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power - Solar Array GaAs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power - Solar Array Si</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - Apogee engine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - Arcjet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - BiProp thruster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - Filter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - ImpHET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - Latch valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - Monoprop thruster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - Power converter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - SPT thruster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propulsion - XIPS thruster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - Centralised Power Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - Downconverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - EPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - LNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - MLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - Payload processor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - Receiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - SSPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - TWTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC Payload - Upconverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal - Control unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal - Embedded Heatpipe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal - Heater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal - Loop Heat Pipe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal - Pumped loop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal - Thermistor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Foam_supression_system__c</picklist>
+        <values>
+            <fullName>High Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Full_Value_Building_P__c</picklist>
+        <values>
+            <fullName>F</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Full_time_public_Fire_Brigade_staff__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over 10 mins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under 10 mins</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Launch_Operator__c</picklist>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Launcher_family__c</picklist>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_MB_BI_Indemnity_Period__c</picklist>
+        <values>
+            <fullName>12 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9 Months</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_MB_Waiting_Period__c</picklist>
+        <values>
+            <fullName>120 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>144 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>168 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>96 Hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Manufacturer__c</picklist>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Operator__c</picklist>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Orbit__c</picklist>
+        <values>
+            <fullName>Ballistic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elliptical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escape</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interplanetary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L2 - Lissajous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEO %281200-1600km%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEO %28400-800km%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEO - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Molnyia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Payload_Manufacturer__c</picklist>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Platform_Manufacturer__c</picklist>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Prime_Manufacturer__c</picklist>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Satellite_Family__c</picklist>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Satellite_Status__c</picklist>
+        <values>
+            <fullName>Future Launch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Launch Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reentered%2Fdeorbited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satellite Failure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Smoke_and_heat_venting_system__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smoke and Heat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smoke or heat only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Use__c</picklist>
+        <values>
+            <fullName>Business Use %E2%80%93 Class 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Use %E2%80%93 Class 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Use %E2%80%93 Class 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hire %26 Reward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OBU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Own Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Hire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Hire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD%26P</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Waiting_Period__c</picklist>
+        <values>
+            <fullName>120 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>144 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>168 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>96 Hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VG_Water_sprinklers__c</picklist>
+        <values>
+            <fullName>High Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vehicle_Make__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vehicle_Model__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

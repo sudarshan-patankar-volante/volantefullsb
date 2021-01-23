@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Perils__c</fullName>
+    <externalId>false</externalId>
+    <label>Perils</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Number of members</fullName>
+                <default>false</default>
+                <label>Number of members</label>
+            </value>
+            <value>
+                <fullName>Turnover</fullName>
+                <default>false</default>
+                <label>Turnover</label>
+            </value>
+            <value>
+                <fullName>Buildings</fullName>
+                <default>false</default>
+                <label>Buildings</label>
+            </value>
+            <value>
+                <fullName>Outbuildings / Storage containers</fullName>
+                <default>false</default>
+                <label>Outbuildings / Storage containers</label>
+            </value>
+            <value>
+                <fullName>Machinery, Plant and All Other Contents</fullName>
+                <default>false</default>
+                <label>Machinery, Plant and All Other Contents</label>
+            </value>
+            <value>
+                <fullName>Computer and Electronic Equipment</fullName>
+                <default>false</default>
+                <label>Computer and Electronic Equipment</label>
+            </value>
+            <value>
+                <fullName>Gaming, Amusement and Entertainment Equipment</fullName>
+                <default>false</default>
+                <label>Gaming, Amusement and Entertainment Equipment</label>
+            </value>
+            <value>
+                <fullName>Plate Glass</fullName>
+                <default>false</default>
+                <label>Plate Glass</label>
+            </value>
+            <value>
+                <fullName>Stock of Food &amp; General</fullName>
+                <default>false</default>
+                <label>Stock of Food &amp; General</label>
+            </value>
+            <value>
+                <fullName>Stock of Wines, Spirits &amp; Tobacco</fullName>
+                <default>false</default>
+                <label>Stock of Wines, Spirits &amp; Tobacco</label>
+            </value>
+            <value>
+                <fullName>Detioration of Stock</fullName>
+                <default>false</default>
+                <label>Detioration of Stock</label>
+            </value>
+            <value>
+                <fullName>Rent Payable</fullName>
+                <default>false</default>
+                <label>Rent Payable</label>
+            </value>
+            <value>
+                <fullName>Gross Profit</fullName>
+                <default>false</default>
+                <label>Gross Profit</label>
+            </value>
+            <value>
+                <fullName>Gross Revenue</fullName>
+                <default>false</default>
+                <label>Gross Revenue</label>
+            </value>
+            <value>
+                <fullName>ICOW</fullName>
+                <default>false</default>
+                <label>ICOW</label>
+            </value>
+            <value>
+                <fullName>Book Debts</fullName>
+                <default>false</default>
+                <label>Book Debts</label>
+            </value>
+            <value>
+                <fullName>Per Premises</fullName>
+                <default>false</default>
+                <label>Per Premises</label>
+            </value>
+            <value>
+                <fullName>Any one Transit</fullName>
+                <default>false</default>
+                <label>Any one Transit</label>
+            </value>
+            <value>
+                <fullName>Annual Carryings</fullName>
+                <default>false</default>
+                <label>Annual Carryings</label>
+            </value>
+            <value>
+                <fullName>Money in Safes</fullName>
+                <default>false</default>
+                <label>Money in Safes</label>
+            </value>
+            <value>
+                <fullName>Business Hours</fullName>
+                <default>false</default>
+                <label>Business Hours</label>
+            </value>
+            <value>
+                <fullName>Gaming Machine</fullName>
+                <default>false</default>
+                <label>Gaming Machine</label>
+            </value>
+            <value>
+                <fullName>Non Negotiable</fullName>
+                <default>false</default>
+                <label>Non Negotiable</label>
+            </value>
+            <value>
+                <fullName>Employee Effects</fullName>
+                <default>false</default>
+                <label>Employee Effects</label>
+            </value>
+            <value>
+                <fullName>Private Dwelling</fullName>
+                <default>false</default>
+                <label>Private Dwelling</label>
+            </value>
+            <value>
+                <fullName>Any one Loss</fullName>
+                <default>false</default>
+                <label>Any one Loss</label>
+            </value>
+            <value>
+                <fullName>Clerical &amp; Managerial</fullName>
+                <default>false</default>
+                <label>Clerical &amp; Managerial</label>
+            </value>
+            <value>
+                <fullName>Bar/Catering/Retail/Cleaning</fullName>
+                <default>false</default>
+                <label>Bar/Catering/Retail/Cleaning</label>
+            </value>
+            <value>
+                <fullName>Coaches/Instructors/Players</fullName>
+                <default>false</default>
+                <label>Coaches/Instructors/Players</label>
+            </value>
+            <value>
+                <fullName>Maintenance/Security</fullName>
+                <default>false</default>
+                <label>Maintenance/Security</label>
+            </value>
+            <value>
+                <fullName>Animal Handlers</fullName>
+                <default>false</default>
+                <label>Animal Handlers</label>
+            </value>
+            <value>
+                <fullName>All Others</fullName>
+                <default>false</default>
+                <label>All Others</label>
+            </value>
+            <value>
+                <fullName>Estimated Annual Turnover</fullName>
+                <default>false</default>
+                <label>Estimated Annual Turnover</label>
+            </value>
+            <value>
+                <fullName>Clubs</fullName>
+                <default>false</default>
+                <label>Clubs</label>
+            </value>
+            <value>
+                <fullName>Number of adult members</fullName>
+                <default>false</default>
+                <label>Number of adult members</label>
+            </value>
+            <value>
+                <fullName>Number of Junior members</fullName>
+                <default>false</default>
+                <label>Number of Junior members</label>
+            </value>
+            <value>
+                <fullName>Referees / coaches / Officials</fullName>
+                <default>false</default>
+                <label>Referees / coaches / Officials</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Rent Receivable</fullName>
+                <default>false</default>
+                <label>Rent Receivable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Split Type --></label>
+    <name>Split_Type__c</name>
+    <picklistValues>
+        <masterLabel>--None--</masterLabel>
+        <translation><!-- - - None- -  --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Both</masterLabel>
+        <translation><!-- Both --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EEA</masterLabel>
+        <translation><!-- EEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non EEA</masterLabel>
+        <translation><!-- Non EEA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Launcher family --></label>
+    <name>VG_Launcher_family__c</name>
+    <picklistValues>
+        <masterLabel>ANGARA</masterLabel>
+        <translation><!-- ANGARA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANTARES</masterLabel>
+        <translation><!-- ANTARES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARIANE 4</masterLabel>
+        <translation><!-- ARIANE 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARIANE 5</masterLabel>
+        <translation><!-- ARIANE 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATLAS 2</masterLabel>
+        <translation><!-- ATLAS 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATLAS 3</masterLabel>
+        <translation><!-- ATLAS 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATLAS 5</masterLabel>
+        <translation><!-- ATLAS 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUE ORIGIN LAUNCHERS</masterLabel>
+        <translation><!-- BLUE ORIGIN LAUNCHERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COSMOS</masterLabel>
+        <translation><!-- COSMOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELTA 2</masterLabel>
+        <translation><!-- DELTA 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELTA 4</masterLabel>
+        <translation><!-- DELTA 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DNEPR</masterLabel>
+        <translation><!-- DNEPR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELECTRON</masterLabel>
+        <translation><!-- ELECTRON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPSILON 1 &amp; 2</masterLabel>
+        <translation><!-- EPSILON 1 &amp; 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FALCON 9</masterLabel>
+        <translation><!-- FALCON 9 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSLV</masterLabel>
+        <translation><!-- GSLV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H 2</masterLabel>
+        <translation><!-- H 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LANDSPACE</masterLabel>
+        <translation><!-- LANDSPACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG MARCH 1 SERIES</masterLabel>
+        <translation><!-- LONG MARCH 1 SERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG MARCH 2 SERIES</masterLabel>
+        <translation><!-- LONG MARCH 2 SERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG MARCH 3 SERIES</masterLabel>
+        <translation><!-- LONG MARCH 3 SERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG MARCH 4 SERIES</masterLabel>
+        <translation><!-- LONG MARCH 4 SERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG MARCH 5 SERIES</masterLabel>
+        <translation><!-- LONG MARCH 5 SERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG MARCH 6 SERIES</masterLabel>
+        <translation><!-- LONG MARCH 6 SERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG MARCH 7 SERIES</masterLabel>
+        <translation><!-- LONG MARCH 7 SERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation><!-- OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROTON K</masterLabel>
+        <translation><!-- PROTON K --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROTON M</masterLabel>
+        <translation><!-- PROTON M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSLV</masterLabel>
+        <translation><!-- PSLV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROCKOT</masterLabel>
+        <translation><!-- ROCKOT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ 2</masterLabel>
+        <translation><!-- SOYUZ 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ FG</masterLabel>
+        <translation><!-- SOYUZ FG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ ST</masterLabel>
+        <translation><!-- SOYUZ ST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOYUZ U</masterLabel>
+        <translation><!-- SOYUZ U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPARK (SUPER STRYPI) TYPE)</masterLabel>
+        <translation><!-- SPARK (SUPER STRYPI) TYPE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STS</masterLabel>
+        <translation><!-- STS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBA</masterLabel>
+        <translation><!-- TBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VEGA 1</masterLabel>
+        <translation><!-- VEGA 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIRGIN</masterLabel>
+        <translation><!-- VIRGIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZENIT 2 SERIES</masterLabel>
+        <translation><!-- ZENIT 2 SERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZENIT 3 SERIES</masterLabel>
+        <translation><!-- ZENIT 3 SERIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZENITH 3</masterLabel>
+        <translation><!-- ZENITH 3 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

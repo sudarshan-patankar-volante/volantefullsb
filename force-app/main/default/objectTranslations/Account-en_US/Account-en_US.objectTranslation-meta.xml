@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Company Details --></label>
+            <section>Company Details</section>
+        </sections>
+        <sections>
+            <label><!-- Intermediary Details --></label>
+            <section>Intermediary Details</section>
+        </sections>
+        <sections>
+            <label><!-- VG Financials --></label>
+            <section>VG Financials</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account VG Details Layout</layout>
+        <sections>
+            <label><!-- Billing Details --></label>
+            <section>Billing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Financials --></label>
+            <section>Financials</section>
+        </sections>
+        <sections>
+            <label><!-- VG Details --></label>
+            <section>VG Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Admin Account Layout</layout>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Company Details --></label>
+            <section>Company Details</section>
+        </sections>
+        <sections>
+            <label><!-- Intermediary Details --></label>
+            <section>Intermediary Details</section>
+        </sections>
+        <sections>
+            <label><!-- VG Financials --></label>
+            <section>VG Financials</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UMR Account Layout</layout>
+        <sections>
+            <label><!-- Company Details --></label>
+            <section>Company Details</section>
+        </sections>
+        <sections>
+            <label><!-- Intermediary Details --></label>
+            <section>Intermediary Details</section>
+        </sections>
+        <sections>
+            <label><!-- VG Financials --></label>
+            <section>VG Financials</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+</CustomObjectTranslation>

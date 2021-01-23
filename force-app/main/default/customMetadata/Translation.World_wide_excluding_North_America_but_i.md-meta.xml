@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>World wide excluding North America but i</label>
+    <protected>false</protected>
+    <values>
+        <field>From_Language__c</field>
+        <value xsi:type="xsd:string">English</value>
+    </values>
+    <values>
+        <field>Language1__c</field>
+        <value xsi:type="xsd:string">World wide excluding North America but including business trips and trade shows world wide</value>
+    </values>
+    <values>
+        <field>Language2__c</field>
+        <value xsi:type="xsd:string">Hela världen exklusive Nordamerika. Vid försäljnings- och inköpsresor samt vid deltagande i konferenser och mässor gäller Försäkringen för Skada som inträffar i hela världen.</value>
+    </values>
+    <values>
+        <field>To_Language__c</field>
+        <value xsi:type="xsd:string">Swedish</value>
+    </values>
+</CustomMetadata>

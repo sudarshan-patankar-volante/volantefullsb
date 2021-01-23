@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- RI Product --></label>
+    <name>VG_RI_Product__c</name>
+    <picklistValues>
+        <masterLabel>Aviation</masterLabel>
+        <translation><!-- Aviation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casualty</masterLabel>
+        <translation><!-- Casualty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyber</masterLabel>
+        <translation><!-- Cyber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy</masterLabel>
+        <translation><!-- Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facultative and Treaty Property and Casualty Reinsurance</masterLabel>
+        <translation><!-- Facultative and Treaty Property and Casualty Reinsurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Institutions</masterLabel>
+        <translation><!-- Financial Institutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Lines</masterLabel>
+        <translation><!-- Financial Lines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leisure and Sport</masterLabel>
+        <translation><!-- Leisure and Sport --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine</masterLabel>
+        <translation><!-- Marine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor</masterLabel>
+        <translation><!-- Motor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professions</masterLabel>
+        <translation><!-- Professions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property</masterLabel>
+        <translation><!-- Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Space</masterLabel>
+        <translation><!-- Space --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

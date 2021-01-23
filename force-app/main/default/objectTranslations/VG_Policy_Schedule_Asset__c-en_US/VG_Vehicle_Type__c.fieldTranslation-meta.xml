@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Vehicle Type --></label>
+    <name>VG_Vehicle_Type__c</name>
+    <picklistValues>
+        <masterLabel>Ambulance</masterLabel>
+        <translation><!-- Ambulance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buses – 17+ seats</masterLabel>
+        <translation><!-- Buses – 17+ seats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cars</masterLabel>
+        <translation><!-- Cars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cars – Bluelight</masterLabel>
+        <translation><!-- Cars – Bluelight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cars – High Value</masterLabel>
+        <translation><!-- Cars – High Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coaches – 17 + seats</masterLabel>
+        <translation><!-- Coaches – 17 + seats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Vehicles over 44t</masterLabel>
+        <translation><!-- Commercial Vehicles over 44t --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Vehicles upto 12t</masterLabel>
+        <translation><!-- Commercial Vehicles upto 12t --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Vehicles upto 18t</masterLabel>
+        <translation><!-- Commercial Vehicles upto 18t --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Vehicles upto 24t</masterLabel>
+        <translation><!-- Commercial Vehicles upto 24t --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Vehicles upto 3.5t</masterLabel>
+        <translation><!-- Commercial Vehicles upto 3.5t --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Vehicles upto 30t</masterLabel>
+        <translation><!-- Commercial Vehicles upto 30t --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Vehicles upto 44t</masterLabel>
+        <translation><!-- Commercial Vehicles upto 44t --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Vehicles upto 7.5t</masterLabel>
+        <translation><!-- Commercial Vehicles upto 7.5t --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Engine</masterLabel>
+        <translation><!-- Fire Engine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ghost Vehicle</masterLabel>
+        <translation><!-- Ghost Vehicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minibuses – upto 16 seats</masterLabel>
+        <translation><!-- Minibuses – upto 16 seats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minibuses – upto 7 seats</masterLabel>
+        <translation><!-- Minibuses – upto 7 seats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Cycle</masterLabel>
+        <translation><!-- Motor Cycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motorcycle – Bluelight</masterLabel>
+        <translation><!-- Motorcycle – Bluelight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant</masterLabel>
+        <translation><!-- Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Types</masterLabel>
+        <translation><!-- Special Types --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Plate</masterLabel>
+        <translation><!-- Trade Plate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trailer</masterLabel>
+        <translation><!-- Trailer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vans – Bluelight</masterLabel>
+        <translation><!-- Vans – Bluelight --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Profession --></label>
+    <name>VG_Profession__c</name>
+    <picklistValues>
+        <masterLabel>Accountants</masterLabel>
+        <translation><!-- Accountants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architects</masterLabel>
+        <translation><!-- Architects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design and Construction</masterLabel>
+        <translation><!-- Design and Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design and Construction - High Risk</masterLabel>
+        <translation><!-- Design and Construction - High Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design and Construction - Low Risk</masterLabel>
+        <translation><!-- Design and Construction - Low Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design and Construction - Med Risk</masterLabel>
+        <translation><!-- Design and Construction - Med Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employment Agents</masterLabel>
+        <translation><!-- Employment Agents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineers</masterLabel>
+        <translation><!-- Engineers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT</masterLabel>
+        <translation><!-- IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Brokers</masterLabel>
+        <translation><!-- Insurance Brokers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lloyd&apos;s Brokers</masterLabel>
+        <translation><!-- Lloyd&apos;s Brokers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MGAs</masterLabel>
+        <translation><!-- MGAs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management Consultants</masterLabel>
+        <translation><!-- Management Consultants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media</masterLabel>
+        <translation><!-- Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solicitors</masterLabel>
+        <translation><!-- Solicitors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surveyors</masterLabel>
+        <translation><!-- Surveyors --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

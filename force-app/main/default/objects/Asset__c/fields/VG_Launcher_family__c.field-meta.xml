@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Launcher_family__c</fullName>
+    <externalId>false</externalId>
+    <label>Launcher family</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ANGARA</fullName>
+                <default>false</default>
+                <label>ANGARA</label>
+            </value>
+            <value>
+                <fullName>ANTARES</fullName>
+                <default>false</default>
+                <label>ANTARES</label>
+            </value>
+            <value>
+                <fullName>ARIANE 4</fullName>
+                <default>false</default>
+                <label>ARIANE 4</label>
+            </value>
+            <value>
+                <fullName>ARIANE 5</fullName>
+                <default>false</default>
+                <label>ARIANE 5</label>
+            </value>
+            <value>
+                <fullName>ATLAS 2</fullName>
+                <default>false</default>
+                <label>ATLAS 2</label>
+            </value>
+            <value>
+                <fullName>ATLAS 3</fullName>
+                <default>false</default>
+                <label>ATLAS 3</label>
+            </value>
+            <value>
+                <fullName>ATLAS 5</fullName>
+                <default>false</default>
+                <label>ATLAS 5</label>
+            </value>
+            <value>
+                <fullName>BLUE ORIGIN LAUNCHERS</fullName>
+                <default>false</default>
+                <label>BLUE ORIGIN LAUNCHERS</label>
+            </value>
+            <value>
+                <fullName>COSMOS</fullName>
+                <default>false</default>
+                <label>COSMOS</label>
+            </value>
+            <value>
+                <fullName>DELTA 2</fullName>
+                <default>false</default>
+                <label>DELTA 2</label>
+            </value>
+            <value>
+                <fullName>DELTA 4</fullName>
+                <default>false</default>
+                <label>DELTA 4</label>
+            </value>
+            <value>
+                <fullName>DNEPR</fullName>
+                <default>false</default>
+                <label>DNEPR</label>
+            </value>
+            <value>
+                <fullName>ELECTRON</fullName>
+                <default>false</default>
+                <label>ELECTRON</label>
+            </value>
+            <value>
+                <fullName>EPSILON 1 &amp; 2</fullName>
+                <default>false</default>
+                <label>EPSILON 1 &amp; 2</label>
+            </value>
+            <value>
+                <fullName>FALCON 9</fullName>
+                <default>false</default>
+                <label>FALCON 9</label>
+            </value>
+            <value>
+                <fullName>GSLV</fullName>
+                <default>false</default>
+                <label>GSLV</label>
+            </value>
+            <value>
+                <fullName>H 2</fullName>
+                <default>false</default>
+                <label>H 2</label>
+            </value>
+            <value>
+                <fullName>LANDSPACE</fullName>
+                <default>false</default>
+                <label>LANDSPACE</label>
+            </value>
+            <value>
+                <fullName>LONG MARCH 1 SERIES</fullName>
+                <default>false</default>
+                <label>LONG MARCH 1 SERIES</label>
+            </value>
+            <value>
+                <fullName>LONG MARCH 2 SERIES</fullName>
+                <default>false</default>
+                <label>LONG MARCH 2 SERIES</label>
+            </value>
+            <value>
+                <fullName>LONG MARCH 3 SERIES</fullName>
+                <default>false</default>
+                <label>LONG MARCH 3 SERIES</label>
+            </value>
+            <value>
+                <fullName>LONG MARCH 4 SERIES</fullName>
+                <default>false</default>
+                <label>LONG MARCH 4 SERIES</label>
+            </value>
+            <value>
+                <fullName>LONG MARCH 5 SERIES</fullName>
+                <default>false</default>
+                <label>LONG MARCH 5 SERIES</label>
+            </value>
+            <value>
+                <fullName>LONG MARCH 6 SERIES</fullName>
+                <default>false</default>
+                <label>LONG MARCH 6 SERIES</label>
+            </value>
+            <value>
+                <fullName>LONG MARCH 7 SERIES</fullName>
+                <default>false</default>
+                <label>LONG MARCH 7 SERIES</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>PROTON K</fullName>
+                <default>false</default>
+                <label>PROTON K</label>
+            </value>
+            <value>
+                <fullName>PROTON M</fullName>
+                <default>false</default>
+                <label>PROTON M</label>
+            </value>
+            <value>
+                <fullName>PSLV</fullName>
+                <default>false</default>
+                <label>PSLV</label>
+            </value>
+            <value>
+                <fullName>ROCKOT</fullName>
+                <default>false</default>
+                <label>ROCKOT</label>
+            </value>
+            <value>
+                <fullName>SOYUZ 2</fullName>
+                <default>false</default>
+                <label>SOYUZ 2</label>
+            </value>
+            <value>
+                <fullName>SOYUZ FG</fullName>
+                <default>false</default>
+                <label>SOYUZ FG</label>
+            </value>
+            <value>
+                <fullName>SOYUZ ST</fullName>
+                <default>false</default>
+                <label>SOYUZ ST</label>
+            </value>
+            <value>
+                <fullName>SOYUZ U</fullName>
+                <default>false</default>
+                <label>SOYUZ U</label>
+            </value>
+            <value>
+                <fullName>SPARK (SUPER STRYPI) TYPE)</fullName>
+                <default>false</default>
+                <label>SPARK (SUPER STRYPI) TYPE)</label>
+            </value>
+            <value>
+                <fullName>STS</fullName>
+                <default>false</default>
+                <label>STS</label>
+            </value>
+            <value>
+                <fullName>TBA</fullName>
+                <default>false</default>
+                <label>TBA</label>
+            </value>
+            <value>
+                <fullName>VEGA 1</fullName>
+                <default>false</default>
+                <label>VEGA 1</label>
+            </value>
+            <value>
+                <fullName>VIRGIN</fullName>
+                <default>false</default>
+                <label>VIRGIN</label>
+            </value>
+            <value>
+                <fullName>ZENIT 2 SERIES</fullName>
+                <default>false</default>
+                <label>ZENIT 2 SERIES</label>
+            </value>
+            <value>
+                <fullName>ZENIT 3 SERIES</fullName>
+                <default>false</default>
+                <label>ZENIT 3 SERIES</label>
+            </value>
+            <value>
+                <fullName>ZENITH 3</fullName>
+                <default>false</default>
+                <label>ZENITH 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- FX --></label>
+    <name>FX__c</name>
+    <picklistValues>
+        <masterLabel>CAD</masterLabel>
+        <translation><!-- CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHF</masterLabel>
+        <translation><!-- CHF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOK</masterLabel>
+        <translation><!-- DOK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUR</masterLabel>
+        <translation><!-- EUR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GBP</masterLabel>
+        <translation><!-- GBP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOK</masterLabel>
+        <translation><!-- NOK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEK</masterLabel>
+        <translation><!-- SEK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USD</masterLabel>
+        <translation><!-- USD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YEN</masterLabel>
+        <translation><!-- YEN --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

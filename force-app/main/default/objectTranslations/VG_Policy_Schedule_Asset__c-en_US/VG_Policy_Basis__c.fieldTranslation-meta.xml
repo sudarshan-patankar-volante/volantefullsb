@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Policy Basis --></label>
+    <name>VG_Policy_Basis__c</name>
+    <picklistValues>
+        <masterLabel>Claims Made</masterLabel>
+        <translation><!-- Claims Made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claims Occurred</masterLabel>
+        <translation><!-- Claims Occurred --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Portal_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS($Api.Partner_Server_URL_290, &quot;Edison&quot;), &quot;/Edison/&quot;, IF(CONTAINS($Api.Partner_Server_URL_290, &quot;Bridge&quot;), &quot;/Bridge/&quot;,IF(CONTAINS($Api.Partner_Server_URL_290, &quot;VFP&quot;), &quot;/VFP/&quot;,IF(CONTAINS($Api.Partner_Server_URL_290, &quot;Horizon&quot;), &quot;/Horizon/&quot;,
+IF(CONTAINS($Api.Partner_Server_URL_290, &quot;LS&quot;), &quot;/LS/&quot;, IF(CONTAINS($Api.Partner_Server_URL_290, &quot;Aesir&quot;), &quot;/Aesir/&quot;, IF(CONTAINS($Api.Partner_Server_URL_290, &quot;Imara&quot;), &quot;/Imara/&quot;,IF(CONTAINS($Api.Partner_Server_URL_290, &quot;Gentium&quot;), &quot;/Gentium/&quot;,IF(CONTAINS($Api.Partner_Server_URL_290, &quot;umr&quot;), &quot;/umr/&quot;, &quot;None&quot;)))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Portal Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

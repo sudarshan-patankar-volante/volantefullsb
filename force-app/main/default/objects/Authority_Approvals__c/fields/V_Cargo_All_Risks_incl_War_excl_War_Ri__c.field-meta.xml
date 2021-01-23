@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>V_Cargo_All_Risks_incl_War_excl_War_Ri__c</fullName>
+    <externalId>false</externalId>
+    <label>V-Cargo (All Risks incl War, excl War Ri</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

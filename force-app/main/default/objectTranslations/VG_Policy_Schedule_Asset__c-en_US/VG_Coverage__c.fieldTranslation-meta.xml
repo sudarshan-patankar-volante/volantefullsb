@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Coverage --></label>
+    <name>VG_Coverage__c</name>
+    <picklistValues>
+        <masterLabel>Agriculture</masterLabel>
+        <translation><!-- Agriculture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agriculture (Livestock &amp; Crop)</masterLabel>
+        <translation><!-- Agriculture (Livestock &amp; Crop) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All Risk</masterLabel>
+        <translation><!-- All Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All perils</masterLabel>
+        <translation><!-- All perils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assembly,Intetgratio and Testing</masterLabel>
+        <translation><!-- Assembly,Intetgratio and Testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviation</masterLabel>
+        <translation><!-- Aviation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankers&apos; Blanker Bond (BBB)</masterLabel>
+        <translation><!-- Bankers&apos; Blanker Bond (BBB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burglary or Theft</masterLabel>
+        <translation><!-- Burglary or Theft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Interruption</masterLabel>
+        <translation><!-- Business Interruption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAR</masterLabel>
+        <translation><!-- CAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAT</masterLabel>
+        <translation><!-- CAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargo Open policy</masterLabel>
+        <translation><!-- Cargo Open policy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargo Single policy</masterLabel>
+        <translation><!-- Cargo Single policy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CatNat</masterLabel>
+        <translation><!-- CatNat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined Flight-Launch Vehicle Flight</masterLabel>
+        <translation><!-- Combined Flight-Launch Vehicle Flight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined Flight-Post SeparatIn-Orbitn</masterLabel>
+        <translation><!-- Combined Flight-Post SeparatIn-Orbitn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined Flight-Post Separation</masterLabel>
+        <translation><!-- Combined Flight-Post Separation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comined Flight-In-Orbit</masterLabel>
+        <translation><!-- Comined Flight-In-Orbit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractor&apos;s Plant &amp; Machinery (CPM)</masterLabel>
+        <translation><!-- Contractor&apos;s Plant &amp; Machinery (CPM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit</masterLabel>
+        <translation><!-- Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crime/ Fidelity Guarantee</masterLabel>
+        <translation><!-- Crime/ Fidelity Guarantee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyber Insurance</masterLabel>
+        <translation><!-- Cyber Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyber Liability</masterLabel>
+        <translation><!-- Cyber Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deorbit</masterLabel>
+        <translation><!-- Deorbit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Directors &amp; Officers (D&amp;O)</masterLabel>
+        <translation><!-- Directors &amp; Officers (D&amp;O) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic Package</masterLabel>
+        <translation><!-- Domestic Package --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAR</masterLabel>
+        <translation><!-- EAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronic and Electric Equipment (EEE)</masterLabel>
+        <translation><!-- Electronic and Electric Equipment (EEE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employers&apos; Liability (EL)</masterLabel>
+        <translation><!-- Employers&apos; Liability (EL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy</masterLabel>
+        <translation><!-- Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engine Testing</masterLabel>
+        <translation><!-- Engine Testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering</masterLabel>
+        <translation><!-- Engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Treaty</masterLabel>
+        <translation><!-- Engineering Treaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Data Media Cover</masterLabel>
+        <translation><!-- External Data Media Cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire and allied perils</masterLabel>
+        <translation><!-- Fire and allied perils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Goods In Transit</masterLabel>
+        <translation><!-- Goods In Transit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Group Accident</masterLabel>
+        <translation><!-- Group Accident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health</masterLabel>
+        <translation><!-- Health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health (Corporate)</masterLabel>
+        <translation><!-- Health (Corporate) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health (Micro)</masterLabel>
+        <translation><!-- Health (Micro) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull Commercial/fishing boats</masterLabel>
+        <translation><!-- Hull Commercial/fishing boats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull Container ships</masterLabel>
+        <translation><!-- Hull Container ships --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull Ferries &amp; Tour Boats</masterLabel>
+        <translation><!-- Hull Ferries &amp; Tour Boats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hull Pleasure crafts/ Yatchs</masterLabel>
+        <translation><!-- Hull Pleasure crafts/ Yatchs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Orbit</masterLabel>
+        <translation><!-- In-Orbit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Orbit Third Party Liabilities</masterLabel>
+        <translation><!-- In-Orbit Third Party Liabilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increased Cost of Working (ICOW) Cover</masterLabel>
+        <translation><!-- Increased Cost of Working (ICOW) Cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial All Risk</masterLabel>
+        <translation><!-- Industrial All Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Launch Third Party Liabilities</masterLabel>
+        <translation><!-- Launch Third Party Liabilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Launch Vehicle Flight Only</masterLabel>
+        <translation><!-- Launch Vehicle Flight Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liability</masterLabel>
+        <translation><!-- Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liability Treaty</masterLabel>
+        <translation><!-- Liability Treaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of profit</masterLabel>
+        <translation><!-- Loss of profit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M3 - Fully Comprehensive</masterLabel>
+        <translation><!-- M3 - Fully Comprehensive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Fire &amp; Theft Only</masterLabel>
+        <translation><!-- M6 - Fire &amp; Theft Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Third Party Fire &amp; Theft</masterLabel>
+        <translation><!-- M6 - Third Party Fire &amp; Theft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Third Party Only</masterLabel>
+        <translation><!-- M6 - Third Party Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MF-Overseas PD TPL ex USA</masterLabel>
+        <translation><!-- MF-Overseas PD TPL ex USA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MP-EU PD TPL ex UK</masterLabel>
+        <translation><!-- MP-EU PD TPL ex UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machinery Breakdown (MB)</masterLabel>
+        <translation><!-- Machinery Breakdown (MB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine</masterLabel>
+        <translation><!-- Marine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine Cargo Treaty</masterLabel>
+        <translation><!-- Marine Cargo Treaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine Hull Treaty</masterLabel>
+        <translation><!-- Marine Hull Treaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine Inland Insurance</masterLabel>
+        <translation><!-- Marine Inland Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine Treaty</masterLabel>
+        <translation><!-- Marine Treaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Malpractice</masterLabel>
+        <translation><!-- Medical Malpractice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Money (Cash in Transit &amp; Cash in Safe)</masterLabel>
+        <translation><!-- Money (Cash in Transit &amp; Cash in Safe) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor</masterLabel>
+        <translation><!-- Motor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Car replacement extension</masterLabel>
+        <translation><!-- Motor Car replacement extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Comprehensive</masterLabel>
+        <translation><!-- Motor Comprehensive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Comprehensive Fleet</masterLabel>
+        <translation><!-- Motor Comprehensive Fleet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Hull</masterLabel>
+        <translation><!-- Motor Hull --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Occupants/ Passengers</masterLabel>
+        <translation><!-- Motor Occupants/ Passengers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Third Party Only</masterLabel>
+        <translation><!-- Motor Third Party Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Third Party Only Fleet</masterLabel>
+        <translation><!-- Motor Third Party Only Fleet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Treaty</masterLabel>
+        <translation><!-- Motor Treaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Windscreen cover</masterLabel>
+        <translation><!-- Motor Windscreen cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiline</masterLabel>
+        <translation><!-- Multiline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Named Perils</masterLabel>
+        <translation><!-- Named Perils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office Comprehensive</masterLabel>
+        <translation><!-- Office Comprehensive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owners/ Occupiers&apos; Liability</masterLabel>
+        <translation><!-- Owners/ Occupiers&apos; Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PVT</masterLabel>
+        <translation><!-- PVT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Per Event Treaty</masterLabel>
+        <translation><!-- Per Event Treaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Per Risk Treaty</masterLabel>
+        <translation><!-- Per Risk Treaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Accident</masterLabel>
+        <translation><!-- Personal Accident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Accident Treaty</masterLabel>
+        <translation><!-- Personal Accident Treaty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Political Violence</masterLabel>
+        <translation><!-- Political Violence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Launch</masterLabel>
+        <translation><!-- Pre-Launch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Liability</masterLabel>
+        <translation><!-- Product Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Recall</masterLabel>
+        <translation><!-- Product Recall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Indemnity</masterLabel>
+        <translation><!-- Professional Indemnity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property CAT</masterLabel>
+        <translation><!-- Property CAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Risk</masterLabel>
+        <translation><!-- Property Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Liability (PL)</masterLabel>
+        <translation><!-- Public Liability (PL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retrocession</masterLabel>
+        <translation><!-- Retrocession --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specie &amp; Fine Art</masterLabel>
+        <translation><!-- Specie &amp; Fine Art --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surety Bond Insurance</masterLabel>
+        <translation><!-- Surety Bond Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Takaful</masterLabel>
+        <translation><!-- Takaful --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terrorism</masterLabel>
+        <translation><!-- Terrorism --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Credit</masterLabel>
+        <translation><!-- Trade Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transit</masterLabel>
+        <translation><!-- Transit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel</masterLabel>
+        <translation><!-- Travel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel (Group)</masterLabel>
+        <translation><!-- Travel (Group) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WPB/Incentives</masterLabel>
+        <translation><!-- WPB/Incentives --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workers&apos; Compensation (WC)</masterLabel>
+        <translation><!-- Workers&apos; Compensation (WC) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

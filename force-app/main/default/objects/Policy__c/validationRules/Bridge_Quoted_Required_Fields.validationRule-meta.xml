@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_Quoted_Required_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( RecordType.Name =&apos;Bridge&apos;,ISPICKVAL( Policy_Status__c , &apos;Quoted&apos;) , OR( VG_Inception_Date__c ==null, VG_Expiry_Date__c ==null, ISBLANK(TEXT(Line_Of_Business__c)) ,ISBLANK(TEXT( CurrencyIsoCode ))) )</errorConditionFormula>
+    <errorMessage>Must enter value on 
+*Inception Date 
+*Expiry Date 
+*Line of Business 
+*Currency</errorMessage>
+</ValidationRule>

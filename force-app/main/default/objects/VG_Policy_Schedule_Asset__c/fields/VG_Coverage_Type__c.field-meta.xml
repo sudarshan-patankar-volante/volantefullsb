@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Coverage_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Coverage Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full cover</fullName>
+                <default>false</default>
+                <label>Full cover</label>
+            </value>
+            <value>
+                <fullName>TLO (Total Loss Only)</fullName>
+                <default>false</default>
+                <label>TLO (Total Loss Only)</label>
+            </value>
+            <value>
+                <fullName>Incentives</fullName>
+                <default>false</default>
+                <label>Incentives</label>
+            </value>
+            <value>
+                <fullName>Revenue</fullName>
+                <default>false</default>
+                <label>Revenue</label>
+            </value>
+            <value>
+                <fullName>Investor Protection</fullName>
+                <default>false</default>
+                <label>Investor Protection</label>
+            </value>
+            <value>
+                <fullName>Contingency</fullName>
+                <default>false</default>
+                <label>Contingency</label>
+            </value>
+            <value>
+                <fullName>IPI</fullName>
+                <default>false</default>
+                <label>IPI</label>
+            </value>
+            <value>
+                <fullName>TLO</fullName>
+                <default>false</default>
+                <label>TLO</label>
+            </value>
+            <value>
+                <fullName>LOR</fullName>
+                <default>false</default>
+                <label>LOR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

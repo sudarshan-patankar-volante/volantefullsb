@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Sub_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Claim_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coverage Agreed</fullName>
+                <default>false</default>
+                <label>Coverage Agreed</label>
+            </value>
+            <value>
+                <fullName>Amount Agreed</fullName>
+                <default>false</default>
+                <label>Amount Agreed</label>
+            </value>
+            <value>
+                <fullName>Claim Paid, Fees O/S</fullName>
+                <default>false</default>
+                <label>Claim Paid, Fees O/S</label>
+            </value>
+            <value>
+                <fullName>Fees Paid, Claim O/S</fullName>
+                <default>false</default>
+                <label>Fees Paid, Claim O/S</label>
+            </value>
+            <value>
+                <fullName>Claim &amp; Fees Paid</fullName>
+                <default>false</default>
+                <label>Claim &amp; Fees Paid</label>
+            </value>
+            <value>
+                <fullName>Subrogation / Recovery pursued</fullName>
+                <default>false</default>
+                <label>Subrogation / Recovery pursued</label>
+            </value>
+            <value>
+                <fullName>Structured Settlement</fullName>
+                <default>false</default>
+                <label>Structured Settlement</label>
+            </value>
+            <value>
+                <fullName>Ex-Gratia</fullName>
+                <default>false</default>
+                <label>Ex-Gratia</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Open</controllingFieldValue>
+            <valueName>Coverage Agreed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Open</controllingFieldValue>
+            <valueName>Amount Agreed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Open</controllingFieldValue>
+            <valueName>Claim Paid, Fees O/S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Open</controllingFieldValue>
+            <valueName>Fees Paid, Claim O/S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Open</controllingFieldValue>
+            <valueName>Claim &amp; Fees Paid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Subrogation / Recovery pursued</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Structured Settlement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Ex-Gratia</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

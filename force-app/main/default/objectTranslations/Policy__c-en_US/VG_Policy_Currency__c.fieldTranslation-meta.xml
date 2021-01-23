@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Policy Currency --></label>
+    <name>VG_Policy_Currency__c</name>
+    <picklistValues>
+        <masterLabel>AOA</masterLabel>
+        <translation><!-- AOA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AUD</masterLabel>
+        <translation><!-- AUD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BIF</masterLabel>
+        <translation><!-- BIF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BWP</masterLabel>
+        <translation><!-- BWP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CDF</masterLabel>
+        <translation><!-- CDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CVE</masterLabel>
+        <translation><!-- CVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DJF</masterLabel>
+        <translation><!-- DJF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DKK</masterLabel>
+        <translation><!-- DKK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DZD</masterLabel>
+        <translation><!-- DZD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EGP</masterLabel>
+        <translation><!-- EGP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ERN</masterLabel>
+        <translation><!-- ERN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ETB</masterLabel>
+        <translation><!-- ETB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUR</masterLabel>
+        <translation><!-- EUR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GBP</masterLabel>
+        <translation><!-- GBP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GHS</masterLabel>
+        <translation><!-- GHS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GMD</masterLabel>
+        <translation><!-- GMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GNF</masterLabel>
+        <translation><!-- GNF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INR</masterLabel>
+        <translation><!-- INR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISK</masterLabel>
+        <translation><!-- ISK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KES</masterLabel>
+        <translation><!-- KES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KMF</masterLabel>
+        <translation><!-- KMF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRD</masterLabel>
+        <translation><!-- LRD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSL</masterLabel>
+        <translation><!-- LSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LYD</masterLabel>
+        <translation><!-- LYD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAD</masterLabel>
+        <translation><!-- MAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MGA</masterLabel>
+        <translation><!-- MGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRO</masterLabel>
+        <translation><!-- MRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MUR</masterLabel>
+        <translation><!-- MUR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWK</masterLabel>
+        <translation><!-- MWK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MZN</masterLabel>
+        <translation><!-- MZN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAD</masterLabel>
+        <translation><!-- NAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGN</masterLabel>
+        <translation><!-- NGN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOK</masterLabel>
+        <translation><!-- NOK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RWF</masterLabel>
+        <translation><!-- RWF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCR</masterLabel>
+        <translation><!-- SCR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDG</masterLabel>
+        <translation><!-- SDG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEK</masterLabel>
+        <translation><!-- SEK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SLL</masterLabel>
+        <translation><!-- SLL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOS</masterLabel>
+        <translation><!-- SOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSP</masterLabel>
+        <translation><!-- SSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STD</masterLabel>
+        <translation><!-- STD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SZL</masterLabel>
+        <translation><!-- SZL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TND</masterLabel>
+        <translation><!-- TND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TZS</masterLabel>
+        <translation><!-- TZS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UGX</masterLabel>
+        <translation><!-- UGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USD</masterLabel>
+        <translation><!-- USD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XAF</masterLabel>
+        <translation><!-- XAF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XOF</masterLabel>
+        <translation><!-- XOF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZAR</masterLabel>
+        <translation><!-- ZAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZMW</masterLabel>
+        <translation><!-- ZMW --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

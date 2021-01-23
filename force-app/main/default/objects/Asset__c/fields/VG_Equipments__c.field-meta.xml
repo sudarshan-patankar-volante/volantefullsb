@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Equipments__c</fullName>
+    <externalId>false</externalId>
+    <label>Equipments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AOCS - CMG</fullName>
+                <default>false</default>
+                <label>AOCS - CMG</label>
+            </value>
+            <value>
+                <fullName>AOCS - Earth Sensor</fullName>
+                <default>false</default>
+                <label>AOCS - Earth Sensor</label>
+            </value>
+            <value>
+                <fullName>AOCS - FMW</fullName>
+                <default>false</default>
+                <label>AOCS - FMW</label>
+            </value>
+            <value>
+                <fullName>AOCS - GPS receiver</fullName>
+                <default>false</default>
+                <label>AOCS - GPS receiver</label>
+            </value>
+            <value>
+                <fullName>AOCS - Gyro Assembly</fullName>
+                <default>false</default>
+                <label>AOCS - Gyro Assembly</label>
+            </value>
+            <value>
+                <fullName>AOCS - Magnetotorquer</fullName>
+                <default>false</default>
+                <label>AOCS - Magnetotorquer</label>
+            </value>
+            <value>
+                <fullName>AOCS - Reaction wheel</fullName>
+                <default>false</default>
+                <label>AOCS - Reaction wheel</label>
+            </value>
+            <value>
+                <fullName>AOCS - Star Tracker</fullName>
+                <default>false</default>
+                <label>AOCS - Star Tracker</label>
+            </value>
+            <value>
+                <fullName>AOCS - Sun Sensor</fullName>
+                <default>false</default>
+                <label>AOCS - Sun Sensor</label>
+            </value>
+            <value>
+                <fullName>C and C - Beacon</fullName>
+                <default>false</default>
+                <label>C and C - Beacon</label>
+            </value>
+            <value>
+                <fullName>C and C - Central computer</fullName>
+                <default>false</default>
+                <label>C and C - Central computer</label>
+            </value>
+            <value>
+                <fullName>C and C - Crypto module</fullName>
+                <default>false</default>
+                <label>C and C - Crypto module</label>
+            </value>
+            <value>
+                <fullName>C and C - RIU/PIU</fullName>
+                <default>false</default>
+                <label>C and C - RIU/PIU</label>
+            </value>
+            <value>
+                <fullName>C and C - TC Receiver</fullName>
+                <default>false</default>
+                <label>C and C - TC Receiver</label>
+            </value>
+            <value>
+                <fullName>C and C - TM Transmitter</fullName>
+                <default>false</default>
+                <label>C and C - TM Transmitter</label>
+            </value>
+            <value>
+                <fullName>EO Payload - Data Formatting Unit</fullName>
+                <default>false</default>
+                <label>EO Payload - Data Formatting Unit</label>
+            </value>
+            <value>
+                <fullName>EO Payload - Data transmitter</fullName>
+                <default>false</default>
+                <label>EO Payload - Data transmitter</label>
+            </value>
+            <value>
+                <fullName>EO payload - Imaging Instrument</fullName>
+                <default>false</default>
+                <label>EO payload - Imaging Instrument</label>
+            </value>
+            <value>
+                <fullName>EO Payload - Solid State Recorder</fullName>
+                <default>false</default>
+                <label>EO Payload - Solid State Recorder</label>
+            </value>
+            <value>
+                <fullName>EO Payload - TR Module (SAR)</fullName>
+                <default>false</default>
+                <label>EO Payload - TR Module (SAR)</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - Deployable Antenna</fullName>
+                <default>false</default>
+                <label>Mechanisms - Deployable Antenna</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - HOP actuator</fullName>
+                <default>false</default>
+                <label>Mechanisms - HOP actuator</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - Kevlar cutter</fullName>
+                <default>false</default>
+                <label>Mechanisms - Kevlar cutter</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - Other actuator</fullName>
+                <default>false</default>
+                <label>Mechanisms - Other actuator</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - Pyro actuator</fullName>
+                <default>false</default>
+                <label>Mechanisms - Pyro actuator</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - Robotic arm</fullName>
+                <default>false</default>
+                <label>Mechanisms - Robotic arm</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - SADM</fullName>
+                <default>false</default>
+                <label>Mechanisms - SADM</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - Solar Array deployment</fullName>
+                <default>false</default>
+                <label>Mechanisms - Solar Array deployment</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - Steerable Antenna</fullName>
+                <default>false</default>
+                <label>Mechanisms - Steerable Antenna</label>
+            </value>
+            <value>
+                <fullName>Mechanisms - Unfurlable Antenna</fullName>
+                <default>false</default>
+                <label>Mechanisms - Unfurlable Antenna</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Power - Distribution</fullName>
+                <default>false</default>
+                <label>Power - Distribution</label>
+            </value>
+            <value>
+                <fullName>Power - Li Ion Battery</fullName>
+                <default>false</default>
+                <label>Power - Li Ion Battery</label>
+            </value>
+            <value>
+                <fullName>Power - NiH Battery</fullName>
+                <default>false</default>
+                <label>Power - NiH Battery</label>
+            </value>
+            <value>
+                <fullName>Power - Regulator</fullName>
+                <default>false</default>
+                <label>Power - Regulator</label>
+            </value>
+            <value>
+                <fullName>Power - Solar Array GaAs</fullName>
+                <default>false</default>
+                <label>Power - Solar Array GaAs</label>
+            </value>
+            <value>
+                <fullName>Power - Solar Array Si</fullName>
+                <default>false</default>
+                <label>Power - Solar Array Si</label>
+            </value>
+            <value>
+                <fullName>Propulsion - Apogee engine</fullName>
+                <default>false</default>
+                <label>Propulsion - Apogee engine</label>
+            </value>
+            <value>
+                <fullName>Propulsion - Arcjet</fullName>
+                <default>false</default>
+                <label>Propulsion - Arcjet</label>
+            </value>
+            <value>
+                <fullName>Propulsion - BiProp thruster</fullName>
+                <default>false</default>
+                <label>Propulsion - BiProp thruster</label>
+            </value>
+            <value>
+                <fullName>Propulsion - Filter</fullName>
+                <default>false</default>
+                <label>Propulsion - Filter</label>
+            </value>
+            <value>
+                <fullName>Propulsion - ImpHET</fullName>
+                <default>false</default>
+                <label>Propulsion - ImpHET</label>
+            </value>
+            <value>
+                <fullName>Propulsion - Latch valve</fullName>
+                <default>false</default>
+                <label>Propulsion - Latch valve</label>
+            </value>
+            <value>
+                <fullName>Propulsion - Monoprop thruster</fullName>
+                <default>false</default>
+                <label>Propulsion - Monoprop thruster</label>
+            </value>
+            <value>
+                <fullName>Propulsion - Power converter</fullName>
+                <default>false</default>
+                <label>Propulsion - Power converter</label>
+            </value>
+            <value>
+                <fullName>Propulsion - SPT thruster</fullName>
+                <default>false</default>
+                <label>Propulsion - SPT thruster</label>
+            </value>
+            <value>
+                <fullName>Propulsion - XIPS thruster</fullName>
+                <default>false</default>
+                <label>Propulsion - XIPS thruster</label>
+            </value>
+            <value>
+                <fullName>Structure</fullName>
+                <default>false</default>
+                <label>Structure</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <label>TBD</label>
+            </value>
+            <value>
+                <fullName>TC Payload - Centralised Power Supply</fullName>
+                <default>false</default>
+                <label>TC Payload - Centralised Power Supply</label>
+            </value>
+            <value>
+                <fullName>TC Payload - Downconverter</fullName>
+                <default>false</default>
+                <label>TC Payload - Downconverter</label>
+            </value>
+            <value>
+                <fullName>TC Payload - EPC</fullName>
+                <default>false</default>
+                <label>TC Payload - EPC</label>
+            </value>
+            <value>
+                <fullName>TC Payload - LNA</fullName>
+                <default>false</default>
+                <label>TC Payload - LNA</label>
+            </value>
+            <value>
+                <fullName>TC Payload - MLO</fullName>
+                <default>false</default>
+                <label>TC Payload - MLO</label>
+            </value>
+            <value>
+                <fullName>TC Payload - Payload processor</fullName>
+                <default>false</default>
+                <label>TC Payload - Payload processor</label>
+            </value>
+            <value>
+                <fullName>TC Payload - Receiver</fullName>
+                <default>false</default>
+                <label>TC Payload - Receiver</label>
+            </value>
+            <value>
+                <fullName>TC Payload - SSPA</fullName>
+                <default>false</default>
+                <label>TC Payload - SSPA</label>
+            </value>
+            <value>
+                <fullName>TC Payload - TWTA</fullName>
+                <default>false</default>
+                <label>TC Payload - TWTA</label>
+            </value>
+            <value>
+                <fullName>TC Payload - Upconverter</fullName>
+                <default>false</default>
+                <label>TC Payload - Upconverter</label>
+            </value>
+            <value>
+                <fullName>Thermal - Control unit</fullName>
+                <default>false</default>
+                <label>Thermal - Control unit</label>
+            </value>
+            <value>
+                <fullName>Thermal - Embedded Heatpipe</fullName>
+                <default>false</default>
+                <label>Thermal - Embedded Heatpipe</label>
+            </value>
+            <value>
+                <fullName>Thermal - Heater</fullName>
+                <default>false</default>
+                <label>Thermal - Heater</label>
+            </value>
+            <value>
+                <fullName>Thermal - Loop Heat Pipe</fullName>
+                <default>false</default>
+                <label>Thermal - Loop Heat Pipe</label>
+            </value>
+            <value>
+                <fullName>Thermal - Pumped loop</fullName>
+                <default>false</default>
+                <label>Thermal - Pumped loop</label>
+            </value>
+            <value>
+                <fullName>Thermal - Thermistor</fullName>
+                <default>false</default>
+                <label>Thermal - Thermistor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

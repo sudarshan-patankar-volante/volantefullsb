@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- X3-NM Prop or Pecuniary Loss XL on XL Re --></label>
+    <name>X3_NM_Prop_or_Pecuniary_Loss_XL_on_XL_Re__c</name>
+</CustomFieldTranslation>

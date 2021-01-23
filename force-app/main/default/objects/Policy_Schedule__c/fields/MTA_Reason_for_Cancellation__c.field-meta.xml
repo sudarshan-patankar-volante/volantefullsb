@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MTA_Reason_for_Cancellation__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Cancellation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Product unsuitable / misunderstood</fullName>
+                <default>false</default>
+                <label>Product unsuitable / misunderstood</label>
+            </value>
+            <value>
+                <fullName>Product too expensive</fullName>
+                <default>false</default>
+                <label>Product too expensive</label>
+            </value>
+            <value>
+                <fullName>Alternative product purchased</fullName>
+                <default>false</default>
+                <label>Alternative product purchased</label>
+            </value>
+            <value>
+                <fullName>Cover overlapped with pre-existing cover</fullName>
+                <default>false</default>
+                <label>Cover overlapped with pre-existing cover</label>
+            </value>
+            <value>
+                <fullName>Product cancelled within cooling off period</fullName>
+                <default>false</default>
+                <label>Product cancelled within cooling off period</label>
+            </value>
+            <value>
+                <fullName>Product cancelled by underwriter</fullName>
+                <default>false</default>
+                <label>Product cancelled by underwriter</label>
+            </value>
+            <value>
+                <fullName>Poor service/complaint</fullName>
+                <default>false</default>
+                <label>Poor service/complaint</label>
+            </value>
+            <value>
+                <fullName>Cover no longer required</fullName>
+                <default>false</default>
+                <label>Cover no longer required</label>
+            </value>
+            <value>
+                <fullName>Other (administrative reason)</fullName>
+                <default>false</default>
+                <label>Other (administrative reason)</label>
+            </value>
+            <value>
+                <fullName>Not known</fullName>
+                <default>false</default>
+                <label>Not known</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

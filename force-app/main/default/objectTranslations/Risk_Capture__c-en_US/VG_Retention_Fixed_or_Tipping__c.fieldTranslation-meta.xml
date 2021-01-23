@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Retention (Fixed or Tipping) --></label>
+    <name>VG_Retention_Fixed_or_Tipping__c</name>
+    <picklistValues>
+        <masterLabel>Fixed</masterLabel>
+        <translation><!-- Fixed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tipping</masterLabel>
+        <translation><!-- Tipping --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

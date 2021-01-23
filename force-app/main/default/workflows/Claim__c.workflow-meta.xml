@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>VG_Update_Risk_Expiry_Date</fullName>
+        <field>Risk_Expiry_Date__c</field>
+        <formula>Policy_Number__r.VG_Expiry_Date__c</formula>
+        <name>Update Risk Expiry Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VG_Update_Risk_Inception_Date</fullName>
+        <field>Risk_Inception_Date__c</field>
+        <formula>Policy_Number__r.VG_Inception_Date__c</formula>
+        <name>Update Risk Inception Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Set Claim fields from policy</fullName>
+        <actions>
+            <name>VG_Update_Risk_Expiry_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>VG_Update_Risk_Inception_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TRUE</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

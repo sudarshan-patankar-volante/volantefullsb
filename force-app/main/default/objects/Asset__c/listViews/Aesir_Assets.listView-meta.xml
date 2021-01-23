@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aesir_Assets</fullName>
+    <columns>NAME</columns>
+    <columns>LS_AccName_with_Ass_Name__c</columns>
+    <columns>VG_Satellite__c</columns>
+    <columns>VG_Asset_Type__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VG_Asset_Type__c</field>
+        <operation>equals</operation>
+        <value>Satellite,Launcher</value>
+    </filters>
+    <label>Aesir Assets</label>
+    <sharedTo>
+        <group>VG_Aesir</group>
+    </sharedTo>
+</ListView>

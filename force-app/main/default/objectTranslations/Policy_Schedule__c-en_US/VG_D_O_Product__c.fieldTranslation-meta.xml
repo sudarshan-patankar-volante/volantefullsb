@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- D&amp;O Product --></label>
+    <name>VG_D_O_Product__c</name>
+    <picklistValues>
+        <masterLabel>A Side DIC</masterLabel>
+        <translation><!-- A Side DIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AB</masterLabel>
+        <translation><!-- AB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ABC</masterLabel>
+        <translation><!-- ABC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POSI</masterLabel>
+        <translation><!-- POSI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Side A</masterLabel>
+        <translation><!-- Side A --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

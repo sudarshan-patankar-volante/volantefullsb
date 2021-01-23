@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Coverage --></label>
+    <name>VG_Coverage__c</name>
+    <picklistValues>
+        <masterLabel>M3 - Fully Comprehensive</masterLabel>
+        <translation><!-- M3 - Fully Comprehensive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Fire &amp; Theft Only</masterLabel>
+        <translation><!-- M6 - Fire &amp; Theft Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Third Party Fire &amp; Theft</masterLabel>
+        <translation><!-- M6 - Third Party Fire &amp; Theft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6 - Third Party Only</masterLabel>
+        <translation><!-- M6 - Third Party Only --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

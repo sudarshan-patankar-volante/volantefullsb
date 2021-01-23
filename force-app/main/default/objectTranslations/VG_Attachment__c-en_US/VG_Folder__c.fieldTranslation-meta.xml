@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Folder --></label>
+    <name>VG_Folder__c</name>
+    <picklistValues>
+        <masterLabel>Claims</masterLabel>
+        <translation><!-- Claims --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance</masterLabel>
+        <translation><!-- Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Policy Documentation</masterLabel>
+        <translation><!-- Policy Documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing Spreadsheet</masterLabel>
+        <translation><!-- Pricing Spreadsheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinsurance</masterLabel>
+        <translation><!-- Reinsurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submission</masterLabel>
+        <translation><!-- Submission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underwriting</masterLabel>
+        <translation><!-- Underwriting --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

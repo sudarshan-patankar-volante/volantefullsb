@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-Case</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-Solution</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>VG_Pricing__c</tabs>
+    <tabs>ILF_Factors__c</tabs>
+    <tabs>Authority_Approvals__c</tabs>
+    <tabs>VG_Governance_Compliance__c</tabs>
+    <tabs>Event_Satellite__c</tabs>
+    <tabs>standard-WaveHome</tabs>
+    <tabs>VG_Payment_Frequency__c</tabs>
+</CustomApplication>

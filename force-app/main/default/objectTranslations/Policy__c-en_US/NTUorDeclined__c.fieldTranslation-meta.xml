@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- to be used in the einstein prediction --></help>
+    <label><!-- NTU or Declined Check --></label>
+    <name>NTUorDeclined__c</name>
+</CustomFieldTranslation>

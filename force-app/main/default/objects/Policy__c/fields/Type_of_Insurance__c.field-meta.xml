@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Insurance__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>(Direct or Type or Reinsurance)</inlineHelpText>
+    <label>Type of Insurance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Facultative Reinsurance</fullName>
+                <default>false</default>
+                <label>Facultative Reinsurance</label>
+            </value>
+            <value>
+                <fullName>Treaty Reinsurance</fullName>
+                <default>false</default>
+                <label>Treaty Reinsurance</label>
+            </value>
+            <value>
+                <fullName>Excess of Loss</fullName>
+                <default>false</default>
+                <label>Excess of Loss</label>
+            </value>
+            <value>
+                <fullName>Non-conventional</fullName>
+                <default>false</default>
+                <label>Non-conventional</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rate Type --></label>
+    <name>VG_Rate_Type__c</name>
+    <picklistValues>
+        <masterLabel>Flat Premium</masterLabel>
+        <translation><!-- Flat Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rate on Income</masterLabel>
+        <translation><!-- Rate on Income --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swing rate</masterLabel>
+        <translation><!-- Swing rate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

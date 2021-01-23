@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aesir</fullName>
+    <columns>NAME</columns>
+    <columns>VG_Capacity_Paper__c</columns>
+    <columns>VG_Account__c</columns>
+    <columns>VG_RI_Inception_Date__c</columns>
+    <columns>VG_RI_Expiry_Date__c</columns>
+    <columns>VG_Premium_Limit__c</columns>
+    <columns>VG_RI_Share__c</columns>
+    <columns>VG_RI_Binder_Commission__c</columns>
+    <columns>VG_MGA_Commission__c</columns>
+    <columns>VG_Retrocession__c</columns>
+    <columns>RI_Share_Cap__c</columns>
+    <columns>VG_RI_Premium__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>VG_UMR__c.Aesir</value>
+    </filters>
+    <label>Aesir</label>
+</ListView>

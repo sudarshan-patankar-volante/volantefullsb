@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Payload_Manufacturer__c</fullName>
+    <externalId>false</externalId>
+    <label>Payload Manufacturer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AIRBUS DEFENCE AND SPACE</fullName>
+                <default>false</default>
+                <label>AIRBUS DEFENCE AND SPACE</label>
+            </value>
+            <value>
+                <fullName>ANTRIX</fullName>
+                <default>false</default>
+                <label>ANTRIX</label>
+            </value>
+            <value>
+                <fullName>BOEING SATELLITE SYSTEMS</fullName>
+                <default>false</default>
+                <label>BOEING SATELLITE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>CAST</fullName>
+                <default>false</default>
+                <label>CAST</label>
+            </value>
+            <value>
+                <fullName>CONAE</fullName>
+                <default>false</default>
+                <label>CONAE</label>
+            </value>
+            <value>
+                <fullName>ENERGYIA</fullName>
+                <default>false</default>
+                <label>ENERGYIA</label>
+            </value>
+            <value>
+                <fullName>GILMOUR AEROSPACE</fullName>
+                <default>false</default>
+                <label>GILMOUR AEROSPACE</label>
+            </value>
+            <value>
+                <fullName>GOMSPACE</fullName>
+                <default>false</default>
+                <label>GOMSPACE</label>
+            </value>
+            <value>
+                <fullName>IAI</fullName>
+                <default>false</default>
+                <label>IAI</label>
+            </value>
+            <value>
+                <fullName>JSC RESHETNEV ISS</fullName>
+                <default>false</default>
+                <label>JSC RESHETNEV ISS</label>
+            </value>
+            <value>
+                <fullName>KARI - Korea Aerospace Research Institute</fullName>
+                <default>false</default>
+                <label>KARI - Korea Aerospace Research Institute</label>
+            </value>
+            <value>
+                <fullName>LAVOCHKIN</fullName>
+                <default>false</default>
+                <label>LAVOCHKIN</label>
+            </value>
+            <value>
+                <fullName>LOCKHEED MARTIN CORPORATION</fullName>
+                <default>false</default>
+                <label>LOCKHEED MARTIN CORPORATION</label>
+            </value>
+            <value>
+                <fullName>Lockheed Martin Space Systems</fullName>
+                <default>false</default>
+                <label>Lockheed Martin Space Systems</label>
+            </value>
+            <value>
+                <fullName>MAXAR (SSL)</fullName>
+                <default>false</default>
+                <label>MAXAR (SSL)</label>
+            </value>
+            <value>
+                <fullName>MDA</fullName>
+                <default>false</default>
+                <label>MDA</label>
+            </value>
+            <value>
+                <fullName>MELCO</fullName>
+                <default>false</default>
+                <label>MELCO</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Northrop Grumman Innovation Systems (NGIS)</fullName>
+                <default>false</default>
+                <label>Northrop Grumman Innovation Systems (NGIS)</label>
+            </value>
+            <value>
+                <fullName>OHB Italia</fullName>
+                <default>false</default>
+                <label>OHB Italia</label>
+            </value>
+            <value>
+                <fullName>ORBITAL ATK</fullName>
+                <default>false</default>
+                <label>ORBITAL ATK</label>
+            </value>
+            <value>
+                <fullName>SATREVOLUTION</fullName>
+                <default>false</default>
+                <label>SATREVOLUTION</label>
+            </value>
+            <value>
+                <fullName>SITAEL S.P.A.</fullName>
+                <default>false</default>
+                <label>SITAEL S.P.A.</label>
+            </value>
+            <value>
+                <fullName>SPACEX</fullName>
+                <default>false</default>
+                <label>SPACEX</label>
+            </value>
+            <value>
+                <fullName>SSL</fullName>
+                <default>false</default>
+                <label>SSL</label>
+            </value>
+            <value>
+                <fullName>SURREY SATELLITES TECHNOLOGY</fullName>
+                <default>false</default>
+                <label>SURREY SATELLITES TECHNOLOGY</label>
+            </value>
+            <value>
+                <fullName>TBA</fullName>
+                <default>false</default>
+                <label>TBA</label>
+            </value>
+            <value>
+                <fullName>THALES ALENIA SPACE</fullName>
+                <default>false</default>
+                <label>THALES ALENIA SPACE</label>
+            </value>
+            <value>
+                <fullName>VIRGIN ORBIT</fullName>
+                <default>false</default>
+                <label>VIRGIN ORBIT</label>
+            </value>
+            <value>
+                <fullName>VNIIEM</fullName>
+                <default>false</default>
+                <label>VNIIEM</label>
+            </value>
+            <value>
+                <fullName>YORK SPACE SYSTEMS</fullName>
+                <default>false</default>
+                <label>YORK SPACE SYSTEMS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

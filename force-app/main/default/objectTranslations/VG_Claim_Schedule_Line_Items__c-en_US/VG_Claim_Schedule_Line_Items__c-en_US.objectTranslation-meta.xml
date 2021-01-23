@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Claim Schedule Line Items</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Claim Schedule Line Items</value>
+    </caseValues>
+    <layouts>
+        <layout>Asset Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy Endorsement Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Risk Detail Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Risk Rating Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Policy Endorsement --></label>
+        <name>Policy_Endorsement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Asset --></label>
+        <name>VG_Asset</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Risk Detail --></label>
+        <name>VG_Risk_Detail</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Risk Rating --></label>
+        <name>VG_Risk_Rating</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

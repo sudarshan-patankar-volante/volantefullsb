@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quoted_State_Check</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(ISCHANGED(Policy_Status__c), ISPICKVAL(PRIORVALUE(Policy_Status__c) , &quot;Quoted&quot;), AND( NOT(ISPICKVAL(Policy_Status__c ,&quot;Bound&quot;) ), NOT(ISPICKVAL(Policy_Status__c ,&quot;NTU/Decline&quot;) )) )</errorConditionFormula>
+    <errorMessage>Cannot move a Quoted policy to a status other than Bound / NTU/Decline</errorMessage>
+</ValidationRule>

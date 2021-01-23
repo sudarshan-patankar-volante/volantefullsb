@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Claims Progression</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Claims Progressions</value>
+    </caseValues>
+    <layouts>
+        <layout>Claim Expense Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Claim Financial Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Claim Recovery Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Claims Progression Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Claim Expense --></label>
+        <name>VG_Claim_Expense</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Claim Financial --></label>
+        <name>VG_Claim_Financial</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Claim Recovery --></label>
+        <name>VG_Claim_Recovery</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

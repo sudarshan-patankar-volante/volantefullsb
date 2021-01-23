@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Status --></label>
+    <name>VG_Sub_Status__c</name>
+    <picklistValues>
+        <masterLabel>Additional Info Required</masterLabel>
+        <translation><!-- Additional Info Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval Rejected</masterLabel>
+        <translation><!-- Approval Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Approval</masterLabel>
+        <translation><!-- Awaiting Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Aggregation with carrier</masterLabel>
+        <translation><!-- Decline - Aggregation with carrier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Assured Financials</masterLabel>
+        <translation><!-- Decline - Assured Financials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Attachment</masterLabel>
+        <translation><!-- Decline - Attachment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Binding Authority Restrictions</masterLabel>
+        <translation><!-- Decline - Binding Authority Restrictions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Conflict with Volante Capacity Provider</masterLabel>
+        <translation><!-- Decline - Conflict with Volante Capacity Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Duplicate</masterLabel>
+        <translation><!-- Decline - Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Licensing Restrictions</masterLabel>
+        <translation><!-- Decline - Licensing Restrictions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Line of Business</masterLabel>
+        <translation><!-- Decline - Line of Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Location</masterLabel>
+        <translation><!-- Decline - Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Other</masterLabel>
+        <translation><!-- Decline - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Price</masterLabel>
+        <translation><!-- Decline - Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Quality of Risk</masterLabel>
+        <translation><!-- Decline - Quality of Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Referall Declined</masterLabel>
+        <translation><!-- Decline - Referall Declined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Risk Profile</masterLabel>
+        <translation><!-- Decline - Risk Profile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Terms / Wording</masterLabel>
+        <translation><!-- Decline - Terms / Wording --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Territorial Scope</masterLabel>
+        <translation><!-- Decline - Territorial Scope --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decline - Type of Business e.g Direct vs QS</masterLabel>
+        <translation><!-- Decline - Type of Business e.g Direct vs QS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Declined</masterLabel>
+        <translation><!-- Declined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lapsed</masterLabel>
+        <translation><!-- Lapsed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Broker&apos;s Order Reduced</masterLabel>
+        <translation><!-- NTU - Broker&apos;s Order Reduced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Cancelled by Client / No longer required</masterLabel>
+        <translation><!-- NTU - Cancelled by Client / No longer required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Capacity</masterLabel>
+        <translation><!-- NTU - Capacity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Claims Proposition</masterLabel>
+        <translation><!-- NTU - Claims Proposition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Exclusions</masterLabel>
+        <translation><!-- NTU - Exclusions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Lost to Local Market</masterLabel>
+        <translation><!-- NTU - Lost to Local Market --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Other</masterLabel>
+        <translation><!-- NTU - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Price</masterLabel>
+        <translation><!-- NTU - Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Renewed with Existing Panel</masterLabel>
+        <translation><!-- NTU - Renewed with Existing Panel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Security</masterLabel>
+        <translation><!-- NTU - Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Service</masterLabel>
+        <translation><!-- NTU - Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Terms</masterLabel>
+        <translation><!-- NTU - Terms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTU - Volante Financials</masterLabel>
+        <translation><!-- NTU - Volante Financials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submission Received</masterLabel>
+        <translation><!-- Submission Received --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Working_State_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Policy_Status__c),ISPICKVAL(PRIORVALUE(Policy_Status__c) , &quot;Working&quot;), AND( NOT(ISPICKVAL(Policy_Status__c ,&quot;Quoted&quot;) ), NOT(ISPICKVAL(Policy_Status__c ,&quot;NTU/Decline&quot;) )) )</errorConditionFormula>
+    <errorMessage>Cannot move a Working policy to a status other than Quoted / NTU/Decline</errorMessage>
+</ValidationRule>

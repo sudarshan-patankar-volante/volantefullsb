@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Capacity_Paper__c</fullName>
+    <externalId>false</externalId>
+    <label>Section No</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PI Liberty 100%</fullName>
+                <default>false</default>
+                <label>PI Liberty 100%</label>
+            </value>
+            <value>
+                <fullName>PI Liberty Co</fullName>
+                <default>false</default>
+                <label>PI Liberty Co</label>
+            </value>
+            <value>
+                <fullName>PI Liberty Lloyds</fullName>
+                <default>false</default>
+                <label>PI Liberty Lloyds</label>
+            </value>
+            <value>
+                <fullName>Liberty Mutual VFP</fullName>
+                <default>false</default>
+                <label>Liberty Mutual VFP</label>
+            </value>
+            <value>
+                <fullName>Liberty Mutual - FI</fullName>
+                <default>false</default>
+                <label>Liberty Mutual - FI</label>
+            </value>
+            <value>
+                <fullName>Liberty Mutual - D&amp;O/Crime</fullName>
+                <default>false</default>
+                <label>Liberty Mutual - D&amp;O/Crime</label>
+            </value>
+            <value>
+                <fullName>Hazardous</fullName>
+                <default>false</default>
+                <label>Hazardous</label>
+            </value>
+            <value>
+                <fullName>Ancillary</fullName>
+                <default>false</default>
+                <label>Ancillary</label>
+            </value>
+            <value>
+                <fullName>Haulage</fullName>
+                <default>false</default>
+                <label>Haulage</label>
+            </value>
+            <value>
+                <fullName>Public Sector</fullName>
+                <default>false</default>
+                <label>Public Sector</label>
+            </value>
+            <value>
+                <fullName>Non Conventional</fullName>
+                <default>false</default>
+                <label>Non Conventional</label>
+            </value>
+            <value>
+                <fullName>Bridge Default</fullName>
+                <default>false</default>
+                <label>Bridge Default</label>
+            </value>
+            <value>
+                <fullName>Liberty Mutual - FI Open Market (2020)</fullName>
+                <default>false</default>
+                <label>Liberty Mutual - FI Open Market (2020)</label>
+            </value>
+            <value>
+                <fullName>Liberty Mutual - FI CE (2020)</fullName>
+                <default>false</default>
+                <label>Liberty Mutual - FI CE (2020)</label>
+            </value>
+            <value>
+                <fullName>Liberty Mutual - FI CE (2019)</fullName>
+                <default>false</default>
+                <label>Liberty Mutual - FI CE (2019)</label>
+            </value>
+            <value>
+                <fullName>Written in 2020</fullName>
+                <default>false</default>
+                <label>Written in 2020</label>
+            </value>
+            <value>
+                <fullName>PT into 2020</fullName>
+                <default>false</default>
+                <label>PT into 2020</label>
+            </value>
+            <value>
+                <fullName>2018 Liberty Company Stamp - 2018 year</fullName>
+                <default>false</default>
+                <label>2018 Liberty Company Stamp - 2018 year</label>
+            </value>
+            <value>
+                <fullName>2019 - 2019 YOA - 10 MUSD - 60% Liberty, 10% Swiss, 30% Everest</fullName>
+                <default>false</default>
+                <label>2019 - 2019 YOA - 10 MUSD - 60% Liberty, 10% Swiss, 30% Everest</label>
+            </value>
+            <value>
+                <fullName>2019 - 2020 YOA - 10 MUSD - 60% Liberty, 10% Swiss, 30% Everest</fullName>
+                <default>false</default>
+                <label>2019 - 2020 YOA - 10 MUSD - 60% Liberty, 10% Swiss, 30% Everest</label>
+            </value>
+            <value>
+                <fullName>2019 - 2020 YOA - after Partner PT</fullName>
+                <default>false</default>
+                <label>2019 - 2020 YOA - after Partner PT</label>
+            </value>
+            <value>
+                <fullName>2020 - 4 MUSD (Liberty 3 + Swiss 1)</fullName>
+                <default>false</default>
+                <label>2020 - 4 MUSD (Liberty 3 + Swiss 1)</label>
+            </value>
+            <value>
+                <fullName>2020 - 5.5 MUSD (Liberty 3+Swiss 1, Fidelis 0+Partner 1.5)</fullName>
+                <default>false</default>
+                <label>2020 - 5.5 MUSD (Liberty 3+Swiss 1, Fidelis 0+Partner 1.5)</label>
+            </value>
+            <value>
+                <fullName>Special - Inmarsat PT Stamp</fullName>
+                <default>false</default>
+                <label>Special - Inmarsat PT Stamp</label>
+            </value>
+            <value>
+                <fullName>Special - Measat PT Stamp</fullName>
+                <default>false</default>
+                <label>Special - Measat PT Stamp</label>
+            </value>
+            <value>
+                <fullName>Special - Ovzon PT Stamp</fullName>
+                <default>false</default>
+                <label>Special - Ovzon PT Stamp</label>
+            </value>
+            <value>
+                <fullName>Special - Resurs PT Stamp</fullName>
+                <default>false</default>
+                <label>Special - Resurs PT Stamp</label>
+            </value>
+            <value>
+                <fullName>2019 - 2020 YOA - 10 MUSD - 90% Liberty, 10% Swiss</fullName>
+                <default>false</default>
+                <label>2019 - 2020 YOA - 10 MUSD - 90% Liberty, 10% Swiss</label>
+            </value>
+            <value>
+                <fullName>2020 - 13.5 MUSD (3+1, 1.5, 2.5+2.5+0.5+2.5)</fullName>
+                <default>false</default>
+                <label>2020 - 13.5 MUSD (3+1, 1.5, 2.5+2.5+0.5+2.5)</label>
+            </value>
+            <value>
+                <fullName>2020 - Liberty and Lineslip (Argentina)</fullName>
+                <default>false</default>
+                <label>2020 - Liberty and Lineslip (Argentina)</label>
+            </value>
+            <value>
+                <fullName>2020 - Lineslip + Partner Re 9.5</fullName>
+                <default>false</default>
+                <label>2020 - Lineslip + Partner Re 9.5</label>
+            </value>
+            <value>
+                <fullName>2020 Post lineslip PT (Ovzon)</fullName>
+                <default>false</default>
+                <label>2020 Post lineslip PT (Ovzon)</label>
+            </value>
+            <value>
+                <fullName>2020 Post lineslip PT (Resurs)</fullName>
+                <default>false</default>
+                <label>2020 Post lineslip PT (Resurs)</label>
+            </value>
+            <value>
+                <fullName>2020 Post Lineslip PT 1 (CAS 500-2)</fullName>
+                <default>false</default>
+                <label>2020 Post Lineslip PT 1 (CAS 500-2)</label>
+            </value>
+            <value>
+                <fullName>2020 Post Lineslip PT 2 (CAS 500-1)</fullName>
+                <default>false</default>
+                <label>2020 Post Lineslip PT 2 (CAS 500-1)</label>
+            </value>
+            <value>
+                <fullName>2020 Post Lineslip PT 3 (S17, MP)</fullName>
+                <default>false</default>
+                <label>2020 Post Lineslip PT 3 (S17, MP)</label>
+            </value>
+            <value>
+                <fullName>2020 Post Lineslip PT 4 (Legion I)</fullName>
+                <default>false</default>
+                <label>2020 Post Lineslip PT 4 (Legion I)</label>
+            </value>
+            <value>
+                <fullName>2020 Post lineslip PT 6 (Roscosmos + ELSA)</fullName>
+                <default>false</default>
+                <label>2020 Post lineslip PT 6 (Roscosmos + ELSA)</label>
+            </value>
+            <value>
+                <fullName>2021 - Lineslip + Partner Re 11.5</fullName>
+                <default>false</default>
+                <label>2021 - Lineslip + Partner Re 11.5</label>
+            </value>
+            <value>
+                <fullName>2021 - 15.5 MUSD (3+1, 1.5, 2.5+2.5+2.5+2.5)</fullName>
+                <default>false</default>
+                <label>2021 - 15.5 MUSD (3+1, 1.5, 2.5+2.5+2.5+2.5)</label>
+            </value>
+            <value>
+                <fullName>2021 - Special - Legion Top-up 2</fullName>
+                <default>false</default>
+                <label>2021 - Special - Legion Top-up 2</label>
+            </value>
+            <value>
+                <fullName>All - EEA</fullName>
+                <default>false</default>
+                <label>All - EEA</label>
+            </value>
+            <value>
+                <fullName>All - Non EEA</fullName>
+                <default>false</default>
+                <label>All - Non EEA</label>
+            </value>
+            <value>
+                <fullName>Liberty</fullName>
+                <default>false</default>
+                <label>Liberty</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

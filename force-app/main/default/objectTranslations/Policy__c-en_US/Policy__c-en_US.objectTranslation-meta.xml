@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Policy</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Policies</value>
+    </caseValues>
+    <layouts>
+        <layout>Aesir Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Affinity Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Bridge Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Edison Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Gentium Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Horizon Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Imara Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Readonly Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VFP Policy Layout</layout>
+        <sections>
+            <label><!-- Claims Summary --></label>
+            <section>Claims Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Metrics --></label>
+            <section>Operational Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Details --></label>
+            <section>Policy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Information --></label>
+            <section>Policy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policy Renewals --></label>
+            <section>Policy Renewals</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Aesir --></label>
+        <name>Aesir</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Affinity --></label>
+        <name>Affinity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Bridge --></label>
+        <name>Bridge</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Edison Motor --></label>
+        <name>Edison_Motor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Gentium --></label>
+        <name>Gentium</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Horizon --></label>
+        <name>Horizon</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Imara --></label>
+        <name>Imara</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VFP --></label>
+        <name>VFP</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot move a Bound policy to a status other than Booked / NTU/Decline --></errorMessage>
+        <name>Bound_State_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must choose any one status on Sub Status --></errorMessage>
+        <name>Bridge_NTU_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must enter value on Prospect Premium,Current Insurer,Inception Date,Currency --></errorMessage>
+        <name>Bridge_Prospect_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must enter value on 
+*Inception Date 
+*Expiry Date 
+*Line of Business 
+*Currency --></errorMessage>
+        <name>Bridge_Quoted_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must Enter Value on This Policy associated Account Record before move to Working Status...
+*Account Name
+*Account Currency
+*Industry
+*Customer Revenue --></errorMessage>
+        <name>Bridge_Working_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must Enter the value... --></errorMessage>
+        <name>Broker_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Edit a booked policy --></errorMessage>
+        <name>Cannot_Edit_Booked_Policy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your quote is not approved.. Please wait for the approval and move to Bound once Policy is approved.. --></errorMessage>
+        <name>Check_for_Quote_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expiry date must be greater than Inception date --></errorMessage>
+        <name>Expiry_Date_Bigger_than_Inception_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter time in 24 hour format eg 14:40 --></errorMessage>
+        <name>Inception_Expiry_Time_Format_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Once reached NTU/Decline can&apos;t change status --></errorMessage>
+        <name>NTU_Decline_Status_Lock</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can&apos;t book Policy Before Inception Date... --></errorMessage>
+        <name>Policy_Booking_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot change Policy Number --></errorMessage>
+        <name>Policy_Number_Updation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot move a prospect policy to a status other than Working / NTU/Decline --></errorMessage>
+        <name>Prospect_State_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Policy premium before quoted stage has to be more than 0 --></errorMessage>
+        <name>Quoted_GWP_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot move a Quoted policy to a status other than Bound / NTU/Decline --></errorMessage>
+        <name>Quoted_State_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter all required fields: [ Underwriter, Type of Insurance, Declaration Type, Deductible] --></errorMessage>
+        <name>Required_Fields_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter all required fields: [Broker Name, Underwriter, Type of Insurance] --></errorMessage>
+        <name>Required_Fields_Check_Horizon</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Policy Status is Prospect, then Prospect premium is mandatory --></errorMessage>
+        <name>Status_Prospect_Reqired_Prospect_Premium</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The selected Broker has been cancelled. Please contact Jennifer Hickman. --></errorMessage>
+        <name>VG_Broker_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot move a Working policy to a status other than Quoted / NTU/Decline --></errorMessage>
+        <name>Working_State_Check</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New --></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- VG_MTA --></label>
+        <name>VG_MTA</name>
+    </webLinks>
+</CustomObjectTranslation>

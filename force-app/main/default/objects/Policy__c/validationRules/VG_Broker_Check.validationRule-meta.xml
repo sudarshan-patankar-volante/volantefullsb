@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Broker_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISCHANGED( Policy_Status__c ), ISPICKVAL(Policy_Status__c, &apos;Quoted&apos;) , VG_Inception_Date__c &gt;  Broker_Name__r.VG_Date_of_Cancellation__c )</errorConditionFormula>
+    <errorDisplayField>Broker_Name__c</errorDisplayField>
+    <errorMessage>The selected Broker has been cancelled. Please contact Jennifer Hickman.</errorMessage>
+</ValidationRule>

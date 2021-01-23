@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rate_of_Exchange__c</fullName>
+    <externalId>false</externalId>
+    <label>Rate of Exchange</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ex1</fullName>
+                <default>false</default>
+                <label>Ex1</label>
+            </value>
+            <value>
+                <fullName>Ex2</fullName>
+                <default>false</default>
+                <label>Ex2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product --></label>
+    <name>VG_Product__c</name>
+    <picklistValues>
+        <masterLabel>CC - Liability GL/PL</masterLabel>
+        <translation><!-- CC - Liability GL/PL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC - Machinery BI</masterLabel>
+        <translation><!-- CC - Machinery BI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Trials</masterLabel>
+        <translation><!-- Clinical Trials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crime</masterLabel>
+        <translation><!-- Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D&amp;O</masterLabel>
+        <translation><!-- D&amp;O --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIPI</masterLabel>
+        <translation><!-- FIPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GLPL</masterLabel>
+        <translation><!-- GLPL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Life Sciences</masterLabel>
+        <translation><!-- Life Sciences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PI</masterLabel>
+        <translation><!-- PI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property</masterLabel>
+        <translation><!-- Property --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

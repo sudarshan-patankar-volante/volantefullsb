@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_for_Quote_Approval</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(OR( RecordType.DeveloperName = &apos;Aesir&apos;,RecordType.DeveloperName = &apos;Imara&apos;,RecordType.DeveloperName = &apos;Horizon&apos;,RecordType.DeveloperName = &apos;Gentium&apos;,RecordType.DeveloperName = &apos;Affinity&apos;,RecordType.DeveloperName = &apos;VFP&apos;)),OR( AND(ISCHANGED( Policy_Status__c ) ,ISPICKVAL(PRIORVALUE( Policy_Status__c ),&quot;Quoted&quot;)) ,  ISNEW() ), ISPICKVAL(Policy_Status__c, &quot;Bound&quot;),  NOT( ISPICKVAL( VG_Sub_Status__c , &quot;Approved&quot;) ), NOT(VG_IsApproved__c) )</errorConditionFormula>
+    <errorMessage>Your quote is not approved.. Please wait for the approval and move to Bound once Policy is approved..</errorMessage>
+</ValidationRule>

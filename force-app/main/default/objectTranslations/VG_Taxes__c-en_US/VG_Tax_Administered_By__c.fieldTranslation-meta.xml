@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tax Administered By --></label>
+    <name>VG_Tax_Administered_By__c</name>
+    <picklistValues>
+        <masterLabel>Broker</masterLabel>
+        <translation><!-- Broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insured</masterLabel>
+        <translation><!-- Insured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurer</masterLabel>
+        <translation><!-- Insurer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

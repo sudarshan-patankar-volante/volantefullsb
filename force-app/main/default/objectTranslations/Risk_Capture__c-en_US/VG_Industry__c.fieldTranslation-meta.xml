@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Industry --></label>
+    <name>VG_Industry__c</name>
+    <picklistValues>
+        <masterLabel>Alternative Lenders</masterLabel>
+        <translation><!-- Alternative Lenders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankers Exchange House</masterLabel>
+        <translation><!-- Bankers Exchange House --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankers Venture Capitalists</masterLabel>
+        <translation><!-- Bankers Venture Capitalists --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Banks/ Life Ins</masterLabel>
+        <translation><!-- Banks/ Life Ins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building Society/ Savings Bank</masterLabel>
+        <translation><!-- Building Society/ Savings Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Bank</masterLabel>
+        <translation><!-- Commercial Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Crime</masterLabel>
+        <translation><!-- Commercial Crime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Composite Insurance Companies</masterLabel>
+        <translation><!-- Composite Insurance Companies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Unions</masterLabel>
+        <translation><!-- Credit Unions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Fund/ Asset Managers</masterLabel>
+        <translation><!-- General Fund/ Asset Managers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Life Insurance Companies</masterLabel>
+        <translation><!-- General Life Insurance Companies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government/ Central Bank</masterLabel>
+        <translation><!-- Government/ Central Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hedge Funds</masterLabel>
+        <translation><!-- Hedge Funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merchant/ Investment Bank</masterLabel>
+        <translation><!-- Merchant/ Investment Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous Financial</masterLabel>
+        <translation><!-- Miscellaneous Financial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortgage banks/ Brokers</masterLabel>
+        <translation><!-- Mortgage banks/ Brokers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mutual Funds</masterLabel>
+        <translation><!-- Mutual Funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stockbroker/ broker-dealer/ financial planner</masterLabel>
+        <translation><!-- Stockbroker/ broker-dealer/ financial planner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trustees</masterLabel>
+        <translation><!-- Trustees --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

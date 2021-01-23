@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- D&amp;O_D4-D&amp;O FI incl USA --></label>
+    <name>D_and_O_D4_D_O_FI_incl_USA__c</name>
+</CustomFieldTranslation>

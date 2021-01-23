@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Satellite_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Satellite Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Aware</fullName>
+                <default>false</default>
+                <label>Aware</label>
+            </value>
+            <value>
+                <fullName>Backlog - Spacecraft Ordered</fullName>
+                <default>false</default>
+                <label>Backlog - Spacecraft Ordered</label>
+            </value>
+            <value>
+                <fullName>Bound</fullName>
+                <default>false</default>
+                <label>Bound</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>CUO Review</fullName>
+                <default>false</default>
+                <label>CUO Review</label>
+            </value>
+            <value>
+                <fullName>Expected renewal</fullName>
+                <default>false</default>
+                <label>Expected renewal</label>
+            </value>
+            <value>
+                <fullName>Future Launch</fullName>
+                <default>false</default>
+                <label>Future Launch</label>
+            </value>
+            <value>
+                <fullName>Launch Failure</fullName>
+                <default>false</default>
+                <label>Launch Failure</label>
+            </value>
+            <value>
+                <fullName>Liberty Review</fullName>
+                <default>false</default>
+                <label>Liberty Review</label>
+            </value>
+            <value>
+                <fullName>NTU</fullName>
+                <default>false</default>
+                <label>NTU</label>
+            </value>
+            <value>
+                <fullName>Operational</fullName>
+                <default>false</default>
+                <label>Operational</label>
+            </value>
+            <value>
+                <fullName>Peer Review</fullName>
+                <default>false</default>
+                <label>Peer Review</label>
+            </value>
+            <value>
+                <fullName>Quoted</fullName>
+                <default>false</default>
+                <label>Quoted</label>
+            </value>
+            <value>
+                <fullName>Received</fullName>
+                <default>false</default>
+                <label>Received</label>
+            </value>
+            <value>
+                <fullName>Reentered/deorbited</fullName>
+                <default>false</default>
+                <label>Reentered/deorbited</label>
+            </value>
+            <value>
+                <fullName>Retired</fullName>
+                <default>false</default>
+                <label>Retired</label>
+            </value>
+            <value>
+                <fullName>Satellite Failure</fullName>
+                <default>false</default>
+                <label>Satellite Failure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

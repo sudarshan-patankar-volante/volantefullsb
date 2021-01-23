@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Coverages --></label>
+    <name>VG_Sub_Coverages__c</name>
+    <picklistValues>
+        <masterLabel>Agriculture Crop</masterLabel>
+        <translation><!-- Agriculture Crop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agriculture Livestock</masterLabel>
+        <translation><!-- Agriculture Livestock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All Risks</masterLabel>
+        <translation><!-- All Risks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviation Cargo</masterLabel>
+        <translation><!-- Aviation Cargo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviation Hull</masterLabel>
+        <translation><!-- Aviation Hull --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviation Spares</masterLabel>
+        <translation><!-- Aviation Spares --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankers Blanket Bond</masterLabel>
+        <translation><!-- Bankers Blanket Bond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bonds</masterLabel>
+        <translation><!-- Bonds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Interruption</masterLabel>
+        <translation><!-- Business Interruption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cash in Safe</masterLabel>
+        <translation><!-- Cash in Safe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cash in transit</masterLabel>
+        <translation><!-- Cash in transit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consequential Loss</masterLabel>
+        <translation><!-- Consequential Loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Constuction All Risks</masterLabel>
+        <translation><!-- Constuction All Risks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyber Liability</masterLabel>
+        <translation><!-- Cyber Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronic Equipment</masterLabel>
+        <translation><!-- Electronic Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employers Liability</masterLabel>
+        <translation><!-- Employers Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erection all Risks</masterLabel>
+        <translation><!-- Erection all Risks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fidelity</masterLabel>
+        <translation><!-- Fidelity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire &amp; Allied Perils</masterLabel>
+        <translation><!-- Fire &amp; Allied Perils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Third Party</masterLabel>
+        <translation><!-- General Third Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glass</masterLabel>
+        <translation><!-- Glass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Good in Transit</masterLabel>
+        <translation><!-- Good in Transit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Group Health</masterLabel>
+        <translation><!-- Group Health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Group Travel</masterLabel>
+        <translation><!-- Group Travel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inland Transit</masterLabel>
+        <translation><!-- Inland Transit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machinery Breakdown</masterLabel>
+        <translation><!-- Machinery Breakdown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine Cargo</masterLabel>
+        <translation><!-- Marine Cargo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine Hull</masterLabel>
+        <translation><!-- Marine Hull --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merchandise</masterLabel>
+        <translation><!-- Merchandise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Money</masterLabel>
+        <translation><!-- Money --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Passenger Liability</masterLabel>
+        <translation><!-- Motor Passenger Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Physical Damage</masterLabel>
+        <translation><!-- Motor Physical Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Third Party</masterLabel>
+        <translation><!-- Motor Third Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offshore Energy</masterLabel>
+        <translation><!-- Offshore Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Onshore Energy</masterLabel>
+        <translation><!-- Onshore Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PML Error</masterLabel>
+        <translation><!-- PML Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Accident</masterLabel>
+        <translation><!-- Personal Accident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Health</masterLabel>
+        <translation><!-- Personal Health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Travel</masterLabel>
+        <translation><!-- Personal Travel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Political Violence</masterLabel>
+        <translation><!-- Political Violence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Products Liability</masterLabel>
+        <translation><!-- Products Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Indemnity</masterLabel>
+        <translation><!-- Professional Indemnity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specie</masterLabel>
+        <translation><!-- Specie --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stock Throughput</masterLabel>
+        <translation><!-- Stock Throughput --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terrorism</masterLabel>
+        <translation><!-- Terrorism --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Theft</masterLabel>
+        <translation><!-- Theft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Credit</masterLabel>
+        <translation><!-- Trade Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>War</masterLabel>
+        <translation><!-- War --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workmens Compensation</masterLabel>
+        <translation><!-- Workmens Compensation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

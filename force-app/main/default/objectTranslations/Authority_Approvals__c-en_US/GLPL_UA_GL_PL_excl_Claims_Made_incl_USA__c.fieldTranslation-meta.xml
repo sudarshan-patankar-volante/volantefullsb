@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GLPL_UA-GL/ PL excl Claims Made incl USA --></label>
+    <name>GLPL_UA_GL_PL_excl_Claims_Made_incl_USA__c</name>
+</CustomFieldTranslation>

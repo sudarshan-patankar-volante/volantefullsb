@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Local_Impact__c</fullName>
+    <externalId>false</externalId>
+    <label>Local Impact</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Permament loss of function</fullName>
+                <default>true</default>
+                <label>Permament loss of function</label>
+            </value>
+            <value>
+                <fullName>Permannt functional reduction</fullName>
+                <default>false</default>
+                <label>Permannt functional reduction</label>
+            </value>
+            <value>
+                <fullName>Temporay loss of function</fullName>
+                <default>false</default>
+                <label>Temporay loss of function</label>
+            </value>
+            <value>
+                <fullName>Permenently intermittency</fullName>
+                <default>false</default>
+                <label>Permenently intermittency</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

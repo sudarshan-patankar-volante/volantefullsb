@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Launch_Operator__c</fullName>
+    <externalId>false</externalId>
+    <label>Launch Operator</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ARIANESPACE</fullName>
+                <default>false</default>
+                <label>ARIANESPACE</label>
+            </value>
+            <value>
+                <fullName>Blue Origin LLC</fullName>
+                <default>false</default>
+                <label>Blue Origin LLC</label>
+            </value>
+            <value>
+                <fullName>CALT</fullName>
+                <default>false</default>
+                <label>CALT</label>
+            </value>
+            <value>
+                <fullName>GILMOUR AEROSPACE</fullName>
+                <default>false</default>
+                <label>GILMOUR AEROSPACE</label>
+            </value>
+            <value>
+                <fullName>IHI Corporation</fullName>
+                <default>false</default>
+                <label>IHI Corporation</label>
+            </value>
+            <value>
+                <fullName>ILS</fullName>
+                <default>false</default>
+                <label>ILS</label>
+            </value>
+            <value>
+                <fullName>ISRO</fullName>
+                <default>false</default>
+                <label>ISRO</label>
+            </value>
+            <value>
+                <fullName>KOSMOTRAS</fullName>
+                <default>false</default>
+                <label>KOSMOTRAS</label>
+            </value>
+            <value>
+                <fullName>LOCKHEED MARTIN CORPORATION</fullName>
+                <default>false</default>
+                <label>LOCKHEED MARTIN CORPORATION</label>
+            </value>
+            <value>
+                <fullName>MHI</fullName>
+                <default>false</default>
+                <label>MHI</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Northrop Grumman Innovation Systems (NGIS)</fullName>
+                <default>false</default>
+                <label>Northrop Grumman Innovation Systems (NGIS)</label>
+            </value>
+            <value>
+                <fullName>ROCKET LAB</fullName>
+                <default>false</default>
+                <label>ROCKET LAB</label>
+            </value>
+            <value>
+                <fullName>ROSCOSMOS</fullName>
+                <default>false</default>
+                <label>ROSCOSMOS</label>
+            </value>
+            <value>
+                <fullName>SEA LAUNCH</fullName>
+                <default>false</default>
+                <label>SEA LAUNCH</label>
+            </value>
+            <value>
+                <fullName>SKYRORA</fullName>
+                <default>false</default>
+                <label>SKYRORA</label>
+            </value>
+            <value>
+                <fullName>SPACEX</fullName>
+                <default>false</default>
+                <label>SPACEX</label>
+            </value>
+            <value>
+                <fullName>STARSEM</fullName>
+                <default>false</default>
+                <label>STARSEM</label>
+            </value>
+            <value>
+                <fullName>TBA</fullName>
+                <default>false</default>
+                <label>TBA</label>
+            </value>
+            <value>
+                <fullName>VIRGIN ORBIT</fullName>
+                <default>false</default>
+                <label>VIRGIN ORBIT</label>
+            </value>
+            <value>
+                <fullName>XXXXXXXXXXXX</fullName>
+                <default>false</default>
+                <label>XXXXXXXXXXXX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

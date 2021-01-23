@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_RI_Coverage__c</fullName>
+    <externalId>false</externalId>
+    <label>RI Coverage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>M3 - Fully Comprehensive</fullName>
+                <default>false</default>
+                <label>M3 - Fully Comprehensive</label>
+            </value>
+            <value>
+                <fullName>M6 - Third Party Fire &amp; Theft</fullName>
+                <default>false</default>
+                <label>M6 - Third Party Fire &amp; Theft</label>
+            </value>
+            <value>
+                <fullName>M6 - Third Party Only</fullName>
+                <default>false</default>
+                <label>M6 - Third Party Only</label>
+            </value>
+            <value>
+                <fullName>M6 - Fire &amp; Theft Only</fullName>
+                <default>false</default>
+                <label>M6 - Fire &amp; Theft Only</label>
+            </value>
+            <value>
+                <fullName>7T</fullName>
+                <default>false</default>
+                <label>7T</label>
+            </value>
+            <value>
+                <fullName>BB</fullName>
+                <default>false</default>
+                <label>BB</label>
+            </value>
+            <value>
+                <fullName>D2</fullName>
+                <default>false</default>
+                <label>D2</label>
+            </value>
+            <value>
+                <fullName>D3</fullName>
+                <default>false</default>
+                <label>D3</label>
+            </value>
+            <value>
+                <fullName>D4</fullName>
+                <default>false</default>
+                <label>D4</label>
+            </value>
+            <value>
+                <fullName>D5</fullName>
+                <default>false</default>
+                <label>D5</label>
+            </value>
+            <value>
+                <fullName>D6</fullName>
+                <default>false</default>
+                <label>D6</label>
+            </value>
+            <value>
+                <fullName>D7</fullName>
+                <default>false</default>
+                <label>D7</label>
+            </value>
+            <value>
+                <fullName>TR, X3, XC, XR</fullName>
+                <default>false</default>
+                <label>TR, X3, XC, XR</label>
+            </value>
+            <value>
+                <fullName>B4, B5, P3, P5, P7, 6T, 7T, LE</fullName>
+                <default>false</default>
+                <label>B4, B5, P3, P5, P7, 6T, 7T, LE</label>
+            </value>
+            <value>
+                <fullName>CB, CC</fullName>
+                <default>false</default>
+                <label>CB, CC</label>
+            </value>
+            <value>
+                <fullName>XM, XN</fullName>
+                <default>false</default>
+                <label>XM, XN</label>
+            </value>
+            <value>
+                <fullName>MF</fullName>
+                <default>false</default>
+                <label>MF</label>
+            </value>
+            <value>
+                <fullName>KX, XG, XH</fullName>
+                <default>false</default>
+                <label>KX, XG, XH</label>
+            </value>
+            <value>
+                <fullName>BB, D3, D5, D7, D9, E3, E5, E7, E9, F3, F5, NA, W4, FG, GM</fullName>
+                <default>false</default>
+                <label>BB, D3, D5, D7, D9, E3, E5, E7, E9, F3, F5, NA, W4, FG, GM</label>
+            </value>
+            <value>
+                <fullName>GX, TX, VX, X2, XE, XT</fullName>
+                <default>false</default>
+                <label>GX, TX, VX, X2, XE, XT</label>
+            </value>
+            <value>
+                <fullName>B, CT, GS, JB, G, GC, O, T, TS, V</fullName>
+                <default>false</default>
+                <label>B, CT, GS, JB, G, GC, O, T, TS, V</label>
+            </value>
+            <value>
+                <fullName>NX</fullName>
+                <default>false</default>
+                <label>NX</label>
+            </value>
+            <value>
+                <fullName>CY, CZ, KS, KT, N, NB</fullName>
+                <default>false</default>
+                <label>CY, CZ, KS, KT, N, NB</label>
+            </value>
+            <value>
+                <fullName>XY, X1</fullName>
+                <default>false</default>
+                <label>XY, X1</label>
+            </value>
+            <value>
+                <fullName>VL, EG, EH, EZ, EA, EB, EF, H2, H3, L2, L3, AO, AP</fullName>
+                <default>false</default>
+                <label>VL, EG, EH, EZ, EA, EB, EF, H2, H3, L2, L3, AO, AP</label>
+            </value>
+            <value>
+                <fullName>SC, SO, SL, V &amp; AP</fullName>
+                <default>false</default>
+                <label>SC, SO, SL, V &amp; AP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VG_Subrogation_Recovered__c</fullName>
+    <externalId>false</externalId>
+    <formula>VG_Claims_Progression__r.VG_Salvage_Recovered__c * VG_Capacity_Details__r.VG_RI_Share__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subrogation Recovered</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>
